@@ -111,15 +111,17 @@ $(document).ready(function(){initNavTree('d1/dec/bkg__test_8cpp_source.html','..
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d1/dec/bkg__test_8cpp.html#ad1875975267425705810ebee7e7a51dd">   26</a></span>&#160;<a class="code" href="../../d1/dec/bkg__test_8cpp.html#ad1875975267425705810ebee7e7a51dd">IGNORE_TEST</a>(BACKGROUND_GRP, init)</div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d1/dec/bkg__test_8cpp.html#aa5266ecb243fc97a7539a1714af2b329">   26</a></span>&#160;<a class="code" href="../../d1/dec/bkg__test_8cpp.html#aa5266ecb243fc97a7539a1714af2b329">TEST</a>(BACKGROUND_GRP, init)</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    FAIL(<span class="stringliteral">&quot;FAIL ME!&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    cv::Mat m;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> count = m_background.countConnectedComponents(m);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    LONGS_EQUAL(0, count);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="abkg__test_8cpp_html_a2684f1e58d72b5e39e3256b956ef7a25"><div class="ttname"><a href="../../d1/dec/bkg__test_8cpp.html#a2684f1e58d72b5e39e3256b956ef7a25">TEST_GROUP</a></div><div class="ttdeci">TEST_GROUP(BACKGROUND_GRP)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/bkg__test_8cpp_source.html#l00014">bkg_test.cpp:14</a></div></div>
-<div class="ttc" id="abkg__test_8cpp_html_ad1875975267425705810ebee7e7a51dd"><div class="ttname"><a href="../../d1/dec/bkg__test_8cpp.html#ad1875975267425705810ebee7e7a51dd">IGNORE_TEST</a></div><div class="ttdeci">IGNORE_TEST(BACKGROUND_GRP, init)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/bkg__test_8cpp_source.html#l00026">bkg_test.cpp:26</a></div></div>
 <div class="ttc" id="aclass_background___extractor_html"><div class="ttname"><a href="../../db/d4d/class_background___extractor.html">Background_Extractor</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d8d/_background___extractor_8hpp_source.html#l00072">Background_Extractor.hpp:72</a></div></div>
+<div class="ttc" id="abkg__test_8cpp_html_aa5266ecb243fc97a7539a1714af2b329"><div class="ttname"><a href="../../d1/dec/bkg__test_8cpp.html#aa5266ecb243fc97a7539a1714af2b329">TEST</a></div><div class="ttdeci">TEST(BACKGROUND_GRP, init)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/dec/bkg__test_8cpp_source.html#l00026">bkg_test.cpp:26</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

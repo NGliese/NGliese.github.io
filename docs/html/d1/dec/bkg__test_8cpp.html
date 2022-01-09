@@ -123,18 +123,18 @@ Include dependency graph for bkg_test.cpp:</div>
 Functions</h2></td></tr>
 <tr class="memitem:a2684f1e58d72b5e39e3256b956ef7a25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dec/bkg__test_8cpp.html#a2684f1e58d72b5e39e3256b956ef7a25">TEST_GROUP</a> (BACKGROUND_GRP)</td></tr>
 <tr class="separator:a2684f1e58d72b5e39e3256b956ef7a25"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1875975267425705810ebee7e7a51dd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dec/bkg__test_8cpp.html#ad1875975267425705810ebee7e7a51dd">IGNORE_TEST</a> (BACKGROUND_GRP, init)</td></tr>
-<tr class="separator:ad1875975267425705810ebee7e7a51dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5266ecb243fc97a7539a1714af2b329"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dec/bkg__test_8cpp.html#aa5266ecb243fc97a7539a1714af2b329">TEST</a> (BACKGROUND_GRP, init)</td></tr>
+<tr class="separator:aa5266ecb243fc97a7539a1714af2b329"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ad1875975267425705810ebee7e7a51dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1875975267425705810ebee7e7a51dd">&#9670;&nbsp;</a></span>IGNORE_TEST()</h2>
+<a id="aa5266ecb243fc97a7539a1714af2b329"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5266ecb243fc97a7539a1714af2b329">&#9670;&nbsp;</a></span>TEST()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">IGNORE_TEST </td>
+          <td class="memname">TEST </td>
           <td>(</td>
           <td class="paramtype">BACKGROUND_GRP&#160;</td>
           <td class="paramname">, </td>
@@ -155,8 +155,10 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d1/dec/bkg__test_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d1/dec/bkg__test_8cpp_source.html">bkg_test.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    FAIL(<span class="stringliteral">&quot;FAIL ME!&quot;</span>);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    cv::Mat m;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">auto</span> count = m_background.countConnectedComponents(m);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    LONGS_EQUAL(0, count);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>

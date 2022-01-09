@@ -12,7 +12,6 @@ var class_connected_components =
       [ "width", "d5/d8a/class_connected_components.html#acc3ba19dcda0f738e0fb9670476a03ca", null ]
     ] ],
     [ "drawConnectedComponents", "d5/d8a/class_connected_components.html#a8f0b0455c7c84a29d416eeb8145e31d2", null ],
-    [ "drawConnectedComponentsOpenCV", "d5/d8a/class_connected_components.html#a6900d4b10b78d4e58b520aeffa9b4f6c", null ],
     [ "maxConnectedComponents", "d5/d8a/class_connected_components.html#a8fec9ac57bb4c7f7d5bde539ce6c3a71", null ],
     [ "statsConnectedComponents", "d5/d8a/class_connected_components.html#a44033a44b418391b660a86d62e803be1", null ]
 ];
