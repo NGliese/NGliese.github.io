@@ -1,6 +1,7 @@
 var annotated_dup =
 [
     [ "FaultHandler_n", "d1/d27/namespace_fault_handler__n.html", "d1/d27/namespace_fault_handler__n" ],
+    [ "ActiveCurrentSensor", "d6/da0/class_active_current_sensor.html", "d6/da0/class_active_current_sensor" ],
     [ "Actuator_Base", "dd/d11/class_actuator___base.html", "dd/d11/class_actuator___base" ],
     [ "ADC", "d0/deb/namespace_3global_scope_4.html#d6/dec/class_a_d_c", null ],
     [ "ADC_API_ESP32", "d4/d70/class_a_d_c___a_p_i___e_s_p32.html", "d4/d70/class_a_d_c___a_p_i___e_s_p32" ],
@@ -22,6 +23,7 @@ var annotated_dup =
     [ "hal_stdout", "d3/d9d/classhal__stdout.html", "d3/d9d/classhal__stdout" ],
     [ "http_interface", "dc/dc2/classhttp__interface.html", "dc/dc2/classhttp__interface" ],
     [ "interface", "d0/deb/namespace_3global_scope_4.html#da/d35/classinterface", null ],
+    [ "jsmn_object", "dd/d71/classjsmn__object.html", "dd/d71/classjsmn__object" ],
     [ "Logger", "d3/d42/class_logger.html", "d3/d42/class_logger" ],
     [ "Maintainer", "d6/d9b/class_maintainer.html", "d6/d9b/class_maintainer" ],
     [ "Message_Handler", "d9/d8e/class_message___handler.html", "d9/d8e/class_message___handler" ],

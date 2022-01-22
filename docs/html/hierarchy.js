@@ -33,6 +33,7 @@ var hierarchy =
     [ "hal_mqtt_log", "d8/da0/classhal__mqtt__log.html", null ],
     [ "hal_stdout", "d3/d9d/classhal__stdout.html", null ],
     [ "interface", "d0/deb/namespace_3global_scope_4.html#da/d35/classinterface", null ],
+    [ "jsmn_object", "dd/d71/classjsmn__object.html", null ],
     [ "Logger", "d3/d42/class_logger.html", null ],
     [ "Message_Handler", "d9/d8e/class_message___handler.html", null ],
     [ "Message_Protocol", "da/dd6/class_message___protocol.html", null ],
@@ -74,6 +75,7 @@ var hierarchy =
     [ "Sensor_Base< T, U >", "d1/da4/class_sensor___base.html", null ],
     [ "sensor_conf_t", "d3/dd3/_sensor___base_8hpp.html#d3/dcd/structsensor__conf__t", null ],
     [ "Task", "d7/d6d/class_task.html", [
+      [ "ActiveCurrentSensor", "d6/da0/class_active_current_sensor.html", null ],
       [ "Maintainer", "d6/d9b/class_maintainer.html", null ]
     ] ],
     [ "TaskHandle_t", "d3/d1c/_free_r_t_o_s_8h.html#d9/d94/struct_task_handle__t", null ],

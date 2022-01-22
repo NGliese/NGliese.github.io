@@ -121,6 +121,13 @@ $(document).ready(function(){initNavTree('d3/d57/json__test_8cpp_source.html','.
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    STRCMP_EQUAL(<span class="stringliteral">&quot;\&quot;104\&quot;&quot;</span>, j[<span class="stringliteral">&quot;sensor_id&quot;</span>].dump().c_str());</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    STRCMP_EQUAL(<span class="stringliteral">&quot;\&quot;100\&quot;&quot;</span>, j[<span class="stringliteral">&quot;value&quot;</span>].dump().c_str());</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;}</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="../../d3/d57/json__test_8cpp.html#aa61da457e4d4c12050025b5efc13c83a">   38</a></span>&#160;<a class="code" href="../../d3/d57/json__test_8cpp.html#a389025876b7206ac3cb1300bfe3f4d2c">TEST</a>(JSON_GRP, bad_pare)</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;{</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="../../d2/d57/json__object_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d">json</a> j = json::parse(<span class="stringliteral">&quot;empty&quot;</span>, <span class="keyword">nullptr</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    CHECK(j.is_discarded());</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ajson__test_8cpp_html_a389025876b7206ac3cb1300bfe3f4d2c"><div class="ttname"><a href="../../d3/d57/json__test_8cpp.html#a389025876b7206ac3cb1300bfe3f4d2c">TEST</a></div><div class="ttdeci">TEST(JSON_GRP, init)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d57/json__test_8cpp_source.html#l00027">json_test.cpp:27</a></div></div>

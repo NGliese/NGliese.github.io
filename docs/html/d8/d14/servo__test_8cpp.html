@@ -138,10 +138,16 @@ Functions</h2></td></tr>
 <tr class="separator:a49bafaa015ab93edd847a1a9f70a80e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8e3305b24f77f9377469cadc9011ad17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/servo__test_8cpp.html#a8e3305b24f77f9377469cadc9011ad17">TEST</a> (SERVO_GRP, actuat_min)</td></tr>
 <tr class="separator:a8e3305b24f77f9377469cadc9011ad17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39a81ac5597cfa145de70a4ff044ae9e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/servo__test_8cpp.html#a39a81ac5597cfa145de70a4ff044ae9e">TEST</a> (SERVO_GRP, OpenSlowly_1_run)</td></tr>
+<tr class="separator:a39a81ac5597cfa145de70a4ff044ae9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ab81efe399fe099d69365c5839909ca"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/servo__test_8cpp.html#a2ab81efe399fe099d69365c5839909ca">TEST</a> (SERVO_GRP, OpenSlowly_loop_run)</td></tr>
+<tr class="separator:a2ab81efe399fe099d69365c5839909ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd343a4cd7e0c25556157db3ab8273f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d14/servo__test_8cpp.html#abd343a4cd7e0c25556157db3ab8273f9">TEST</a> (SERVO_GRP, Closelowly_loop_run)</td></tr>
+<tr class="separator:abd343a4cd7e0c25556157db3ab8273f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a49bafaa015ab93edd847a1a9f70a80e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a49bafaa015ab93edd847a1a9f70a80e3">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a49bafaa015ab93edd847a1a9f70a80e3">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -177,7 +183,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a8e3305b24f77f9377469cadc9011ad17"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8e3305b24f77f9377469cadc9011ad17">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3305b24f77f9377469cadc9011ad17">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -211,7 +217,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a73f1009cae6764a7300328254214bafa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73f1009cae6764a7300328254214bafa">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a73f1009cae6764a7300328254214bafa">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -245,8 +251,61 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="abd343a4cd7e0c25556157db3ab8273f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd343a4cd7e0c25556157db3ab8273f9">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SERVO_GRP&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Closelowly_loop_run&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d14/servo__test_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../d8/d14/servo__test_8cpp_source.html">servo_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    m_servo.setToMaximum(); <span class="comment">// is minimum now</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> err = <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordtype">float</span> tick = m_servo.getValue() - 1.0;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        err = m_friend.setPoint(tick);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">if</span>(err == <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9">GE_NO_DATA</a>)</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        {</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            FAIL(<span class="stringliteral">&quot;Somethings wrong&quot;</span>);</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        }</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        err = m_friend.actuate();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        DOUBLES_EQUAL(m_servo.getValue(), tick, 2);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;servo motor is : &quot;</span> &lt;&lt; m_servo.getValue() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        CHECK_EQUAL(<a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, err);</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    } <span class="keywordflow">while</span>(m_servo.getValue() &gt; 2.5 &amp;&amp; err == <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;servo motor FINISHED is : &quot;</span> &lt;&lt; m_servo.getValue() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    DOUBLES_EQUAL(m_servo.getValue(), 2.5, 2);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9">GE_NO_DATA</a>, and <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
+
+</div>
+</div>
 <a id="ad318394542884f4c762e448f358d4612"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad318394542884f4c762e448f358d4612">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad318394542884f4c762e448f358d4612">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -278,8 +337,102 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a id="a39a81ac5597cfa145de70a4ff044ae9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39a81ac5597cfa145de70a4ff044ae9e">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SERVO_GRP&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OpenSlowly_1_run&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d14/servo__test_8cpp_source.html#l00083">83</a> of file <a class="el" href="../../d8/d14/servo__test_8cpp_source.html">servo_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    m_servo.setToMinimum(); <span class="comment">// is minimum now</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> err = <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">float</span> tick = m_servo.getValue() + 1.0;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    DOUBLES_EQUAL(tick, 3.5, 2);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    m_servo.execute(tick);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    DOUBLES_EQUAL(m_servo.getValue(), 3.5, 2);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
+
+</div>
+</div>
+<a id="a2ab81efe399fe099d69365c5839909ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2ab81efe399fe099d69365c5839909ca">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">SERVO_GRP&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">OpenSlowly_loop_run&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d14/servo__test_8cpp_source.html#l00094">94</a> of file <a class="el" href="../../d8/d14/servo__test_8cpp_source.html">servo_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;{</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    m_servo.setToMinimum(); <span class="comment">// is minimum now</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> err = <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">do</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">float</span> tick = m_servo.getValue() + 1.0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        err = m_friend.setPoint(tick);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">if</span>(err == <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9">GE_NO_DATA</a>)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            FAIL(<span class="stringliteral">&quot;Somethings wrong&quot;</span>);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        err = m_friend.actuate();</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        DOUBLES_EQUAL(m_servo.getValue(), tick, 2);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;servo motor is : &quot;</span> &lt;&lt; m_servo.getValue() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        CHECK_EQUAL(<a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, err);</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    } <span class="keywordflow">while</span>(m_servo.getValue() &lt; 13 &amp;&amp; err == <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;servo motor FINISHED is : &quot;</span> &lt;&lt; m_servo.getValue() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    DOUBLES_EQUAL(m_servo.getValue(), 13, 2);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9">GE_NO_DATA</a>, and <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
+
+</div>
+</div>
 <a id="a6c346c6f38a594c4c4bde164466067a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c346c6f38a594c4c4bde164466067a6">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c346c6f38a594c4c4bde164466067a6">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -313,7 +466,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="a23bd6bdede06cbf7047691e2898b18bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23bd6bdede06cbf7047691e2898b18bc">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a23bd6bdede06cbf7047691e2898b18bc">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -341,13 +494,13 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d8/d14/servo__test_8cpp_source.html#l00055">55</a> of file <a class="el" href="../../d8/d14/servo__test_8cpp_source.html">servo_test.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    m_friend.setPoint(-100.1);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    DOUBLES_EQUAL(m_friend.getSetPoint(), 0, 3);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    DOUBLES_EQUAL(m_friend.getSetPoint(), 2.5F, 3);</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <a id="abeadaf45137a309f9067406eb676993e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abeadaf45137a309f9067406eb676993e">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/7]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#abeadaf45137a309f9067406eb676993e">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,7 +528,7 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="../../d8/d14/servo__test_8cpp_source.html#l00049">49</a> of file <a class="el" href="../../d8/d14/servo__test_8cpp_source.html">servo_test.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    m_friend.setPoint(100.1);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    DOUBLES_EQUAL(m_friend.getSetPoint(), 0, 3);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    DOUBLES_EQUAL(m_friend.getSetPoint(), 13, 3);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
@@ -429,13 +582,16 @@ Functions</h2></td></tr>
 <div class="ttc" id="a_m_g996_r_8hpp_html_db/d02/structmg996r__conf__t"><div class="ttname"><a href="../../dc/d07/_m_g996_r_8hpp.html#db/d02/structmg996r__conf__t">mg996r_conf_t</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d07/_m_g996_r_8hpp_source.html#l00072">MG996R.hpp:72</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_aca418b1052808a4445f9b372979c2516"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#aca418b1052808a4445f9b372979c2516">HAL_ESP32::config::duty</a></div><div class="ttdeci">float duty</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9f/_p_w_m_2include_2_h_a_l_8hpp_source.html#l00096">HAL.hpp:96</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_aff0ffe482ddcdeebc244fa03d5f36306"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#aff0ffe482ddcdeebc244fa03d5f36306">HAL_ESP32::config::channel</a></div><div class="ttdeci">lcd_channel channel</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9f/_p_w_m_2include_2_h_a_l_8hpp_source.html#l00098">HAL.hpp:98</a></div></div>
+<div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533e"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a></div><div class="ttdeci">general_err_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00066">General_Error.hpp:66</a></div></div>
 <div class="ttc" id="a_m_g996_r_8hpp_html_a043f9d09607977adb62f36a9e3e6ea6b"><div class="ttname"><a href="../../dc/d07/_m_g996_r_8hpp.html#a043f9d09607977adb62f36a9e3e6ea6b">mg996r_conf_t::name</a></div><div class="ttdeci">std::string name</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d07/_m_g996_r_8hpp_source.html#l00074">MG996R.hpp:74</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_a997a7ca771250c91a6ce3b3f835a3ee1"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#a997a7ca771250c91a6ce3b3f835a3ee1">HAL_ESP32::config::mode</a></div><div class="ttdeci">speed_mode mode</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9f/_p_w_m_2include_2_h_a_l_8hpp_source.html#l00099">HAL.hpp:99</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_ad2abd671cd70c6592ba14fe88e6b8660"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#ad2abd671cd70c6592ba14fe88e6b8660">HAL_ESP32::config::m_pin</a></div><div class="ttdeci">HAL_ESP32::pin m_pin</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9f/_p_w_m_2include_2_h_a_l_8hpp_source.html#l00095">HAL.hpp:95</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533ea3fa1f5473cd6dbfa7e2ba89076a4ccdf"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea3fa1f5473cd6dbfa7e2ba89076a4ccdf">GE_UPPER_BOUNDERY</a></div><div class="ttdeci">@ GE_UPPER_BOUNDERY</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00076">General_Error.hpp:76</a></div></div>
+<div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_a51500e2fbaaa6e56d124f47700b4421f"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#a51500e2fbaaa6e56d124f47700b4421f">HAL_ESP32::config::frequency</a></div><div class="ttdeci">uint32_t frequency</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9f/_p_w_m_2include_2_h_a_l_8hpp_source.html#l00097">HAL.hpp:97</a></div></div>
 <div class="ttc" id="aclass_m_g996_r_html"><div class="ttname"><a href="../../d9/d1c/class_m_g996_r.html">MG996R</a></div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d07/_m_g996_r_8hpp_source.html#l00101">MG996R.hpp:101</a></div></div>
-<div class="ttc" id="aclass_m_g996_r_html_a5e7ae386db4a86245b6879d9bed645b9"><div class="ttname"><a href="../../d9/d1c/class_m_g996_r.html#a5e7ae386db4a86245b6879d9bed645b9">MG996R::setPoint</a></div><div class="ttdeci">general_err_t setPoint(const float &amp;value) override</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da5/_m_g996_r_8cpp_source.html#l00046">MG996R.cpp:46</a></div></div>
+<div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9">GE_NO_DATA</a></div><div class="ttdeci">@ GE_NO_DATA</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00075">General_Error.hpp:75</a></div></div>
+<div class="ttc" id="aclass_m_g996_r_html_a5e7ae386db4a86245b6879d9bed645b9"><div class="ttname"><a href="../../d9/d1c/class_m_g996_r.html#a5e7ae386db4a86245b6879d9bed645b9">MG996R::setPoint</a></div><div class="ttdeci">general_err_t setPoint(const float &amp;value) override</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da5/_m_g996_r_8cpp_source.html#l00047">MG996R.cpp:47</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

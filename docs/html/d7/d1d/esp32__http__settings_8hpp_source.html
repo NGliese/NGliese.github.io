@@ -117,18 +117,19 @@ $(document).ready(function(){initNavTree('d7/d1d/esp32__http__settings_8hpp_sour
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    .event_handler = DEFAULT_http_event_handle, </div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    .transport_type =</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        esp_http_client_transport_t::HTTP_TRANSPORT_UNKNOWN, </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    .buffer_size = 1024, </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    .buffer_size_tx = 1024, </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    .user_data = <span class="keyword">nullptr</span>, </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    .is_async = <span class="keyword">false</span>, </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    .use_global_ca_store = <span class="keyword">true</span>, </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    .skip_cert_common_name_check = <span class="keyword">true</span>, </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    .keep_alive_enable = <span class="keyword">false</span>, </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    .keep_alive_idle = 5000, </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    .keep_alive_interval = 50, </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    .keep_alive_count = 50, </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    .buffer_size = 5120, </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">//.buffer_size_tx = 1024, /*!&lt; HTTP transmit buffer size */</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    .buffer_size_tx = 5120, </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    .user_data = <span class="keyword">nullptr</span>, </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    .is_async = <span class="keyword">false</span>, </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    .use_global_ca_store = <span class="keyword">true</span>, </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    .skip_cert_common_name_check = <span class="keyword">true</span>, </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    .keep_alive_enable = <span class="keyword">false</span>, </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    .keep_alive_idle = 5000, </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    .keep_alive_interval = 50, </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    .keep_alive_count = 50, </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

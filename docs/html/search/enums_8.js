@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['watchdog_5fevent_5ft_1214',['watchdog_event_t',['../de/d1e/_watchdog___base_8hpp.html#ac447ab9510a77de4b1a8d94d688aac79',1,'Watchdog_Base.hpp']]]
+  ['type_1265',['type',['../db/d4d/class_background___extractor.html#a15cf225f204bd8077dc1c9c67163bd8c',1,'Background_Extractor']]]
 ];
