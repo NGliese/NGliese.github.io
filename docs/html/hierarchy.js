@@ -24,6 +24,9 @@ var hierarchy =
     [ "DogFeederDoor", "d2/db0/class_dog_feeder_door.html", null ],
     [ "ConnectedComponents::ellipse_data_t", "d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t", null ],
     [ "esp32_http_sal", "d5/d62/classesp32__http__sal.html", null ],
+    [ "MyLibrary::Example", "d4/d17/class_my_library_1_1_example.html", [
+      [ "MyLibrary::SubclassExample", "d7/d0a/class_my_library_1_1_subclass_example.html", null ]
+    ] ],
     [ "Fault_Handler", "dd/d84/class_fault___handler.html", null ],
     [ "FreeRTOS", "db/df4/class_free_r_t_o_s.html", null ],
     [ "General_Error", "d2/d3f/class_general___error.html", null ],
