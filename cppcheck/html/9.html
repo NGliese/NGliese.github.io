@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cppcheck - HTML report - [project name]</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+pre { line-height: 125%; }
+td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+span.linenos { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
+td.linenos .special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 5px; padding-right: 5px; }
+.highlight .hll { background-color: #ffffcc }
+.highlight { background: #ffffff; }
+.highlight .c { color: #888888 } /* Comment */
+.highlight .err { color: #FF0000; background-color: #FFAAAA } /* Error */
+.highlight .k { color: #008800; font-weight: bold } /* Keyword */
+.highlight .o { color: #333333 } /* Operator */
+.highlight .ch { color: #888888 } /* Comment.Hashbang */
+.highlight .cm { color: #888888 } /* Comment.Multiline */
+.highlight .cp { color: #557799 } /* Comment.Preproc */
+.highlight .cpf { color: #888888 } /* Comment.PreprocFile */
+.highlight .c1 { color: #888888 } /* Comment.Single */
+.highlight .cs { color: #cc0000; font-weight: bold } /* Comment.Special */
+.highlight .gd { color: #A00000 } /* Generic.Deleted */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #FF0000 } /* Generic.Error */
+.highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.highlight .gi { color: #00A000 } /* Generic.Inserted */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.highlight .gt { color: #0044DD } /* Generic.Traceback */
+.highlight .kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+.highlight .kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+.highlight .kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+.highlight .kp { color: #003388; font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #333399; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #6600EE; font-weight: bold } /* Literal.Number */
+.highlight .s { background-color: #fff0f0 } /* Literal.String */
+.highlight .na { color: #0000CC } /* Name.Attribute */
+.highlight .nb { color: #007020 } /* Name.Builtin */
+.highlight .nc { color: #BB0066; font-weight: bold } /* Name.Class */
+.highlight .no { color: #003366; font-weight: bold } /* Name.Constant */
+.highlight .nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.highlight .ni { color: #880000; font-weight: bold } /* Name.Entity */
+.highlight .ne { color: #FF0000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #0066BB; font-weight: bold } /* Name.Function */
+.highlight .nl { color: #997700; font-weight: bold } /* Name.Label */
+.highlight .nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.highlight .nt { color: #007700 } /* Name.Tag */
+.highlight .nv { color: #996633 } /* Name.Variable */
+.highlight .ow { color: #000000; font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mb { color: #6600EE; font-weight: bold } /* Literal.Number.Bin */
+.highlight .mf { color: #6600EE; font-weight: bold } /* Literal.Number.Float */
+.highlight .mh { color: #005588; font-weight: bold } /* Literal.Number.Hex */
+.highlight .mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+.highlight .mo { color: #4400EE; font-weight: bold } /* Literal.Number.Oct */
+.highlight .sa { background-color: #fff0f0 } /* Literal.String.Affix */
+.highlight .sb { background-color: #fff0f0 } /* Literal.String.Backtick */
+.highlight .sc { color: #0044DD } /* Literal.String.Char */
+.highlight .dl { background-color: #fff0f0 } /* Literal.String.Delimiter */
+.highlight .sd { color: #DD4422 } /* Literal.String.Doc */
+.highlight .s2 { background-color: #fff0f0 } /* Literal.String.Double */
+.highlight .se { color: #666666; font-weight: bold; background-color: #fff0f0 } /* Literal.String.Escape */
+.highlight .sh { background-color: #fff0f0 } /* Literal.String.Heredoc */
+.highlight .si { background-color: #eeeeee } /* Literal.String.Interpol */
+.highlight .sx { color: #DD2200; background-color: #fff0f0 } /* Literal.String.Other */
+.highlight .sr { color: #000000; background-color: #fff0ff } /* Literal.String.Regex */
+.highlight .s1 { background-color: #fff0f0 } /* Literal.String.Single */
+.highlight .ss { color: #AA6600 } /* Literal.String.Symbol */
+.highlight .bp { color: #007020 } /* Name.Builtin.Pseudo */
+.highlight .fm { color: #0066BB; font-weight: bold } /* Name.Function.Magic */
+.highlight .vc { color: #336699 } /* Name.Variable.Class */
+.highlight .vg { color: #dd7700; font-weight: bold } /* Name.Variable.Global */
+.highlight .vi { color: #3333BB } /* Name.Variable.Instance */
+.highlight .vm { color: #996633 } /* Name.Variable.Magic */
+.highlight .il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long */
+    </style>
+    <script language="javascript">
+      function getStyle(el,styleProp) {
+        if (el.currentStyle)
+          var y = el.currentStyle[styleProp];
+        else if (window.getComputedStyle)
+          var y = document.defaultView.getComputedStyle(el,null).getPropertyValue(styleProp);
+        return y;
+      }
+      function toggle() {
+        var el = this.expandable_content;
+        var mark = this.expandable_marker;
+        if (el.style.display == "block") {
+          el.style.display = "none";
+          mark.innerHTML = "[+]";
+        } else {
+          el.style.display = "block";
+          mark.innerHTML = "[-]";
+        }
+      }
+      function init_expandables() {
+        var elts = document.getElementsByClassName("expandable");
+        for (var i = 0; i < elts.length; i++) {
+          var el = elts[i];
+          var clickable = el.getElementsByTagName("span")[0];
+          var marker = clickable.getElementsByClassName("marker")[0];
+          var content = el.getElementsByClassName("content")[0];
+          var width = clickable.clientWidth - parseInt(getStyle(content, "padding-left")) - parseInt(getStyle(content, "padding-right"));
+          content.style.width = width + "px";
+          clickable.expandable_content = content;
+          clickable.expandable_marker = marker;
+          clickable.onclick = toggle;
+        }
+      }
+      function set_class_display(c, st) {
+        var elements = document.querySelectorAll('.' + c),
+            len = elements.length;
+        for (i = 0; i < len; i++) {
+            elements[i].style.display = st;
+        }
+      }
+      function toggle_class_visibility(id) {
+        var box = document.getElementById(id);
+        set_class_display(id, box.checked ? '' : 'none');
+      }
+      function toggle_all(){
+        var elts = document.getElementsByTagName("input");
+        for (var i = 1; i < elts.length; i++) {           
+          var el = elts[i];
+          el.checked ? el.checked=false : el.checked=true;
+          toggle_class_visibility(el.id);        
+        }            
+      }
+
+    </script>
+  </head>
+  <body onload="init_expandables()">
+      <div id="header">
+        <h1>Cppcheck report - [project name]: /home/nikolaj/github/Embedded/library/Components/Objects/ADC/src/ADC_API_ESP32.cpp </h1>
+      </div>
+      <div id="menu" dir="rtl">
+       <p id="filename"><a href="index.html">Defects:</a> ADC_API_ESP32.cpp</p>
+<a href='9.html#line-44'> unreadVariable 44</a><a href='9.html#line-56'> knownConditionTrueFalse 56</a><a href='9.html#line-64'> knownConditionTrueFalse 64</a>
+      </div>
+      <div id="content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><a id="line-1" name="line-1"></a><span class="cm">/*</span>
+<a id="line-2" name="line-2"></a><span class="cm"> * ADC_API_ESP32.cpp</span>
+<a id="line-3" name="line-3"></a><span class="cm"> *</span>
+<a id="line-4" name="line-4"></a><span class="cm"> *  Created on: Sep 21, 2021</span>
+<a id="line-5" name="line-5"></a><span class="cm"> *      Author: nikolaj</span>
+<a id="line-6" name="line-6"></a><span class="cm"> */</span>
+<a id="line-7" name="line-7"></a>
+<a id="line-8" name="line-8"></a><span class="cm">/***********************************************************************************************+</span>
+<a id="line-9" name="line-9"></a><span class="cm"> *  \brief       -- XX -- Library - CPP Source file</span>
+<a id="line-10" name="line-10"></a><span class="cm"> *  \par</span>
+<a id="line-11" name="line-11"></a><span class="cm"> *  \par        @DETAILS</span>
+<a id="line-12" name="line-12"></a><span class="cm"> *</span>
+<a id="line-13" name="line-13"></a><span class="cm"> *</span>
+<a id="line-14" name="line-14"></a><span class="cm"> *  \li         LIMITATION-TO-CLASS</span>
+<a id="line-15" name="line-15"></a><span class="cm"> *  \li         LIMITATION-TO-CLASS</span>
+<a id="line-16" name="line-16"></a><span class="cm"> *</span>
+<a id="line-17" name="line-17"></a><span class="cm"> *  \note       ANY RELEVANT NOTES</span>
+<a id="line-18" name="line-18"></a><span class="cm"> *</span>
+<a id="line-19" name="line-19"></a><span class="cm"> *  \file       ADC_API_ESP32.cpp</span>
+<a id="line-20" name="line-20"></a><span class="cm"> *  \author     N.G Pedersen &lt;nikolajgliese@tutanota.com&gt;</span>
+<a id="line-21" name="line-21"></a><span class="cm"> *  \version    1.0</span>
+<a id="line-22" name="line-22"></a><span class="cm"> *  \date       2021</span>
+<a id="line-23" name="line-23"></a><span class="cm"> *  \copyright  --</span>
+<a id="line-24" name="line-24"></a><span class="cm"> *</span>
+<a id="line-25" name="line-25"></a><span class="cm"> *</span>
+<a id="line-26" name="line-26"></a><span class="cm"> ***********************************************************************************************/</span>
+<a id="line-27" name="line-27"></a>
+<a id="line-28" name="line-28"></a><span class="cp">#include</span> <span class="cpf">&quot;../include/ADC_API_ESP32.hpp&quot;</span><span class="cp"></span>
+<a id="line-29" name="line-29"></a>
+<a id="line-30" name="line-30"></a><span class="c1">//#define DEBUG // default uncommeted</span>
+<a id="line-31" name="line-31"></a>
+<a id="line-32" name="line-32"></a><span class="cp">#ifdef DEBUG</span>
+<a id="line-33" name="line-33"></a><span class="k">static</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">LOG_TAG</span> <span class="o">=</span> <span class="s">&quot;ADC_API_ESP32&quot;</span><span class="p">;</span>
+<a id="line-34" name="line-34"></a><span class="cp">#endif</span>
+<a id="line-35" name="line-35"></a>
+<a id="line-36" name="line-36"></a><span class="n">ADC_API_ESP32</span><span class="o">::</span><span class="n">ADC_API_ESP32</span><span class="p">(</span><span class="k">const</span> <span class="n">config</span><span class="o">&amp;</span> <span class="n">conf</span><span class="p">)</span> <span class="o">:</span> <span class="n">ADCBase</span><span class="p">(</span><span class="n">conf</span><span class="p">.</span><span class="n">name</span><span class="p">,</span> <span class="n">conf</span><span class="p">.</span><span class="n">samples</span><span class="p">),</span> <span class="n">m_conf</span><span class="p">{</span><span class="n">conf</span><span class="p">}</span>
+<a id="line-37" name="line-37"></a><span class="p">{</span>
+<a id="line-38" name="line-38"></a><span class="cp">#ifdef __ESP32__</span>
+<a id="line-39" name="line-39"></a>	<span class="c1">// set the adc width</span>
+<a id="line-40" name="line-40"></a>	<span class="n">adc1_config_width</span><span class="p">(</span><span class="n">m_width</span><span class="p">);</span>
+<a id="line-41" name="line-41"></a>	<span class="c1">// set the channel and attenuation</span>
+<a id="line-42" name="line-42"></a>	<span class="n">adc1_config_channel_atten</span><span class="p">(</span><span class="n">m_conf</span><span class="p">.</span><span class="n">channel</span><span class="p">,</span> <span class="n">m_atten</span><span class="p">);</span>
+<a id="line-43" name="line-43"></a>	<span class="c1">// set the calc value</span>
+<a id="line-44" name="line-44"></a><span class="hll">	<span class="n">esp_adc_cal_value_t</span> <span class="n">val_type</span> <span class="o">=</span><span class='error2'>&lt;--- Variable 'val_type' is assigned a value that is never used.</span>
+</span><a id="line-45" name="line-45"></a>		<span class="n">esp_adc_cal_characterize</span><span class="p">(</span><span class="n">m_unit</span><span class="p">,</span> <span class="n">m_atten</span><span class="p">,</span> <span class="n">m_width</span><span class="p">,</span> <span class="n">m_conf</span><span class="p">.</span><span class="n">vRef</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">m_adc_chars</span><span class="p">);</span>
+<a id="line-46" name="line-46"></a><span class="cp">#endif</span>
+<a id="line-47" name="line-47"></a><span class="p">}</span>
+<a id="line-48" name="line-48"></a>
+<a id="line-49" name="line-49"></a><span class="n">ADC_API_ESP32</span><span class="o">::~</span><span class="n">ADC_API_ESP32</span><span class="p">()</span> <span class="p">{}</span>
+<a id="line-50" name="line-50"></a><span class="cm">/*</span>
+<a id="line-51" name="line-51"></a><span class="cm"> * @brief measure the adc value over an average of  m_number_of_samples</span>
+<a id="line-52" name="line-52"></a><span class="cm"> * return result</span>
+<a id="line-53" name="line-53"></a><span class="cm"> */</span>
+<a id="line-54" name="line-54"></a><span class="kt">uint32_t</span> <span class="n">ADC_API_ESP32</span><span class="o">::</span><span class="n">measureValue</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<a id="line-55" name="line-55"></a><span class="p">{</span>
+<a id="line-56" name="line-56"></a><span class="hll">	<span class="kt">uint64_t</span> <span class="n">adc_reading</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class='error2'>&lt;--- 'adc_reading' is assigned value '0' here.</span>
+</span><a id="line-57" name="line-57"></a>	<span class="k">for</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">m_number_of_samples</span><span class="p">;</span> <span class="o">++</span><span class="n">i</span><span class="p">)</span>
+<a id="line-58" name="line-58"></a>	<span class="p">{</span>
+<a id="line-59" name="line-59"></a><span class="cp">#ifdef __ESP32__</span>
+<a id="line-60" name="line-60"></a>		<span class="n">adc_reading</span> <span class="o">+=</span> <span class="n">adc1_get_raw</span><span class="p">(</span><span class="n">m_conf</span><span class="p">.</span><span class="n">channel</span><span class="p">);</span>
+<a id="line-61" name="line-61"></a><span class="cp">#endif</span>
+<a id="line-62" name="line-62"></a>	<span class="p">}</span>
+<a id="line-63" name="line-63"></a>	<span class="c1">// check that we do not divide by zero</span>
+<a id="line-64" name="line-64"></a><span class="hll">	<span class="k">auto</span> <span class="n">val</span> <span class="o">=</span> <span class="n">adc_reading</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="o">?</span> <span class="k">static_cast</span><span class="o">&lt;</span><span class="kt">uint32_t</span><span class="o">&gt;</span><span class="p">(</span><span class="n">adc_reading</span> <span class="o">/=</span> <span class="n">m_number_of_samples</span><span class="p">)</span> <span class="o">:</span> <span class="mi">0</span><span class="p">;</span><div class='verbose expandable'><span class='error2'>&lt;--- The expression 'adc_reading > 0' is always false. <span class='marker'>[+]</span></span><div class='content'>Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct.</div></div>
+</span><a id="line-65" name="line-65"></a><span class="cp">#ifdef __ESP32__</span>
+<a id="line-66" name="line-66"></a>	<span class="k">return</span> <span class="n">esp_adc_cal_raw_to_voltage</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">m_adc_chars</span><span class="p">);</span>
+<a id="line-67" name="line-67"></a><span class="cp">#else</span>
+<a id="line-68" name="line-68"></a>	<span class="k">return</span> <span class="n">val</span><span class="p">;</span>
+<a id="line-69" name="line-69"></a><span class="cp">#endif</span>
+<a id="line-70" name="line-70"></a><span class="p">}</span>
+</pre></div>
+</td></tr></table>
+      </div>
+      <div id="footer">
+        <p>
+         Cppcheck 1.90 - a tool for static C/C++ code analysis</br>
+         </br>
+         Internet: <a href="http://cppcheck.net">http://cppcheck.net</a></br>
+         IRC: <a href="irc://irc.freenode.net/cppcheck">irc://irc.freenode.net/cppcheck</a></br>
+        </p>
+      </div>
+  </body>
+</html>
