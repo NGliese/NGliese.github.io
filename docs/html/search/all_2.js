@@ -11,7 +11,6 @@ var searchData=
   ['basic_2ehpp_34',['BASIC.hpp',['../da/d5f/_b_a_s_i_c_8hpp.html',1,'']]],
   ['basic_5futils_35',['basic_utils',['../d1/d91/namespacebasic__utils.html',1,'']]],
   ['bkg_5ftest_2ecpp_36',['bkg_test.cpp',['../d1/dec/bkg__test_8cpp.html',1,'']]],
-  ['blue_37',['BLUE',['../db/dc9/class_utility___image.html#aed5c3c45e70c5f7936bc71f990efaab8a1b3e1ee9bff86431dea6b181365ba65f',1,'Utility_Image::BLUE()'],['../d5/d34/namespace_my_library.html#a79a9f4bbb675f6c082b09249c5a95ceda3d4a113e58853e5d81725d92fbfceb4d',1,'MyLibrary::blue()']]],
-  ['buffer_5fsize_38',['buffer_size',['../d5/d81/class_m_q_t_t___message.html#a044ccec1109bca6ac94df9fda5e4dedd',1,'MQTT_Message::msg_conf_t']]],
-  ['bug_20list_39',['Bug List',['../de/da5/bug.html',1,'']]]
+  ['blue_37',['BLUE',['../db/dc9/class_utility___image.html#aed5c3c45e70c5f7936bc71f990efaab8a1b3e1ee9bff86431dea6b181365ba65f',1,'Utility_Image']]],
+  ['buffer_5fsize_38',['buffer_size',['../d5/d81/class_m_q_t_t___message.html#a044ccec1109bca6ac94df9fda5e4dedd',1,'MQTT_Message::msg_conf_t']]]
 ];

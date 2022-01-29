@@ -24,25 +24,14 @@ var NAVTREE =
 [
   [ "Embedded Library", "index.html", [
     [ "Library", "index.html", null ],
-    [ "Example Page", "d0/db1/page1.html", [
-      [ "An example section", "d0/db1/page1.html#sec", [
-        [ "The first subsection", "d0/db1/page1.html#subsection1", null ],
-        [ "The second subsection", "d0/db1/page1.html#subsection2", null ]
-      ] ]
-    ] ],
-    [ "Doxygen Awesome", "dc/dab/md_docs_doxygen-awesome-css__r_e_a_d_m_e.html", null ],
     [ "'s ToDo's", "dd/dfc/md__to_do.html", null ],
-    [ "Todo List", "dd/da0/todo.html", null ],
-    [ "Deprecated List", "da/d58/deprecated.html", null ],
-    [ "Bug List", "de/da5/bug.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ],
-        [ "Enumerator", "namespacemembers_eval.html", null ]
+        [ "Enumerations", "namespacemembers_enum.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -76,12 +65,12 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/df0/_objects_2_maintainer_2test_2test_200___t_e_m_p_l_a_t_e_8cpp.html#a02540ba362b6bc66a8a3dd35daa3430d",
-"d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a2c72a25516e325e96987d42e27ed005b",
-"d7/d6d/class_task.html#a5ec932fb35fd295c78eafcf06af1d91d",
-"db/d4d/class_background___extractor.html#ac163e881257ec2075efc48666ed4c9d0",
-"de/d82/watch__clock__test_8cpp_source.html",
-"dir_f5aa2036925efca15e61136d01981e37.html"
+"d2/df8/_objects_2_rulebase_2test_2test_200___t_e_m_p_l_a_t_e_8cpp.html#a03cd06783e876ef3985e2fb16caead5e",
+"d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a5e4933a1f7ae841f5c330aa661761a07",
+"d7/daf/_actuator___base_8hpp.html",
+"db/d90/_message___protocol_8hpp.html#aad4b1b44bb521301e30098e634070db4",
+"de/dd1/_o_t_a_8hpp.html",
+"functions_func_r.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

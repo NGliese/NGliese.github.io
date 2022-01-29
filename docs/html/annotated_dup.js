@@ -1,7 +1,6 @@
 var annotated_dup =
 [
     [ "FaultHandler_n", "d1/d27/namespace_fault_handler__n.html", "d1/d27/namespace_fault_handler__n" ],
-    [ "MyLibrary", "d5/d34/namespace_my_library.html", "d5/d34/namespace_my_library" ],
     [ "ActiveCurrentSensor", "d6/da0/class_active_current_sensor.html", "d6/da0/class_active_current_sensor" ],
     [ "Actuator_Base", "dd/d11/class_actuator___base.html", "dd/d11/class_actuator___base" ],
     [ "ADC", "d0/deb/namespace_3global_scope_4.html#d6/dec/class_a_d_c", null ],
