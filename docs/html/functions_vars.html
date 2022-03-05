@@ -86,6 +86,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 &#160;
 
 <h3><a id="index_a"></a>- a -</h3><ul>
+<li>adc_conf
+: <a class="el" href="d3/dab/class_distance_sensor_controller.html#a393b7b070ae0a6c4aa449d198362ee01">DistanceSensorController::config</a>
+</li>
 <li>amount_of_connections
 : <a class="el" href="d5/d8a/class_connected_components.html#a1b804d03637395195d3835931799fd64">ConnectedComponents::container_t</a>
 </li>
@@ -101,6 +104,12 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <h3><a id="index_b"></a>- b -</h3><ul>
 <li>background
 : <a class="el" href="db/d4d/class_background___extractor.html#a48b23efe23cd8d67504c16b8b316080d">Background_Extractor</a>
+</li>
+<li>buffer_external_conf
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#add6cf0a4b183afe263fadb8f6011a90a">SensorControllerBase::init_conf</a>
+</li>
+<li>buffer_raw_conf
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#a75253f7c536fc8775c3458f94cac4bba">SensorControllerBase::init_conf</a>
 </li>
 <li>buffer_size
 : <a class="el" href="d5/d81/class_m_q_t_t___message.html#a044ccec1109bca6ac94df9fda5e4dedd">MQTT_Message::msg_conf_t</a>
@@ -143,6 +152,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>error_code
 : <a class="el" href="d3/d42/class_logger.html#a6ca6fbfbfc3e8ef93e396f51d2c249df">Logger::msg_t</a>
 </li>
+<li>error_code_id
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#a1fb8fb97ea0b3ae7a2a2612b042cd094">SensorControllerBase::init_conf</a>
+</li>
 </ul>
 
 
@@ -173,6 +185,12 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>id
 : <a class="el" href="db/d90/_message___protocol_8hpp.html#a3ff6cd54b67e2dd86b32445f6803f18a">msg_control_t</a>
 </li>
+<li>init_conf
+: <a class="el" href="d3/dab/class_distance_sensor_controller.html#a55683387c8db763d4575418960e2dddc">DistanceSensorController::config</a>
+</li>
+<li>is_high
+: <a class="el" href="d1/d2c/class_g_p_i_o___a_p_i.html#a6138520c91e53214a658110934492fe2">GPIO_API</a>
+</li>
 <li>is_Output
 : <a class="el" href="d1/d2c/class_g_p_i_o___a_p_i.html#a3bd692b36d6c839725dd74ea1e58f889">GPIO_API</a>
 </li>
@@ -202,6 +220,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>m_adc
 : <a class="el" href="d6/da0/class_active_current_sensor.html#a097fd8f574d98d233eb7b4f9dd5fc8be">ActiveCurrentSensor</a>
+, <a class="el" href="d3/dab/class_distance_sensor_controller.html#a2b13011cafd8218dfe63b4aa0dc79b94">DistanceSensorController</a>
 </li>
 <li>m_background
 : <a class="el" href="db/d4d/class_background___extractor.html#a60e5ed6a424fda96a2747b749d599410">Background_Extractor</a>
@@ -209,6 +228,12 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>m_buffer
 : <a class="el" href="da/dd6/class_message___protocol.html#adbaa301868a03e56ca7de7f3bbd1e832">Message_Protocol</a>
 , <a class="el" href="d2/d8d/class_query_message_base.html#a4722112337c685ed8fbdd35b2c4c7890">QueryMessageBase&lt; T &gt;</a>
+</li>
+<li>m_buffer_external
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#ab39a8413740dd0b3cbc516726c35ff52">SensorControllerBase</a>
+</li>
+<li>m_buffer_raw
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#ad49a96ca232262225715016f675c7286">SensorControllerBase</a>
 </li>
 <li>m_buffer_size
 : <a class="el" href="d5/d81/class_m_q_t_t___message.html#a33159fb5b91ec4a1da76cf3cffb73ce5">MQTT_Message</a>
@@ -236,12 +261,24 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>m_data
 : <a class="el" href="d5/d81/class_m_q_t_t___message.html#a47451d08143a0e860e3cf7abd0ae386a">MQTT_Message</a>
 </li>
+<li>m_data_ready_flag
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#ae60d6e03ce8c2c30f2e54619f9178a10">SensorControllerBase</a>
+</li>
+<li>m_delay
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#afc5d1af980abfd0307249836000e9712">SensorControllerBase</a>
+</li>
+<li>m_delay_ms
+: <a class="el" href="d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">DataBroker</a>
+</li>
 <li>m_delay_sec
 : <a class="el" href="d6/d9b/class_maintainer.html#a4b37b4cb6700e70a6affa52503ba6e80">Maintainer</a>
 </li>
 <li>m_entity_id
 : <a class="el" href="d5/d81/class_m_q_t_t___message.html#a4f737567c655d1b16c056f7e303acaa4">MQTT_Message</a>
 , <a class="el" href="d2/d8d/class_query_message_base.html#aa499c049081bf060ebf9c72e03ded8a0">QueryMessageBase&lt; T &gt;</a>
+</li>
+<li>m_error_id
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#a4091c67975117085dc3c96060986fb7f">SensorControllerBase</a>
 </li>
 <li>m_faulthandler
 : <a class="el" href="d6/d9b/class_maintainer.html#a8198cbd2912df701a4da1b1b93947215">Maintainer</a>
@@ -284,6 +321,7 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 </li>
 <li>m_mqtt
 : <a class="el" href="d6/da0/class_active_current_sensor.html#a0fc34d65a039512d1c7482c5ec3cdae8">ActiveCurrentSensor</a>
+, <a class="el" href="d9/d88/class_sensor_controller_base.html#ace233e14eae60238b391d3d2a6924bbf">SensorControllerBase</a>
 </li>
 <li>m_msg
 : <a class="el" href="d6/da0/class_active_current_sensor.html#a584456130c8e24165c5e49a3310ff49e">ActiveCurrentSensor</a>
@@ -324,12 +362,18 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>m_queue
 : <a class="el" href="d6/da0/class_active_current_sensor.html#a42f651e515734c20618c372409080d96">ActiveCurrentSensor</a>
 </li>
+<li>m_queue_array
+: <a class="el" href="d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">DataBroker</a>
+</li>
 <li>m_sal
 : <a class="el" href="dc/dc2/classhttp__interface.html#a7c1f7e97af2c225937c48fcb3b05cc35">http_interface</a>
 </li>
 <li>m_semaphore
 : <a class="el" href="d6/d90/class_free_r_t_o_s_1_1_semaphore.html#a3ead5e0e5be1f55bc1cb5637c1a28cd9">FreeRTOS::Semaphore</a>
 , <a class="el" href="d5/d81/class_m_q_t_t___message.html#ac8046ada6b03075a7642cade18e14332">MQTT_Message</a>
+</li>
+<li>m_sensor
+: <a class="el" href="d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">DataBroker</a>
 </li>
 <li>m_server
 : <a class="el" href="d2/d2b/class_curl___s_a_l.html#a2a7fe7d91027317eea65e88b4aca7e15">Curl_SAL</a>
@@ -347,6 +391,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 <li>m_taskName
 : <a class="el" href="d7/d6d/class_task.html#ae34ca52fc6ff0503c4ab58050c9a09b3">Task</a>
 </li>
+<li>m_time_between_adc_measurements
+: <a class="el" href="d3/dab/class_distance_sensor_controller.html#a79eb38bbb30d721dfbe9823aef7769d0">DistanceSensorController</a>
+</li>
 <li>m_type
 : <a class="el" href="db/d4d/class_background___extractor.html#a23eb3841a9664e808a7e6a96a259b77b">Background_Extractor::background_conf_t</a>
 </li>
@@ -363,6 +410,9 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 : <a class="el" href="dd/d11/class_actuator___base.html#ae5948116e761e0bd79b0d736474764a8">Actuator_Base&lt; T, U &gt;</a>
 , <a class="el" href="d6/d90/class_free_r_t_o_s_1_1_semaphore.html#a0e4a00939e573dd1a2ed1915716fcabb">FreeRTOS::Semaphore</a>
 , <a class="el" href="d1/da4/class_sensor___base.html#a697cc2062207f7812468f364a2a365d1">Sensor_Base&lt; T, U &gt;</a>
+</li>
+<li>m_want_data_flag
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#a03caf8659ccf3fabd47c73e8d54969d3">SensorControllerBase</a>
 </li>
 <li>m_watch
 : <a class="el" href="da/d60/class_watchdog___base.html#a4f1fc60aa0244a1fc23e06da9ca859e6">Watchdog_Base&lt; T &gt;</a>
@@ -434,6 +484,12 @@ $(document).ready(function(){initNavTree('functions_vars.html',''); initResizabl
 
 
 <h3><a id="index_t"></a>- t -</h3><ul>
+<li>task_delay
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#a5fd66caa8e8c578072a3704c468570ae">SensorControllerBase::init_conf</a>
+</li>
+<li>time_between_adc_measurements
+: <a class="el" href="d3/dab/class_distance_sensor_controller.html#ac38b0b0f740a7d5e31fd8609d5004518">DistanceSensorController::config</a>
+</li>
 <li>time_stamp
 : <a class="el" href="db/d90/_message___protocol_8hpp.html#abc063639be47a8a4797e8dcd3cc68773">msg_data_t</a>
 , <a class="el" href="d2/d8d/class_query_message_base.html#ab3d5003028c9ebf1c98da0f5ac3d2ace">QueryMessageBase&lt; T &gt;::msg_data_t</a>

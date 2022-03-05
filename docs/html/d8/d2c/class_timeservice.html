@@ -210,15 +210,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00189">189</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;{</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">if</span>(time.tv_usec &gt; 1000)</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="comment">// add the milisec part</span></div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        <span class="keywordflow">return</span> (time.tv_sec * 1000) + (time.tv_usec / 1000);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    }</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">return</span> time.tv_sec * 1000;</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00194">194</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;{</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordflow">if</span>(time.tv_usec &gt; 1000)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="comment">// add the milisec part</span></div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;        <span class="keywordflow">return</span> (time.tv_sec * 1000) + (time.tv_usec / 1000);</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordflow">return</span> time.tv_sec * 1000;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../d8/d50/test_2src_2time__test_8cpp.html#a67baf43c8da95f3e9e8036e9720ec55d">IGNORE_TEST()</a>, and <a class="el" href="../../d8/d50/test_2src_2time__test_8cpp.html#a5297c72719550373a9cd15d23aeec1c0">TEST()</a>.</p>
 
@@ -247,23 +247,23 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00153">153</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;{</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    time_t now = time(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keyword">struct </span>tm tstruct</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    };</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    <span class="keywordtype">char</span> buf[80];</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    tstruct = *localtime(&amp;now);</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    strftime(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%Y%m%d_%H%M_%S&quot;</span>, &amp;tstruct);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> ms = <a class="code" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">Timeservice::getTimeNow</a>() % 1000;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    std::string str = buf;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    str.append(<span class="stringliteral">&quot;_&quot;</span>);</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    str.append(std::to_string(ms));</div>
+<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00158">158</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    time_t now = time(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <span class="keyword">struct </span>tm tstruct</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    {</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    };</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">char</span> buf[80];</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    tstruct = *localtime(&amp;now);</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    strftime(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%Y%m%d_%H%M_%S&quot;</span>, &amp;tstruct);</div>
 <div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keywordflow">return</span> str;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;}</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> ms = <a class="code" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">Timeservice::getTimeNow</a>() % 1000;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;    std::string str = buf;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;    str.append(<span class="stringliteral">&quot;_&quot;</span>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    str.append(std::to_string(ms));</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160; </div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">getTimeNow()</a>.</p>
 
@@ -295,23 +295,23 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00171">171</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    time_t now = time.tv_sec;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keyword">struct </span>tm tstruct</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    };</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    <span class="keywordtype">char</span> buf[80];</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    tstruct = *localtime(&amp;now);</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    strftime(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%Y%m%d_%H%M_%S&quot;</span>, &amp;tstruct);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> ms = <a class="code" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">Timeservice::getTimeNow</a>() % 1000;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    std::string str = buf;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    str.append(<span class="stringliteral">&quot;_&quot;</span>);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    str.append(std::to_string(ms));</div>
+<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;{</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    time_t now = time.tv_sec;</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keyword">struct </span>tm tstruct</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    };</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordtype">char</span> buf[80];</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    tstruct = *localtime(&amp;now);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    strftime(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%Y%m%d_%H%M_%S&quot;</span>, &amp;tstruct);</div>
 <div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keywordflow">return</span> str;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;}</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <span class="keyword">const</span> <span class="keyword">auto</span> ms = <a class="code" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">Timeservice::getTimeNow</a>() % 1000;</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    std::string str = buf;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    str.append(<span class="stringliteral">&quot;_&quot;</span>);</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;    str.append(std::to_string(ms));</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">getTimeNow()</a>.</p>
 
@@ -349,12 +349,12 @@ Static Public Member Functions</h2></td></tr>
 </ul>
 </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00112">112</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;               std::chrono::system_clock::now().time_since_epoch())</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        .count();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00117">117</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;{</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;               std::chrono::system_clock::now().time_since_epoch())</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        .count();</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -392,12 +392,17 @@ Static Public Member Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00095">95</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;               std::chrono::system_clock::now().time_since_epoch())</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        .count();</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#ifdef __WITH_MOCK_TIME__ // can be used to overwrite the timestamp in unit tests</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">return</span> 1000UL;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordflow">return</span> std::chrono::duration_cast&lt;std::chrono::milliseconds&gt;(</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;               std::chrono::system_clock::now().time_since_epoch())</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        .count();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d2/d8d/class_query_message_base.html#ad5a56d730859819813208209bdf2bbc7">QueryMessageBase&lt; float &gt;::addData()</a>, <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">MQTT_Message::addData()</a>, <a class="el" href="../../d8/d2c/class_timeservice.html#a7537ddad504b6fc8cde486394ecb67f1">getCurrentDate()</a>, <a class="el" href="../../d8/d50/test_2src_2time__test_8cpp.html#a67baf43c8da95f3e9e8036e9720ec55d">IGNORE_TEST()</a>, <a class="el" href="../../d1/dc6/class_watch___clock.html#a797310e3247e48080df0c72d292ffea4">Watch_Clock::initialize()</a>, <a class="el" href="../../d6/d9b/class_maintainer.html#a0e9da469d531b4303c7f5c9221c799c8">Maintainer::periodic_restart()</a>, <a class="el" href="../../d1/dc6/class_watch___clock.html#a38eaedcd4f8136dacf664c13c76239ca">Watch_Clock::reset()</a>, <a class="el" href="../../d5/d7e/querytools__test_8cpp.html#a4fd36f843d7ceadde81e6cdca8ebe176">TEST()</a>, <a class="el" href="../../d8/d2c/class_timeservice.html#adc5559661c5f0e464615f413387b82ca">wait_untill_ms()</a>, <a class="el" href="../../d1/dc6/class_watch___clock.html#a84eeaa03e1c1ec6fb66d17e61fd4fcad">Watch_Clock::watch()</a>, <a class="el" href="../../d1/dc6/class_watch___clock.html#ad17dd139c4df2a063b730d31296fefb1">Watch_Clock::Watch_Clock()</a>, and <a class="el" href="../../d3/d42/class_logger.html#a60511e99ca649bb2fcb49ebb5928be30">Logger::write()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d2/d8d/class_query_message_base.html#ad5a56d730859819813208209bdf2bbc7">QueryMessageBase&lt; float &gt;::addData()</a>, <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">MQTT_Message::addData()</a>, <a class="el" href="../../d8/d2c/class_timeservice.html#a7537ddad504b6fc8cde486394ecb67f1">getCurrentDate()</a>, <a class="el" href="../../d8/d50/test_2src_2time__test_8cpp.html#a67baf43c8da95f3e9e8036e9720ec55d">IGNORE_TEST()</a>, <a class="el" href="../../d1/dc6/class_watch___clock.html#a797310e3247e48080df0c72d292ffea4">Watch_Clock::initialize()</a>, <a class="el" href="../../d3/dab/class_distance_sensor_controller.html#af7164c37a9c2245cdc40de2cbf4c57a5">DistanceSensorController::main_function()</a>, <a class="el" href="../../d6/d9b/class_maintainer.html#a0e9da469d531b4303c7f5c9221c799c8">Maintainer::periodic_restart()</a>, <a class="el" href="../../d1/dc6/class_watch___clock.html#a38eaedcd4f8136dacf664c13c76239ca">Watch_Clock::reset()</a>, <a class="el" href="../../d9/db8/_error_code_parser__test_8cpp.html#af320f1a76ce8005cfb2eebd33f234e32">TEST()</a>, <a class="el" href="../../db/d2e/class_error_code_parser.html#a3451d8da40acc193c67994347a55ca74">ErrorCodeParser::toString()</a>, <a class="el" href="../../d8/d2c/class_timeservice.html#adc5559661c5f0e464615f413387b82ca">wait_untill_ms()</a>, <a class="el" href="../../d1/dc6/class_watch___clock.html#a84eeaa03e1c1ec6fb66d17e61fd4fcad">Watch_Clock::watch()</a>, <a class="el" href="../../d1/dc6/class_watch___clock.html#ad17dd139c4df2a063b730d31296fefb1">Watch_Clock::Watch_Clock()</a>, and <a class="el" href="../../d3/d42/class_logger.html#a60511e99ca649bb2fcb49ebb5928be30">Logger::write()</a>.</p>
 
 </div>
 </div>
@@ -425,18 +430,18 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>function to return the year, month and day in the formate "YYYYMMDD" as an example : "20211102" @usage this function can be used for folder structure if we want to save images to a given location with seperation for each new day. </p>
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00199">199</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;{</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    time_t now = time(<span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keyword">struct </span>tm tstruct</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    {</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    };</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordtype">char</span> buf[80];</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    tstruct = *localtime(&amp;now);</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    strftime(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%Y%m%d&quot;</span>, &amp;tstruct);</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    std::string str = buf;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordflow">return</span> str;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00204">204</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;{</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    time_t now = time(<span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <span class="keyword">struct </span>tm tstruct</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    };</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">char</span> buf[80];</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    tstruct = *localtime(&amp;now);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    strftime(buf, <span class="keyword">sizeof</span>(buf), <span class="stringliteral">&quot;%Y%m%d&quot;</span>, &amp;tstruct);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    std::string str = buf;</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="keywordflow">return</span> str;</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../d8/d50/test_2src_2time__test_8cpp.html#ae590452f04144e1588a4ca5d927cb259">TEST()</a>.</p>
 
@@ -529,7 +534,7 @@ Static Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>, and <a class="el" href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d9b/class_maintainer.html#ac79dc7d7835a20c8f1927ff195aa94e7">Maintainer::checkOTAUpdate()</a>, <a class="el" href="../../dd/d84/class_fault___handler.html#a7d2101d68cd182ddd66b389ddf83aa35">Fault_Handler::handle()</a>, <a class="el" href="../../d8/d50/test_2src_2time__test_8cpp.html#a67baf43c8da95f3e9e8036e9720ec55d">IGNORE_TEST()</a>, <a class="el" href="../../d6/da0/class_active_current_sensor.html#adc70f1e955ff2692b8e02ceaad5fbad5">ActiveCurrentSensor::main_function()</a>, <a class="el" href="../../d9/d1c/class_m_g996_r.html#aa91309faaa9f314df0168a93239cb124">MG996R::setToMaximumSlowly()</a>, <a class="el" href="../../d9/d1c/class_m_g996_r.html#a689400ed6a28c80b634c5507035e33c3">MG996R::setToMinimumSlowly()</a>, and <a class="el" href="../../d8/d2c/class_timeservice.html#adc5559661c5f0e464615f413387b82ca">wait_untill_ms()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/d9b/class_maintainer.html#ac79dc7d7835a20c8f1927ff195aa94e7">Maintainer::checkOTAUpdate()</a>, <a class="el" href="../../dd/d84/class_fault___handler.html#a7d2101d68cd182ddd66b389ddf83aa35">Fault_Handler::handle()</a>, <a class="el" href="../../d8/d50/test_2src_2time__test_8cpp.html#a67baf43c8da95f3e9e8036e9720ec55d">IGNORE_TEST()</a>, <a class="el" href="../../d3/dab/class_distance_sensor_controller.html#af7164c37a9c2245cdc40de2cbf4c57a5">DistanceSensorController::main_function()</a>, <a class="el" href="../../d6/da0/class_active_current_sensor.html#adc70f1e955ff2692b8e02ceaad5fbad5">ActiveCurrentSensor::main_function()</a>, <a class="el" href="../../d9/db3/class_data_broker.html#a85cc83c2c59b66fdd9c5b4bcf8a9538d">DataBroker::run()</a>, <a class="el" href="../../d9/d88/class_sensor_controller_base.html#a262a0454d780500d8cbdb9289b48bb47">SensorControllerBase::run()</a>, <a class="el" href="../../d9/d1c/class_m_g996_r.html#aa91309faaa9f314df0168a93239cb124">MG996R::setToMaximumSlowly()</a>, <a class="el" href="../../d9/d1c/class_m_g996_r.html#a689400ed6a28c80b634c5507035e33c3">MG996R::setToMinimumSlowly()</a>, and <a class="el" href="../../d8/d2c/class_timeservice.html#adc5559661c5f0e464615f413387b82ca">wait_untill_ms()</a>.</p>
 
 </div>
 </div>
@@ -616,39 +621,39 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00119">119</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;{</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#ifdef __DEBUG__</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&gt;&gt; Timeservice::wait_untill_ms &gt;&gt; &quot;</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="comment">// Executable code:</span></div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    uint64_t time_now = <a class="code" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">getTimeNow</a>();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordflow">if</span>(start_time &gt; time_now)</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// we have to please the watchdog even with an error</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="../../d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961">wait_ms</a>(ms_to_wait);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea15523e895b8d5bfc3a8a2a7e5c8dfdb1">GE_FAIL</a>;</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    }</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keyword">auto</span> time_diff = time_now - start_time;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <span class="keywordflow">if</span>(time_diff &gt; ms_to_wait)</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;<span class="preprocessor">#ifdef __DEBUG__</span></div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;time_diff : &quot;</span> &lt;&lt; (int)time_diff &lt;&lt; <span class="stringliteral">&quot; ms to wait : &quot;</span> &lt;&lt; (<span class="keywordtype">int</span>)ms_to_wait</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="comment">// we have to please the watchdog even with an error</span></div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        <a class="code" href="../../d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961">wait_ms</a>(ms_to_wait);</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eab295130e8c5b6693221b4c602ce30245">GE_TIMEOUT</a>;</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html#l00124">124</a> of file <a class="el" href="../../df/dc9/_timeservice_8cpp_source.html">Timeservice.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;{</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#ifdef __DEBUG__</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&gt;&gt; Timeservice::wait_untill_ms &gt;&gt; &quot;</span>);</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="comment">// Executable code:</span></div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    uint64_t time_now = <a class="code" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">getTimeNow</a>();</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordflow">if</span>(start_time &gt; time_now)</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">// we have to please the watchdog even with an error</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <a class="code" href="../../d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961">wait_ms</a>(ms_to_wait);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea15523e895b8d5bfc3a8a2a7e5c8dfdb1">GE_FAIL</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    }</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keyword">auto</span> time_diff = time_now - start_time;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordflow">if</span>(time_diff &gt; ms_to_wait)</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;<span class="preprocessor">#ifdef __DEBUG__</span></div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;time_diff : &quot;</span> &lt;&lt; (int)time_diff &lt;&lt; <span class="stringliteral">&quot; ms to wait : &quot;</span> &lt;&lt; (<span class="keywordtype">int</span>)ms_to_wait</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <a class="code" href="../../d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961">wait_ms</a>(ms_to_wait - time_diff);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#ifdef __DEBUG__</span></div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&lt;&lt; Timeservice::wait_untill_ms &lt;&lt; &quot;</span>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <span class="comment">// we have to please the watchdog even with an error</span></div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="../../d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961">wait_ms</a>(ms_to_wait);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eab295130e8c5b6693221b4c602ce30245">GE_TIMEOUT</a>;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    }</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;}</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;    <a class="code" href="../../d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961">wait_ms</a>(ms_to_wait - time_diff);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;<span class="preprocessor">#ifdef __DEBUG__</span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&lt;&lt; Timeservice::wait_untill_ms &lt;&lt; &quot;</span>);</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea15523e895b8d5bfc3a8a2a7e5c8dfdb1">GE_FAIL</a>, <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eab295130e8c5b6693221b4c602ce30245">GE_TIMEOUT</a>, <a class="el" href="../../d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48">getTimeNow()</a>, <a class="el" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>, <a class="el" href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, and <a class="el" href="../../d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961">wait_ms()</a>.</p>
 

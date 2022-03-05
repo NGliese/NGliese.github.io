@@ -12,6 +12,8 @@ var class_g_p_i_o___a_p_i =
     [ "setLow", "d1/d2c/class_g_p_i_o___a_p_i.html#aa8606a5a5d87cf157aa6d264e1399e2d", null ],
     [ "setToInput", "d1/d2c/class_g_p_i_o___a_p_i.html#a2bdb0279036f4589841719f7200e7411", null ],
     [ "setToOutput", "d1/d2c/class_g_p_i_o___a_p_i.html#ae0fd65f1c1e89af11346f7df8c7beed0", null ],
+    [ "toggle", "d1/d2c/class_g_p_i_o___a_p_i.html#a55f6e1c0292d1e639ed0c41b1d6b7370", null ],
+    [ "is_high", "d1/d2c/class_g_p_i_o___a_p_i.html#a6138520c91e53214a658110934492fe2", null ],
     [ "is_Output", "d1/d2c/class_g_p_i_o___a_p_i.html#a3bd692b36d6c839725dd74ea1e58f889", null ],
     [ "m_hal", "d1/d2c/class_g_p_i_o___a_p_i.html#ae98b06d92e4c5ff8ee7ae5e0566a6570", null ],
     [ "m_pin", "d1/d2c/class_g_p_i_o___a_p_i.html#a7953a43f6b83f3e47960cbf21dd3e378", null ]

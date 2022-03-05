@@ -48,7 +48,10 @@ var _database___i_d___base_8hpp =
       [ "DOGFEEDER_CURRENT_SENSOR", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a1236d6fec33d295324a64249e9f76a69", null ],
       [ "DOGFEEDER_DOOR_SIGNAL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab6cf239ed0731273d56a454f8f5818af", null ],
       [ "DOGFEEDER_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0acbe2ef4809883ffa5dd2360f003c8ee6", null ],
-      [ "DOGFEEDER_ACTUATOR_SET_POINT", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0abbea50e1417a86271d081fc3a0e6316b", null ]
+      [ "DOGFEEDER_ACTUATOR_SET_POINT", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0abbea50e1417a86271d081fc3a0e6316b", null ],
+      [ "WATERSTATION_RAW_ADC", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aa5ba6a7477fb165fae7e7c072ff41306", null ],
+      [ "WATERSTATION_COUNTER", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aa866b79cb391d74487b71360c264c12a", null ],
+      [ "WATERSTATION_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0abea170ab6ff33eab3a5cb29810674c39", null ]
     ] ],
     [ "map", "d5/d40/_database___i_d___base_8hpp.html#a40f5a6d0734142b0008af0e8a9c51013", null ]
 ];

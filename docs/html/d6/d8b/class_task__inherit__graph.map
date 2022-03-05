@@ -1,5 +1,9 @@
 <map id="Task" name="Task">
-<area shape="rect" id="node1" title="Encapsulate a runnable task." alt="" coords="145,5,275,303"/>
-<area shape="rect" id="node2" href="$d6/da0/class_active_current_sensor.html" title=" " alt="" coords="5,365,196,575"/>
-<area shape="rect" id="node3" href="$d6/d9b/class_maintainer.html" title=" " alt="" coords="220,351,421,589"/>
+<area shape="rect" id="node1" title="Encapsulate a runnable task." alt="" coords="318,5,449,303"/>
+<area shape="rect" id="node2" href="$d6/da0/class_active_current_sensor.html" title=" " alt="" coords="5,409,196,619"/>
+<area shape="rect" id="node3" href="$d9/db3/class_data_broker.html" title=" " alt="" coords="220,424,355,604"/>
+<area shape="rect" id="node4" href="$d6/d9b/class_maintainer.html" title=" " alt="" coords="379,395,580,633"/>
+<area shape="rect" id="node5" href="$d9/d88/class_sensor_controller_base.html" title=" " alt="" coords="604,351,803,677"/>
+<area shape="rect" id="node6" href="$d3/dab/class_distance_sensor_controller.html" title=" " alt="" coords="463,725,685,876"/>
+<area shape="rect" id="node7" href="$d3/d1b/class_sensor_controller_base___m_o_c_k.html" title=" " alt="" coords="710,747,955,854"/>
 </map>

@@ -7,5 +7,6 @@ var dir_e185953657720ba3a67126696ef566c7 =
     [ "PWMBase", "dir_5a8ae08cfe847631433021fb4227a90d.html", "dir_5a8ae08cfe847631433021fb4227a90d" ],
     [ "QueryBase", "dir_bca44d80d5a74645927dcf464289c401.html", "dir_bca44d80d5a74645927dcf464289c401" ],
     [ "SensorBase", "dir_8a6552bad49b01a8d1c30ddd736dda96.html", "dir_8a6552bad49b01a8d1c30ddd736dda96" ],
+    [ "SensorControllerBase", "dir_2ad1338e1cdce11c3a4014cab4fdb56f.html", "dir_2ad1338e1cdce11c3a4014cab4fdb56f" ],
     [ "WatchdogBase", "dir_9bdaf0e87e9ccaae1a86e0f6da9d7d83.html", "dir_9bdaf0e87e9ccaae1a86e0f6da9d7d83" ]
 ];

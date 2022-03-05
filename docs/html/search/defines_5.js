@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['log_5fprint_5ferror_1379',['LOG_PRINT_ERROR',['../da/d5f/_b_a_s_i_c_8hpp.html#a1e348c8264ea4b9a66f200ef9a6ab41f',1,'BASIC.hpp']]],
-  ['log_5fprint_5finfo_1380',['LOG_PRINT_INFO',['../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5',1,'BASIC.hpp']]]
+  ['global_5fmqtt_5fserver_1535',['GLOBAL_MQTT_SERVER',['../d4/d63/mqtt__api__v2_8hpp.html#af1b36c99ddef619aa99f00a2f2d90ba4',1,'mqtt_api_v2.hpp']]],
+  ['gpio_5fpin_1536',['GPIO_PIN',['../da/d5f/_b_a_s_i_c_8hpp.html#a18070f8c7140f8ab3e2992e4e8277305',1,'BASIC.hpp']]]
 ];

@@ -88,6 +88,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <h3><a id="index_m"></a>- m -</h3><ul>
 <li>m_adc
 : <a class="el" href="d6/da0/class_active_current_sensor.html#a097fd8f574d98d233eb7b4f9dd5fc8be">ActiveCurrentSensor</a>
+, <a class="el" href="d3/dab/class_distance_sensor_controller.html#a2b13011cafd8218dfe63b4aa0dc79b94">DistanceSensorController</a>
 </li>
 <li>m_background
 : <a class="el" href="db/d4d/class_background___extractor.html#a60e5ed6a424fda96a2747b749d599410">Background_Extractor</a>
@@ -95,6 +96,12 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>m_buffer
 : <a class="el" href="da/dd6/class_message___protocol.html#adbaa301868a03e56ca7de7f3bbd1e832">Message_Protocol</a>
 , <a class="el" href="d2/d8d/class_query_message_base.html#a4722112337c685ed8fbdd35b2c4c7890">QueryMessageBase&lt; T &gt;</a>
+</li>
+<li>m_buffer_external
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#ab39a8413740dd0b3cbc516726c35ff52">SensorControllerBase</a>
+</li>
+<li>m_buffer_raw
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#ad49a96ca232262225715016f675c7286">SensorControllerBase</a>
 </li>
 <li>m_buffer_size
 : <a class="el" href="d5/d81/class_m_q_t_t___message.html#a33159fb5b91ec4a1da76cf3cffb73ce5">MQTT_Message</a>
@@ -122,12 +129,24 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>m_data
 : <a class="el" href="d5/d81/class_m_q_t_t___message.html#a47451d08143a0e860e3cf7abd0ae386a">MQTT_Message</a>
 </li>
+<li>m_data_ready_flag
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#ae60d6e03ce8c2c30f2e54619f9178a10">SensorControllerBase</a>
+</li>
+<li>m_delay
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#afc5d1af980abfd0307249836000e9712">SensorControllerBase</a>
+</li>
+<li>m_delay_ms
+: <a class="el" href="d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">DataBroker</a>
+</li>
 <li>m_delay_sec
 : <a class="el" href="d6/d9b/class_maintainer.html#a4b37b4cb6700e70a6affa52503ba6e80">Maintainer</a>
 </li>
 <li>m_entity_id
 : <a class="el" href="d5/d81/class_m_q_t_t___message.html#a4f737567c655d1b16c056f7e303acaa4">MQTT_Message</a>
 , <a class="el" href="d2/d8d/class_query_message_base.html#aa499c049081bf060ebf9c72e03ded8a0">QueryMessageBase&lt; T &gt;</a>
+</li>
+<li>m_error_id
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#a4091c67975117085dc3c96060986fb7f">SensorControllerBase</a>
 </li>
 <li>m_faulthandler
 : <a class="el" href="d6/d9b/class_maintainer.html#a8198cbd2912df701a4da1b1b93947215">Maintainer</a>
@@ -170,6 +189,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 </li>
 <li>m_mqtt
 : <a class="el" href="d6/da0/class_active_current_sensor.html#a0fc34d65a039512d1c7482c5ec3cdae8">ActiveCurrentSensor</a>
+, <a class="el" href="d9/d88/class_sensor_controller_base.html#ace233e14eae60238b391d3d2a6924bbf">SensorControllerBase</a>
 </li>
 <li>m_msg
 : <a class="el" href="d6/da0/class_active_current_sensor.html#a584456130c8e24165c5e49a3310ff49e">ActiveCurrentSensor</a>
@@ -210,12 +230,18 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 <li>m_queue
 : <a class="el" href="d6/da0/class_active_current_sensor.html#a42f651e515734c20618c372409080d96">ActiveCurrentSensor</a>
 </li>
+<li>m_queue_array
+: <a class="el" href="d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">DataBroker</a>
+</li>
 <li>m_sal
 : <a class="el" href="dc/dc2/classhttp__interface.html#a7c1f7e97af2c225937c48fcb3b05cc35">http_interface</a>
 </li>
 <li>m_semaphore
 : <a class="el" href="d6/d90/class_free_r_t_o_s_1_1_semaphore.html#a3ead5e0e5be1f55bc1cb5637c1a28cd9">FreeRTOS::Semaphore</a>
 , <a class="el" href="d5/d81/class_m_q_t_t___message.html#ac8046ada6b03075a7642cade18e14332">MQTT_Message</a>
+</li>
+<li>m_sensor
+: <a class="el" href="d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">DataBroker</a>
 </li>
 <li>m_server
 : <a class="el" href="d2/d2b/class_curl___s_a_l.html#a2a7fe7d91027317eea65e88b4aca7e15">Curl_SAL</a>
@@ -232,6 +258,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 </li>
 <li>m_taskName
 : <a class="el" href="d7/d6d/class_task.html#ae34ca52fc6ff0503c4ab58050c9a09b3">Task</a>
+</li>
+<li>m_time_between_adc_measurements
+: <a class="el" href="d3/dab/class_distance_sensor_controller.html#a79eb38bbb30d721dfbe9823aef7769d0">DistanceSensorController</a>
 </li>
 <li>m_type
 : <a class="el" href="db/d4d/class_background___extractor.html#a23eb3841a9664e808a7e6a96a259b77b">Background_Extractor::background_conf_t</a>
@@ -250,6 +279,9 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 , <a class="el" href="d6/d90/class_free_r_t_o_s_1_1_semaphore.html#a0e4a00939e573dd1a2ed1915716fcabb">FreeRTOS::Semaphore</a>
 , <a class="el" href="d1/da4/class_sensor___base.html#a697cc2062207f7812468f364a2a365d1">Sensor_Base&lt; T, U &gt;</a>
 </li>
+<li>m_want_data_flag
+: <a class="el" href="d9/d88/class_sensor_controller_base.html#a03caf8659ccf3fabd47c73e8d54969d3">SensorControllerBase</a>
+</li>
 <li>m_watch
 : <a class="el" href="da/d60/class_watchdog___base.html#a4f1fc60aa0244a1fc23e06da9ca859e6">Watchdog_Base&lt; T &gt;</a>
 </li>
@@ -258,6 +290,10 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 </li>
 <li>main_function()
 : <a class="el" href="d6/da0/class_active_current_sensor.html#adc70f1e955ff2692b8e02ceaad5fbad5">ActiveCurrentSensor</a>
+, <a class="el" href="d9/db3/class_data_broker.html#a2c9a983fa248956f0e412c3e9ba2a540">DataBroker</a>
+, <a class="el" href="d3/dab/class_distance_sensor_controller.html#af7164c37a9c2245cdc40de2cbf4c57a5">DistanceSensorController</a>
+, <a class="el" href="d9/d88/class_sensor_controller_base.html#a66f29145727a61781e11b4e88ef391bc">SensorControllerBase</a>
+, <a class="el" href="d3/d1b/class_sensor_controller_base___m_o_c_k.html#af86bac78630d0f6d3429583e20421fdc">SensorControllerBase_MOCK</a>
 </li>
 <li>Maintainer()
 : <a class="el" href="d6/d9b/class_maintainer.html#ae41dc2cc77ebd1e35ee05677536a14d0">Maintainer</a>
@@ -282,7 +318,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 : <a class="el" href="dd/d84/class_fault___handler.html#ac1779aadf99dffa4386ac97b59e1600f">Fault_Handler::counters_t</a>
 </li>
 <li>Message_Protocol()
-: <a class="el" href="da/dd6/class_message___protocol.html#a46b4bc76d697657571283a466147fd36">Message_Protocol</a>
+: <a class="el" href="da/dd6/class_message___protocol.html#a20a501c735181e467418edb3611e1763">Message_Protocol</a>
 </li>
 <li>MG996R()
 : <a class="el" href="d9/d1c/class_m_g996_r.html#ac5b02528455f1a563e4d27f553ef8ed4">MG996R</a>
@@ -297,7 +333,7 @@ $(document).ready(function(){initNavTree('functions_m.html',''); initResizable()
 : <a class="el" href="d5/de7/classmqtt__api__v2.html#ace94088b4ff4413a39681aae96195846">mqtt_api_v2</a>
 </li>
 <li>MQTT_Message()
-: <a class="el" href="d5/d81/class_m_q_t_t___message.html#af01ecf74834d86dd468d287cea3085d6">MQTT_Message</a>
+: <a class="el" href="d5/d81/class_m_q_t_t___message.html#a20683ab25576d2d6583ab19fa085a0b5">MQTT_Message</a>
 </li>
 <li>msg
 : <a class="el" href="d3/d42/class_logger.html#ad0f1ca246210cf4653ae7326707a480d">Logger::msg_t</a>

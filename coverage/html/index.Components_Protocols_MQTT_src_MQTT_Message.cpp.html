@@ -269,18 +269,18 @@
             <td class="headerValue">Components/Protocols/MQTT/src/MQTT_Message.cpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">28</td>
-            <td class="headerTableEntry">46</td>
-            <td class="headerTableEntry" style="background-color:LightPink">60.9 %</td>
+            <td class="headerTableEntry">43</td>
+            <td class="headerTableEntry">56</td>
+            <td class="headerTableEntry" style="background-color:#FFFF55">76.8 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-01-29 09:55:50</td>
+            <td class="headerValue">2022-03-05 09:53:27</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">22</td>
-            <td class="headerTableEntry">60</td>
-            <td class="headerTableEntry" style="background-color:LightPink">36.7 %</td>
+            <td class="headerTableEntry">29</td>
+            <td class="headerTableEntry">68</td>
+            <td class="headerTableEntry" style="background-color:LightPink">42.6 %</td>
           </tr>
         </table>
       </td>
@@ -568,14 +568,14 @@
     <tr>
     <td align="right" class="lineno"><pre>39</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>513</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>153</pre></td>
     <td align="left" class="src coveredLine"><pre>MQTT_Message::MQTT_Message(const uint64_t&amp; entity_id, const size_t&amp; buffer_size)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>40</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 4 taken 513 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>513</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 4 taken 153 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>153</pre></td>
     <td align="left" class="src coveredLine"><pre>	: m_entity_id{entity_id}, m_buffer_size{buffer_size}, m_semaphore{"mqtt message"}</pre></td>
     </tr>
 
@@ -610,7 +610,7 @@
     <tr>
     <td align="right" class="lineno"><pre>45</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>513</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>153</pre></td>
     <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
@@ -624,22 +624,22 @@
     <tr>
     <td align="right" class="lineno"><pre>47</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>MQTT_Message::MQTT_Message(const msg_conf_t&amp; conf)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>108</pre></td>
+    <td align="left" class="src coveredLine"><pre>MQTT_Message::MQTT_Message(const msg_conf_t&amp; conf)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>48</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	: m_entity_id{map.at(conf.entity_id)}, m_buffer_size{conf.buffer_size}, m_semaphore{</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>108</pre></td>
+    <td align="left" class="src coveredLine"><pre>	: m_entity_id{map.at(conf.entity_id)}, m_buffer_size{conf.buffer_size}, m_semaphore{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>49</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>																				"mqtt message"}</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 4 taken 108 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>108</pre></td>
+    <td align="left" class="src coveredLine"><pre>																				"mqtt message"}</pre></td>
     </tr>
 
     <tr>
@@ -673,8 +673,8 @@
     <tr>
     <td align="right" class="lineno"><pre>54</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>108</pre></td>
+    <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -687,7 +687,7 @@
     <tr>
     <td align="right" class="lineno"><pre>56</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>513</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>261</pre></td>
     <td align="left" class="src coveredLine"><pre>MQTT_Message::~MQTT_Message() {}</pre></td>
     </tr>
 
@@ -701,7 +701,7 @@
     <tr>
     <td align="right" class="lineno"><pre>58</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>456</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>126</pre></td>
     <td align="left" class="src coveredLine"><pre>general_err_t MQTT_Message::addData(const uint64_t&amp; data)</pre></td>
     </tr>
 
@@ -749,8 +749,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>65</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 57 times">&check;</span><span class="takenBranch" title="Branch 2 taken 399 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>456</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 9 times">&check;</span><span class="takenBranch" title="Branch 2 taken 117 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>126</pre></td>
     <td align="left" class="src coveredLine"><pre>	if(m_buffer_size &lt;= m_data.size())</pre></td>
     </tr>
 
@@ -764,7 +764,7 @@
     <tr>
     <td align="right" class="lineno"><pre>67</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>57</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>9</pre></td>
     <td align="left" class="src coveredLine"><pre>		return GE_OUT_OF_RANGE;</pre></td>
     </tr>
 
@@ -819,8 +819,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>75</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 5 taken 399 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>399</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 5 taken 117 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>117</pre></td>
     <td align="left" class="src coveredLine"><pre>	m_data.push_back({Timeservice::getTimeNow(), data});</pre></td>
     </tr>
 
@@ -876,7 +876,7 @@
     <tr>
     <td align="right" class="lineno"><pre>83</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>399</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>117</pre></td>
     <td align="left" class="src coveredLine"><pre>	return GE_OK;</pre></td>
     </tr>
 
@@ -890,7 +890,7 @@
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>81</pre></td>
     <td align="left" class="src coveredLine"><pre>general_err_t MQTT_Message::addData(const uint64_t&amp; time, const uint64_t&amp; data)</pre></td>
     </tr>
 
@@ -938,8 +938,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>92</pre></td>
-    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span><span class="takenBranch" title="Branch 2 taken 114 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span><span class="takenBranch" title="Branch 2 taken 81 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>81</pre></td>
     <td align="left" class="src coveredLine"><pre>	if(m_buffer_size &lt;= m_data.size())</pre></td>
     </tr>
 
@@ -1008,8 +1008,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>102</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 114 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 81 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>81</pre></td>
     <td align="left" class="src coveredLine"><pre>	m_data.push_back({time, data});</pre></td>
     </tr>
 
@@ -1065,7 +1065,7 @@
     <tr>
     <td align="right" class="lineno"><pre>110</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>81</pre></td>
     <td align="left" class="src coveredLine"><pre>	return GE_OK;</pre></td>
     </tr>
 
@@ -1184,8 +1184,8 @@
     <tr>
     <td align="right" class="lineno"><pre>127</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
-    <td align="left" class="src coveredLine"><pre>const std::string MQTT_Message::toString(void)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>18</pre></td>
+    <td align="left" class="src coveredLine"><pre>const std::string MQTT_Message::toString(void) const</pre></td>
     </tr>
 
     <tr>
@@ -1225,8 +1225,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>133</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 114 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>228</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 18 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>36</pre></td>
     <td align="left" class="src coveredLine"><pre>	std::string str = "";</pre></td>
     </tr>
 
@@ -1281,15 +1281,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>141</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 114 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><span class="takenBranch" title="Branch 6 taken 114 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 18 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><span class="takenBranch" title="Branch 6 taken 18 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>18</pre></td>
     <td align="left" class="src coveredLine"><pre>	str = std::to_string(m_entity_id) + ",";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>142</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 5 taken 228 times">&check;</span><span class="takenBranch" title="Branch 6 taken 114 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>342</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 5 taken 36 times">&check;</span><span class="takenBranch" title="Branch 6 taken 18 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>54</pre></td>
     <td align="left" class="src coveredLine"><pre>	for(auto ele : m_data)</pre></td>
     </tr>
 
@@ -1302,29 +1302,29 @@
 
     <tr>
     <td align="right" class="lineno"><pre>144</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 228 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 228 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>228</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 36 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 36 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>36</pre></td>
     <td align="left" class="src coveredLine"><pre>		str += std::to_string(ele.first);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>145</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 228 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>228</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 36 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>36</pre></td>
     <td align="left" class="src coveredLine"><pre>		str += ",";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>146</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 228 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 228 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>228</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 36 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span><span class="takenBranch" title="Branch 5 taken 36 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>36</pre></td>
     <td align="left" class="src coveredLine"><pre>		str += std::to_string(ele.second);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>147</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 228 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>228</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 36 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>36</pre></td>
     <td align="left" class="src coveredLine"><pre>		str += ",";</pre></td>
     </tr>
 
@@ -1365,8 +1365,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>153</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 114 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 18 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>18</pre></td>
     <td align="left" class="src coveredLine"><pre>	str = str.substr(0, str.size() - 1);</pre></td>
     </tr>
 
@@ -1401,7 +1401,7 @@
     <tr>
     <td align="right" class="lineno"><pre>158</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>18</pre></td>
     <td align="left" class="src coveredLine"><pre>	return str;</pre></td>
     </tr>
 
@@ -1422,8 +1422,8 @@
     <tr>
     <td align="right" class="lineno"><pre>161</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t MQTT_Message::clear(void)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>9</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t MQTT_Message::clear(void)</pre></td>
     </tr>
 
     <tr>
@@ -1506,8 +1506,8 @@
     <tr>
     <td align="right" class="lineno"><pre>173</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	m_data.clear();</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>9</pre></td>
+    <td align="left" class="src coveredLine"><pre>	m_data.clear();</pre></td>
     </tr>
 
     <tr>
@@ -1562,8 +1562,8 @@
     <tr>
     <td align="right" class="lineno"><pre>181</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return GE_OK;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>9</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return GE_OK;</pre></td>
     </tr>
 
     <tr>
@@ -1758,7 +1758,7 @@
     <tr>
     <td align="right" class="lineno"><pre>209</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>54</pre></td>
     <td align="left" class="src coveredLine"><pre>general_err_t MQTT_Message::append(const MQTT_Message&amp; msg)</pre></td>
     </tr>
 
@@ -1799,8 +1799,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>215</pre></td>
-    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span><span class="takenBranch" title="Branch 2 taken 114 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span><span class="takenBranch" title="Branch 2 taken 54 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>54</pre></td>
     <td align="left" class="src coveredLine"><pre>	if(msg.isEmpty())</pre></td>
     </tr>
 
@@ -1827,8 +1827,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>219</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 114 times">&check;</span><span class="takenBranch" title="Branch 7 taken 114 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>228</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 54 times">&check;</span><span class="takenBranch" title="Branch 7 taken 54 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>108</pre></td>
     <td align="left" class="src coveredLine"><pre>	for(const auto&amp; ele : msg.getData())</pre></td>
     </tr>
 
@@ -1848,8 +1848,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>222</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 114 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 54 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>54</pre></td>
     <td align="left" class="src coveredLine"><pre>		this->addData(ele.first, ele.second);</pre></td>
     </tr>
 
@@ -1898,12 +1898,201 @@
     <tr>
     <td align="right" class="lineno"><pre>229</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>114</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>54</pre></td>
     <td align="left" class="src coveredLine"><pre>	return GE_OK;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>230</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>}</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>231</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>232</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>18</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t MQTT_Message::copyTo(MQTT_Message&amp; message)</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>233</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>234</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>#ifdef DEBUG</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>235</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	LOG_PRINT_INFO(LOG_TAG, ">> MQTT_Message::fcn >> ");</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>236</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>237</pre></td>
+    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span><span class="takenBranch" title="Branch 3 taken 18 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>18</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(this->getMaxAllowedBufferSize() != message.getMaxAllowedBufferSize())</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>238</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>239</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>		return GE_OVERFLOW;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>240</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>241</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 9 times">&check;</span><span class="takenBranch" title="Branch 3 taken 9 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>18</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(this->getEntityId() != message.getEntityId())</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>242</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>243</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>9</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return GE_OVERFLOW;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>244</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>245</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	// Executable code:</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>246</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>9</pre></td>
+    <td align="left" class="src coveredLine"><pre>	message.clear();</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>247</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 27 times">&check;</span><span class="takenBranch" title="Branch 7 taken 9 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>36</pre></td>
+    <td align="left" class="src coveredLine"><pre>	for(const auto&amp; ele : this->getData())</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>248</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>249</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>		// for each element in input message, call addData(...) to append internal buffer</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>250</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 27 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>27</pre></td>
+    <td align="left" class="src coveredLine"><pre>		message.addData(ele.first, ele.second);</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>251</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>252</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>#ifdef DEBUG</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>253</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	LOG_PRINT_INFO(LOG_TAG, "&lt;&lt;  MQTT_Message::fcn &lt;&lt; ");</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>254</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>255</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>256</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>9</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return GE_OK;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>257</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>}</pre></td>

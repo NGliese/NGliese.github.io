@@ -1,6 +1,7 @@
 var dir_a4226c5615a06a31e6344f5f3fd917e1 =
 [
     [ "ADC", "dir_d08a2c95d63bf7017339db133890c502.html", "dir_d08a2c95d63bf7017339db133890c502" ],
+    [ "DataBroker", "dir_f445fc28fc2e29345a003c63c6800467.html", "dir_f445fc28fc2e29345a003c63c6800467" ],
     [ "ErrorHandler", "dir_4816d2fb8abcfd1fbfb7e56b67e0baa1.html", "dir_4816d2fb8abcfd1fbfb7e56b67e0baa1" ],
     [ "FaultHandler", "dir_e64cbc928f36aa6d8866af1b55c205ef.html", "dir_e64cbc928f36aa6d8866af1b55c205ef" ],
     [ "Gpio", "dir_a295f4664fbb7c1328f722c2a133a43c.html", "dir_a295f4664fbb7c1328f722c2a133a43c" ],

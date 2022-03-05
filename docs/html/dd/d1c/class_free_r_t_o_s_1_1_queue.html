@@ -96,19 +96,18 @@ $(document).ready(function(){initNavTree('dd/d1c/class_free_r_t_o_s_1_1_queue.ht
 <div class="dynheader">
 Collaboration diagram for FreeRTOS::Queue:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d56/class_free_r_t_o_s_1_1_queue__coll__graph.svg" width="146" height="147"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d56/class_free_r_t_o_s_1_1_queue__coll__graph.svg" width="146" height="132"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4565d185aaa107d556c5756f7a959ebd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#a4565d185aaa107d556c5756f7a959ebd">Queue</a> ()</td></tr>
-<tr class="separator:a4565d185aaa107d556c5756f7a959ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca85189d49c0cfe4eb2fd4cb3683d391"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#aca85189d49c0cfe4eb2fd4cb3683d391">Queue</a> (size_t amount_of_items, size_t size_of_item)</td></tr>
+<tr class="memdesc:aca85189d49c0cfe4eb2fd4cb3683d391"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html">Queue</a> object.  <a href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#aca85189d49c0cfe4eb2fd4cb3683d391">More...</a><br /></td></tr>
+<tr class="separator:aca85189d49c0cfe4eb2fd4cb3683d391"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7fbe81fc9b21ddd393b57ab1884ac70"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#aa7fbe81fc9b21ddd393b57ab1884ac70">~Queue</a> ()</td></tr>
 <tr class="separator:aa7fbe81fc9b21ddd393b57ab1884ac70"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c4ec5fb2e02e6307551e365e987ac41"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#a8c4ec5fb2e02e6307551e365e987ac41">initialize</a> (size_t amount_of_items, size_t size_of_item)</td></tr>
-<tr class="memdesc:a8c4ec5fb2e02e6307551e365e987ac41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize the queue.  <a href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#a8c4ec5fb2e02e6307551e365e987ac41">More...</a><br /></td></tr>
-<tr class="separator:a8c4ec5fb2e02e6307551e365e987ac41"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3a4dd79e9be2efc579183f714cf0394"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#ab3a4dd79e9be2efc579183f714cf0394">send</a> (const void *const item_to_send, size_t delay)</td></tr>
+<tr class="memitem:ab3a4dd79e9be2efc579183f714cf0394"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#ab3a4dd79e9be2efc579183f714cf0394">send</a> (const void *const item_to_send, size_t delay)</td></tr>
 <tr class="memdesc:ab3a4dd79e9be2efc579183f714cf0394"><td class="mdescLeft">&#160;</td><td class="mdescRight">Send data to the queue.  <a href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#ab3a4dd79e9be2efc579183f714cf0394">More...</a><br /></td></tr>
 <tr class="separator:ab3a4dd79e9be2efc579183f714cf0394"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a494962c2d0763f2dfd2781b9701aa46d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#a494962c2d0763f2dfd2781b9701aa46d">recieve</a> (void *pvBuffer, size_t delay)</td></tr>
@@ -124,23 +123,58 @@ Private Attributes</h2></td></tr>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../d3/d1c/_free_r_t_o_s_8h_source.html#l00076">76</a> of file <a class="el" href="../../d3/d1c/_free_r_t_o_s_8h_source.html">FreeRTOS.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4565d185aaa107d556c5756f7a959ebd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4565d185aaa107d556c5756f7a959ebd">&#9670;&nbsp;</a></span>Queue()</h2>
+<a id="aca85189d49c0cfe4eb2fd4cb3683d391"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca85189d49c0cfe4eb2fd4cb3683d391">&#9670;&nbsp;</a></span>Queue()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">FreeRTOS::Queue::Queue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>amount_of_items</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">size_t&#160;</td>
+          <td class="paramname"><em>size_of_item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00309">309</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;{}</div>
+<p>Construct a new <a class="el" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html">Queue</a> object. </p>
+<p>Initialize the queue.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir"></td><td class="paramname">amount_of_items</td><td></td></tr>
+    <tr><td class="paramdir"></td><td class="paramname">size_of_item</td><td>: use sizeof(ITEM_OF_INTEREST)</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>of items </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>of one item </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00315">315</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;{</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a> = xQueueCreate(amount_of_items, size_of_item);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -159,57 +193,12 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00311">311</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;{}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00322">322</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;{}</div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8c4ec5fb2e02e6307551e365e987ac41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c4ec5fb2e02e6307551e365e987ac41">&#9670;&nbsp;</a></span>initialize()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int FreeRTOS::Queue::initialize </td>
-          <td>(</td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>amount_of_items</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">size_t&#160;</td>
-          <td class="paramname"><em>size_of_item</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Initialize the queue. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">amount</td><td>of items </td></tr>
-    <tr><td class="paramdir">[in]</td><td class="paramname">size</td><td>of one item </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00317">317</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;{</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a> = xQueueCreate(amount_of_items, size_of_item);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a494962c2d0763f2dfd2781b9701aa46d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a494962c2d0763f2dfd2781b9701aa46d">&#9670;&nbsp;</a></span>recieve()</h2>
 
@@ -245,24 +234,24 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00352">352</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;{</div>
-<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a> == 0)</div>
-<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;    { <span class="comment">// error</span></div>
-<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;    }</div>
-<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
-<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <a class="code" href="../../d5/dc5/_task_8h.html#a5f27cdb72de7fe4c5533003191dd6cfd">BaseType_t</a> xStatus = xQueueReceive(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a>, pvBuffer, <a class="code" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">delay</a>);</div>
-<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;    <span class="keywordflow">if</span>(xStatus != pdPASS)</div>
-<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;    {</div>
-<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; NOT ABLE TO RECIEVE FROM QUEUE!!&quot;</span></div>
-<div class="line"><a name="l00363"></a><span class="lineno">  363</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00365"></a><span class="lineno">  365</span>&#160;    }</div>
-<div class="line"><a name="l00366"></a><span class="lineno">  366</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00367"></a><span class="lineno">  367</span>&#160;    <span class="comment">// ok</span></div>
-<div class="line"><a name="l00368"></a><span class="lineno">  368</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00369"></a><span class="lineno">  369</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00343">343</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;{</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a> == 0)</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;    { <span class="comment">// error</span></div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;    }</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;    <a class="code" href="../../d5/dc5/_task_8h.html#a5f27cdb72de7fe4c5533003191dd6cfd">BaseType_t</a> xStatus = xQueueReceive(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a>, pvBuffer, <a class="code" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">delay</a>);</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;    <span class="keywordflow">if</span>(xStatus != pdPASS)</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;    {</div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; NOT ABLE TO RECIEVE FROM QUEUE!!&quot;</span></div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;    }</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;    <span class="comment">// ok</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d5/dc5/_task_8h.html#a5f27cdb72de7fe4c5533003191dd6cfd">BaseType_t</a>, and <a class="el" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">basic_utils::delay()</a>.</p>
 
@@ -275,6 +264,9 @@ Private Attributes</h2></td></tr>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int FreeRTOS::Queue::send </td>
@@ -294,6 +286,11 @@ Private Attributes</h2></td></tr>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Send data to the queue. </p>
@@ -305,24 +302,24 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00329">329</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;{</div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a> == 0)</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    { <span class="comment">// error</span></div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;    }</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;    <a class="code" href="../../d5/dc5/_task_8h.html#a5f27cdb72de7fe4c5533003191dd6cfd">BaseType_t</a> xStatus = xQueueSend(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a>, item_to_send, <a class="code" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">delay</a>);</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    <span class="keywordflow">if</span>(xStatus != pdPASS)</div>
-<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;    {</div>
-<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; NOT ABLE TO SEND TO QUEUE!!&quot;</span></div>
-<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;    }</div>
-<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;    <span class="comment">// ok</span></div>
-<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00324">324</a> of file <a class="el" href="../../da/d25/_free_r_t_o_s_8cpp_source.html">FreeRTOS.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;{</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a> == 0)</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    { <span class="comment">// error</span></div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;    }</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;    <a class="code" href="../../d5/dc5/_task_8h.html#a5f27cdb72de7fe4c5533003191dd6cfd">BaseType_t</a> xStatus = xQueueSend(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">m_handle</a>, item_to_send, <a class="code" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">delay</a>);</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;    <span class="keywordflow">if</span>(xStatus != pdPASS)</div>
+<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;    {</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; NOT ABLE TO SEND TO QUEUE!!&quot;</span></div>
+<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;                  &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;    <span class="comment">// ok</span></div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d5/dc5/_task_8h.html#a5f27cdb72de7fe4c5533003191dd6cfd">BaseType_t</a>, and <a class="el" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">basic_utils::delay()</a>.</p>
 
@@ -351,7 +348,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d3/d1c/_free_r_t_o_s_8h_source.html#l00089">89</a> of file <a class="el" href="../../d3/d1c/_free_r_t_o_s_8h_source.html">FreeRTOS.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d3/d1c/_free_r_t_o_s_8h_source.html#l00105">105</a> of file <a class="el" href="../../d3/d1c/_free_r_t_o_s_8h_source.html">FreeRTOS.h</a>.</p>
 
 </div>
 </div>
@@ -361,7 +358,7 @@ Private Attributes</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_free_r_t_o_s_1_1_queue_html_adc169212de6d714107c8875a3ce8aa97"><div class="ttname"><a href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">FreeRTOS::Queue::m_handle</a></div><div class="ttdeci">int m_handle</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1c/_free_r_t_o_s_8h_source.html#l00089">FreeRTOS.h:89</a></div></div>
+<div class="ttc" id="aclass_free_r_t_o_s_1_1_queue_html_adc169212de6d714107c8875a3ce8aa97"><div class="ttname"><a href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#adc169212de6d714107c8875a3ce8aa97">FreeRTOS::Queue::m_handle</a></div><div class="ttdeci">int m_handle</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1c/_free_r_t_o_s_8h_source.html#l00105">FreeRTOS.h:105</a></div></div>
 <div class="ttc" id="anamespacebasic__utils_html_a2d49b92733f3d61bc70d860dcd828e45"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">basic_utils::delay</a></div><div class="ttdeci">void delay(const uint32_t &amp;delay_ms)</div></div>
 <div class="ttc" id="a_task_8h_html_a5f27cdb72de7fe4c5533003191dd6cfd"><div class="ttname"><a href="../../d5/dc5/_task_8h.html#a5f27cdb72de7fe4c5533003191dd6cfd">BaseType_t</a></div><div class="ttdeci">#define BaseType_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc5/_task_8h_source.html#l00018">Task.h:18</a></div></div>
 <!-- start footer part -->

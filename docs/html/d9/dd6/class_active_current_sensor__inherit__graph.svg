@@ -15,11 +15,11 @@
 <polygon fill="#bfbfbf" stroke="black" points="0,-0.5 0,-156.5 143,-156.5 143,-0.5 0,-0.5"/>
 <text text-anchor="middle" x="71.5" y="-144.5" font-family="Helvetica,sans-Serif" font-size="10.00">ActiveCurrentSensor</text>
 <polyline fill="none" stroke="black" points="0,-137.5 143,-137.5 "/>
-<text text-anchor="start" x="8" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_queue</text>
-<text text-anchor="start" x="8" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_adc</text>
-<text text-anchor="start" x="8" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_msg</text>
-<text text-anchor="start" x="8" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_mqtt</text>
-<text text-anchor="start" x="8" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_isRunning</text>
+<text text-anchor="start" x="8" y="-125.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_adc</text>
+<text text-anchor="start" x="8" y="-114.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_msg</text>
+<text text-anchor="start" x="8" y="-103.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_mqtt</text>
+<text text-anchor="start" x="8" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_isRunning</text>
+<text text-anchor="start" x="8" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_queue</text>
 <polyline fill="none" stroke="black" points="0,-74.5 143,-74.5 "/>
 <text text-anchor="start" x="8" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ActiveCurrentSensor()</text>
 <text text-anchor="start" x="8" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~ActiveCurrentSensor()</text>

@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['max_5fdata_5fvalue_1381',['MAX_DATA_VALUE',['../d1/de8/_curl___s_a_l_8cpp.html#a0b0d919524f6b2e9d9ea633be6a5e68a',1,'Curl_SAL.cpp']]],
-  ['max_5fsize_1382',['MAX_SIZE',['../d9/d0b/_message___handler_8cpp.html#a0592dba56693fad79136250c11e5a7fe',1,'Message_Handler.cpp']]],
-  ['mqtt_5fota_5ftopic_1383',['MQTT_OTA_TOPIC',['../d0/d6a/_maintainer_8hpp.html#a05a676c779afbd8b3c68ce02a174a5b2',1,'Maintainer.hpp']]],
-  ['mqttclient_1384',['mqttclient',['../d4/d63/mqtt__api__v2_8hpp.html#afcffa710b6faf064740b22b27800a13a',1,'mqtt_api_v2.hpp']]],
-  ['mqttevent_1385',['mqttevent',['../d4/d63/mqtt__api__v2_8hpp.html#a3740802119736f8556d793c3bc1d13fc',1,'mqtt_api_v2.hpp']]]
+  ['log_5fprint_5ferror_1537',['LOG_PRINT_ERROR',['../da/d5f/_b_a_s_i_c_8hpp.html#a1e348c8264ea4b9a66f200ef9a6ab41f',1,'BASIC.hpp']]],
+  ['log_5fprint_5finfo_1538',['LOG_PRINT_INFO',['../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5',1,'BASIC.hpp']]]
 ];

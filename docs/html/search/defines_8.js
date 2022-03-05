@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['src_5fhal_5fpwm_5fcpp_5f_1388',['SRC_HAL_PWM_CPP_',['../dc/d84/_p_w_m_2src_2_h_a_l_8cpp.html#acf21b457fe1776284b9bab8cb7ce68a2',1,'HAL.cpp']]]
+  ['periodic_5frestart_5ftime_1544',['PERIODIC_RESTART_TIME',['../dd/ddd/_maintainer_8cpp.html#a53bff0a212ba94f946acfdc8a004f83c',1,'Maintainer.cpp']]],
+  ['project_5fname_1545',['PROJECT_NAME',['../d3/de3/_logger_8hpp.html#ae73053051efbb45c3a39751f5ce9fb36',1,'Logger.hpp']]]
 ];

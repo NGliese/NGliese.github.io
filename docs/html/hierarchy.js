@@ -15,6 +15,7 @@ var hierarchy =
     [ "Camera_CV", "d3/dc5/class_camera___c_v.html", [
       [ "RPICamV2", "d4/de7/class_r_p_i_cam_v2.html", null ]
     ] ],
+    [ "DistanceSensorController::config", "d3/dab/class_distance_sensor_controller.html#d0/d14/struct_distance_sensor_controller_1_1config", null ],
     [ "ADC_API_ESP32::config", "d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config", null ],
     [ "HAL_ESP32::config", "d4/dc1/class_h_a_l___e_s_p32.html#d2/d6b/struct_h_a_l___e_s_p32_1_1config", null ],
     [ "ConnectedComponents", "d5/d8a/class_connected_components.html", null ],
@@ -23,6 +24,7 @@ var hierarchy =
     [ "Curl_SAL", "d2/d2b/class_curl___s_a_l.html", null ],
     [ "DogFeederDoor", "d2/db0/class_dog_feeder_door.html", null ],
     [ "ConnectedComponents::ellipse_data_t", "d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t", null ],
+    [ "ErrorCodeParser", "db/d2e/class_error_code_parser.html", null ],
     [ "esp32_http_sal", "d5/d62/classesp32__http__sal.html", null ],
     [ "Fault_Handler", "dd/d84/class_fault___handler.html", null ],
     [ "FreeRTOS", "db/df4/class_free_r_t_o_s.html", null ],
@@ -32,6 +34,8 @@ var hierarchy =
     [ "HAL_ESP32", "d4/dc1/class_h_a_l___e_s_p32.html", null ],
     [ "hal_mqtt_log", "d8/da0/classhal__mqtt__log.html", null ],
     [ "hal_stdout", "d3/d9d/classhal__stdout.html", null ],
+    [ "i2c", "da/d55/classi2c.html", null ],
+    [ "SensorControllerBase::init_conf", "d9/d88/class_sensor_controller_base.html#d1/da2/struct_sensor_controller_base_1_1init__conf", null ],
     [ "interface", "d0/deb/namespace_3global_scope_4.html#da/d35/classinterface", null ],
     [ "jsmn_object", "dd/d71/classjsmn__object.html", null ],
     [ "Logger", "d3/d42/class_logger.html", null ],
@@ -76,7 +80,12 @@ var hierarchy =
     [ "sensor_conf_t", "d3/dd3/_sensor___base_8hpp.html#d3/dcd/structsensor__conf__t", null ],
     [ "Task", "d7/d6d/class_task.html", [
       [ "ActiveCurrentSensor", "d6/da0/class_active_current_sensor.html", null ],
-      [ "Maintainer", "d6/d9b/class_maintainer.html", null ]
+      [ "DataBroker", "d9/db3/class_data_broker.html", null ],
+      [ "Maintainer", "d6/d9b/class_maintainer.html", null ],
+      [ "SensorControllerBase", "d9/d88/class_sensor_controller_base.html", [
+        [ "DistanceSensorController", "d3/dab/class_distance_sensor_controller.html", null ],
+        [ "SensorControllerBase_MOCK", "d3/d1b/class_sensor_controller_base___m_o_c_k.html", null ]
+      ] ]
     ] ],
     [ "TaskHandle_t", "d3/d1c/_free_r_t_o_s_8h.html#d9/d94/struct_task_handle__t", null ],
     [ "This", "d0/deb/namespace_3global_scope_4.html#df/d9e/class_this", null ],

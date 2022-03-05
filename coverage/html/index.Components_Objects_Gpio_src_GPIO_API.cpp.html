@@ -269,13 +269,13 @@
             <td class="headerValue">Components/Objects/Gpio/src/GPIO_API.cpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">20</td>
+            <td class="headerTableEntry">19</td>
             <td class="headerTableEntry">33</td>
-            <td class="headerTableEntry" style="background-color:LightPink">60.6 %</td>
+            <td class="headerTableEntry" style="background-color:LightPink">57.6 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-01-29 09:55:50</td>
+            <td class="headerValue">2022-03-05 09:53:27</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">7</td>
@@ -547,7 +547,7 @@
     <tr>
     <td align="right" class="lineno"><pre>36</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>780</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>312</pre></td>
     <td align="left" class="src coveredLine"><pre>GPIO_API::~GPIO_API() {}</pre></td>
     </tr>
 
@@ -848,7 +848,7 @@
     <tr>
     <td align="right" class="lineno"><pre>79</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>260</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
     <td align="left" class="src coveredLine"><pre>general_err_t GPIO_API::setToOutput()</pre></td>
     </tr>
 
@@ -889,15 +889,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 260 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>260</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 104 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
     <td align="left" class="src coveredLine"><pre>	auto err = m_hal.setDirection(m_pin, GPIO_HAL::io_def_t::OUTPUT);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>86</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 260 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>260</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 104 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
     <td align="left" class="src coveredLine"><pre>	if(err == GE_OK)</pre></td>
     </tr>
 
@@ -911,14 +911,14 @@
     <tr>
     <td align="right" class="lineno"><pre>88</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>260</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
     <td align="left" class="src coveredLine"><pre>		is_Output = true;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>260</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
     <td align="left" class="src coveredLine"><pre>		return GE_OK;</pre></td>
     </tr>
 
@@ -1051,7 +1051,7 @@
     <tr>
     <td align="right" class="lineno"><pre>108</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>130</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
     <td align="left" class="src coveredLine"><pre>general_err_t GPIO_API::setHigh()</pre></td>
     </tr>
 
@@ -1092,8 +1092,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>114</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 65 times">&check;</span><span class="takenBranch" title="Branch 1 taken 65 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>130</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 26 times">&check;</span><span class="takenBranch" title="Branch 1 taken 26 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
     <td align="left" class="src coveredLine"><pre>	if(!is_Output)</pre></td>
     </tr>
 
@@ -1107,7 +1107,7 @@
     <tr>
     <td align="right" class="lineno"><pre>116</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>65</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>		return GE_FAIL;</pre></td>
     </tr>
 
@@ -1149,14 +1149,14 @@
     <tr>
     <td align="right" class="lineno"><pre>122</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="left" class="src coveredLine"><pre>	is_high = true;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>123</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 65 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>65</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 26 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>	return m_hal.setValue(m_pin, GPIO_HAL::io_val_t::HIGH);</pre></td>
     </tr>
 
@@ -1345,8 +1345,8 @@
     <tr>
     <td align="right" class="lineno"><pre>150</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>	is_high = true;</pre></td>
     </tr>
 
     <tr>
@@ -1436,7 +1436,7 @@
     <tr>
     <td align="right" class="lineno"><pre>163</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>65</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>bool GPIO_API::isHigh() const</pre></td>
     </tr>
 
@@ -1449,8 +1449,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>165</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 65 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>65</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 26 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>	if(is_Output)</pre></td>
     </tr>
 
@@ -1464,99 +1464,99 @@
     <tr>
     <td align="right" class="lineno"><pre>167</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>65</pre></td>
-    <td align="left" class="src coveredLine"><pre>		std::cout &lt;&lt; "this is an output, we cannot read the value from it \n";</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return is_high;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>168</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>65</pre></td>
-    <td align="left" class="src coveredLine"><pre>		return false;</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>169</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>170</pre></td>
+    <td align="right" class="lineno"><pre>169</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>171</pre></td>
+    <td align="right" class="lineno"><pre>170</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>	return m_hal.getValue(m_pin) == GPIO_HAL::io_val_t::HIGH ? true : false;</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>172</pre></td>
+    <td align="right" class="lineno"><pre>171</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>}</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>173</pre></td>
+    <td align="right" class="lineno"><pre>172</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>174</pre></td>
+    <td align="right" class="lineno"><pre>173</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>/**</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>175</pre></td>
+    <td align="right" class="lineno"><pre>174</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre> * @brief  check if the pin is low</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>176</pre></td>
+    <td align="right" class="lineno"><pre>175</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre> *</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>177</pre></td>
+    <td align="right" class="lineno"><pre>176</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre> * @attention</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>178</pre></td>
+    <td align="right" class="lineno"><pre>177</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre> *</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>179</pre></td>
+    <td align="right" class="lineno"><pre>178</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre> * @return</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>180</pre></td>
+    <td align="right" class="lineno"><pre>179</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre> *    - GE_OK</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>180</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre> *    -</pre></td>
     </tr>
 
     <tr>
@@ -1570,123 +1570,109 @@
     <td align="right" class="lineno"><pre>182</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> *    -</pre></td>
+    <td align="left" class="src "><pre> */</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>183</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> */</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>184</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>130</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
     <td align="left" class="src coveredLine"><pre>bool GPIO_API::isLow() const</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>185</pre></td>
+    <td align="right" class="lineno"><pre>184</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>186</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 130 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>130</pre></td>
+    <td align="right" class="lineno"><pre>185</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 52 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
     <td align="left" class="src coveredLine"><pre>	if(is_Output)</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>187</pre></td>
+    <td align="right" class="lineno"><pre>186</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
+    <td align="right" class="lineno"><pre>187</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return is_high;</pre></td>
+    </tr>
+
+    <tr>
     <td align="right" class="lineno"><pre>188</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>130</pre></td>
-    <td align="left" class="src coveredLine"><pre>		std::cout &lt;&lt; "this is an output, we cannot read the value from it \n";</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>189</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>130</pre></td>
-    <td align="left" class="src coveredLine"><pre>		return false;</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>190</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>191</pre></td>
+    <td align="right" class="lineno"><pre>189</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>192</pre></td>
+    <td align="right" class="lineno"><pre>190</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>	return m_hal.getValue(m_pin) == GPIO_HAL::io_val_t::LOW ? true : false;</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>193</pre></td>
+    <td align="right" class="lineno"><pre>191</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>}</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>194</pre></td>
+    <td align="right" class="lineno"><pre>192</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>195</pre></td>
+    <td align="right" class="lineno"><pre>193</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>65</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>general_err_t GPIO_API::installInterrupt(const GPIO_HAL::io_intr_t&amp; type,</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>196</pre></td>
+    <td align="right" class="lineno"><pre>194</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>										 void (*callbackfunction)(void*))</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>197</pre></td>
+    <td align="right" class="lineno"><pre>195</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>198</pre></td>
+    <td align="right" class="lineno"><pre>196</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>65</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>	return m_hal.installInterruptDriver(m_pin, callbackfunction, type);</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>199</pre></td>
+    <td align="right" class="lineno"><pre>197</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>}</pre></td>
