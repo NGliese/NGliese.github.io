@@ -128,107 +128,114 @@ $(document).ready(function(){initNavTree('d0/dc1/_data_broker_8hpp_source.html',
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#include &quot;../../../RTOS/FreeRTOS/include/FreeRTOS.h&quot;</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#include &quot;../../../RTOS/FreeRTOS/include/Task.h&quot;</span></div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span> <span class="comment">// For std::for_each()</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> |                               Typedef                                        |</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment"> |                               Class                                          |</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html">   52</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/db3/class_data_broker.html">DataBroker</a> final : <span class="keyword">public</span> <a class="code" href="../../d7/d6d/class_task.html">Task</a></div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>friend_DataBroker;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#a20e4eed169a17a5abac6d59eb6c7adf0">   58</a></span>&#160;    <a class="code" href="../../d9/db3/class_data_broker.html#a20e4eed169a17a5abac6d59eb6c7adf0">DataBroker</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> delay_ms, <a class="code" href="../../d9/d88/class_sensor_controller_base.html">SensorControllerBase</a>&amp; sensor)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        : <a class="code" href="../../d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">m_delay_ms</a>{delay_ms}, <a class="code" href="../../d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">m_sensor</a>{sensor} {};</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#ac08c5f7736b4431cedb46f552c0bdbd2">   60</a></span>&#160;    <a class="code" href="../../d9/db3/class_data_broker.html#ac08c5f7736b4431cedb46f552c0bdbd2">~DataBroker</a>(){};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> <a class="code" href="../../d9/db3/class_data_broker.html#a3bdf7d6ad8b175fe13a06c7bb9f8e798">addQueue</a>(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html">FreeRTOS::Queue</a>* queue);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/db3/class_data_broker.html#a85cc83c2c59b66fdd9c5b4bcf8a9538d">run</a>(<span class="keywordtype">void</span>* data) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> <a class="code" href="../../d9/db3/class_data_broker.html#a2c9a983fa248956f0e412c3e9ba2a540">main_function</a>();</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> <a class="code" href="../../d9/db3/class_data_broker.html#afed1b5b981e1b2f501435382724d61f3">pushQueues</a>();</div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">   67</a></span>&#160;    std::vector&lt;FreeRTOS::Queue*&gt; <a class="code" href="../../d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">m_queue_array</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">   68</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="../../d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">m_delay_ms</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">   69</a></span>&#160;    <a class="code" href="../../d9/d88/class_sensor_controller_base.html">SensorControllerBase</a>&amp; <a class="code" href="../../d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">m_sensor</a>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;};</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment"> |                           Unit Test Class                                    |</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">class </span>friend_DataBroker</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keyword">explicit</span> friend_DataBroker(<a class="code" href="../../d9/db3/class_data_broker.html">DataBroker</a>* sensor) : m_sensor{sensor} {};</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ~friend_DataBroker(){};</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keyword">auto</span> getQueueSize()</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> m_sensor-&gt;<a class="code" href="../../d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">m_queue_array</a>.size();</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">auto</span> runMain()</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> m_sensor-&gt;main_function();</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <a class="code" href="../../d9/db3/class_data_broker.html">DataBroker</a>* m_sensor;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">class </span>Queue_MOCK : <span class="keyword">public</span> <a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html">FreeRTOS::Queue</a></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;{</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="comment">/* data */</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">bool</span> m_hasBeenCalled = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">size_t</span> m_amountOfCalls = 0;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    Queue_MOCK(<span class="keywordtype">size_t</span> amount_of_items, <span class="keywordtype">size_t</span> size_of_item)</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        : <a class="code" href="../../db/df4/class_free_r_t_o_s.html">FreeRTOS</a>::Queue(amount_of_items, size_of_item){};</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    ~Queue_MOCK(){};</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keyword">auto</span> hasBeenCalled()</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> m_hasBeenCalled;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">auto</span> amountOfCalls()</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordflow">return</span> m_amountOfCalls;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    }</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#ab3a4dd79e9be2efc579183f714cf0394">send</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* <span class="keyword">const</span> item_to_send, <span class="keywordtype">size_t</span> <a class="code" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">delay</a>)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        m_hasBeenCalled = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        m_amountOfCalls++;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif //_COMPONENTS_OBJECTS_DATABROKER_INCLUDE_DATABROKER_HPP_</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#include &lt;atomic&gt;</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment"> |                               Typedef                                        |</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment"> |                               Class                                          |</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html">   53</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d9/db3/class_data_broker.html">DataBroker</a> final : <span class="keyword">public</span> <a class="code" href="../../d7/d6d/class_task.html">Task</a></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>friend_DataBroker;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#a20e4eed169a17a5abac6d59eb6c7adf0">   59</a></span>&#160;    <a class="code" href="../../d9/db3/class_data_broker.html#a20e4eed169a17a5abac6d59eb6c7adf0">DataBroker</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> delay_ms, <a class="code" href="../../d9/d88/class_sensor_controller_base.html">SensorControllerBase</a>&amp; sensor)</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        : <a class="code" href="../../d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">m_delay_ms</a>{delay_ms}, <a class="code" href="../../d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">m_sensor</a>{sensor} {};</div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#ac08c5f7736b4431cedb46f552c0bdbd2">   61</a></span>&#160;    <a class="code" href="../../d9/db3/class_data_broker.html#ac08c5f7736b4431cedb46f552c0bdbd2">~DataBroker</a>(){};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> <a class="code" href="../../d9/db3/class_data_broker.html#a3bdf7d6ad8b175fe13a06c7bb9f8e798">addQueue</a>(<a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html">FreeRTOS::Queue</a>* queue);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="../../d9/db3/class_data_broker.html#a85cc83c2c59b66fdd9c5b4bcf8a9538d">run</a>(<span class="keywordtype">void</span>* data) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> <a class="code" href="../../d9/db3/class_data_broker.html#a2c9a983fa248956f0e412c3e9ba2a540">main_function</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> <a class="code" href="../../d9/db3/class_data_broker.html#afed1b5b981e1b2f501435382724d61f3">pushQueues</a>();</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">   68</a></span>&#160;    std::vector&lt;FreeRTOS::Queue*&gt; <a class="code" href="../../d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">m_queue_array</a>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">   69</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">size_t</span> <a class="code" href="../../d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">m_delay_ms</a>;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">   70</a></span>&#160;    <a class="code" href="../../d9/d88/class_sensor_controller_base.html">SensorControllerBase</a>&amp; <a class="code" href="../../d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">m_sensor</a>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment"> |                           Unit Test Class                                    |</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="keyword">class </span>friend_DataBroker</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;{</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">explicit</span> friend_DataBroker(<a class="code" href="../../d9/db3/class_data_broker.html">DataBroker</a>* sensor) : m_sensor{sensor} {};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    ~friend_DataBroker(){};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keyword">auto</span> getQueueSize()</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keywordflow">return</span> m_sensor-&gt;<a class="code" href="../../d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">m_queue_array</a>.size();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    }</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">auto</span> runMain()</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">return</span> m_sensor-&gt;main_function();</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="../../d9/db3/class_data_broker.html">DataBroker</a>* m_sensor;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">class </span>Queue_MOCK : <span class="keyword">public</span> <a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html">FreeRTOS::Queue</a></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;{</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">/* data */</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">bool</span> m_hasBeenCalled = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">size_t</span> m_amountOfCalls = 0;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">size_t</span> m_dataCalledWith = 0;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    Queue_MOCK(<span class="keywordtype">size_t</span> amount_of_items, <span class="keywordtype">size_t</span> size_of_item)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        : <a class="code" href="../../db/df4/class_free_r_t_o_s.html">FreeRTOS</a>::Queue(amount_of_items, size_of_item){};</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    ~Queue_MOCK(){};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keyword">auto</span> hasBeenCalled()</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">return</span> m_hasBeenCalled;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keyword">auto</span> amountOfCalls()</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    {</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">return</span> m_amountOfCalls;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keyword">auto</span> dataCalledWith()</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="keywordflow">return</span> m_dataCalledWith;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#ab3a4dd79e9be2efc579183f714cf0394">send</a>(<span class="keyword">const</span> <span class="keywordtype">void</span>* <span class="keyword">const</span> item_to_send, <span class="keywordtype">size_t</span> <a class="code" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">delay</a>)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        m_dataCalledWith = *(<span class="keyword">static_cast&lt;</span><span class="keyword">const </span>std::atomic&lt;size_t&gt;*<span class="keyword">&gt;</span>(item_to_send));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        m_hasBeenCalled = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        m_amountOfCalls++;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;};</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif //_COMPONENTS_OBJECTS_DATABROKER_INCLUDE_DATABROKER_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_free_r_t_o_s_1_1_queue_html"><div class="ttname"><a href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html">FreeRTOS::Queue</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1c/_free_r_t_o_s_8h_source.html#l00076">FreeRTOS.h:76</a></div></div>
 <div class="ttc" id="aclass_free_r_t_o_s_html"><div class="ttname"><a href="../../db/df4/class_free_r_t_o_s.html">FreeRTOS</a></div><div class="ttdoc">Interface to FreeRTOS functions.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d1c/_free_r_t_o_s_8h_source.html#l00035">FreeRTOS.h:35</a></div></div>
 <div class="ttc" id="aclass_task_html"><div class="ttname"><a href="../../d7/d6d/class_task.html">Task</a></div><div class="ttdoc">Encapsulate a runnable task.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dc5/_task_8h_source.html#l00044">Task.h:44</a></div></div>
 <div class="ttc" id="anamespacebasic__utils_html_a2d49b92733f3d61bc70d860dcd828e45"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">basic_utils::delay</a></div><div class="ttdeci">void delay(const uint32_t &amp;delay_ms)</div></div>
-<div class="ttc" id="aclass_data_broker_html_a8711450fd6d1fe9f13383d12aff137a9"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">DataBroker::m_sensor</a></div><div class="ttdeci">SensorControllerBase &amp; m_sensor</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00069">DataBroker.hpp:69</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_a8711450fd6d1fe9f13383d12aff137a9"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a8711450fd6d1fe9f13383d12aff137a9">DataBroker::m_sensor</a></div><div class="ttdeci">SensorControllerBase &amp; m_sensor</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00070">DataBroker.hpp:70</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533e"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a></div><div class="ttdeci">general_err_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00066">General_Error.hpp:66</a></div></div>
-<div class="ttc" id="aclass_data_broker_html"><div class="ttname"><a href="../../d9/db3/class_data_broker.html">DataBroker</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00052">DataBroker.hpp:52</a></div></div>
+<div class="ttc" id="aclass_data_broker_html"><div class="ttname"><a href="../../d9/db3/class_data_broker.html">DataBroker</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00053">DataBroker.hpp:53</a></div></div>
 <div class="ttc" id="aclass_sensor_controller_base_html"><div class="ttname"><a href="../../d9/d88/class_sensor_controller_base.html">SensorControllerBase</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d1c/_sensor_controller_base_8hpp_source.html#l00053">SensorControllerBase.hpp:53</a></div></div>
-<div class="ttc" id="aclass_data_broker_html_a245cf5c9042c0fb06854db67f589360f"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">DataBroker::m_queue_array</a></div><div class="ttdeci">std::vector&lt; FreeRTOS::Queue * &gt; m_queue_array</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00067">DataBroker.hpp:67</a></div></div>
-<div class="ttc" id="aclass_data_broker_html_a3bdf7d6ad8b175fe13a06c7bb9f8e798"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a3bdf7d6ad8b175fe13a06c7bb9f8e798">DataBroker::addQueue</a></div><div class="ttdeci">general_err_t addQueue(FreeRTOS::Queue *queue)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/_data_broker_8cpp_source.html#l00028">DataBroker.cpp:28</a></div></div>
-<div class="ttc" id="aclass_data_broker_html_ac08c5f7736b4431cedb46f552c0bdbd2"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#ac08c5f7736b4431cedb46f552c0bdbd2">DataBroker::~DataBroker</a></div><div class="ttdeci">~DataBroker()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00060">DataBroker.hpp:60</a></div></div>
-<div class="ttc" id="aclass_data_broker_html_a70f12400f22ac9532ddf7d088c26fe27"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">DataBroker::m_delay_ms</a></div><div class="ttdeci">const size_t m_delay_ms</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00068">DataBroker.hpp:68</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_a245cf5c9042c0fb06854db67f589360f"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a245cf5c9042c0fb06854db67f589360f">DataBroker::m_queue_array</a></div><div class="ttdeci">std::vector&lt; FreeRTOS::Queue * &gt; m_queue_array</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00068">DataBroker.hpp:68</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_a3bdf7d6ad8b175fe13a06c7bb9f8e798"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a3bdf7d6ad8b175fe13a06c7bb9f8e798">DataBroker::addQueue</a></div><div class="ttdeci">general_err_t addQueue(FreeRTOS::Queue *queue)</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/_data_broker_8cpp_source.html#l00029">DataBroker.cpp:29</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_ac08c5f7736b4431cedb46f552c0bdbd2"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#ac08c5f7736b4431cedb46f552c0bdbd2">DataBroker::~DataBroker</a></div><div class="ttdeci">~DataBroker()</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00061">DataBroker.hpp:61</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_a70f12400f22ac9532ddf7d088c26fe27"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a70f12400f22ac9532ddf7d088c26fe27">DataBroker::m_delay_ms</a></div><div class="ttdeci">const size_t m_delay_ms</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00069">DataBroker.hpp:69</a></div></div>
 <div class="ttc" id="aclass_free_r_t_o_s_1_1_queue_html_ab3a4dd79e9be2efc579183f714cf0394"><div class="ttname"><a href="../../dd/d1c/class_free_r_t_o_s_1_1_queue.html#ab3a4dd79e9be2efc579183f714cf0394">FreeRTOS::Queue::send</a></div><div class="ttdeci">virtual int send(const void *const item_to_send, size_t delay)</div><div class="ttdoc">Send data to the queue.</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d25/_free_r_t_o_s_8cpp_source.html#l00324">FreeRTOS.cpp:324</a></div></div>
-<div class="ttc" id="aclass_data_broker_html_afed1b5b981e1b2f501435382724d61f3"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#afed1b5b981e1b2f501435382724d61f3">DataBroker::pushQueues</a></div><div class="ttdeci">general_err_t pushQueues()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/_data_broker_8cpp_source.html#l00069">DataBroker.cpp:69</a></div></div>
-<div class="ttc" id="aclass_data_broker_html_a20e4eed169a17a5abac6d59eb6c7adf0"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a20e4eed169a17a5abac6d59eb6c7adf0">DataBroker::DataBroker</a></div><div class="ttdeci">DataBroker(const size_t delay_ms, SensorControllerBase &amp;sensor)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00058">DataBroker.hpp:58</a></div></div>
-<div class="ttc" id="aclass_data_broker_html_a85cc83c2c59b66fdd9c5b4bcf8a9538d"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a85cc83c2c59b66fdd9c5b4bcf8a9538d">DataBroker::run</a></div><div class="ttdeci">void run(void *data) override</div><div class="ttdoc">Body of the task to execute.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/_data_broker_8cpp_source.html#l00083">DataBroker.cpp:83</a></div></div>
-<div class="ttc" id="aclass_data_broker_html_a2c9a983fa248956f0e412c3e9ba2a540"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a2c9a983fa248956f0e412c3e9ba2a540">DataBroker::main_function</a></div><div class="ttdeci">general_err_t main_function()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/_data_broker_8cpp_source.html#l00042">DataBroker.cpp:42</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_afed1b5b981e1b2f501435382724d61f3"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#afed1b5b981e1b2f501435382724d61f3">DataBroker::pushQueues</a></div><div class="ttdeci">general_err_t pushQueues()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/_data_broker_8cpp_source.html#l00080">DataBroker.cpp:80</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_a20e4eed169a17a5abac6d59eb6c7adf0"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a20e4eed169a17a5abac6d59eb6c7adf0">DataBroker::DataBroker</a></div><div class="ttdeci">DataBroker(const size_t delay_ms, SensorControllerBase &amp;sensor)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc1/_data_broker_8hpp_source.html#l00059">DataBroker.hpp:59</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_a85cc83c2c59b66fdd9c5b4bcf8a9538d"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a85cc83c2c59b66fdd9c5b4bcf8a9538d">DataBroker::run</a></div><div class="ttdeci">void run(void *data) override</div><div class="ttdoc">Body of the task to execute.</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/_data_broker_8cpp_source.html#l00094">DataBroker.cpp:94</a></div></div>
+<div class="ttc" id="aclass_data_broker_html_a2c9a983fa248956f0e412c3e9ba2a540"><div class="ttname"><a href="../../d9/db3/class_data_broker.html#a2c9a983fa248956f0e412c3e9ba2a540">DataBroker::main_function</a></div><div class="ttdeci">general_err_t main_function()</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/ddc/_data_broker_8cpp_source.html#l00043">DataBroker.cpp:43</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

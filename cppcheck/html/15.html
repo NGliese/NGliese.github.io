@@ -138,11 +138,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   </head>
   <body onload="init_expandables()">
       <div id="header">
-        <h1>Cppcheck report - [project name]: /home/nikolaj/github/Embedded/library/Components/Objects/QueryTools/include/QueryAddExternalResources.hpp </h1>
+        <h1>Cppcheck report - [project name]: /home/nikolaj/github/Embedded/library/Components/Objects/QueryTools/include/QueryMessage.hpp </h1>
       </div>
       <div id="menu" dir="rtl">
-       <p id="filename"><a href="index.html">Defects:</a> QueryAddExternalResources.hpp</p>
-<a href='15.html#line-104'> noExplicitConstructor 104</a>
+       <p id="filename"><a href="index.html">Defects:</a> QueryMessage.hpp</p>
+<a href='15.html#line-80'> noExplicitConstructor 80</a><a href='15.html#line-80'> noExplicitConstructor 80</a><a href='15.html#line-98'> noExplicitConstructor 98</a><a href='15.html#line-98'> noExplicitConstructor 98</a>
       </div>
       <div id="content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">  1</span>
@@ -250,35 +250,27 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="normal">103</span>
 <span class="normal">104</span>
 <span class="normal">105</span>
-<span class="normal">106</span>
-<span class="normal">107</span>
-<span class="normal">108</span>
-<span class="normal">109</span>
-<span class="normal">110</span>
-<span class="normal">111</span>
-<span class="normal">112</span>
-<span class="normal">113</span>
-<span class="normal">114</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><a id="line-1" name="line-1"></a><span class="cm">/*</span>
-<a id="line-2" name="line-2"></a><span class="cm"> * QueryAddExternalResources.hpp</span>
+<span class="normal">106</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><a id="line-1" name="line-1"></a><span class="cm">/*</span>
+<a id="line-2" name="line-2"></a><span class="cm"> * QueryMessage.hpp</span>
 <a id="line-3" name="line-3"></a><span class="cm"> *</span>
 <a id="line-4" name="line-4"></a><span class="cm"> *  Created on: Sep 6, 2021</span>
 <a id="line-5" name="line-5"></a><span class="cm"> *      Author: espenv</span>
 <a id="line-6" name="line-6"></a><span class="cm"> */</span>
 <a id="line-7" name="line-7"></a>
-<a id="line-8" name="line-8"></a><span class="cp">#ifndef INCLUDE_QUERYADDEXTERNALRESOURCES_HPP_</span>
-<a id="line-9" name="line-9"></a><span class="cp">#define INCLUDE_QUERYADDEXTERNALRESOURCES_HPP_</span>
+<a id="line-8" name="line-8"></a><span class="cp">#ifndef INCLUDE_QUERYMESSAGE_HPP_</span>
+<a id="line-9" name="line-9"></a><span class="cp">#define INCLUDE_QUERYMESSAGE_HPP_</span>
 <a id="line-10" name="line-10"></a>
 <a id="line-11" name="line-11"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
 <a id="line-12" name="line-12"></a><span class="cm"> |   		 	C L A S S   I N F O R M A T I O N                               |</span>
 <a id="line-13" name="line-13"></a><span class="cm"> +------------------------------------------------------------------------------+</span>
 <a id="line-14" name="line-14"></a><span class="cm"> |  ToDo: check auto generated function comment</span>
 <a id="line-15" name="line-15"></a><span class="cm"> |</span>
-<a id="line-16" name="line-16"></a><span class="cm"> |  Function Name:  QueryAddExternalResources.hpp</span>
+<a id="line-16" name="line-16"></a><span class="cm"> |  Function Name:  QueryDataMessage.hpp</span>
 <a id="line-17" name="line-17"></a><span class="cm"> |</span>
 <a id="line-18" name="line-18"></a><span class="cm"> |  Author       :  Nikolaj Gliese Pedersen</span>
 <a id="line-19" name="line-19"></a><span class="cm"> |  Email 		 :  &lt;nikolajgliese@tutanota.com&gt;</span>
 <a id="line-20" name="line-20"></a><span class="cm"> |</span>
-<a id="line-21" name="line-21"></a><span class="cm"> |  Description  :  This class, QueryAddExternalResources.hpp, is designed as:</span>
+<a id="line-21" name="line-21"></a><span class="cm"> |  Description  :  This class, QueryDataMessage.hpp, is designed as:</span>
 <a id="line-22" name="line-22"></a><span class="cm"> |</span>
 <a id="line-23" name="line-23"></a><span class="cm"> |</span>
 <a id="line-24" name="line-24"></a><span class="cm"> |</span>
@@ -316,62 +308,54 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <a id="line-56" name="line-56"></a><span class="cm"> |   		 					Includes                     		            |</span>
 <a id="line-57" name="line-57"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
 <a id="line-58" name="line-58"></a>
-<a id="line-59" name="line-59"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a id="line-60" name="line-60"></a><span class="cm"> |                              Includes                                        |</span>
-<a id="line-61" name="line-61"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a id="line-62" name="line-62"></a>
-<a id="line-63" name="line-63"></a><span class="cm">/*----------------- DEFAULT INCLUDE -------------------------------------------*/</span>
-<a id="line-64" name="line-64"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Global_Include/BASIC.hpp&quot;</span><span class="cp"></span>
-<a id="line-65" name="line-65"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/ErrorHandler/include/General_Error.hpp&quot;</span><span class="cp"></span>
-<a id="line-66" name="line-66"></a><span class="cm">/*-----------------------------------------------------------------------------*/</span>
-<a id="line-67" name="line-67"></a>
-<a id="line-68" name="line-68"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Interfaces/QueryBase/include/QueryBase.hpp&quot;</span><span class="cp"></span>
-<a id="line-69" name="line-69"></a><span class="cp">#include</span> <span class="cpf">&quot;QueryMessage.hpp&quot;</span><span class="cp"></span>
-<a id="line-70" name="line-70"></a>
-<a id="line-71" name="line-71"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a id="line-72" name="line-72"></a><span class="cm"> |                               Typedef                                        |</span>
-<a id="line-73" name="line-73"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a id="line-74" name="line-74"></a>
-<a id="line-75" name="line-75"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a id="line-76" name="line-76"></a><span class="cm"> |   		 					 Class                     		                |</span>
-<a id="line-77" name="line-77"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a id="line-78" name="line-78"></a>
-<a id="line-79" name="line-79"></a><span class="k">class</span> <span class="nc">QueryAddExternalResources</span> <span class="k">final</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QueryBase</span><span class="o">&lt;</span><span class="n">QueryURIMessage</span><span class="o">&gt;</span>
-<a id="line-80" name="line-80"></a><span class="p">{</span>
-<a id="line-81" name="line-81"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a id="line-82" name="line-82"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_QueryAddExternalResources</span><span class="p">;</span>
-<a id="line-83" name="line-83"></a><span class="cp">#endif</span>
-<a id="line-84" name="line-84"></a>  <span class="k">public</span><span class="o">:</span>
-<a id="line-85" name="line-85"></a>	<span class="n">QueryAddExternalResources</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-<a id="line-86" name="line-86"></a>	<span class="o">~</span><span class="n">QueryAddExternalResources</span><span class="p">(){};</span>
-<a id="line-87" name="line-87"></a>	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="nf">start</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="k">override</span>
-<a id="line-88" name="line-88"></a>	<span class="p">{</span>
-<a id="line-89" name="line-89"></a>		<span class="k">return</span> <span class="s">&quot;INSERT INTO public.external_resources(tstz, entity_id, uri) VALUES &quot;</span><span class="p">;</span>
-<a id="line-90" name="line-90"></a>	<span class="p">};</span>
-<a id="line-91" name="line-91"></a>	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="nf">content</span><span class="p">(</span><span class="k">const</span> <span class="n">QueryURIMessage</span><span class="o">&amp;</span> <span class="n">msg</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
-<a id="line-92" name="line-92"></a>
-<a id="line-93" name="line-93"></a>  <span class="k">private</span><span class="o">:</span>
-<a id="line-94" name="line-94"></a><span class="p">};</span>
-<a id="line-95" name="line-95"></a>
-<a id="line-96" name="line-96"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a id="line-97" name="line-97"></a><span class="cm"> |   		 				 Unit Test Class               		                |</span>
-<a id="line-98" name="line-98"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a id="line-99" name="line-99"></a>
-<a id="line-100" name="line-100"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a id="line-101" name="line-101"></a><span class="k">class</span> <span class="nc">friend_QueryAddExternalResources</span>
-<a id="line-102" name="line-102"></a><span class="p">{</span>
-<a id="line-103" name="line-103"></a>  <span class="k">public</span><span class="o">:</span>
-<a id="line-104" name="line-104"></a><span class="hll">	<span class="n">friend_QueryAddExternalResources</span><span class="p">(</span><span class="n">QueryAddExternalResources</span><span class="o">*</span> <span class="n">QueryAddExternalResources</span><span class="p">)</span><div class='verbose expandable'><span class='error2'>&lt;--- Class 'friend_QueryAddExternalResources' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;friend_QueryAddExternalResources&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div>
-</span><a id="line-105" name="line-105"></a>		<span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">QueryAddExternalResources</span><span class="p">}</span> <span class="p">{};</span>
-<a id="line-106" name="line-106"></a>
-<a id="line-107" name="line-107"></a>	<span class="o">~</span><span class="n">friend_QueryAddExternalResources</span><span class="p">(){};</span>
-<a id="line-108" name="line-108"></a>
-<a id="line-109" name="line-109"></a>  <span class="k">private</span><span class="o">:</span>
-<a id="line-110" name="line-110"></a>	<span class="n">QueryAddExternalResources</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
-<a id="line-111" name="line-111"></a><span class="p">};</span>
-<a id="line-112" name="line-112"></a><span class="cp">#endif</span>
-<a id="line-113" name="line-113"></a>
-<a id="line-114" name="line-114"></a><span class="cp">#endif </span><span class="cm">/* INCLUDE_QUERYADDEXTERNALRESOURCES_HPP_ */</span><span class="cp"></span>
+<a id="line-59" name="line-59"></a><span class="cm">/*----------------- DEFAULT INCLUDE -------------------------------------------*/</span>
+<a id="line-60" name="line-60"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Global_Include/BASIC.hpp&quot;</span><span class="cp"></span>
+<a id="line-61" name="line-61"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/ErrorHandler/include/General_Error.hpp&quot;</span><span class="cp"></span>
+<a id="line-62" name="line-62"></a><span class="cm">/*-----------------------------------------------------------------------------*/</span>
+<a id="line-63" name="line-63"></a>
+<a id="line-64" name="line-64"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Interfaces/QueryBase/include/QueryMessageBase.hpp&quot;</span><span class="cp"></span>
+<a id="line-65" name="line-65"></a>
+<a id="line-66" name="line-66"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a id="line-67" name="line-67"></a><span class="cm"> |                               Typedef                                        |</span>
+<a id="line-68" name="line-68"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a id="line-69" name="line-69"></a>
+<a id="line-70" name="line-70"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a id="line-71" name="line-71"></a><span class="cm"> |   		 					 Class                     		                |</span>
+<a id="line-72" name="line-72"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a id="line-73" name="line-73"></a>
+<a id="line-74" name="line-74"></a><span class="k">class</span> <span class="nc">QueryDataMessage</span> <span class="k">final</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QueryMessageBase</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;</span>
+<a id="line-75" name="line-75"></a><span class="p">{</span>
+<a id="line-76" name="line-76"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a id="line-77" name="line-77"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_QueryDataMessage</span><span class="p">;</span>
+<a id="line-78" name="line-78"></a><span class="cp">#endif</span>
+<a id="line-79" name="line-79"></a>  <span class="k">public</span><span class="o">:</span>
+<a id="line-80" name="line-80"></a><span class="hll">	<span class="n">QueryDataMessage</span><span class="p">(</span><span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">enitity_id</span><span class="p">)</span> <span class="o">:</span> <span class="n">QueryMessageBase</span><span class="p">(</span><span class="n">enitity_id</span><span class="p">){};</span><div class='verbose expandable'><span class='error2'>&lt;--- Class 'QueryDataMessage' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;QueryDataMessage&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div><div class='verbose expandable'><span class='error2'>&lt;--- Class 'QueryDataMessage' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;QueryDataMessage&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div>
+</span><a id="line-81" name="line-81"></a>	<span class="n">QueryDataMessage</span><span class="p">(</span><span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">enitity_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">msg_data_t</span><span class="o">&amp;</span> <span class="n">data</span><span class="p">)</span>
+<a id="line-82" name="line-82"></a>		<span class="o">:</span> <span class="n">QueryMessageBase</span><span class="p">(</span><span class="n">enitity_id</span><span class="p">,</span> <span class="n">data</span><span class="p">){};</span>
+<a id="line-83" name="line-83"></a>	<span class="o">~</span><span class="n">QueryDataMessage</span><span class="p">(){};</span>
+<a id="line-84" name="line-84"></a>
+<a id="line-85" name="line-85"></a>  <span class="k">private</span><span class="o">:</span>
+<a id="line-86" name="line-86"></a><span class="p">};</span>
+<a id="line-87" name="line-87"></a>
+<a id="line-88" name="line-88"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a id="line-89" name="line-89"></a><span class="cm"> |                               Class                                          |</span>
+<a id="line-90" name="line-90"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a id="line-91" name="line-91"></a>
+<a id="line-92" name="line-92"></a><span class="k">class</span> <span class="nc">QueryURIMessage</span> <span class="k">final</span> <span class="o">:</span> <span class="k">public</span> <span class="n">QueryMessageBase</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span>
+<a id="line-93" name="line-93"></a><span class="p">{</span>
+<a id="line-94" name="line-94"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a id="line-95" name="line-95"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_QueryDataMessage</span><span class="p">;</span>
+<a id="line-96" name="line-96"></a><span class="cp">#endif</span>
+<a id="line-97" name="line-97"></a>  <span class="k">public</span><span class="o">:</span>
+<a id="line-98" name="line-98"></a><span class="hll">	<span class="n">QueryURIMessage</span><span class="p">(</span><span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">enitity_id</span><span class="p">)</span> <span class="o">:</span> <span class="n">QueryMessageBase</span><span class="p">(</span><span class="n">enitity_id</span><span class="p">){};</span><div class='verbose expandable'><span class='error2'>&lt;--- Class 'QueryURIMessage' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;QueryURIMessage&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div><div class='verbose expandable'><span class='error2'>&lt;--- Class 'QueryURIMessage' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;QueryURIMessage&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div>
+</span><a id="line-99" name="line-99"></a>	<span class="n">QueryURIMessage</span><span class="p">(</span><span class="k">const</span> <span class="kt">uint32_t</span> <span class="n">enitity_id</span><span class="p">,</span> <span class="k">const</span> <span class="n">msg_data_t</span><span class="o">&amp;</span> <span class="n">data</span><span class="p">)</span>
+<a id="line-100" name="line-100"></a>		<span class="o">:</span> <span class="n">QueryMessageBase</span><span class="p">(</span><span class="n">enitity_id</span><span class="p">,</span> <span class="n">data</span><span class="p">){};</span>
+<a id="line-101" name="line-101"></a>	<span class="o">~</span><span class="n">QueryURIMessage</span><span class="p">(){};</span>
+<a id="line-102" name="line-102"></a>
+<a id="line-103" name="line-103"></a>  <span class="k">private</span><span class="o">:</span>
+<a id="line-104" name="line-104"></a><span class="p">};</span>
+<a id="line-105" name="line-105"></a>
+<a id="line-106" name="line-106"></a><span class="cp">#endif </span><span class="cm">/* INCLUDE_QUERYMESSAGE_HPP_ */</span><span class="cp"></span>
 </pre></div>
 </td></tr></table>
       </div>

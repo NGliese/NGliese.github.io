@@ -48,8 +48,8 @@ var hierarchy =
     [ "msg_control_t", "db/d90/_message___protocol_8hpp.html#d6/d3f/structmsg__control__t", null ],
     [ "msg_data_t", "db/d90/_message___protocol_8hpp.html#d2/d7f/structmsg__data__t", null ],
     [ "QueryMessageBase< T >::msg_data_t", "d2/d8d/class_query_message_base.html#d4/df2/struct_query_message_base_1_1msg__data__t", null ],
-    [ "Logger::msg_t", "d3/d42/class_logger.html#db/dbb/struct_logger_1_1msg__t", null ],
     [ "FaultHandler_n::msg_t", "d1/d27/namespace_fault_handler__n.html#d5/de9/struct_fault_handler__n_1_1msg__t", null ],
+    [ "Logger::msg_t", "d3/d42/class_logger.html#db/dbb/struct_logger_1_1msg__t", null ],
     [ "OTA", "d3/d40/class_o_t_a.html", null ],
     [ "ProtocolBase", "dc/d12/class_protocol_base.html", [
       [ "http_interface", "dc/dc2/classhttp__interface.html", null ],
@@ -78,6 +78,7 @@ var hierarchy =
     [ "FreeRTOS::Semaphore", "d6/d90/class_free_r_t_o_s_1_1_semaphore.html", null ],
     [ "Sensor_Base< T, U >", "d1/da4/class_sensor___base.html", null ],
     [ "sensor_conf_t", "d3/dd3/_sensor___base_8hpp.html#d3/dcd/structsensor__conf__t", null ],
+    [ "ServiceBase< T, ErrorID >", "d4/d82/class_service_base.html", null ],
     [ "Task", "d7/d6d/class_task.html", [
       [ "ActiveCurrentSensor", "d6/da0/class_active_current_sensor.html", null ],
       [ "DataBroker", "d9/db3/class_data_broker.html", null ],

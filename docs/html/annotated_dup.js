@@ -55,6 +55,7 @@ var annotated_dup =
     [ "sensor_conf_t", "d3/dd3/_sensor___base_8hpp.html#d3/dcd/structsensor__conf__t", "d3/dd3/_sensor___base_8hpp_d3/dcd/structsensor__conf__t" ],
     [ "SensorControllerBase", "d9/d88/class_sensor_controller_base.html", "d9/d88/class_sensor_controller_base" ],
     [ "SensorControllerBase_MOCK", "d3/d1b/class_sensor_controller_base___m_o_c_k.html", "d3/d1b/class_sensor_controller_base___m_o_c_k" ],
+    [ "ServiceBase", "d4/d82/class_service_base.html", "d4/d82/class_service_base" ],
     [ "Task", "d7/d6d/class_task.html", "d7/d6d/class_task" ],
     [ "TaskHandle_t", "d3/d1c/_free_r_t_o_s_8h.html#d9/d94/struct_task_handle__t", null ],
     [ "This", "d0/deb/namespace_3global_scope_4.html#df/d9e/class_this", null ],

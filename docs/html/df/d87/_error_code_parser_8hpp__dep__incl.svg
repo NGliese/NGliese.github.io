@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 1116;
+var viewWidth = 1228;
 var viewHeight = 306;
 var sectionId = 'dynsection-1';
 </script>
@@ -58,10 +58,10 @@ var sectionId = 'dynsection-1';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="777,-256.5 777,-297.5 896,-297.5 896,-256.5 777,-256.5"/>
-<text text-anchor="start" x="785" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
-<text text-anchor="start" x="785" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorHandler/include</text>
-<text text-anchor="middle" x="836.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorCodeParser.hpp</text>
+<polygon fill="#bfbfbf" stroke="black" points="846,-256.5 846,-297.5 965,-297.5 965,-256.5 846,-256.5"/>
+<text text-anchor="start" x="854" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
+<text text-anchor="start" x="854" y="-274.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorHandler/include</text>
+<text text-anchor="middle" x="905.5" y="-263.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorCodeParser.hpp</text>
 </a>
 </g>
 </g>
@@ -79,42 +79,59 @@ var sectionId = 'dynsection-1';
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M779.56,-252.61C753.74,-242 723.56,-229.6 698.98,-219.51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="778.28,-255.87 788.86,-256.43 780.94,-249.39 778.28,-255.87"/>
+<path fill="none" stroke="midnightblue" d="M836.2,-255.26C799.03,-244.14 753.48,-230.51 716.92,-219.57"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="835.36,-258.67 845.95,-258.18 837.37,-251.96 835.36,-258.67"/>
 </g>
 <!-- Node13 -->
 <g id="node13" class="node">
 <title>Node13</title>
-<g id="a_node13"><a xlink:href="../../d2/df5/_error_code_parser_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="762,-178.5 762,-219.5 911,-219.5 911,-178.5 762,-178.5"/>
-<text text-anchor="start" x="770" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
-<text text-anchor="start" x="770" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorHandler/src/ErrorCode</text>
-<text text-anchor="middle" x="836.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">Parser.cpp</text>
+<g id="a_node13"><a xlink:href="../../d2/dc5/_service_base_8hpp.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="761.5,-178.5 761.5,-219.5 891.5,-219.5 891.5,-178.5 761.5,-178.5"/>
+<text text-anchor="start" x="769.5" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Interfaces</text>
+<text text-anchor="start" x="769.5" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ServiceBase/include</text>
+<text text-anchor="middle" x="826.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ServiceBase.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node13 -->
 <g id="edge14" class="edge">
 <title>Node1&#45;&gt;Node13</title>
-<path fill="none" stroke="midnightblue" d="M836.5,-246.3C836.5,-237.3 836.5,-227.65 836.5,-219.51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="833,-246.43 836.5,-256.43 840,-246.43 833,-246.43"/>
+<path fill="none" stroke="midnightblue" d="M877.95,-249.49C867.69,-239.63 856.26,-228.63 846.78,-219.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="875.52,-252.02 885.16,-256.43 880.38,-246.97 875.52,-252.02"/>
 </g>
 <!-- Node14 -->
 <g id="node14" class="node">
 <title>Node14</title>
-<g id="a_node14"><a xlink:href="../../d9/db8/_error_code_parser__test_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="929,-178.5 929,-219.5 1072,-219.5 1072,-178.5 929,-178.5"/>
-<text text-anchor="start" x="937" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
-<text text-anchor="start" x="937" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorHandler/test/test</text>
-<text text-anchor="middle" x="1000.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorCodeParser_test.cpp</text>
+<g id="a_node14"><a xlink:href="../../d2/df5/_error_code_parser_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="910,-178.5 910,-219.5 1059,-219.5 1059,-178.5 910,-178.5"/>
+<text text-anchor="start" x="918" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
+<text text-anchor="start" x="918" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorHandler/src/ErrorCode</text>
+<text text-anchor="middle" x="984.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">Parser.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node14 -->
 <g id="edge15" class="edge">
 <title>Node1&#45;&gt;Node14</title>
-<path fill="none" stroke="midnightblue" d="M887.88,-252.19C910.57,-241.67 936.91,-229.47 958.41,-219.51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="886.34,-249.05 878.73,-256.43 889.28,-255.4 886.34,-249.05"/>
+<path fill="none" stroke="midnightblue" d="M933.05,-249.49C943.31,-239.63 954.74,-228.63 964.22,-219.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="930.62,-246.97 925.84,-256.43 935.48,-252.02 930.62,-246.97"/>
+</g>
+<!-- Node15 -->
+<g id="node15" class="node">
+<title>Node15</title>
+<g id="a_node15"><a xlink:href="../../d9/db8/_error_code_parser__test_8cpp.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="1077,-178.5 1077,-219.5 1220,-219.5 1220,-178.5 1077,-178.5"/>
+<text text-anchor="start" x="1085" y="-207.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
+<text text-anchor="start" x="1085" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorHandler/test/test</text>
+<text text-anchor="middle" x="1148.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ErrorCodeParser_test.cpp</text>
+</a>
+</g>
+</g>
+<!-- Node1&#45;&gt;Node15 -->
+<g id="edge16" class="edge">
+<title>Node1&#45;&gt;Node15</title>
+<path fill="none" stroke="midnightblue" d="M974.93,-254.29C1009.92,-243.34 1052.03,-230.17 1086.01,-219.55"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="973.76,-250.99 965.26,-257.31 975.84,-257.67 973.76,-250.99"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -182,8 +199,8 @@ var sectionId = 'dynsection-1';
 <!-- Node2&#45;&gt;Node10 -->
 <g id="edge10" class="edge">
 <title>Node2&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M753.64,-177.79C824.42,-163.54 907.22,-146.25 914.5,-142 954.78,-118.46 987.41,-73.17 1003.88,-47.16"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="752.85,-174.38 743.74,-179.78 754.23,-181.24 752.85,-174.38"/>
+<path fill="none" stroke="midnightblue" d="M753.93,-176.95C826.2,-161.98 910.83,-144.14 914.5,-142 954.78,-118.46 987.41,-73.17 1003.88,-47.16"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="752.91,-173.59 743.82,-179.04 754.32,-180.44 752.91,-173.59"/>
 </g>
 <!-- Node11 -->
 <g id="node11" class="node">

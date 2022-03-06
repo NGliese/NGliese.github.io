@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['wait_5fdelay_1403',['WAIT_DELAY',['../d7/d91/_distance_sensor_controller__test_8cpp.html#a0781b40e4b8d8bbdf1f64216f9051da5',1,'WAIT_DELAY():&#160;DistanceSensorController_test.cpp'],['../da/d75/_data_broker__test_8cpp.html#a0781b40e4b8d8bbdf1f64216f9051da5',1,'WAIT_DELAY():&#160;DataBroker_test.cpp']]],
-  ['width_1404',['width',['../d5/d8a/class_connected_components.html#acc3ba19dcda0f738e0fb9670476a03ca',1,'ConnectedComponents::ellipse_data_t']]]
+  ['vacation_5fend_1423',['VACATION_END',['../d8/d61/_timebased__rules_8cpp.html#a958d06eadb3c3cc76bcef3bd5aac58b7',1,'Timebased_rules.cpp']]],
+  ['vacation_5fstart_1424',['VACATION_START',['../d8/d61/_timebased__rules_8cpp.html#ada42ebf320b252870caf7f409c857854',1,'Timebased_rules.cpp']]],
+  ['vref_1425',['vRef',['../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a3b206a329b232f9d7c39bf603c34dead',1,'ADC_API_ESP32::config']]]
 ];

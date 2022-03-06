@@ -138,11 +138,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   </head>
   <body onload="init_expandables()">
       <div id="header">
-        <h1>Cppcheck report - [project name]: /home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/HAL.hpp </h1>
+        <h1>Cppcheck report - [project name]: /home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp </h1>
       </div>
       <div id="menu" dir="rtl">
-       <p id="filename"><a href="index.html">Defects:</a> HAL.hpp</p>
-<a href='12.html#line-127'> noExplicitConstructor 127</a><a href='12.html#line-127'> noExplicitConstructor 127</a>
+       <p id="filename"><a href="index.html">Defects:</a> GPIO_API.hpp</p>
+<a href='12.html#line-81'> noExplicitConstructor 81</a><a href='12.html#line-133'> noExplicitConstructor 133</a>
       </div>
       <div id="content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span class="normal">  1</span>
@@ -280,27 +280,33 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="normal">133</span>
 <span class="normal">134</span>
 <span class="normal">135</span>
-<span class="normal">136</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><a id="line-1" name="line-1"></a><span class="cm">/*</span>
-<a id="line-2" name="line-2"></a><span class="cm"> * HAL.hpp</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><a id="line-1" name="line-1"></a><span class="cm">/*</span>
+<a id="line-2" name="line-2"></a><span class="cm"> * GPIO_API.hpp</span>
 <a id="line-3" name="line-3"></a><span class="cm"> *</span>
 <a id="line-4" name="line-4"></a><span class="cm"> *  Created on: Jan 5, 2021</span>
 <a id="line-5" name="line-5"></a><span class="cm"> *      Author: espenv</span>
 <a id="line-6" name="line-6"></a><span class="cm"> */</span>
 <a id="line-7" name="line-7"></a>
-<a id="line-8" name="line-8"></a><span class="cp">#ifndef MAIN_COMPONENTS_GPIO_INCLUDE_HAL_HPP_</span>
-<a id="line-9" name="line-9"></a><span class="cp">#define MAIN_COMPONENTS_GPIO_INCLUDE_HAL_HPP_</span>
+<a id="line-8" name="line-8"></a><span class="cp">#ifndef MAIN_COMPONENTS_GPIO_INCLUDE_GPIO_API_HPP_</span>
+<a id="line-9" name="line-9"></a><span class="cp">#define MAIN_COMPONENTS_GPIO_INCLUDE_GPIO_API_HPP_</span>
 <a id="line-10" name="line-10"></a>
 <a id="line-11" name="line-11"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
 <a id="line-12" name="line-12"></a><span class="cm"> |   		 	C L A S S   I N F O R M A T I O N                               |</span>
 <a id="line-13" name="line-13"></a><span class="cm"> +------------------------------------------------------------------------------+</span>
 <a id="line-14" name="line-14"></a><span class="cm"> |  ToDo: check auto generated function comment</span>
 <a id="line-15" name="line-15"></a><span class="cm"> |</span>
-<a id="line-16" name="line-16"></a><span class="cm"> |  Function Name:  HAL.hpp</span>
+<a id="line-16" name="line-16"></a><span class="cm"> |  Function Name:  GPIO_API.hpp</span>
 <a id="line-17" name="line-17"></a><span class="cm"> |</span>
 <a id="line-18" name="line-18"></a><span class="cm"> |  Author       :  Nikolaj Gliese Pedersen</span>
 <a id="line-19" name="line-19"></a><span class="cm"> |  Email 		 :  &lt;nikolajgliese@tutanota.com&gt;</span>
 <a id="line-20" name="line-20"></a><span class="cm"> |</span>
-<a id="line-21" name="line-21"></a><span class="cm"> |  Description  :  This class, HAL.hpp, is designed as:</span>
+<a id="line-21" name="line-21"></a><span class="cm"> |  Description  :  This class, GPIO_API.hpp, is designed as:</span>
 <a id="line-22" name="line-22"></a><span class="cm"> |</span>
 <a id="line-23" name="line-23"></a><span class="cm"> |</span>
 <a id="line-24" name="line-24"></a><span class="cm"> |</span>
@@ -343,79 +349,85 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <a id="line-61" name="line-61"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/ErrorHandler/include/General_Error.hpp&quot;</span><span class="cp"></span>
 <a id="line-62" name="line-62"></a><span class="cm">/*-----------------------------------------------------------------------------*/</span>
 <a id="line-63" name="line-63"></a>
-<a id="line-64" name="line-64"></a><span class="cp">#ifdef __ESP32__</span>
-<a id="line-65" name="line-65"></a><span class="cp">#include</span> <span class="cpf">&lt;driver/gpio.h&gt;</span><span class="cp"></span>
-<a id="line-66" name="line-66"></a><span class="cp">#endif</span>
-<a id="line-67" name="line-67"></a>
-<a id="line-68" name="line-68"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a id="line-69" name="line-69"></a><span class="cm"> |                               Typedef                                        |</span>
-<a id="line-70" name="line-70"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a id="line-71" name="line-71"></a>
-<a id="line-72" name="line-72"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a id="line-73" name="line-73"></a><span class="cm"> |   		 					 Class                     		                |</span>
-<a id="line-74" name="line-74"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a id="line-75" name="line-75"></a>
-<a id="line-76" name="line-76"></a><span class="k">class</span> <span class="nc">GPIO_HAL</span>
-<a id="line-77" name="line-77"></a><span class="p">{</span>
-<a id="line-78" name="line-78"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a id="line-79" name="line-79"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_HAL</span><span class="p">;</span>
-<a id="line-80" name="line-80"></a><span class="cp">#endif</span>
-<a id="line-81" name="line-81"></a>  <span class="k">public</span><span class="o">:</span>
-<a id="line-82" name="line-82"></a><span class="c1">// define the calling for pin</span>
-<a id="line-83" name="line-83"></a><span class="cp">#ifdef __ESP32__</span>
-<a id="line-84" name="line-84"></a>	<span class="k">typedef</span> <span class="n">gpio_num_t</span> <span class="n">pin</span><span class="p">;</span>
-<a id="line-85" name="line-85"></a><span class="cp">#else</span>
-<a id="line-86" name="line-86"></a>	<span class="k">typedef</span> <span class="kt">int</span> <span class="n">pin</span><span class="p">;</span>
-<a id="line-87" name="line-87"></a><span class="cp">#endif</span>
-<a id="line-88" name="line-88"></a>	<span class="k">typedef</span> <span class="k">enum</span>
-<a id="line-89" name="line-89"></a>	<span class="p">{</span>
-<a id="line-90" name="line-90"></a>		<span class="n">INPUT</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="line-91" name="line-91"></a>		<span class="n">OUTPUT</span> <span class="o">=</span> <span class="mi">1</span>
-<a id="line-92" name="line-92"></a>	<span class="p">}</span> <span class="n">io_def_t</span><span class="p">;</span>
-<a id="line-93" name="line-93"></a>	<span class="k">typedef</span> <span class="k">enum</span>
-<a id="line-94" name="line-94"></a>	<span class="p">{</span>
-<a id="line-95" name="line-95"></a>		<span class="n">LOW</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="line-96" name="line-96"></a>		<span class="n">HIGH</span> <span class="o">=</span> <span class="mi">1</span>
-<a id="line-97" name="line-97"></a>	<span class="p">}</span> <span class="n">io_val_t</span><span class="p">;</span>
-<a id="line-98" name="line-98"></a>	<span class="k">typedef</span> <span class="k">enum</span>
-<a id="line-99" name="line-99"></a>	<span class="p">{</span>
-<a id="line-100" name="line-100"></a>		<span class="n">FALLING_EDGE</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
-<a id="line-101" name="line-101"></a>		<span class="n">RISING_EDGE</span><span class="p">,</span>
-<a id="line-102" name="line-102"></a>		<span class="n">ANY_EDGE</span>
-<a id="line-103" name="line-103"></a>	<span class="p">}</span> <span class="n">io_intr_t</span><span class="p">;</span>
-<a id="line-104" name="line-104"></a>	<span class="n">GPIO_HAL</span><span class="p">()</span> <span class="o">=</span> <span class="k">default</span><span class="p">;</span>
-<a id="line-105" name="line-105"></a>	<span class="o">~</span><span class="n">GPIO_HAL</span><span class="p">(){};</span>
-<a id="line-106" name="line-106"></a>
-<a id="line-107" name="line-107"></a>	<span class="n">general_err_t</span> <span class="nf">setDirection</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span><span class="o">&amp;</span> <span class="n">pin</span><span class="p">,</span> <span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">io_def_t</span><span class="o">&amp;</span> <span class="n">dir</span><span class="p">);</span>
-<a id="line-108" name="line-108"></a>	<span class="n">general_err_t</span> <span class="nf">setValue</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span><span class="o">&amp;</span> <span class="n">pin</span><span class="p">,</span> <span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">io_val_t</span><span class="o">&amp;</span> <span class="n">val</span><span class="p">);</span>
-<a id="line-109" name="line-109"></a>	<span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">io_val_t</span> <span class="nf">getValue</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span><span class="o">&amp;</span> <span class="n">pin</span><span class="p">)</span> <span class="k">const</span><span class="p">;</span>
-<a id="line-110" name="line-110"></a>	<span class="n">general_err_t</span> <span class="nf">installInterruptDriver</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span><span class="o">&amp;</span> <span class="n">pin</span><span class="p">,</span> <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">callbackfunction</span><span class="p">)(</span><span class="kt">void</span><span class="o">*</span><span class="p">),</span>
-<a id="line-111" name="line-111"></a>										 <span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">io_intr_t</span><span class="o">&amp;</span> <span class="n">intr</span><span class="p">);</span>
-<a id="line-112" name="line-112"></a>	<span class="n">general_err_t</span> <span class="nf">enableInterrupt</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span><span class="o">&amp;</span> <span class="n">pin</span><span class="p">);</span>
-<a id="line-113" name="line-113"></a>	<span class="n">general_err_t</span> <span class="nf">disableInterrupt</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span><span class="o">&amp;</span> <span class="n">pin</span><span class="p">);</span>
-<a id="line-114" name="line-114"></a>
-<a id="line-115" name="line-115"></a>  <span class="k">private</span><span class="o">:</span>
-<a id="line-116" name="line-116"></a><span class="p">};</span>
-<a id="line-117" name="line-117"></a>
-<a id="line-118" name="line-118"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a id="line-119" name="line-119"></a><span class="cm"> |   		 				 Unit Test Class               		                |</span>
-<a id="line-120" name="line-120"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a id="line-121" name="line-121"></a>
-<a id="line-122" name="line-122"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a id="line-123" name="line-123"></a><span class="k">class</span> <span class="nc">friend_HAL</span>
-<a id="line-124" name="line-124"></a><span class="p">{</span>
-<a id="line-125" name="line-125"></a>  <span class="k">public</span><span class="o">:</span>
-<a id="line-126" name="line-126"></a>	<span class="n">friend_HAL</span><span class="p">(){};</span>
-<a id="line-127" name="line-127"></a><span class="hll">	<span class="n">friend_HAL</span><span class="p">(</span><span class="n">GPIO_HAL</span><span class="o">*</span> <span class="n">HAL</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">HAL</span><span class="p">}</span> <span class="p">{};</span><div class='verbose expandable'><span class='error2'>&lt;--- Class 'friend_HAL' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div><div class='verbose expandable'><span class='error2'>&lt;--- Class 'friend_HAL' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div>
-</span><a id="line-128" name="line-128"></a>
-<a id="line-129" name="line-129"></a>	<span class="o">~</span><span class="n">friend_HAL</span><span class="p">(){};</span>
-<a id="line-130" name="line-130"></a>
-<a id="line-131" name="line-131"></a>  <span class="k">private</span><span class="o">:</span>
-<a id="line-132" name="line-132"></a>	<span class="n">GPIO_HAL</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
-<a id="line-133" name="line-133"></a><span class="p">};</span>
-<a id="line-134" name="line-134"></a><span class="cp">#endif</span>
-<a id="line-135" name="line-135"></a>
-<a id="line-136" name="line-136"></a><span class="cp">#endif </span><span class="cm">/* MAIN_COMPONENTS_GPIO_INCLUDE_HAL_HPP_ */</span><span class="cp"></span>
+<a id="line-64" name="line-64"></a><span class="cp">#include</span> <span class="cpf">&quot;HAL.hpp&quot;</span><span class="cp"></span>
+<a id="line-65" name="line-65"></a>
+<a id="line-66" name="line-66"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a id="line-67" name="line-67"></a><span class="cm"> |                               Typedef                                        |</span>
+<a id="line-68" name="line-68"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a id="line-69" name="line-69"></a>
+<a id="line-70" name="line-70"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a id="line-71" name="line-71"></a><span class="cm"> |   		 					 Class                     		                |</span>
+<a id="line-72" name="line-72"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a id="line-73" name="line-73"></a>
+<a id="line-74" name="line-74"></a><span class="k">class</span> <span class="nc">GPIO_API</span>
+<a id="line-75" name="line-75"></a><span class="p">{</span>
+<a id="line-76" name="line-76"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a id="line-77" name="line-77"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_GPIO_API</span><span class="p">;</span>
+<a id="line-78" name="line-78"></a><span class="cp">#endif</span>
+<a id="line-79" name="line-79"></a>  <span class="k">public</span><span class="o">:</span>
+<a id="line-80" name="line-80"></a>	<span class="n">GPIO_API</span><span class="p">()</span> <span class="o">:</span> <span class="n">m_pin</span><span class="p">{(</span><span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span><span class="p">)</span><span class="mi">0</span><span class="p">},</span> <span class="n">is_Output</span><span class="p">{</span><span class="nb">false</span><span class="p">},</span> <span class="n">is_high</span><span class="p">{</span><span class="nb">false</span><span class="p">}</span> <span class="p">{};</span>
+<a id="line-81" name="line-81"></a><span class="hll">	<span class="n">GPIO_API</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span><span class="o">&amp;</span> <span class="n">pin</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_pin</span><span class="p">{</span><span class="n">pin</span><span class="p">},</span> <span class="n">is_Output</span><span class="p">{</span><span class="nb">false</span><span class="p">},</span> <span class="n">is_high</span><span class="p">{</span><span class="nb">false</span><span class="p">}</span> <span class="p">{};</span><div class='verbose expandable'><span class='error2'>&lt;--- Class 'GPIO_API' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div>
+</span><a id="line-82" name="line-82"></a>	<span class="o">~</span><span class="n">GPIO_API</span><span class="p">();</span>
+<a id="line-83" name="line-83"></a>
+<a id="line-84" name="line-84"></a>	<span class="kr">inline</span> <span class="kt">void</span> <span class="nf">toggle</span><span class="p">()</span>
+<a id="line-85" name="line-85"></a>	<span class="p">{</span>
+<a id="line-86" name="line-86"></a>		<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">is_Output</span><span class="p">)</span>
+<a id="line-87" name="line-87"></a>		<span class="p">{</span>
+<a id="line-88" name="line-88"></a>			<span class="k">return</span><span class="p">;</span>
+<a id="line-89" name="line-89"></a>		<span class="p">}</span>
+<a id="line-90" name="line-90"></a>		<span class="k">if</span><span class="p">(</span><span class="n">isHigh</span><span class="p">())</span>
+<a id="line-91" name="line-91"></a>		<span class="p">{</span>
+<a id="line-92" name="line-92"></a>			<span class="n">setLow</span><span class="p">();</span>
+<a id="line-93" name="line-93"></a>		<span class="p">}</span>
+<a id="line-94" name="line-94"></a>		<span class="k">else</span>
+<a id="line-95" name="line-95"></a>		<span class="p">{</span>
+<a id="line-96" name="line-96"></a>			<span class="n">setHigh</span><span class="p">();</span>
+<a id="line-97" name="line-97"></a>		<span class="p">}</span>
+<a id="line-98" name="line-98"></a>	<span class="p">}</span>
+<a id="line-99" name="line-99"></a>	<span class="n">general_err_t</span> <span class="nf">setToInput</span><span class="p">();</span>
+<a id="line-100" name="line-100"></a>	<span class="n">general_err_t</span> <span class="nf">setToOutput</span><span class="p">();</span>
+<a id="line-101" name="line-101"></a>	<span class="n">general_err_t</span> <span class="nf">setHigh</span><span class="p">();</span>
+<a id="line-102" name="line-102"></a>	<span class="n">general_err_t</span> <span class="nf">setLow</span><span class="p">();</span>
+<a id="line-103" name="line-103"></a>	<span class="kt">bool</span> <span class="nf">isHigh</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<a id="line-104" name="line-104"></a>	<span class="kt">bool</span> <span class="nf">isLow</span><span class="p">()</span> <span class="k">const</span><span class="p">;</span>
+<a id="line-105" name="line-105"></a>	<span class="n">general_err_t</span> <span class="nf">installInterrupt</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">io_intr_t</span><span class="o">&amp;</span> <span class="n">type</span><span class="p">,</span>
+<a id="line-106" name="line-106"></a>								   <span class="kt">void</span> <span class="p">(</span><span class="o">*</span><span class="n">callbackfunction</span><span class="p">)(</span><span class="kt">void</span><span class="o">*</span><span class="p">));</span>
+<a id="line-107" name="line-107"></a>
+<a id="line-108" name="line-108"></a>	<span class="n">general_err_t</span> <span class="nf">enableInterrupt</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<a id="line-109" name="line-109"></a>	<span class="p">{</span>
+<a id="line-110" name="line-110"></a>		<span class="k">return</span> <span class="n">m_hal</span><span class="p">.</span><span class="n">enableInterrupt</span><span class="p">(</span><span class="n">m_pin</span><span class="p">);</span>
+<a id="line-111" name="line-111"></a>	<span class="p">};</span>
+<a id="line-112" name="line-112"></a>	<span class="n">general_err_t</span> <span class="nf">disableInterrupt</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<a id="line-113" name="line-113"></a>	<span class="p">{</span>
+<a id="line-114" name="line-114"></a>		<span class="k">return</span> <span class="n">m_hal</span><span class="p">.</span><span class="n">disableInterrupt</span><span class="p">(</span><span class="n">m_pin</span><span class="p">);</span>
+<a id="line-115" name="line-115"></a>	<span class="p">};</span>
+<a id="line-116" name="line-116"></a>
+<a id="line-117" name="line-117"></a>  <span class="k">private</span><span class="o">:</span>
+<a id="line-118" name="line-118"></a>	<span class="n">GPIO_HAL</span><span class="o">::</span><span class="n">pin</span> <span class="n">m_pin</span><span class="p">;</span>
+<a id="line-119" name="line-119"></a>	<span class="kt">bool</span> <span class="n">is_Output</span><span class="p">;</span>
+<a id="line-120" name="line-120"></a>	<span class="kt">bool</span> <span class="n">is_high</span><span class="p">;</span>
+<a id="line-121" name="line-121"></a>	<span class="n">GPIO_HAL</span> <span class="n">m_hal</span><span class="p">;</span>
+<a id="line-122" name="line-122"></a><span class="p">};</span>
+<a id="line-123" name="line-123"></a>
+<a id="line-124" name="line-124"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a id="line-125" name="line-125"></a><span class="cm"> |   		 				 Unit Test Class               		                |</span>
+<a id="line-126" name="line-126"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a id="line-127" name="line-127"></a>
+<a id="line-128" name="line-128"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a id="line-129" name="line-129"></a><span class="k">class</span> <span class="nc">friend_GPIO_API</span>
+<a id="line-130" name="line-130"></a><span class="p">{</span>
+<a id="line-131" name="line-131"></a>  <span class="k">public</span><span class="o">:</span>
+<a id="line-132" name="line-132"></a>	<span class="n">friend_GPIO_API</span><span class="p">(){};</span>
+<a id="line-133" name="line-133"></a><span class="hll">	<span class="n">friend_GPIO_API</span><span class="p">(</span><span class="n">GPIO_API</span><span class="o">*</span> <span class="n">GPIO_API</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">GPIO_API</span><span class="p">}</span> <span class="p">{};</span><div class='verbose expandable'><span class='error2'>&lt;--- Class 'friend_GPIO_API' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div>
+</span><a id="line-134" name="line-134"></a>
+<a id="line-135" name="line-135"></a>	<span class="o">~</span><span class="n">friend_GPIO_API</span><span class="p">(){};</span>
+<a id="line-136" name="line-136"></a>
+<a id="line-137" name="line-137"></a>  <span class="k">private</span><span class="o">:</span>
+<a id="line-138" name="line-138"></a>	<span class="n">GPIO_API</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
+<a id="line-139" name="line-139"></a><span class="p">};</span>
+<a id="line-140" name="line-140"></a><span class="cp">#endif</span>
+<a id="line-141" name="line-141"></a>
+<a id="line-142" name="line-142"></a><span class="cp">#endif </span><span class="cm">/* MAIN_COMPONENTS_GPIO_INCLUDE_GPIO_API_HPP_ */</span><span class="cp"></span>
 </pre></div>
 </td></tr></table>
       </div>
