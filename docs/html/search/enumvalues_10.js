@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['very_5fhigh_1536',['very_high',['../d1/d27/namespace_fault_handler__n.html#a32023c0fed23a14c07f7f743985cdb40aaa4cea18ae7516f9a3c28d597055082f',1,'FaultHandler_n']]],
-  ['very_5flow_1537',['very_low',['../d1/d27/namespace_fault_handler__n.html#a32023c0fed23a14c07f7f743985cdb40ab7619bc8e14fe34d78820f979605ee8b',1,'FaultHandler_n']]]
+  ['undef_1620',['UNDEF',['../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5ab3f7791472924b0d1530bb9112409c01',1,'PeriodeEstimator']]]
 ];

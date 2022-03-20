@@ -15,9 +15,9 @@ var hierarchy =
     [ "Camera_CV", "d3/dc5/class_camera___c_v.html", [
       [ "RPICamV2", "d4/de7/class_r_p_i_cam_v2.html", null ]
     ] ],
+    [ "HAL_ESP32::config", "d4/dc1/class_h_a_l___e_s_p32.html#d2/d6b/struct_h_a_l___e_s_p32_1_1config", null ],
     [ "DistanceSensorController::config", "d3/dab/class_distance_sensor_controller.html#d0/d14/struct_distance_sensor_controller_1_1config", null ],
     [ "ADC_API_ESP32::config", "d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config", null ],
-    [ "HAL_ESP32::config", "d4/dc1/class_h_a_l___e_s_p32.html#d2/d6b/struct_h_a_l___e_s_p32_1_1config", null ],
     [ "ConnectedComponents", "d5/d8a/class_connected_components.html", null ],
     [ "ConnectedComponents::container_t", "d5/d8a/class_connected_components.html#d1/d94/struct_connected_components_1_1container__t", null ],
     [ "Fault_Handler::counters_t", "dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t", null ],
@@ -51,6 +51,8 @@ var hierarchy =
     [ "FaultHandler_n::msg_t", "d1/d27/namespace_fault_handler__n.html#d5/de9/struct_fault_handler__n_1_1msg__t", null ],
     [ "Logger::msg_t", "d3/d42/class_logger.html#db/dbb/struct_logger_1_1msg__t", null ],
     [ "OTA", "d3/d40/class_o_t_a.html", null ],
+    [ "PeriodeEstimator< HIGH_THRESHOLD, LOW_THRESHOLD >", "da/d0a/class_periode_estimator.html", null ],
+    [ "PeriodeEstimator< 1900, 1800 >", "da/d0a/class_periode_estimator.html", null ],
     [ "ProtocolBase", "dc/d12/class_protocol_base.html", [
       [ "http_interface", "dc/dc2/classhttp__interface.html", null ],
       [ "postgresql_interface", "d2/d19/classpostgresql__interface.html", null ]
@@ -78,14 +80,25 @@ var hierarchy =
     [ "FreeRTOS::Semaphore", "d6/d90/class_free_r_t_o_s_1_1_semaphore.html", null ],
     [ "Sensor_Base< T, U >", "d1/da4/class_sensor___base.html", null ],
     [ "sensor_conf_t", "d3/dd3/_sensor___base_8hpp.html#d3/dcd/structsensor__conf__t", null ],
-    [ "ServiceBase< T, ErrorID >", "d4/d82/class_service_base.html", null ],
     [ "Task", "d7/d6d/class_task.html", [
       [ "ActiveCurrentSensor", "d6/da0/class_active_current_sensor.html", null ],
       [ "DataBroker", "d9/db3/class_data_broker.html", null ],
       [ "Maintainer", "d6/d9b/class_maintainer.html", null ],
       [ "SensorControllerBase", "d9/d88/class_sensor_controller_base.html", [
-        [ "DistanceSensorController", "d3/dab/class_distance_sensor_controller.html", null ],
+        [ "DistanceSensorController", "d3/dab/class_distance_sensor_controller.html", [
+          [ "DistanceSensorController_HW_TEST", "d8/d2b/class_distance_sensor_controller___h_w___t_e_s_t.html", null ]
+        ] ],
         [ "SensorControllerBase_MOCK", "d3/d1b/class_sensor_controller_base___m_o_c_k.html", null ]
+      ] ],
+      [ "ServiceBase< BUFFER_TYPE, QUEUE_TYPE >", "d4/d82/class_service_base.html", null ],
+      [ "ServiceBase< BUFFER_TYPE, FreeRTOS::Queue >", "d4/d82/class_service_base.html", [
+        [ "ServiceBase_HW_TEST< BUFFER_TYPE, QUEUE_TYPE >", "dc/d61/class_service_base___h_w___t_e_s_t.html", null ]
+      ] ],
+      [ "ServiceBase< MQTT_Message >", "d4/d82/class_service_base.html", null ],
+      [ "ServiceBase< MQTT_Message, FreeRTOS::Queue >", "d4/d82/class_service_base.html", [
+        [ "ServiceBase_HW_TEST< MQTT_Message >", "dc/d61/class_service_base___h_w___t_e_s_t.html", [
+          [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "TaskHandle_t", "d3/d1c/_free_r_t_o_s_8h.html#d9/d94/struct_task_handle__t", null ],

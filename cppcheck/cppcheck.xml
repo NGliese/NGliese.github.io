@@ -62,9 +62,25 @@
             <location file="/home/nikolaj/github/Embedded/library/Components/Connector/WiFi/src/WiFi_API.cpp" line="41" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
             <location file="/home/nikolaj/github/Embedded/library/Components/Connector/WiFi/src/WiFi_API.cpp" line="40" column="20" info="Assignment &apos;err=connect()&apos;, assigned value is 0"/>
         </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
+            <symbol>GPIO_API</symbol>
+        </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;DistanceSensorController&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;DistanceSensorController&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" file="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/include/DistanceSensorController.hpp" line="60" column="2"/>
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" file="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/include/DistanceSensorController.hpp" line="61" column="2"/>
             <symbol>DistanceSensorController</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;err&apos; is assigned a value that is never used." verbose="Variable &apos;err&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" line="42" column="11"/>
+            <symbol>err</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/HAL.hpp" line="127" column="2"/>
+            <symbol>friend_HAL</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
+            <symbol>friend_GPIO_API</symbol>
         </error>
         <error id="knownConditionTrueFalse" severity="style" msg="The expression &apos;adc_reading &gt; 0&apos; is always false." verbose="Finding the same expression on both sides of an operator is suspicious and might indicate a cut and paste or logic error. Please examine this code carefully to determine if it is correct." cwe="398">
             <location file="/home/nikolaj/github/Embedded/library/Components/Objects/ADC/src/ADC_API_ESP32.cpp" line="64" column="25"/>
@@ -74,9 +90,17 @@
             <location file="/home/nikolaj/github/Embedded/library/Components/Objects/ADC/src/ADC_API_ESP32.cpp" line="44" column="31"/>
             <symbol>val_type</symbol>
         </error>
-        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;DataBroker::pushQueues&apos;" verbose="Unused private function: &apos;DataBroker::pushQueues&apos;" cwe="398">
-            <location file0="/home/nikolaj/github/Embedded/library/Components/Objects/DataBroker/src/DataBroker.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/DataBroker/include/DataBroker.hpp" line="67" column="16"/>
-            <symbol>DataBroker::pushQueues</symbol>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Objects/DataBroker/src/DataBroker.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
+            <symbol>GPIO_API</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Objects/DataBroker/src/DataBroker.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/HAL.hpp" line="127" column="2"/>
+            <symbol>friend_HAL</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Objects/DataBroker/src/DataBroker.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
+            <symbol>friend_GPIO_API</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/src/GPIO_API.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
@@ -87,7 +111,7 @@
             <symbol>friend_HAL</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/src/GPIO_API.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="133" column="2"/>
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/src/GPIO_API.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
             <symbol>friend_GPIO_API</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
@@ -165,6 +189,30 @@
         <error id="useInitializationList" severity="performance" msg="Variable &apos;m_coreId&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_coreId&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
             <location file="/home/nikolaj/github/Embedded/library/Components/RTOS/FreeRTOS/src/Task.cpp" line="24" column="2"/>
             <symbol>m_coreId</symbol>
+        </error>
+        <error id="duplInheritedMember" severity="warning" msg="The class &apos;ServiceBase_HW_TEST &lt; MQTT_Message , FreeRTOS :: Queue &gt;&apos; defines member variable with name &apos;m_test_pin&apos; also defined in its parent class &apos;ServiceBase &lt; MQTT_Message , FreeRTOS :: Queue &gt;&apos;." verbose="The class &apos;ServiceBase_HW_TEST &lt; MQTT_Message , FreeRTOS :: Queue &gt;&apos; defines member variable with name &apos;m_test_pin&apos; also defined in its parent class &apos;ServiceBase &lt; MQTT_Message , FreeRTOS :: Queue &gt;&apos;." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Interfaces/ServiceBase/include/ServiceBase.hpp" line="182" column="11" info="Derived variable &apos;ServiceBase_HW_TEST &lt; MQTT_Message , FreeRTOS :: Queue &gt;::m_test_pin&apos;"/>
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Interfaces/ServiceBase/include/ServiceBase.hpp" line="148" column="11" info="Parent variable &apos;ServiceBase &lt; MQTT_Message , FreeRTOS :: Queue &gt;::m_test_pin&apos;"/>
+            <symbol>ServiceBase_HW_TEST &lt; MQTT_Message , FreeRTOS :: Queue &gt;</symbol>
+            <symbol>m_test_pin</symbol>
+            <symbol>ServiceBase &lt; MQTT_Message , FreeRTOS :: Queue &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
+            <symbol>GPIO_API</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;mainFunction&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;mainFunction&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/include/WaterEstimator_Service.hpp" line="63" column="16" info="Function in derived class"/>
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Interfaces/ServiceBase/include/ServiceBase.hpp" line="88" column="24" info="Virtual function in base class"/>
+            <symbol>mainFunction</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/HAL.hpp" line="127" column="2"/>
+            <symbol>friend_HAL</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
+            <symbol>friend_GPIO_API</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;HAL_ESP32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;HAL_ESP32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/github/Embedded/library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/PWM/include/HAL.hpp" line="102" column="2"/>

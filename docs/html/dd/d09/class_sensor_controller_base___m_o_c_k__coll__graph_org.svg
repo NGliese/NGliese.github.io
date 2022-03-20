@@ -38,11 +38,11 @@
 <text text-anchor="start" x="246" y="-223.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setWantDataTrue()</text>
 <text text-anchor="start" x="246" y="-212.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSafeBuffer()</text>
 <text text-anchor="start" x="246" y="-201.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isDataReady()</text>
-<text text-anchor="start" x="246" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setDataReadyTrue()</text>
-<text text-anchor="start" x="246" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postData()</text>
-<text text-anchor="start" x="246" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postError()</text>
-<text text-anchor="start" x="246" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00"># main_function()</text>
-<text text-anchor="start" x="246" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setDataReady()</text>
+<text text-anchor="start" x="246" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setDataReady()</text>
+<text text-anchor="start" x="246" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setDataReadyTrue()</text>
+<text text-anchor="start" x="246" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postData()</text>
+<text text-anchor="start" x="246" y="-157.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postError()</text>
+<text text-anchor="start" x="246" y="-146.5" font-family="Helvetica,sans-Serif" font-size="10.00"># main_function()</text>
 <text text-anchor="start" x="246" y="-135.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setWantData()</text>
 <text text-anchor="start" x="246" y="-124.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; run()</text>
 </a>

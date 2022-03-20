@@ -13,6 +13,7 @@ var annotated_dup =
     [ "Curl_SAL", "d2/d2b/class_curl___s_a_l.html", "d2/d2b/class_curl___s_a_l" ],
     [ "DataBroker", "d9/db3/class_data_broker.html", "d9/db3/class_data_broker" ],
     [ "DistanceSensorController", "d3/dab/class_distance_sensor_controller.html", "d3/dab/class_distance_sensor_controller" ],
+    [ "DistanceSensorController_HW_TEST", "d8/d2b/class_distance_sensor_controller___h_w___t_e_s_t.html", "d8/d2b/class_distance_sensor_controller___h_w___t_e_s_t" ],
     [ "DogFeederDoor", "d2/db0/class_dog_feeder_door.html", "d2/db0/class_dog_feeder_door" ],
     [ "ErrorCodeParser", "db/d2e/class_error_code_parser.html", "db/d2e/class_error_code_parser" ],
     [ "esp32_http_sal", "d5/d62/classesp32__http__sal.html", "d5/d62/classesp32__http__sal" ],
@@ -39,6 +40,7 @@ var annotated_dup =
     [ "msg_control_t", "db/d90/_message___protocol_8hpp.html#d6/d3f/structmsg__control__t", "db/d90/_message___protocol_8hpp_d6/d3f/structmsg__control__t" ],
     [ "msg_data_t", "db/d90/_message___protocol_8hpp.html#d2/d7f/structmsg__data__t", "db/d90/_message___protocol_8hpp_d2/d7f/structmsg__data__t" ],
     [ "OTA", "d3/d40/class_o_t_a.html", "d3/d40/class_o_t_a" ],
+    [ "PeriodeEstimator", "da/d0a/class_periode_estimator.html", "da/d0a/class_periode_estimator" ],
     [ "postgresql_interface", "d2/d19/classpostgresql__interface.html", "d2/d19/classpostgresql__interface" ],
     [ "ProtocolBase", "dc/d12/class_protocol_base.html", "dc/d12/class_protocol_base" ],
     [ "PWM_API_ESP32", "dd/d6a/class_p_w_m___a_p_i___e_s_p32.html", "dd/d6a/class_p_w_m___a_p_i___e_s_p32" ],
@@ -56,6 +58,7 @@ var annotated_dup =
     [ "SensorControllerBase", "d9/d88/class_sensor_controller_base.html", "d9/d88/class_sensor_controller_base" ],
     [ "SensorControllerBase_MOCK", "d3/d1b/class_sensor_controller_base___m_o_c_k.html", "d3/d1b/class_sensor_controller_base___m_o_c_k" ],
     [ "ServiceBase", "d4/d82/class_service_base.html", "d4/d82/class_service_base" ],
+    [ "ServiceBase_HW_TEST", "dc/d61/class_service_base___h_w___t_e_s_t.html", "dc/d61/class_service_base___h_w___t_e_s_t" ],
     [ "Task", "d7/d6d/class_task.html", "d7/d6d/class_task" ],
     [ "TaskHandle_t", "d3/d1c/_free_r_t_o_s_8h.html#d9/d94/struct_task_handle__t", null ],
     [ "This", "d0/deb/namespace_3global_scope_4.html#df/d9e/class_this", null ],
@@ -65,6 +68,7 @@ var annotated_dup =
     [ "Utility_Image", "db/dc9/class_utility___image.html", "db/dc9/class_utility___image" ],
     [ "Watch_Clock", "d1/dc6/class_watch___clock.html", "d1/dc6/class_watch___clock" ],
     [ "Watchdog_Base", "da/d60/class_watchdog___base.html", "da/d60/class_watchdog___base" ],
+    [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", "d6/da4/class_water_estimator___service" ],
     [ "WiFi_API", "d0/de8/class_wi_fi___a_p_i.html", "d0/de8/class_wi_fi___a_p_i" ],
     [ "wifi_conf_t", "de/d7c/_wi_fi___a_p_i_8hpp.html#db/d38/structwifi__conf__t", "de/d7c/_wi_fi___a_p_i_8hpp_db/d38/structwifi__conf__t" ]
 ];

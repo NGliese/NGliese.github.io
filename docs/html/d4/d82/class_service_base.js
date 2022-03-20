@@ -1,16 +1,17 @@
 var class_service_base =
 [
-    [ "ServiceBase", "d4/d82/class_service_base.html#a552caee0f25f120109cc7ff2e1ec8f0d", null ],
-    [ "~ServiceBase", "d4/d82/class_service_base.html#ac544d4334dd1530416b6112e2a1f0e9d", null ],
-    [ "getQueue", "d4/d82/class_service_base.html#a3d97d56f0eb17c29c940f3dc83ac6cd2", null ],
-    [ "isActive", "d4/d82/class_service_base.html#a03bd622a57b6871d077eb6bccbb2ad40", null ],
-    [ "mainFunction", "d4/d82/class_service_base.html#ae67c51a37b217695679205629c45c3ed", null ],
-    [ "postData", "d4/d82/class_service_base.html#aefbcb31b0b4c7737d75e323c97b3deb0", null ],
-    [ "run", "d4/d82/class_service_base.html#aa8b82467f9d914de936cc553b4c5e284", null ],
-    [ "setBuffer", "d4/d82/class_service_base.html#add3196ece6e5a818bf661f3542d17759", null ],
-    [ "setIsActive", "d4/d82/class_service_base.html#a5fd7ca00bba62620267958168d0f19f5", null ],
-    [ "m_buffer", "d4/d82/class_service_base.html#acf7e279cb99b865f90f69da50a9999df", null ],
-    [ "m_isActive", "d4/d82/class_service_base.html#ae86d1624bacaa94bbd25c602965534f3", null ],
-    [ "m_mqtt", "d4/d82/class_service_base.html#a403f78ebcbf38befb1262d5ec8b32a90", null ],
-    [ "m_queue", "d4/d82/class_service_base.html#a4cc73fb5cdad011bc057399e30de5cdd", null ]
+    [ "ServiceBase", "d4/d82/class_service_base.html#aa5beb66b63f08d9caed72225e3b582fb", null ],
+    [ "~ServiceBase", "d4/d82/class_service_base.html#a50cad59e6225d8f4cb88fba78e23341b", null ],
+    [ "getQueue", "d4/d82/class_service_base.html#a2c2360aed80bbc8825556e45608ab584", null ],
+    [ "isActive", "d4/d82/class_service_base.html#a98f0b8e3f5b84772dd0a9593ef74ba52", null ],
+    [ "mainFunction", "d4/d82/class_service_base.html#a1314c31d2f0d1362d7c9f7d5008bdb94", null ],
+    [ "postData", "d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a", null ],
+    [ "run", "d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1", null ],
+    [ "setIsActive", "d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2", null ],
+    [ "m_buffer", "d4/d82/class_service_base.html#a8b5fb80ce77e1d72999a56f8712597fb", null ],
+    [ "m_error_id", "d4/d82/class_service_base.html#a2ddae74b70252dd31c7e7394611a663a", null ],
+    [ "m_isActive", "d4/d82/class_service_base.html#a118e06cb43cd21201638d90f1453ca45", null ],
+    [ "m_mqtt", "d4/d82/class_service_base.html#acef4c3f86dbc1d8fa2da5286ed6d72c4", null ],
+    [ "m_queue", "d4/d82/class_service_base.html#afe468292cc9168c9c3552fe330dd4688", null ],
+    [ "m_test_pin", "d4/d82/class_service_base.html#a952632ded6b93e2b417e824a143678e5", null ]
 ];

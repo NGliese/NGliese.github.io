@@ -89,11 +89,11 @@ var sectionId = 'dynsection-0';
 <text text-anchor="start" x="25.5" y="-222.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setWantDataTrue()</text>
 <text text-anchor="start" x="25.5" y="-211.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSafeBuffer()</text>
 <text text-anchor="start" x="25.5" y="-200.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isDataReady()</text>
-<text text-anchor="start" x="25.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setDataReadyTrue()</text>
-<text text-anchor="start" x="25.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postData()</text>
-<text text-anchor="start" x="25.5" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postError()</text>
-<text text-anchor="start" x="25.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"># main_function()</text>
-<text text-anchor="start" x="25.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setDataReady()</text>
+<text text-anchor="start" x="25.5" y="-189.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setDataReady()</text>
+<text text-anchor="start" x="25.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setDataReadyTrue()</text>
+<text text-anchor="start" x="25.5" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postData()</text>
+<text text-anchor="start" x="25.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postError()</text>
+<text text-anchor="start" x="25.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00"># main_function()</text>
 <text text-anchor="start" x="25.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setWantData()</text>
 <text text-anchor="start" x="25.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; run()</text>
 </a>

@@ -66,7 +66,7 @@ var sectionId = 'dynsection-1';
 <polyline fill="none" stroke="black" points="295.5,-52.5 462.5,-52.5 "/>
 <text text-anchor="start" x="303.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ DistanceSensorController()</text>
 <text text-anchor="start" x="303.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~DistanceSensorController()</text>
-<text text-anchor="start" x="303.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; main_function()</text>
+<text text-anchor="start" x="303.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00"># main_function()</text>
 <text text-anchor="start" x="303.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; updateInternalBuffer()</text>
 </a>
 </g>
@@ -86,11 +86,11 @@ var sectionId = 'dynsection-1';
 <text text-anchor="start" x="369.5" y="-543.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setWantDataTrue()</text>
 <text text-anchor="start" x="369.5" y="-532.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getSafeBuffer()</text>
 <text text-anchor="start" x="369.5" y="-521.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isDataReady()</text>
-<text text-anchor="start" x="369.5" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setDataReadyTrue()</text>
-<text text-anchor="start" x="369.5" y="-499.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postData()</text>
-<text text-anchor="start" x="369.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postError()</text>
-<text text-anchor="start" x="369.5" y="-477.5" font-family="Helvetica,sans-Serif" font-size="10.00"># main_function()</text>
-<text text-anchor="start" x="369.5" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setDataReady()</text>
+<text text-anchor="start" x="369.5" y="-510.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setDataReady()</text>
+<text text-anchor="start" x="369.5" y="-499.5" font-family="Helvetica,sans-Serif" font-size="10.00"># setDataReadyTrue()</text>
+<text text-anchor="start" x="369.5" y="-488.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postData()</text>
+<text text-anchor="start" x="369.5" y="-477.5" font-family="Helvetica,sans-Serif" font-size="10.00"># postError()</text>
+<text text-anchor="start" x="369.5" y="-466.5" font-family="Helvetica,sans-Serif" font-size="10.00"># main_function()</text>
 <text text-anchor="start" x="369.5" y="-455.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; setWantData()</text>
 <text text-anchor="start" x="369.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; run()</text>
 </a>

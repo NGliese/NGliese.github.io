@@ -1,5 +1,6 @@
 <map id="DistanceSensorController" name="DistanceSensorController">
 <area shape="rect" id="node1" title=" " alt="" coords="5,725,228,876"/>
+<area shape="rect" id="node4" href="$d8/d2b/class_distance_sensor_controller___h_w___t_e_s_t.html" title=" " alt="" coords="10,924,223,1075"/>
 <area shape="rect" id="node2" href="$d9/d88/class_sensor_controller_base.html" title=" " alt="" coords="17,351,216,677"/>
 <area shape="rect" id="node3" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="51,5,182,303"/>
 </map>
