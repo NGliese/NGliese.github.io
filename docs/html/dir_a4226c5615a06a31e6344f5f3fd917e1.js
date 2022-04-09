@@ -10,6 +10,7 @@ var dir_a4226c5615a06a31e6344f5f3fd917e1 =
     [ "Logger", "dir_e8f8d894d18fe9c445a3ad74b998aadb.html", "dir_e8f8d894d18fe9c445a3ad74b998aadb" ],
     [ "Maintainer", "dir_c562692df1ba95c82b91dbfdfaa5b2ff.html", "dir_c562692df1ba95c82b91dbfdfaa5b2ff" ],
     [ "Message", "dir_75d3ebf0a258c14dff7cc60c166df24a.html", "dir_75d3ebf0a258c14dff7cc60c166df24a" ],
+    [ "NonVolatileStorage", "dir_04a7791a78e7f3925414ce47ef4fd399.html", "dir_04a7791a78e7f3925414ce47ef4fd399" ],
     [ "OTA", "dir_d2942b6148df0ab9010d67087a1cea59.html", "dir_d2942b6148df0ab9010d67087a1cea59" ],
     [ "PWM", "dir_829eea574d5fe962226ae6a4579d6a03.html", "dir_829eea574d5fe962226ae6a4579d6a03" ],
     [ "QueryTools", "dir_11b59cff1cad6e88be7ea7296a0f0dfa.html", "dir_11b59cff1cad6e88be7ea7296a0f0dfa" ],

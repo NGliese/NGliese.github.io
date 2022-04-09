@@ -331,7 +331,7 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d82/class_service_base.html#a118e06cb43cd21201638d90f1453ca45">m_isActive</a>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::setIsActive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">ServiceBase&lt; MQTT_Message &gt;::setIsActive()</a>.</p>
 
 </div>
 </div>
@@ -365,7 +365,7 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 
 <p>Implemented in <a class="el" href="../../d6/da4/class_water_estimator___service.html#a13455065d4194bf1dc122e27ddb1396f">WaterEstimator_Service</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1">ServiceBase&lt; MQTT_Message &gt;::run()</a>.</p>
 
 </div>
 </div>
@@ -417,8 +417,16 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00106">106</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    {</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d4/d82/class_service_base.html#acef4c3f86dbc1d8fa2da5286ed6d72c4">m_mqtt</a>.<a class="code" href="../../d5/de7/classmqtt__api__v2.html#a79abe54e368291411baee0ea8af9ec61">publish</a>(topic, message.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#aeb5f45d72b9f11d42e14ca6a1908711c">toString</a>());</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <span class="comment">// post only if data is available</span></div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">if</span>(message.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a48069c6c179734b1d72770eaf8857ea9">getBufferSize</a>() &gt; 0)</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d4/d82/class_service_base.html#acef4c3f86dbc1d8fa2da5286ed6d72c4">m_mqtt</a>.<a class="code" href="../../d5/de7/classmqtt__api__v2.html#a79abe54e368291411baee0ea8af9ec61">publish</a>(topic, message.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#aeb5f45d72b9f11d42e14ca6a1908711c">toString</a>());</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        }</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9">GE_NO_DATA</a>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -458,31 +466,31 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 
 <p>Implements <a class="el" href="../../d7/d6d/class_task.html#a399f60ad8cd91d34dba2de57b4ac6d65">Task</a>.</p>
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00120">120</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    {</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordtype">size_t</span> recived;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        constexpr <span class="keywordtype">size_t</span> WAIT_FOREVER = (10000000UL);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        <span class="keywordflow">for</span>(;;)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        {</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="../../d4/d82/class_service_base.html#afe468292cc9168c9c3552fe330dd4688">m_queue</a>.recieve(&amp;recived, WAIT_FOREVER))</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            {</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;                <span class="comment">// if the queue returns 1 it means some error happend</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;                <span class="comment">// most likely the wait-time has passed.</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="comment">// we will simply just skip the loop.</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;                <span class="keywordflow">continue</span>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            }</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <a class="code" href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">setIsActive</a>(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keyword">auto</span> err = <a class="code" href="../../d4/d82/class_service_base.html#a1314c31d2f0d1362d7c9f7d5008bdb94">mainFunction</a>();</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00128">128</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keywordtype">size_t</span> recived;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        constexpr <span class="keywordtype">size_t</span> WAIT_FOREVER = (10000000UL);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">for</span>(;;)</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        {</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="../../d4/d82/class_service_base.html#afe468292cc9168c9c3552fe330dd4688">m_queue</a>.recieve(&amp;recived, WAIT_FOREVER))</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            {</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="keywordflow">if</span>(err != <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>)</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                {</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    <a class="code" href="../../db/d2e/class_error_code_parser.html#a1645b12d2d422c2217f664e128a7776f">ErrorCodeParser::postToMqtt</a>(</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                        <a class="code" href="../../d4/d82/class_service_base.html#a2ddae74b70252dd31c7e7394611a663a">m_error_id</a>, err, <span class="stringliteral">&quot;Some error happend in the execution of main function&quot;</span>);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                }</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <a class="code" href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">setIsActive</a>(<span class="keyword">false</span>);</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        }</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;                <span class="comment">// if the queue returns 1 it means some error happend</span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                <span class="comment">// most likely the wait-time has passed.</span></div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <span class="comment">// we will simply just skip the loop.</span></div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                <span class="keywordflow">continue</span>;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            <a class="code" href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">setIsActive</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            <span class="keyword">auto</span> err = <a class="code" href="../../d4/d82/class_service_base.html#a1314c31d2f0d1362d7c9f7d5008bdb94">mainFunction</a>();</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            {</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                <span class="keywordflow">if</span>(err != <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                {</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;                    <a class="code" href="../../db/d2e/class_error_code_parser.html#a1645b12d2d422c2217f664e128a7776f">ErrorCodeParser::postToMqtt</a>(</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;                        <a class="code" href="../../d4/d82/class_service_base.html#a2ddae74b70252dd31c7e7394611a663a">m_error_id</a>, err, <span class="stringliteral">&quot;Some error happend in the execution of main function&quot;</span>);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;                }</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            }</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">setIsActive</a>(<span class="keyword">false</span>);</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -520,14 +528,14 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
   </dd>
 </dl>
 
-<p>Reimplemented in <a class="el" href="../../dc/d61/class_service_base___h_w___t_e_s_t.html#a476c8b30758c8b534699c83480bee215">ServiceBase_HW_TEST&lt; BUFFER_TYPE, QUEUE_TYPE &gt;</a>, and <a class="el" href="../../dc/d61/class_service_base___h_w___t_e_s_t.html#a476c8b30758c8b534699c83480bee215">ServiceBase_HW_TEST&lt; MQTT_Message &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="../../dc/d61/class_service_base___h_w___t_e_s_t.html#a476c8b30758c8b534699c83480bee215">ServiceBase_HW_TEST&lt; BUFFER_TYPE, QUEUE_TYPE &gt;</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00095">95</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <a class="code" href="../../d4/d82/class_service_base.html#a118e06cb43cd21201638d90f1453ca45">m_isActive</a> = <a class="code" href="../../d4/d82/class_service_base.html#a98f0b8e3f5b84772dd0a9593ef74ba52">isActive</a>;</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::run()</a>, and <a class="el" href="../../dc/d61/class_service_base___h_w___t_e_s_t.html#a476c8b30758c8b534699c83480bee215">ServiceBase_HW_TEST&lt; MQTT_Message &gt;::setIsActive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1">ServiceBase&lt; MQTT_Message &gt;::run()</a>, and <a class="el" href="../../dc/d61/class_service_base___h_w___t_e_s_t.html#a476c8b30758c8b534699c83480bee215">ServiceBase_HW_TEST&lt; BUFFER_TYPE, QUEUE_TYPE &gt;::setIsActive()</a>.</p>
 
 </div>
 </div>
@@ -554,7 +562,7 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00149">149</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00157">157</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -580,9 +588,9 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00155">155</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00163">163</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1">ServiceBase&lt; MQTT_Message &gt;::run()</a>.</p>
 
 </div>
 </div>
@@ -608,9 +616,9 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00152">152</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00160">160</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#a98f0b8e3f5b84772dd0a9593ef74ba52">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::isActive()</a>, and <a class="el" href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::setIsActive()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#a98f0b8e3f5b84772dd0a9593ef74ba52">ServiceBase&lt; MQTT_Message &gt;::isActive()</a>, and <a class="el" href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">ServiceBase&lt; MQTT_Message &gt;::setIsActive()</a>.</p>
 
 </div>
 </div>
@@ -636,9 +644,9 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00154">154</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00162">162</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::postData()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">ServiceBase&lt; MQTT_Message &gt;::postData()</a>.</p>
 
 </div>
 </div>
@@ -664,9 +672,9 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00147">147</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00155">155</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#a2c2360aed80bbc8825556e45608ab584">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::getQueue()</a>, and <a class="el" href="../../d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1">ServiceBase&lt; MQTT_Message, FreeRTOS::Queue &gt;::run()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d4/d82/class_service_base.html#a2c2360aed80bbc8825556e45608ab584">ServiceBase&lt; MQTT_Message &gt;::getQueue()</a>, and <a class="el" href="../../d4/d82/class_service_base.html#acab312c2437b55aab302f35e040eabf1">ServiceBase&lt; MQTT_Message &gt;::run()</a>.</p>
 
 </div>
 </div>
@@ -692,7 +700,7 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00148">148</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html#l00156">156</a> of file <a class="el" href="../../d2/dc5/_service_base_8hpp_source.html">ServiceBase.hpp</a>.</p>
 
 </div>
 </div>
@@ -701,19 +709,21 @@ template&lt;typename BUFFER_TYPE , typename QUEUE_TYPE  = FreeRTOS::Queue&gt; </
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_m_q_t_t___message_html_a48069c6c179734b1d72770eaf8857ea9"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html#a48069c6c179734b1d72770eaf8857ea9">MQTT_Message::getBufferSize</a></div><div class="ttdeci">auto getBufferSize(void) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da7/_m_q_t_t___message_8hpp_source.html#l00107">MQTT_Message.hpp:107</a></div></div>
 <div class="ttc" id="aclass_error_code_parser_html_a1645b12d2d422c2217f664e128a7776f"><div class="ttname"><a href="../../db/d2e/class_error_code_parser.html#a1645b12d2d422c2217f664e128a7776f">ErrorCodeParser::postToMqtt</a></div><div class="ttdeci">static general_err_t postToMqtt(const db_id &amp;id, const general_err_t &amp;err, const std::string &amp;description=&quot;&quot;)</div><div class="ttdoc">postToMqtt sends a signle error code to the database with the given ID</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/df5/_error_code_parser_8cpp_source.html#l00029">ErrorCodeParser.cpp:29</a></div></div>
 <div class="ttc" id="aclass_m_q_t_t___message_html_aeb5f45d72b9f11d42e14ca6a1908711c"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html#aeb5f45d72b9f11d42e14ca6a1908711c">MQTT_Message::toString</a></div><div class="ttdeci">const std::string toString(void) const</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d93/_m_q_t_t___message_8cpp_source.html#l00127">MQTT_Message.cpp:127</a></div></div>
-<div class="ttc" id="aclass_service_base_html_acef4c3f86dbc1d8fa2da5286ed6d72c4"><div class="ttname"><a href="../../d4/d82/class_service_base.html#acef4c3f86dbc1d8fa2da5286ed6d72c4">ServiceBase::m_mqtt</a></div><div class="ttdeci">mqtt_api_v2 m_mqtt</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00154">ServiceBase.hpp:154</a></div></div>
-<div class="ttc" id="aclass_service_base_html_a118e06cb43cd21201638d90f1453ca45"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a118e06cb43cd21201638d90f1453ca45">ServiceBase::m_isActive</a></div><div class="ttdeci">std::atomic&lt; bool &gt; m_isActive</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00152">ServiceBase.hpp:152</a></div></div>
+<div class="ttc" id="aclass_service_base_html_acef4c3f86dbc1d8fa2da5286ed6d72c4"><div class="ttname"><a href="../../d4/d82/class_service_base.html#acef4c3f86dbc1d8fa2da5286ed6d72c4">ServiceBase::m_mqtt</a></div><div class="ttdeci">mqtt_api_v2 m_mqtt</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00162">ServiceBase.hpp:162</a></div></div>
+<div class="ttc" id="aclass_service_base_html_a118e06cb43cd21201638d90f1453ca45"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a118e06cb43cd21201638d90f1453ca45">ServiceBase::m_isActive</a></div><div class="ttdeci">std::atomic&lt; bool &gt; m_isActive</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00160">ServiceBase.hpp:160</a></div></div>
 <div class="ttc" id="aclassmqtt__api__v2_html_a79abe54e368291411baee0ea8af9ec61"><div class="ttname"><a href="../../d5/de7/classmqtt__api__v2.html#a79abe54e368291411baee0ea8af9ec61">mqtt_api_v2::publish</a></div><div class="ttdeci">general_err_t publish(const std::string &amp;topic, const std::string &amp;payload)</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/dc1/mqtt__api__v2_8cpp_source.html#l00120">mqtt_api_v2.cpp:120</a></div></div>
 <div class="ttc" id="aclass_service_base_html_a9af7ace2750d2b9905f8f37e34f271d2"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a9af7ace2750d2b9905f8f37e34f271d2">ServiceBase::setIsActive</a></div><div class="ttdeci">virtual void setIsActive(bool isActive)</div><div class="ttdoc">Set the Is Active object.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00095">ServiceBase.hpp:95</a></div></div>
 <div class="ttc" id="aclass_service_base_html_a1314c31d2f0d1362d7c9f7d5008bdb94"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a1314c31d2f0d1362d7c9f7d5008bdb94">ServiceBase::mainFunction</a></div><div class="ttdeci">virtual general_err_t mainFunction()=0</div><div class="ttdoc">Main function for the derived class to work in It is expected that the function is a single-run funct...</div></div>
-<div class="ttc" id="aclass_service_base_html_a952632ded6b93e2b417e824a143678e5"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a952632ded6b93e2b417e824a143678e5">ServiceBase::m_test_pin</a></div><div class="ttdeci">GPIO_API m_test_pin</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00148">ServiceBase.hpp:148</a></div></div>
-<div class="ttc" id="aclass_service_base_html_a8b5fb80ce77e1d72999a56f8712597fb"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a8b5fb80ce77e1d72999a56f8712597fb">ServiceBase::m_buffer</a></div><div class="ttdeci">const BUFFER_TYPE &amp; m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00149">ServiceBase.hpp:149</a></div></div>
+<div class="ttc" id="aclass_service_base_html_a952632ded6b93e2b417e824a143678e5"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a952632ded6b93e2b417e824a143678e5">ServiceBase::m_test_pin</a></div><div class="ttdeci">GPIO_API m_test_pin</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00156">ServiceBase.hpp:156</a></div></div>
+<div class="ttc" id="aclass_service_base_html_a8b5fb80ce77e1d72999a56f8712597fb"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a8b5fb80ce77e1d72999a56f8712597fb">ServiceBase::m_buffer</a></div><div class="ttdeci">const BUFFER_TYPE &amp; m_buffer</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00157">ServiceBase.hpp:157</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
-<div class="ttc" id="aclass_service_base_html_afe468292cc9168c9c3552fe330dd4688"><div class="ttname"><a href="../../d4/d82/class_service_base.html#afe468292cc9168c9c3552fe330dd4688">ServiceBase::m_queue</a></div><div class="ttdeci">QUEUE_TYPE m_queue</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00147">ServiceBase.hpp:147</a></div></div>
+<div class="ttc" id="aclass_service_base_html_afe468292cc9168c9c3552fe330dd4688"><div class="ttname"><a href="../../d4/d82/class_service_base.html#afe468292cc9168c9c3552fe330dd4688">ServiceBase::m_queue</a></div><div class="ttdeci">QUEUE_TYPE m_queue</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00155">ServiceBase.hpp:155</a></div></div>
 <div class="ttc" id="aclass_service_base_html_a98f0b8e3f5b84772dd0a9593ef74ba52"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a98f0b8e3f5b84772dd0a9593ef74ba52">ServiceBase::isActive</a></div><div class="ttdeci">const auto &amp; isActive() const</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00071">ServiceBase.hpp:71</a></div></div>
-<div class="ttc" id="aclass_service_base_html_a2ddae74b70252dd31c7e7394611a663a"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a2ddae74b70252dd31c7e7394611a663a">ServiceBase::m_error_id</a></div><div class="ttdeci">db_id m_error_id</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00155">ServiceBase.hpp:155</a></div></div>
+<div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea0c20a2a836d12efebedacee60618b0f9">GE_NO_DATA</a></div><div class="ttdeci">@ GE_NO_DATA</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00075">General_Error.hpp:75</a></div></div>
+<div class="ttc" id="aclass_service_base_html_a2ddae74b70252dd31c7e7394611a663a"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a2ddae74b70252dd31c7e7394611a663a">ServiceBase::m_error_id</a></div><div class="ttdeci">db_id m_error_id</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00163">ServiceBase.hpp:163</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

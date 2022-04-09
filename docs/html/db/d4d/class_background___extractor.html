@@ -115,7 +115,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad44f6fc7461f95dc796572068915aee2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4d/class_background___extractor.html#ad44f6fc7461f95dc796572068915aee2">Background_Extractor</a> (const <a class="el" href="../../db/d4d/class_background___extractor.html#db/da2/struct_background___extractor_1_1background__conf__t">background_conf_t</a> &amp;conf={-1, <a class="el" href="../../db/d4d/class_background___extractor.html#a15cf225f204bd8077dc1c9c67163bd8ca80c1514e033180f89a7abc746bea8dce">type::MOG2</a>, 2, 1})</td></tr>
+<tr class="memitem:ad44f6fc7461f95dc796572068915aee2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4d/class_background___extractor.html#ad44f6fc7461f95dc796572068915aee2">Background_Extractor</a> (const <a class="el" href="../../db/d4d/class_background___extractor.html#db/da2/struct_background___extractor_1_1background__conf__t">background_conf_t</a> &amp;<a class="el" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>={-1, <a class="el" href="../../db/d4d/class_background___extractor.html#a15cf225f204bd8077dc1c9c67163bd8ca80c1514e033180f89a7abc746bea8dce">type::MOG2</a>, 2, 1})</td></tr>
 <tr class="separator:ad44f6fc7461f95dc796572068915aee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabb3129b796751dcf85cbed8f799feb1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d4d/class_background___extractor.html#aabb3129b796751dcf85cbed8f799feb1">~Background_Extractor</a> ()</td></tr>
 <tr class="separator:aabb3129b796751dcf85cbed8f799feb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -250,7 +250,7 @@ zoom</td>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../db/dae/_background___extractor_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../db/dae/_background___extractor_8cpp_source.html">Background_Extractor.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                        : <a class="code" href="../../db/d4d/class_background___extractor.html#a982c549b9bf613be89cb4c52269c5cb6">m_conf</a>{conf}</div>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                        : <a class="code" href="../../db/d4d/class_background___extractor.html#a982c549b9bf613be89cb4c52269c5cb6">m_conf</a>{<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">switch</span>(<a class="code" href="../../db/d4d/class_background___extractor.html#a982c549b9bf613be89cb4c52269c5cb6">m_conf</a>.<a class="code" href="../../db/d4d/class_background___extractor.html#a23eb3841a9664e808a7e6a96a259b77b">m_type</a>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
@@ -266,6 +266,8 @@ zoom</td>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">// static_assert(background.empty(),&quot;failed to allocate a backgroundSubtractor&quot;);</span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.</p>
+
 </div>
 </div>
 <a id="aabb3129b796751dcf85cbed8f799feb1"></a>
@@ -649,6 +651,7 @@ zoom</td>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_connected_components_html_a8fec9ac57bb4c7f7d5bde539ce6c3a71"><div class="ttname"><a href="../../d5/d8a/class_connected_components.html#a8fec9ac57bb4c7f7d5bde539ce6c3a71">ConnectedComponents::maxConnectedComponents</a></div><div class="ttdeci">static uint32_t maxConnectedComponents(const cv::Mat &amp;forground, int ksize=2)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d2c/_connected_components_8cpp_source.html#l00081">ConnectedComponents.cpp:81</a></div></div>
+<div class="ttc" id="ai2c__test_8cpp_html_a26f631f76b57f8a7957ea53ff3ba49d4"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a></div><div class="ttdeci">i2c_conf_t conf</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00013">i2c_test.cpp:13</a></div></div>
 <div class="ttc" id="aclass_utility___image_html_a153a7ae03d7fae2532ae5675b15e4246"><div class="ttname"><a href="../../db/dc9/class_utility___image.html#a153a7ae03d7fae2532ae5675b15e4246">Utility_Image::zoom</a></div><div class="ttdeci">static cv::Mat zoom(const cv::Mat &amp;img, double scale=5)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/d12/_utility___image_8cpp_source.html#l00053">Utility_Image.cpp:53</a></div></div>
 <div class="ttc" id="aclass_background___extractor_html_a2d1320e647ef70b96495989fb8539b1e"><div class="ttname"><a href="../../db/d4d/class_background___extractor.html#a2d1320e647ef70b96495989fb8539b1e">Background_Extractor::m_current</a></div><div class="ttdeci">cv::Mat m_current</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d8d/_background___extractor_8hpp_source.html#l00109">Background_Extractor.hpp:109</a></div></div>
 <div class="ttc" id="aclass_background___extractor_html_ac163e881257ec2075efc48666ed4c9d0"><div class="ttname"><a href="../../db/d4d/class_background___extractor.html#ac163e881257ec2075efc48666ed4c9d0">Background_Extractor::background_conf_t::zoom</a></div><div class="ttdeci">float zoom</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/d8d/_background___extractor_8hpp_source.html#l00089">Background_Extractor.hpp:89</a></div></div>

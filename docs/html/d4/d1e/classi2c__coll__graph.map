@@ -1,3 +1,4 @@
-<map id="i2c" name="i2c">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,128,141"/>
+<map id="i2c&lt; i2c_class &gt;" name="i2c&lt; i2c_class &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="5,175,136,369"/>
+<area shape="rect" id="node2" href="$d9/ddd/i2c__common_8hpp.html#db/dd0/structi2c__conf__t" title=" " alt="" coords="25,5,116,112"/>
 </map>

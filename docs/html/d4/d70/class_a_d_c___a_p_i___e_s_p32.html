@@ -112,7 +112,7 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a92a90a9a1ce6fc9d80fa56197e8b9f58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a92a90a9a1ce6fc9d80fa56197e8b9f58">ADC_API_ESP32</a> (const <a class="el" href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config">config</a> &amp;conf)</td></tr>
+<tr class="memitem:a92a90a9a1ce6fc9d80fa56197e8b9f58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a92a90a9a1ce6fc9d80fa56197e8b9f58">ADC_API_ESP32</a> (const <a class="el" href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config">config</a> &amp;<a class="el" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>)</td></tr>
 <tr class="separator:a92a90a9a1ce6fc9d80fa56197e8b9f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d72d56e0fe7c03bbfff3cfdb991f6d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a9d72d56e0fe7c03bbfff3cfdb991f6d3">~ADC_API_ESP32</a> ()</td></tr>
 <tr class="separator:a9d72d56e0fe7c03bbfff3cfdb991f6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -220,7 +220,7 @@ vRef</td>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d4e/_a_d_c___a_p_i___e_s_p32_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../d2/d4e/_a_d_c___a_p_i___e_s_p32_8cpp_source.html">ADC_API_ESP32.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                               : <a class="code" href="../../dc/d23/class_a_d_c_base.html#a45da7ff245042cfd59952b6cfc206368">ADCBase</a>(conf.name, conf.samples), <a class="code" href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a9da77d33bafc8cc80a2f32e4696fae41">m_conf</a>{conf}</div>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                               : <a class="code" href="../../dc/d23/class_a_d_c_base.html#a45da7ff245042cfd59952b6cfc206368">ADCBase</a>(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.name, <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.samples), <a class="code" href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a9da77d33bafc8cc80a2f32e4696fae41">m_conf</a>{<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>}</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// set the adc width</span></div>
@@ -233,6 +233,8 @@ vRef</td>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.</p>
+
 </div>
 </div>
 <a id="a9d72d56e0fe7c03bbfff3cfdb991f6d3"></a>
@@ -341,6 +343,7 @@ vRef</td>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_a_d_c_base_html_a45da7ff245042cfd59952b6cfc206368"><div class="ttname"><a href="../../dc/d23/class_a_d_c_base.html#a45da7ff245042cfd59952b6cfc206368">ADCBase&lt; uint32_t &gt;::ADCBase</a></div><div class="ttdeci">ADCBase(const std::string &amp;name, const size_t samples)</div><div class="ttdef"><b>Definition:</b> <a href="../../d8/da0/_a_d_c_base_8hpp_source.html#l00081">ADCBase.hpp:81</a></div></div>
+<div class="ttc" id="ai2c__test_8cpp_html_a26f631f76b57f8a7957ea53ff3ba49d4"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a></div><div class="ttdeci">i2c_conf_t conf</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00013">i2c_test.cpp:13</a></div></div>
 <div class="ttc" id="aclass_a_d_c___a_p_i___e_s_p32_html_a3b206a329b232f9d7c39bf603c34dead"><div class="ttname"><a href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a3b206a329b232f9d7c39bf603c34dead">ADC_API_ESP32::config::vRef</a></div><div class="ttdeci">uint32_t vRef</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd5/_a_d_c___a_p_i___e_s_p32_8hpp_source.html#l00086">ADC_API_ESP32.hpp:86</a></div></div>
 <div class="ttc" id="aclass_a_d_c___a_p_i___e_s_p32_html_a95e8bf7cfc498470a1e43c28ba676ab6"><div class="ttname"><a href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a95e8bf7cfc498470a1e43c28ba676ab6">ADC_API_ESP32::config::channel</a></div><div class="ttdeci">adc1_channel_t channel</div><div class="ttdoc">the channel / gpio pin</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd5/_a_d_c___a_p_i___e_s_p32_8hpp_source.html#l00085">ADC_API_ESP32.hpp:85</a></div></div>
 <div class="ttc" id="aclass_a_d_c___a_p_i___e_s_p32_html_a9da77d33bafc8cc80a2f32e4696fae41"><div class="ttname"><a href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a9da77d33bafc8cc80a2f32e4696fae41">ADC_API_ESP32::m_conf</a></div><div class="ttdeci">config m_conf</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dd5/_a_d_c___a_p_i___e_s_p32_8hpp_source.html#l00095">ADC_API_ESP32.hpp:95</a></div></div>

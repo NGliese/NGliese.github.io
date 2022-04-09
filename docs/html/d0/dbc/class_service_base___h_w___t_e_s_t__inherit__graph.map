@@ -1,8 +1,6 @@
 <map id="ServiceBase_HW_TEST&lt; BUFFER_TYPE, QUEUE_TYPE &gt;" name="ServiceBase_HW_TEST&lt; BUFFER_TYPE, QUEUE_TYPE &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="9,1015,216,1151"/>
-<area shape="rect" id="node5" href="$dc/d61/class_service_base___h_w___t_e_s_t.html" title=" " alt="" coords="9,1213,216,1335"/>
-<area shape="rect" id="node2" href="$d4/d82/class_service_base.html" title=" " alt="" coords="14,697,211,965"/>
-<area shape="rect" id="node3" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="42,5,173,303"/>
-<area shape="rect" id="node4" href="$d4/d82/class_service_base.html" title=" " alt="" coords="129,352,299,620"/>
-<area shape="rect" id="node6" href="$d6/da4/class_water_estimator___service.html" title=" " alt="" coords="5,1384,220,1535"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,1015,212,1151"/>
+<area shape="rect" id="node2" href="$d4/d82/class_service_base.html" title=" " alt="" coords="10,697,207,965"/>
+<area shape="rect" id="node3" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="38,5,169,303"/>
+<area shape="rect" id="node4" href="$d4/d82/class_service_base.html" title=" " alt="" coords="125,352,295,620"/>
 </map>

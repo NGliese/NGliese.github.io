@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['zoom_1509',['zoom',['../db/d4d/class_background___extractor.html#ac163e881257ec2075efc48666ed4c9d0',1,'Background_Extractor::background_conf_t']]]
+  ['wait_5fdelay_1607',['WAIT_DELAY',['../d7/d91/_distance_sensor_controller__test_8cpp.html#a0781b40e4b8d8bbdf1f64216f9051da5',1,'WAIT_DELAY():&#160;DistanceSensorController_test.cpp'],['../da/d75/_data_broker__test_8cpp.html#a0781b40e4b8d8bbdf1f64216f9051da5',1,'WAIT_DELAY():&#160;DataBroker_test.cpp']]],
+  ['width_1608',['width',['../d5/d8a/class_connected_components.html#acc3ba19dcda0f738e0fb9670476a03ca',1,'ConnectedComponents::ellipse_data_t']]]
 ];

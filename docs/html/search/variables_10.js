@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['task_5fdelay_1499',['task_delay',['../d9/d88/class_sensor_controller_base.html#a5fd66caa8e8c578072a3704c468570ae',1,'SensorControllerBase::init_conf']]],
-  ['time_1500',['TIME',['../da/d85/data_8hpp.html#ae5a0abed0c824c5ba82e627f7631f936',1,'data.hpp']]],
-  ['time_5fbetween_5fadc_5fmeasurements_1501',['time_between_adc_measurements',['../d3/dab/class_distance_sensor_controller.html#ac38b0b0f740a7d5e31fd8609d5004518',1,'DistanceSensorController::config']]],
-  ['time_5fstamp_1502',['time_stamp',['../d2/d8d/class_query_message_base.html#ab3d5003028c9ebf1c98da0f5ac3d2ace',1,'QueryMessageBase::msg_data_t::time_stamp()'],['../db/d90/_message___protocol_8hpp.html#abc063639be47a8a4797e8dcd3cc68773',1,'msg_data_t::time_stamp()']]]
+  ['samples_1591',['samples',['../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a5d8ff9c10f496ad9e3609176e159512f',1,'ADC_API_ESP32::config']]],
+  ['sensor_5faddress_1592',['sensor_address',['../d3/dd3/_sensor___base_8hpp.html#a56f4ac8e6cfae67635e9948971329332',1,'sensor_conf_t']]],
+  ['slave_5fid_1593',['SLAVE_ID',['../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117',1,'i2c_test.cpp']]],
+  ['slow_5fdelay_1594',['SLOW_DELAY',['../de/da5/_m_g996_r_8cpp.html#a69ffeb559bc2654d3207a80e67181c09',1,'MG996R.cpp']]],
+  ['slow_5fincrement_1595',['SLOW_INCREMENT',['../de/da5/_m_g996_r_8cpp.html#ae4e7e083adc35d9339a628ab7e4a65f5',1,'MG996R.cpp']]],
+  ['speed_1596',['speed',['../d9/ddd/i2c__common_8hpp.html#a914b5380deafacd332c78ff3bca52886',1,'i2c_conf_t']]],
+  ['ssid_1597',['ssid',['../de/d7c/_wi_fi___a_p_i_8hpp.html#ae0426651bc989afe9660d8b768811260',1,'wifi_conf_t']]],
+  ['start_5ftime_1598',['start_time',['../d6/d9b/class_maintainer.html#ac3e38dc84fb77822d0ee4909019d8d54',1,'Maintainer']]]
 ];

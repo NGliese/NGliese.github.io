@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['faulthandler_5fn_896',['FaultHandler_n',['../d1/d27/namespace_fault_handler__n.html',1,'']]]
+  ['esp32_5fi2c_5fadapter_5fv1_5f0_951',['esp32_i2c_adapter_v1_0',['../dd/d7c/namespaceesp32__i2c__adapter__v1__0.html',1,'']]],
+  ['esp32_5fi2c_5fadc_5fbattery_5fv1_5f0_952',['esp32_i2c_adc_battery_v1_0',['../d9/d97/namespaceesp32__i2c__adc__battery__v1__0.html',1,'']]]
 ];

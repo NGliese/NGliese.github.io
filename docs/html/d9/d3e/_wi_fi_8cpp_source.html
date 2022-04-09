@@ -335,10 +335,10 @@ $(document).ready(function(){initNavTree('d9/d3e/_wi_fi_8cpp_source.html','../..
 <div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160; </div>
 <div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;std::string WiFi::getApSSID()</div>
 <div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;{</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    wifi_config_t conf;</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;    wifi_config_t <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>;</div>
 <div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    <span class="comment">// init();</span></div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    esp_wifi_get_config(WIFI_IF_AP, &amp;conf);</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">return</span> std::string((<span class="keywordtype">char</span>*)conf.sta.ssid);</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    esp_wifi_get_config(WIFI_IF_AP, &amp;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>);</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keywordflow">return</span> std::string((<span class="keywordtype">char</span>*)<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.sta.ssid);</div>
 <div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;} <span class="comment">// getApSSID</span></div>
 <div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160; </div>
 <div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;std::string WiFi::getApIp()</div>
@@ -449,9 +449,9 @@ $(document).ready(function(){initNavTree('d9/d3e/_wi_fi_8cpp_source.html','../..
 <div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160; </div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;std::string WiFi::getStaSSID()</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160;{</div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    wifi_config_t conf;</div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    esp_wifi_get_config(WIFI_IF_STA, &amp;conf);</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordflow">return</span> std::string((<span class="keywordtype">char</span>*)conf.ap.ssid);</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;    wifi_config_t <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>;</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    esp_wifi_get_config(WIFI_IF_STA, &amp;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>);</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;    <span class="keywordflow">return</span> std::string((<span class="keywordtype">char</span>*)<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.ap.ssid);</div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;} <span class="comment">// getStaSSID</span></div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160; </div>
 <div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;<span class="comment">/* PRIVATE */</span> <span class="keywordtype">void</span> WiFi::init()</div>
@@ -525,11 +525,11 @@ $(document).ready(function(){initNavTree('d9/d3e/_wi_fi_8cpp_source.html','../..
 <div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;        abort();</div>
 <div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;    }</div>
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160; </div>
-<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    wifi_scan_config_t conf;</div>
-<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    memset(&amp;conf, 0, <span class="keyword">sizeof</span>(conf));</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    conf.show_hidden = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;    wifi_scan_config_t <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>;</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;    memset(&amp;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>, 0, <span class="keyword">sizeof</span>(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>));</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;    <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.show_hidden = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160; </div>
-<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    esp_err_t rc = ::esp_wifi_scan_start(&amp;conf, <span class="keyword">true</span>);</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;    esp_err_t rc = ::esp_wifi_scan_start(&amp;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>, <span class="keyword">true</span>);</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    <span class="keywordflow">if</span>(rc != ESP_OK)</div>
 <div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;    {</div>
 <div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        ESP_LOGE(<a class="code" href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;esp_wifi_scan_start: %d&quot;</span>, rc);</div>
@@ -830,8 +830,9 @@ $(document).ready(function(){initNavTree('d9/d3e/_wi_fi_8cpp_source.html','../..
 <div class="line"><a name="l00977"></a><span class="lineno">  977</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="ai2c__test_8cpp_html_a26f631f76b57f8a7957ea53ff3ba49d4"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a></div><div class="ttdeci">i2c_conf_t conf</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00013">i2c_test.cpp:13</a></div></div>
 <div class="ttc" id="a_general___error_8cpp_html_a328e9da88a07f3a0bf81b40d25469ff9"><div class="ttname"><a href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a></div><div class="ttdeci">static const char * LOG_TAG</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/de3/_general___error_8cpp_source.html#l00026">General_Error.cpp:26</a></div></div>
-<div class="ttc" id="a_b_a_s_i_c_8hpp_html_a069dd5e6ddfd552dc1c6f70d7c3b93c5"><div class="ttname"><a href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a></div><div class="ttdeci">#define LOG_PRINT_INFO(LOG_TAG, str)</div><div class="ttdoc">header file to interchange between UnitTestMode, ESP32 and RPI. Macro definition decides what state t...</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d5f/_b_a_s_i_c_8hpp_source.html#l00026">BASIC.hpp:26</a></div></div>
+<div class="ttc" id="a_b_a_s_i_c_8hpp_html_a069dd5e6ddfd552dc1c6f70d7c3b93c5"><div class="ttname"><a href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a></div><div class="ttdeci">#define LOG_PRINT_INFO(LOG_TAG, str)</div><div class="ttdoc">header file to interchange between UnitTestMode, ESP32 and RPI. Macro definition decides what state t...</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d5f/_b_a_s_i_c_8hpp_source.html#l00027">BASIC.hpp:27</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

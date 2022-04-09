@@ -172,7 +172,9 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0abea170ab6ff33eab3a5cb29810674c39">db_id::WATERSTATION_ERROR_CODE</a>, 
 <a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ae5703730dc4da40febf03def1431331d">db_id::WATERSTATION_MAX_ADC_VAL</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a49d6bc3a4293c53c444d6868fc23e744">db_id::WATERSTATION_MIN_ADC_VAL</a>
+&#160;&#160;<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a49d6bc3a4293c53c444d6868fc23e744">db_id::WATERSTATION_MIN_ADC_VAL</a>, 
+<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a965a2334b542d48a74a13830b3e88f16">db_id::ESP32_BAT_HW_BATTERY_ADC</a>, 
+<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683">db_id::ESP32_BAT_HW_SENSOR_ADC</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ad2476414527a024c2bb661f45d8876e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">database header file to map database ID's with enum names for easier visual description  <a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0">More...</a><br /></td></tr>
@@ -259,6 +261,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0abea170ab6ff33eab3a5cb29810674c39"></a>WATERSTATION_ERROR_CODE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0ae5703730dc4da40febf03def1431331d"></a>WATERSTATION_MAX_ADC_VAL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0a49d6bc3a4293c53c444d6868fc23e744"></a>WATERSTATION_MIN_ADC_VAL&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0a965a2334b542d48a74a13830b3e88f16"></a>ESP32_BAT_HW_BATTERY_ADC&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683"></a>ESP32_BAT_HW_SENSOR_ADC&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
@@ -328,7 +332,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0abea170ab6ff33eab3a5cb29810674c39">WATERSTATION_ERROR_CODE</a>,</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ae5703730dc4da40febf03def1431331d">WATERSTATION_MAX_ADC_VAL</a>,</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a49d6bc3a4293c53c444d6868fc23e744">WATERSTATION_MIN_ADC_VAL</a>,</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;};</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">/* esp32 battery test */</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a965a2334b542d48a74a13830b3e88f16">ESP32_BAT_HW_BATTERY_ADC</a>,</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683">ESP32_BAT_HW_SENSOR_ADC</a>,</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -353,7 +361,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00121">121</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#af01ecf74834d86dd468d287cea3085d6">MQTT_Message::MQTT_Message()</a>, and <a class="el" href="../../db/d2e/class_error_code_parser.html#a3451d8da40acc193c67994347a55ca74">ErrorCodeParser::toString()</a>.</p>
 
@@ -370,6 +378,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a78044c12532d041817988a21db2744ec"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a78044c12532d041817988a21db2744ec">db_id::GH_AMBIENT_HUM</a></div><div class="ttdeci">@ GH_AMBIENT_HUM</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a76e56b64b85637bd11233ef203a5e439"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a76e56b64b85637bd11233ef203a5e439">db_id::DEBUG_ID3</a></div><div class="ttdeci">@ DEBUG_ID3</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a1236d6fec33d295324a64249e9f76a69"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a1236d6fec33d295324a64249e9f76a69">db_id::DOGFEEDER_CURRENT_SENSOR</a></div><div class="ttdeci">@ DOGFEEDER_CURRENT_SENSOR</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a965a2334b542d48a74a13830b3e88f16"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a965a2334b542d48a74a13830b3e88f16">db_id::ESP32_BAT_HW_BATTERY_ADC</a></div><div class="ttdeci">@ ESP32_BAT_HW_BATTERY_ADC</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ab999eacd56b8f76c06a20a997b979e95"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab999eacd56b8f76c06a20a997b979e95">db_id::ENV01_CO2</a></div><div class="ttdeci">@ ENV01_CO2</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a95d445734dce22b84372c434fa53ad9c"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95d445734dce22b84372c434fa53ad9c">db_id::GH_MOIST3</a></div><div class="ttdeci">@ GH_MOIST3</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a4754742f64f2816666d26c743cad3396"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4754742f64f2816666d26c743cad3396">db_id::WINDOW_DETECT_OFFICE1</a></div><div class="ttdeci">@ WINDOW_DETECT_OFFICE1</div></div>
@@ -387,6 +396,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ab36e0876842af8ead74ec9740d09d4b6"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab36e0876842af8ead74ec9740d09d4b6">db_id::CCTV01_HEIGHT</a></div><div class="ttdeci">@ CCTV01_HEIGHT</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0acbe2ef4809883ffa5dd2360f003c8ee6"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0acbe2ef4809883ffa5dd2360f003c8ee6">db_id::DOGFEEDER_ERROR_CODE</a></div><div class="ttdeci">@ DOGFEEDER_ERROR_CODE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a5e4933a1f7ae841f5c330aa661761a07"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a5e4933a1f7ae841f5c330aa661761a07">db_id::CCTV01_KNN_CC</a></div><div class="ttdeci">@ CCTV01_KNN_CC</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683">db_id::ESP32_BAT_HW_SENSOR_ADC</a></div><div class="ttdeci">@ ESP32_BAT_HW_SENSOR_ADC</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a76e50c47e1079c54d3cf5c717b674f7f"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a76e50c47e1079c54d3cf5c717b674f7f">db_id::CCTV01_ALARM</a></div><div class="ttdeci">@ CCTV01_ALARM</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ae2c9c368f63bcd6e09f343fbbeda1019"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ae2c9c368f63bcd6e09f343fbbeda1019">db_id::CCTV01_DEBUG1</a></div><div class="ttdeci">@ CCTV01_DEBUG1</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a37ee3cfa387a765eb25cc3363a4d3343"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a37ee3cfa387a765eb25cc3363a4d3343">db_id::ENV_SKUR_HUM1</a></div><div class="ttdeci">@ ENV_SKUR_HUM1</div></div>

@@ -70,10 +70,6 @@
             <location file0="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" file="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/include/DistanceSensorController.hpp" line="61" column="2"/>
             <symbol>DistanceSensorController</symbol>
         </error>
-        <error id="unreadVariable" severity="style" msg="Variable &apos;err&apos; is assigned a value that is never used." verbose="Variable &apos;err&apos; is assigned a value that is never used." cwe="563">
-            <location file="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" line="42" column="11"/>
-            <symbol>err</symbol>
-        </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/github/Embedded/library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/HAL.hpp" line="127" column="2"/>
             <symbol>friend_HAL</symbol>
@@ -170,6 +166,34 @@
             <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/HTTP/src/Curl_SAL.cpp" line="41" column="11"/>
             <symbol>Curl_SAL::m_curl</symbol>
         </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;i2c_esp32::writeWord&apos;" verbose="Unused private function: &apos;i2c_esp32::writeWord&apos;" cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="67" column="16"/>
+            <symbol>i2c_esp32::writeWord</symbol>
+        </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;i2c_esp32::readWord&apos;" verbose="Unused private function: &apos;i2c_esp32::readWord&apos;" cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="68" column="17"/>
+            <symbol>i2c_esp32::readWord</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="58" column="2"/>
+            <symbol>i2c_esp32</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
+            <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="78" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
+            <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="77" column="35" info="Assignment &apos;err=initialize_transaction()&apos;, assigned value is 0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
+            <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="88" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
+            <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="87" column="27" info="Assignment &apos;err=execute_transaction()&apos;, assigned value is 0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
+            <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="107" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
+            <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="106" column="35" info="Assignment &apos;err=initialize_transaction()&apos;, assigned value is 0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
+            <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="117" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
+            <location file="/home/nikolaj/github/Embedded/library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="116" column="27" info="Assignment &apos;err=execute_transaction()&apos;, assigned value is 0"/>
+        </error>
         <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;mqtt_api_v2::handle_event&apos;" verbose="Unused private function: &apos;mqtt_api_v2::handle_event&apos;" cwe="398">
             <location file0="/home/nikolaj/github/Embedded/library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp" file="/home/nikolaj/github/Embedded/library/Components/Protocols/MQTT/include/mqtt_api_v2.hpp" line="113" column="23"/>
             <symbol>mqtt_api_v2::handle_event</symbol>
@@ -189,13 +213,6 @@
         <error id="useInitializationList" severity="performance" msg="Variable &apos;m_coreId&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_coreId&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
             <location file="/home/nikolaj/github/Embedded/library/Components/RTOS/FreeRTOS/src/Task.cpp" line="24" column="2"/>
             <symbol>m_coreId</symbol>
-        </error>
-        <error id="duplInheritedMember" severity="warning" msg="The class &apos;ServiceBase_HW_TEST &lt; MQTT_Message , FreeRTOS :: Queue &gt;&apos; defines member variable with name &apos;m_test_pin&apos; also defined in its parent class &apos;ServiceBase &lt; MQTT_Message , FreeRTOS :: Queue &gt;&apos;." verbose="The class &apos;ServiceBase_HW_TEST &lt; MQTT_Message , FreeRTOS :: Queue &gt;&apos; defines member variable with name &apos;m_test_pin&apos; also defined in its parent class &apos;ServiceBase &lt; MQTT_Message , FreeRTOS :: Queue &gt;&apos;." cwe="398">
-            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Interfaces/ServiceBase/include/ServiceBase.hpp" line="182" column="11" info="Derived variable &apos;ServiceBase_HW_TEST &lt; MQTT_Message , FreeRTOS :: Queue &gt;::m_test_pin&apos;"/>
-            <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Interfaces/ServiceBase/include/ServiceBase.hpp" line="148" column="11" info="Parent variable &apos;ServiceBase &lt; MQTT_Message , FreeRTOS :: Queue &gt;::m_test_pin&apos;"/>
-            <symbol>ServiceBase_HW_TEST &lt; MQTT_Message , FreeRTOS :: Queue &gt;</symbol>
-            <symbol>m_test_pin</symbol>
-            <symbol>ServiceBase &lt; MQTT_Message , FreeRTOS :: Queue &gt;</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/github/Embedded/library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/github/Embedded/library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>

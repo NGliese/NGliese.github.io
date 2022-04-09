@@ -96,31 +96,86 @@ $(document).ready(function(){initNavTree('d0/d30/i2c__test_8cpp_source.html','..
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">// #include &quot;../../include/esp32Cam.hpp&quot; // example of include</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// ------------- INCLUDE ABOVE ----------------</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;CppUTest/TestHarness.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;../../include/i2c.hpp&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;../mock/i2c_mock.hpp&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// clang-format off</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a03cd06783e876ef3985e2fb16caead5e">   14</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a03cd06783e876ef3985e2fb16caead5e">TEST_GROUP</a>(TEMP_GRP){</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> setup(){</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> teardown(){</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// Uninit stuff</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">   13</a></span>&#160;<a class="code" href="../../d9/ddd/i2c__common_8hpp.html#db/dd0/structi2c__conf__t">i2c_conf_t</a> <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>{50000, 5, 10};</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// ------------- INCLUDE ABOVE ----------------</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;CppUTest/TestHarness.h&quot;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117">   18</a></span>&#160;constexpr uint8_t <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117">SLAVE_ID</a> = 0x53;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">// clang-format off</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a959e73f63e0bc09c30e078236bf00fb9">   21</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a959e73f63e0bc09c30e078236bf00fb9">TEST_GROUP</a>(I2C_GRP){</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="../../da/d55/classi2c.html">i2c&lt;i2c_mock&gt;</a> m_i2c = <a class="code" href="../../da/d55/classi2c.html#a7f3729073f774fd1f1cf66ba817ae5db">i2c&lt;i2c_mock&gt;::getInstance</a>(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    friend_i2c m_friend{&amp;m_i2c};</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#af320f1a76ce8005cfb2eebd33f234e32">   27</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#af320f1a76ce8005cfb2eebd33f234e32">TEST</a>(TEMP_GRP, init)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    FAIL(<span class="stringliteral">&quot;FAIL ME!&quot;</span>);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> setup(){</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    }</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> teardown(){</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="comment">// Uninit stuff</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    m_friend.getHAL().reset();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">   37</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST</a>(I2C_GRP, init)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;{</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="../../da/d55/classi2c.html">i2c&lt;i2c_mock&gt;</a> n_i2c = <a class="code" href="../../da/d55/classi2c.html#a7f3729073f774fd1f1cf66ba817ae5db">i2c&lt;i2c_mock&gt;::getInstance</a>(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    CHECK(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a064f3a7c813410179817c113a6d7836c">   44</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST</a>(I2C_GRP, scan_all)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    m_i2c.scan();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    LONGS_EQUAL(120, m_friend.getHAL().hasBeenCalledAmount_slavePresent);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#aabb5339ba83efb41a58d156431d26ed7">   50</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST</a>(I2C_GRP, check_slave)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    m_i2c.slavePresent(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117">SLAVE_ID</a>);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    LONGS_EQUAL(1, m_friend.getHAL().hasBeenCalledAmount_slavePresent);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a552791c06f4db5a2e400f125d7085585">   57</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST</a>(I2C_GRP, write_a_byte)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    m_i2c.writeByte(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117">SLAVE_ID</a>, 0xff);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    LONGS_EQUAL(1, m_friend.getHAL().hasBeenCalledAmount_writeByte);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a34dc05545361393bcb3dee40a5b3a93f">   63</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST</a>(I2C_GRP, write_a_word)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;{</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    m_i2c.writeWord(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117">SLAVE_ID</a>, 0xffaa);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    LONGS_EQUAL(1, m_friend.getHAL().hasBeenCalledAmount_writeWord);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#a15379d147111f34e0075fd93a4bc9833">   70</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST</a>(I2C_GRP, read_a_byte)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    m_i2c.readByte(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117">SLAVE_ID</a>);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    LONGS_EQUAL(1, m_friend.getHAL().hasBeenCalledAmount_readByte);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;}</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d0/d30/i2c__test_8cpp.html#ab9918ff8669d520cc6896c8cb616834a">   76</a></span>&#160;<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST</a>(I2C_GRP, read_a_word)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    m_i2c.readWord(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117">SLAVE_ID</a>);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    LONGS_EQUAL(1, m_friend.getHAL().hasBeenCalledAmount_readWord);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ai2c__test_8cpp_html_af320f1a76ce8005cfb2eebd33f234e32"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#af320f1a76ce8005cfb2eebd33f234e32">TEST</a></div><div class="ttdeci">TEST(TEMP_GRP, init)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00027">i2c_test.cpp:27</a></div></div>
-<div class="ttc" id="ai2c__test_8cpp_html_a03cd06783e876ef3985e2fb16caead5e"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a03cd06783e876ef3985e2fb16caead5e">TEST_GROUP</a></div><div class="ttdeci">TEST_GROUP(TEMP_GRP)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00014">i2c_test.cpp:14</a></div></div>
+<div class="ttc" id="aclassi2c_html"><div class="ttname"><a href="../../da/d55/classi2c.html">i2c</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1c/i2c_8hpp_source.html#l00045">i2c.hpp:45</a></div></div>
+<div class="ttc" id="ai2c__test_8cpp_html_a26f631f76b57f8a7957ea53ff3ba49d4"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a></div><div class="ttdeci">i2c_conf_t conf</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00013">i2c_test.cpp:13</a></div></div>
+<div class="ttc" id="ai2c__common_8hpp_html_db/dd0/structi2c__conf__t"><div class="ttname"><a href="../../d9/ddd/i2c__common_8hpp.html#db/dd0/structi2c__conf__t">i2c_conf_t</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d9/ddd/i2c__common_8hpp_source.html#l00045">i2c_common.hpp:45</a></div></div>
+<div class="ttc" id="ai2c__test_8cpp_html_a89606d1eb5c355617d4195a4007025bc"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST</a></div><div class="ttdeci">TEST(I2C_GRP, init)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00037">i2c_test.cpp:37</a></div></div>
+<div class="ttc" id="ai2c__test_8cpp_html_a959e73f63e0bc09c30e078236bf00fb9"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a959e73f63e0bc09c30e078236bf00fb9">TEST_GROUP</a></div><div class="ttdeci">TEST_GROUP(I2C_GRP)</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00021">i2c_test.cpp:21</a></div></div>
+<div class="ttc" id="aclassi2c_html_a7f3729073f774fd1f1cf66ba817ae5db"><div class="ttname"><a href="../../da/d55/classi2c.html#a7f3729073f774fd1f1cf66ba817ae5db">i2c::getInstance</a></div><div class="ttdeci">static i2c &amp; getInstance(const i2c_conf_t &amp;conf)</div><div class="ttdoc">Get the Instance object TODO Make sure that users can re-install with new config file Currently we ca...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1c/i2c_8hpp_source.html#l00058">i2c.hpp:58</a></div></div>
+<div class="ttc" id="ai2c__test_8cpp_html_a284fbf98c6b2645a5837b08074827117"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a284fbf98c6b2645a5837b08074827117">SLAVE_ID</a></div><div class="ttdeci">constexpr uint8_t SLAVE_ID</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00018">i2c_test.cpp:18</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

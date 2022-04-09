@@ -53,7 +53,9 @@ var _database___i_d___base_8hpp =
       [ "WATERSTATION_COUNTER", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aa866b79cb391d74487b71360c264c12a", null ],
       [ "WATERSTATION_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0abea170ab6ff33eab3a5cb29810674c39", null ],
       [ "WATERSTATION_MAX_ADC_VAL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ae5703730dc4da40febf03def1431331d", null ],
-      [ "WATERSTATION_MIN_ADC_VAL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a49d6bc3a4293c53c444d6868fc23e744", null ]
+      [ "WATERSTATION_MIN_ADC_VAL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a49d6bc3a4293c53c444d6868fc23e744", null ],
+      [ "ESP32_BAT_HW_BATTERY_ADC", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a965a2334b542d48a74a13830b3e88f16", null ],
+      [ "ESP32_BAT_HW_SENSOR_ADC", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683", null ]
     ] ],
     [ "map", "d5/d40/_database___i_d___base_8hpp.html#a40f5a6d0734142b0008af0e8a9c51013", null ]
 ];

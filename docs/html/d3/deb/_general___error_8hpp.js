@@ -18,7 +18,8 @@ var _general___error_8hpp =
       [ "GE_EMPTY", "d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea848436f437cccdde63675e8dc66c19a6", null ],
       [ "GE_SEMAPHORE_NOT_TAKEN", "d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaacfd5326d882dcb043f8b9a2a7382a79", null ],
       [ "GE_VIRTUAL_SENSOR", "d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea16b6d5622810b43a30ed583cd6bc79d1", null ],
-      [ "GE_NOT_CONNECTED", "d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea9023fdef7956032b9080db9ef2035041", null ]
+      [ "GE_NOT_CONNECTED", "d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea9023fdef7956032b9080db9ef2035041", null ],
+      [ "GE_PROTOCOL_FAILED", "d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea6065e849749d1b25cdec948c69f4094c", null ]
     ] ],
     [ "general_resp_t", "d3/deb/_general___error_8hpp.html#a8a092fb05ef3306d13c287ad5cb18954", [
       [ "GR_NO_RESPONSE", "d3/deb/_general___error_8hpp.html#a8a092fb05ef3306d13c287ad5cb18954a1b440836b48841a8fc5a56ae7f135325", null ],

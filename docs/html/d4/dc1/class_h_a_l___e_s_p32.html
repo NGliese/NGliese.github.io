@@ -118,7 +118,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a8417734fbdb0f7129285f042e484977e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc1/class_h_a_l___e_s_p32.html#a8417734fbdb0f7129285f042e484977e">HAL_ESP32</a> (const <a class="el" href="../../d4/dc1/class_h_a_l___e_s_p32.html#d2/d6b/struct_h_a_l___e_s_p32_1_1config">config</a> &amp;conf)</td></tr>
+<tr class="memitem:a8417734fbdb0f7129285f042e484977e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc1/class_h_a_l___e_s_p32.html#a8417734fbdb0f7129285f042e484977e">HAL_ESP32</a> (const <a class="el" href="../../d4/dc1/class_h_a_l___e_s_p32.html#d2/d6b/struct_h_a_l___e_s_p32_1_1config">config</a> &amp;<a class="el" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>)</td></tr>
 <tr class="separator:a8417734fbdb0f7129285f042e484977e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5ed1c6abf8f07fe79cd91b2a4e23d95d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dc1/class_h_a_l___e_s_p32.html#a5ed1c6abf8f07fe79cd91b2a4e23d95d">~HAL_ESP32</a> ()</td></tr>
 <tr class="separator:a5ed1c6abf8f07fe79cd91b2a4e23d95d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -269,15 +269,15 @@ mode</td>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../dc/d84/_p_w_m_2src_2_h_a_l_8cpp_source.html#l00041">41</a> of file <a class="el" href="../../dc/d84/_p_w_m_2src_2_h_a_l_8cpp_source.html">HAL.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                       : <a class="code" href="../../d4/dc1/class_h_a_l___e_s_p32.html#ae365d5f2b2fb9a20b636860d796b4321">m_conf</a>{conf}</div>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                       : <a class="code" href="../../d4/dc1/class_h_a_l___e_s_p32.html#ae365d5f2b2fb9a20b636860d796b4321">m_conf</a>{<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>}</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;{</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ledc_timer_config_t timer_conf;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    timer_conf.speed_mode = conf.<a class="code" href="../../d4/dc1/class_h_a_l___e_s_p32.html#a997a7ca771250c91a6ce3b3f835a3ee1">mode</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    timer_conf.speed_mode = <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.mode;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    timer_conf.duty_resolution = LEDC_TIMER_10_BIT; <span class="comment">// 8bit = 0 -&gt; 1024 resolution</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    timer_conf.timer_num = LEDC_TIMER_1;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    timer_conf.freq_hz = conf.frequency;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    timer_conf.freq_hz = <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.frequency;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    timer_conf.clk_cfg = LEDC_AUTO_CLK; <span class="comment">// deicde for yourself</span></div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">auto</span> err = ledc_timer_config(&amp;timer_conf);</div>
@@ -288,12 +288,12 @@ mode</td>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    ledc_channel_config_t led_conf;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    led_conf.gpio_num = conf.m_pin;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    led_conf.speed_mode = conf.mode;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    led_conf.channel = conf.channel;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    led_conf.gpio_num = <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.m_pin;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    led_conf.speed_mode = <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.mode;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    led_conf.channel = <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.channel;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    led_conf.intr_type = LEDC_INTR_DISABLE; <span class="comment">// we do not use interrupts</span></div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    led_conf.timer_sel = LEDC_TIMER_1; <span class="comment">// should not be needed to select timers</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    led_conf.duty = conf.duty;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    led_conf.duty = <a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.duty;</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    led_conf.hpoint = 0;</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    err = ledc_channel_config(&amp;led_conf);</div>
@@ -303,11 +303,13 @@ mode</td>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        exit(-1);</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../d4/dc1/class_h_a_l___e_s_p32.html#af168a2b7c1eeed4ecefaa048af1abf2a">setDutyCycle</a>(conf.duty);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <a class="code" href="../../d4/dc1/class_h_a_l___e_s_p32.html#af168a2b7c1eeed4ecefaa048af1abf2a">setDutyCycle</a>(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.duty);</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.</p>
+
 </div>
 </div>
 <a id="a5ed1c6abf8f07fe79cd91b2a4e23d95d"></a>
@@ -622,6 +624,7 @@ mode</td>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="ai2c__test_8cpp_html_a26f631f76b57f8a7957ea53ff3ba49d4"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a></div><div class="ttdeci">i2c_conf_t conf</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00013">i2c_test.cpp:13</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_aca418b1052808a4445f9b372979c2516"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#aca418b1052808a4445f9b372979c2516">HAL_ESP32::config::duty</a></div><div class="ttdeci">float duty</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9f/_p_w_m_2include_2_h_a_l_8hpp_source.html#l00096">HAL.hpp:96</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_aff0ffe482ddcdeebc244fa03d5f36306"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#aff0ffe482ddcdeebc244fa03d5f36306">HAL_ESP32::config::channel</a></div><div class="ttdeci">lcd_channel channel</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9f/_p_w_m_2include_2_h_a_l_8hpp_source.html#l00098">HAL.hpp:98</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_a254c7a09aa7b9a9e034926c7bfbbf9ee"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#a254c7a09aa7b9a9e034926c7bfbbf9ee">HAL_ESP32::stop</a></div><div class="ttdeci">general_err_t stop(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d84/_p_w_m_2src_2_h_a_l_8cpp_source.html#l00136">HAL.cpp:136</a></div></div>
@@ -632,7 +635,7 @@ mode</td>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_af168a2b7c1eeed4ecefaa048af1abf2a"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#af168a2b7c1eeed4ecefaa048af1abf2a">HAL_ESP32::setDutyCycle</a></div><div class="ttdeci">general_err_t setDutyCycle(const float &amp;duty)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d84/_p_w_m_2src_2_h_a_l_8cpp_source.html#l00082">HAL.cpp:82</a></div></div>
 <div class="ttc" id="aclass_h_a_l___e_s_p32_html_a51500e2fbaaa6e56d124f47700b4421f"><div class="ttname"><a href="../../d4/dc1/class_h_a_l___e_s_p32.html#a51500e2fbaaa6e56d124f47700b4421f">HAL_ESP32::config::frequency</a></div><div class="ttdeci">uint32_t frequency</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d9f/_p_w_m_2include_2_h_a_l_8hpp_source.html#l00097">HAL.hpp:97</a></div></div>
-<div class="ttc" id="a_b_a_s_i_c_8hpp_html_a069dd5e6ddfd552dc1c6f70d7c3b93c5"><div class="ttname"><a href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a></div><div class="ttdeci">#define LOG_PRINT_INFO(LOG_TAG, str)</div><div class="ttdoc">header file to interchange between UnitTestMode, ESP32 and RPI. Macro definition decides what state t...</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d5f/_b_a_s_i_c_8hpp_source.html#l00026">BASIC.hpp:26</a></div></div>
+<div class="ttc" id="a_b_a_s_i_c_8hpp_html_a069dd5e6ddfd552dc1c6f70d7c3b93c5"><div class="ttname"><a href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a></div><div class="ttdeci">#define LOG_PRINT_INFO(LOG_TAG, str)</div><div class="ttdoc">header file to interchange between UnitTestMode, ESP32 and RPI. Macro definition decides what state t...</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d5f/_b_a_s_i_c_8hpp_source.html#l00027">BASIC.hpp:27</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

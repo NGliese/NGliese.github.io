@@ -34,7 +34,10 @@ var hierarchy =
     [ "HAL_ESP32", "d4/dc1/class_h_a_l___e_s_p32.html", null ],
     [ "hal_mqtt_log", "d8/da0/classhal__mqtt__log.html", null ],
     [ "hal_stdout", "d3/d9d/classhal__stdout.html", null ],
-    [ "i2c", "da/d55/classi2c.html", null ],
+    [ "i2c< i2c_class >", "da/d55/classi2c.html", null ],
+    [ "i2c_conf_t", "d9/ddd/i2c__common_8hpp.html#db/dd0/structi2c__conf__t", null ],
+    [ "i2c_esp32", "d3/d68/classi2c__esp32.html", null ],
+    [ "i2c_mock", "dc/d92/classi2c__mock.html", null ],
     [ "SensorControllerBase::init_conf", "d9/d88/class_sensor_controller_base.html#d1/da2/struct_sensor_controller_base_1_1init__conf", null ],
     [ "interface", "d0/deb/namespace_3global_scope_4.html#da/d35/classinterface", null ],
     [ "jsmn_object", "dd/d71/classjsmn__object.html", null ],
@@ -50,9 +53,12 @@ var hierarchy =
     [ "QueryMessageBase< T >::msg_data_t", "d2/d8d/class_query_message_base.html#d4/df2/struct_query_message_base_1_1msg__data__t", null ],
     [ "FaultHandler_n::msg_t", "d1/d27/namespace_fault_handler__n.html#d5/de9/struct_fault_handler__n_1_1msg__t", null ],
     [ "Logger::msg_t", "d3/d42/class_logger.html#db/dbb/struct_logger_1_1msg__t", null ],
+    [ "NVS< NVS_HAL >", "d2/dc1/class_n_v_s.html", null ],
+    [ "NVS_esp32", "d9/d68/class_n_v_s__esp32.html", null ],
+    [ "NVS_MOCK", "d3/d16/class_n_v_s___m_o_c_k.html", null ],
     [ "OTA", "d3/d40/class_o_t_a.html", null ],
-    [ "PeriodeEstimator< HIGH_THRESHOLD, LOW_THRESHOLD >", "da/d0a/class_periode_estimator.html", null ],
-    [ "PeriodeEstimator< 1900, 1800 >", "da/d0a/class_periode_estimator.html", null ],
+    [ "PeriodeEstimator< HIGH_THRESHOLD, LOW_THRESHOLD, NVS_TYPE >", "da/d0a/class_periode_estimator.html", null ],
+    [ "PeriodeEstimator< 1900, 1800, NVS_MOCK >", "da/d0a/class_periode_estimator.html", null ],
     [ "ProtocolBase", "dc/d12/class_protocol_base.html", [
       [ "http_interface", "dc/dc2/classhttp__interface.html", null ],
       [ "postgresql_interface", "d2/d19/classpostgresql__interface.html", null ]
@@ -94,11 +100,8 @@ var hierarchy =
       [ "ServiceBase< BUFFER_TYPE, FreeRTOS::Queue >", "d4/d82/class_service_base.html", [
         [ "ServiceBase_HW_TEST< BUFFER_TYPE, QUEUE_TYPE >", "dc/d61/class_service_base___h_w___t_e_s_t.html", null ]
       ] ],
-      [ "ServiceBase< MQTT_Message >", "d4/d82/class_service_base.html", null ],
-      [ "ServiceBase< MQTT_Message, FreeRTOS::Queue >", "d4/d82/class_service_base.html", [
-        [ "ServiceBase_HW_TEST< MQTT_Message >", "dc/d61/class_service_base___h_w___t_e_s_t.html", [
-          [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", null ]
-        ] ]
+      [ "ServiceBase< MQTT_Message >", "d4/d82/class_service_base.html", [
+        [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", null ]
       ] ]
     ] ],
     [ "TaskHandle_t", "d3/d1c/_free_r_t_o_s_8h.html#d9/d94/struct_task_handle__t", null ],
