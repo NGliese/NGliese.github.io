@@ -2,6 +2,7 @@
 
 # simple bash script to commit documentation updates
 path_to_git_docs=~/Project/NGliese.github.io
-git add path_to_git_docs/*
+cd ${path_to_git_docs}
+git add ./
 git commit -m "document update"
 git push
