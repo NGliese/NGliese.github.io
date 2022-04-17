@@ -269,18 +269,18 @@
             <td class="headerValue">Components/Actuator/ServoMotor/src/MG996R.cpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">0</td>
-            <td class="headerTableEntry">50</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry">25</td>
+            <td class="headerTableEntry">51</td>
+            <td class="headerTableEntry" style="background-color:LightPink">49.0 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-04-09 10:09:42</td>
+            <td class="headerValue">2022-04-17 18:37:21</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">0</td>
+            <td class="headerTableEntry">8</td>
             <td class="headerTableEntry">48</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry" style="background-color:LightPink">16.7 %</td>
           </tr>
         </table>
       </td>
@@ -575,15 +575,15 @@
     <tr>
     <td align="right" class="lineno"><pre>40</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>MG996R::MG996R(const mg996r_conf_t&amp; conf)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
+    <td align="left" class="src coveredLine"><pre>MG996R::MG996R(const mg996r_conf_t&amp; conf)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>41</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	: Actuator_Base(conf), m_pwm{conf.conf, "pwm"}, m_setPointValue{m_value}</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 5 taken 32 times">&check;</span><span class="notTakenBranch" title="Branch 6 not taken">&cross;</span><span class="takenBranch" title="Branch 8 taken 32 times">&check;</span><span class="notTakenBranch" title="Branch 9 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
+    <td align="left" class="src coveredLine"><pre>	: Actuator_Base(conf), m_pwm{conf.conf, "pwm"}, m_setPointValue{m_value}</pre></td>
     </tr>
 
     <tr>
@@ -610,22 +610,22 @@
     <tr>
     <td align="right" class="lineno"><pre>45</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	m_value = conf.conf.duty;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
+    <td align="left" class="src coveredLine"><pre>	m_value = conf.conf.duty;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>46</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	m_setPointValue = m_value;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
+    <td align="left" class="src coveredLine"><pre>	m_setPointValue = m_value;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>47</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
+    <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -638,8 +638,8 @@
     <tr>
     <td align="right" class="lineno"><pre>49</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>MG996R::~MG996R() {}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>64</pre></td>
+    <td align="left" class="src coveredLine"><pre>MG996R::~MG996R() {}</pre></td>
     </tr>
 
     <tr>
@@ -652,8 +652,8 @@
     <tr>
     <td align="right" class="lineno"><pre>51</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t MG996R::setPoint(const float&amp; value)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>88</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t MG996R::setPoint(const float&amp; value)</pre></td>
     </tr>
 
     <tr>
@@ -693,9 +693,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>57</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(value > MAX_VALUE)</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 6 times">&check;</span><span class="takenBranch" title="Branch 1 taken 82 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>88</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(value > MAX_VALUE)</pre></td>
     </tr>
 
     <tr>
@@ -708,15 +708,15 @@
     <tr>
     <td align="right" class="lineno"><pre>59</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		m_setPointValue = MAX_VALUE;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
+    <td align="left" class="src coveredLine"><pre>		m_setPointValue = MAX_VALUE;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>60</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return GE_UPPER_BOUNDERY;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return GE_UPPER_BOUNDERY;</pre></td>
     </tr>
 
     <tr>
@@ -728,9 +728,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>62</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(value &lt; MIN_VALUE)</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 28 times">&check;</span><span class="takenBranch" title="Branch 1 taken 54 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>82</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(value &lt; MIN_VALUE)</pre></td>
     </tr>
 
     <tr>
@@ -743,15 +743,15 @@
     <tr>
     <td align="right" class="lineno"><pre>64</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		m_setPointValue = MIN_VALUE;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>28</pre></td>
+    <td align="left" class="src coveredLine"><pre>		m_setPointValue = MIN_VALUE;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>65</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return GE_LOWER_BOUNDERY;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>28</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return GE_LOWER_BOUNDERY;</pre></td>
     </tr>
 
     <tr>
@@ -763,9 +763,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>67</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(value == m_setPointValue)</pre></td>
+    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 0 not taken">&cross;</span><span class="takenBranch" title="Branch 1 taken 54 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>54</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(value == m_setPointValue)</pre></td>
     </tr>
 
     <tr>
@@ -799,8 +799,8 @@
     <tr>
     <td align="right" class="lineno"><pre>72</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	m_setPointValue = value;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>54</pre></td>
+    <td align="left" class="src coveredLine"><pre>	m_setPointValue = value;</pre></td>
     </tr>
 
     <tr>
@@ -834,8 +834,8 @@
     <tr>
     <td align="right" class="lineno"><pre>77</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return GE_OK;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>54</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return GE_OK;</pre></td>
     </tr>
 
     <tr>
@@ -855,8 +855,8 @@
     <tr>
     <td align="right" class="lineno"><pre>80</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t MG996R::actuate(void)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>56</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t MG996R::actuate(void)</pre></td>
     </tr>
 
     <tr>
@@ -897,15 +897,15 @@
     <tr>
     <td align="right" class="lineno"><pre>86</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	auto err = m_pwm.setDutyCycle(m_setPointValue);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>56</pre></td>
+    <td align="left" class="src coveredLine"><pre>	auto err = m_pwm.setDutyCycle(m_setPointValue);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(err != GE_OK)</pre></td>
+    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 0 not taken">&cross;</span><span class="takenBranch" title="Branch 1 taken 56 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>56</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(err != GE_OK)</pre></td>
     </tr>
 
     <tr>
@@ -953,8 +953,8 @@
     <tr>
     <td align="right" class="lineno"><pre>94</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	m_value = m_setPointValue;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>56</pre></td>
+    <td align="left" class="src coveredLine"><pre>	m_value = m_setPointValue;</pre></td>
     </tr>
 
     <tr>
@@ -995,8 +995,8 @@
     <tr>
     <td align="right" class="lineno"><pre>100</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return GE_OK;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>56</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return GE_OK;</pre></td>
     </tr>
 
     <tr>
@@ -1016,8 +1016,8 @@
     <tr>
     <td align="right" class="lineno"><pre>103</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t MG996R::setToMaximum(void)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t MG996R::setToMaximum(void)</pre></td>
     </tr>
 
     <tr>
@@ -1030,8 +1030,8 @@
     <tr>
     <td align="right" class="lineno"><pre>105</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return execute(MAX_VALUE);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return execute(MAX_VALUE);</pre></td>
     </tr>
 
     <tr>
@@ -1051,8 +1051,8 @@
     <tr>
     <td align="right" class="lineno"><pre>108</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t MG996R::setToMinimum(void)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t MG996R::setToMinimum(void)</pre></td>
     </tr>
 
     <tr>
@@ -1065,8 +1065,8 @@
     <tr>
     <td align="right" class="lineno"><pre>110</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return execute(MIN_VALUE);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return execute(MIN_VALUE);</pre></td>
     </tr>
 
     <tr>

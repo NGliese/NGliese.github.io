@@ -269,18 +269,18 @@
             <td class="headerValue">Components/Interfaces/QueryBase/include/QueryMessageBase.hpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">0</td>
-            <td class="headerTableEntry">14</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry">16</td>
+            <td class="headerTableEntry">16</td>
+            <td class="headerTableEntry" style="background-color:LightGreen">100.0 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-04-09 10:09:42</td>
+            <td class="headerValue">2022-04-17 18:37:21</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">0</td>
+            <td class="headerTableEntry">2</td>
             <td class="headerTableEntry">5</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry" style="background-color:LightPink">40.0 %</td>
           </tr>
         </table>
       </td>
@@ -876,22 +876,22 @@
     <tr>
     <td align="right" class="lineno"><pre>83</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	QueryMessageBase(const uint32_t enitity_id) : m_entity_id{enitity_id} {};</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>22</pre></td>
+    <td align="left" class="src coveredLine"><pre>	QueryMessageBase(const uint32_t enitity_id) : m_entity_id{enitity_id} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>84</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	QueryMessageBase(const uint32_t enitity_id, const msg_data_t&amp; data)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	QueryMessageBase(const uint32_t enitity_id, const msg_data_t&amp; data)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		: m_entity_id{enitity_id}, m_buffer{data} {};</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 4 taken 4 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>		: m_entity_id{enitity_id}, m_buffer{data} {};</pre></td>
     </tr>
 
     <tr>
@@ -904,8 +904,8 @@
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	virtual ~QueryMessageBase(){};</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>48</pre></td>
+    <td align="left" class="src coveredLine"><pre>	virtual ~QueryMessageBase(){};</pre></td>
     </tr>
 
     <tr>
@@ -918,8 +918,8 @@
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	virtual inline void addData(const T&amp; data)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>	virtual inline void addData(const T&amp; data)</pre></td>
     </tr>
 
     <tr>
@@ -931,16 +931,16 @@
 
     <tr>
     <td align="right" class="lineno"><pre>91</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		m_buffer.push_back({Timeservice::getTimeNow(), data});</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 8 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>		m_buffer.push_back({Timeservice::getTimeNow(), data});</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>92</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>	}</pre></td>
     </tr>
 
     <tr>
@@ -953,8 +953,8 @@
     <tr>
     <td align="right" class="lineno"><pre>94</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	virtual inline void addData(const msg_data_t&amp; data)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>	virtual inline void addData(const msg_data_t&amp; data)</pre></td>
     </tr>
 
     <tr>
@@ -967,15 +967,15 @@
     <tr>
     <td align="right" class="lineno"><pre>96</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		m_buffer.push_back(data);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>		m_buffer.push_back(data);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>97</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>	}</pre></td>
     </tr>
 
     <tr>
@@ -988,8 +988,8 @@
     <tr>
     <td align="right" class="lineno"><pre>99</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline auto&amp; getBuffer(void) const</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline auto&amp; getBuffer(void) const</pre></td>
     </tr>
 
     <tr>
@@ -1002,8 +1002,8 @@
     <tr>
     <td align="right" class="lineno"><pre>101</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return m_buffer;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return m_buffer;</pre></td>
     </tr>
 
     <tr>
@@ -1023,8 +1023,8 @@
     <tr>
     <td align="right" class="lineno"><pre>104</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline auto&amp; getId(void) const</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>10</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline auto&amp; getId(void) const</pre></td>
     </tr>
 
     <tr>
@@ -1037,8 +1037,8 @@
     <tr>
     <td align="right" class="lineno"><pre>106</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return m_entity_id;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>10</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return m_entity_id;</pre></td>
     </tr>
 
     <tr>
@@ -1058,8 +1058,8 @@
     <tr>
     <td align="right" class="lineno"><pre>109</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline bool isEmpty(void) const</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>10</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline bool isEmpty(void) const</pre></td>
     </tr>
 
     <tr>
@@ -1072,8 +1072,8 @@
     <tr>
     <td align="right" class="lineno"><pre>111</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return m_buffer.size() == 0 ? true : false;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>10</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return m_buffer.size() == 0 ? true : false;</pre></td>
     </tr>
 
     <tr>

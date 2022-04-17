@@ -269,18 +269,18 @@
             <td class="headerValue">Components/Interfaces/SensorControllerBase/include/SensorControllerBase.hpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">0</td>
-            <td class="headerTableEntry">20</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry">22</td>
+            <td class="headerTableEntry">24</td>
+            <td class="headerTableEntry" style="background-color:LightGreen">91.7 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-04-09 10:09:42</td>
+            <td class="headerValue">2022-04-17 18:37:21</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">0</td>
+            <td class="headerTableEntry">6</td>
             <td class="headerTableEntry">12</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry" style="background-color:LightPink">50.0 %</td>
           </tr>
         </table>
       </td>
@@ -764,36 +764,36 @@
     <tr>
     <td align="right" class="lineno"><pre>67</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	SensorControllerBase(const init_conf&amp; conf)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>10</pre></td>
+    <td align="left" class="src coveredLine"><pre>	SensorControllerBase(const init_conf&amp; conf)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>68</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		: m_buffer_raw{conf.buffer_raw_conf}, m_buffer_external{conf.buffer_external_conf},</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
+    <td align="left" class="src coveredLine"><pre>		: m_buffer_raw{conf.buffer_raw_conf}, m_buffer_external{conf.buffer_external_conf},</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>69</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		  m_want_data_flag{false}, m_data_ready_flag{false}, m_delay{conf.task_delay},</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>10</pre></td>
+    <td align="left" class="src coveredLine"><pre>		  m_want_data_flag{false}, m_data_ready_flag{false}, m_delay{conf.task_delay},</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>70</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		  m_error_id{conf.error_code_id} {};</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="takenBranch" title="Branch 9 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 16 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 17 not taken">&cross;</span><span class="takenBranch" title="Branch 19 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 20 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 27 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 28 not taken">&cross;</span><span class="takenBranch" title="Branch 30 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 31 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>20</pre></td>
+    <td align="left" class="src coveredLine"><pre>		  m_error_id{conf.error_code_id} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>71</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	virtual ~SensorControllerBase(){};</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>20</pre></td>
+    <td align="left" class="src coveredLine"><pre>	virtual ~SensorControllerBase(){};</pre></td>
     </tr>
 
     <tr>
@@ -806,8 +806,8 @@
     <tr>
     <td align="right" class="lineno"><pre>73</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline void setWantDataTrue()</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline void setWantDataTrue()</pre></td>
     </tr>
 
     <tr>
@@ -820,8 +820,8 @@
     <tr>
     <td align="right" class="lineno"><pre>75</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		setWantData(true);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		setWantData(true);</pre></td>
     </tr>
 
     <tr>
@@ -834,8 +834,8 @@
     <tr>
     <td align="right" class="lineno"><pre>77</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	}</pre></td>
     </tr>
 
     <tr>
@@ -848,8 +848,8 @@
     <tr>
     <td align="right" class="lineno"><pre>79</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline const auto&amp; getSafeBuffer()</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline const auto&amp; getSafeBuffer()</pre></td>
     </tr>
 
     <tr>
@@ -862,8 +862,8 @@
     <tr>
     <td align="right" class="lineno"><pre>81</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return m_buffer_external;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return m_buffer_external;</pre></td>
     </tr>
 
     <tr>
@@ -876,8 +876,8 @@
     <tr>
     <td align="right" class="lineno"><pre>83</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline const bool isDataReady()</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline const bool isDataReady()</pre></td>
     </tr>
 
     <tr>
@@ -890,8 +890,8 @@
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return m_data_ready_flag;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return m_data_ready_flag;</pre></td>
     </tr>
 
     <tr>
@@ -904,8 +904,8 @@
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline void setDataReady(bool flag)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline void setDataReady(bool flag)</pre></td>
     </tr>
 
     <tr>
@@ -918,15 +918,15 @@
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		m_data_ready_flag = flag;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>		m_data_ready_flag = flag;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>90</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	}</pre></td>
     </tr>
 
     <tr>
@@ -946,8 +946,8 @@
     <tr>
     <td align="right" class="lineno"><pre>93</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline void setDataReadyTrue()</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline void setDataReadyTrue()</pre></td>
     </tr>
 
     <tr>
@@ -960,22 +960,22 @@
     <tr>
     <td align="right" class="lineno"><pre>95</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		setDataReady(true);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		setDataReady(true);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>96</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		setWantData(false);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		setWantData(false);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>97</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	}</pre></td>
     </tr>
 
     <tr>
@@ -1093,8 +1093,8 @@
     <tr>
     <td align="right" class="lineno"><pre>114</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	inline void setWantData(bool flag)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline void setWantData(bool flag)</pre></td>
     </tr>
 
     <tr>
@@ -1107,15 +1107,15 @@
     <tr>
     <td align="right" class="lineno"><pre>116</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		m_want_data_flag = flag;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>		m_want_data_flag = flag;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>117</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	}</pre></td>
     </tr>
 
     <tr>

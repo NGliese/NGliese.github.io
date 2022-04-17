@@ -269,18 +269,18 @@
             <td class="headerValue">Components/AnalysisTools/ImageAnalysis_OpenCV/src/Background_Extractor.cpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">0</td>
-            <td class="headerTableEntry">38</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry">12</td>
+            <td class="headerTableEntry">39</td>
+            <td class="headerTableEntry" style="background-color:LightPink">30.8 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-04-09 10:09:42</td>
+            <td class="headerValue">2022-04-17 18:37:21</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">0</td>
+            <td class="headerTableEntry">4</td>
             <td class="headerTableEntry">49</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry" style="background-color:LightPink">8.2 %</td>
           </tr>
         </table>
       </td>
@@ -547,8 +547,8 @@
     <tr>
     <td align="right" class="lineno"><pre>36</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>Background_Extractor::Background_Extractor(const background_conf_t&amp; conf) : m_conf{conf}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>Background_Extractor::Background_Extractor(const background_conf_t&amp; conf) : m_conf{conf}</pre></td>
     </tr>
 
     <tr>
@@ -560,9 +560,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>38</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	switch(m_conf.m_type)</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	switch(m_conf.m_type)</pre></td>
     </tr>
 
     <tr>
@@ -575,29 +575,29 @@
     <tr>
     <td align="right" class="lineno"><pre>40</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		case type::MOG2:</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		case type::MOG2:</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>41</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>			background = cv::createBackgroundSubtractorMOG2();</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>			background = cv::createBackgroundSubtractorMOG2();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>42</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>			name = "MOG2_";</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>			name = "MOG2_";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>43</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>			break;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>			break;</pre></td>
     </tr>
 
     <tr>
@@ -645,8 +645,8 @@
     <tr>
     <td align="right" class="lineno"><pre>50</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -659,8 +659,8 @@
     <tr>
     <td align="right" class="lineno"><pre>52</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>Background_Extractor::~Background_Extractor() {}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>Background_Extractor::~Background_Extractor() {}</pre></td>
     </tr>
 
     <tr>
@@ -673,8 +673,8 @@
     <tr>
     <td align="right" class="lineno"><pre>54</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>uint32_t Background_Extractor::countConnectedComponents(const cv::Mat&amp; raw)</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>uint32_t Background_Extractor::countConnectedComponents(const cv::Mat&amp; raw)</pre></td>
     </tr>
 
     <tr>
@@ -700,9 +700,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>58</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(raw.empty())</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(raw.empty())</pre></td>
     </tr>
 
     <tr>
@@ -715,15 +715,15 @@
     <tr>
     <td align="right" class="lineno"><pre>60</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		std::cerr &lt;&lt; "we recieved an empty image in countConnectedComponents! \n";</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		std::cerr &lt;&lt; "we recieved an empty image in countConnectedComponents! \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>61</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return 0;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return 0;</pre></td>
     </tr>
 
     <tr>

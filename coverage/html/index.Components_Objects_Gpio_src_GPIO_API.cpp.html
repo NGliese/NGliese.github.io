@@ -269,18 +269,18 @@
             <td class="headerValue">Components/Objects/Gpio/src/GPIO_API.cpp</td>
             <td></td>
             <td class="headerName">Lines:</td>
-            <td class="headerTableEntry">0</td>
+            <td class="headerTableEntry">19</td>
             <td class="headerTableEntry">33</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry" style="background-color:LightPink">57.6 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-04-09 10:09:42</td>
+            <td class="headerValue">2022-04-17 18:37:21</td>
             <td></td>
             <td class="headerName">Branches:</td>
-            <td class="headerTableEntry">0</td>
+            <td class="headerTableEntry">7</td>
             <td class="headerTableEntry">20</td>
-            <td class="headerTableEntry" style="background-color:LightPink">0.0 %</td>
+            <td class="headerTableEntry" style="background-color:LightPink">35.0 %</td>
           </tr>
         </table>
       </td>
@@ -547,8 +547,8 @@
     <tr>
     <td align="right" class="lineno"><pre>36</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>GPIO_API::~GPIO_API() {}</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>28</pre></td>
+    <td align="left" class="src coveredLine"><pre>GPIO_API::~GPIO_API() {}</pre></td>
     </tr>
 
     <tr>
@@ -848,8 +848,8 @@
     <tr>
     <td align="right" class="lineno"><pre>79</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t GPIO_API::setToOutput()</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t GPIO_API::setToOutput()</pre></td>
     </tr>
 
     <tr>
@@ -889,16 +889,16 @@
 
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	auto err = m_hal.setDirection(m_pin, GPIO_HAL::io_def_t::OUTPUT);</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 8 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>	auto err = m_hal.setDirection(m_pin, GPIO_HAL::io_def_t::OUTPUT);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>86</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(err == GE_OK)</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 8 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(err == GE_OK)</pre></td>
     </tr>
 
     <tr>
@@ -911,15 +911,15 @@
     <tr>
     <td align="right" class="lineno"><pre>88</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		is_Output = true;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>		is_Output = true;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return GE_OK;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return GE_OK;</pre></td>
     </tr>
 
     <tr>
@@ -1051,8 +1051,8 @@
     <tr>
     <td align="right" class="lineno"><pre>108</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t GPIO_API::setHigh()</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t GPIO_API::setHigh()</pre></td>
     </tr>
 
     <tr>
@@ -1092,9 +1092,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>114</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(!is_Output)</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 2 times">&check;</span><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(!is_Output)</pre></td>
     </tr>
 
     <tr>
@@ -1107,8 +1107,8 @@
     <tr>
     <td align="right" class="lineno"><pre>116</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return GE_FAIL;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return GE_FAIL;</pre></td>
     </tr>
 
     <tr>
@@ -1149,15 +1149,15 @@
     <tr>
     <td align="right" class="lineno"><pre>122</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	is_high = true;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	is_high = true;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>123</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return m_hal.setValue(m_pin, GPIO_HAL::io_val_t::HIGH);</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return m_hal.setValue(m_pin, GPIO_HAL::io_val_t::HIGH);</pre></td>
     </tr>
 
     <tr>
@@ -1436,8 +1436,8 @@
     <tr>
     <td align="right" class="lineno"><pre>163</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>bool GPIO_API::isHigh() const</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>bool GPIO_API::isHigh() const</pre></td>
     </tr>
 
     <tr>
@@ -1449,9 +1449,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>165</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(is_Output)</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(is_Output)</pre></td>
     </tr>
 
     <tr>
@@ -1464,8 +1464,8 @@
     <tr>
     <td align="right" class="lineno"><pre>167</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return is_high;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return is_high;</pre></td>
     </tr>
 
     <tr>
@@ -1576,8 +1576,8 @@
     <tr>
     <td align="right" class="lineno"><pre>183</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>bool GPIO_API::isLow() const</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>bool GPIO_API::isLow() const</pre></td>
     </tr>
 
     <tr>
@@ -1589,9 +1589,9 @@
 
     <tr>
     <td align="right" class="lineno"><pre>185</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	if(is_Output)</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 4 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>	if(is_Output)</pre></td>
     </tr>
 
     <tr>
@@ -1604,8 +1604,8 @@
     <tr>
     <td align="right" class="lineno"><pre>187</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>		return is_high;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return is_high;</pre></td>
     </tr>
 
     <tr>
@@ -1646,8 +1646,8 @@
     <tr>
     <td align="right" class="lineno"><pre>193</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t GPIO_API::installInterrupt(const GPIO_HAL::io_intr_t&amp; type,</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>general_err_t GPIO_API::installInterrupt(const GPIO_HAL::io_intr_t&amp; type,</pre></td>
     </tr>
 
     <tr>
@@ -1667,8 +1667,8 @@
     <tr>
     <td align="right" class="lineno"><pre>196</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return m_hal.installInterruptDriver(m_pin, callbackfunction, type);</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	return m_hal.installInterruptDriver(m_pin, callbackfunction, type);</pre></td>
     </tr>
 
     <tr>
