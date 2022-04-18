@@ -5,7 +5,7 @@
  -->
 <!-- Title: Components/Sensor/RpiCamV2/src/RPICamV2.cpp Pages: 1 -->
 <svg width="304pt" height="285pt"
- viewBox="0.00 0.00 304.00 285.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 303.50 285.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 281)">
 <title>Components/Sensor/RpiCamV2/src/RPICamV2.cpp</title>
 <!-- Node1 -->
@@ -53,8 +53,8 @@
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d3/deb/_general___error_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="150,-56.5 150,-86.5 296,-86.5 296,-56.5 150,-56.5"/>
-<text text-anchor="start" x="158" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../../Objects/ErrorHandler</text>
+<polygon fill="none" stroke="black" points="150.5,-56.5 150.5,-86.5 295.5,-86.5 295.5,-56.5 150.5,-56.5"/>
+<text text-anchor="start" x="158.5" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../../Objects/ErrorHandler</text>
 <text text-anchor="middle" x="223" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/include/General_Error.hpp</text>
 </a>
 </g>

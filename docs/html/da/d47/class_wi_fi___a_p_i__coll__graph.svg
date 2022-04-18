@@ -29,11 +29,11 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../de/d7c/_wi_fi___a_p_i_8hpp.html#db/d38/structwifi__conf__t" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="17,-149.5 17,-206.5 87,-206.5 87,-149.5 17,-149.5"/>
+<polygon fill="none" stroke="black" points="17.5,-149.5 17.5,-206.5 86.5,-206.5 86.5,-149.5 17.5,-149.5"/>
 <text text-anchor="middle" x="52" y="-194.5" font-family="Helvetica,sans-Serif" font-size="10.00">wifi_conf_t</text>
-<polyline fill="none" stroke="black" points="17,-187.5 87,-187.5 "/>
+<polyline fill="none" stroke="black" points="17.5,-187.5 86.5,-187.5 "/>
 <text text-anchor="middle" x="52" y="-175.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="black" points="17,-168.5 87,-168.5 "/>
+<polyline fill="none" stroke="black" points="17.5,-168.5 86.5,-168.5 "/>
 <text text-anchor="middle" x="52" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>

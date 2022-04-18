@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 822;
+var viewWidth = 820;
 var viewHeight = 1391;
 var sectionId = 'dynsection-1';
 </script>
@@ -251,13 +251,13 @@ var sectionId = 'dynsection-1';
 <g id="node18" class="node">
 <title>Node18</title>
 <g id="a_node18"><a xlink:href="../../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="237,-645.5 237,-724.5 367,-724.5 367,-645.5 237,-645.5"/>
+<polygon fill="none" stroke="black" points="237.5,-645.5 237.5,-724.5 366.5,-724.5 366.5,-645.5 237.5,-645.5"/>
 <text text-anchor="middle" x="302" y="-712.5" font-family="Helvetica,sans-Serif" font-size="10.00">ADC_API_ESP32::config</text>
-<polyline fill="none" stroke="black" points="237,-705.5 367,-705.5 "/>
-<text text-anchor="start" x="245" y="-693.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ samples</text>
-<text text-anchor="start" x="245" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ channel</text>
-<text text-anchor="start" x="245" y="-671.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ vRef</text>
-<polyline fill="none" stroke="black" points="237,-664.5 367,-664.5 "/>
+<polyline fill="none" stroke="black" points="237.5,-705.5 366.5,-705.5 "/>
+<text text-anchor="start" x="245.5" y="-693.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ samples</text>
+<text text-anchor="start" x="245.5" y="-682.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ channel</text>
+<text text-anchor="start" x="245.5" y="-671.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ vRef</text>
+<polyline fill="none" stroke="black" points="237.5,-664.5 366.5,-664.5 "/>
 <text text-anchor="middle" x="302" y="-652.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
@@ -305,10 +305,10 @@ var sectionId = 'dynsection-1';
 <!-- Node6&#45;&gt;Node2 -->
 <g id="edge5" class="edge">
 <title>Node6&#45;&gt;Node2</title>
-<path fill="none" stroke="#404040" d="M708.15,-995.34C714.37,-926.23 720.35,-744.47 626,-645 596.75,-614.16 557.13,-589 521.65,-570.4"/>
-<polygon fill="none" stroke="#404040" points="521.47,-570.31 514.3,-571.14 510.78,-564.84 517.95,-564.02 521.47,-570.31"/>
-<text text-anchor="middle" x="762.5" y="-863" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_want_data_flag</text>
-<text text-anchor="middle" x="762.5" y="-852" font-family="Helvetica,sans-Serif" font-size="10.00">#m_data_ready_flag</text>
+<path fill="none" stroke="#404040" d="M708.09,-995.31C714.15,-926.15 719.69,-744.26 625,-645 595.89,-614.49 556.67,-589.44 521.51,-570.83"/>
+<polygon fill="none" stroke="#404040" points="521.4,-570.77 514.23,-571.57 510.74,-565.26 517.91,-564.46 521.4,-570.77"/>
+<text text-anchor="middle" x="761" y="-863" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_want_data_flag</text>
+<text text-anchor="middle" x="761" y="-852" font-family="Helvetica,sans-Serif" font-size="10.00">#m_data_ready_flag</text>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
@@ -375,8 +375,8 @@ var sectionId = 'dynsection-1';
 <title>Node9&#45;&gt;Node2</title>
 <path fill="none" stroke="#404040" d="M533.34,-743.15C517.46,-708.86 500.17,-671.54 484.63,-637.98"/>
 <polygon fill="none" stroke="#404040" points="484.47,-637.65 478.32,-633.88 479.43,-626.76 485.58,-630.52 484.47,-637.65"/>
-<text text-anchor="middle" x="571" y="-688" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_buffer_external</text>
-<text text-anchor="middle" x="571" y="-677" font-family="Helvetica,sans-Serif" font-size="10.00">#m_buffer_raw</text>
+<text text-anchor="middle" x="570.5" y="-688" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_buffer_external</text>
+<text text-anchor="middle" x="570.5" y="-677" font-family="Helvetica,sans-Serif" font-size="10.00">#m_buffer_raw</text>
 </g>
 <!-- Node10 -->
 <g id="node10" class="node">
@@ -498,13 +498,13 @@ var sectionId = 'dynsection-1';
 <g id="node16" class="node">
 <title>Node16</title>
 <g id="a_node16"><a xlink:href="../../dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="9.5,-1071.5 9.5,-1150.5 150.5,-1150.5 150.5,-1071.5 9.5,-1071.5"/>
+<polygon fill="none" stroke="black" points="10,-1071.5 10,-1150.5 150,-1150.5 150,-1071.5 10,-1071.5"/>
 <text text-anchor="middle" x="80" y="-1138.5" font-family="Helvetica,sans-Serif" font-size="10.00">Fault_Handler::counters_t</text>
-<polyline fill="none" stroke="black" points="9.5,-1131.5 150.5,-1131.5 "/>
-<text text-anchor="start" x="17.5" y="-1119.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ low</text>
-<text text-anchor="start" x="17.5" y="-1108.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ medium</text>
-<text text-anchor="start" x="17.5" y="-1097.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ high</text>
-<polyline fill="none" stroke="black" points="9.5,-1090.5 150.5,-1090.5 "/>
+<polyline fill="none" stroke="black" points="10,-1131.5 150,-1131.5 "/>
+<text text-anchor="start" x="18" y="-1119.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ low</text>
+<text text-anchor="start" x="18" y="-1108.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ medium</text>
+<text text-anchor="start" x="18" y="-1097.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ high</text>
+<polyline fill="none" stroke="black" points="10,-1090.5 150,-1090.5 "/>
 <text text-anchor="middle" x="80" y="-1078.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>

@@ -93,7 +93,7 @@ var sectionId = 'dynsection-1';
 <title>Node2&#45;&gt;Node1</title>
 <path fill="none" stroke="#404040" d="M130.5,-182.14C130.5,-171.6 130.5,-159.46 130.5,-147.13"/>
 <polygon fill="none" stroke="#404040" points="130.5,-146.79 126.5,-140.79 130.5,-134.79 134.5,-140.79 130.5,-146.79"/>
-<text text-anchor="middle" x="158.5" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_buffer</text>
+<text text-anchor="middle" x="158" y="-156" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_buffer</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">

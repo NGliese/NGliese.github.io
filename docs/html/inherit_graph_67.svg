@@ -97,8 +97,8 @@
 <g id="node10" class="node">
 <title>Node9</title>
 <g id="a_node10"><a xlink:href="d4/d82/class_service_base.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="88,-42 88,-72 236,-72 236,-42 88,-42"/>
-<text text-anchor="start" x="96" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">ServiceBase&lt; BUFFER</text>
+<polygon fill="none" stroke="black" points="88.5,-42 88.5,-72 235.5,-72 235.5,-42 88.5,-42"/>
+<text text-anchor="start" x="96.5" y="-60" font-family="Helvetica,sans-Serif" font-size="10.00">ServiceBase&lt; BUFFER</text>
 <text text-anchor="middle" x="162" y="-49" font-family="Helvetica,sans-Serif" font-size="10.00">_TYPE, FreeRTOS::Queue &gt;</text>
 </a>
 </g>
@@ -184,8 +184,8 @@
 <!-- Node9&#45;&gt;Node10 -->
 <g id="edge10" class="edge">
 <title>Node9&#45;&gt;Node10</title>
-<path fill="none" stroke="midnightblue" d="M246.39,-57.83C262.84,-58 279.93,-58.17 295.79,-58.32"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="246.27,-54.33 236.24,-57.73 246.2,-61.33 246.27,-54.33"/>
+<path fill="none" stroke="midnightblue" d="M245.9,-57.83C262.49,-57.99 279.74,-58.16 295.75,-58.32"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="245.7,-54.32 235.67,-57.72 245.63,-61.32 245.7,-54.32"/>
 </g>
 <!-- Node12 -->
 <g id="node13" class="node">

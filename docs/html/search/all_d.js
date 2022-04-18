@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['library_359',['Library',['../index.html',1,'']]],
   ['lcd_5fchannel_360',['lcd_channel',['../d4/dc1/class_h_a_l___e_s_p32.html#a8d14cbeb8db3bc584daad862044fbd8e',1,'HAL_ESP32']]],
   ['learning_5frate_361',['learning_rate',['../db/d4d/class_background___extractor.html#aa19dc6036a88f1f4d40edeb3fe8a9585',1,'Background_Extractor::background_conf_t']]],
   ['leastsignificantbyteexchange_362',['leastSignificantByteExchange',['../d1/d91/namespacebasic__utils.html#af74cebd59b0e0eb1c63cf6f01f9e9df4',1,'basic_utils']]],

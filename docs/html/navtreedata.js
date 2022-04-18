@@ -23,8 +23,7 @@ for the JavaScript code in this file
 var NAVTREE =
 [
   [ "Embedded Library", "index.html", [
-    [ "Library", "index.html", null ],
-    [ "'s ToDo's", "dd/dfc/md__to_do.html", null ],
+    [ "Embedded_CPP_Library", "index.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -71,7 +70,7 @@ var NAVTREEINDEX =
 "d9/d1c/class_m_g996_r.html#a5e7ae386db4a86245b6879d9bed645b9",
 "db/d19/_objects_2_o_t_a_2test_2test__main_8cpp_source.html",
 "dd/ddd/_maintainer_8cpp.html#adc2888c679c3a8e722576817f89e6a4d",
-"dir_5ffd3833b5571810cf9860b184a120b6.html"
+"dir_6164661bfb521e4b540c7b7052af2911.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

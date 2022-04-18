@@ -12,25 +12,25 @@
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="75.5,-0.5 75.5,-200.5 224.5,-200.5 224.5,-0.5 75.5,-0.5"/>
-<text text-anchor="middle" x="150" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">Message_Protocol</text>
-<polyline fill="none" stroke="black" points="75.5,-181.5 224.5,-181.5 "/>
-<text text-anchor="start" x="83.5" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_initialized</text>
-<text text-anchor="start" x="83.5" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_valid</text>
-<polyline fill="none" stroke="black" points="75.5,-151.5 224.5,-151.5 "/>
-<text text-anchor="start" x="83.5" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Message_Protocol()</text>
-<text text-anchor="start" x="83.5" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Message_Protocol()</text>
-<text text-anchor="start" x="83.5" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Message_Protocol()</text>
-<text text-anchor="start" x="83.5" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setControl()</text>
-<text text-anchor="start" x="83.5" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getControl()</text>
-<text text-anchor="start" x="83.5" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ addData()</text>
-<text text-anchor="start" x="83.5" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBuffer()</text>
-<text text-anchor="start" x="83.5" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ clear()</text>
-<text text-anchor="start" x="83.5" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ toString()</text>
-<text text-anchor="start" x="83.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isValid()</text>
-<text text-anchor="start" x="83.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ parameterCount()</text>
-<text text-anchor="start" x="83.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ controlParameterCount()</text>
-<text text-anchor="start" x="83.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dataParameterCount()</text>
+<polygon fill="#bfbfbf" stroke="black" points="77,-0.5 77,-200.5 225,-200.5 225,-0.5 77,-0.5"/>
+<text text-anchor="middle" x="151" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00">Message_Protocol</text>
+<polyline fill="none" stroke="black" points="77,-181.5 225,-181.5 "/>
+<text text-anchor="start" x="85" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_initialized</text>
+<text text-anchor="start" x="85" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_valid</text>
+<polyline fill="none" stroke="black" points="77,-151.5 225,-151.5 "/>
+<text text-anchor="start" x="85" y="-139.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Message_Protocol()</text>
+<text text-anchor="start" x="85" y="-128.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Message_Protocol()</text>
+<text text-anchor="start" x="85" y="-117.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Message_Protocol()</text>
+<text text-anchor="start" x="85" y="-106.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ setControl()</text>
+<text text-anchor="start" x="85" y="-95.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getControl()</text>
+<text text-anchor="start" x="85" y="-84.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ addData()</text>
+<text text-anchor="start" x="85" y="-73.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ getBuffer()</text>
+<text text-anchor="start" x="85" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ clear()</text>
+<text text-anchor="start" x="85" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ toString()</text>
+<text text-anchor="start" x="85" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ isValid()</text>
+<text text-anchor="start" x="85" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ parameterCount()</text>
+<text text-anchor="start" x="85" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ controlParameterCount()</text>
+<text text-anchor="start" x="85" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ dataParameterCount()</text>
 </a>
 </g>
 </g>
@@ -50,9 +50,9 @@
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M93.32,-253.77C97.69,-242.02 103.1,-227.51 108.82,-212.14"/>
-<polygon fill="none" stroke="#404040" points="108.84,-212.07 107.19,-205.05 113.03,-200.82 114.68,-207.84 108.84,-212.07"/>
-<text text-anchor="middle" x="131" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_buffer</text>
+<path fill="none" stroke="#404040" d="M93.48,-253.77C97.91,-242.02 103.4,-227.51 109.2,-212.14"/>
+<polygon fill="none" stroke="#404040" points="109.24,-212.05 107.61,-205.02 113.48,-200.82 115.1,-207.85 109.24,-212.05"/>
+<text text-anchor="middle" x="130.5" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_buffer</text>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
@@ -132,9 +132,9 @@
 <!-- Node6&#45;&gt;Node1 -->
 <g id="edge5" class="edge">
 <title>Node6&#45;&gt;Node1</title>
-<path fill="none" stroke="#404040" d="M205.53,-248.49C201.45,-237.7 196.68,-225.06 191.67,-211.81"/>
-<polygon fill="none" stroke="#404040" points="191.66,-211.78 185.8,-207.58 187.42,-200.55 193.28,-204.75 191.66,-211.78"/>
-<text text-anchor="middle" x="225" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_control</text>
+<path fill="none" stroke="#404040" d="M205.71,-248.49C201.7,-237.7 196.99,-225.06 192.06,-211.81"/>
+<polygon fill="none" stroke="#404040" points="192.05,-211.8 186.21,-207.57 187.87,-200.55 193.71,-204.78 192.05,-211.8"/>
+<text text-anchor="middle" x="226" y="-222" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_control</text>
 </g>
 </g>
 </svg>

@@ -5,17 +5,17 @@
  -->
 <!-- Title: Components/Objects/ADC/include/ADC_API_ESP32.hpp Pages: 1 -->
 <svg width="926pt" height="217pt"
- viewBox="0.00 0.00 926.00 217.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 925.50 217.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 213)">
 <title>Components/Objects/ADC/include/ADC_API_ESP32.hpp</title>
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="514.5,-167.5 514.5,-208.5 638.5,-208.5 638.5,-167.5 514.5,-167.5"/>
-<text text-anchor="start" x="522.5" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
-<text text-anchor="start" x="522.5" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ADC/include/ADC_API</text>
-<text text-anchor="middle" x="576.5" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ESP32.hpp</text>
+<polygon fill="#bfbfbf" stroke="black" points="514,-167.5 514,-208.5 638,-208.5 638,-167.5 514,-167.5"/>
+<text text-anchor="start" x="522" y="-196.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
+<text text-anchor="start" x="522" y="-185.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ADC/include/ADC_API</text>
+<text text-anchor="middle" x="576" y="-174.5" font-family="Helvetica,sans-Serif" font-size="10.00">_ESP32.hpp</text>
 </a>
 </g>
 </g>
@@ -23,136 +23,136 @@
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../db/d12/_distance_sensor_controller_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="191,-89.5 191,-130.5 394,-130.5 394,-89.5 191,-89.5"/>
+<polygon fill="none" stroke="black" points="191,-89.5 191,-130.5 393,-130.5 393,-89.5 191,-89.5"/>
 <text text-anchor="start" x="199" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Controller</text>
 <text text-anchor="start" x="199" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">/DistanceSensorController</text>
-<text text-anchor="middle" x="292.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">/include/DistanceSensorController.hpp</text>
+<text text-anchor="middle" x="292" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">/include/DistanceSensorController.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node2 -->
 <g id="edge1" class="edge">
 <title>Node1&#45;&gt;Node2</title>
-<path fill="none" stroke="midnightblue" d="M504.45,-167.72C461.9,-156.33 408.19,-141.96 365.48,-130.53"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="503.61,-171.12 514.17,-170.32 505.42,-164.36 503.61,-171.12"/>
+<path fill="none" stroke="midnightblue" d="M503.95,-167.72C461.4,-156.33 407.69,-141.96 364.98,-130.53"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="503.11,-171.12 513.67,-170.32 504.92,-164.36 503.11,-171.12"/>
 </g>
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="../../d2/d4e/_a_d_c___a_p_i___e_s_p32_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="411.5,-95 411.5,-125 569.5,-125 569.5,-95 411.5,-95"/>
-<text text-anchor="start" x="419.5" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
-<text text-anchor="middle" x="490.5" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">/ADC/src/ADC_API_ESP32.cpp</text>
+<polygon fill="none" stroke="black" points="411,-95 411,-125 569,-125 569,-95 411,-95"/>
+<text text-anchor="start" x="419" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
+<text text-anchor="middle" x="490" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">/ADC/src/ADC_API_ESP32.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node1&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M546.69,-160.66C533.23,-148.76 517.86,-135.18 506.6,-125.23"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="544.54,-163.43 554.35,-167.43 549.18,-158.18 544.54,-163.43"/>
+<path fill="none" stroke="midnightblue" d="M546.19,-160.66C532.73,-148.76 517.36,-135.18 506.1,-125.23"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="544.04,-163.43 553.85,-167.43 548.68,-158.18 544.04,-163.43"/>
 </g>
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
 <g id="a_node7"><a xlink:href="../../d3/d09/_a_d_c__test_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="587.5,-95 587.5,-125 739.5,-125 739.5,-95 587.5,-95"/>
-<text text-anchor="start" x="595.5" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
-<text text-anchor="middle" x="663.5" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">/ADC/test/test/ADC_test.cpp</text>
+<polygon fill="none" stroke="black" points="587,-95 587,-125 739,-125 739,-95 587,-95"/>
+<text text-anchor="start" x="595" y="-113" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
+<text text-anchor="middle" x="663" y="-102" font-family="Helvetica,sans-Serif" font-size="10.00">/ADC/test/test/ADC_test.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node7 -->
 <g id="edge6" class="edge">
 <title>Node1&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M606.65,-160.66C620.27,-148.76 635.83,-135.18 647.22,-125.23"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="604.13,-158.21 598.9,-167.43 608.74,-163.49 604.13,-158.21"/>
+<path fill="none" stroke="midnightblue" d="M606.15,-160.66C619.77,-148.76 635.33,-135.18 646.72,-125.23"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="603.63,-158.21 598.4,-167.43 608.24,-163.49 603.63,-158.21"/>
 </g>
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
 <g id="a_node8"><a xlink:href="../../dd/d82/_active_current_sensor_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="757.5,-89.5 757.5,-130.5 905.5,-130.5 905.5,-89.5 757.5,-89.5"/>
-<text text-anchor="start" x="765.5" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Sensor/Active</text>
-<text text-anchor="start" x="765.5" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">CurrentSensor/include</text>
-<text text-anchor="middle" x="831.5" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ActiveCurrentSensor.hpp</text>
+<polygon fill="none" stroke="black" points="757,-89.5 757,-130.5 905,-130.5 905,-89.5 757,-89.5"/>
+<text text-anchor="start" x="765" y="-118.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Sensor/Active</text>
+<text text-anchor="start" x="765" y="-107.5" font-family="Helvetica,sans-Serif" font-size="10.00">CurrentSensor/include</text>
+<text text-anchor="middle" x="831" y="-96.5" font-family="Helvetica,sans-Serif" font-size="10.00">/ActiveCurrentSensor.hpp</text>
 </a>
 </g>
 </g>
 <!-- Node1&#45;&gt;Node8 -->
 <g id="edge7" class="edge">
 <title>Node1&#45;&gt;Node8</title>
-<path fill="none" stroke="midnightblue" d="M648.27,-165.61C685.25,-154.59 730.02,-141.25 766.04,-130.51"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="647.14,-162.29 638.55,-168.51 649.14,-169 647.14,-162.29"/>
+<path fill="none" stroke="midnightblue" d="M647.77,-165.61C684.75,-154.59 729.52,-141.25 765.54,-130.51"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="646.64,-162.29 638.05,-168.51 648.64,-169 646.64,-162.29"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="../../dd/dde/_distance_sensor_controller_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="0,-6 0,-47 181,-47 181,-6 0,-6"/>
+<polygon fill="none" stroke="black" points="0,-6 0,-47 180,-47 180,-6 0,-6"/>
 <text text-anchor="start" x="8" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Controller</text>
 <text text-anchor="start" x="8" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">/DistanceSensorController</text>
-<text text-anchor="middle" x="90.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">/src/DistanceSensorController.cpp</text>
+<text text-anchor="middle" x="90" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">/src/DistanceSensorController.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node3 -->
 <g id="edge2" class="edge">
 <title>Node2&#45;&gt;Node3</title>
-<path fill="none" stroke="midnightblue" d="M234.52,-85.61C204.23,-73.39 167.58,-58.6 138.84,-47"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="233.53,-88.98 244.12,-89.48 236.15,-82.49 233.53,-88.98"/>
+<path fill="none" stroke="midnightblue" d="M234.02,-85.61C203.73,-73.39 167.08,-58.6 138.34,-47"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="233.03,-88.98 243.62,-89.48 235.65,-82.49 233.03,-88.98"/>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d7/d91/_distance_sensor_controller__test_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="199,-0.5 199,-52.5 386,-52.5 386,-0.5 199,-0.5"/>
-<text text-anchor="start" x="207" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Controller</text>
-<text text-anchor="start" x="207" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">/DistanceSensorController</text>
-<text text-anchor="start" x="207" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/test/test/DistanceSensorController</text>
-<text text-anchor="middle" x="292.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_test.cpp</text>
+<polygon fill="none" stroke="black" points="198.5,-0.5 198.5,-52.5 385.5,-52.5 385.5,-0.5 198.5,-0.5"/>
+<text text-anchor="start" x="206.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Controller</text>
+<text text-anchor="start" x="206.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">/DistanceSensorController</text>
+<text text-anchor="start" x="206.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">/test/test/DistanceSensorController</text>
+<text text-anchor="middle" x="292" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">_test.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node4 -->
 <g id="edge3" class="edge">
 <title>Node2&#45;&gt;Node4</title>
-<path fill="none" stroke="midnightblue" d="M292.5,-79.12C292.5,-70.41 292.5,-60.99 292.5,-52.61"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="289,-79.27 292.5,-89.27 296,-79.27 289,-79.27"/>
+<path fill="none" stroke="midnightblue" d="M292,-79.12C292,-70.41 292,-60.99 292,-52.61"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="288.5,-79.27 292,-89.27 295.5,-79.27 288.5,-79.27"/>
 </g>
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="../../da/d75/_data_broker__test_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="404,-6 404,-47 523,-47 523,-6 404,-6"/>
-<text text-anchor="start" x="412" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
-<text text-anchor="start" x="412" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">/DataBroker/test/test</text>
-<text text-anchor="middle" x="463.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">/DataBroker_test.cpp</text>
+<polygon fill="none" stroke="black" points="403.5,-6 403.5,-47 522.5,-47 522.5,-6 403.5,-6"/>
+<text text-anchor="start" x="411.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Objects</text>
+<text text-anchor="start" x="411.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">/DataBroker/test/test</text>
+<text text-anchor="middle" x="463" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">/DataBroker_test.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node2&#45;&gt;Node5 -->
 <g id="edge4" class="edge">
 <title>Node2&#45;&gt;Node5</title>
-<path fill="none" stroke="midnightblue" d="M342.58,-85.13C368.03,-73 398.56,-58.45 422.58,-47"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="340.98,-82.02 333.46,-89.48 343.99,-88.34 340.98,-82.02"/>
+<path fill="none" stroke="midnightblue" d="M342.08,-85.13C367.53,-73 398.06,-58.45 422.08,-47"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="340.48,-82.02 332.96,-89.48 343.49,-88.34 340.48,-82.02"/>
 </g>
 <!-- Node9 -->
 <g id="node9" class="node">
 <title>Node9</title>
 <g id="a_node9"><a xlink:href="../../d2/d77/_active_current_sensor_8cpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="745,-6 745,-47 918,-47 918,-6 745,-6"/>
-<text text-anchor="start" x="753" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Sensor/Active</text>
-<text text-anchor="start" x="753" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">CurrentSensor/src/ActiveCurrent</text>
-<text text-anchor="middle" x="831.5" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">Sensor.cpp</text>
+<polygon fill="none" stroke="black" points="744.5,-6 744.5,-47 917.5,-47 917.5,-6 744.5,-6"/>
+<text text-anchor="start" x="752.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">Components/Sensor/Active</text>
+<text text-anchor="start" x="752.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">CurrentSensor/src/ActiveCurrent</text>
+<text text-anchor="middle" x="831" y="-13" font-family="Helvetica,sans-Serif" font-size="10.00">Sensor.cpp</text>
 </a>
 </g>
 </g>
 <!-- Node8&#45;&gt;Node9 -->
 <g id="edge8" class="edge">
 <title>Node8&#45;&gt;Node9</title>
-<path fill="none" stroke="midnightblue" d="M831.5,-79.06C831.5,-68.38 831.5,-56.63 831.5,-47.05"/>
-<polygon fill="midnightblue" stroke="midnightblue" points="828,-79.27 831.5,-89.27 835,-79.27 828,-79.27"/>
+<path fill="none" stroke="midnightblue" d="M831,-79.06C831,-68.38 831,-56.63 831,-47.05"/>
+<polygon fill="midnightblue" stroke="midnightblue" points="827.5,-79.27 831,-89.27 834.5,-79.27 827.5,-79.27"/>
 </g>
 </g>
 </svg>

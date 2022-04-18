@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 165;
+var viewWidth = 164;
 var viewHeight = 503;
 var sectionId = 'dynsection-1';
 </script>
@@ -58,11 +58,11 @@ var sectionId = 'dynsection-1';
 <g id="node1" class="node">
 <title>Node1</title>
 <g id="a_node1"><a xlink:title=" ">
-<polygon fill="#bfbfbf" stroke="black" points="25,-0.5 25,-112.5 132,-112.5 132,-0.5 25,-0.5"/>
-<text text-anchor="middle" x="78.5" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">Watch_Clock</text>
-<polyline fill="none" stroke="black" points="25,-93.5 132,-93.5 "/>
+<polygon fill="#bfbfbf" stroke="black" points="25,-0.5 25,-112.5 131,-112.5 131,-0.5 25,-0.5"/>
+<text text-anchor="middle" x="78" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">Watch_Clock</text>
+<polyline fill="none" stroke="black" points="25,-93.5 131,-93.5 "/>
 <text text-anchor="start" x="33" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_last_time</text>
-<polyline fill="none" stroke="black" points="25,-74.5 132,-74.5 "/>
+<polyline fill="none" stroke="black" points="25,-74.5 131,-74.5 "/>
 <text text-anchor="start" x="33" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Watch_Clock()</text>
 <text text-anchor="start" x="33" y="-51.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Watch_Clock()</text>
 <text text-anchor="start" x="33" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Watch_Clock()</text>
@@ -76,12 +76,12 @@ var sectionId = 'dynsection-1';
 <g id="node2" class="node">
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../da/d60/class_watchdog___base.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="0,-150.5 0,-251.5 157,-251.5 157,-150.5 0,-150.5"/>
-<text text-anchor="middle" x="78.5" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">Watchdog_Base&lt; uint32_t &gt;</text>
-<polyline fill="none" stroke="black" points="0,-232.5 157,-232.5 "/>
+<polygon fill="none" stroke="black" points="0,-150.5 0,-251.5 156,-251.5 156,-150.5 0,-150.5"/>
+<text text-anchor="middle" x="78" y="-239.5" font-family="Helvetica,sans-Serif" font-size="10.00">Watchdog_Base&lt; uint32_t &gt;</text>
+<polyline fill="none" stroke="black" points="0,-232.5 156,-232.5 "/>
 <text text-anchor="start" x="8" y="-220.5" font-family="Helvetica,sans-Serif" font-size="10.00"># m_watch</text>
 <text text-anchor="start" x="8" y="-209.5" font-family="Helvetica,sans-Serif" font-size="10.00"># m_initialized</text>
-<polyline fill="none" stroke="black" points="0,-202.5 157,-202.5 "/>
+<polyline fill="none" stroke="black" points="0,-202.5 156,-202.5 "/>
 <text text-anchor="start" x="8" y="-190.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Watchdog_Base()</text>
 <text text-anchor="start" x="8" y="-179.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Watchdog_Base()</text>
 <text text-anchor="start" x="8" y="-168.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ initialize()</text>
@@ -92,18 +92,18 @@ var sectionId = 'dynsection-1';
 <!-- Node2&#45;&gt;Node1 -->
 <g id="edge1" class="edge">
 <title>Node2&#45;&gt;Node1</title>
-<path fill="none" stroke="midnightblue" d="M78.5,-140.11C78.5,-131.1 78.5,-121.83 78.5,-112.91"/>
-<polygon fill="none" stroke="midnightblue" points="75,-140.16 78.5,-150.16 82,-140.16 75,-140.16"/>
+<path fill="none" stroke="midnightblue" d="M78,-140.11C78,-131.1 78,-121.83 78,-112.91"/>
+<polygon fill="none" stroke="midnightblue" points="74.5,-140.16 78,-150.16 81.5,-140.16 74.5,-140.16"/>
 </g>
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
 <g id="a_node3"><a xlink:href="../../da/d60/class_watchdog___base.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="17,-299.5 17,-389.5 140,-389.5 140,-299.5 17,-299.5"/>
-<text text-anchor="middle" x="78.5" y="-377.5" font-family="Helvetica,sans-Serif" font-size="10.00">Watchdog_Base&lt; T &gt;</text>
-<polyline fill="none" stroke="black" points="17,-370.5 140,-370.5 "/>
+<polygon fill="none" stroke="black" points="17,-299.5 17,-389.5 139,-389.5 139,-299.5 17,-299.5"/>
+<text text-anchor="middle" x="78" y="-377.5" font-family="Helvetica,sans-Serif" font-size="10.00">Watchdog_Base&lt; T &gt;</text>
+<polyline fill="none" stroke="black" points="17,-370.5 139,-370.5 "/>
 <text text-anchor="start" x="25" y="-358.5" font-family="Helvetica,sans-Serif" font-size="10.00"># m_initialized</text>
-<polyline fill="none" stroke="black" points="17,-351.5 140,-351.5 "/>
+<polyline fill="none" stroke="black" points="17,-351.5 139,-351.5 "/>
 <text text-anchor="start" x="25" y="-339.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Watchdog_Base()</text>
 <text text-anchor="start" x="25" y="-328.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~Watchdog_Base()</text>
 <text text-anchor="start" x="25" y="-317.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ initialize()</text>
@@ -114,29 +114,29 @@ var sectionId = 'dynsection-1';
 <!-- Node3&#45;&gt;Node2 -->
 <g id="edge2" class="edge">
 <title>Node3&#45;&gt;Node2</title>
-<path fill="none" stroke="orange" d="M78.5,-288.99C78.5,-276.7 78.5,-263.72 78.5,-251.64"/>
-<polygon fill="orange" stroke="orange" points="75,-289.12 78.5,-299.12 82,-289.12 75,-289.12"/>
-<text text-anchor="middle" x="111.5" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; uint32_t &gt;</text>
+<path fill="none" stroke="orange" d="M78,-288.99C78,-276.7 78,-263.72 78,-251.64"/>
+<polygon fill="orange" stroke="orange" points="74.5,-289.12 78,-299.12 81.5,-289.12 74.5,-289.12"/>
+<text text-anchor="middle" x="111" y="-273" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; uint32_t &gt;</text>
 </g>
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:title=" ">
-<polygon fill="none" stroke="#bfbfbf" points="64,-437.5 64,-494.5 93,-494.5 93,-437.5 64,-437.5"/>
-<text text-anchor="middle" x="78.5" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">T</text>
-<polyline fill="none" stroke="#bfbfbf" points="64,-475.5 93,-475.5 "/>
-<text text-anchor="middle" x="78.5" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
-<polyline fill="none" stroke="#bfbfbf" points="64,-456.5 93,-456.5 "/>
-<text text-anchor="middle" x="78.5" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polygon fill="none" stroke="#bfbfbf" points="63.5,-437.5 63.5,-494.5 92.5,-494.5 92.5,-437.5 63.5,-437.5"/>
+<text text-anchor="middle" x="78" y="-482.5" font-family="Helvetica,sans-Serif" font-size="10.00">T</text>
+<polyline fill="none" stroke="#bfbfbf" points="63.5,-475.5 92.5,-475.5 "/>
+<text text-anchor="middle" x="78" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<polyline fill="none" stroke="#bfbfbf" points="63.5,-456.5 92.5,-456.5 "/>
+<text text-anchor="middle" x="78" y="-444.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
 </g>
 <!-- Node4&#45;&gt;Node3 -->
 <g id="edge3" class="edge">
 <title>Node4&#45;&gt;Node3</title>
-<path fill="none" stroke="#404040" d="M78.5,-437.28C78.5,-426.73 78.5,-414.29 78.5,-402.03"/>
-<polygon fill="none" stroke="#404040" points="78.5,-401.91 74.5,-395.91 78.5,-389.91 82.5,-395.91 78.5,-401.91"/>
-<text text-anchor="middle" x="106.5" y="-411" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_watch</text>
+<path fill="none" stroke="#404040" d="M78,-437.28C78,-426.73 78,-414.29 78,-402.03"/>
+<polygon fill="none" stroke="#404040" points="78,-401.91 74,-395.91 78,-389.91 82,-395.91 78,-401.91"/>
+<text text-anchor="middle" x="106" y="-411" font-family="Helvetica,sans-Serif" font-size="10.00"> #m_watch</text>
 </g>
 </g>
 </svg>

@@ -1,23 +1,23 @@
 <map id="DistanceSensorController_HW_TEST" name="DistanceSensorController_HW_TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="685,2132,898,2283"/>
-<area shape="rect" id="node2" href="$d3/dab/class_distance_sensor_controller.html" title=" " alt="" coords="576,1860,799,1996"/>
-<area shape="rect" id="node3" href="$d9/d88/class_sensor_controller_base.html" title=" " alt="" coords="721,1013,920,1267"/>
-<area shape="rect" id="node4" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="439,561,570,844"/>
-<area shape="rect" id="node5" title="STL class." alt="" coords="461,329,548,407"/>
-<area shape="rect" id="node10" href="$d5/d81/class_m_q_t_t___message.html" title=" " alt="" coords="757,547,972,859"/>
-<area shape="rect" id="node13" href="$d5/de7/classmqtt__api__v2.html" title=" " alt="" coords="594,605,733,800"/>
-<area shape="rect" id="node16" href="$dd/d84/class_fault___handler.html" title=" " alt="" coords="253,605,415,800"/>
-<area shape="rect" id="node19" href="$d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config" title=" " alt="" coords="129,883,302,989"/>
-<area shape="rect" id="node6" title="STL class." alt="" coords="435,145,574,237"/>
-<area shape="rect" id="node7" title=" " alt="" coords="945,445,1099,523"/>
-<area shape="rect" id="node8" title="STL class." alt="" coords="954,153,1087,230"/>
-<area shape="rect" id="node9" title=" " alt="" coords="921,5,960,83"/>
-<area shape="rect" id="node12" title="STL class." alt="" coords="799,153,928,230"/>
-<area shape="rect" id="node11" title=" " alt="" coords="773,322,954,414"/>
-<area shape="rect" id="node14" href="$d4/d70/class_a_d_c___a_p_i___e_s_p32.html" title=" " alt="" coords="401,1581,563,1687"/>
-<area shape="rect" id="node15" href="$dc/d23/class_a_d_c_base.html" title=" " alt="" coords="363,1329,601,1495"/>
-<area shape="rect" id="node18" href="$dc/d23/class_a_d_c_base.html" title=" " alt="" coords="461,1057,698,1223"/>
-<area shape="rect" id="node17" href="$dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t" title=" " alt="" coords="5,315,193,421"/>
-<area shape="rect" id="node20" href="$d1/d2c/class_g_p_i_o___a_p_i.html" title=" " alt="" coords="823,1787,973,2069"/>
-<area shape="rect" id="node21" href="$d4/d57/class_g_p_i_o___h_a_l.html" title=" " alt="" coords="807,1544,989,1724"/>
+<area shape="rect" id="node1" title=" " alt="" coords="684,2132,897,2283"/>
+<area shape="rect" id="node2" href="$d3/dab/class_distance_sensor_controller.html" title=" " alt="" coords="575,1860,798,1996"/>
+<area shape="rect" id="node3" href="$d9/d88/class_sensor_controller_base.html" title=" " alt="" coords="721,1013,919,1267"/>
+<area shape="rect" id="node4" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="439,561,569,844"/>
+<area shape="rect" id="node5" title="STL class." alt="" coords="461,329,547,407"/>
+<area shape="rect" id="node10" href="$d5/d81/class_m_q_t_t___message.html" title=" " alt="" coords="757,547,971,859"/>
+<area shape="rect" id="node13" href="$d5/de7/classmqtt__api__v2.html" title=" " alt="" coords="593,605,732,800"/>
+<area shape="rect" id="node16" href="$dd/d84/class_fault___handler.html" title=" " alt="" coords="252,605,415,800"/>
+<area shape="rect" id="node19" href="$d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config" title=" " alt="" coords="129,883,301,989"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="435,145,573,237"/>
+<area shape="rect" id="node7" title=" " alt="" coords="945,445,1098,523"/>
+<area shape="rect" id="node8" title="STL class." alt="" coords="953,153,1087,230"/>
+<area shape="rect" id="node9" title=" " alt="" coords="921,5,959,83"/>
+<area shape="rect" id="node12" title="STL class." alt="" coords="798,153,927,230"/>
+<area shape="rect" id="node11" title=" " alt="" coords="772,322,953,414"/>
+<area shape="rect" id="node14" href="$d4/d70/class_a_d_c___a_p_i___e_s_p32.html" title=" " alt="" coords="401,1581,562,1687"/>
+<area shape="rect" id="node15" href="$dc/d23/class_a_d_c_base.html" title=" " alt="" coords="363,1329,600,1495"/>
+<area shape="rect" id="node18" href="$dc/d23/class_a_d_c_base.html" title=" " alt="" coords="460,1057,697,1223"/>
+<area shape="rect" id="node17" href="$dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t" title=" " alt="" coords="5,315,192,421"/>
+<area shape="rect" id="node20" href="$d1/d2c/class_g_p_i_o___a_p_i.html" title=" " alt="" coords="822,1787,973,2069"/>
+<area shape="rect" id="node21" href="$d4/d57/class_g_p_i_o___h_a_l.html" title=" " alt="" coords="806,1544,989,1724"/>
 </map>

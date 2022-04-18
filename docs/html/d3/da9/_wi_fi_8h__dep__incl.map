@@ -1,11 +1,11 @@
 <map id="Components/Connector/WiFi/include/WiFi.h" name="Components/Connector/WiFi/include/WiFi.h">
-<area shape="rect" id="node1" title=" " alt="" coords="248,5,423,47"/>
-<area shape="rect" id="node2" href="$de/d7c/_wi_fi___a_p_i_8hpp.html" title=" " alt="" coords="137,95,328,136"/>
-<area shape="rect" id="node9" href="$d9/d3e/_wi_fi_8cpp.html" title=" " alt="" coords="352,95,527,136"/>
-<area shape="rect" id="node3" href="$dc/d64/_wi_fi___a_p_i_8cpp.html" title=" " alt="" coords="51,191,225,233"/>
-<area shape="rect" id="node4" href="$d0/d6a/_maintainer_8hpp.html" title=" " alt="" coords="250,184,407,240"/>
-<area shape="rect" id="node5" href="$dd/ddd/_maintainer_8cpp.html" title=" " alt="" coords="5,295,225,337"/>
-<area shape="rect" id="node6" href="$d8/d4a/maintainer__test_8cpp.html" title=" " alt="" coords="250,288,407,344"/>
-<area shape="rect" id="node7" href="$dd/d82/_active_current_sensor_8hpp.html" title=" " alt="" coords="431,288,629,344"/>
-<area shape="rect" id="node8" href="$d2/d77/_active_current_sensor_8cpp.html" title=" " alt="" coords="415,392,645,448"/>
+<area shape="rect" id="node1" title=" " alt="" coords="247,5,422,47"/>
+<area shape="rect" id="node2" href="$de/d7c/_wi_fi___a_p_i_8hpp.html" title=" " alt="" coords="134,95,327,136"/>
+<area shape="rect" id="node9" href="$d9/d3e/_wi_fi_8cpp.html" title=" " alt="" coords="351,95,526,136"/>
+<area shape="rect" id="node3" href="$dc/d64/_wi_fi___a_p_i_8cpp.html" title=" " alt="" coords="49,191,223,233"/>
+<area shape="rect" id="node4" href="$d0/d6a/_maintainer_8hpp.html" title=" " alt="" coords="248,184,405,240"/>
+<area shape="rect" id="node5" href="$dd/ddd/_maintainer_8cpp.html" title=" " alt="" coords="5,295,224,337"/>
+<area shape="rect" id="node6" href="$d8/d4a/maintainer__test_8cpp.html" title=" " alt="" coords="248,288,405,344"/>
+<area shape="rect" id="node7" href="$dd/d82/_active_current_sensor_8hpp.html" title=" " alt="" coords="429,288,627,344"/>
+<area shape="rect" id="node8" href="$d2/d77/_active_current_sensor_8cpp.html" title=" " alt="" coords="413,392,643,448"/>
 </map>

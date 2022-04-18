@@ -100,13 +100,13 @@
 <g id="node5" class="node">
 <title>Node5</title>
 <g id="a_node5"><a xlink:href="../../dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="102.5,-375.5 102.5,-454.5 243.5,-454.5 243.5,-375.5 102.5,-375.5"/>
+<polygon fill="none" stroke="black" points="103,-375.5 103,-454.5 243,-454.5 243,-375.5 103,-375.5"/>
 <text text-anchor="middle" x="173" y="-442.5" font-family="Helvetica,sans-Serif" font-size="10.00">Fault_Handler::counters_t</text>
-<polyline fill="none" stroke="black" points="102.5,-435.5 243.5,-435.5 "/>
-<text text-anchor="start" x="110.5" y="-423.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ low</text>
-<text text-anchor="start" x="110.5" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ medium</text>
-<text text-anchor="start" x="110.5" y="-401.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ high</text>
-<polyline fill="none" stroke="black" points="102.5,-394.5 243.5,-394.5 "/>
+<polyline fill="none" stroke="black" points="103,-435.5 243,-435.5 "/>
+<text text-anchor="start" x="111" y="-423.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ low</text>
+<text text-anchor="start" x="111" y="-412.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ medium</text>
+<text text-anchor="start" x="111" y="-401.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ high</text>
+<polyline fill="none" stroke="black" points="103,-394.5 243,-394.5 "/>
 <text text-anchor="middle" x="173" y="-382.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>

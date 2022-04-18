@@ -5,7 +5,7 @@
  -->
 <!-- Title: Components/Protocols/HTTP/src/http_interface.cpp Pages: 1 -->
 <svg width="385pt" height="352pt"
- viewBox="0.00 0.00 385.25 352.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ viewBox="0.00 0.00 384.75 352.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 348)">
 <title>Components/Protocols/HTTP/src/http_interface.cpp</title>
 <!-- Node1 -->
@@ -53,8 +53,8 @@
 <g id="node4" class="node">
 <title>Node4</title>
 <g id="a_node4"><a xlink:href="../../d3/deb/_general___error_8hpp.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="231.25,-56.5 231.25,-86.5 377.25,-86.5 377.25,-56.5 231.25,-56.5"/>
-<text text-anchor="start" x="239.25" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../../Objects/ErrorHandler</text>
+<polygon fill="none" stroke="black" points="231.75,-56.5 231.75,-86.5 376.75,-86.5 376.75,-56.5 231.75,-56.5"/>
+<text text-anchor="start" x="239.75" y="-74.5" font-family="Helvetica,sans-Serif" font-size="10.00">../../../Objects/ErrorHandler</text>
 <text text-anchor="middle" x="304.25" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">/include/General_Error.hpp</text>
 </a>
 </g>

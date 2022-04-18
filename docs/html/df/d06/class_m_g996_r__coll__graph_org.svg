@@ -223,13 +223,13 @@
 <g id="node6" class="node">
 <title>Node6</title>
 <g id="a_node6"><a xlink:href="../../dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="196.9,-911.5 196.9,-990.5 337.9,-990.5 337.9,-911.5 196.9,-911.5"/>
+<polygon fill="none" stroke="black" points="197.4,-911.5 197.4,-990.5 337.4,-990.5 337.4,-911.5 197.4,-911.5"/>
 <text text-anchor="middle" x="267.4" y="-978.5" font-family="Helvetica,sans-Serif" font-size="10.00">Fault_Handler::counters_t</text>
-<polyline fill="none" stroke="black" points="196.9,-971.5 337.9,-971.5 "/>
-<text text-anchor="start" x="204.9" y="-959.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ low</text>
-<text text-anchor="start" x="204.9" y="-948.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ medium</text>
-<text text-anchor="start" x="204.9" y="-937.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ high</text>
-<polyline fill="none" stroke="black" points="196.9,-930.5 337.9,-930.5 "/>
+<polyline fill="none" stroke="black" points="197.4,-971.5 337.4,-971.5 "/>
+<text text-anchor="start" x="205.4" y="-959.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ low</text>
+<text text-anchor="start" x="205.4" y="-948.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ medium</text>
+<text text-anchor="start" x="205.4" y="-937.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ high</text>
+<polyline fill="none" stroke="black" points="197.4,-930.5 337.4,-930.5 "/>
 <text text-anchor="middle" x="267.4" y="-918.5" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
 </a>
 </g>
@@ -367,10 +367,10 @@
 <!-- Node14&#45;&gt;Node12 -->
 <g id="edge17" class="edge">
 <title>Node14&#45;&gt;Node12</title>
-<path fill="none" stroke="orange" d="M147.86,-537.65C143.52,-520.73 141.25,-502.22 144.4,-485 146.5,-473.5 149.99,-461.56 153.96,-450.28"/>
-<polygon fill="orange" stroke="orange" points="144.53,-538.74 150.63,-547.4 151.26,-536.82 144.53,-538.74"/>
-<text text-anchor="start" x="144.4" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; HAL_ESP32::config,</text>
-<text text-anchor="middle" x="198.9" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00"> HAL_ESP32 &gt;</text>
+<path fill="none" stroke="orange" d="M148.71,-537.62C144.52,-520.71 142.34,-502.2 145.4,-485 147.44,-473.53 150.83,-461.6 154.68,-450.33"/>
+<polygon fill="orange" stroke="orange" points="145.36,-538.66 151.38,-547.37 152.11,-536.8 145.36,-538.66"/>
+<text text-anchor="start" x="145.4" y="-499" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; HAL_ESP32::config,</text>
+<text text-anchor="middle" x="199.4" y="-488" font-family="Helvetica,sans-Serif" font-size="10.00"> HAL_ESP32 &gt;</text>
 </g>
 </g>
 </svg>
