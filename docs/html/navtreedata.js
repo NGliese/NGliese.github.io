@@ -24,6 +24,11 @@ var NAVTREE =
 [
   [ "Embedded Library", "index.html", [
     [ "Embedded_CPP_Library", "index.html", null ],
+    [ "class", "d9/d24/md_code_snippets_class.html", null ],
+    [ "declare", "d5/d15/md_code_snippets_declare.html", null ],
+    [ "header", "d5/dab/md_code_snippets_header.html", null ],
+    [ "method", "dd/dbe/md_code_snippets_method.html", null ],
+    [ "readme", "da/d08/md_code_snippets_readme.html", null ],
     [ "empty_file", "da/dc0/md__components__interfaces__actuator_base_src_empty_file.html", null ],
     [ "empty_file", "dd/df5/md__components__interfaces__a_d_c_base_src_empty_file.html", null ],
     [ "empty_file", "d7/d70/md__components__interfaces__camera_src_empty_file.html", null ],
@@ -77,10 +82,10 @@ var NAVTREEINDEX =
 "d2/d8e/hal__stdout_8hpp_source.html",
 "d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a9ec22bd5ec598516477160bead88c1e2",
 "d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t",
-"d9/d1c/class_m_g996_r.html#a75975c3329c4153a513a0f0c77f38b2e",
-"db/d1c/i2c_8hpp_source.html",
-"dd/ddd/_maintainer_8cpp.html#adc2888c679c3a8e722576817f89e6a4d",
-"dir_5b2f4f998850184a9ed94c0db733a88e.html"
+"d9/d1c/class_m_g996_r.html#a5e7ae386db4a86245b6879d9bed645b9",
+"db/d19/_objects_2_o_t_a_2test_2test__main_8cpp.html",
+"dd/dd3/_water_estimator___service_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9",
+"dir_588ec3be40f5173f7f05ac62c1f6102a.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
