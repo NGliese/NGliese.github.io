@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-08 09:09:25</td>
+            <td class="headerValue">2022-05-10 19:13:10</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">1</td>
@@ -722,35 +722,35 @@
     <tr>
     <td align="right" class="lineno"><pre>61</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>240</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>264</pre></td>
     <td align="left" class="src coveredLine"><pre>	DistanceSensorController(const DistanceSensorController::config&amp; conf)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>62</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>240</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>264</pre></td>
     <td align="left" class="src coveredLine"><pre>		: SensorControllerBase{conf.init_conf},</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>63</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>240</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>264</pre></td>
     <td align="left" class="src coveredLine"><pre>		  m_time_between_adc_measurements{conf.time_between_adc_measurements},</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>64</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 240 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>240</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 264 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>264</pre></td>
     <td align="left" class="src coveredLine"><pre>		  m_adc{conf.adc_conf} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>65</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>480</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>528</pre></td>
     <td align="left" class="src coveredLine"><pre>	~DistanceSensorController(){};</pre></td>
     </tr>
 
@@ -1058,28 +1058,28 @@
     <tr>
     <td align="right" class="lineno"><pre>109</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>180</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>198</pre></td>
     <td align="left" class="src coveredLine"><pre>	explicit friend_DistanceSensorController(DistanceSensorController* sensor)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>110</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>180</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>198</pre></td>
     <td align="left" class="src coveredLine"><pre>		: m_sensor{sensor} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>111</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>180</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>198</pre></td>
     <td align="left" class="src coveredLine"><pre>	~friend_DistanceSensorController(){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>112</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>60</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>66</pre></td>
     <td align="left" class="src coveredLine"><pre>	void setDataReady()</pre></td>
     </tr>
 
@@ -1093,14 +1093,14 @@
     <tr>
     <td align="right" class="lineno"><pre>114</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>60</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>66</pre></td>
     <td align="left" class="src coveredLine"><pre>		m_sensor->setDataReadyTrue();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>115</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>60</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>66</pre></td>
     <td align="left" class="src coveredLine"><pre>	}</pre></td>
     </tr>
 

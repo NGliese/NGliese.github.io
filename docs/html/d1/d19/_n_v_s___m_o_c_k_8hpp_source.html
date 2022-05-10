@@ -131,50 +131,53 @@ $(document).ready(function(){initNavTree('d1/d19/_n_v_s___m_o_c_k_8hpp_source.ht
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment"> |                               Class                                          |</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="../../d3/d16/class_n_v_s___m_o_c_k.html">   47</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html">NVS_MOCK</a></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>friend_NVS_MOCK;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="../../d3/d16/class_n_v_s___m_o_c_k.html#a38a3f8ffeccf186ab1494e68a53ec142">   53</a></span>&#160;    <span class="keyword">static</span> <span class="keyword">const</span> uint64_t <a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html#a38a3f8ffeccf186ab1494e68a53ec142">read_u64</a>(<span class="keyword">const</span> std::string&amp; key)</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">//  return NVS_HAL::</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d3/d16/class_n_v_s___m_o_c_k.html#a3b7d4ee51cbe78509f2ad1aa17f16563">   58</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> <a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html#a3b7d4ee51cbe78509f2ad1aa17f16563">write_u64</a>(<span class="keyword">const</span> std::string&amp; key, <span class="keyword">const</span> uint64_t&amp; value)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">static</span> uint64_t myValue = 1;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="../../d3/d16/class_n_v_s___m_o_c_k.html">   49</a></span>&#160;<span class="keyword">class </span><a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html">NVS_MOCK</a></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;{</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>friend_NVS_MOCK;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d3/d16/class_n_v_s___m_o_c_k.html#abc6e036eb33046966b0d781eae9980b0">   55</a></span>&#160;    <span class="keyword">static</span> uint64_t <a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html#abc6e036eb33046966b0d781eae9980b0">read_u64</a>(<span class="keyword">const</span> std::string&amp; key)</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">//  return NVS_HAL::</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> myValue;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    };</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="../../d3/d16/class_n_v_s___m_o_c_k.html#a3b7d4ee51cbe78509f2ad1aa17f16563">   60</a></span>&#160;    <span class="keyword">static</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> <a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html#a3b7d4ee51cbe78509f2ad1aa17f16563">write_u64</a>(<span class="keyword">const</span> std::string&amp; key, <span class="keyword">const</span> uint64_t&amp; value)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        myValue = value;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment"> |                           Unit Test Class                                    |</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">class </span>friend_NVS_MOCK</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">explicit</span> friend_NVS_MOCK(<a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html">NVS_MOCK</a>* sensor) : m_sensor{sensor} {};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    ~friend_NVS_MOCK();</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html">NVS_MOCK</a>* m_sensor;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;};</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#endif //_COMPONENTS_OBJECTS_NONVOLATILESTORAGE_INCLUDE_NVS_MOCK_HPP_</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;};</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment"> |                           Unit Test Class                                    |</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment"> +------------------------------------------------------------------------------*/</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#ifdef __UNITTEST__</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">class </span>friend_NVS_MOCK</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">explicit</span> friend_NVS_MOCK(<a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html">NVS_MOCK</a>* sensor) : m_sensor{sensor} {};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    ~friend_NVS_MOCK();</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="../../d3/d16/class_n_v_s___m_o_c_k.html">NVS_MOCK</a>* m_sensor;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#endif //_COMPONENTS_OBJECTS_NONVOLATILESTORAGE_INCLUDE_NVS_MOCK_HPP_</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_n_v_s___m_o_c_k_html_abc6e036eb33046966b0d781eae9980b0"><div class="ttname"><a href="../../d3/d16/class_n_v_s___m_o_c_k.html#abc6e036eb33046966b0d781eae9980b0">NVS_MOCK::read_u64</a></div><div class="ttdeci">static uint64_t read_u64(const std::string &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00055">NVS_MOCK.hpp:55</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533e"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a></div><div class="ttdeci">general_err_t</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00066">General_Error.hpp:66</a></div></div>
-<div class="ttc" id="aclass_n_v_s___m_o_c_k_html_a3b7d4ee51cbe78509f2ad1aa17f16563"><div class="ttname"><a href="../../d3/d16/class_n_v_s___m_o_c_k.html#a3b7d4ee51cbe78509f2ad1aa17f16563">NVS_MOCK::write_u64</a></div><div class="ttdeci">static general_err_t write_u64(const std::string &amp;key, const uint64_t &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00058">NVS_MOCK.hpp:58</a></div></div>
+<div class="ttc" id="aclass_n_v_s___m_o_c_k_html_a3b7d4ee51cbe78509f2ad1aa17f16563"><div class="ttname"><a href="../../d3/d16/class_n_v_s___m_o_c_k.html#a3b7d4ee51cbe78509f2ad1aa17f16563">NVS_MOCK::write_u64</a></div><div class="ttdeci">static general_err_t write_u64(const std::string &amp;key, const uint64_t &amp;value)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00060">NVS_MOCK.hpp:60</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
-<div class="ttc" id="aclass_n_v_s___m_o_c_k_html_a38a3f8ffeccf186ab1494e68a53ec142"><div class="ttname"><a href="../../d3/d16/class_n_v_s___m_o_c_k.html#a38a3f8ffeccf186ab1494e68a53ec142">NVS_MOCK::read_u64</a></div><div class="ttdeci">static const uint64_t read_u64(const std::string &amp;key)</div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00053">NVS_MOCK.hpp:53</a></div></div>
-<div class="ttc" id="aclass_n_v_s___m_o_c_k_html"><div class="ttname"><a href="../../d3/d16/class_n_v_s___m_o_c_k.html">NVS_MOCK</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00047">NVS_MOCK.hpp:47</a></div></div>
+<div class="ttc" id="aclass_n_v_s___m_o_c_k_html"><div class="ttname"><a href="../../d3/d16/class_n_v_s___m_o_c_k.html">NVS_MOCK</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00049">NVS_MOCK.hpp:49</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

@@ -3,7 +3,7 @@ var searchData=
   ['readme_613',['readme',['../da/d08/md_code_snippets_readme.html',1,'']]],
   ['random_614',['random',['../d1/d91/namespacebasic__utils.html#ad099faa5979cc1f9d79cd0e523d51459',1,'basic_utils']]],
   ['random_5ffirst_615',['random_first',['../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f',1,'utils.cpp']]],
-  ['read_5fu64_616',['read_u64',['../d2/dc1/class_n_v_s.html#aa9be0cd394a995a5093fef41d48fe317',1,'NVS::read_u64()'],['../d9/d68/class_n_v_s__esp32.html#a9a24f0b170cbb0c2c81338f09340921b',1,'NVS_esp32::read_u64()'],['../d3/d16/class_n_v_s___m_o_c_k.html#a38a3f8ffeccf186ab1494e68a53ec142',1,'NVS_MOCK::read_u64()']]],
+  ['read_5fu64_616',['read_u64',['../d2/dc1/class_n_v_s.html#a7daa8976704e7b109a2321d8fb82aa79',1,'NVS::read_u64()'],['../d9/d68/class_n_v_s__esp32.html#a182f7d156e269cfb6d795d4d8d107c37',1,'NVS_esp32::read_u64()'],['../d3/d16/class_n_v_s___m_o_c_k.html#abc6e036eb33046966b0d781eae9980b0',1,'NVS_MOCK::read_u64()']]],
   ['readbyte_617',['readByte',['../da/d55/classi2c.html#a2ddc4c88d470062e30e6eb26f15d9de8',1,'i2c::readByte()'],['../d3/d68/classi2c__esp32.html#a699cd1ce31a2ef343dc2f45b15e2581e',1,'i2c_esp32::readByte()'],['../dc/d92/classi2c__mock.html#a55c04504a228616c89cb3da5597a0ebb',1,'i2c_mock::readByte()']]],
   ['readme_2emd_618',['readme.md',['../d7/df1/code__snippets_2readme_8md.html',1,'(Global Namespace)'],['../d0/d20/readme_8md.html',1,'(Global Namespace)']]],
   ['readword_619',['readWord',['../da/d55/classi2c.html#a34a44384f844b7276e746892febc88fd',1,'i2c::readWord()'],['../d3/d68/classi2c__esp32.html#a1aa1e34eaa6c5a7882017c64d60346e1',1,'i2c_esp32::readWord()'],['../dc/d92/classi2c__mock.html#a9625e6461f6ed9556084488066aa88f1',1,'i2c_mock::readWord()']]],

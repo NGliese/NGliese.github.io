@@ -122,53 +122,43 @@ $(document).ready(function(){initNavTree('dd/dd3/_water_estimator___service_8cpp
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// Executable code:</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    uint64_t max_value = 0;</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    uint64_t min_value = 50000;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">/*</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">    std::for_each(m_buffer.getData().begin(), m_buffer.getData().end(),</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">                  [&amp;max_value, &amp;min_value](const std::pair&lt;uint64_t, uint64_t&gt;&amp; ele) {</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">                      if(ele.second &gt; max_value){</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">                          max_value = ele.second;</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">                          }</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">                      if(ele.second &lt; min_value){</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">                          min_value = ele.second;</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">                          }</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">                  });</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">    */</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele : <a class="code" href="../../d4/d82/class_service_base.html#a8b5fb80ce77e1d72999a56f8712597fb">m_buffer</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a0933df2c71960585bdb5bbd8e3089f79">getData</a>())</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">if</span>(ele.second &gt; max_value)</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            max_value = ele.second;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">if</span>(ele.second &lt; min_value)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            min_value = ele.second;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">auto</span> err = <a class="code" href="../../d6/da4/class_water_estimator___service.html#a54e5965e595ce66f3f957de03666e9a9">m_estimator</a>.<a class="code" href="../../da/d0a/class_periode_estimator.html#add9af3a8d0faaafe4c346ada6b9836fe">addData</a>(ele);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordflow">if</span>(err == <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>)</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="../../d6/da4/class_water_estimator___service.html#a66951ee55f0c19a464d19ccde7b33d64">msg_count</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(<a class="code" href="../../d6/da4/class_water_estimator___service.html#a54e5965e595ce66f3f957de03666e9a9">m_estimator</a>.<a class="code" href="../../da/d0a/class_periode_estimator.html#adc86d0a4d5171625fcbb1141a5936ba0">getPeriodCounter</a>());</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    }</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#aecd7f5a1f2cd588512e905fe1ad9b2e6">msg_max</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(max_value);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#a8269566e105b5c5c4914032165ef640e">msg_min</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(min_value);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// postData(msg_max);</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="comment">// postData(msg_min);</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">postData</a>(<a class="code" href="../../d6/da4/class_water_estimator___service.html#a66951ee55f0c19a464d19ccde7b33d64">msg_count</a>);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#aecd7f5a1f2cd588512e905fe1ad9b2e6">msg_max</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#a8269566e105b5c5c4914032165ef640e">msg_min</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#a66951ee55f0c19a464d19ccde7b33d64">msg_count</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; max value is : &quot;</span> &lt;&lt; (int)max_value &lt;&lt; <span class="stringliteral">&quot; min value is : &quot;</span> &lt;&lt; (<span class="keywordtype">int</span>)min_value</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; count is : &quot;</span> &lt;&lt; <a class="code" href="../../d6/da4/class_water_estimator___service.html#a54e5965e595ce66f3f957de03666e9a9">m_estimator</a>.<a class="code" href="../../da/d0a/class_periode_estimator.html#adc86d0a4d5171625fcbb1141a5936ba0">getPeriodCounter</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../dd/dd3/_water_estimator___service_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&lt;&lt;  WaterEstimator_Service::mainFunction &lt;&lt; &quot;</span>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele : <a class="code" href="../../d4/d82/class_service_base.html#a8b5fb80ce77e1d72999a56f8712597fb">m_buffer</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a0933df2c71960585bdb5bbd8e3089f79">getData</a>())</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="keywordflow">if</span>(ele.second &gt; max_value)</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        {</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;            max_value = ele.second;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        }</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">if</span>(ele.second &lt; min_value)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            min_value = ele.second;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        }</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keyword">auto</span> err = <a class="code" href="../../d6/da4/class_water_estimator___service.html#a54e5965e595ce66f3f957de03666e9a9">m_estimator</a>.<a class="code" href="../../da/d0a/class_periode_estimator.html#add9af3a8d0faaafe4c346ada6b9836fe">addData</a>(ele);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">if</span>(err == <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>)</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        {</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <a class="code" href="../../d6/da4/class_water_estimator___service.html#a66951ee55f0c19a464d19ccde7b33d64">msg_count</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(<a class="code" href="../../d6/da4/class_water_estimator___service.html#a54e5965e595ce66f3f957de03666e9a9">m_estimator</a>.<a class="code" href="../../da/d0a/class_periode_estimator.html#adc86d0a4d5171625fcbb1141a5936ba0">getPeriodCounter</a>());</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        }</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#aecd7f5a1f2cd588512e905fe1ad9b2e6">msg_max</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(max_value);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#a8269566e105b5c5c4914032165ef640e">msg_min</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(min_value);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// postData(msg_max);</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// postData(msg_min);</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">postData</a>(<a class="code" href="../../d6/da4/class_water_estimator___service.html#a66951ee55f0c19a464d19ccde7b33d64">msg_count</a>);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#aecd7f5a1f2cd588512e905fe1ad9b2e6">msg_max</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#a8269566e105b5c5c4914032165ef640e">msg_min</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="../../d6/da4/class_water_estimator___service.html#a66951ee55f0c19a464d19ccde7b33d64">msg_count</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; max value is : &quot;</span> &lt;&lt; (int)max_value &lt;&lt; <span class="stringliteral">&quot; min value is : &quot;</span> &lt;&lt; (<span class="keywordtype">int</span>)min_value</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;              &lt;&lt; <span class="stringliteral">&quot; count is : &quot;</span> &lt;&lt; <a class="code" href="../../d6/da4/class_water_estimator___service.html#a54e5965e595ce66f3f957de03666e9a9">m_estimator</a>.<a class="code" href="../../da/d0a/class_periode_estimator.html#adc86d0a4d5171625fcbb1141a5936ba0">getPeriodCounter</a>() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../dd/dd3/_water_estimator___service_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&lt;&lt;  WaterEstimator_Service::mainFunction &lt;&lt; &quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_water_estimator___service_html_aecd7f5a1f2cd588512e905fe1ad9b2e6"><div class="ttname"><a href="../../d6/da4/class_water_estimator___service.html#aecd7f5a1f2cd588512e905fe1ad9b2e6">WaterEstimator_Service::msg_max</a></div><div class="ttdeci">MQTT_Message msg_max</div><div class="ttdef"><b>Definition:</b> <a href="../../dd/d22/_water_estimator___service_8hpp_source.html#l00064">WaterEstimator_Service.hpp:64</a></div></div>

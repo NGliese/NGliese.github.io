@@ -99,8 +99,8 @@ Collaboration diagram for NVS&lt; NVS_HAL &gt;:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aa9be0cd394a995a5093fef41d48fe317"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc1/class_n_v_s.html#aa9be0cd394a995a5093fef41d48fe317">read_u64</a> (const std::string &amp;key)</td></tr>
-<tr class="separator:aa9be0cd394a995a5093fef41d48fe317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7daa8976704e7b109a2321d8fb82aa79"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc1/class_n_v_s.html#a7daa8976704e7b109a2321d8fb82aa79">read_u64</a> (const std::string &amp;key)</td></tr>
+<tr class="separator:a7daa8976704e7b109a2321d8fb82aa79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abedb4f48c2973c260eb39dc49a1f689b"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc1/class_n_v_s.html#abedb4f48c2973c260eb39dc49a1f689b">write_u64</a> (const std::string &amp;key, const uint64_t &amp;value)</td></tr>
 <tr class="separator:abedb4f48c2973c260eb39dc49a1f689b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -111,8 +111,8 @@ class NVS&lt; NVS_HAL &gt;</h3>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d6a/_n_v_s_8hpp_source.html#l00054">54</a> of file <a class="el" href="../../d4/d6a/_n_v_s_8hpp_source.html">NVS.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa9be0cd394a995a5093fef41d48fe317"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9be0cd394a995a5093fef41d48fe317">&#9670;&nbsp;</a></span>read_u64()</h2>
+<a id="a7daa8976704e7b109a2321d8fb82aa79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7daa8976704e7b109a2321d8fb82aa79">&#9670;&nbsp;</a></span>read_u64()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -123,7 +123,7 @@ template&lt;typename NVS_HAL &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const uint64_t <a class="el" href="../../d2/dc1/class_n_v_s.html">NVS</a>&lt; NVS_HAL &gt;::read_u64 </td>
+          <td class="memname">static uint64_t <a class="el" href="../../d2/dc1/class_n_v_s.html">NVS</a>&lt; NVS_HAL &gt;::read_u64 </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
@@ -139,9 +139,8 @@ template&lt;typename NVS_HAL &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d6a/_n_v_s_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d4/d6a/_n_v_s_8hpp_source.html">NVS.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="comment">//  return NVS_HAL::</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">return</span> NVS_HAL::read_u64(key);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -181,13 +180,11 @@ template&lt;typename NVS_HAL &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d6a/_n_v_s_8hpp_source.html#l00065">65</a> of file <a class="el" href="../../d4/d6a/_n_v_s_8hpp_source.html">NVS.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    {</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d6a/_n_v_s_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d4/d6a/_n_v_s_8hpp_source.html">NVS.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> NVS_HAL::write_u64(key, value);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    };</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
-
 <p class="reference">Referenced by <a class="el" href="../../da/d0a/class_periode_estimator.html#a47df63edf97229545f0851e9ff709bd8">PeriodeEstimator&lt; 1900, 1800, NVS_MOCK &gt;::setNextState()</a>.</p>
 
 </div>
@@ -197,7 +194,6 @@ template&lt;typename NVS_HAL &gt; </div>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

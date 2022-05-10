@@ -99,17 +99,17 @@ Collaboration diagram for NVS_MOCK:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a38a3f8ffeccf186ab1494e68a53ec142"><td class="memItemLeft" align="right" valign="top">static const uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d16/class_n_v_s___m_o_c_k.html#a38a3f8ffeccf186ab1494e68a53ec142">read_u64</a> (const std::string &amp;key)</td></tr>
-<tr class="separator:a38a3f8ffeccf186ab1494e68a53ec142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc6e036eb33046966b0d781eae9980b0"><td class="memItemLeft" align="right" valign="top">static uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d16/class_n_v_s___m_o_c_k.html#abc6e036eb33046966b0d781eae9980b0">read_u64</a> (const std::string &amp;key)</td></tr>
+<tr class="separator:abc6e036eb33046966b0d781eae9980b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b7d4ee51cbe78509f2ad1aa17f16563"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d16/class_n_v_s___m_o_c_k.html#a3b7d4ee51cbe78509f2ad1aa17f16563">write_u64</a> (const std::string &amp;key, const uint64_t &amp;value)</td></tr>
 <tr class="separator:a3b7d4ee51cbe78509f2ad1aa17f16563"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00047">47</a> of file <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html">NVS_MOCK.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00049">49</a> of file <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html">NVS_MOCK.hpp</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a38a3f8ffeccf186ab1494e68a53ec142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38a3f8ffeccf186ab1494e68a53ec142">&#9670;&nbsp;</a></span>read_u64()</h2>
+<a id="abc6e036eb33046966b0d781eae9980b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6e036eb33046966b0d781eae9980b0">&#9670;&nbsp;</a></span>read_u64()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -118,7 +118,7 @@ Static Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static const uint64_t NVS_MOCK::read_u64 </td>
+          <td class="memname">static uint64_t NVS_MOCK::read_u64 </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
           <td class="paramname"><em>key</em></td><td>)</td>
@@ -132,11 +132,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00053">53</a> of file <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html">NVS_MOCK.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    {</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">//  return NVS_HAL::</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00055">55</a> of file <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html">NVS_MOCK.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">//  return NVS_HAL::</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">return</span> myValue;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    };</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -174,10 +174,11 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00058">58</a> of file <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html">NVS_MOCK.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html#l00060">60</a> of file <a class="el" href="../../d1/d19/_n_v_s___m_o_c_k_8hpp_source.html">NVS_MOCK.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        myValue = value;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
 

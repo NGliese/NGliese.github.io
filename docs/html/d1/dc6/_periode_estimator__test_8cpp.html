@@ -173,7 +173,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    m_friend.setInitialState(new_state);</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    CHECK(<a class="code" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5ab89de3b4b81c4facfac906edf29aec8c">states::HIGH</a> == m_friend.getCurrentState());</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    CHECK(<a class="code" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5a43eedd8685eb86592022f8da962e3474">states::MIDDLE</a> == m_friend.getLastState());</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    LONGS_EQUAL(491327, m_estimator.getPeriodCounter());</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    LONGS_EQUAL(68, m_estimator.getPeriodCounter());</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5ab89de3b4b81c4facfac906edf29aec8c">PeriodeEstimator&lt; HIGH_THRESHOLD, LOW_THRESHOLD, NVS_TYPE &gt;::HIGH</a>, and <a class="el" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5a43eedd8685eb86592022f8da962e3474">PeriodeEstimator&lt; HIGH_THRESHOLD, LOW_THRESHOLD, NVS_TYPE &gt;::MIDDLE</a>.</p>
@@ -327,7 +327,7 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    m_friend.setNextState(<a class="code" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5a43eedd8685eb86592022f8da962e3474">states::MIDDLE</a>);</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    CHECK(<a class="code" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5a43eedd8685eb86592022f8da962e3474">states::MIDDLE</a> == m_friend.getCurrentState());</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    CHECK(<a class="code" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5ab89de3b4b81c4facfac906edf29aec8c">states::HIGH</a> == m_friend.getLastState());</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    LONGS_EQUAL(491327, m_estimator.getPeriodCounter());</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    LONGS_EQUAL(68, m_estimator.getPeriodCounter());</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5ab89de3b4b81c4facfac906edf29aec8c">PeriodeEstimator&lt; HIGH_THRESHOLD, LOW_THRESHOLD, NVS_TYPE &gt;::HIGH</a>, and <a class="el" href="../../da/d0a/class_periode_estimator.html#a08b1b161ae1b80be9d25b034f2de43b5a43eedd8685eb86592022f8da962e3474">PeriodeEstimator&lt; HIGH_THRESHOLD, LOW_THRESHOLD, NVS_TYPE &gt;::MIDDLE</a>.</p>

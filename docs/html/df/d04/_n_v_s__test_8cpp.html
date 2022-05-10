@@ -105,10 +105,49 @@ Functions</h2></td></tr>
 <tr class="separator:a03cd06783e876ef3985e2fb16caead5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af320f1a76ce8005cfb2eebd33f234e32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d04/_n_v_s__test_8cpp.html#af320f1a76ce8005cfb2eebd33f234e32">TEST</a> (TEMP_GRP, init)</td></tr>
 <tr class="separator:af320f1a76ce8005cfb2eebd33f234e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78150dcab635b7e2bb42138079fc49f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d04/_n_v_s__test_8cpp.html#a78150dcab635b7e2bb42138079fc49f7">TEST</a> (TEMP_GRP, count_up)</td></tr>
+<tr class="separator:a78150dcab635b7e2bb42138079fc49f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a78150dcab635b7e2bb42138079fc49f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78150dcab635b7e2bb42138079fc49f7">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">TEMP_GRP&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">count_up&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../df/d04/_n_v_s__test_8cpp_source.html#l00036">36</a> of file <a class="el" href="../../df/d04/_n_v_s__test_8cpp_source.html">NVS_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">auto</span> val = m_nsv.read_u64(<span class="stringliteral">&quot;something&quot;</span>);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    LONGS_EQUAL(1, val);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    m_nsv.write_u64(<span class="stringliteral">&quot;something&quot;</span>, 2);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    val = m_nsv.read_u64(<span class="stringliteral">&quot;something&quot;</span>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    LONGS_EQUAL(2, val);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
+</div><!-- fragment -->
+</div>
+</div>
 <a id="af320f1a76ce8005cfb2eebd33f234e32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af320f1a76ce8005cfb2eebd33f234e32">&#9670;&nbsp;</a></span>TEST()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af320f1a76ce8005cfb2eebd33f234e32">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -133,11 +172,11 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../df/d04/_n_v_s__test_8cpp_source.html#l00028">28</a> of file <a class="el" href="../../df/d04/_n_v_s__test_8cpp_source.html">NVS_test.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="../../d2/dc1/class_n_v_s.html">NVS&lt;NVS_MOCK&gt;</a> nsv;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    CHECK(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../df/d04/_n_v_s__test_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../df/d04/_n_v_s__test_8cpp_source.html">NVS_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d2/dc1/class_n_v_s.html">NVS&lt;NVS_MOCK&gt;</a> nsv;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    CHECK(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -161,13 +200,14 @@ Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                    {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> setup(){</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> teardown(){</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// Uninit stuff</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="../../d2/dc1/class_n_v_s.html">NVS&lt;NVS_MOCK&gt;</a> m_nsv;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> setup(){</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    }</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> teardown(){</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">// Uninit stuff</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>

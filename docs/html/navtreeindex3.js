@@ -1,7 +1,7 @@
 var NAVTREEINDEX3 =
 {
-"d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t":[17,0,9,1],
 "d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t":[18,0,1,1,0,0,1,1],
+"d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t":[17,0,9,1],
 "d5/d94/_wi_fi_event_handler_8cpp.html":[18,0,1,3,0,1,3],
 "d5/d94/_wi_fi_event_handler_8cpp_source.html":[18,0,1,3,0,1,3],
 "d5/dab/md_code_snippets_header.html":[3],
