@@ -47,7 +47,8 @@ var searchData=
   ['isitvacation_361',['isItVacation',['../df/dec/class_timebased__rules.html#a5e1a92d6e3ea0fc46d385aaab5b49f2a',1,'Timebased_rules']]],
   ['islow_362',['isLow',['../d1/d2c/class_g_p_i_o___a_p_i.html#a9a005906b20f3c7e3eae828cb25eced7',1,'GPIO_API']]],
   ['isotaupdatestarted_363',['isOTAUpdateStarted',['../d6/d9b/class_maintainer.html#a3f71933458106b924e315fbb04f93f44',1,'Maintainer']]],
-  ['isrunning_364',['isRunning',['../d6/da0/class_active_current_sensor.html#a101f5668793d5fef1964227af568722e',1,'ActiveCurrentSensor']]],
-  ['isupdatestarted_365',['isUpdateStarted',['../d3/d40/class_o_t_a.html#a7eb8cf455d409cc314351ce50c3de507',1,'OTA']]],
-  ['isvalid_366',['isValid',['../da/dd6/class_message___protocol.html#ada5fc77c65df15b260c4ebd1fd48d51b',1,'Message_Protocol']]]
+  ['isreachable_364',['isReachable',['../d0/d0e/class_ping___a_p_i.html#ace53b18e085b71e3244e99df36386c0e',1,'Ping_API::isReachable()'],['../d9/dfe/class_ping___s_a_l__esp32.html#a5ce9604e20f911b59e0a9b314763a4c0',1,'Ping_SAL_esp32::isReachable()'],['../df/de7/class_m_o_c_k__ping.html#a06c6664edccff4c5d43c35d72e4a9b74',1,'MOCK_ping::isReachable()']]],
+  ['isrunning_365',['isRunning',['../d6/da0/class_active_current_sensor.html#a101f5668793d5fef1964227af568722e',1,'ActiveCurrentSensor']]],
+  ['isupdatestarted_366',['isUpdateStarted',['../d3/d40/class_o_t_a.html#a7eb8cf455d409cc314351ce50c3de507',1,'OTA']]],
+  ['isvalid_367',['isValid',['../da/dd6/class_message___protocol.html#ada5fc77c65df15b260c4ebd1fd48d51b',1,'Message_Protocol']]]
 ];

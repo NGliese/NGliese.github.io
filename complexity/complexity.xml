@@ -1537,6 +1537,8 @@
 		</item>
 		<average label="NCSS" value="10.690972222222221"/>
 		<average label="CCN" value="2.9166666666666665"/>
+		<average label="NCSS" value="10.690972222222221"/>
+		<average label="CCN" value="2.9166666666666665"/>
 	</measure>
 	<measure type="File">
 		<labels>
@@ -1815,10 +1817,16 @@
 			<value>27</value>
 			<value>15</value>
 		</item>
-		<average label="NCSS" value="77.71111111111111"/>
-		<average label="CCN" value="18.666666666666668"/>
-		<average label="Functions" value="6.4"/>
-		<sum label="NCSS" value="3497"/>
+		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/Ping/src/Ping_API.cpp">
+			<value>46</value>
+			<value>1</value>
+			<value>0</value>
+			<value>0</value>
+		</item>
+		<average label="NCSS" value="76.04347826086956"/>
+		<average label="CCN" value="18.26086956521739"/>
+		<average label="Functions" value="6.260869565217392"/>
+		<sum label="NCSS" value="3498"/>
 		<sum label="CCN" value="840"/>
 		<sum label="Functions" value="288"/>
 		<average label="NCSS" value="10.690972222222221"/>

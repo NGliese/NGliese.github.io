@@ -79,13 +79,14 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/d8e/hal__stdout_8hpp_source.html",
-"d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a9ec22bd5ec598516477160bead88c1e2",
-"d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t",
-"d9/d1c/class_m_g996_r.html#a5e7ae386db4a86245b6879d9bed645b9",
-"db/d19/_objects_2_o_t_a_2test_2test__main_8cpp.html",
-"dd/dd3/_water_estimator___service_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9",
-"dir_52efc03e0224f57c9a8a9ea6aeb692b8.html"
+"d2/d8d/class_query_message_base.html#ae5a04a80e78e869a2f83e0366bebbc4a",
+"d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a92a90a9a1ce6fc9d80fa56197e8b9f58",
+"d5/d8a/class_connected_components.html#acc3ba19dcda0f738e0fb9670476a03ca",
+"d8/dc6/_wi_fi___event___handler_8cpp_source.html",
+"da/dd6/class_message___protocol.html#aef95bfc6b20c8b1c42ae8a0b80102892",
+"dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t",
+"dir_3b94f0ed496e237084c8464174d64f13.html",
+"globals_n.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
