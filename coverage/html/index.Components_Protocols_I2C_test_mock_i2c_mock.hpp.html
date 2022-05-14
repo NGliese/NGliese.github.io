@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-14 11:14:25</td>
+            <td class="headerValue">2022-05-14 11:17:01</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -680,21 +680,21 @@
     <tr>
     <td align="right" class="lineno"><pre>55</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>	i2c_mock(const i2c_conf_t&amp; conf){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>56</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>999</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>1035</pre></td>
     <td align="left" class="src coveredLine"><pre>	~i2c_mock(){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>57</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>13431</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>13915</pre></td>
     <td align="left" class="src coveredLine"><pre>	bool slavePresent(uint8_t address)</pre></td>
     </tr>
 
@@ -708,14 +708,14 @@
     <tr>
     <td align="right" class="lineno"><pre>59</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>13431</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>13915</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_slavePresent++;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>60</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>13431</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>13915</pre></td>
     <td align="left" class="src coveredLine"><pre>		return true;</pre></td>
     </tr>
 
@@ -736,7 +736,7 @@
     <tr>
     <td align="right" class="lineno"><pre>63</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>	general_err_t writeByte(const uint8_t&amp; slave_address, const uint8_t&amp; byte)</pre></td>
     </tr>
 
@@ -750,14 +750,14 @@
     <tr>
     <td align="right" class="lineno"><pre>65</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_writeByte++;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>66</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>		return GE_OK;</pre></td>
     </tr>
 
@@ -771,7 +771,7 @@
     <tr>
     <td align="right" class="lineno"><pre>68</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>	general_err_t writeWord(const uint8_t&amp; slave_address, const uint16_t&amp; word)</pre></td>
     </tr>
 
@@ -785,14 +785,14 @@
     <tr>
     <td align="right" class="lineno"><pre>70</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_writeWord++;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>71</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>		return GE_OK;</pre></td>
     </tr>
 
@@ -806,7 +806,7 @@
     <tr>
     <td align="right" class="lineno"><pre>73</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>	uint8_t readByte(const uint8_t&amp; slave_address)</pre></td>
     </tr>
 
@@ -820,14 +820,14 @@
     <tr>
     <td align="right" class="lineno"><pre>75</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_readByte++;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>76</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>		return 0xfa;</pre></td>
     </tr>
 
@@ -841,7 +841,7 @@
     <tr>
     <td align="right" class="lineno"><pre>78</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>	uint16_t readWord(const uint8_t&amp; slave_address)</pre></td>
     </tr>
 
@@ -855,14 +855,14 @@
     <tr>
     <td align="right" class="lineno"><pre>80</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_readWord++;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>81</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>111</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>115</pre></td>
     <td align="left" class="src coveredLine"><pre>		return 0xfafa;</pre></td>
     </tr>
 
@@ -876,7 +876,7 @@
     <tr>
     <td align="right" class="lineno"><pre>83</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>777</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>805</pre></td>
     <td align="left" class="src coveredLine"><pre>	void reset()</pre></td>
     </tr>
 
@@ -890,42 +890,42 @@
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>777</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>805</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_slavePresent = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>86</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>777</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>805</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_writeByte = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>777</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>805</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_writeWord = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>88</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>777</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>805</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_readByte = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>777</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>805</pre></td>
     <td align="left" class="src coveredLine"><pre>		hasBeenCalledAmount_readWord = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>90</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>777</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>805</pre></td>
     <td align="left" class="src coveredLine"><pre>	}</pre></td>
     </tr>
 

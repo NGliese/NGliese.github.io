@@ -153,7 +153,7 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    esp_ping_config_t ping_config = ESP_PING_DEFAULT_CONFIG();</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    ping_config.target_addr = target_addr; <span class="comment">// target IP address</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    ping_config.count = 3; <span class="comment">// ping in infinite mode, esp_ping_stop can stop it</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    ping_config.count = 10; <span class="comment">// ping in infinite mode, esp_ping_stop can stop it</span></div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="comment">/* set callback functions */</span></div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    esp_ping_callbacks_t cbs;</div>
@@ -175,18 +175,15 @@ Static Public Member Functions</h2></td></tr>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;trying to delete ping ... \n&quot;</span>;</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    esp_ping_delete_session(ping);</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; OK ... \n&quot;</span>;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;trying to free memory ... \n&quot;</span>;</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    free(&amp;hint);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    free(&amp;target_addr);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; OK ... \n&quot;</span>;</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; Ping_SAL_esp32::isReachable &lt;&lt; \n&quot;</span>;</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a> &gt; 0;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;}</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; Ping_SAL_esp32::isReachable &lt;&lt; \n&quot;</span>;</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a> &gt; 0;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a>, and <a class="el" href="../../d8/d2c/class_timeservice.html#aabc5c1c5b4508e511c97e58724af6bde">Timeservice::wait_sec()</a>.</p>
 
