@@ -55,7 +55,11 @@ var _database___i_d___base_8hpp =
       [ "WATERSTATION_MAX_ADC_VAL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ae5703730dc4da40febf03def1431331d", null ],
       [ "WATERSTATION_MIN_ADC_VAL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a49d6bc3a4293c53c444d6868fc23e744", null ],
       [ "ESP32_BAT_HW_BATTERY_ADC", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a965a2334b542d48a74a13830b3e88f16", null ],
-      [ "ESP32_BAT_HW_SENSOR_ADC", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683", null ]
+      [ "ESP32_BAT_HW_SENSOR_ADC", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683", null ],
+      [ "ONLINEDETECTOR_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4061f8cd72828d3333f082c9c91cd1e1", null ],
+      [ "ONLINEDETECTOR_SUCESS", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a54cf6a3f85cc622d736c204af637cc95", null ],
+      [ "ONLINEDETECTOR_FAIL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a7053ae603e2dde1b8dbb127948b86cea", null ],
+      [ "ONLINEDETECTOR_REACH_TIME", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28", null ]
     ] ],
     [ "map", "d5/d40/_database___i_d___base_8hpp.html#a40f5a6d0734142b0008af0e8a9c51013", null ]
 ];

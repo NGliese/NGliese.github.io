@@ -114,23 +114,93 @@ $(document).ready(function(){initNavTree('d6/dc7/_ping___s_a_l__esp32_8cpp_sourc
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a> = <span class="stringliteral">&quot;Ping_SAL_esp32&quot;</span>;</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d9/dfe/class_ping___s_a_l__esp32.html#a5ce9604e20f911b59e0a9b314763a4c0">   29</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/dfe/class_ping___s_a_l__esp32.html#a5ce9604e20f911b59e0a9b314763a4c0">Ping_SAL_esp32::isReachable</a>(<span class="keyword">const</span> std::string&amp; server)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &gt;&gt; Ping_SAL_esp32::isReachable &gt;&gt; \n&quot;</span>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// do magic</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; Ping_SAL_esp32::isReachable &lt;&lt; \n&quot;</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">   29</a></span>&#160;<span class="keyword">static</span> <span class="keywordtype">size_t</span> <a class="code" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a> = 0;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> test_on_ping_success(esp_ping_handle_t hdl, <span class="keywordtype">void</span>* args)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">// optionally, get callback arguments</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// const char* str = (const char*) args;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// printf(&quot;%s\r\n&quot;, str); // &quot;foo&quot;</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    uint8_t ttl;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    uint16_t seqno;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    uint32_t elapsed_time, recv_len;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ip_addr_t target_addr;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    esp_ping_get_profile(hdl, ESP_PING_PROF_SEQNO, &amp;seqno, <span class="keyword">sizeof</span>(seqno));</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    esp_ping_get_profile(hdl, ESP_PING_PROF_TTL, &amp;ttl, <span class="keyword">sizeof</span>(ttl));</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    esp_ping_get_profile(hdl, ESP_PING_PROF_IPADDR, &amp;target_addr, <span class="keyword">sizeof</span>(target_addr));</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    esp_ping_get_profile(hdl, ESP_PING_PROF_SIZE, &amp;recv_len, <span class="keyword">sizeof</span>(recv_len));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    esp_ping_get_profile(hdl, ESP_PING_PROF_TIMEGAP, &amp;elapsed_time, <span class="keyword">sizeof</span>(elapsed_time));</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    printf(<span class="stringliteral">&quot;%d bytes from %s icmp_seq=%d ttl=%d time=%d ms\n&quot;</span>, recv_len,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;           inet_ntoa(target_addr.u_addr.ip4), seqno, ttl, elapsed_time);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">// if we reach here, we have successfully connected to the server</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a>++;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="keyword">static</span> <span class="keywordtype">void</span> test_on_ping_timeout(esp_ping_handle_t hdl, <span class="keywordtype">void</span>* args)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    uint16_t seqno;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ip_addr_t target_addr;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    esp_ping_get_profile(hdl, ESP_PING_PROF_SEQNO, &amp;seqno, <span class="keyword">sizeof</span>(seqno));</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    esp_ping_get_profile(hdl, ESP_PING_PROF_IPADDR, &amp;target_addr, <span class="keyword">sizeof</span>(target_addr));</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    printf(<span class="stringliteral">&quot;From %s icmp_seq=%d timeout\n&quot;</span>, inet_ntoa(target_addr.u_addr.ip4), seqno);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="../../d9/dfe/class_ping___s_a_l__esp32.html#a5ce9604e20f911b59e0a9b314763a4c0">   65</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="../../d9/dfe/class_ping___s_a_l__esp32.html#a5ce9604e20f911b59e0a9b314763a4c0">Ping_SAL_esp32::isReachable</a>(<span class="keyword">const</span> std::string&amp; server)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &gt;&gt; Ping_SAL_esp32::isReachable &gt;&gt; \n&quot;</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// do magic</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <a class="code" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a> = 0;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="comment">/* convert URL to IP address */</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    ip_addr_t target_addr;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keyword">struct </span>addrinfo hint;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keyword">struct </span>addrinfo* res = NULL;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    memset(&amp;hint, 0, <span class="keyword">sizeof</span>(hint));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    memset(&amp;target_addr, 0, <span class="keyword">sizeof</span>(target_addr));</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    getaddrinfo(<span class="stringliteral">&quot;www.google.com&quot;</span>, NULL, &amp;hint, &amp;res);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keyword">struct </span>in_addr addr4 = ((<span class="keyword">struct </span>sockaddr_in*)(res-&gt;ai_addr))-&gt;sin_addr;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    inet_addr_to_ip4addr(ip_2_ip4(&amp;target_addr), &amp;addr4);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    freeaddrinfo(res);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    esp_ping_config_t ping_config = ESP_PING_DEFAULT_CONFIG();</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    ping_config.target_addr = target_addr; <span class="comment">// target IP address</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ping_config.count = ESP_PING_COUNT_INFINITE; <span class="comment">// ping in infinite mode, esp_ping_stop can stop it</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">/* set callback functions */</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    esp_ping_callbacks_t cbs;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    cbs.on_ping_success = test_on_ping_success;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    cbs.on_ping_timeout = test_on_ping_timeout;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    cbs.on_ping_end = test_on_ping_end;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    cbs.cb_args = <span class="stringliteral">&quot;foo&quot;</span>; <span class="comment">// arguments that will feed to all callback functions, can be NULL</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    cbs.cb_args = eth_event_group;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    esp_ping_handle_t ping;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    esp_ping_new_session(&amp;ping_config, &amp;cbs, &amp;ping);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <a class="code" href="../../d8/d2c/class_timeservice.html#aabc5c1c5b4508e511c97e58724af6bde">Timeservice::wait_sec</a>(5);</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; Ping_SAL_esp32::isReachable &lt;&lt; \n&quot;</span>;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a> &gt; 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclass_timeservice_html_aabc5c1c5b4508e511c97e58724af6bde"><div class="ttname"><a href="../../d8/d2c/class_timeservice.html#aabc5c1c5b4508e511c97e58724af6bde">Timeservice::wait_sec</a></div><div class="ttdeci">static general_err_t wait_sec(size_t sec_to_wait)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc9/_timeservice_8cpp_source.html#l00049">Timeservice.cpp:49</a></div></div>
+<div class="ttc" id="a_ping___s_a_l__esp32_8cpp_html_a0f468d5ced9e520aedc60f861f0ce799"><div class="ttname"><a href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a></div><div class="ttdeci">static size_t hasBeenReached</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc7/_ping___s_a_l__esp32_8cpp_source.html#l00029">Ping_SAL_esp32.cpp:29</a></div></div>
 <div class="ttc" id="a_general___error_8cpp_html_a328e9da88a07f3a0bf81b40d25469ff9"><div class="ttname"><a href="../../d0/de3/_general___error_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a></div><div class="ttdeci">static const char * LOG_TAG</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/de3/_general___error_8cpp_source.html#l00026">General_Error.cpp:26</a></div></div>
-<div class="ttc" id="aclass_ping___s_a_l__esp32_html_a5ce9604e20f911b59e0a9b314763a4c0"><div class="ttname"><a href="../../d9/dfe/class_ping___s_a_l__esp32.html#a5ce9604e20f911b59e0a9b314763a4c0">Ping_SAL_esp32::isReachable</a></div><div class="ttdeci">static bool isReachable(const std::string &amp;server)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc7/_ping___s_a_l__esp32_8cpp_source.html#l00029">Ping_SAL_esp32.cpp:29</a></div></div>
+<div class="ttc" id="aclass_ping___s_a_l__esp32_html_a5ce9604e20f911b59e0a9b314763a4c0"><div class="ttname"><a href="../../d9/dfe/class_ping___s_a_l__esp32.html#a5ce9604e20f911b59e0a9b314763a4c0">Ping_SAL_esp32::isReachable</a></div><div class="ttdeci">static bool isReachable(const std::string &amp;server)</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/dc7/_ping___s_a_l__esp32_8cpp_source.html#l00065">Ping_SAL_esp32.cpp:65</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

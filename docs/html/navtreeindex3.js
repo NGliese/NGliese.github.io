@@ -1,5 +1,8 @@
 var NAVTREEINDEX3 =
 {
+"d5/d8a/class_connected_components.html#a9be1c0e6406ba664851ff79969451349":[18,0,1,1,0,0,1,1,2],
+"d5/d8a/class_connected_components.html#a9be1c0e6406ba664851ff79969451349":[17,0,9,1,2],
+"d5/d8a/class_connected_components.html#acc3ba19dcda0f738e0fb9670476a03ca":[18,0,1,1,0,0,1,1,3],
 "d5/d8a/class_connected_components.html#acc3ba19dcda0f738e0fb9670476a03ca":[17,0,9,1,3],
 "d5/d8a/class_connected_components.html#af48b8cfd53afb4eec2a7b7dd1959491a":[18,0,1,1,0,0,1,1,0],
 "d5/d8a/class_connected_components.html#af48b8cfd53afb4eec2a7b7dd1959491a":[17,0,9,1,0],
@@ -110,6 +113,7 @@ var NAVTREEINDEX3 =
 "d6/da5/rpicamv2__test_8cpp.html#a4a1a368c261e7ba8ef0d35b12ddacdce":[18,0,1,10,1,2,0,1,0],
 "d6/da5/rpicamv2__test_8cpp_source.html":[18,0,1,10,1,2,0,1],
 "d6/dc7/_ping___s_a_l__esp32_8cpp.html":[18,0,1,14,0,1,1],
+"d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799":[18,0,1,14,0,1,1,0],
 "d6/dc7/_ping___s_a_l__esp32_8cpp_source.html":[18,0,1,14,0,1,1],
 "d6/df4/_watch___clock_8hpp.html":[18,0,1,7,16,0,0],
 "d6/df4/_watch___clock_8hpp_source.html":[18,0,1,7,16,0,0],
@@ -245,9 +249,5 @@ var NAVTREEINDEX3 =
 "d8/d80/_o_t_a__test_8cpp.html#a3085222b43a39a8e78e586a3876d3673":[18,0,1,7,11,2,0,1,1],
 "d8/d80/_o_t_a__test_8cpp.html#afcf3e21f617f13f523e409c043dedaab":[18,0,1,7,11,2,0,1,0],
 "d8/d80/_o_t_a__test_8cpp_source.html":[18,0,1,7,11,2,0,1],
-"d8/da0/_a_d_c_base_8hpp.html":[18,0,1,6,1,0,0],
-"d8/da0/_a_d_c_base_8hpp_source.html":[18,0,1,6,1,0,0],
-"d8/da0/classhal__mqtt__log.html":[17,0,23],
-"d8/da0/classhal__mqtt__log.html#a411c7bcf8b229056d287661184a0a47a":[17,0,23,0],
-"d8/dc6/_wi_fi___event___handler_8cpp.html":[18,0,1,3,0,1,2]
+"d8/da0/_a_d_c_base_8hpp.html":[18,0,1,6,1,0,0]
 };

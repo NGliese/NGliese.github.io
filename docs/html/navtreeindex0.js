@@ -5,7 +5,6 @@ var NAVTREEINDEX0 =
 "d0/d0e/class_ping___a_p_i.html":[17,0,48],
 "d0/d0e/class_ping___a_p_i.html#ace53b18e085b71e3244e99df36386c0e":[17,0,48,0],
 "d0/d1d/_ping___s_a_l__esp32_8hpp.html":[18,0,1,14,0,0,1],
-"d0/d1d/_ping___s_a_l__esp32_8hpp.html#a9fec70a17d0bcef23cf03c45a7b7caba":[18,0,1,14,0,0,1,1],
 "d0/d1d/_ping___s_a_l__esp32_8hpp_source.html":[18,0,1,14,0,0,1],
 "d0/d25/_utility_2utils_2test_2test_200___t_e_m_p_l_a_t_e_8cpp.html":[18,0,1,14,1,2,0,0],
 "d0/d25/_utility_2utils_2test_2test_200___t_e_m_p_l_a_t_e_8cpp.html#a02540ba362b6bc66a8a3dd35daa3430d":[18,0,1,14,1,2,0,0,0],
@@ -249,5 +248,6 @@ var NAVTREEINDEX0 =
 "d2/d8d/class_query_message_base.html#ab3d5003028c9ebf1c98da0f5ac3d2ace":[18,0,1,6,5,0,1,1,1],
 "d2/d8d/class_query_message_base.html#ab3d5003028c9ebf1c98da0f5ac3d2ace":[17,0,58,0,1],
 "d2/d8d/class_query_message_base.html#ac981ba186b64761e3ea9a8bcc9a3dac8":[17,0,58,1],
-"d2/d8d/class_query_message_base.html#ad5a56d730859819813208209bdf2bbc7":[17,0,58,5]
+"d2/d8d/class_query_message_base.html#ad5a56d730859819813208209bdf2bbc7":[17,0,58,5],
+"d2/d8d/class_query_message_base.html#ae5a04a80e78e869a2f83e0366bebbc4a":[17,0,58,2]
 };
