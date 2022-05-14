@@ -173,39 +173,40 @@ $(document).ready(function(){initNavTree('d6/dc7/_ping___s_a_l__esp32_8cpp_sourc
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    esp_ping_config_t ping_config = ESP_PING_DEFAULT_CONFIG();</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ping_config.target_addr = target_addr; <span class="comment">// target IP address</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    ping_config.count = 3; <span class="comment">// ping in infinite mode, esp_ping_stop can stop it</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    ping_config.count = 10; <span class="comment">// ping in infinite mode, esp_ping_stop can stop it</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">/* set callback functions */</span></div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    esp_ping_callbacks_t cbs;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    cbs.on_ping_success = test_on_ping_success;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    cbs.on_ping_timeout = test_on_ping_timeout;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    esp_ping_handle_t ping;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    esp_ping_new_session(&amp;ping_config, &amp;cbs, &amp;ping);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    esp_ping_start(ping);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <a class="code" href="../../d8/d2c/class_timeservice.html#aabc5c1c5b4508e511c97e58724af6bde">Timeservice::wait_sec</a>(5);</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;trying to stop ping ... \n&quot;</span>;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    esp_ping_stop(ping);</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; OK ... \n&quot;</span>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;trying to delete ping ... \n&quot;</span>;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    esp_ping_delete_session(ping);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; OK ... \n&quot;</span>;</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;trying to free memory ... \n&quot;</span>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    free(&amp;hint);</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    free(&amp;target_addr);</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; OK ... \n&quot;</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; Ping_SAL_esp32::isReachable &lt;&lt; \n&quot;</span>;</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a> &gt; 0;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    esp_ping_callbacks_t cbs = {.on_ping_success = test_on_ping_success,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                .on_ping_timeout = test_on_ping_timeout,</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                                .on_ping_end = NULL,</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                .cb_args = NULL};</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    esp_ping_handle_t ping;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    esp_ping_new_session(&amp;ping_config, &amp;cbs, &amp;ping);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    esp_ping_start(ping);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <a class="code" href="../../d8/d2c/class_timeservice.html#aabc5c1c5b4508e511c97e58724af6bde">Timeservice::wait_sec</a>(5);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;trying to stop ping ... \n&quot;</span>;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    esp_ping_stop(ping);</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; OK ... \n&quot;</span>;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;trying to delete ping ... \n&quot;</span>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    esp_ping_delete_session(ping);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; OK ... \n&quot;</span>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot;trying to free memory ... \n&quot;</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    free(&amp;hint);</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    free(&amp;target_addr);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; OK ... \n&quot;</span>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; Ping_SAL_esp32::isReachable &lt;&lt; \n&quot;</span>;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/dc7/_ping___s_a_l__esp32_8cpp.html#a0f468d5ced9e520aedc60f861f0ce799">hasBeenReached</a> &gt; 0;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_timeservice_html_aabc5c1c5b4508e511c97e58724af6bde"><div class="ttname"><a href="../../d8/d2c/class_timeservice.html#aabc5c1c5b4508e511c97e58724af6bde">Timeservice::wait_sec</a></div><div class="ttdeci">static general_err_t wait_sec(size_t sec_to_wait)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc9/_timeservice_8cpp_source.html#l00049">Timeservice.cpp:49</a></div></div>
