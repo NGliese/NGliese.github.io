@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"d8/da0/_a_d_c_base_8hpp.html":[18,0,1,6,1,0,0],
 "d8/da0/_a_d_c_base_8hpp_source.html":[18,0,1,6,1,0,0],
 "d8/da0/classhal__mqtt__log.html":[17,0,23],
 "d8/da0/classhal__mqtt__log.html#a411c7bcf8b229056d287661184a0a47a":[17,0,23,0],
@@ -70,8 +71,8 @@ var NAVTREEINDEX4 =
 "d9/d88/class_sensor_controller_base.html#a5fd66caa8e8c578072a3704c468570ae":[18,0,1,6,7,0,0,1,3],
 "d9/d88/class_sensor_controller_base.html#a5fd66caa8e8c578072a3704c468570ae":[17,0,64,0,3],
 "d9/d88/class_sensor_controller_base.html#a66f29145727a61781e11b4e88ef391bc":[17,0,64,5],
-"d9/d88/class_sensor_controller_base.html#a75253f7c536fc8775c3458f94cac4bba":[17,0,64,0,1],
 "d9/d88/class_sensor_controller_base.html#a75253f7c536fc8775c3458f94cac4bba":[18,0,1,6,7,0,0,1,1],
+"d9/d88/class_sensor_controller_base.html#a75253f7c536fc8775c3458f94cac4bba":[17,0,64,0,1],
 "d9/d88/class_sensor_controller_base.html#a76923c96c06a352c5ce295d28613eb8b":[17,0,64,6],
 "d9/d88/class_sensor_controller_base.html#a828b2de2e7535b94340532cd9a24cf2f":[17,0,64,1],
 "d9/d88/class_sensor_controller_base.html#a8aad4e716e306bb8e6be6cc8dc01ffc7":[17,0,64,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "da/dd6/class_message___protocol.html#a584d1cbacf9e8000447e0ccc3ae2f9c6":[17,0,35,6],
 "da/dd6/class_message___protocol.html#a5c4b04a82aa0f5519edbc21815384f2b":[17,0,35,15],
 "da/dd6/class_message___protocol.html#a7f79b407eb4513b6b066ce28768840ca":[17,0,35,7],
-"da/dd6/class_message___protocol.html#a8e84022a4270bc8ef066464aa747c36a":[17,0,35,3],
-"da/dd6/class_message___protocol.html#ac039c4b11f72f461265f519da8694b3c":[17,0,35,8]
+"da/dd6/class_message___protocol.html#a8e84022a4270bc8ef066464aa747c36a":[17,0,35,3]
 };
