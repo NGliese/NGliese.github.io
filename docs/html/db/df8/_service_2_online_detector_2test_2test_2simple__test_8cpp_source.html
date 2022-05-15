@@ -93,7 +93,7 @@ $(document).ready(function(){initNavTree('db/df8/_service_2_online_detector_2tes
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: espenv</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//#include &quot;../../include/Ping_API.hpp&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../include/OnlineDetector_service.hpp&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
@@ -109,7 +109,7 @@ $(document).ready(function(){initNavTree('db/df8/_service_2_online_detector_2tes
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// test init</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../db/df8/_service_2_online_detector_2test_2test_2simple__test_8cpp.html#a02540ba362b6bc66a8a3dd35daa3430d">   22</a></span>&#160;<a class="code" href="../../db/df8/_service_2_online_detector_2test_2test_2simple__test_8cpp.html#a02540ba362b6bc66a8a3dd35daa3430d">TEST</a>(TEMPL_GRP, init)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    FAIL(<span class="stringliteral">&quot;FAIL ME!&quot;</span>);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    OnlineDetector_service m_service{1, 8, 1, 1, 1};</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
