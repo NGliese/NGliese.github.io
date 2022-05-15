@@ -2,7 +2,7 @@ var searchData=
 [
   ['m_5fadc_394',['m_adc',['../d3/dab/class_distance_sensor_controller.html#a2b13011cafd8218dfe63b4aa0dc79b94',1,'DistanceSensorController::m_adc()'],['../d6/da0/class_active_current_sensor.html#a097fd8f574d98d233eb7b4f9dd5fc8be',1,'ActiveCurrentSensor::m_adc()']]],
   ['m_5fbackground_395',['m_background',['../db/d4d/class_background___extractor.html#a60e5ed6a424fda96a2747b749d599410',1,'Background_Extractor']]],
-  ['m_5fbuffer_396',['m_buffer',['../d2/d8d/class_query_message_base.html#a4722112337c685ed8fbdd35b2c4c7890',1,'QueryMessageBase::m_buffer()'],['../d4/d82/class_service_base.html#aa224141e36d054a0f4424a8ef87b528d',1,'ServiceBase::m_buffer()'],['../da/dd6/class_message___protocol.html#adbaa301868a03e56ca7de7f3bbd1e832',1,'Message_Protocol::m_buffer()']]],
+  ['m_5fbuffer_396',['m_buffer',['../d2/d8d/class_query_message_base.html#a4722112337c685ed8fbdd35b2c4c7890',1,'QueryMessageBase::m_buffer()'],['../d4/d82/class_service_base.html#a8b5fb80ce77e1d72999a56f8712597fb',1,'ServiceBase::m_buffer()'],['../da/dd6/class_message___protocol.html#adbaa301868a03e56ca7de7f3bbd1e832',1,'Message_Protocol::m_buffer()']]],
   ['m_5fbuffer_5fexternal_397',['m_buffer_external',['../d9/d88/class_sensor_controller_base.html#ab39a8413740dd0b3cbc516726c35ff52',1,'SensorControllerBase']]],
   ['m_5fbuffer_5fraw_398',['m_buffer_raw',['../d9/d88/class_sensor_controller_base.html#ad49a96ca232262225715016f675c7286',1,'SensorControllerBase']]],
   ['m_5fbuffer_5fsize_399',['m_buffer_size',['../d5/d81/class_m_q_t_t___message.html#a33159fb5b91ec4a1da76cf3cffb73ce5',1,'MQTT_Message']]],
