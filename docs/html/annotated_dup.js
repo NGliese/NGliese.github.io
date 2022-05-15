@@ -46,7 +46,6 @@ var annotated_dup =
     [ "NVS", "d2/dc1/class_n_v_s.html", "d2/dc1/class_n_v_s" ],
     [ "NVS_esp32", "d9/d68/class_n_v_s__esp32.html", "d9/d68/class_n_v_s__esp32" ],
     [ "NVS_MOCK", "d3/d16/class_n_v_s___m_o_c_k.html", "d3/d16/class_n_v_s___m_o_c_k" ],
-    [ "OnlineDetector_service", "db/db4/class_online_detector__service.html", "db/db4/class_online_detector__service" ],
     [ "OTA", "d3/d40/class_o_t_a.html", "d3/d40/class_o_t_a" ],
     [ "PeriodeEstimator", "da/d0a/class_periode_estimator.html", "da/d0a/class_periode_estimator" ],
     [ "Ping_API", "d0/d0e/class_ping___a_p_i.html", "d0/d0e/class_ping___a_p_i" ],

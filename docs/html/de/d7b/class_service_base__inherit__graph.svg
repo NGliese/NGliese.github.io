@@ -46,7 +46,7 @@ if (edges && edges.length) {
         </defs>
 
 <script type="text/javascript">
-var viewWidth = 521;
+var viewWidth = 354;
 var viewHeight = 878;
 var sectionId = 'dynsection-0';
 </script>
@@ -206,47 +206,26 @@ var sectionId = 'dynsection-0';
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="../../db/db4/class_online_detector__service.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="175.5,-17 175.5,-96 333.5,-96 333.5,-17 175.5,-17"/>
-<text text-anchor="middle" x="254.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">OnlineDetector_service</text>
-<polyline fill="none" stroke="black" points="175.5,-77 333.5,-77 "/>
-<text text-anchor="start" x="183.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg</text>
-<polyline fill="none" stroke="black" points="175.5,-58 333.5,-58 "/>
-<text text-anchor="start" x="183.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ OnlineDetector_service()</text>
-<text text-anchor="start" x="183.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~OnlineDetector_service()</text>
-<text text-anchor="start" x="183.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mainFunction()</text>
+<g id="a_node6"><a xlink:href="../../d6/da4/class_water_estimator___service.html" target="_top" xlink:title=" ">
+<polygon fill="none" stroke="black" points="177,-0.5 177,-112.5 338,-112.5 338,-0.5 177,-0.5"/>
+<text text-anchor="middle" x="257.5" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">WaterEstimator_Service</text>
+<polyline fill="none" stroke="black" points="177,-93.5 338,-93.5 "/>
+<text text-anchor="start" x="185" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_max</text>
+<text text-anchor="start" x="185" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_min</text>
+<text text-anchor="start" x="185" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_count</text>
+<text text-anchor="start" x="185" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_estimator</text>
+<polyline fill="none" stroke="black" points="177,-41.5 338,-41.5 "/>
+<text text-anchor="start" x="185" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ WaterEstimator_Service()</text>
+<text text-anchor="start" x="185" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~WaterEstimator_Service()</text>
+<text text-anchor="start" x="185" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mainFunction()</text>
 </a>
 </g>
 </g>
 <!-- Node5&#45;&gt;Node6 -->
 <g id="edge5" class="edge">
 <title>Node5&#45;&gt;Node6</title>
-<path fill="none" stroke="midnightblue" d="M255.87,-145.36C255.6,-127.74 255.33,-110.5 255.1,-96.02"/>
-<polygon fill="none" stroke="midnightblue" points="252.38,-145.81 256.04,-155.75 259.38,-145.7 252.38,-145.81"/>
-</g>
-<!-- Node7 -->
-<g id="node7" class="node">
-<title>Node7</title>
-<g id="a_node7"><a xlink:href="../../d6/da4/class_water_estimator___service.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="352,-0.5 352,-112.5 513,-112.5 513,-0.5 352,-0.5"/>
-<text text-anchor="middle" x="432.5" y="-100.5" font-family="Helvetica,sans-Serif" font-size="10.00">WaterEstimator_Service</text>
-<polyline fill="none" stroke="black" points="352,-93.5 513,-93.5 "/>
-<text text-anchor="start" x="360" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_max</text>
-<text text-anchor="start" x="360" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_min</text>
-<text text-anchor="start" x="360" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_count</text>
-<text text-anchor="start" x="360" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_estimator</text>
-<polyline fill="none" stroke="black" points="352,-41.5 513,-41.5 "/>
-<text text-anchor="start" x="360" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ WaterEstimator_Service()</text>
-<text text-anchor="start" x="360" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~WaterEstimator_Service()</text>
-<text text-anchor="start" x="360" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mainFunction()</text>
-</a>
-</g>
-</g>
-<!-- Node5&#45;&gt;Node7 -->
-<g id="edge6" class="edge">
-<title>Node5&#45;&gt;Node7</title>
-<path fill="none" stroke="midnightblue" d="M349.88,-148.14C361.01,-135.94 372.03,-123.85 382.22,-112.67"/>
-<polygon fill="none" stroke="midnightblue" points="347.1,-146 342.95,-155.75 352.27,-150.72 347.1,-146"/>
+<path fill="none" stroke="midnightblue" d="M257.5,-145.73C257.5,-134.35 257.5,-123.11 257.5,-112.67"/>
+<polygon fill="none" stroke="midnightblue" points="254,-145.75 257.5,-155.75 261,-145.75 254,-145.75"/>
 </g>
 </g>
 </svg>
