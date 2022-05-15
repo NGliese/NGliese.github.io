@@ -317,9 +317,9 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; able to reach server ... \n&quot;</span>;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(20);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">postData</a>(<a class="code" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>);</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//  msg_sucess.addData(20);</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="comment">//  postData(msg_sucess);</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//  msg_sucess.clear();</span></div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
@@ -329,7 +329,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">MQTT_Message::addData()</a>, <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">MQTT_Message::clear()</a>, <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>, and <a class="el" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">ServiceBase&lt; MQTT_Message &gt;::postData()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
 
 </div>
 </div>
@@ -380,8 +380,6 @@ Additional Inherited Members</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d1e/_online_detector__service_8hpp_source.html#l00069">69</a> of file <a class="el" href="../../d2/d1e/_online_detector__service_8hpp_source.html">OnlineDetector_service.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../db/db4/class_online_detector__service.html#ad10f6b90988740c69f371d422ecb08ad">mainFunction()</a>.</p>
-
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
@@ -391,13 +389,10 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28">db_id::ONLINEDETECTOR_REACH_TIME</a></div><div class="ttdeci">@ ONLINEDETECTOR_REACH_TIME</div></div>
-<div class="ttc" id="aclass_m_q_t_t___message_html_a530f82fdc88c865447c3db97225a34af"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">MQTT_Message::clear</a></div><div class="ttdeci">general_err_t clear(void)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d93/_m_q_t_t___message_8cpp_source.html#l00161">MQTT_Message.cpp:161</a></div></div>
 <div class="ttc" id="aclass_online_detector__service_html_a65df6eee6f6bb9a882f6cbfd20df949f"><div class="ttname"><a href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">OnlineDetector_service::msg_sucess</a></div><div class="ttdeci">MQTT_Message msg_sucess</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1e/_online_detector__service_8hpp_source.html#l00069">OnlineDetector_service.hpp:69</a></div></div>
 <div class="ttc" id="aclass_service_base_html_aa5beb66b63f08d9caed72225e3b582fb"><div class="ttname"><a href="../../d4/d82/class_service_base.html#aa5beb66b63f08d9caed72225e3b582fb">ServiceBase&lt; MQTT_Message &gt;::ServiceBase</a></div><div class="ttdeci">ServiceBase(size_t queue_size, size_t size_of_item, const MQTT_Message &amp;buffer, const db_id error_id)</div><div class="ttdoc">Construct a new Service Base object.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00074">ServiceBase.hpp:74</a></div></div>
-<div class="ttc" id="aclass_m_q_t_t___message_html_a388fdbaca68b7a35235e92d419583d86"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">MQTT_Message::addData</a></div><div class="ttdeci">general_err_t addData(const uint64_t &amp;data)</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d93/_m_q_t_t___message_8cpp_source.html#l00058">MQTT_Message.cpp:58</a></div></div>
 <div class="ttc" id="aclass_online_detector__service_html_a3c4d173281166f9f55c1837afa604410"><div class="ttname"><a href="../../db/db4/class_online_detector__service.html#a3c4d173281166f9f55c1837afa604410">OnlineDetector_service::msg_fail</a></div><div class="ttdeci">MQTT_Message msg_fail</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d1e/_online_detector__service_8hpp_source.html#l00070">OnlineDetector_service.hpp:70</a></div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a4703c849d584ed492249a45793690062"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4703c849d584ed492249a45793690062">db_id::CCTV01_DEBUG4</a></div><div class="ttdeci">@ CCTV01_DEBUG4</div></div>
-<div class="ttc" id="aclass_service_base_html_aa8daa40a55a0b4e6ddf333a8f13dba4a"><div class="ttname"><a href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">ServiceBase&lt; MQTT_Message &gt;::postData</a></div><div class="ttdeci">general_err_t postData(const MQTT_Message &amp;message, const std::string &amp;topic=&quot;mqtt/burst_msg&quot;)</div><div class="ttdoc">Function to post data to database.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00114">ServiceBase.hpp:114</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a4061f8cd72828d3333f082c9c91cd1e1"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4061f8cd72828d3333f082c9c91cd1e1">db_id::ONLINEDETECTOR_ERROR_CODE</a></div><div class="ttdeci">@ ONLINEDETECTOR_ERROR_CODE</div></div>
 <div class="ttc" id="aclass_m_q_t_t___message_html"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da7/_m_q_t_t___message_8hpp_source.html#l00084">MQTT_Message.hpp:84</a></div></div>
