@@ -312,16 +312,16 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">// do magic</span></div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">auto</span> res = Ping_API::isReachable&lt;Ping_SAL_esp32&gt;(<span class="stringliteral">&quot;www.google.dk&quot;</span>);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">bool</span> res = Ping_API::isReachable&lt;Ping_SAL_esp32&gt;(<span class="stringliteral">&quot;www.google.dk&quot;</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> res = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span>(!res)</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    {</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; not able to reach server ... \n&quot;</span>;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <a class="code" href="../../db/db4/class_online_detector__service.html#a3c4d173281166f9f55c1837afa604410">msg_fail</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(10);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">//  msg_fail.addData(10);</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">// postData(msg_fail);</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="../../db/db4/class_online_detector__service.html#a3c4d173281166f9f55c1837afa604410">msg_fail</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//  msg_fail.clear();</span></div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
@@ -338,7 +338,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">MQTT_Message::addData()</a>, <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">MQTT_Message::clear()</a>, <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../db/db4/class_online_detector__service.html#a3c4d173281166f9f55c1837afa604410">msg_fail</a>, <a class="el" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>, and <a class="el" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">ServiceBase&lt; MQTT_Message &gt;::postData()</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">MQTT_Message::addData()</a>, <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">MQTT_Message::clear()</a>, <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>, and <a class="el" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">ServiceBase&lt; MQTT_Message &gt;::postData()</a>.</p>
 
 </div>
 </div>
@@ -364,8 +364,6 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d2/d1e/_online_detector__service_8hpp_source.html#l00067">67</a> of file <a class="el" href="../../d2/d1e/_online_detector__service_8hpp_source.html">OnlineDetector_service.hpp</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../db/db4/class_online_detector__service.html#ad10f6b90988740c69f371d422ecb08ad">mainFunction()</a>.</p>
 
 </div>
 </div>
