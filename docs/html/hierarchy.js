@@ -104,6 +104,7 @@ var hierarchy =
         [ "ServiceBase_HW_TEST< BUFFER_TYPE, QUEUE_TYPE >", "dc/d61/class_service_base___h_w___t_e_s_t.html", null ]
       ] ],
       [ "ServiceBase< MQTT_Message >", "d4/d82/class_service_base.html", [
+        [ "OnlineDetector_service", "db/db4/class_online_detector__service.html", null ],
         [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", null ]
       ] ]
     ] ],

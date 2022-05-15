@@ -1,6 +1,6 @@
 <map id="OnlineDetector_service" name="OnlineDetector_service">
 <area shape="rect" id="node1" title=" " alt="" coords="156,1367,367,1473"/>
-<area shape="rect" id="node2" href="$d4/d82/class_service_base.html" title=" " alt="" coords="427,1137,661,1317"/>
+<area shape="rect" id="node2" href="$d4/d82/class_service_base.html" title=" " alt="" coords="413,1137,648,1317"/>
 <area shape="rect" id="node3" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="529,417,660,700"/>
 <area shape="rect" id="node16" href="$d4/d82/class_service_base.html" title=" " alt="" coords="534,814,703,1023"/>
 <area shape="rect" id="node4" title="STL class." alt="" coords="393,211,479,289"/>
