@@ -367,7 +367,7 @@
 <polygon fill="none" stroke="black" points="845.5,-17 845.5,-96 1003.5,-96 1003.5,-17 845.5,-17"/>
 <text text-anchor="middle" x="924.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">OnlineDetector_service</text>
 <polyline fill="none" stroke="black" points="845.5,-77 1003.5,-77 "/>
-<text text-anchor="middle" x="924.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="853.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg</text>
 <polyline fill="none" stroke="black" points="845.5,-58 1003.5,-58 "/>
 <text text-anchor="start" x="853.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ OnlineDetector_service()</text>
 <text text-anchor="start" x="853.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~OnlineDetector_service()</text>

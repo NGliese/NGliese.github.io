@@ -84,8 +84,8 @@ var NAVTREEINDEX =
 "d5/d8a/class_connected_components.html#a8f0b0455c7c84a29d416eeb8145e31d2",
 "d8/d61/_timebased__rules_8cpp.html#a958d06eadb3c3cc76bcef3bd5aac58b7",
 "da/dd6/class_message___protocol.html#a39fc635afe534ede8415427507d05416",
-"dd/d82/_active_current_sensor_8hpp.html",
-"dir_2348c1f2664be65ac5ef8027b7e6ecce.html",
+"dd/d7c/namespaceesp32__i2c__adapter__v1__0.html",
+"dir_21acfc905ae8f5aba388f62b4244bcd8.html",
 "globals.html"
 ];
 

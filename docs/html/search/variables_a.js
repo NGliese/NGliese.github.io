@@ -91,7 +91,7 @@ var searchData=
   ['minimum_5fnumber_5fof_5fsamples_1628',['minimum_number_of_samples',['../dc/d23/class_a_d_c_base.html#a6c079fa42d7b5b65cfaaa8fac679eb50',1,'ADCBase']]],
   ['mode_1629',['mode',['../d4/dc1/class_h_a_l___e_s_p32.html#a997a7ca771250c91a6ce3b3f835a3ee1',1,'HAL_ESP32::config']]],
   ['mqtt_5fsubscriber_5fpointer_5fmap_1630',['mqtt_subscriber_pointer_map',['../d3/dc1/mqtt__api__v2_8cpp.html#ab787461a5151c83680464802db5b7711',1,'mqtt_api_v2.cpp']]],
-  ['msg_1631',['msg',['../d3/d42/class_logger.html#ad0f1ca246210cf4653ae7326707a480d',1,'Logger::msg_t']]],
+  ['msg_1631',['msg',['../d3/d42/class_logger.html#ad0f1ca246210cf4653ae7326707a480d',1,'Logger::msg_t::msg()'],['../db/db4/class_online_detector__service.html#ac6bf2aedb6271200ae351ec093a8e109',1,'OnlineDetector_service::msg()']]],
   ['msg_5fcount_1632',['msg_count',['../d6/da4/class_water_estimator___service.html#a66951ee55f0c19a464d19ccde7b33d64',1,'WaterEstimator_Service']]],
   ['msg_5fmax_1633',['msg_max',['../d6/da4/class_water_estimator___service.html#aecd7f5a1f2cd588512e905fe1ad9b2e6',1,'WaterEstimator_Service']]],
   ['msg_5fmin_1634',['msg_min',['../d6/da4/class_water_estimator___service.html#a8269566e105b5c5c4914032165ef640e',1,'WaterEstimator_Service']]]

@@ -220,7 +220,7 @@
         </error>
         <error id="missingOverride" severity="style" msg="The function &apos;mainFunction&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;mainFunction&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/include/WaterEstimator_Service.hpp" line="63" column="16" info="Function in derived class"/>
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/ServiceBase/include/ServiceBase.hpp" line="88" column="24" info="Virtual function in base class"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/ServiceBase/include/ServiceBase.hpp" line="96" column="24" info="Virtual function in base class"/>
             <symbol>mainFunction</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">

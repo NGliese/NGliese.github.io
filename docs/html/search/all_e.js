@@ -130,7 +130,7 @@ var searchData=
   ['mqtt_5fv2_5ftest_2ecpp_521',['mqtt_v2_test.cpp',['../df/df3/mqtt__v2__test_8cpp.html',1,'']]],
   ['mqttclient_522',['mqttclient',['../d4/d63/mqtt__api__v2_8hpp.html#afcffa710b6faf064740b22b27800a13a',1,'mqtt_api_v2.hpp']]],
   ['mqttevent_523',['mqttevent',['../d4/d63/mqtt__api__v2_8hpp.html#a3740802119736f8556d793c3bc1d13fc',1,'mqtt_api_v2.hpp']]],
-  ['msg_524',['msg',['../d3/d42/class_logger.html#ad0f1ca246210cf4653ae7326707a480d',1,'Logger::msg_t']]],
+  ['msg_524',['msg',['../d3/d42/class_logger.html#ad0f1ca246210cf4653ae7326707a480d',1,'Logger::msg_t::msg()'],['../db/db4/class_online_detector__service.html#ac6bf2aedb6271200ae351ec093a8e109',1,'OnlineDetector_service::msg()']]],
   ['msg_5fcnt_5fflag_5ft_525',['msg_cnt_flag_t',['../db/d90/_message___protocol_8hpp.html#a76edb4a9ed71772ecc7a032b333c916a',1,'Message_Protocol.hpp']]],
   ['msg_5fconf_5ft_526',['msg_conf_t',['../d5/d81/class_m_q_t_t___message.html#dc/d9d/struct_m_q_t_t___message_1_1msg__conf__t',1,'MQTT_Message']]],
   ['msg_5fcontrol_5ft_527',['msg_control_t',['../db/d90/_message___protocol_8hpp.html#d6/d3f/structmsg__control__t',1,'']]],

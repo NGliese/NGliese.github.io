@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"dd/d7c/namespaceesp32__i2c__adapter__v1__0.html":[16,0,1],
 "dd/d82/_active_current_sensor_8hpp.html":[18,0,1,10,0,0,0],
 "dd/d82/_active_current_sensor_8hpp_source.html":[18,0,1,10,0,0,0],
 "dd/d84/class_fault___handler.html":[17,0,17],
@@ -18,10 +19,10 @@ var NAVTREEINDEX6 =
 "dd/d84/class_fault___handler.html#ab52d6f245c60a1b3627f8c2d46ab37af":[17,0,17,8],
 "dd/d84/class_fault___handler.html#ac1779aadf99dffa4386ac97b59e1600f":[17,0,17,0,2],
 "dd/d84/class_fault___handler.html#ac1779aadf99dffa4386ac97b59e1600f":[18,0,1,7,3,0,0,2,2],
-"dd/d84/class_fault___handler.html#af4009183f36c416c0ec0977681a59f9f":[18,0,1,7,3,0,0,2,0],
 "dd/d84/class_fault___handler.html#af4009183f36c416c0ec0977681a59f9f":[17,0,17,0,0],
-"dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t":[17,0,17,0],
+"dd/d84/class_fault___handler.html#af4009183f36c416c0ec0977681a59f9f":[18,0,1,7,3,0,0,2,0],
 "dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t":[18,0,1,7,3,0,0,2],
+"dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t":[17,0,17,0],
 "dd/d8b/md__components__objects__json_src_empty_file.html":[15],
 "dd/d92/class_query_data_message.html":[17,0,58],
 "dd/d92/class_query_data_message.html#a59156f2a41d8d8e763b1559311af027d":[17,0,58,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "dir_1f87fbf685570cd9af24aa3e65a4b127.html":[18,0,1,7,16,1],
 "dir_20607c430001bb1505ce3b86611a3590.html":[18,0,1,7,0,2],
 "dir_20a8a0908d2b372c47a0aaef4f37025f.html":[18,0,1,10,0],
-"dir_20dff34c38a7af2d1f82a9454decebad.html":[18,0,1,1,0,2,0],
-"dir_21acfc905ae8f5aba388f62b4244bcd8.html":[18,0,1,1,0,2]
+"dir_20dff34c38a7af2d1f82a9454decebad.html":[18,0,1,1,0,2,0]
 };

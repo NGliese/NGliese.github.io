@@ -210,7 +210,7 @@ var sectionId = 'dynsection-0';
 <polygon fill="none" stroke="black" points="175.5,-17 175.5,-96 333.5,-96 333.5,-17 175.5,-17"/>
 <text text-anchor="middle" x="254.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">OnlineDetector_service</text>
 <polyline fill="none" stroke="black" points="175.5,-77 333.5,-77 "/>
-<text text-anchor="middle" x="254.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00"> </text>
+<text text-anchor="start" x="183.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg</text>
 <polyline fill="none" stroke="black" points="175.5,-58 333.5,-58 "/>
 <text text-anchor="start" x="183.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ OnlineDetector_service()</text>
 <text text-anchor="start" x="183.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~OnlineDetector_service()</text>
