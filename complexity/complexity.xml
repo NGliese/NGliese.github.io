@@ -406,27 +406,27 @@
 		</item>
 		<average label="NCSS" value="9.857142857142858"/>
 		<average label="CCN" value="2.116883116883117"/>
-		<item name="WiFi_SAL_esp32::WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:35">
+		<item name="WiFi_SAL_esp32::WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:33">
 			<value>78</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="WiFi_SAL_esp32::~WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:40">
+		<item name="WiFi_SAL_esp32::~WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:38">
 			<value>79</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="WiFi_SAL_esp32::connect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:42">
+		<item name="WiFi_SAL_esp32::connect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:40">
 			<value>80</value>
 			<value>37</value>
 			<value>6</value>
 		</item>
-		<item name="WiFi_SAL_esp32::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:97">
+		<item name="WiFi_SAL_esp32::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:95">
 			<value>81</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
-		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:111">
+		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:109">
 			<value>82</value>
 			<value>29</value>
 			<value>9</value>

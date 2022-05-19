@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-19 15:28:18</td>
+            <td class="headerValue">2022-05-19 15:43:45</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">10</td>
@@ -659,7 +659,7 @@
     <tr>
     <td align="right" class="lineno"><pre>52</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>178</pre></td>
     <td align="left" class="src coveredLine"><pre>	static int getParsedIntegerValue(const std::string&amp; str, const std::string&amp; key,</pre></td>
     </tr>
 
@@ -680,14 +680,14 @@
     <tr>
     <td align="right" class="lineno"><pre>55</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>178</pre></td>
     <td align="left" class="src coveredLine"><pre>		jsmn_parser p;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>56</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>178</pre></td>
     <td align="left" class="src coveredLine"><pre>		jsmntok_t t[size]; /* We expect no more than 128 JSON tokens */</pre></td>
     </tr>
 
@@ -701,14 +701,14 @@
     <tr>
     <td align="right" class="lineno"><pre>58</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>178</pre></td>
     <td align="left" class="src coveredLine"><pre>		jsmn_init(&amp;p);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>59</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>178</pre></td>
     <td align="left" class="src coveredLine"><pre>		auto res = jsmn_parse(&amp;p, str.c_str(), str.size(), t,</pre></td>
     </tr>
 
@@ -728,8 +728,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>62</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 880 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>880</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 890 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>890</pre></td>
     <td align="left" class="src coveredLine"><pre>		for(size_t i = 1; i &lt; res; i++)</pre></td>
     </tr>
 
@@ -742,8 +742,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>64</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 176 times">&check;</span><span class="takenBranch" title="Branch 3 taken 704 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>880</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 178 times">&check;</span><span class="takenBranch" title="Branch 3 taken 712 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>890</pre></td>
     <td align="left" class="src coveredLine"><pre>			if(jsoneq(str.c_str(), &amp;t[i], "value") == 0)</pre></td>
     </tr>
 
@@ -756,8 +756,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>66</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 176 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 178 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>178</pre></td>
     <td align="left" class="src coveredLine"><pre>				return json2int(str, t[i + 1].type, t[i + 1].start, t[i + 1].end);</pre></td>
     </tr>
 
@@ -778,7 +778,7 @@
     <tr>
     <td align="right" class="lineno"><pre>69</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>176</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>178</pre></td>
     <td align="left" class="src coveredLine"><pre>		return 0;</pre></td>
     </tr>
 
@@ -862,7 +862,7 @@
     <tr>
     <td align="right" class="lineno"><pre>81</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>4048</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4094</pre></td>
     <td align="left" class="src coveredLine"><pre>	static int jsoneq(const char* json, jsmntok_t* tok, const char* s)</pre></td>
     </tr>
 
@@ -875,15 +875,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>83</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 3344 times">&check;</span><span class="takenBranch" title="Branch 1 taken 704 times">&check;</span><span class="takenBranch" title="Branch 2 taken 528 times">&check;</span><span class="takenBranch" title="Branch 3 taken 2816 times">&check;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>4048</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 3382 times">&check;</span><span class="takenBranch" title="Branch 1 taken 712 times">&check;</span><span class="takenBranch" title="Branch 2 taken 534 times">&check;</span><span class="takenBranch" title="Branch 3 taken 2848 times">&check;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>4094</pre></td>
     <td align="left" class="src coveredLine"><pre>		if(tok->type == JSMN_STRING &amp;&amp; (int)strlen(s) == tok->end - tok->start &amp;&amp;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>84</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 528 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>528</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 534 times">&check;</span><span class="notTakenBranch" title="Branch 1 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>534</pre></td>
     <td align="left" class="src coveredLine"><pre>		   strncmp(json + tok->start, s, tok->end - tok->start) == 0)</pre></td>
     </tr>
 
@@ -897,7 +897,7 @@
     <tr>
     <td align="right" class="lineno"><pre>86</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>528</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>534</pre></td>
     <td align="left" class="src coveredLine"><pre>			return 0;</pre></td>
     </tr>
 
@@ -911,7 +911,7 @@
     <tr>
     <td align="right" class="lineno"><pre>88</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3520</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3560</pre></td>
     <td align="left" class="src coveredLine"><pre>		return -1;</pre></td>
     </tr>
 
@@ -995,7 +995,7 @@
     <tr>
     <td align="right" class="lineno"><pre>100</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>528</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>534</pre></td>
     <td align="left" class="src coveredLine"><pre>	static int json2int(const std::string&amp; jsonstring, const jsmntype_t&amp; type, int start, int stop)</pre></td>
     </tr>
 
@@ -1008,8 +1008,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>102</pre></td>
-    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 0 not taken">&cross;</span><span class="takenBranch" title="Branch 1 taken 528 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>528</pre></td>
+    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 0 not taken">&cross;</span><span class="takenBranch" title="Branch 1 taken 534 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>534</pre></td>
     <td align="left" class="src coveredLine"><pre>		if(type != JSMN_PRIMITIVE)</pre></td>
     </tr>
 
@@ -1044,7 +1044,7 @@
     <tr>
     <td align="right" class="lineno"><pre>107</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>528</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>534</pre></td>
     <td align="left" class="src coveredLine"><pre>		return std::atoi(jsonstring.substr(start, stop - start).c_str());</pre></td>
     </tr>
 
@@ -1128,7 +1128,7 @@
     <tr>
     <td align="right" class="lineno"><pre>119</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3168</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3204</pre></td>
     <td align="left" class="src coveredLine"><pre>	static auto jsoneq(const char* json, jsmntok_t* tok, const char* s)</pre></td>
     </tr>
 
@@ -1142,7 +1142,7 @@
     <tr>
     <td align="right" class="lineno"><pre>121</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3168</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3204</pre></td>
     <td align="left" class="src coveredLine"><pre>		return jsmn_object::jsoneq(json, tok, s);</pre></td>
     </tr>
 
@@ -1156,7 +1156,7 @@
     <tr>
     <td align="right" class="lineno"><pre>123</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>352</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>356</pre></td>
     <td align="left" class="src coveredLine"><pre>	static auto json2int(const std::string&amp; jsonstring, const jsmntype_t&amp; type, int start, int stop)</pre></td>
     </tr>
 
@@ -1170,7 +1170,7 @@
     <tr>
     <td align="right" class="lineno"><pre>125</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>352</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>356</pre></td>
     <td align="left" class="src coveredLine"><pre>		return jsmn_object::json2int(jsonstring, type, start, stop);</pre></td>
     </tr>
 

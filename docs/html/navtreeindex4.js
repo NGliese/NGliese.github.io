@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"d8/d19/_sensor_controller_test_8cpp.html#a472b28ce069801b2c08897e9bd521fd9":[21,0,1,6,8,2,1,0,0],
 "d8/d19/_sensor_controller_test_8cpp.html#a63e0db1555b64dbc556ef2e1a08c0825":[21,0,1,6,8,2,1,0,2],
 "d8/d19/_sensor_controller_test_8cpp_source.html":[21,0,1,6,8,2,1,0],
 "d8/d20/http__interface_8cpp.html":[21,0,1,8,0,1,2],
@@ -127,8 +128,8 @@ var NAVTREEINDEX4 =
 "d9/d88/class_sensor_controller_base.html#ace233e14eae60238b391d3d2a6924bbf":[20,0,67,18],
 "d9/d88/class_sensor_controller_base.html#ad49a96ca232262225715016f675c7286":[20,0,67,14],
 "d9/d88/class_sensor_controller_base.html#ad948de1a8f2fdf41acb4ed5b2c20d0eb":[20,0,67,7],
-"d9/d88/class_sensor_controller_base.html#add6cf0a4b183afe263fadb8f6011a90a":[20,0,67,0,0],
 "d9/d88/class_sensor_controller_base.html#add6cf0a4b183afe263fadb8f6011a90a":[21,0,1,6,8,0,0,1,0],
+"d9/d88/class_sensor_controller_base.html#add6cf0a4b183afe263fadb8f6011a90a":[20,0,67,0,0],
 "d9/d88/class_sensor_controller_base.html#ae60d6e03ce8c2c30f2e54619f9178a10":[20,0,67,15],
 "d9/d88/class_sensor_controller_base.html#afc5d1af980abfd0307249836000e9712":[20,0,67,16],
 "d9/d88/class_sensor_controller_base.html#aff9c7021639453196202bfaa5655e75e":[20,0,67,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "da/d65/_objects_2_watchdog_2test_2test__main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[21,0,1,7,16,2,1,0],
 "da/d65/_objects_2_watchdog_2test_2test__main_8cpp_source.html":[21,0,1,7,16,2,1],
 "da/d6f/_interfaces_2_service_base_2test_2test__main_8cpp.html":[21,0,1,6,9,2,1],
-"da/d6f/_interfaces_2_service_base_2test_2test__main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[21,0,1,6,9,2,1,0],
-"da/d6f/_interfaces_2_service_base_2test_2test__main_8cpp_source.html":[21,0,1,6,9,2,1]
+"da/d6f/_interfaces_2_service_base_2test_2test__main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627":[21,0,1,6,9,2,1,0]
 };

@@ -1,5 +1,6 @@
 var _wi_fi___s_a_l__esp32_8cpp =
 [
+    [ "LOG_TAG", "d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9", null ],
     [ "MAXIMUM_RETRY", "d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a5a58d75a1848031df9472040fcfeed0d", null ],
     [ "s_retry_num", "d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592", null ],
     [ "WIFI_CONNECTION_FAIL", "d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce", null ],
