@@ -149,7 +149,7 @@ $(document).ready(function(){initNavTree('d7/dc3/_wi_fi___s_a_l__esp32_8cpp_sour
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    wifi_config.sta.ssid = <a class="code" href="../../db/d7f/class_wi_fi_base.html#a7a4cc8effcbb1d04c8300cd072037d77">m_ssid</a>;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    wifi_config.sta.password = <a class="code" href="../../db/d7f/class_wi_fi_base.html#ac22f08d324fd7eac5e8a7e5e3e9d3987">m_pwd</a>;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    wifi_config.threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    wifi_config.sta.threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &amp;wifi_config));</div>
