@@ -342,7 +342,7 @@
 <a name="line-61"></a>
 <a name="line-62"></a>	<span class="n">wifi_config</span><span class="p">.</span><span class="n">sta</span><span class="p">.</span><span class="n">ssid</span> <span class="o">=</span> <span class="n">m_ssid</span><span class="p">;</span>
 <a name="line-63"></a>	<span class="n">wifi_config</span><span class="p">.</span><span class="n">sta</span><span class="p">.</span><span class="n">password</span> <span class="o">=</span> <span class="n">m_pwd</span><span class="p">;</span>
-<a name="line-64"></a>	<span class="n">wifi_config</span><span class="p">.</span><span class="n">sta</span><span class="p">.</span><span class="n">threshold</span><span class="p">.</span><span class="n">authmode</span> <span class="o">=</span> <span class="n">ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD</span><span class="p">;</span>
+<a name="line-64"></a>	<span class="c1">//	wifi_config.sta.threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD;</span>
 <a name="line-65"></a>
 <a name="line-66"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_STA</span><span class="p">));</span>
 <a name="line-67"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">WIFI_IF_STA</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">wifi_config</span><span class="p">));</span>
