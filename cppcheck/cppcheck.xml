@@ -63,7 +63,7 @@
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi_API.cpp" line="40" column="20" info="Assignment &apos;err=connect()&apos;, assigned value is 0"/>
         </error>
         <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" verbose="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="79" column="14"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="80" column="14"/>
             <symbol>WiFi_SAL_esp32::event_handler</symbol>
         </error>
         <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" verbose="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" cwe="571">
