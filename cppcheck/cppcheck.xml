@@ -67,7 +67,7 @@
             <symbol>WiFi_SAL_esp32::event_handler</symbol>
         </error>
         <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" verbose="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" cwe="571">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="75" column="36" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="85" column="36" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
         </error>
         <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." cwe="398">
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="33" column="17"/>
