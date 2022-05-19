@@ -421,12 +421,12 @@
 			<value>40</value>
 			<value>7</value>
 		</item>
-		<item name="WiFi_SAL_esp32::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:101">
+		<item name="WiFi_SAL_esp32::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:102">
 			<value>81</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
-		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:115">
+		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:116">
 			<value>82</value>
 			<value>29</value>
 			<value>9</value>
