@@ -10,6 +10,7 @@ var annotated_dup =
     [ "basic", "d0/deb/namespace_3global_scope_4.html#d3/d07/classbasic", null ],
     [ "Camera_CV", "d3/dc5/class_camera___c_v.html", "d3/dc5/class_camera___c_v" ],
     [ "ConnectedComponents", "d5/d8a/class_connected_components.html", "d5/d8a/class_connected_components" ],
+    [ "ConnectorBase", "d0/d74/class_connector_base.html", "d0/d74/class_connector_base" ],
     [ "Curl_SAL", "d2/d2b/class_curl___s_a_l.html", "d2/d2b/class_curl___s_a_l" ],
     [ "DataBroker", "d9/db3/class_data_broker.html", "d9/db3/class_data_broker" ],
     [ "DistanceSensorController", "d3/dab/class_distance_sensor_controller.html", "d3/dab/class_distance_sensor_controller" ],
@@ -39,6 +40,7 @@ var annotated_dup =
     [ "MG996R", "d9/d1c/class_m_g996_r.html", "d9/d1c/class_m_g996_r" ],
     [ "mg996r_conf_t", "dc/d07/_m_g996_r_8hpp.html#db/d02/structmg996r__conf__t", "dc/d07/_m_g996_r_8hpp_db/d02/structmg996r__conf__t" ],
     [ "MOCK_ping", "df/de7/class_m_o_c_k__ping.html", "df/de7/class_m_o_c_k__ping" ],
+    [ "MOCK_WIFI", "d6/db5/class_m_o_c_k___w_i_f_i.html", "d6/db5/class_m_o_c_k___w_i_f_i" ],
     [ "mqtt_api_v2", "d5/de7/classmqtt__api__v2.html", "d5/de7/classmqtt__api__v2" ],
     [ "MQTT_Message", "d5/d81/class_m_q_t_t___message.html", "d5/d81/class_m_q_t_t___message" ],
     [ "msg_control_t", "db/d90/_message___protocol_8hpp.html#d6/d3f/structmsg__control__t", "db/d90/_message___protocol_8hpp_d6/d3f/structmsg__control__t" ],
@@ -80,5 +82,7 @@ var annotated_dup =
     [ "Watchdog_Base", "da/d60/class_watchdog___base.html", "da/d60/class_watchdog___base" ],
     [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", "d6/da4/class_water_estimator___service" ],
     [ "WiFi_API", "d0/de8/class_wi_fi___a_p_i.html", "d0/de8/class_wi_fi___a_p_i" ],
-    [ "wifi_conf_t", "de/d7c/_wi_fi___a_p_i_8hpp.html#db/d38/structwifi__conf__t", "de/d7c/_wi_fi___a_p_i_8hpp_db/d38/structwifi__conf__t" ]
+    [ "wifi_conf_t", "de/d7c/_wi_fi___a_p_i_8hpp.html#db/d38/structwifi__conf__t", "de/d7c/_wi_fi___a_p_i_8hpp_db/d38/structwifi__conf__t" ],
+    [ "WiFi_SAL_esp32", "d5/db4/class_wi_fi___s_a_l__esp32.html", "d5/db4/class_wi_fi___s_a_l__esp32" ],
+    [ "WiFiBase", "db/d7f/class_wi_fi_base.html", "db/d7f/class_wi_fi_base" ]
 ];

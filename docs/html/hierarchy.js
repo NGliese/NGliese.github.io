@@ -19,6 +19,12 @@ var hierarchy =
     [ "DistanceSensorController::config", "d3/dab/class_distance_sensor_controller.html#d0/d14/struct_distance_sensor_controller_1_1config", null ],
     [ "ADC_API_ESP32::config", "d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config", null ],
     [ "ConnectedComponents", "d5/d8a/class_connected_components.html", null ],
+    [ "ConnectorBase", "d0/d74/class_connector_base.html", [
+      [ "WiFiBase", "db/d7f/class_wi_fi_base.html", [
+        [ "MOCK_WIFI", "d6/db5/class_m_o_c_k___w_i_f_i.html", null ],
+        [ "WiFi_SAL_esp32", "d5/db4/class_wi_fi___s_a_l__esp32.html", null ]
+      ] ]
+    ] ],
     [ "ConnectedComponents::container_t", "d5/d8a/class_connected_components.html#d1/d94/struct_connected_components_1_1container__t", null ],
     [ "Fault_Handler::counters_t", "dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t", null ],
     [ "Curl_SAL", "d2/d2b/class_curl___s_a_l.html", null ],
@@ -52,8 +58,8 @@ var hierarchy =
     [ "msg_control_t", "db/d90/_message___protocol_8hpp.html#d6/d3f/structmsg__control__t", null ],
     [ "msg_data_t", "db/d90/_message___protocol_8hpp.html#d2/d7f/structmsg__data__t", null ],
     [ "QueryMessageBase< T >::msg_data_t", "d2/d8d/class_query_message_base.html#d4/df2/struct_query_message_base_1_1msg__data__t", null ],
-    [ "Logger::msg_t", "d3/d42/class_logger.html#db/dbb/struct_logger_1_1msg__t", null ],
     [ "FaultHandler_n::msg_t", "d1/d27/namespace_fault_handler__n.html#d5/de9/struct_fault_handler__n_1_1msg__t", null ],
+    [ "Logger::msg_t", "d3/d42/class_logger.html#db/dbb/struct_logger_1_1msg__t", null ],
     [ "NVS< NVS_HAL >", "d2/dc1/class_n_v_s.html", null ],
     [ "NVS_esp32", "d9/d68/class_n_v_s__esp32.html", null ],
     [ "NVS_MOCK", "d3/d16/class_n_v_s___m_o_c_k.html", null ],

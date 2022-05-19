@@ -62,6 +62,25 @@
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi_API.cpp" line="41" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi_API.cpp" line="40" column="20" info="Assignment &apos;err=connect()&apos;, assigned value is 0"/>
         </error>
+        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" verbose="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="79" column="14"/>
+            <symbol>WiFi_SAL_esp32::event_handler</symbol>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" verbose="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" cwe="571">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="74" column="36" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="35" column="17"/>
+            <symbol>WiFi_SAL_esp32::instance_any_id</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_got_ip&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_got_ip&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="35" column="17"/>
+            <symbol>WiFi_SAL_esp32::instance_got_ip</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::m_cfg&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::m_cfg&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="35" column="17"/>
+            <symbol>WiFi_SAL_esp32::m_cfg</symbol>
+        </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
             <symbol>GPIO_API</symbol>

@@ -3,6 +3,7 @@ var dir_e185953657720ba3a67126696ef566c7 =
     [ "ActuatorBase", "dir_c69560da8b565b5ff7a6279980e642a0.html", "dir_c69560da8b565b5ff7a6279980e642a0" ],
     [ "ADCBase", "dir_c1d39b38f705fdd6d8156436742b5519.html", "dir_c1d39b38f705fdd6d8156436742b5519" ],
     [ "Camera", "dir_aa1683b16ed846e0217724d18ccf48ca.html", "dir_aa1683b16ed846e0217724d18ccf48ca" ],
+    [ "ConnectorBase", "dir_106fa90834b93650d2ed531c24260574.html", "dir_106fa90834b93650d2ed531c24260574" ],
     [ "ProtocolBase", "dir_0510aa4683094b0d91d14cbbe60c1080.html", "dir_0510aa4683094b0d91d14cbbe60c1080" ],
     [ "PWMBase", "dir_5a8ae08cfe847631433021fb4227a90d.html", "dir_5a8ae08cfe847631433021fb4227a90d" ],
     [ "QueryBase", "dir_bca44d80d5a74645927dcf464289c401.html", "dir_bca44d80d5a74645927dcf464289c401" ],
