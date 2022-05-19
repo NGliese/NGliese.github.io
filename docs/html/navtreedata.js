@@ -32,6 +32,7 @@ var NAVTREE =
     [ "empty_file", "da/dc0/md__components__interfaces__actuator_base_src_empty_file.html", null ],
     [ "empty_file", "dd/df5/md__components__interfaces__a_d_c_base_src_empty_file.html", null ],
     [ "empty_file", "d7/d70/md__components__interfaces__camera_src_empty_file.html", null ],
+    [ "empty_file", "d8/db1/md__components__interfaces__connector_base_src_empty_file.html", null ],
     [ "empty_file", "dc/d39/md__components__interfaces__protocol_base_src_empty_file.html", null ],
     [ "empty_file", "de/d04/md__components__interfaces__p_w_m_base_src_empty_file.html", null ],
     [ "empty_file", "d1/d7e/md__components__interfaces__query_base_src_empty_file.html", null ],
@@ -39,6 +40,8 @@ var NAVTREE =
     [ "empty_file", "da/d2a/md__components__interfaces__service_base_src_empty_file.html", null ],
     [ "empty_file", "d9/d23/md__components__objects__j_s_m_n_src_empty_file.html", null ],
     [ "empty_file", "dd/d8b/md__components__objects__json_src_empty_file.html", null ],
+    [ "empty_file", "d9/d85/md__components__template_include_empty_file.html", null ],
+    [ "empty_file", "d4/dae/md__components__template_src_empty_file.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -81,12 +84,12 @@ var NAVTREEINDEX =
 "annotated.html",
 "d2/d8d/class_query_message_base.html#a75f878c3523897f39cdc8b51a47c648d",
 "d4/d6a/test_2time__test_8cpp.html#ae590452f04144e1588a4ca5d927cb259",
-"d5/d8a/class_connected_components.html#a0d9e80eff2846d156e46b7cf17a7bc26",
-"d8/d19/_sensor_controller_test_8cpp_source.html",
-"da/d75/_data_broker__test_8cpp.html#a1378b918a2ac105d4d549ecf3ef9699e",
-"dc/dc2/classhttp__interface.html#a59c2026e013846e07941cb6447cc9732",
-"df/df3/mqtt__v2__test_8cpp.html",
-"dir_f7d32cd808481429db9c1edeb0fcfdbe.html"
+"d5/d8a/class_connected_components.html",
+"d8/d19/_sensor_controller_test_8cpp.html#a63e0db1555b64dbc556ef2e1a08c0825",
+"da/d75/_data_broker__test_8cpp.html",
+"dc/dc2/classhttp__interface.html#a0299e5e6e6393f7af77e621c0c3691c1",
+"df/dec/class_timebased__rules.html",
+"dir_f2382bcffb65053faf0a94879a0a781f.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
