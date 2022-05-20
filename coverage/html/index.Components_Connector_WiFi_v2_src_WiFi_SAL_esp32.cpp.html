@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-20 22:07:05</td>
+            <td class="headerValue">2022-05-20 22:14:25</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -743,120 +743,120 @@
     <tr>
     <td align="right" class="lineno"><pre>64</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define SSID "Drone01_2g"</pre></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>general_err_t WiFi_SAL_esp32::connect()</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>65</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define PWD "14Louse"</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>66</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t WiFi_SAL_esp32::connect()</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>67</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>68</pre></td>
+    <td align="right" class="lineno"><pre>66</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#ifdef DEBUG</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>69</pre></td>
+    <td align="right" class="lineno"><pre>67</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	std::cout &lt;&lt; " >> WiFi_SAL_esp32::connect >> \n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>70</pre></td>
+    <td align="right" class="lineno"><pre>68</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>71</pre></td>
+    <td align="right" class="lineno"><pre>69</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	// do magic</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>72</pre></td>
+    <td align="right" class="lineno"><pre>70</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>73</pre></td>
+    <td align="right" class="lineno"><pre>71</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_netif_init());</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>74</pre></td>
+    <td align="right" class="lineno"><pre>72</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>75</pre></td>
+    <td align="right" class="lineno"><pre>73</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_event_loop_create_default());</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>76</pre></td>
+    <td align="right" class="lineno"><pre>74</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	esp_netif_create_default_wifi_sta();</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>77</pre></td>
+    <td align="right" class="lineno"><pre>75</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>78</pre></td>
+    <td align="right" class="lineno"><pre>76</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	m_cfg = WIFI_INIT_CONFIG_DEFAULT();</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>79</pre></td>
+    <td align="right" class="lineno"><pre>77</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_wifi_init(&amp;m_cfg));</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>80</pre></td>
+    <td align="right" class="lineno"><pre>78</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>79</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_event_handler_instance_register(</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>80</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>		WIFI_EVENT, ESP_EVENT_ANY_ID, &amp;WiFi_SAL_esp32::event_handler, NULL, &amp;instance_any_id));</pre></td>
     </tr>
 
     <tr>
@@ -870,21 +870,21 @@
     <td align="right" class="lineno"><pre>82</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		WIFI_EVENT, ESP_EVENT_ANY_ID, &amp;WiFi_SAL_esp32::event_handler, NULL, &amp;instance_any_id));</pre></td>
+    <td align="left" class="src "><pre>		IP_EVENT, IP_EVENT_STA_GOT_IP, &amp;WiFi_SAL_esp32::event_handler, NULL, &amp;instance_got_ip));</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>83</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_event_handler_instance_register(</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>84</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		IP_EVENT, IP_EVENT_STA_GOT_IP, &amp;WiFi_SAL_esp32::event_handler, NULL, &amp;instance_got_ip));</pre></td>
+    <td align="left" class="src "><pre>	wifi_config_t wifi_config;</pre></td>
     </tr>
 
     <tr>
@@ -898,336 +898,336 @@
     <td align="right" class="lineno"><pre>86</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config_t wifi_config;</pre></td>
+    <td align="left" class="src "><pre>	//	::memcpy(wifi_config.sta.ssid, m_ssid.data(), m_ssid.size());</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>	//	::memcpy(wifi_config.sta.password, m_pwd.data(), m_pwd.size());</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>88</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	//	::memcpy(wifi_config.sta.ssid, m_ssid.data(), m_ssid.size());</pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.ssid = reinterpret_cast&lt;uint8_t*>(const_cast&lt;char*>(m_ssid.c_str()));</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	//	::memcpy(wifi_config.sta.password, m_pwd.data(), m_pwd.size());</pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.password = reinterpret_cast&lt;uint8_t*>(const_cast&lt;char*>(m_pwd.c_str()));</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>90</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.scan_method = WIFI_FAST_SCAN;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>91</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.ssid = SSID;</pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.bssid_set = false;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>92</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.password = PWD;</pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.channel = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>93</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.scan_method = WIFI_FAST_SCAN;</pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.listen_interval = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>94</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.bssid_set = false;</pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.sort_method = WIFI_CONNECT_AP_BY_SIGNAL;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>95</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.channel = 0;</pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.threshold.authmode = WIFI_AUTH_WEP;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>96</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.listen_interval = 0;</pre></td>
+    <td align="left" class="src "><pre>	//	wifi_config.sta.threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>97</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.sort_method = WIFI_CONNECT_AP_BY_SIGNAL;</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>98</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.threshold.authmode = WIFI_AUTH_WEP;</pre></td>
+    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>99</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	//	wifi_config.sta.threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD;</pre></td>
+    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &amp;wifi_config));</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>100</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>	std::cout &lt;&lt; " start WiFi .. \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>101</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));</pre></td>
+    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_wifi_start());</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>102</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_wifi_set_config(WIFI_IF_STA, &amp;wifi_config));</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>103</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	std::cout &lt;&lt; " start WiFi .. \n";</pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>104</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(esp_wifi_start());</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>105</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>106</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>107</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>108</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>	while(!WIFI_CONNECTION_SUCCESS and !WIFI_CONNECTION_FAIL)</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>109</pre></td>
+    <td align="right" class="lineno"><pre>106</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>110</pre></td>
+    <td align="right" class="lineno"><pre>107</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>		std::cout &lt;&lt; "waiting for wifi ... \n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>111</pre></td>
+    <td align="right" class="lineno"><pre>108</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>		Timeservice::wait_sec(1);</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>112</pre></td>
+    <td align="right" class="lineno"><pre>109</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>113</pre></td>
+    <td align="right" class="lineno"><pre>110</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>	if(WIFI_CONNECTION_SUCCESS)</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>114</pre></td>
+    <td align="right" class="lineno"><pre>111</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>115</pre></td>
+    <td align="right" class="lineno"><pre>112</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>		std::cout &lt;&lt; " we have sucessfully connected to wifi! \n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>116</pre></td>
+    <td align="right" class="lineno"><pre>113</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>117</pre></td>
+    <td align="right" class="lineno"><pre>114</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>		std::cout &lt;&lt; "wifi info : \n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>118</pre></td>
+    <td align="right" class="lineno"><pre>115</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>		wifi_ap_record_t ap_info;</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>119</pre></td>
+    <td align="right" class="lineno"><pre>116</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>		esp_wifi_sta_get_ap_info(&amp;ap_info);</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>120</pre></td>
+    <td align="right" class="lineno"><pre>117</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>121</pre></td>
+    <td align="right" class="lineno"><pre>118</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>		std::cout &lt;&lt; " RSSI valus for &lt;" &lt;&lt; m_ssid &lt;&lt; "> is : " &lt;&lt; (int)ap_info.rssi &lt;&lt; "\n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>122</pre></td>
+    <td align="right" class="lineno"><pre>119</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>123</pre></td>
+    <td align="right" class="lineno"><pre>120</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>		return GE_OK;</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>124</pre></td>
+    <td align="right" class="lineno"><pre>121</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>125</pre></td>
+    <td align="right" class="lineno"><pre>122</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	else</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>126</pre></td>
+    <td align="right" class="lineno"><pre>123</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>127</pre></td>
+    <td align="right" class="lineno"><pre>124</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>		std::cout &lt;&lt; "we failed to connect to wifi ... \n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>128</pre></td>
+    <td align="right" class="lineno"><pre>125</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
     <td align="left" class="src uncoveredLine"><pre>		return GE_FAIL;</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>129</pre></td>
+    <td align="right" class="lineno"><pre>126</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>130</pre></td>
+    <td align="right" class="lineno"><pre>127</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>131</pre></td>
+    <td align="right" class="lineno"><pre>128</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#ifdef DEBUG</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>132</pre></td>
+    <td align="right" class="lineno"><pre>129</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	std::cout &lt;&lt; " &lt;&lt; WiFi_SAL_esp32::connect &lt;&lt; \n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>133</pre></td>
+    <td align="right" class="lineno"><pre>130</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>131</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>132</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	return GE_OK;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>133</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -1240,92 +1240,92 @@
     <tr>
     <td align="right" class="lineno"><pre>135</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	return GE_OK;</pre></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>general_err_t WiFi_SAL_esp32::disconnect()</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>136</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>}</pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>137</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>138</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>general_err_t WiFi_SAL_esp32::disconnect()</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>139</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>{</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>140</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#ifdef DEBUG</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>141</pre></td>
+    <td align="right" class="lineno"><pre>138</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	std::cout &lt;&lt; " >> WiFi_SAL_esp32::disconnect >> \n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>142</pre></td>
+    <td align="right" class="lineno"><pre>139</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>143</pre></td>
+    <td align="right" class="lineno"><pre>140</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	// do magic</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>144</pre></td>
+    <td align="right" class="lineno"><pre>141</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>145</pre></td>
+    <td align="right" class="lineno"><pre>142</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#ifdef DEBUG</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>146</pre></td>
+    <td align="right" class="lineno"><pre>143</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	std::cout &lt;&lt; " &lt;&lt; WiFi_SAL_esp32::disconnect &lt;&lt; \n";</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>147</pre></td>
+    <td align="right" class="lineno"><pre>144</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>145</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>146</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>	return GE_OK;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>147</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>}</pre></td>
     </tr>
 
     <tr>
@@ -1339,424 +1339,403 @@
     <td align="right" class="lineno"><pre>149</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return GE_OK;</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>void WiFi_SAL_esp32::event_handler(void* arg, esp_event_base_t event_base, int32_t event_id,</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>150</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>}</pre></td>
+    <td align="left" class="src "><pre>								   void* event_data)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>151</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>152</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>void WiFi_SAL_esp32::event_handler(void* arg, esp_event_base_t event_base, int32_t event_id,</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "recieved an event! \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>153</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>								   void* event_data)</pre></td>
+    <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>154</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>{</pre></td>
+    <td align="left" class="src "><pre>	if(event_base == WIFI_EVENT)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>155</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::cout &lt;&lt; "recieved an event! \n";</pre></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>156</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
+    <td align="left" class="src "><pre>		std::cout &lt;&lt; "The event is WiFi and id is {" &lt;&lt; (int)event_id &lt;&lt; " } \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>157</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	if(event_base == WIFI_EVENT)</pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>158</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	{</pre></td>
+    <td align="left" class="src "><pre>	else</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>159</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		std::cout &lt;&lt; "The event is WiFi and id is {" &lt;&lt; (int)event_id &lt;&lt; " } \n";</pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>160</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="left" class="src "><pre>		std::cout &lt;&lt; "The event was no a wifi event... \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>161</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	else</pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>162</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	{</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>163</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		std::cout &lt;&lt; "The event was no a wifi event... \n";</pre></td>
+    <td align="left" class="src "><pre>	if(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_START)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>164</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>165</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>		std::cout &lt;&lt; " event is : WIFI_EVENT_STA_START ... starting wifi \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>166</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	if(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_START)</pre></td>
+    <td align="left" class="src "><pre>		esp_wifi_connect();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>167</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	{</pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>168</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		std::cout &lt;&lt; " event is : WIFI_EVENT_STA_START ... starting wifi \n";</pre></td>
+    <td align="left" class="src "><pre>	else if(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_DISCONNECTED)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>169</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		esp_wifi_connect();</pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>170</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="left" class="src "><pre>		std::cout &lt;&lt; " event is : WIFI_EVENT_STA_DISCONNECTED ... retrying to connect \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>171</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	else if(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_DISCONNECTED)</pre></td>
+    <td align="left" class="src "><pre>		WIFI_CONNECTION_SUCCESS = false;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>172</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	{</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>173</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		std::cout &lt;&lt; " event is : WIFI_EVENT_STA_DISCONNECTED ... retrying to connect \n";</pre></td>
+    <td align="left" class="src "><pre>		if(s_retry_num &lt; MAXIMUM_RETRY)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>174</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		WIFI_CONNECTION_SUCCESS = false;</pre></td>
+    <td align="left" class="src "><pre>		{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>175</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>			esp_wifi_connect();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>176</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		if(s_retry_num &lt; MAXIMUM_RETRY)</pre></td>
+    <td align="left" class="src "><pre>			s_retry_num++;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>177</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		{</pre></td>
+    <td align="left" class="src "><pre>		}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>178</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>			esp_wifi_connect();</pre></td>
+    <td align="left" class="src "><pre>		else</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>179</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>			s_retry_num++;</pre></td>
+    <td align="left" class="src "><pre>		{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>180</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		}</pre></td>
+    <td align="left" class="src "><pre>			std::cout &lt;&lt; " could not connect to wifi ... \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>181</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		else</pre></td>
+    <td align="left" class="src "><pre>			WIFI_CONNECTION_FAIL = true;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>182</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		{</pre></td>
+    <td align="left" class="src "><pre>		}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>183</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>			std::cout &lt;&lt; " could not connect to wifi ... \n";</pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>184</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>			WIFI_CONNECTION_FAIL = true;</pre></td>
+    <td align="left" class="src "><pre>	else if(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_DISCONNECTED)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>185</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		}</pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>186</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="left" class="src "><pre>		std::cout &lt;&lt; " event is : WIFI_EVENT_STA_CONNECTED ... WiFI connected! \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>187</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	else if(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_DISCONNECTED)</pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>188</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	{</pre></td>
+    <td align="left" class="src "><pre>	else if(event_base == WIFI_EVENT &amp;&amp; event_id == IP_EVENT_STA_GOT_IP)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>189</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		std::cout &lt;&lt; " event is : WIFI_EVENT_STA_CONNECTED ... WiFI connected! \n";</pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>190</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="left" class="src "><pre>		std::cout &lt;&lt; " event is : IP_EVENT_STA_GOT_IP ... Got IP! \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>191</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	else if(event_base == WIFI_EVENT &amp;&amp; event_id == IP_EVENT_STA_GOT_IP)</pre></td>
+    <td align="left" class="src "><pre>		ip_event_got_ip_t* event = (ip_event_got_ip_t*)event_data;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>192</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	{</pre></td>
+    <td align="left" class="src "><pre>		ESP_LOGI(LOG_TAG, "got ip:" IPSTR, IP2STR(&amp;event->ip_info.ip));</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>193</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		std::cout &lt;&lt; " event is : IP_EVENT_STA_GOT_IP ... Got IP! \n";</pre></td>
+    <td align="left" class="src "><pre>		s_retry_num = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>194</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		ip_event_got_ip_t* event = (ip_event_got_ip_t*)event_data;</pre></td>
+    <td align="left" class="src "><pre>		WIFI_CONNECTION_SUCCESS = true;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>195</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		ESP_LOGI(LOG_TAG, "got ip:" IPSTR, IP2STR(&amp;event->ip_info.ip));</pre></td>
+    <td align="left" class="src "><pre>		WIFI_CONNECTION_FAIL = false;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>196</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		s_retry_num = 0;</pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>197</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		WIFI_CONNECTION_SUCCESS = true;</pre></td>
+    <td align="left" class="src "><pre>	else if(event_base == IP_EVENT &amp;&amp; event_id == IP_EVENT_STA_GOT_IP)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>198</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		WIFI_CONNECTION_FAIL = false;</pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>199</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
+    <td align="left" class="src "><pre>		ip_event_got_ip_t* event = (ip_event_got_ip_t*)event_data;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>200</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	else if(event_base == IP_EVENT &amp;&amp; event_id == IP_EVENT_STA_GOT_IP)</pre></td>
+    <td align="left" class="src "><pre>		ESP_LOGI(LOG_TAG, "got ip:" IPSTR, IP2STR(&amp;event->ip_info.ip));</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>201</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	{</pre></td>
+    <td align="left" class="src "><pre>		s_retry_num = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>202</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		ip_event_got_ip_t* event = (ip_event_got_ip_t*)event_data;</pre></td>
+    <td align="left" class="src "><pre>		WIFI_CONNECTION_SUCCESS = true;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>203</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		ESP_LOGI(LOG_TAG, "got ip:" IPSTR, IP2STR(&amp;event->ip_info.ip));</pre></td>
+    <td align="left" class="src "><pre>		WIFI_CONNECTION_FAIL = false;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>204</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		s_retry_num = 0;</pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>205</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		WIFI_CONNECTION_SUCCESS = true;</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>206</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		WIFI_CONNECTION_FAIL = false;</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>207</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>208</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>209</pre></td>
+    <td align="right" class="lineno"><pre>206</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>}</pre></td>

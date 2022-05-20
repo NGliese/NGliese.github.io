@@ -128,17 +128,17 @@
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="WiFi_SAL_esp32::connect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:66">
+		<item name="WiFi_SAL_esp32::connect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:64">
 			<value>24</value>
 			<value>47</value>
 			<value>7</value>
 		</item>
-		<item name="WiFi_SAL_esp32::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:138">
+		<item name="WiFi_SAL_esp32::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:135">
 			<value>25</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
-		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:152">
+		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:149">
 			<value>26</value>
 			<value>54</value>
 			<value>14</value>
