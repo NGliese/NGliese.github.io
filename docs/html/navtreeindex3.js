@@ -1,6 +1,6 @@
 var NAVTREEINDEX3 =
 {
-"d5/d8a/class_connected_components.html#a7db57153ef737157b24cf1001a18a51f":[21,0,1,1,0,0,1,1,1],
+"d5/d8a/class_connected_components.html#a7db57153ef737157b24cf1001a18a51f":[20,0,9,1,1],
 "d5/d8a/class_connected_components.html#a8f0b0455c7c84a29d416eeb8145e31d2":[20,0,9,2],
 "d5/d8a/class_connected_components.html#a8fec9ac57bb4c7f7d5bde539ce6c3a71":[20,0,9,3],
 "d5/d8a/class_connected_components.html#a9be1c0e6406ba664851ff79969451349":[21,0,1,1,0,0,1,1,2],
@@ -200,11 +200,13 @@ var NAVTREEINDEX3 =
 "d7/db6/class_query_add_sensor_data.html#a340d43182d4df170fdf2a26ec27191cc":[20,0,58,1],
 "d7/db6/class_query_add_sensor_data.html#abfa9898e74050f7fabe3aa5742631344":[20,0,58,0],
 "d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html":[21,0,1,3,0,1,0],
-"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9":[21,0,1,3,0,1,0,0],
-"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce":[21,0,1,3,0,1,0,3],
-"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a5a58d75a1848031df9472040fcfeed0d":[21,0,1,3,0,1,0,1],
-"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a7fa5121ba469d800557ae620db25b17a":[21,0,1,3,0,1,0,4],
-"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592":[21,0,1,3,0,1,0,2],
+"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a0699c38e3c7f214f5c13ffe750e1f0ab":[21,0,1,3,0,1,0,0],
+"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9":[21,0,1,3,0,1,0,2],
+"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce":[21,0,1,3,0,1,0,5],
+"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a5a58d75a1848031df9472040fcfeed0d":[21,0,1,3,0,1,0,3],
+"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a7fa5121ba469d800557ae620db25b17a":[21,0,1,3,0,1,0,6],
+"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#aaf46549480a528db5ba7d78e7270b5a9":[21,0,1,3,0,1,0,1],
+"d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592":[21,0,1,3,0,1,0,4],
 "d7/dc3/_wi_fi___s_a_l__esp32_8cpp_source.html":[21,0,1,3,0,1,0],
 "d7/dc6/_query_message_base_8hpp.html":[21,0,1,6,6,0,1],
 "d7/dc6/_query_message_base_8hpp_source.html":[21,0,1,6,6,0,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "d8/d2b/class_distance_sensor_controller___h_w___t_e_s_t.html#a52a9a68f95bf8a6622fd9c6490e250b9":[20,0,14,1],
 "d8/d2b/class_distance_sensor_controller___h_w___t_e_s_t.html#a84d9b432349235d45942abc3ae7cf09a":[20,0,14,0],
 "d8/d2c/class_timeservice.html":[20,0,75],
-"d8/d2c/class_timeservice.html#a111f8abd2c8280d873558053e4918d44":[20,0,75,5],
-"d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961":[20,0,75,9],
-"d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48":[20,0,75,6]
+"d8/d2c/class_timeservice.html#a111f8abd2c8280d873558053e4918d44":[20,0,75,5]
 };

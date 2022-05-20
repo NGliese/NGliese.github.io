@@ -1,5 +1,7 @@
 var NAVTREEINDEX4 =
 {
+"d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961":[20,0,75,9],
+"d8/d2c/class_timeservice.html#a34ca1160ce55fbed850181d2f1c4cb48":[20,0,75,6],
 "d8/d2c/class_timeservice.html#a3d04af84fcbdcdd003eac53884c3ce22":[20,0,75,1],
 "d8/d2c/class_timeservice.html#a72e1fa82c1c9954d2e397ab42c69b35a":[20,0,75,0],
 "d8/d2c/class_timeservice.html#a7537ddad504b6fc8cde486394ecb67f1":[20,0,75,3],
@@ -115,8 +117,8 @@ var NAVTREEINDEX4 =
 "d9/d88/class_sensor_controller_base.html#ae60d6e03ce8c2c30f2e54619f9178a10":[20,0,67,15],
 "d9/d88/class_sensor_controller_base.html#afc5d1af980abfd0307249836000e9712":[20,0,67,16],
 "d9/d88/class_sensor_controller_base.html#aff9c7021639453196202bfaa5655e75e":[20,0,67,12],
-"d9/d88/class_sensor_controller_base.html#d1/da2/struct_sensor_controller_base_1_1init__conf":[21,0,1,6,8,0,0,1],
 "d9/d88/class_sensor_controller_base.html#d1/da2/struct_sensor_controller_base_1_1init__conf":[20,0,67,0],
+"d9/d88/class_sensor_controller_base.html#d1/da2/struct_sensor_controller_base_1_1init__conf":[21,0,1,6,8,0,0,1],
 "d9/d8d/_background___extractor_8hpp.html":[21,0,1,1,0,0,0],
 "d9/d8d/_background___extractor_8hpp_source.html":[21,0,1,1,0,0,0],
 "d9/d8e/class_message___handler.html":[20,0,35],
@@ -247,7 +249,5 @@ var NAVTREEINDEX4 =
 "da/d81/_fault___handler_8hpp.html#a32023c0fed23a14c07f7f743985cdb40a21f25aaeda95888270706e909e7c919d":[21,0,1,7,3,0,0,3,0],
 "da/d81/_fault___handler_8hpp.html#a32023c0fed23a14c07f7f743985cdb40a53cced8d281a1a0ace3cb6594daaa4f7":[21,0,1,7,3,0,0,3,2],
 "da/d81/_fault___handler_8hpp.html#a32023c0fed23a14c07f7f743985cdb40a8d966b2253a917086c8604959e152243":[21,0,1,7,3,0,0,3,6],
-"da/d81/_fault___handler_8hpp.html#a32023c0fed23a14c07f7f743985cdb40aaa4cea18ae7516f9a3c28d597055082f":[21,0,1,7,3,0,0,3,7],
-"da/d81/_fault___handler_8hpp.html#a32023c0fed23a14c07f7f743985cdb40ab7619bc8e14fe34d78820f979605ee8b":[21,0,1,7,3,0,0,3,1],
-"da/d81/_fault___handler_8hpp.html#a32023c0fed23a14c07f7f743985cdb40ad9089276a39ead288709e9b052631eeb":[21,0,1,7,3,0,0,3,3]
+"da/d81/_fault___handler_8hpp.html#a32023c0fed23a14c07f7f743985cdb40aaa4cea18ae7516f9a3c28d597055082f":[21,0,1,7,3,0,0,3,7]
 };

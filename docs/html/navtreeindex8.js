@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"functions_func_r.html":[20,3,1,15],
+"functions_func_s.html":[20,3,1,16],
 "functions_func_t.html":[20,3,1,17],
 "functions_func_u.html":[20,3,1,18],
 "functions_func_v.html":[20,3,1,19],
@@ -67,8 +69,8 @@ var NAVTREEINDEX8 =
 "globals_w.html":[21,1,0,21],
 "globals_x.html":[21,1,0,22],
 "hierarchy.html":[20,2],
-"index.html":[],
 "index.html":[0],
+"index.html":[],
 "namespacemembers.html":[19,1,0],
 "namespacemembers_enum.html":[19,1,3],
 "namespacemembers_func.html":[19,1,1],
