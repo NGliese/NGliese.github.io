@@ -137,7 +137,7 @@
       </div>
       <div id="menu" dir="rtl">
        <p id="filename"><a href="index.html">Defects:</a> WiFi_SAL_esp32.cpp</p>
-<a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-100'> knownConditionTrueFalse 100</a><a href='7.html#line-178'> multiCondition 178</a>
+<a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-100'> knownConditionTrueFalse 100</a><a href='7.html#line-179'> multiCondition 179</a>
       </div>
       <div id="content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
@@ -339,7 +339,8 @@
 197
 198
 199
-200</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/***********************************************************************************************+</span>
+200
+201</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/***********************************************************************************************+</span>
 <a name="line-2"></a><span class="cm"> *  \brief      BRIEF TEXT</span>
 <a name="line-3"></a><span class="cm"> *  \par</span>
 <a name="line-4"></a><span class="cm"> *  \par        @DETAILS</span>
@@ -438,7 +439,7 @@
 <a name="line-97"></a>
 <a name="line-98"></a><span class="cp">#endif</span>
 <a name="line-99"></a>
-<a name="line-100"></a><span class="hll">	<span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="n">or</span> <span class="o">!</span><span class="n">WIFI_CONNECTION_FAIL</span><span class="p">)</span><span class='error2'>&lt;--- Condition '!WIFI_CONNECTION_FAIL' is always true</span>
+<a name="line-100"></a><span class="hll">	<span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="n">and</span> <span class="o">!</span><span class="n">WIFI_CONNECTION_FAIL</span><span class="p">)</span><span class='error2'>&lt;--- Condition '!WIFI_CONNECTION_FAIL' is always true</span>
 </span><a name="line-101"></a>	<span class="p">{</span>
 <a name="line-102"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;waiting for wifi ... </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
 <a name="line-103"></a>		<span class="n">Timeservice</span><span class="o">::</span><span class="n">wait_sec</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
@@ -513,32 +514,33 @@
 <a name="line-172"></a>		<span class="p">}</span>
 <a name="line-173"></a>		<span class="k">else</span>
 <a name="line-174"></a>		<span class="p">{</span>
-<a name="line-175"></a>			<span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-<a name="line-176"></a>		<span class="p">}</span>
-<a name="line-177"></a>	<span class="p">}</span>
-<a name="line-178"></a><span class="hll">	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">WIFI_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">WIFI_EVENT_STA_DISCONNECTED</span><span class="p">)</span><span class='error2'>&lt;--- Expression is always false because 'else if' condition matches previous condition at line 163.</span>
-</span><a name="line-179"></a>	<span class="p">{</span>
-<a name="line-180"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; event is : WIFI_EVENT_STA_CONNECTED ... WiFI connected! </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-<a name="line-181"></a>	<span class="p">}</span>
-<a name="line-182"></a>	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">WIFI_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">IP_EVENT_STA_GOT_IP</span><span class="p">)</span>
-<a name="line-183"></a>	<span class="p">{</span>
-<a name="line-184"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; event is : IP_EVENT_STA_GOT_IP ... Got IP! </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
-<a name="line-185"></a>		<span class="n">ip_event_got_ip_t</span><span class="o">*</span> <span class="n">event</span> <span class="o">=</span> <span class="p">(</span><span class="n">ip_event_got_ip_t</span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
-<a name="line-186"></a>		<span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;got ip:&quot;</span> <span class="n">IPSTR</span><span class="p">,</span> <span class="n">IP2STR</span><span class="p">(</span><span class="o">&amp;</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">ip_info</span><span class="p">.</span><span class="n">ip</span><span class="p">));</span>
-<a name="line-187"></a>		<span class="n">s_retry_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<a name="line-188"></a>		<span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-<a name="line-189"></a>		<span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-<a name="line-190"></a>	<span class="p">}</span>
-<a name="line-191"></a>	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">IP_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">IP_EVENT_STA_GOT_IP</span><span class="p">)</span>
-<a name="line-192"></a>	<span class="p">{</span>
-<a name="line-193"></a>		<span class="n">ip_event_got_ip_t</span><span class="o">*</span> <span class="n">event</span> <span class="o">=</span> <span class="p">(</span><span class="n">ip_event_got_ip_t</span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
-<a name="line-194"></a>		<span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;got ip:&quot;</span> <span class="n">IPSTR</span><span class="p">,</span> <span class="n">IP2STR</span><span class="p">(</span><span class="o">&amp;</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">ip_info</span><span class="p">.</span><span class="n">ip</span><span class="p">));</span>
-<a name="line-195"></a>		<span class="n">s_retry_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<a name="line-196"></a>		<span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-<a name="line-197"></a>		<span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
-<a name="line-198"></a>	<span class="p">}</span>
-<a name="line-199"></a><span class="cp">#endif</span>
-<a name="line-200"></a><span class="p">}</span>
+<a name="line-175"></a>			<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; could not connect to wifi ... </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-176"></a>			<span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="line-177"></a>		<span class="p">}</span>
+<a name="line-178"></a>	<span class="p">}</span>
+<a name="line-179"></a><span class="hll">	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">WIFI_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">WIFI_EVENT_STA_DISCONNECTED</span><span class="p">)</span><span class='error2'>&lt;--- Expression is always false because 'else if' condition matches previous condition at line 163.</span>
+</span><a name="line-180"></a>	<span class="p">{</span>
+<a name="line-181"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; event is : WIFI_EVENT_STA_CONNECTED ... WiFI connected! </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-182"></a>	<span class="p">}</span>
+<a name="line-183"></a>	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">WIFI_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">IP_EVENT_STA_GOT_IP</span><span class="p">)</span>
+<a name="line-184"></a>	<span class="p">{</span>
+<a name="line-185"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; event is : IP_EVENT_STA_GOT_IP ... Got IP! </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-186"></a>		<span class="n">ip_event_got_ip_t</span><span class="o">*</span> <span class="n">event</span> <span class="o">=</span> <span class="p">(</span><span class="n">ip_event_got_ip_t</span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
+<a name="line-187"></a>		<span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;got ip:&quot;</span> <span class="n">IPSTR</span><span class="p">,</span> <span class="n">IP2STR</span><span class="p">(</span><span class="o">&amp;</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">ip_info</span><span class="p">.</span><span class="n">ip</span><span class="p">));</span>
+<a name="line-188"></a>		<span class="n">s_retry_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<a name="line-189"></a>		<span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="line-190"></a>		<span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<a name="line-191"></a>	<span class="p">}</span>
+<a name="line-192"></a>	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">IP_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">IP_EVENT_STA_GOT_IP</span><span class="p">)</span>
+<a name="line-193"></a>	<span class="p">{</span>
+<a name="line-194"></a>		<span class="n">ip_event_got_ip_t</span><span class="o">*</span> <span class="n">event</span> <span class="o">=</span> <span class="p">(</span><span class="n">ip_event_got_ip_t</span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
+<a name="line-195"></a>		<span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;got ip:&quot;</span> <span class="n">IPSTR</span><span class="p">,</span> <span class="n">IP2STR</span><span class="p">(</span><span class="o">&amp;</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">ip_info</span><span class="p">.</span><span class="n">ip</span><span class="p">));</span>
+<a name="line-196"></a>		<span class="n">s_retry_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<a name="line-197"></a>		<span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="line-198"></a>		<span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<a name="line-199"></a>	<span class="p">}</span>
+<a name="line-200"></a><span class="cp">#endif</span>
+<a name="line-201"></a><span class="p">}</span>
 </pre></div>
 </td></tr></table>
       </div>
