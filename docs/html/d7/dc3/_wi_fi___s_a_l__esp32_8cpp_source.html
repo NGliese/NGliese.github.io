@@ -171,11 +171,11 @@ $(document).ready(function(){initNavTree('d7/dc3/_wi_fi___s_a_l__esp32_8cpp_sour
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    wifi_config_t wifi_config;</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    ::memcpy(wifi_config.sta.ssid, <a class="code" href="../../db/d7f/class_wi_fi_base.html#a7a4cc8effcbb1d04c8300cd072037d77">m_ssid</a>.data(), <a class="code" href="../../db/d7f/class_wi_fi_base.html#a7a4cc8effcbb1d04c8300cd072037d77">m_ssid</a>.size());</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ::memcpy(wifi_config.sta.password, <a class="code" href="../../db/d7f/class_wi_fi_base.html#ac22f08d324fd7eac5e8a7e5e3e9d3987">m_pwd</a>.data(), <a class="code" href="../../db/d7f/class_wi_fi_base.html#ac22f08d324fd7eac5e8a7e5e3e9d3987">m_pwd</a>.size());</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="comment">//  ::memcpy(wifi_config.sta.ssid, m_ssid.data(), m_ssid.size());</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">//  ::memcpy(wifi_config.sta.password, m_pwd.data(), m_pwd.size());</span></div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// wifi_config.sta.ssid = m_ssid.c_str();</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="comment">// wifi_config.sta.password = m_pwd.c_str();</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    wifi_config.sta.ssid = <span class="stringliteral">&quot;Drone01_2g&quot;</span>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    wifi_config.sta.password = <span class="stringliteral">&quot;14Louise&quot;</span>;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">//  wifi_config.sta.threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD;</span></div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    ESP_ERROR_CHECK(esp_wifi_set_mode(WIFI_MODE_STA));</div>
@@ -289,7 +289,6 @@ $(document).ready(function(){initNavTree('d7/dc3/_wi_fi___s_a_l__esp32_8cpp_sour
 <div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;<span class="preprocessor">}</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclass_wi_fi_base_html_ac22f08d324fd7eac5e8a7e5e3e9d3987"><div class="ttname"><a href="../../db/d7f/class_wi_fi_base.html#ac22f08d324fd7eac5e8a7e5e3e9d3987">WiFiBase::m_pwd</a></div><div class="ttdeci">const std::string m_pwd</div><div class="ttdef"><b>Definition:</b> <a href="../../d9/de4/_wi_fi_base_8hpp_source.html#l00059">WiFiBase.hpp:59</a></div></div>
 <div class="ttc" id="a_wi_fi___s_a_l__esp32_8cpp_html_a5a58d75a1848031df9472040fcfeed0d"><div class="ttname"><a href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a5a58d75a1848031df9472040fcfeed0d">MAXIMUM_RETRY</a></div><div class="ttdeci">constexpr int MAXIMUM_RETRY</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp_source.html#l00028">WiFi_SAL_esp32.cpp:28</a></div></div>
 <div class="ttc" id="a_wi_fi___s_a_l__esp32_8cpp_html_ae4da33fdcdaa6688ed25dab508ed5592"><div class="ttname"><a href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a></div><div class="ttdeci">static int s_retry_num</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp_source.html#l00027">WiFi_SAL_esp32.cpp:27</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533ea15523e895b8d5bfc3a8a2a7e5c8dfdb1"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea15523e895b8d5bfc3a8a2a7e5c8dfdb1">GE_FAIL</a></div><div class="ttdeci">@ GE_FAIL</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00069">General_Error.hpp:69</a></div></div>
