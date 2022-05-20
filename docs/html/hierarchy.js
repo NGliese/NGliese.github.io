@@ -58,8 +58,8 @@ var hierarchy =
     [ "msg_control_t", "db/d90/_message___protocol_8hpp.html#d6/d3f/structmsg__control__t", null ],
     [ "msg_data_t", "db/d90/_message___protocol_8hpp.html#d2/d7f/structmsg__data__t", null ],
     [ "QueryMessageBase< T >::msg_data_t", "d2/d8d/class_query_message_base.html#d4/df2/struct_query_message_base_1_1msg__data__t", null ],
-    [ "FaultHandler_n::msg_t", "d1/d27/namespace_fault_handler__n.html#d5/de9/struct_fault_handler__n_1_1msg__t", null ],
     [ "Logger::msg_t", "d3/d42/class_logger.html#db/dbb/struct_logger_1_1msg__t", null ],
+    [ "FaultHandler_n::msg_t", "d1/d27/namespace_fault_handler__n.html#d5/de9/struct_fault_handler__n_1_1msg__t", null ],
     [ "NVS< NVS_HAL >", "d2/dc1/class_n_v_s.html", null ],
     [ "NVS_esp32", "d9/d68/class_n_v_s__esp32.html", null ],
     [ "NVS_MOCK", "d3/d16/class_n_v_s___m_o_c_k.html", null ],
@@ -124,6 +124,5 @@ var hierarchy =
     [ "Watchdog_Base< uint32_t >", "da/d60/class_watchdog___base.html", [
       [ "Watch_Clock", "d1/dc6/class_watch___clock.html", null ]
     ] ],
-    [ "WiFi_API", "d0/de8/class_wi_fi___a_p_i.html", null ],
-    [ "wifi_conf_t", "de/d7c/_wi_fi___a_p_i_8hpp.html#db/d38/structwifi__conf__t", null ]
+    [ "wifi_conf_t", "db/def/_wi_fi___s_a_l__esp32_8hpp.html#db/d38/structwifi__conf__t", null ]
 ];

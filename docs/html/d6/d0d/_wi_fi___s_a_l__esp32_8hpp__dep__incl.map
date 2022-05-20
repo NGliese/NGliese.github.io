@@ -1,5 +1,10 @@
 <map id="Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" name="Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="107,5,281,61"/>
+<area shape="rect" id="node1" title=" " alt="" coords="208,5,383,61"/>
 <area shape="rect" id="node2" href="$d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html" title=" " alt="" coords="5,109,180,165"/>
 <area shape="rect" id="node3" href="$d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html" title=" " alt="" coords="204,109,387,165"/>
+<area shape="rect" id="node4" href="$d0/d6a/_maintainer_8hpp.html" title=" " alt="" coords="411,109,569,165"/>
+<area shape="rect" id="node5" href="$dd/ddd/_maintainer_8cpp.html" title=" " alt="" coords="169,221,387,262"/>
+<area shape="rect" id="node6" href="$d8/d4a/maintainer__test_8cpp.html" title=" " alt="" coords="411,213,569,269"/>
+<area shape="rect" id="node7" href="$dd/d82/_active_current_sensor_8hpp.html" title=" " alt="" coords="593,213,790,269"/>
+<area shape="rect" id="node8" href="$d2/d77/_active_current_sensor_8cpp.html" title=" " alt="" coords="576,317,807,373"/>
 </map>

@@ -81,8 +81,7 @@ var annotated_dup =
     [ "Watch_Clock", "d1/dc6/class_watch___clock.html", "d1/dc6/class_watch___clock" ],
     [ "Watchdog_Base", "da/d60/class_watchdog___base.html", "da/d60/class_watchdog___base" ],
     [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", "d6/da4/class_water_estimator___service" ],
-    [ "WiFi_API", "d0/de8/class_wi_fi___a_p_i.html", "d0/de8/class_wi_fi___a_p_i" ],
-    [ "wifi_conf_t", "de/d7c/_wi_fi___a_p_i_8hpp.html#db/d38/structwifi__conf__t", "de/d7c/_wi_fi___a_p_i_8hpp_db/d38/structwifi__conf__t" ],
+    [ "wifi_conf_t", "db/def/_wi_fi___s_a_l__esp32_8hpp.html#db/d38/structwifi__conf__t", "db/def/_wi_fi___s_a_l__esp32_8hpp_db/d38/structwifi__conf__t" ],
     [ "WiFi_SAL_esp32", "d5/db4/class_wi_fi___s_a_l__esp32.html", "d5/db4/class_wi_fi___s_a_l__esp32" ],
     [ "WiFiBase", "db/d7f/class_wi_fi_base.html", "db/d7f/class_wi_fi_base" ]
 ];

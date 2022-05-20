@@ -133,11 +133,11 @@
   </head>
   <body onload="init_expandables()">
       <div id="header">
-        <h1>Cppcheck report - [project name]: /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFiEventHandler.cpp </h1>
+        <h1>Cppcheck report - [project name]: /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp </h1>
       </div>
       <div id="menu" dir="rtl">
-       <p id="filename"><a href="index.html">Defects:</a> WiFiEventHandler.cpp</p>
-<a href='7.html#line-32'> cstyleCast 32</a><a href='7.html#line-82'> duplicateBreak 82</a>
+       <p id="filename"><a href="index.html">Defects:</a> WiFi_SAL_esp32.cpp</p>
+<a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-33'> uninitMemberVar 33</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-48'> uninitMemberVar 48</a><a href='7.html#line-100'> knownConditionTrueFalse 100</a>
       </div>
       <div id="content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
@@ -314,365 +314,181 @@
 172
 173
 174
-175
-176
-177
-178
-179
-180
-181
-182
-183
-184
-185
-186
-187
-188
-189
-190
-191
-192
-193
-194
-195
-196
-197
-198
-199
-200
-201
-202
-203
-204
-205
-206
-207
-208
-209
-210
-211
-212
-213
-214
-215
-216
-217
-218
-219
-220
-221
-222
-223
-224
-225
-226
-227
-228
-229
-230
-231
-232
-233
-234
-235
-236
-237
-238
-239
-240
-241
-242
-243
-244
-245
-246
-247
-248
-249
-250
-251
-252
-253
-254
-255
-256
-257
-258
-259
-260
-261
-262
-263
-264
-265
-266
-267</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/*</span>
-<a name="line-2"></a><span class="cm"> * WiFiEventHandler.cpp</span>
-<a name="line-3"></a><span class="cm"> *</span>
-<a name="line-4"></a><span class="cm"> *  Created on: Feb 25, 2017</span>
-<a name="line-5"></a><span class="cm"> *      Author: kolban</span>
-<a name="line-6"></a><span class="cm"> */</span>
-<a name="line-7"></a>
-<a name="line-8"></a><span class="cp">#include</span> <span class="cpf">&quot;../include/WiFiEventHandler.h&quot;</span><span class="cp"></span>
-<a name="line-9"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-10"></a><span class="cp">#include</span> <span class="cpf">&quot;sdkconfig.h&quot;</span><span class="cp"></span>
-<a name="line-11"></a><span class="cp">#include</span> <span class="cpf">&lt;esp_err.h&gt;</span><span class="cp"></span>
-<a name="line-12"></a><span class="cp">#include</span> <span class="cpf">&lt;esp_event.h&gt;</span><span class="cp"></span>
-<a name="line-13"></a><span class="cp">#include</span> <span class="cpf">&lt;esp_event_loop.h&gt;</span><span class="cp"></span>
-<a name="line-14"></a><span class="cp">#include</span> <span class="cpf">&lt;esp_log.h&gt;</span><span class="cp"></span>
-<a name="line-15"></a><span class="cp">#include</span> <span class="cpf">&lt;esp_wifi.h&gt;</span><span class="cp"></span>
-<a name="line-16"></a>
-<a name="line-17"></a><span class="k">static</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">LOG_TAG</span> <span class="o">=</span> <span class="s">&quot;WiFiEventHandler&quot;</span><span class="p">;</span>
-<a name="line-18"></a>
-<a name="line-19"></a><span class="cm">/**</span>
-<a name="line-20"></a><span class="cm"> * @brief The entry point into the event handler.</span>
-<a name="line-21"></a><span class="cm"> * Examine the event passed into the handler controller by the WiFi subsystem and invoke</span>
-<a name="line-22"></a><span class="cm"> * the corresponding handler.</span>
-<a name="line-23"></a><span class="cm"> * @param [in] ctx</span>
-<a name="line-24"></a><span class="cm"> * @param [in] event</span>
-<a name="line-25"></a><span class="cm"> * @return ESP_OK if the event was handled otherwise an error.</span>
-<a name="line-26"></a><span class="cm"> */</span>
-<a name="line-27"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">eventHandler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">ctx</span><span class="p">,</span> <span class="n">system_event_t</span><span class="o">*</span> <span class="n">event</span><span class="p">)</span>
-<a name="line-28"></a><span class="p">{</span>
-<a name="line-29"></a>	<span class="c1">// #lizard forgives the complexity</span>
-<a name="line-30"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&gt;&gt; eventHandler called: ctx=0x%x, event=0x%x&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">ctx</span><span class="p">,</span>
-<a name="line-31"></a>			 <span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">event</span><span class="p">);</span>
-<a name="line-32"></a><span class="hll">	<span class="n">WiFiEventHandler</span><span class="o">*</span> <span class="n">pWiFiEventHandler</span> <span class="o">=</span> <span class="p">(</span><span class="n">WiFiEventHandler</span><span class="o">*</span><span class="p">)</span><span class="n">ctx</span><span class="p">;</span><div class='verbose expandable'><span class='error2'>&lt;--- C-style pointer casting <span class='marker'>[+]</span></span><div class='content'>C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts.</div></div>
-</span><a name="line-33"></a>	<span class="k">if</span><span class="p">(</span><span class="n">ctx</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span>
-<a name="line-34"></a>	<span class="p">{</span>
-<a name="line-35"></a>		<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;No context&quot;</span><span class="p">);</span>
-<a name="line-36"></a>		<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-37"></a>	<span class="p">}</span>
-<a name="line-38"></a>
-<a name="line-39"></a>	<span class="n">esp_err_t</span> <span class="n">rc</span> <span class="o">=</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-40"></a>	<span class="k">switch</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">event_id</span><span class="p">)</span>
-<a name="line-41"></a>	<span class="p">{</span>
-<a name="line-42"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_AP_START</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-43"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">apStart</span><span class="p">();</span>
-<a name="line-44"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-45"></a>		<span class="p">}</span>
-<a name="line-46"></a>
-<a name="line-47"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_AP_STOP</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-48"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">apStop</span><span class="p">();</span>
-<a name="line-49"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-50"></a>		<span class="p">}</span>
-<a name="line-51"></a>
-<a name="line-52"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_AP_STACONNECTED</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-53"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">apStaConnected</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">event_info</span><span class="p">.</span><span class="n">sta_connected</span><span class="p">);</span>
-<a name="line-54"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-55"></a>		<span class="p">}</span>
-<a name="line-56"></a>
-<a name="line-57"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_AP_STADISCONNECTED</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-58"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">apStaDisconnected</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">event_info</span><span class="p">.</span><span class="n">sta_disconnected</span><span class="p">);</span>
-<a name="line-59"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-60"></a>		<span class="p">}</span>
+175</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/***********************************************************************************************+</span>
+<a name="line-2"></a><span class="cm"> *  \brief      BRIEF TEXT</span>
+<a name="line-3"></a><span class="cm"> *  \par</span>
+<a name="line-4"></a><span class="cm"> *  \par        @DETAILS</span>
+<a name="line-5"></a><span class="cm"> *</span>
+<a name="line-6"></a><span class="cm"> *</span>
+<a name="line-7"></a><span class="cm"> *  \li         LIMITATION-TO-CLASS</span>
+<a name="line-8"></a><span class="cm"> *  \li         LIMITATION-TO-CLASS</span>
+<a name="line-9"></a><span class="cm"> *</span>
+<a name="line-10"></a><span class="cm"> *  \note       ANY RELEVANT NOTES</span>
+<a name="line-11"></a><span class="cm"> *</span>
+<a name="line-12"></a><span class="cm"> *  \file       WiFi_SAL_esp32.cpp</span>
+<a name="line-13"></a><span class="cm"> *  \author     N.G Pedersen &lt;nikolajgliese@tutanota.com&gt;</span>
+<a name="line-14"></a><span class="cm"> *  \version    1.0</span>
+<a name="line-15"></a><span class="cm"> *  \date       2022</span>
+<a name="line-16"></a><span class="cm"> *  \copyright  --</span>
+<a name="line-17"></a><span class="cm"> *</span>
+<a name="line-18"></a><span class="cm"> *</span>
+<a name="line-19"></a><span class="cm"> ***********************************************************************************************/</span>
+<a name="line-20"></a>
+<a name="line-21"></a><span class="cp">#include</span> <span class="cpf">&quot;../include/WiFi_SAL_esp32.hpp&quot;</span><span class="cp"></span>
+<a name="line-22"></a>
+<a name="line-23"></a><span class="c1">//#define DEBUG // default uncommeted</span>
+<a name="line-24"></a>
+<a name="line-25"></a><span class="k">static</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">LOG_TAG</span> <span class="o">=</span> <span class="s">&quot;WiFi_SAL_esp32&quot;</span><span class="p">;</span>
+<a name="line-26"></a>
+<a name="line-27"></a><span class="k">static</span> <span class="kt">int</span> <span class="n">s_retry_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<a name="line-28"></a><span class="k">constexpr</span> <span class="kt">int</span> <span class="n">MAXIMUM_RETRY</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+<a name="line-29"></a>
+<a name="line-30"></a><span class="k">static</span> <span class="kt">bool</span> <span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<a name="line-31"></a><span class="k">static</span> <span class="kt">bool</span> <span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<a name="line-32"></a>
+<a name="line-33"></a><span class="hll"><span class="n">WiFi_SAL_esp32</span><span class="o">::</span><span class="n">WiFi_SAL_esp32</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ssid</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">pwd</span><span class="p">)</span><span class='error2'>&lt;--- Member variable 'WiFi_SAL_esp32::instance_any_id' is not initialized in the constructor.</span><span class='error2'>&lt;--- Member variable 'WiFi_SAL_esp32::instance_got_ip' is not initialized in the constructor.</span><span class='error2'>&lt;--- Member variable 'WiFi_SAL_esp32::m_cfg' is not initialized in the constructor.</span>
+</span><a name="line-34"></a>	<span class="o">:</span> <span class="n">WiFiBase</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">pwd</span><span class="p">)</span>
+<a name="line-35"></a><span class="p">{</span>
+<a name="line-36"></a><span class="cp">#ifdef __ESP32__</span>
+<a name="line-37"></a>	<span class="c1">// Initialize NVS</span>
+<a name="line-38"></a>	<span class="n">esp_err_t</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">nvs_flash_init</span><span class="p">();</span>
+<a name="line-39"></a>	<span class="k">if</span><span class="p">(</span><span class="n">ret</span> <span class="o">==</span> <span class="n">ESP_ERR_NVS_NO_FREE_PAGES</span> <span class="o">||</span> <span class="n">ret</span> <span class="o">==</span> <span class="n">ESP_ERR_NVS_NEW_VERSION_FOUND</span><span class="p">)</span>
+<a name="line-40"></a>	<span class="p">{</span>
+<a name="line-41"></a>		<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">nvs_flash_erase</span><span class="p">());</span>
+<a name="line-42"></a>		<span class="n">ret</span> <span class="o">=</span> <span class="n">nvs_flash_init</span><span class="p">();</span>
+<a name="line-43"></a>	<span class="p">}</span>
+<a name="line-44"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">);</span>
+<a name="line-45"></a><span class="cp">#endif</span>
+<a name="line-46"></a><span class="p">}</span>
+<a name="line-47"></a>
+<a name="line-48"></a><span class="hll"><span class="n">WiFi_SAL_esp32</span><span class="o">::</span><span class="n">WiFi_SAL_esp32</span><span class="p">(</span><span class="k">const</span> <span class="n">wifi_conf_t</span><span class="o">&amp;</span> <span class="n">config</span><span class="p">)</span> <span class="o">:</span> <span class="n">WiFiBase</span><span class="p">(</span><span class="n">config</span><span class="p">.</span><span class="n">ssid</span><span class="p">,</span> <span class="n">config</span><span class="p">.</span><span class="n">password</span><span class="p">)</span><span class='error2'>&lt;--- Member variable 'WiFi_SAL_esp32::instance_any_id' is not initialized in the constructor.</span><span class='error2'>&lt;--- Member variable 'WiFi_SAL_esp32::instance_got_ip' is not initialized in the constructor.</span><span class='error2'>&lt;--- Member variable 'WiFi_SAL_esp32::m_cfg' is not initialized in the constructor.</span>
+</span><a name="line-49"></a><span class="p">{</span>
+<a name="line-50"></a><span class="cp">#ifdef __ESP32__</span>
+<a name="line-51"></a>	<span class="c1">// Initialize NVS</span>
+<a name="line-52"></a>	<span class="n">esp_err_t</span> <span class="n">ret</span> <span class="o">=</span> <span class="n">nvs_flash_init</span><span class="p">();</span>
+<a name="line-53"></a>	<span class="k">if</span><span class="p">(</span><span class="n">ret</span> <span class="o">==</span> <span class="n">ESP_ERR_NVS_NO_FREE_PAGES</span> <span class="o">||</span> <span class="n">ret</span> <span class="o">==</span> <span class="n">ESP_ERR_NVS_NEW_VERSION_FOUND</span><span class="p">)</span>
+<a name="line-54"></a>	<span class="p">{</span>
+<a name="line-55"></a>		<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">nvs_flash_erase</span><span class="p">());</span>
+<a name="line-56"></a>		<span class="n">ret</span> <span class="o">=</span> <span class="n">nvs_flash_init</span><span class="p">();</span>
+<a name="line-57"></a>	<span class="p">}</span>
+<a name="line-58"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">ret</span><span class="p">);</span>
+<a name="line-59"></a><span class="cp">#endif</span>
+<a name="line-60"></a><span class="p">}</span>
 <a name="line-61"></a>
-<a name="line-62"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_SCAN_DONE</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-63"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">staScanDone</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">event_info</span><span class="p">.</span><span class="n">scan_done</span><span class="p">);</span>
-<a name="line-64"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-65"></a>		<span class="p">}</span>
-<a name="line-66"></a>
-<a name="line-67"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_STA_AUTHMODE_CHANGE</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-68"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">staAuthChange</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">event_info</span><span class="p">.</span><span class="n">auth_change</span><span class="p">);</span>
-<a name="line-69"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-70"></a>		<span class="p">}</span>
-<a name="line-71"></a>
-<a name="line-72"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_STA_CONNECTED</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-73"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">staConnected</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">event_info</span><span class="p">.</span><span class="n">connected</span><span class="p">);</span>
-<a name="line-74"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-75"></a>		<span class="p">}</span>
-<a name="line-76"></a>
-<a name="line-77"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_STA_DISCONNECTED</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-78"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">staDisconnected</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">event_info</span><span class="p">.</span><span class="n">disconnected</span><span class="p">);</span>
-<a name="line-79"></a>			<span class="c1">// wait 10 sec, then exit program</span>
-<a name="line-80"></a>			<span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
-<a name="line-81"></a>			<span class="n">exit</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">);</span>
-<a name="line-82"></a><span class="hll">			<span class="k">break</span><span class="p">;</span><div class='verbose expandable'><span class='error2'>&lt;--- Consecutive return, break, continue, goto or throw statements are unnecessary. <span class='marker'>[+]</span></span><div class='content'>Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed.</div></div>
-</span><a name="line-83"></a>		<span class="p">}</span>
-<a name="line-84"></a>
-<a name="line-85"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_STA_GOT_IP</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-86"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">staGotIp</span><span class="p">(</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">event_info</span><span class="p">.</span><span class="n">got_ip</span><span class="p">);</span>
-<a name="line-87"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-88"></a>		<span class="p">}</span>
-<a name="line-89"></a>
-<a name="line-90"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_STA_START</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-91"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">staStart</span><span class="p">();</span>
-<a name="line-92"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-93"></a>		<span class="p">}</span>
-<a name="line-94"></a>
-<a name="line-95"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_STA_STOP</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-96"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">staStop</span><span class="p">();</span>
-<a name="line-97"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-98"></a>		<span class="p">}</span>
+<a name="line-62"></a><span class="n">WiFi_SAL_esp32</span><span class="o">::~</span><span class="n">WiFi_SAL_esp32</span><span class="p">()</span> <span class="p">{}</span>
+<a name="line-63"></a>
+<a name="line-64"></a><span class="n">general_err_t</span> <span class="n">WiFi_SAL_esp32</span><span class="o">::</span><span class="n">connect</span><span class="p">()</span>
+<a name="line-65"></a><span class="p">{</span>
+<a name="line-66"></a><span class="cp">#ifdef DEBUG</span>
+<a name="line-67"></a>	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &gt;&gt; WiFi_SAL_esp32::connect &gt;&gt; </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-68"></a><span class="cp">#endif</span>
+<a name="line-69"></a>	<span class="c1">// do magic</span>
+<a name="line-70"></a><span class="cp">#ifdef __ESP32__</span>
+<a name="line-71"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_netif_init</span><span class="p">());</span>
+<a name="line-72"></a>
+<a name="line-73"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_loop_create_default</span><span class="p">());</span>
+<a name="line-74"></a>	<span class="n">esp_netif_create_default_wifi_sta</span><span class="p">();</span>
+<a name="line-75"></a>
+<a name="line-76"></a>	<span class="n">m_cfg</span> <span class="o">=</span> <span class="n">WIFI_INIT_CONFIG_DEFAULT</span><span class="p">();</span>
+<a name="line-77"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">m_cfg</span><span class="p">));</span>
+<a name="line-78"></a>
+<a name="line-79"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_handler_instance_register</span><span class="p">(</span><span class="n">WIFI_EVENT</span><span class="p">,</span> <span class="n">ESP_EVENT_ANY_ID</span><span class="p">,</span>
+<a name="line-80"></a>														<span class="o">&amp;</span><span class="n">event_handler</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">instance_any_id</span><span class="p">));</span>
+<a name="line-81"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_event_handler_instance_register</span><span class="p">(</span><span class="n">IP_EVENT</span><span class="p">,</span> <span class="n">IP_EVENT_STA_GOT_IP</span><span class="p">,</span>
+<a name="line-82"></a>														<span class="o">&amp;</span><span class="n">event_handler</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">instance_got_ip</span><span class="p">));</span>
+<a name="line-83"></a>
+<a name="line-84"></a>	<span class="n">wifi_config_t</span> <span class="n">wifi_config</span><span class="p">;</span>
+<a name="line-85"></a>
+<a name="line-86"></a>	<span class="o">::</span><span class="n">memcpy</span><span class="p">(</span><span class="n">wifi_config</span><span class="p">.</span><span class="n">sta</span><span class="p">.</span><span class="n">ssid</span><span class="p">,</span> <span class="n">m_ssid</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">m_ssid</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+<a name="line-87"></a>	<span class="o">::</span><span class="n">memcpy</span><span class="p">(</span><span class="n">wifi_config</span><span class="p">.</span><span class="n">sta</span><span class="p">.</span><span class="n">password</span><span class="p">,</span> <span class="n">m_pwd</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">m_pwd</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+<a name="line-88"></a>
+<a name="line-89"></a>	<span class="c1">// wifi_config.sta.ssid = m_ssid.c_str();</span>
+<a name="line-90"></a>	<span class="c1">// wifi_config.sta.password = m_pwd.c_str();</span>
+<a name="line-91"></a>	<span class="c1">//	wifi_config.sta.threshold.authmode = ESP_WIFI_SCAN_AUTH_MODE_THRESHOLD;</span>
+<a name="line-92"></a>
+<a name="line-93"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_STA</span><span class="p">));</span>
+<a name="line-94"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">WIFI_IF_STA</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">wifi_config</span><span class="p">));</span>
+<a name="line-95"></a>	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; start WiFi .. </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-96"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="n">esp_wifi_start</span><span class="p">());</span>
+<a name="line-97"></a>
+<a name="line-98"></a><span class="cp">#endif</span>
 <a name="line-99"></a>
-<a name="line-100"></a>		<span class="k">case</span> <span class="nl">SYSTEM_EVENT_WIFI_READY</span><span class="p">:</span> <span class="p">{</span>
-<a name="line-101"></a>			<span class="n">rc</span> <span class="o">=</span> <span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">wifiReady</span><span class="p">();</span>
-<a name="line-102"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-103"></a>		<span class="p">}</span>
-<a name="line-104"></a>
-<a name="line-105"></a>		<span class="k">default</span><span class="o">:</span>
-<a name="line-106"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-107"></a>	<span class="p">}</span>
-<a name="line-108"></a>
-<a name="line-109"></a>	<span class="k">if</span><span class="p">(</span><span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">m_nextHandler</span> <span class="o">!=</span> <span class="k">nullptr</span><span class="p">)</span>
-<a name="line-110"></a>	<span class="p">{</span>
-<a name="line-111"></a>		<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;Found a next handler&quot;</span><span class="p">);</span>
-<a name="line-112"></a>		<span class="n">rc</span> <span class="o">=</span> <span class="n">eventHandler</span><span class="p">(</span><span class="n">pWiFiEventHandler</span><span class="o">-&gt;</span><span class="n">m_nextHandler</span><span class="p">,</span> <span class="n">event</span><span class="p">);</span>
-<a name="line-113"></a>	<span class="p">}</span>
-<a name="line-114"></a>	<span class="k">else</span>
-<a name="line-115"></a>	<span class="p">{</span>
-<a name="line-116"></a>		<span class="c1">// ESP_LOGD(LOG_TAG, &quot;NOT Found a next handler&quot;);</span>
-<a name="line-117"></a>	<span class="p">}</span>
-<a name="line-118"></a>	<span class="k">return</span> <span class="n">rc</span><span class="p">;</span>
-<a name="line-119"></a><span class="p">}</span> <span class="c1">// eventHandler</span>
-<a name="line-120"></a>
-<a name="line-121"></a><span class="cm">/**</span>
-<a name="line-122"></a><span class="cm"> * @brief Constructor</span>
-<a name="line-123"></a><span class="cm"> */</span>
-<a name="line-124"></a><span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">WiFiEventHandler</span><span class="p">()</span>
-<a name="line-125"></a><span class="p">{</span>
-<a name="line-126"></a>	<span class="n">m_nextHandler</span> <span class="o">=</span> <span class="k">nullptr</span><span class="p">;</span>
-<a name="line-127"></a><span class="p">}</span> <span class="c1">// WiFiEventHandler</span>
-<a name="line-128"></a>
-<a name="line-129"></a><span class="cm">/**</span>
-<a name="line-130"></a><span class="cm"> * @brief Get the event handler.</span>
-<a name="line-131"></a><span class="cm"> * Retrieve the event handler function to be passed to the ESP-IDF event handler system.</span>
-<a name="line-132"></a><span class="cm"> * @return The event handler function.</span>
-<a name="line-133"></a><span class="cm"> */</span>
-<a name="line-134"></a><span class="n">system_event_cb_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">getEventHandler</span><span class="p">()</span>
-<a name="line-135"></a><span class="p">{</span>
-<a name="line-136"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&gt;&gt; getEventHandler()&quot;</span><span class="p">);</span>
-<a name="line-137"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&lt;&lt; getEventHandler: 0x%x&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">eventHandler</span><span class="p">);</span>
-<a name="line-138"></a>	<span class="k">return</span> <span class="n">eventHandler</span><span class="p">;</span>
-<a name="line-139"></a><span class="p">}</span> <span class="c1">// getEventHandler</span>
+<a name="line-100"></a><span class="hll">	<span class="k">while</span><span class="p">(</span><span class="o">!</span><span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="n">or</span> <span class="o">!</span><span class="n">WIFI_CONNECTION_FAIL</span><span class="p">)</span><span class='error2'>&lt;--- Condition '!WIFI_CONNECTION_FAIL' is always true</span>
+</span><a name="line-101"></a>	<span class="p">{</span>
+<a name="line-102"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;waiting for wifi ... </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-103"></a>		<span class="n">Timeservice</span><span class="o">::</span><span class="n">wait_sec</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span>
+<a name="line-104"></a>	<span class="p">}</span>
+<a name="line-105"></a>	<span class="k">if</span><span class="p">(</span><span class="n">WIFI_CONNECTION_SUCCESS</span><span class="p">)</span>
+<a name="line-106"></a>	<span class="p">{</span>
+<a name="line-107"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; we have sucessfully connected to wifi! </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-108"></a><span class="cp">#ifdef __ESP32__</span>
+<a name="line-109"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;wifi info : </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-110"></a>		<span class="n">wifi_ap_record_t</span> <span class="n">ap_info</span><span class="p">;</span>
+<a name="line-111"></a>		<span class="n">esp_wifi_sta_get_ap_info</span><span class="p">(</span><span class="o">&amp;</span><span class="n">ap_info</span><span class="p">);</span>
+<a name="line-112"></a>
+<a name="line-113"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; RSSI valus for &lt;&quot;</span> <span class="o">&lt;&lt;</span> <span class="n">m_ssid</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;&gt; is : &quot;</span> <span class="o">&lt;&lt;</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">ap_info</span><span class="p">.</span><span class="n">rssi</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-114"></a><span class="cp">#endif</span>
+<a name="line-115"></a>		<span class="k">return</span> <span class="n">GE_OK</span><span class="p">;</span>
+<a name="line-116"></a>	<span class="p">}</span>
+<a name="line-117"></a>	<span class="k">else</span>
+<a name="line-118"></a>	<span class="p">{</span>
+<a name="line-119"></a>		<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot;we failed to connect to wifi ... </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-120"></a>		<span class="k">return</span> <span class="n">GE_FAIL</span><span class="p">;</span>
+<a name="line-121"></a>	<span class="p">}</span>
+<a name="line-122"></a>
+<a name="line-123"></a><span class="cp">#ifdef DEBUG</span>
+<a name="line-124"></a>	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &lt;&lt; WiFi_SAL_esp32::connect &lt;&lt; </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-125"></a><span class="cp">#endif</span>
+<a name="line-126"></a>
+<a name="line-127"></a>	<span class="k">return</span> <span class="n">GE_OK</span><span class="p">;</span>
+<a name="line-128"></a><span class="p">}</span>
+<a name="line-129"></a>
+<a name="line-130"></a><span class="n">general_err_t</span> <span class="n">WiFi_SAL_esp32</span><span class="o">::</span><span class="n">disconnect</span><span class="p">()</span>
+<a name="line-131"></a><span class="p">{</span>
+<a name="line-132"></a><span class="cp">#ifdef DEBUG</span>
+<a name="line-133"></a>	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &gt;&gt; WiFi_SAL_esp32::disconnect &gt;&gt; </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-134"></a><span class="cp">#endif</span>
+<a name="line-135"></a>	<span class="c1">// do magic</span>
+<a name="line-136"></a>
+<a name="line-137"></a><span class="cp">#ifdef DEBUG</span>
+<a name="line-138"></a>	<span class="n">std</span><span class="o">::</span><span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="s">&quot; &lt;&lt; WiFi_SAL_esp32::disconnect &lt;&lt; </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">;</span>
+<a name="line-139"></a><span class="cp">#endif</span>
 <a name="line-140"></a>
-<a name="line-141"></a><span class="cm">/**</span>
-<a name="line-142"></a><span class="cm"> * @brief Handle the Station Got IP event.</span>
-<a name="line-143"></a><span class="cm"> * Handle having received/assigned an IP address when we are a station.</span>
-<a name="line-144"></a><span class="cm"> * @param [in] event_sta_got_ip The Station Got IP event.</span>
-<a name="line-145"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-146"></a><span class="cm"> */</span>
-<a name="line-147"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">staGotIp</span><span class="p">(</span><span class="n">system_event_sta_got_ip_t</span> <span class="n">info</span><span class="p">)</span>
-<a name="line-148"></a><span class="p">{</span>
-<a name="line-149"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default staGotIp&quot;</span><span class="p">);</span>
-<a name="line-150"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-151"></a><span class="p">}</span> <span class="c1">// staGotIp</span>
-<a name="line-152"></a>
-<a name="line-153"></a><span class="cm">/**</span>
-<a name="line-154"></a><span class="cm"> * @brief Handle the Access Point started event.</span>
-<a name="line-155"></a><span class="cm"> * Handle an indication that the ESP32 has started being an access point.</span>
-<a name="line-156"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-157"></a><span class="cm"> */</span>
-<a name="line-158"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">apStart</span><span class="p">()</span>
-<a name="line-159"></a><span class="p">{</span>
-<a name="line-160"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default apStart&quot;</span><span class="p">);</span>
-<a name="line-161"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-162"></a><span class="p">}</span> <span class="c1">// apStart</span>
-<a name="line-163"></a>
-<a name="line-164"></a><span class="cm">/**</span>
-<a name="line-165"></a><span class="cm"> * @brief Handle the Access Point stop event.</span>
-<a name="line-166"></a><span class="cm"> * Handle an indication that the ESP32 has stopped being an access point.</span>
-<a name="line-167"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-168"></a><span class="cm"> */</span>
-<a name="line-169"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">apStop</span><span class="p">()</span>
-<a name="line-170"></a><span class="p">{</span>
-<a name="line-171"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default apStop&quot;</span><span class="p">);</span>
-<a name="line-172"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-173"></a><span class="p">}</span> <span class="c1">// apStop</span>
-<a name="line-174"></a>
-<a name="line-175"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">wifiReady</span><span class="p">()</span>
-<a name="line-176"></a><span class="p">{</span>
-<a name="line-177"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default wifiReady&quot;</span><span class="p">);</span>
-<a name="line-178"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-179"></a><span class="p">}</span> <span class="c1">// wifiReady</span>
-<a name="line-180"></a>
-<a name="line-181"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">staStart</span><span class="p">()</span>
-<a name="line-182"></a><span class="p">{</span>
-<a name="line-183"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default staStart&quot;</span><span class="p">);</span>
-<a name="line-184"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-185"></a><span class="p">}</span> <span class="c1">// staStart</span>
-<a name="line-186"></a>
-<a name="line-187"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">staStop</span><span class="p">()</span>
-<a name="line-188"></a><span class="p">{</span>
-<a name="line-189"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default staStop&quot;</span><span class="p">);</span>
-<a name="line-190"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-191"></a><span class="p">}</span> <span class="c1">// staStop</span>
-<a name="line-192"></a>
-<a name="line-193"></a><span class="cm">/**</span>
-<a name="line-194"></a><span class="cm"> * @brief Handle the Station Connected event.</span>
-<a name="line-195"></a><span class="cm"> * Handle having connected to remote AP.</span>
-<a name="line-196"></a><span class="cm"> * @param [in] event_connected system_event_sta_connected_t.</span>
-<a name="line-197"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-198"></a><span class="cm"> */</span>
-<a name="line-199"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">staConnected</span><span class="p">(</span><span class="n">system_event_sta_connected_t</span> <span class="n">info</span><span class="p">)</span>
-<a name="line-200"></a><span class="p">{</span>
-<a name="line-201"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default staConnected&quot;</span><span class="p">);</span>
-<a name="line-202"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-203"></a><span class="p">}</span> <span class="c1">// staConnected</span>
-<a name="line-204"></a>
-<a name="line-205"></a><span class="cm">/**</span>
-<a name="line-206"></a><span class="cm"> * @brief Handle the Station Disconnected event.</span>
-<a name="line-207"></a><span class="cm"> * Handle having disconnected from remote AP.</span>
-<a name="line-208"></a><span class="cm"> * @param [in] event_disconnected system_event_sta_disconnected_t.</span>
-<a name="line-209"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-210"></a><span class="cm"> */</span>
-<a name="line-211"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">staDisconnected</span><span class="p">(</span><span class="n">system_event_sta_disconnected_t</span> <span class="n">info</span><span class="p">)</span>
-<a name="line-212"></a><span class="p">{</span>
-<a name="line-213"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default staDisconnected&quot;</span><span class="p">);</span>
-<a name="line-214"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-215"></a><span class="p">}</span> <span class="c1">// staDisconnected</span>
-<a name="line-216"></a>
-<a name="line-217"></a><span class="cm">/**</span>
-<a name="line-218"></a><span class="cm"> * @brief Handle a Station Connected to AP event.</span>
-<a name="line-219"></a><span class="cm"> * Handle having a station connected to ESP32 soft-AP.</span>
-<a name="line-220"></a><span class="cm"> * @param [in] event_sta_connected system_event_ap_staconnected_t.</span>
-<a name="line-221"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-222"></a><span class="cm"> */</span>
-<a name="line-223"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">apStaConnected</span><span class="p">(</span><span class="n">system_event_ap_staconnected_t</span> <span class="n">info</span><span class="p">)</span>
-<a name="line-224"></a><span class="p">{</span>
-<a name="line-225"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default apStaConnected&quot;</span><span class="p">);</span>
-<a name="line-226"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-227"></a><span class="p">}</span> <span class="c1">// apStaConnected</span>
-<a name="line-228"></a>
-<a name="line-229"></a><span class="cm">/**</span>
-<a name="line-230"></a><span class="cm"> * @brief Handle a Station Disconnected from AP event.</span>
-<a name="line-231"></a><span class="cm"> * Handle having a station disconnected from ESP32 soft-AP.</span>
-<a name="line-232"></a><span class="cm"> * @param [in] event_sta_disconnected system_event_ap_stadisconnected_t.</span>
-<a name="line-233"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-234"></a><span class="cm"> */</span>
-<a name="line-235"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">apStaDisconnected</span><span class="p">(</span><span class="n">system_event_ap_stadisconnected_t</span> <span class="n">info</span><span class="p">)</span>
-<a name="line-236"></a><span class="p">{</span>
-<a name="line-237"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default apStaDisconnected&quot;</span><span class="p">);</span>
-<a name="line-238"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-239"></a><span class="p">}</span> <span class="c1">// apStaDisconnected</span>
-<a name="line-240"></a>
-<a name="line-241"></a><span class="cm">/**</span>
-<a name="line-242"></a><span class="cm"> * @brief Handle a Scan for APs done event.</span>
-<a name="line-243"></a><span class="cm"> * Handle having an ESP32 station scan (APs) done.</span>
-<a name="line-244"></a><span class="cm"> * @param [in] event_scan_done system_event_sta_scan_done_t.</span>
-<a name="line-245"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-246"></a><span class="cm"> */</span>
-<a name="line-247"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">staScanDone</span><span class="p">(</span><span class="n">system_event_sta_scan_done_t</span> <span class="n">info</span><span class="p">)</span>
-<a name="line-248"></a><span class="p">{</span>
-<a name="line-249"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default staScanDone&quot;</span><span class="p">);</span>
-<a name="line-250"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-251"></a><span class="p">}</span> <span class="c1">// staScanDone</span>
-<a name="line-252"></a>
-<a name="line-253"></a><span class="cm">/**</span>
-<a name="line-254"></a><span class="cm"> * @brief Handle the auth mode of APs change event.</span>
-<a name="line-255"></a><span class="cm"> * Handle having the auth mode of AP ESP32 station connected to changed.</span>
-<a name="line-256"></a><span class="cm"> * @param [in] event_auth_change system_event_sta_authmode_change_t.</span>
-<a name="line-257"></a><span class="cm"> * @return An indication of whether or not we processed the event successfully.</span>
-<a name="line-258"></a><span class="cm"> */</span>
-<a name="line-259"></a><span class="n">esp_err_t</span> <span class="n">WiFiEventHandler</span><span class="o">::</span><span class="n">staAuthChange</span><span class="p">(</span><span class="n">system_event_sta_authmode_change_t</span> <span class="n">info</span><span class="p">)</span>
-<a name="line-260"></a><span class="p">{</span>
-<a name="line-261"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;default staAuthChange&quot;</span><span class="p">);</span>
-<a name="line-262"></a>	<span class="k">return</span> <span class="n">ESP_OK</span><span class="p">;</span>
-<a name="line-263"></a><span class="p">}</span> <span class="c1">// staAuthChange</span>
-<a name="line-264"></a>
-<a name="line-265"></a><span class="n">WiFiEventHandler</span><span class="o">::~</span><span class="n">WiFiEventHandler</span><span class="p">()</span> <span class="p">{}</span> <span class="c1">// ~WiFiEventHandler</span>
-<a name="line-266"></a>
-<a name="line-267"></a><span class="cp">#endif</span>
+<a name="line-141"></a>	<span class="k">return</span> <span class="n">GE_OK</span><span class="p">;</span>
+<a name="line-142"></a><span class="p">}</span>
+<a name="line-143"></a>
+<a name="line-144"></a><span class="kt">void</span> <span class="n">WiFi_SAL_esp32</span><span class="o">::</span><span class="n">event_handler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">arg</span><span class="p">,</span> <span class="n">esp_event_base_t</span> <span class="n">event_base</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">event_id</span><span class="p">,</span>
+<a name="line-145"></a>								   <span class="kt">void</span><span class="o">*</span> <span class="n">event_data</span><span class="p">)</span>
+<a name="line-146"></a><span class="p">{</span>
+<a name="line-147"></a><span class="cp">#ifdef __ESP32__</span>
+<a name="line-148"></a>	<span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">WIFI_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">WIFI_EVENT_STA_START</span><span class="p">)</span>
+<a name="line-149"></a>	<span class="p">{</span>
+<a name="line-150"></a>		<span class="n">esp_wifi_connect</span><span class="p">();</span>
+<a name="line-151"></a>	<span class="p">}</span>
+<a name="line-152"></a>	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">WIFI_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">WIFI_EVENT_STA_DISCONNECTED</span><span class="p">)</span>
+<a name="line-153"></a>	<span class="p">{</span>
+<a name="line-154"></a>		<span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<a name="line-155"></a>
+<a name="line-156"></a>		<span class="k">if</span><span class="p">(</span><span class="n">s_retry_num</span> <span class="o">&lt;</span> <span class="n">MAXIMUM_RETRY</span><span class="p">)</span>
+<a name="line-157"></a>		<span class="p">{</span>
+<a name="line-158"></a>			<span class="n">esp_wifi_connect</span><span class="p">();</span>
+<a name="line-159"></a>			<span class="n">s_retry_num</span><span class="o">++</span><span class="p">;</span>
+<a name="line-160"></a>		<span class="p">}</span>
+<a name="line-161"></a>		<span class="k">else</span>
+<a name="line-162"></a>		<span class="p">{</span>
+<a name="line-163"></a>			<span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="line-164"></a>		<span class="p">}</span>
+<a name="line-165"></a>	<span class="p">}</span>
+<a name="line-166"></a>	<span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="n">event_base</span> <span class="o">==</span> <span class="n">IP_EVENT</span> <span class="o">&amp;&amp;</span> <span class="n">event_id</span> <span class="o">==</span> <span class="n">IP_EVENT_STA_GOT_IP</span><span class="p">)</span>
+<a name="line-167"></a>	<span class="p">{</span>
+<a name="line-168"></a>		<span class="n">ip_event_got_ip_t</span><span class="o">*</span> <span class="n">event</span> <span class="o">=</span> <span class="p">(</span><span class="n">ip_event_got_ip_t</span><span class="o">*</span><span class="p">)</span><span class="n">event_data</span><span class="p">;</span>
+<a name="line-169"></a>		<span class="n">ESP_LOGI</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;got ip:&quot;</span> <span class="n">IPSTR</span><span class="p">,</span> <span class="n">IP2STR</span><span class="p">(</span><span class="o">&amp;</span><span class="n">event</span><span class="o">-&gt;</span><span class="n">ip_info</span><span class="p">.</span><span class="n">ip</span><span class="p">));</span>
+<a name="line-170"></a>		<span class="n">s_retry_num</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<a name="line-171"></a>		<span class="n">WIFI_CONNECTION_SUCCESS</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="line-172"></a>		<span class="n">WIFI_CONNECTION_FAIL</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+<a name="line-173"></a>	<span class="p">}</span>
+<a name="line-174"></a><span class="cp">#endif</span>
+<a name="line-175"></a><span class="p">}</span>
 </pre></div>
 </td></tr></table>
       </div>

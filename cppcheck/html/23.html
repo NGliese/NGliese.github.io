@@ -133,314 +133,192 @@
   </head>
   <body onload="init_expandables()">
       <div id="header">
-        <h1>Cppcheck report - [project name]: /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/include/mqtt_api_v2.hpp </h1>
+        <h1>Cppcheck report - [project name]: /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/include/WaterEstimator_Service.hpp </h1>
       </div>
       <div id="menu" dir="rtl">
-       <p id="filename"><a href="index.html">Defects:</a> mqtt_api_v2.hpp</p>
-<a href='23.html#line-113'> unusedPrivateFunction 113</a><a href='23.html#line-117'> unusedPrivateFunction 117</a>
+       <p id="filename"><a href="index.html">Defects:</a> WaterEstimator_Service.hpp</p>
+<a href='23.html#line-63'> missingOverride 63</a>
       </div>
       <div id="content">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
-  2
-  3
-  4
-  5
-  6
-  7
-  8
-  9
- 10
- 11
- 12
- 13
- 14
- 15
- 16
- 17
- 18
- 19
- 20
- 21
- 22
- 23
- 24
- 25
- 26
- 27
- 28
- 29
- 30
- 31
- 32
- 33
- 34
- 35
- 36
- 37
- 38
- 39
- 40
- 41
- 42
- 43
- 44
- 45
- 46
- 47
- 48
- 49
- 50
- 51
- 52
- 53
- 54
- 55
- 56
- 57
- 58
- 59
- 60
- 61
- 62
- 63
- 64
- 65
- 66
- 67
- 68
- 69
- 70
- 71
- 72
- 73
- 74
- 75
- 76
- 77
- 78
- 79
- 80
- 81
- 82
- 83
- 84
- 85
- 86
- 87
- 88
- 89
- 90
- 91
- 92
- 93
- 94
- 95
- 96
- 97
- 98
- 99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
-145
-146
-147
-148
-149
-150
-151</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/*</span>
-<a name="line-2"></a><span class="cm"> * mqtt_api_v2.hpp</span>
-<a name="line-3"></a><span class="cm"> *</span>
-<a name="line-4"></a><span class="cm"> *  Created on: May 31, 2021</span>
-<a name="line-5"></a><span class="cm"> *      Author: espenv</span>
-<a name="line-6"></a><span class="cm"> */</span>
-<a name="line-7"></a>
-<a name="line-8"></a><span class="cp">#ifndef INCLUDE_MQTT_API_V2_HPP_</span>
-<a name="line-9"></a><span class="cp">#define INCLUDE_MQTT_API_V2_HPP_</span>
-<a name="line-10"></a>
-<a name="line-11"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-12"></a><span class="cm"> |   		 	C L A S S   I N F O R M A T I O N                               |</span>
-<a name="line-13"></a><span class="cm"> +------------------------------------------------------------------------------+</span>
-<a name="line-14"></a><span class="cm"> |  ToDo: check auto generated function comment</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cp">#ifndef _COMPONENTS_SERVICE_WATERESTIMATOR_INCLUDE_WATERESTIMATOR_SERVICE_HPP_</span>
+<a name="line-2"></a><span class="cp">#define _COMPONENTS_SERVICE_WATERESTIMATOR_INCLUDE_WATERESTIMATOR_SERVICE_HPP_</span>
+<a name="line-3"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-4"></a><span class="cm"> |   		 	C L A S S   I N F O R M A T I O N                               |</span>
+<a name="line-5"></a><span class="cm"> +------------------------------------------------------------------------------+</span>
+<a name="line-6"></a><span class="cm"> |  ToDo: check auto generated function comment</span>
+<a name="line-7"></a><span class="cm"> |</span>
+<a name="line-8"></a><span class="cm"> |  @file  WaterEstimator_Service.hpp</span>
+<a name="line-9"></a><span class="cm"> |</span>
+<a name="line-10"></a><span class="cm"> |  @author        :  Nikolaj Gliese Pedersen</span>
+<a name="line-11"></a><span class="cm"> |  @email         :  &lt;nikolajgliese@tutanota.com&gt;</span>
+<a name="line-12"></a><span class="cm"> |  @date		   : 2022-03-18</span>
+<a name="line-13"></a><span class="cm"> |</span>
+<a name="line-14"></a><span class="cm"> |  @brief  	   :  This class, WaterEstimator_Service.hpp, is designed as:</span>
 <a name="line-15"></a><span class="cm"> |</span>
-<a name="line-16"></a><span class="cm"> |  Function Name:  mqtt_api_v2.hpp</span>
+<a name="line-16"></a><span class="cm"> |</span>
 <a name="line-17"></a><span class="cm"> |</span>
-<a name="line-18"></a><span class="cm"> |  Author       :  Nikolaj Gliese Pedersen</span>
-<a name="line-19"></a><span class="cm"> |  Email 		 :  &lt;nikolajgliese@tutanota.com&gt;</span>
+<a name="line-18"></a><span class="cm"> |</span>
+<a name="line-19"></a><span class="cm"> |</span>
 <a name="line-20"></a><span class="cm"> |</span>
-<a name="line-21"></a><span class="cm"> |  Description  :  This class, mqtt_api_v2.hpp, is designed as:</span>
-<a name="line-22"></a><span class="cm"> |</span>
+<a name="line-21"></a><span class="cm"> |</span>
+<a name="line-22"></a><span class="cm"> |  @version       : 1.0</span>
 <a name="line-23"></a><span class="cm"> |</span>
-<a name="line-24"></a><span class="cm"> |</span>
+<a name="line-24"></a><span class="cm"> |  @bug  		   :   no known bugs</span>
 <a name="line-25"></a><span class="cm"> |</span>
-<a name="line-26"></a><span class="cm"> |</span>
-<a name="line-27"></a><span class="cm"> |</span>
-<a name="line-28"></a><span class="cm"> |</span>
-<a name="line-29"></a><span class="cm"> |  version       : 1.0</span>
-<a name="line-30"></a><span class="cm"> |</span>
-<a name="line-31"></a><span class="cm"> |  Return Value  :   return_type</span>
-<a name="line-32"></a><span class="cm"> |</span>
-<a name="line-33"></a><span class="cm"> +-----------------------------------------------------------------------------*/</span>
-<a name="line-34"></a>
-<a name="line-35"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-36"></a><span class="cm"> |   		 					Datasheet Awareness              		        |</span>
-<a name="line-37"></a><span class="cm"> +------------------------------------------------------------------------------+</span>
-<a name="line-38"></a><span class="cm"> |</span>
-<a name="line-39"></a><span class="cm"> |</span>
-<a name="line-40"></a><span class="cm"> |  Datasheet Awareness 1):</span>
-<a name="line-41"></a><span class="cm"> |  	Link:[ ], May 31, 2021</span>
-<a name="line-42"></a><span class="cm"> |		Brief:</span>
-<a name="line-43"></a><span class="cm"> |</span>
-<a name="line-44"></a><span class="cm"> |  Datasheet Awareness 2):</span>
-<a name="line-45"></a><span class="cm"> |  	Link:[ ], May 31, 2021</span>
-<a name="line-46"></a><span class="cm"> |</span>
-<a name="line-47"></a><span class="cm"> |		Brief:</span>
-<a name="line-48"></a><span class="cm"> |</span>
-<a name="line-49"></a><span class="cm"> |</span>
-<a name="line-50"></a><span class="cm"> |</span>
-<a name="line-51"></a><span class="cm"> |</span>
-<a name="line-52"></a><span class="cm"> |</span>
-<a name="line-53"></a><span class="cm">  +-----------------------------------------------------------------------------*/</span>
-<a name="line-54"></a>
-<a name="line-55"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-56"></a><span class="cm"> |                              Includes                                        |</span>
-<a name="line-57"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-58"></a>
-<a name="line-59"></a><span class="cm">/*----------------- DEFAULT INCLUDE -------------------------------------------*/</span>
-<a name="line-60"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Global_Include/BASIC.hpp&quot;</span><span class="cp"></span>
-<a name="line-61"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/ErrorHandler/include/General_Error.hpp&quot;</span><span class="cp"></span>
-<a name="line-62"></a><span class="cm">/*-----------------------------------------------------------------------------*/</span>
-<a name="line-63"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/OTA/include/OTA.hpp&quot;</span><span class="cp"></span>
-<a name="line-64"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../RTOS/FreeRTOS/include/FreeRTOS.h&quot;</span><span class="cp"></span>
-<a name="line-65"></a><span class="cp">#include</span> <span class="cpf">&lt;atomic&gt;</span><span class="cp"></span>
-<a name="line-66"></a><span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+<a name="line-26"></a><span class="cm"> +-----------------------------------------------------------------------------*/</span>
+<a name="line-27"></a>
+<a name="line-28"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-29"></a><span class="cm"> |   		 					Includes                     		            |</span>
+<a name="line-30"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-31"></a>
+<a name="line-32"></a><span class="cm">/*----------------- DEFAULT INCLUDE -------------------------------------------*/</span>
+<a name="line-33"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Global_Include/BASIC.hpp&quot;</span><span class="cp"></span>
+<a name="line-34"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/ErrorHandler/include/General_Error.hpp&quot;</span><span class="cp"></span>
+<a name="line-35"></a><span class="cm">/*-----------------------------------------------------------------------------*/</span>
+<a name="line-36"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../AnalysisTools/PeriodEstimator/include/PeriodeEstimator.hpp&quot;</span><span class="cp"></span>
+<a name="line-37"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Interfaces/ServiceBase/include/ServiceBase.hpp&quot;</span><span class="cp"></span>
+<a name="line-38"></a><span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt; // For std::for_each()</span><span class="cp"></span>
+<a name="line-39"></a><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<a name="line-40"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-41"></a><span class="cm"> |                               Typedef                                        |</span>
+<a name="line-42"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-43"></a>
+<a name="line-44"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-45"></a><span class="cm"> |   		 					 Class                     		                |</span>
+<a name="line-46"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-47"></a>
+<a name="line-48"></a><span class="k">class</span> <span class="nc">WaterEstimator_Service</span> <span class="k">final</span> <span class="o">:</span> <span class="k">public</span> <span class="n">ServiceBase</span><span class="o">&lt;</span><span class="n">MQTT_Message</span><span class="o">&gt;</span>
+<a name="line-49"></a><span class="p">{</span>
+<a name="line-50"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a name="line-51"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_WaterEstimator_Service</span><span class="p">;</span>
+<a name="line-52"></a><span class="cp">#endif</span>
+<a name="line-53"></a>  <span class="k">public</span><span class="o">:</span>
+<a name="line-54"></a>	<span class="n">WaterEstimator_Service</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">queue_size</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">size_of_item</span><span class="p">,</span> <span class="k">const</span> <span class="n">MQTT_Message</span><span class="o">&amp;</span> <span class="n">buffer</span><span class="p">,</span>
+<a name="line-55"></a>						   <span class="k">const</span> <span class="n">db_id</span> <span class="n">error_id</span><span class="p">)</span>
+<a name="line-56"></a>		<span class="o">:</span> <span class="n">ServiceBase</span><span class="p">(</span><span class="n">queue_size</span><span class="p">,</span> <span class="n">size_of_item</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">error_id</span><span class="p">),</span>
+<a name="line-57"></a>		  <span class="n">msg_max</span><span class="p">{{</span><span class="n">db_id</span><span class="o">::</span><span class="n">WATERSTATION_MAX_ADC_VAL</span><span class="p">,</span> <span class="mi">1</span><span class="p">}},</span>
+<a name="line-58"></a>		  <span class="n">msg_min</span><span class="p">{{</span><span class="n">db_id</span><span class="o">::</span><span class="n">WATERSTATION_MIN_ADC_VAL</span><span class="p">,</span> <span class="mi">1</span><span class="p">}},</span> <span class="n">msg_count</span><span class="p">{</span>
+<a name="line-59"></a>															 <span class="p">{</span><span class="n">db_id</span><span class="o">::</span><span class="n">WATERSTATION_COUNTER</span><span class="p">,</span> <span class="mi">100</span><span class="p">}}</span> <span class="p">{};</span>
+<a name="line-60"></a>	<span class="o">~</span><span class="n">WaterEstimator_Service</span><span class="p">(){};</span>
+<a name="line-61"></a>
+<a name="line-62"></a>  <span class="k">private</span><span class="o">:</span>
+<a name="line-63"></a><span class="hll">	<span class="n">general_err_t</span> <span class="n">mainFunction</span><span class="p">();</span><span class='error2'>&lt;--- Function in derived class</span>
+</span><a name="line-64"></a>	<span class="n">MQTT_Message</span> <span class="n">msg_max</span><span class="p">;</span>
+<a name="line-65"></a>	<span class="n">MQTT_Message</span> <span class="n">msg_min</span><span class="p">;</span>
+<a name="line-66"></a>	<span class="n">MQTT_Message</span> <span class="n">msg_count</span><span class="p">;</span>
 <a name="line-67"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-68"></a><span class="cp">#include</span> <span class="cpf">&lt;mqtt_client.h&gt;</span><span class="cp"></span>
-<a name="line-69"></a><span class="cp">#endif</span>
-<a name="line-70"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-71"></a><span class="cm"> |                               Typedef                                        |</span>
-<a name="line-72"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-68"></a>	<span class="n">PeriodeEstimator</span><span class="o">&lt;</span><span class="mi">1900</span><span class="p">,</span> <span class="mi">1800</span><span class="p">,</span> <span class="n">NVS_esp32</span><span class="o">&gt;</span> <span class="n">m_estimator</span><span class="p">;</span>
+<a name="line-69"></a><span class="cp">#else</span>
+<a name="line-70"></a>	<span class="n">PeriodeEstimator</span><span class="o">&lt;</span><span class="mi">1900</span><span class="p">,</span> <span class="mi">1800</span><span class="p">,</span> <span class="n">NVS_MOCK</span><span class="o">&gt;</span> <span class="n">m_estimator</span><span class="p">;</span>
+<a name="line-71"></a><span class="cp">#endif</span>
+<a name="line-72"></a><span class="p">};</span>
 <a name="line-73"></a>
-<a name="line-74"></a><span class="cp">#ifndef __ESP32__</span>
-<a name="line-75"></a><span class="cp">#define mqttclient int</span>
-<a name="line-76"></a><span class="cp">#define mqttevent int</span>
-<a name="line-77"></a><span class="cp">#else</span>
-<a name="line-78"></a><span class="cp">#define mqttclient esp_mqtt_client_handle_t</span>
-<a name="line-79"></a><span class="cp">#define mqttevent esp_mqtt_event_handle_t</span>
-<a name="line-80"></a><span class="cp">#endif</span>
-<a name="line-81"></a>
-<a name="line-82"></a><span class="cp">#ifndef GLOBAL_MQTT_SERVER</span>
-<a name="line-83"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-84"></a><span class="cp">#warning &quot;GLOBAL_MQTT_SERVER Not defined, using 1.1.1.1&quot;</span>
-<a name="line-85"></a><span class="cp">#define GLOBAL_MQTT_SERVER (&quot;1.1.1.1&quot;)</span>
-<a name="line-86"></a><span class="cp">#else</span>
-<a name="line-87"></a><span class="c1">// ignore warning since we do not have a mqtt compatable target</span>
-<a name="line-88"></a><span class="cp">#define GLOBAL_MQTT_SERVER (&quot;1.1.1.1&quot;)</span>
-<a name="line-89"></a><span class="cp">#endif</span>
-<a name="line-90"></a><span class="cp">#endif</span>
-<a name="line-91"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-92"></a><span class="cm"> |                               Class                                          |</span>
-<a name="line-93"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-94"></a>
-<a name="line-95"></a><span class="k">class</span> <span class="nc">mqtt_api_v2</span>
-<a name="line-96"></a><span class="p">{</span>
-<a name="line-97"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a name="line-98"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_mqtt_api_v2</span><span class="p">;</span>
-<a name="line-99"></a><span class="cp">#endif</span>
-<a name="line-100"></a>  <span class="k">public</span><span class="o">:</span>
-<a name="line-101"></a>	<span class="n">mqtt_api_v2</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">uri</span> <span class="o">=</span> <span class="n">GLOBAL_MQTT_SERVER</span><span class="p">);</span>
-<a name="line-102"></a>	<span class="o">~</span><span class="n">mqtt_api_v2</span><span class="p">();</span>
-<a name="line-103"></a>
-<a name="line-104"></a>	<span class="n">general_err_t</span> <span class="nf">publish</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">payload</span><span class="p">);</span>
-<a name="line-105"></a>	<span class="n">FreeRTOS</span><span class="o">::</span><span class="n">Semaphore</span><span class="o">*</span> <span class="n">subscribe</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">);</span>
-<a name="line-106"></a>	<span class="n">general_err_t</span> <span class="nf">subscribe</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">,</span>
-<a name="line-107"></a>							<span class="n">general_err_t</span> <span class="p">(</span><span class="o">*</span><span class="n">callbackfunction</span><span class="p">)(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span>
-<a name="line-108"></a>															  <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">));</span>
-<a name="line-109"></a>
-<a name="line-110"></a>	<span class="n">general_err_t</span> <span class="nf">getData</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">*</span> <span class="n">str</span><span class="p">);</span>
-<a name="line-111"></a>
-<a name="line-112"></a>  <span class="k">private</span><span class="o">:</span>
-<a name="line-113"></a><span class="hll">	<span class="k">static</span> <span class="n">general_err_t</span> <span class="n">handle_event</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">topic_length</span><span class="p">,</span><span class='error2'>&lt;--- Unused private function: 'mqtt_api_v2::handle_event'</span>
-</span><a name="line-114"></a>									  <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">);</span>
-<a name="line-115"></a>	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">m_uri</span><span class="p">;</span>
-<a name="line-116"></a>	<span class="n">general_err_t</span> <span class="nf">connect</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<a name="line-117"></a><span class="hll">	<span class="n">general_err_t</span> <span class="nf">disconnect</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class='error2'>&lt;--- Unused private function: 'mqtt_api_v2::disconnect'</span>
-</span><a name="line-118"></a>
-<a name="line-119"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-120"></a>
-<a name="line-121"></a>	<span class="k">static</span> <span class="n">esp_err_t</span> <span class="nf">event_handler</span><span class="p">(</span><span class="n">mqttevent</span> <span class="n">event</span><span class="p">);</span>
-<a name="line-122"></a>
-<a name="line-123"></a>	<span class="k">static</span> <span class="kt">void</span> <span class="nf">mqtt_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">handler_args</span><span class="p">,</span> <span class="n">esp_event_base_t</span> <span class="n">base</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">event_id</span><span class="p">,</span>
-<a name="line-124"></a>								   <span class="kt">void</span><span class="o">*</span> <span class="n">event_data</span><span class="p">);</span>
-<a name="line-125"></a>	<span class="n">esp_mqtt_client_config_t</span> <span class="n">m_mqtt_cfg</span><span class="p">;</span>
-<a name="line-126"></a><span class="cp">#endif</span>
-<a name="line-127"></a><span class="p">};</span>
-<a name="line-128"></a>
-<a name="line-129"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-130"></a><span class="cm"> |                           Unit Test Class                                    |</span>
-<a name="line-131"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-132"></a>
-<a name="line-133"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a name="line-134"></a><span class="k">class</span> <span class="nc">friend_mqtt_api_v2</span>
-<a name="line-135"></a><span class="p">{</span>
-<a name="line-136"></a>  <span class="k">public</span><span class="o">:</span>
-<a name="line-137"></a>	<span class="k">explicit</span> <span class="n">friend_mqtt_api_v2</span><span class="p">(</span><span class="n">mqtt_api_v2</span><span class="o">*</span> <span class="n">MQTT_API</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">MQTT_API</span><span class="p">}</span> <span class="p">{};</span>
-<a name="line-138"></a>
-<a name="line-139"></a>	<span class="o">~</span><span class="n">friend_mqtt_api_v2</span><span class="p">(){};</span>
-<a name="line-140"></a>	<span class="k">auto</span> <span class="nf">handle_event</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">topic_length</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span>
-<a name="line-141"></a>					  <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">)</span>
-<a name="line-142"></a>	<span class="p">{</span>
-<a name="line-143"></a>		<span class="k">return</span> <span class="n">m_sensor</span><span class="o">-&gt;</span><span class="n">handle_event</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">topic_length</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">data_length</span><span class="p">);</span>
-<a name="line-144"></a>	<span class="p">}</span>
-<a name="line-145"></a>
-<a name="line-146"></a>  <span class="k">private</span><span class="o">:</span>
-<a name="line-147"></a>	<span class="n">mqtt_api_v2</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
-<a name="line-148"></a><span class="p">};</span>
-<a name="line-149"></a><span class="cp">#endif</span>
-<a name="line-150"></a>
-<a name="line-151"></a><span class="cp">#endif </span><span class="cm">/* INCLUDE_MQTT_API_V2_HPP_ */</span><span class="cp"></span>
+<a name="line-74"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-75"></a><span class="cm"> |   		 				 Unit Test Class               		                |</span>
+<a name="line-76"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-77"></a>
+<a name="line-78"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a name="line-79"></a><span class="k">class</span> <span class="nc">friend_WaterEstimator_Service</span>
+<a name="line-80"></a><span class="p">{</span>
+<a name="line-81"></a>  <span class="k">public</span><span class="o">:</span>
+<a name="line-82"></a>	<span class="k">explicit</span> <span class="n">friend_WaterEstimator_Service</span><span class="p">(</span><span class="n">WaterEstimator_Service</span><span class="o">*</span> <span class="n">sensor</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">sensor</span><span class="p">}</span> <span class="p">{};</span>
+<a name="line-83"></a>	<span class="o">~</span><span class="n">friend_WaterEstimator_Service</span><span class="p">(){};</span>
+<a name="line-84"></a>
+<a name="line-85"></a>  <span class="k">private</span><span class="o">:</span>
+<a name="line-86"></a>	<span class="n">WaterEstimator_Service</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
+<a name="line-87"></a><span class="p">};</span>
+<a name="line-88"></a><span class="cp">#endif</span>
+<a name="line-89"></a>
+<a name="line-90"></a><span class="cp">#endif </span><span class="c1">//_COMPONENTS_SERVICE_WATERESTIMATOR_INCLUDE_WATERESTIMATOR_SERVICE_HPP_</span>
 </pre></div>
 </td></tr></table>
       </div>

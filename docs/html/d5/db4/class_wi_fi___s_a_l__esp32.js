@@ -1,5 +1,6 @@
 var class_wi_fi___s_a_l__esp32 =
 [
+    [ "WiFi_SAL_esp32", "d5/db4/class_wi_fi___s_a_l__esp32.html#aa679d4b8c0189b1bebdc8f3db32377c2", null ],
     [ "WiFi_SAL_esp32", "d5/db4/class_wi_fi___s_a_l__esp32.html#aead5210c01a742288d9b37e0ed616531", null ],
     [ "~WiFi_SAL_esp32", "d5/db4/class_wi_fi___s_a_l__esp32.html#ab2983e171339941afbbc03c52daf4a42", null ],
     [ "WiFi_SAL_esp32", "d5/db4/class_wi_fi___s_a_l__esp32.html#a91db9e84c7c7268cbee374fc27db56e9", null ],

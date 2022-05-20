@@ -11,7 +11,7 @@ var class_maintainer =
     [ "m_delay_sec", "d6/d9b/class_maintainer.html#a4b37b4cb6700e70a6affa52503ba6e80", null ],
     [ "m_error_id", "d6/d9b/class_maintainer.html#a8dc55e6b54930da58cf4715617dc37b8", null ],
     [ "m_faulthandler", "d6/d9b/class_maintainer.html#a8198cbd2912df701a4da1b1b93947215", null ],
-    [ "m_wifi", "d6/d9b/class_maintainer.html#a877c4e2f704a3ae42f89bac109bc5e17", null ],
+    [ "m_wifi", "d6/d9b/class_maintainer.html#a6a638270d858296ee8c697e4a7c1f8ad", null ],
     [ "m_withPeriodicReboot", "d6/d9b/class_maintainer.html#a6da4d7d3802e45acbde3efb89b652e93", null ],
     [ "start_time", "d6/d9b/class_maintainer.html#ac3e38dc84fb77822d0ee4909019d8d54", null ]
 ];

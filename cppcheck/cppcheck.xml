@@ -38,36 +38,28 @@
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/AnalysisTools/ImageAnalysis_OpenCV/src/Utility_Image.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/AnalysisTools/ImageAnalysis_OpenCV/include/Utility_Image.hpp" line="120" column="2"/>
             <symbol>friend_Load_Image</symbol>
         </error>
-        <error id="uselessAssignmentArg" severity="style" msg="Assignment of function parameter has no effect outside the function." verbose="Assignment of function parameter has no effect outside the function." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="790" column="3"/>
-        </error>
-        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="256" column="16"/>
-        </error>
-        <error id="unusedVariable" severity="style" msg="Unused variable: ipAddrStr" verbose="Unused variable: ipAddrStr" cwe="563">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="231" column="7"/>
-            <symbol>ipAddrStr</symbol>
-        </error>
-        <error id="unreadVariable" severity="style" msg="Variable &apos;ip&apos; is assigned a value that is never used." verbose="Variable &apos;ip&apos; is assigned a value that is never used." cwe="563">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="790" column="6"/>
-            <symbol>ip</symbol>
-        </error>
-        <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFiEventHandler.cpp" line="32" column="40"/>
-        </error>
-        <error id="duplicateBreak" severity="style" msg="Consecutive return, break, continue, goto or throw statements are unnecessary." verbose="Consecutive return, break, continue, goto or throw statements are unnecessary. The second statement can never be executed, and so should be removed." cwe="561">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFiEventHandler.cpp" line="82" column="4"/>
-        </error>
-        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi_API.cpp" line="41" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi_API.cpp" line="40" column="20" info="Assignment &apos;err=connect()&apos;, assigned value is 0"/>
-        </error>
         <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" verbose="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="80" column="14"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="87" column="14"/>
             <symbol>WiFi_SAL_esp32::event_handler</symbol>
         </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="76" column="2"/>
+            <symbol>WiFi_SAL_esp32</symbol>
+        </error>
         <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" verbose="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" cwe="571">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="85" column="36" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="100" column="36" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="48" column="17"/>
+            <symbol>WiFi_SAL_esp32::instance_any_id</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_got_ip&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_got_ip&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="48" column="17"/>
+            <symbol>WiFi_SAL_esp32::instance_got_ip</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::m_cfg&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::m_cfg&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="48" column="17"/>
+            <symbol>WiFi_SAL_esp32::m_cfg</symbol>
         </error>
         <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." cwe="398">
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="33" column="17"/>
@@ -132,6 +124,10 @@
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/HAL.hpp" line="127" column="2"/>
             <symbol>friend_HAL</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="76" column="2"/>
+            <symbol>WiFi_SAL_esp32</symbol>
         </error>
         <error id="unreadVariable" severity="style" msg="Variable &apos;err&apos; is assigned a value that is never used." verbose="Variable &apos;err&apos; is assigned a value that is never used." cwe="563">
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp" line="111" column="16"/>
@@ -232,6 +228,10 @@
         <error id="useInitializationList" severity="performance" msg="Variable &apos;m_coreId&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_coreId&apos; a value by passing the value to the constructor in the initialization list." cwe="398">
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp" line="24" column="2"/>
             <symbol>m_coreId</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="76" column="2"/>
+            <symbol>WiFi_SAL_esp32</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
