@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-20 22:14:25</td>
+            <td class="headerValue">2022-05-20 22:16:41</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -898,28 +898,28 @@
     <td align="right" class="lineno"><pre>86</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	//	::memcpy(wifi_config.sta.ssid, m_ssid.data(), m_ssid.size());</pre></td>
+    <td align="left" class="src "><pre>	::memcpy(wifi_config.sta.ssid, m_ssid.data(), m_ssid.size());</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	//	::memcpy(wifi_config.sta.password, m_pwd.data(), m_pwd.size());</pre></td>
+    <td align="left" class="src "><pre>	::memcpy(wifi_config.sta.password, m_pwd.data(), m_pwd.size());</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>88</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.ssid = reinterpret_cast&lt;uint8_t*>(const_cast&lt;char*>(m_ssid.c_str()));</pre></td>
+    <td align="left" class="src "><pre>	// wifi_config.sta.ssid = reinterpret_cast&lt;uint8_t>(const_cast&lt;char*>(m_ssid.c_str()));</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.password = reinterpret_cast&lt;uint8_t*>(const_cast&lt;char*>(m_pwd.c_str()));</pre></td>
+    <td align="left" class="src "><pre>	// wifi_config.sta.password = reinterpret_cast&lt;uint8_t*>(const_cast&lt;char*>(m_pwd.c_str()));</pre></td>
     </tr>
 
     <tr>
