@@ -39,7 +39,7 @@
             <symbol>friend_Load_Image</symbol>
         </error>
         <error id="uselessAssignmentArg" severity="style" msg="Assignment of function parameter has no effect outside the function." verbose="Assignment of function parameter has no effect outside the function." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="788" column="3"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="789" column="3"/>
         </error>
         <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="256" column="16"/>
@@ -49,7 +49,7 @@
             <symbol>ipAddrStr</symbol>
         </error>
         <error id="unreadVariable" severity="style" msg="Variable &apos;ip&apos; is assigned a value that is never used." verbose="Variable &apos;ip&apos; is assigned a value that is never used." cwe="563">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="788" column="6"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi/src/WiFi.cpp" line="789" column="6"/>
             <symbol>ip</symbol>
         </error>
         <error id="cstyleCast" severity="style" msg="C-style pointer casting" verbose="C-style pointer casting detected. C++ offers four different kinds of casts as replacements: static_cast, const_cast, dynamic_cast and reinterpret_cast. A C-style cast could evaluate to any of those automatically, thus it is considered safer if the programmer explicitly states which kind of cast is expected. See also: https://www.securecoding.cert.org/confluence/display/cplusplus/EXP05-CPP.+Do+not+use+C-style+casts." cwe="398">

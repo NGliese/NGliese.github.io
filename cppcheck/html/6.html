@@ -137,7 +137,7 @@
       </div>
       <div id="menu" dir="rtl">
        <p id="filename"><a href="index.html">Defects:</a> WiFi.cpp</p>
-<a href='6.html#line-231'> unusedVariable 231</a><a href='6.html#line-256'> cstyleCast 256</a><a href='6.html#line-788'> uselessAssignmentArg 788</a><a href='6.html#line-788'> unreadVariable 788</a>
+<a href='6.html#line-231'> unusedVariable 231</a><a href='6.html#line-256'> cstyleCast 256</a><a href='6.html#line-789'> uselessAssignmentArg 789</a><a href='6.html#line-789'> unreadVariable 789</a>
       </div>
       <div id="content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
@@ -1116,7 +1116,8 @@
 974
 975
 976
-977</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/*</span>
+977
+978</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/*</span>
 <a name="line-2"></a><span class="cm"> * WiFi.cpp</span>
 <a name="line-3"></a><span class="cm"> *</span>
 <a name="line-4"></a><span class="cm"> *  Created on: Feb 25, 2017</span>
@@ -1616,483 +1617,484 @@
 <a name="line-498"></a>	<span class="p">}</span>
 <a name="line-499"></a>	<span class="k">else</span>
 <a name="line-500"></a>	<span class="p">{</span>
-<a name="line-501"></a>		<span class="n">esp_err_t</span> <span class="n">errRc</span> <span class="o">=</span>
-<a name="line-502"></a>			<span class="o">::</span><span class="n">esp_event_loop_init</span><span class="p">(</span><span class="n">WiFi</span><span class="o">::</span><span class="n">eventHandler</span><span class="p">,</span> <span class="k">this</span><span class="p">);</span> <span class="c1">// Initialze the event handler.</span>
-<a name="line-503"></a>		<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-504"></a>		<span class="p">{</span>
-<a name="line-505"></a>			<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_event_loop_init: rc=%d %s&quot;, errRc,</span>
-<a name="line-506"></a>			<span class="c1">//			 GeneralUtils::errorToString(errRc));</span>
-<a name="line-507"></a>			<span class="n">abort</span><span class="p">();</span>
-<a name="line-508"></a>		<span class="p">}</span>
-<a name="line-509"></a>		<span class="n">m_eventLoopStarted</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-<a name="line-510"></a>	<span class="p">}</span>
-<a name="line-511"></a>	<span class="c1">// Now, one way or another, the event handler is WiFi::eventHandler.</span>
-<a name="line-512"></a>
-<a name="line-513"></a>	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">m_initCalled</span><span class="p">)</span>
-<a name="line-514"></a>	<span class="p">{</span>
-<a name="line-515"></a>		<span class="o">::</span><span class="n">nvs_flash_init</span><span class="p">();</span>
-<a name="line-516"></a>		<span class="o">::</span><span class="n">tcpip_adapter_init</span><span class="p">();</span>
-<a name="line-517"></a>
-<a name="line-518"></a>		<span class="n">wifi_init_config_t</span> <span class="n">cfg</span> <span class="o">=</span> <span class="n">WIFI_INIT_CONFIG_DEFAULT</span><span class="p">();</span>
-<a name="line-519"></a>		<span class="n">esp_err_t</span> <span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cfg</span><span class="p">);</span>
-<a name="line-520"></a>		<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-521"></a>		<span class="p">{</span>
-<a name="line-522"></a>			<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_init: rc=%d %s&quot;, errRc,</span>
-<a name="line-523"></a>			<span class="c1">// GeneralUtils::errorToString(errRc));</span>
-<a name="line-524"></a>			<span class="n">abort</span><span class="p">();</span>
-<a name="line-525"></a>		<span class="p">}</span>
-<a name="line-526"></a>
-<a name="line-527"></a>		<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_set_storage</span><span class="p">(</span><span class="n">WIFI_STORAGE_RAM</span><span class="p">);</span>
-<a name="line-528"></a>		<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-529"></a>		<span class="p">{</span>
-<a name="line-530"></a>			<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_set_storage: rc=%d %s&quot;, errRc,</span>
-<a name="line-531"></a>			<span class="c1">//				 GeneralUtils::errorToString(errRc));</span>
-<a name="line-532"></a>			<span class="n">abort</span><span class="p">();</span>
-<a name="line-533"></a>		<span class="p">}</span>
-<a name="line-534"></a>	<span class="p">}</span>
-<a name="line-535"></a>	<span class="n">m_initCalled</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-<a name="line-536"></a><span class="p">}</span> <span class="c1">// init</span>
-<a name="line-537"></a>
-<a name="line-538"></a><span class="cm">/**</span>
-<a name="line-539"></a><span class="cm"> * @brief Perform a WiFi scan looking for access points.</span>
-<a name="line-540"></a><span class="cm"> *</span>
-<a name="line-541"></a><span class="cm"> * An access point scan is performed and a vector of WiFi access point records</span>
-<a name="line-542"></a><span class="cm"> * is built and returned with one record per found scan instance.  The scan is</span>
-<a name="line-543"></a><span class="cm"> * performed in a blocking fashion and will not return until the set of scanned</span>
-<a name="line-544"></a><span class="cm"> * access points has been built.</span>
-<a name="line-545"></a><span class="cm"> *</span>
-<a name="line-546"></a><span class="cm"> * @return A vector of WiFiAPRecord instances.</span>
-<a name="line-547"></a><span class="cm"> */</span>
-<a name="line-548"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">WiFiAPRecord</span><span class="o">&gt;</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">scan</span><span class="p">()</span>
-<a name="line-549"></a><span class="p">{</span>
-<a name="line-550"></a>	<span class="c1">// #lizard forgives the complexity</span>
-<a name="line-551"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&gt;&gt; scan&quot;</span><span class="p">);</span>
-<a name="line-552"></a>	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">WiFiAPRecord</span><span class="o">&gt;</span> <span class="n">apRecords</span><span class="p">;</span>
-<a name="line-553"></a>
-<a name="line-554"></a>	<span class="n">init</span><span class="p">();</span>
-<a name="line-555"></a>
-<a name="line-556"></a>	<span class="n">esp_err_t</span> <span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_STA</span><span class="p">);</span>
-<a name="line-557"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-558"></a>	<span class="p">{</span>
-<a name="line-559"></a>		<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_set_mode: rc=%d %s&quot;, errRc,</span>
-<a name="line-560"></a>		<span class="c1">// GeneralUtils::errorToString(errRc));</span>
-<a name="line-561"></a>		<span class="n">abort</span><span class="p">();</span>
-<a name="line-562"></a>	<span class="p">}</span>
-<a name="line-563"></a>
-<a name="line-564"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_start</span><span class="p">();</span>
-<a name="line-565"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-566"></a>	<span class="p">{</span>
-<a name="line-567"></a>		<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_start: rc=%d %s&quot;, errRc,</span>
-<a name="line-568"></a>		<span class="c1">// GeneralUtils::errorToString(errRc));</span>
-<a name="line-569"></a>		<span class="n">abort</span><span class="p">();</span>
-<a name="line-570"></a>	<span class="p">}</span>
-<a name="line-571"></a>
-<a name="line-572"></a>	<span class="n">wifi_scan_config_t</span> <span class="n">conf</span><span class="p">;</span>
-<a name="line-573"></a>	<span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">conf</span><span class="p">));</span>
-<a name="line-574"></a>	<span class="n">conf</span><span class="p">.</span><span class="n">show_hidden</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
-<a name="line-575"></a>
-<a name="line-576"></a>	<span class="n">esp_err_t</span> <span class="n">rc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_scan_start</span><span class="p">(</span><span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
-<a name="line-577"></a>	<span class="k">if</span><span class="p">(</span><span class="n">rc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-578"></a>	<span class="p">{</span>
-<a name="line-579"></a>		<span class="n">ESP_LOGE</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;esp_wifi_scan_start: %d&quot;</span><span class="p">,</span> <span class="n">rc</span><span class="p">);</span>
-<a name="line-580"></a>		<span class="k">return</span> <span class="n">apRecords</span><span class="p">;</span>
-<a name="line-581"></a>	<span class="p">}</span>
-<a name="line-582"></a>
-<a name="line-583"></a>	<span class="kt">uint16_t</span> <span class="n">apCount</span><span class="p">;</span> <span class="c1">// Number of access points available.</span>
-<a name="line-584"></a>	<span class="n">rc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_scan_get_ap_num</span><span class="p">(</span><span class="o">&amp;</span><span class="n">apCount</span><span class="p">);</span>
-<a name="line-585"></a>	<span class="k">if</span><span class="p">(</span><span class="n">rc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-586"></a>	<span class="p">{</span>
-<a name="line-587"></a>		<span class="n">ESP_LOGE</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;esp_wifi_scan_get_ap_num: %d&quot;</span><span class="p">,</span> <span class="n">rc</span><span class="p">);</span>
-<a name="line-588"></a>		<span class="k">return</span> <span class="n">apRecords</span><span class="p">;</span>
-<a name="line-589"></a>	<span class="p">}</span>
-<a name="line-590"></a>	<span class="k">else</span>
-<a name="line-591"></a>	<span class="p">{</span>
-<a name="line-592"></a>		<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;Count of found access points: %d&quot;</span><span class="p">,</span> <span class="n">apCount</span><span class="p">);</span>
-<a name="line-593"></a>	<span class="p">}</span>
-<a name="line-594"></a>
-<a name="line-595"></a>	<span class="n">wifi_ap_record_t</span><span class="o">*</span> <span class="n">list</span> <span class="o">=</span> <span class="p">(</span><span class="n">wifi_ap_record_t</span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">wifi_ap_record_t</span><span class="p">)</span> <span class="o">*</span> <span class="n">apCount</span><span class="p">);</span>
-<a name="line-596"></a>	<span class="k">if</span><span class="p">(</span><span class="n">list</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span>
-<a name="line-597"></a>	<span class="p">{</span>
-<a name="line-598"></a>		<span class="n">ESP_LOGE</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;Failed to allocate memory&quot;</span><span class="p">);</span>
-<a name="line-599"></a>		<span class="k">return</span> <span class="n">apRecords</span><span class="p">;</span>
-<a name="line-600"></a>	<span class="p">}</span>
-<a name="line-601"></a>
-<a name="line-602"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_scan_get_ap_records</span><span class="p">(</span><span class="o">&amp;</span><span class="n">apCount</span><span class="p">,</span> <span class="n">list</span><span class="p">);</span>
-<a name="line-603"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-604"></a>	<span class="p">{</span>
-<a name="line-605"></a>		<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_scan_get_ap_records: rc=%d %s&quot;, errRc,</span>
-<a name="line-606"></a>		<span class="c1">//			 GeneralUtils::errorToString(errRc));</span>
-<a name="line-607"></a>		<span class="n">abort</span><span class="p">();</span>
-<a name="line-608"></a>	<span class="p">}</span>
-<a name="line-609"></a>
-<a name="line-610"></a>	<span class="k">for</span><span class="p">(</span><span class="kt">uint16_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">apCount</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
-<a name="line-611"></a>	<span class="p">{</span>
-<a name="line-612"></a>		<span class="n">WiFiAPRecord</span> <span class="n">wifiAPRecord</span><span class="p">;</span>
-<a name="line-613"></a>		<span class="n">memcpy</span><span class="p">(</span><span class="n">wifiAPRecord</span><span class="p">.</span><span class="n">m_bssid</span><span class="p">,</span> <span class="n">list</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">bssid</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
-<a name="line-614"></a>		<span class="n">wifiAPRecord</span><span class="p">.</span><span class="n">m_ssid</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">((</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">list</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">ssid</span><span class="p">);</span>
-<a name="line-615"></a>		<span class="n">wifiAPRecord</span><span class="p">.</span><span class="n">m_authMode</span> <span class="o">=</span> <span class="n">list</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">authmode</span><span class="p">;</span>
-<a name="line-616"></a>		<span class="n">wifiAPRecord</span><span class="p">.</span><span class="n">m_rssi</span> <span class="o">=</span> <span class="n">list</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">rssi</span><span class="p">;</span>
-<a name="line-617"></a>		<span class="n">apRecords</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">wifiAPRecord</span><span class="p">);</span>
-<a name="line-618"></a>	<span class="p">}</span>
-<a name="line-619"></a>	<span class="n">free</span><span class="p">(</span><span class="n">list</span><span class="p">);</span> <span class="c1">// Release the storage allocated to hold the records.</span>
-<a name="line-620"></a>	<span class="n">std</span><span class="o">::</span><span class="n">sort</span><span class="p">(</span>
-<a name="line-621"></a>		<span class="n">apRecords</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">apRecords</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span>
-<a name="line-622"></a>		<span class="p">[](</span><span class="k">const</span> <span class="n">WiFiAPRecord</span><span class="o">&amp;</span> <span class="n">lhs</span><span class="p">,</span> <span class="k">const</span> <span class="n">WiFiAPRecord</span><span class="o">&amp;</span> <span class="n">rhs</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">lhs</span><span class="p">.</span><span class="n">m_rssi</span> <span class="o">&gt;</span> <span class="n">rhs</span><span class="p">.</span><span class="n">m_rssi</span><span class="p">;</span> <span class="p">});</span>
-<a name="line-623"></a>	<span class="k">return</span> <span class="n">apRecords</span><span class="p">;</span>
-<a name="line-624"></a><span class="p">}</span> <span class="c1">// scan</span>
-<a name="line-625"></a>
-<a name="line-626"></a><span class="cm">/**</span>
-<a name="line-627"></a><span class="cm"> * @brief Start being an access point.</span>
-<a name="line-628"></a><span class="cm"> *</span>
-<a name="line-629"></a><span class="cm"> * @param[in] ssid The SSID to use to advertize for stations.</span>
-<a name="line-630"></a><span class="cm"> * @param[in] password The password to use for station connections.</span>
-<a name="line-631"></a><span class="cm"> * @param[in] auth The authorization mode for access to this access point.  Options are:</span>
-<a name="line-632"></a><span class="cm"> * * WIFI_AUTH_OPEN</span>
-<a name="line-633"></a><span class="cm"> * * WIFI_AUTH_WPA_PSK</span>
-<a name="line-634"></a><span class="cm"> * * WIFI_AUTH_WPA2_PSK</span>
-<a name="line-635"></a><span class="cm"> * * WIFI_AUTH_WPA_WPA2_PSK</span>
-<a name="line-636"></a><span class="cm"> * * WIFI_AUTH_WPA2_ENTERPRISE</span>
-<a name="line-637"></a><span class="cm"> * * WIFI_AUTH_WEP</span>
-<a name="line-638"></a><span class="cm"> * @return N/A.</span>
-<a name="line-639"></a><span class="cm"> */</span>
-<a name="line-640"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">startAP</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ssid</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">password</span><span class="p">,</span> <span class="n">wifi_auth_mode_t</span> <span class="n">auth</span><span class="p">)</span>
-<a name="line-641"></a><span class="p">{</span>
-<a name="line-642"></a>	<span class="n">startAP</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">auth</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
-<a name="line-643"></a><span class="p">}</span> <span class="c1">// startAP</span>
-<a name="line-644"></a>
-<a name="line-645"></a><span class="cm">/**</span>
-<a name="line-646"></a><span class="cm"> * @brief Start being an access point.</span>
-<a name="line-647"></a><span class="cm"> *</span>
-<a name="line-648"></a><span class="cm"> * @param[in] ssid The SSID to use to advertize for stations.</span>
-<a name="line-649"></a><span class="cm"> * @param[in] password The password to use for station connections.</span>
-<a name="line-650"></a><span class="cm"> * @param[in] auth The authorization mode for access to this access point.  Options are:</span>
-<a name="line-651"></a><span class="cm"> * * WIFI_AUTH_OPEN</span>
-<a name="line-652"></a><span class="cm"> * * WIFI_AUTH_WPA_PSK</span>
-<a name="line-653"></a><span class="cm"> * * WIFI_AUTH_WPA2_PSK</span>
-<a name="line-654"></a><span class="cm"> * * WIFI_AUTH_WPA_WPA2_PSK</span>
-<a name="line-655"></a><span class="cm"> * * WIFI_AUTH_WPA2_ENTERPRISE</span>
-<a name="line-656"></a><span class="cm"> * * WIFI_AUTH_WEP</span>
-<a name="line-657"></a><span class="cm"> * @param[in] channel from the access point.</span>
-<a name="line-658"></a><span class="cm"> * @param[in] is the ssid hidden, ore not.</span>
-<a name="line-659"></a><span class="cm"> * @param[in] limiting number of clients.</span>
-<a name="line-660"></a><span class="cm"> * @return N/A.</span>
-<a name="line-661"></a><span class="cm"> */</span>
-<a name="line-662"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">startAP</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ssid</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">password</span><span class="p">,</span> <span class="n">wifi_auth_mode_t</span> <span class="n">auth</span><span class="p">,</span>
-<a name="line-663"></a>				   <span class="kt">uint8_t</span> <span class="n">channel</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">ssid_hidden</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">max_connection</span><span class="p">)</span>
-<a name="line-664"></a><span class="p">{</span>
-<a name="line-665"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&gt;&gt; startAP: ssid: %s&quot;</span><span class="p">,</span> <span class="n">ssid</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
-<a name="line-666"></a>
-<a name="line-667"></a>	<span class="n">init</span><span class="p">();</span>
-<a name="line-668"></a>
-<a name="line-669"></a>	<span class="n">esp_err_t</span> <span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_AP</span><span class="p">);</span>
-<a name="line-670"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-671"></a>	<span class="p">{</span>
-<a name="line-672"></a>		<span class="c1">// ESP_LOGE(LOG_TAG, &quot;esp_wifi_set_mode: rc=%d %s&quot;, errRc,</span>
-<a name="line-673"></a>		<span class="c1">// GeneralUtils::errorToString(errRc));</span>
-<a name="line-674"></a>		<span class="n">abort</span><span class="p">();</span>
-<a name="line-675"></a>	<span class="p">}</span>
-<a name="line-676"></a>
-<a name="line-677"></a>	<span class="c1">// Build the apConfig structure.</span>
-<a name="line-678"></a>	<span class="n">wifi_config_t</span> <span class="n">apConfig</span><span class="p">;</span>
-<a name="line-679"></a>	<span class="o">::</span><span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">apConfig</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">apConfig</span><span class="p">));</span>
-<a name="line-680"></a>	<span class="o">::</span><span class="n">memcpy</span><span class="p">(</span><span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">ssid</span><span class="p">,</span> <span class="n">ssid</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">ssid</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
-<a name="line-681"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">ssid_len</span> <span class="o">=</span> <span class="n">ssid</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
-<a name="line-682"></a>	<span class="o">::</span><span class="n">memcpy</span><span class="p">(</span><span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">password</span><span class="p">,</span> <span class="n">password</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">password</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
-<a name="line-683"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">channel</span> <span class="o">=</span> <span class="n">channel</span><span class="p">;</span>
-<a name="line-684"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">authmode</span> <span class="o">=</span> <span class="n">auth</span><span class="p">;</span>
-<a name="line-685"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">ssid_hidden</span> <span class="o">=</span> <span class="p">(</span><span class="kt">uint8_t</span><span class="p">)</span><span class="n">ssid_hidden</span><span class="p">;</span>
-<a name="line-686"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">max_connection</span> <span class="o">=</span> <span class="n">max_connection</span><span class="p">;</span>
-<a name="line-687"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">beacon_interval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
-<a name="line-688"></a>
-<a name="line-689"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">WIFI_IF_AP</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">apConfig</span><span class="p">);</span>
-<a name="line-690"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-691"></a>	<span class="p">{</span>
-<a name="line-692"></a>		<span class="c1">// ESP_LOGE(LOG_TAG, &quot;esp_wifi_set_config: rc=%d %s&quot;, errRc,</span>
-<a name="line-693"></a>		<span class="c1">//		 GeneralUtils::errorToString(errRc));</span>
-<a name="line-694"></a>		<span class="n">abort</span><span class="p">();</span>
-<a name="line-695"></a>	<span class="p">}</span>
-<a name="line-696"></a>
-<a name="line-697"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_start</span><span class="p">();</span>
-<a name="line-698"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-699"></a>	<span class="p">{</span>
-<a name="line-700"></a>		<span class="c1">// ESP_LOGE(LOG_TAG, &quot;esp_wifi_start: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
-<a name="line-701"></a>		<span class="n">abort</span><span class="p">();</span>
-<a name="line-702"></a>	<span class="p">}</span>
-<a name="line-703"></a>
-<a name="line-704"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="n">tcpip_adapter_dhcps_start</span><span class="p">(</span><span class="n">TCPIP_ADAPTER_IF_AP</span><span class="p">);</span>
-<a name="line-705"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
-<a name="line-706"></a>	<span class="p">{</span>
-<a name="line-707"></a>		<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;tcpip_adapter_dhcps_start: rc=%d %s&quot;, errRc,</span>
-<a name="line-708"></a>		<span class="c1">//			 GeneralUtils::errorToString(errRc));</span>
-<a name="line-709"></a>	<span class="p">}</span>
-<a name="line-710"></a>
-<a name="line-711"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&lt;&lt; startAP&quot;</span><span class="p">);</span>
-<a name="line-712"></a><span class="p">}</span> <span class="c1">// startAP</span>
-<a name="line-713"></a>
-<a name="line-714"></a><span class="cm">/**</span>
-<a name="line-715"></a><span class="cm"> * @brief Set the event handler to use to process detected events.</span>
-<a name="line-716"></a><span class="cm"> * @param[in] wifiEventHandler The class that will be used to process events.</span>
-<a name="line-717"></a><span class="cm"> */</span>
-<a name="line-718"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">setWifiEventHandler</span><span class="p">(</span><span class="n">WiFiEventHandler</span><span class="o">*</span> <span class="n">wifiEventHandler</span><span class="p">)</span>
-<a name="line-719"></a><span class="p">{</span>
-<a name="line-720"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&gt;&gt; setWifiEventHandler: 0x%d&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">wifiEventHandler</span><span class="p">);</span>
-<a name="line-721"></a>	<span class="k">this</span><span class="o">-&gt;</span><span class="n">m_pWifiEventHandler</span> <span class="o">=</span> <span class="n">wifiEventHandler</span><span class="p">;</span>
-<a name="line-722"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&lt;&lt; setWifiEventHandler&quot;</span><span class="p">);</span>
-<a name="line-723"></a><span class="p">}</span> <span class="c1">// setWifiEventHandler</span>
-<a name="line-724"></a>
-<a name="line-725"></a><span class="cm">/**</span>
-<a name="line-726"></a><span class="cm"> * @brief Set the IP info and enable DHCP if ip != 0. If called with ip == 0 then DHCP is enabled.</span>
-<a name="line-727"></a><span class="cm"> * If called with bad values it will do nothing.</span>
-<a name="line-728"></a><span class="cm"> *</span>
-<a name="line-729"></a><span class="cm"> * Do not call this method if we are being an access point ourselves.</span>
-<a name="line-730"></a><span class="cm"> *</span>
-<a name="line-731"></a><span class="cm"> * For example, prior to calling `connectAP()` we could invoke:</span>
-<a name="line-732"></a><span class="cm"> *</span>
-<a name="line-733"></a><span class="cm"> * @code{.cpp}</span>
-<a name="line-734"></a><span class="cm"> * myWifi.setIPInfo(&quot;192.168.1.99&quot;, &quot;192.168.1.1&quot;, &quot;255.255.255.0&quot;);</span>
-<a name="line-735"></a><span class="cm"> * @endcode</span>
-<a name="line-736"></a><span class="cm"> *</span>
-<a name="line-737"></a><span class="cm"> * @param [in] ip IP address value.</span>
-<a name="line-738"></a><span class="cm"> * @param [in] gw Gateway value.</span>
-<a name="line-739"></a><span class="cm"> * @param [in] netmask Netmask value.</span>
-<a name="line-740"></a><span class="cm"> * @return N/A.</span>
-<a name="line-741"></a><span class="cm"> */</span>
-<a name="line-742"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">setIPInfo</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ip</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">gw</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">netmask</span><span class="p">)</span>
-<a name="line-743"></a><span class="p">{</span>
-<a name="line-744"></a>	<span class="n">setIPInfo</span><span class="p">(</span><span class="n">ip</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">gw</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">netmask</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
-<a name="line-745"></a><span class="p">}</span> <span class="c1">// setIPInfo</span>
-<a name="line-746"></a>
-<a name="line-747"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">setIPInfo</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">ip</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">gw</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">netmask</span><span class="p">)</span>
-<a name="line-748"></a><span class="p">{</span>
-<a name="line-749"></a>	<span class="kt">uint32_t</span> <span class="n">new_ip</span><span class="p">;</span>
-<a name="line-750"></a>	<span class="kt">uint32_t</span> <span class="n">new_gw</span><span class="p">;</span>
-<a name="line-751"></a>	<span class="kt">uint32_t</span> <span class="n">new_netmask</span><span class="p">;</span>
-<a name="line-752"></a>
-<a name="line-753"></a>	<span class="k">auto</span> <span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="kt">bool</span><span class="p">)</span><span class="n">inet_pton</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">ip</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">new_ip</span><span class="p">);</span>
-<a name="line-754"></a>	<span class="n">success</span> <span class="o">=</span> <span class="n">success</span> <span class="o">&amp;&amp;</span> <span class="n">inet_pton</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">gw</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">new_gw</span><span class="p">);</span>
-<a name="line-755"></a>	<span class="n">success</span> <span class="o">=</span> <span class="n">success</span> <span class="o">&amp;&amp;</span> <span class="n">inet_pton</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">netmask</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">new_netmask</span><span class="p">);</span>
-<a name="line-756"></a>
-<a name="line-757"></a>	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">success</span><span class="p">)</span>
-<a name="line-758"></a>		<span class="k">return</span><span class="p">;</span>
-<a name="line-759"></a>
-<a name="line-760"></a>	<span class="n">setIPInfo</span><span class="p">(</span><span class="n">new_ip</span><span class="p">,</span> <span class="n">new_gw</span><span class="p">,</span> <span class="n">new_netmask</span><span class="p">);</span>
-<a name="line-761"></a><span class="p">}</span> <span class="c1">// setIPInfo</span>
-<a name="line-762"></a>
-<a name="line-763"></a><span class="cm">/**</span>
-<a name="line-764"></a><span class="cm"> * @brief Set the IP Info based on the IP address, gateway and netmask.</span>
-<a name="line-765"></a><span class="cm"> * @param [in] ip The IP address of our ESP32.</span>
-<a name="line-766"></a><span class="cm"> * @param [in] gw The gateway we should use.</span>
-<a name="line-767"></a><span class="cm"> * @param [in] netmask Our TCP/IP netmask value.</span>
-<a name="line-768"></a><span class="cm"> */</span>
-<a name="line-769"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">setIPInfo</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">ip</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">gw</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">netmask</span><span class="p">)</span>
-<a name="line-770"></a><span class="p">{</span>
-<a name="line-771"></a>	<span class="n">init</span><span class="p">();</span>
-<a name="line-772"></a>
-<a name="line-773"></a>	<span class="k">this</span><span class="o">-&gt;</span><span class="n">ip</span> <span class="o">=</span> <span class="n">ip</span><span class="p">;</span>
-<a name="line-774"></a>	<span class="k">this</span><span class="o">-&gt;</span><span class="n">gw</span> <span class="o">=</span> <span class="n">gw</span><span class="p">;</span>
-<a name="line-775"></a>	<span class="k">this</span><span class="o">-&gt;</span><span class="n">netmask</span> <span class="o">=</span> <span class="n">netmask</span><span class="p">;</span>
-<a name="line-776"></a>
-<a name="line-777"></a>	<span class="k">if</span><span class="p">(</span><span class="n">ip</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">gw</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">netmask</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
-<a name="line-778"></a>	<span class="p">{</span>
-<a name="line-779"></a>		<span class="n">tcpip_adapter_ip_info_t</span> <span class="n">ipInfo</span><span class="p">;</span>
-<a name="line-780"></a>		<span class="n">ipInfo</span><span class="p">.</span><span class="n">ip</span><span class="p">.</span><span class="n">addr</span> <span class="o">=</span> <span class="n">ip</span><span class="p">;</span>
-<a name="line-781"></a>		<span class="n">ipInfo</span><span class="p">.</span><span class="n">gw</span><span class="p">.</span><span class="n">addr</span> <span class="o">=</span> <span class="n">gw</span><span class="p">;</span>
-<a name="line-782"></a>		<span class="n">ipInfo</span><span class="p">.</span><span class="n">netmask</span><span class="p">.</span><span class="n">addr</span> <span class="o">=</span> <span class="n">netmask</span><span class="p">;</span>
-<a name="line-783"></a>		<span class="o">::</span><span class="n">tcpip_adapter_dhcpc_stop</span><span class="p">(</span><span class="n">TCPIP_ADAPTER_IF_STA</span><span class="p">);</span>
-<a name="line-784"></a>		<span class="o">::</span><span class="n">tcpip_adapter_set_ip_info</span><span class="p">(</span><span class="n">TCPIP_ADAPTER_IF_STA</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ipInfo</span><span class="p">);</span>
-<a name="line-785"></a>	<span class="p">}</span>
-<a name="line-786"></a>	<span class="k">else</span>
-<a name="line-787"></a>	<span class="p">{</span>
-<a name="line-788"></a><span class="hll">		<span class="n">ip</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class='error2'>&lt;--- Assignment of function parameter has no effect outside the function.</span><span class='error2'>&lt;--- Variable 'ip' is assigned a value that is never used.</span>
-</span><a name="line-789"></a>		<span class="o">::</span><span class="n">tcpip_adapter_dhcpc_start</span><span class="p">(</span><span class="n">TCPIP_ADAPTER_IF_STA</span><span class="p">);</span>
-<a name="line-790"></a>	<span class="p">}</span>
-<a name="line-791"></a><span class="p">}</span> <span class="c1">// setIPInfo</span>
-<a name="line-792"></a>
-<a name="line-793"></a><span class="cm">/**</span>
-<a name="line-794"></a><span class="cm"> * @brief Return a string representation of the WiFi access point record.</span>
-<a name="line-795"></a><span class="cm"> *</span>
-<a name="line-796"></a><span class="cm"> * @return A string representation of the WiFi access point record.</span>
-<a name="line-797"></a><span class="cm"> */</span>
-<a name="line-798"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">WiFiAPRecord</span><span class="o">::</span><span class="n">toString</span><span class="p">()</span>
-<a name="line-799"></a><span class="p">{</span>
-<a name="line-800"></a>	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">auth</span><span class="p">;</span>
-<a name="line-801"></a>	<span class="k">switch</span><span class="p">(</span><span class="n">getAuthMode</span><span class="p">())</span>
-<a name="line-802"></a>	<span class="p">{</span>
-<a name="line-803"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_OPEN</span><span class="p">:</span>
-<a name="line-804"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_OPEN&quot;</span><span class="p">;</span>
-<a name="line-805"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-806"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_WEP</span><span class="p">:</span>
-<a name="line-807"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_WEP&quot;</span><span class="p">;</span>
-<a name="line-808"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-809"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_WPA_PSK</span><span class="p">:</span>
-<a name="line-810"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_WPA_PSK&quot;</span><span class="p">;</span>
-<a name="line-811"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-812"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_WPA2_PSK</span><span class="p">:</span>
-<a name="line-813"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_WPA2_PSK&quot;</span><span class="p">;</span>
-<a name="line-814"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-815"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_WPA_WPA2_PSK</span><span class="p">:</span>
-<a name="line-816"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_WPA_WPA2_PSK&quot;</span><span class="p">;</span>
-<a name="line-817"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-818"></a>		<span class="k">default</span><span class="o">:</span>
-<a name="line-819"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;&lt;unknown&gt;&quot;</span><span class="p">;</span>
-<a name="line-820"></a>			<span class="k">break</span><span class="p">;</span>
-<a name="line-821"></a>	<span class="p">}</span>
-<a name="line-822"></a>	<span class="c1">//	std::stringstream s;</span>
-<a name="line-823"></a>	<span class="c1">//	s&lt;&lt; &quot;ssid: &quot; &lt;&lt; m_ssid &lt;&lt; &quot;, auth: &quot; &lt;&lt; auth &lt;&lt; &quot;, rssi: &quot; &lt;&lt; m_rssi;</span>
-<a name="line-824"></a>	<span class="k">auto</span> <span class="n">info_str</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="mi">6</span> <span class="o">+</span> <span class="mi">32</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span> <span class="mi">22</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
-<a name="line-825"></a>	<span class="n">sprintf</span><span class="p">(</span><span class="n">info_str</span><span class="p">,</span> <span class="s">&quot;ssid: %s, auth: %s, rssi: %d&quot;</span><span class="p">,</span> <span class="n">m_ssid</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">auth</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">m_rssi</span><span class="p">);</span>
-<a name="line-826"></a>	<span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">info_str</span><span class="p">));</span>
-<a name="line-827"></a><span class="p">}</span> <span class="c1">// toString</span>
-<a name="line-828"></a>
-<a name="line-829"></a><span class="cm">/*</span>
-<a name="line-830"></a><span class="cm">MDNS::MDNS() {</span>
-<a name="line-831"></a><span class="cm">	esp_err_t errRc = ::mdns_init(TCPIP_ADAPTER_IF_STA, &amp;m_mdns_server);</span>
-<a name="line-832"></a><span class="cm">	if (errRc != ESP_OK) {</span>
-<a name="line-833"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_init: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
-<a name="line-834"></a><span class="cm">		abort();</span>
-<a name="line-835"></a><span class="cm">	}</span>
-<a name="line-836"></a><span class="cm">}</span>
-<a name="line-837"></a>
+<a name="line-501"></a>		<span class="c1">// https://github.com/espressif/esp-idf/issues/3838</span>
+<a name="line-502"></a>		<span class="c1">//	esp_err_t errRc =</span>
+<a name="line-503"></a>		<span class="c1">//		::esp_event_loop_init(WiFi::eventHandler, this); // Initialze the event handler.</span>
+<a name="line-504"></a>		<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-505"></a>		<span class="p">{</span>
+<a name="line-506"></a>			<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_event_loop_init: rc=%d %s&quot;, errRc,</span>
+<a name="line-507"></a>			<span class="c1">//			 GeneralUtils::errorToString(errRc));</span>
+<a name="line-508"></a>			<span class="n">abort</span><span class="p">();</span>
+<a name="line-509"></a>		<span class="p">}</span>
+<a name="line-510"></a>		<span class="n">m_eventLoopStarted</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="line-511"></a>	<span class="p">}</span>
+<a name="line-512"></a>	<span class="c1">// Now, one way or another, the event handler is WiFi::eventHandler.</span>
+<a name="line-513"></a>
+<a name="line-514"></a>	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">m_initCalled</span><span class="p">)</span>
+<a name="line-515"></a>	<span class="p">{</span>
+<a name="line-516"></a>		<span class="o">::</span><span class="n">nvs_flash_init</span><span class="p">();</span>
+<a name="line-517"></a>		<span class="o">::</span><span class="n">tcpip_adapter_init</span><span class="p">();</span>
+<a name="line-518"></a>
+<a name="line-519"></a>		<span class="n">wifi_init_config_t</span> <span class="n">cfg</span> <span class="o">=</span> <span class="n">WIFI_INIT_CONFIG_DEFAULT</span><span class="p">();</span>
+<a name="line-520"></a>		<span class="n">esp_err_t</span> <span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_init</span><span class="p">(</span><span class="o">&amp;</span><span class="n">cfg</span><span class="p">);</span>
+<a name="line-521"></a>		<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-522"></a>		<span class="p">{</span>
+<a name="line-523"></a>			<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_init: rc=%d %s&quot;, errRc,</span>
+<a name="line-524"></a>			<span class="c1">// GeneralUtils::errorToString(errRc));</span>
+<a name="line-525"></a>			<span class="n">abort</span><span class="p">();</span>
+<a name="line-526"></a>		<span class="p">}</span>
+<a name="line-527"></a>
+<a name="line-528"></a>		<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_set_storage</span><span class="p">(</span><span class="n">WIFI_STORAGE_RAM</span><span class="p">);</span>
+<a name="line-529"></a>		<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-530"></a>		<span class="p">{</span>
+<a name="line-531"></a>			<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_set_storage: rc=%d %s&quot;, errRc,</span>
+<a name="line-532"></a>			<span class="c1">//				 GeneralUtils::errorToString(errRc));</span>
+<a name="line-533"></a>			<span class="n">abort</span><span class="p">();</span>
+<a name="line-534"></a>		<span class="p">}</span>
+<a name="line-535"></a>	<span class="p">}</span>
+<a name="line-536"></a>	<span class="n">m_initCalled</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="line-537"></a><span class="p">}</span> <span class="c1">// init</span>
+<a name="line-538"></a>
+<a name="line-539"></a><span class="cm">/**</span>
+<a name="line-540"></a><span class="cm"> * @brief Perform a WiFi scan looking for access points.</span>
+<a name="line-541"></a><span class="cm"> *</span>
+<a name="line-542"></a><span class="cm"> * An access point scan is performed and a vector of WiFi access point records</span>
+<a name="line-543"></a><span class="cm"> * is built and returned with one record per found scan instance.  The scan is</span>
+<a name="line-544"></a><span class="cm"> * performed in a blocking fashion and will not return until the set of scanned</span>
+<a name="line-545"></a><span class="cm"> * access points has been built.</span>
+<a name="line-546"></a><span class="cm"> *</span>
+<a name="line-547"></a><span class="cm"> * @return A vector of WiFiAPRecord instances.</span>
+<a name="line-548"></a><span class="cm"> */</span>
+<a name="line-549"></a><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">WiFiAPRecord</span><span class="o">&gt;</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">scan</span><span class="p">()</span>
+<a name="line-550"></a><span class="p">{</span>
+<a name="line-551"></a>	<span class="c1">// #lizard forgives the complexity</span>
+<a name="line-552"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&gt;&gt; scan&quot;</span><span class="p">);</span>
+<a name="line-553"></a>	<span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="n">WiFiAPRecord</span><span class="o">&gt;</span> <span class="n">apRecords</span><span class="p">;</span>
+<a name="line-554"></a>
+<a name="line-555"></a>	<span class="n">init</span><span class="p">();</span>
+<a name="line-556"></a>
+<a name="line-557"></a>	<span class="n">esp_err_t</span> <span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_STA</span><span class="p">);</span>
+<a name="line-558"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-559"></a>	<span class="p">{</span>
+<a name="line-560"></a>		<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_set_mode: rc=%d %s&quot;, errRc,</span>
+<a name="line-561"></a>		<span class="c1">// GeneralUtils::errorToString(errRc));</span>
+<a name="line-562"></a>		<span class="n">abort</span><span class="p">();</span>
+<a name="line-563"></a>	<span class="p">}</span>
+<a name="line-564"></a>
+<a name="line-565"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_start</span><span class="p">();</span>
+<a name="line-566"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-567"></a>	<span class="p">{</span>
+<a name="line-568"></a>		<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_start: rc=%d %s&quot;, errRc,</span>
+<a name="line-569"></a>		<span class="c1">// GeneralUtils::errorToString(errRc));</span>
+<a name="line-570"></a>		<span class="n">abort</span><span class="p">();</span>
+<a name="line-571"></a>	<span class="p">}</span>
+<a name="line-572"></a>
+<a name="line-573"></a>	<span class="n">wifi_scan_config_t</span> <span class="n">conf</span><span class="p">;</span>
+<a name="line-574"></a>	<span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">conf</span><span class="p">));</span>
+<a name="line-575"></a>	<span class="n">conf</span><span class="p">.</span><span class="n">show_hidden</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+<a name="line-576"></a>
+<a name="line-577"></a>	<span class="n">esp_err_t</span> <span class="n">rc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_scan_start</span><span class="p">(</span><span class="o">&amp;</span><span class="n">conf</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+<a name="line-578"></a>	<span class="k">if</span><span class="p">(</span><span class="n">rc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-579"></a>	<span class="p">{</span>
+<a name="line-580"></a>		<span class="n">ESP_LOGE</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;esp_wifi_scan_start: %d&quot;</span><span class="p">,</span> <span class="n">rc</span><span class="p">);</span>
+<a name="line-581"></a>		<span class="k">return</span> <span class="n">apRecords</span><span class="p">;</span>
+<a name="line-582"></a>	<span class="p">}</span>
+<a name="line-583"></a>
+<a name="line-584"></a>	<span class="kt">uint16_t</span> <span class="n">apCount</span><span class="p">;</span> <span class="c1">// Number of access points available.</span>
+<a name="line-585"></a>	<span class="n">rc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_scan_get_ap_num</span><span class="p">(</span><span class="o">&amp;</span><span class="n">apCount</span><span class="p">);</span>
+<a name="line-586"></a>	<span class="k">if</span><span class="p">(</span><span class="n">rc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-587"></a>	<span class="p">{</span>
+<a name="line-588"></a>		<span class="n">ESP_LOGE</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;esp_wifi_scan_get_ap_num: %d&quot;</span><span class="p">,</span> <span class="n">rc</span><span class="p">);</span>
+<a name="line-589"></a>		<span class="k">return</span> <span class="n">apRecords</span><span class="p">;</span>
+<a name="line-590"></a>	<span class="p">}</span>
+<a name="line-591"></a>	<span class="k">else</span>
+<a name="line-592"></a>	<span class="p">{</span>
+<a name="line-593"></a>		<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;Count of found access points: %d&quot;</span><span class="p">,</span> <span class="n">apCount</span><span class="p">);</span>
+<a name="line-594"></a>	<span class="p">}</span>
+<a name="line-595"></a>
+<a name="line-596"></a>	<span class="n">wifi_ap_record_t</span><span class="o">*</span> <span class="n">list</span> <span class="o">=</span> <span class="p">(</span><span class="n">wifi_ap_record_t</span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="k">sizeof</span><span class="p">(</span><span class="n">wifi_ap_record_t</span><span class="p">)</span> <span class="o">*</span> <span class="n">apCount</span><span class="p">);</span>
+<a name="line-597"></a>	<span class="k">if</span><span class="p">(</span><span class="n">list</span> <span class="o">==</span> <span class="k">nullptr</span><span class="p">)</span>
+<a name="line-598"></a>	<span class="p">{</span>
+<a name="line-599"></a>		<span class="n">ESP_LOGE</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;Failed to allocate memory&quot;</span><span class="p">);</span>
+<a name="line-600"></a>		<span class="k">return</span> <span class="n">apRecords</span><span class="p">;</span>
+<a name="line-601"></a>	<span class="p">}</span>
+<a name="line-602"></a>
+<a name="line-603"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_scan_get_ap_records</span><span class="p">(</span><span class="o">&amp;</span><span class="n">apCount</span><span class="p">,</span> <span class="n">list</span><span class="p">);</span>
+<a name="line-604"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-605"></a>	<span class="p">{</span>
+<a name="line-606"></a>		<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;esp_wifi_scan_get_ap_records: rc=%d %s&quot;, errRc,</span>
+<a name="line-607"></a>		<span class="c1">//			 GeneralUtils::errorToString(errRc));</span>
+<a name="line-608"></a>		<span class="n">abort</span><span class="p">();</span>
+<a name="line-609"></a>	<span class="p">}</span>
+<a name="line-610"></a>
+<a name="line-611"></a>	<span class="k">for</span><span class="p">(</span><span class="kt">uint16_t</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">apCount</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<a name="line-612"></a>	<span class="p">{</span>
+<a name="line-613"></a>		<span class="n">WiFiAPRecord</span> <span class="n">wifiAPRecord</span><span class="p">;</span>
+<a name="line-614"></a>		<span class="n">memcpy</span><span class="p">(</span><span class="n">wifiAPRecord</span><span class="p">.</span><span class="n">m_bssid</span><span class="p">,</span> <span class="n">list</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">bssid</span><span class="p">,</span> <span class="mi">6</span><span class="p">);</span>
+<a name="line-615"></a>		<span class="n">wifiAPRecord</span><span class="p">.</span><span class="n">m_ssid</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">((</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">list</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">ssid</span><span class="p">);</span>
+<a name="line-616"></a>		<span class="n">wifiAPRecord</span><span class="p">.</span><span class="n">m_authMode</span> <span class="o">=</span> <span class="n">list</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">authmode</span><span class="p">;</span>
+<a name="line-617"></a>		<span class="n">wifiAPRecord</span><span class="p">.</span><span class="n">m_rssi</span> <span class="o">=</span> <span class="n">list</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">rssi</span><span class="p">;</span>
+<a name="line-618"></a>		<span class="n">apRecords</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">wifiAPRecord</span><span class="p">);</span>
+<a name="line-619"></a>	<span class="p">}</span>
+<a name="line-620"></a>	<span class="n">free</span><span class="p">(</span><span class="n">list</span><span class="p">);</span> <span class="c1">// Release the storage allocated to hold the records.</span>
+<a name="line-621"></a>	<span class="n">std</span><span class="o">::</span><span class="n">sort</span><span class="p">(</span>
+<a name="line-622"></a>		<span class="n">apRecords</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">apRecords</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span>
+<a name="line-623"></a>		<span class="p">[](</span><span class="k">const</span> <span class="n">WiFiAPRecord</span><span class="o">&amp;</span> <span class="n">lhs</span><span class="p">,</span> <span class="k">const</span> <span class="n">WiFiAPRecord</span><span class="o">&amp;</span> <span class="n">rhs</span><span class="p">)</span> <span class="p">{</span> <span class="k">return</span> <span class="n">lhs</span><span class="p">.</span><span class="n">m_rssi</span> <span class="o">&gt;</span> <span class="n">rhs</span><span class="p">.</span><span class="n">m_rssi</span><span class="p">;</span> <span class="p">});</span>
+<a name="line-624"></a>	<span class="k">return</span> <span class="n">apRecords</span><span class="p">;</span>
+<a name="line-625"></a><span class="p">}</span> <span class="c1">// scan</span>
+<a name="line-626"></a>
+<a name="line-627"></a><span class="cm">/**</span>
+<a name="line-628"></a><span class="cm"> * @brief Start being an access point.</span>
+<a name="line-629"></a><span class="cm"> *</span>
+<a name="line-630"></a><span class="cm"> * @param[in] ssid The SSID to use to advertize for stations.</span>
+<a name="line-631"></a><span class="cm"> * @param[in] password The password to use for station connections.</span>
+<a name="line-632"></a><span class="cm"> * @param[in] auth The authorization mode for access to this access point.  Options are:</span>
+<a name="line-633"></a><span class="cm"> * * WIFI_AUTH_OPEN</span>
+<a name="line-634"></a><span class="cm"> * * WIFI_AUTH_WPA_PSK</span>
+<a name="line-635"></a><span class="cm"> * * WIFI_AUTH_WPA2_PSK</span>
+<a name="line-636"></a><span class="cm"> * * WIFI_AUTH_WPA_WPA2_PSK</span>
+<a name="line-637"></a><span class="cm"> * * WIFI_AUTH_WPA2_ENTERPRISE</span>
+<a name="line-638"></a><span class="cm"> * * WIFI_AUTH_WEP</span>
+<a name="line-639"></a><span class="cm"> * @return N/A.</span>
+<a name="line-640"></a><span class="cm"> */</span>
+<a name="line-641"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">startAP</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ssid</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">password</span><span class="p">,</span> <span class="n">wifi_auth_mode_t</span> <span class="n">auth</span><span class="p">)</span>
+<a name="line-642"></a><span class="p">{</span>
+<a name="line-643"></a>	<span class="n">startAP</span><span class="p">(</span><span class="n">ssid</span><span class="p">,</span> <span class="n">password</span><span class="p">,</span> <span class="n">auth</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">false</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<a name="line-644"></a><span class="p">}</span> <span class="c1">// startAP</span>
+<a name="line-645"></a>
+<a name="line-646"></a><span class="cm">/**</span>
+<a name="line-647"></a><span class="cm"> * @brief Start being an access point.</span>
+<a name="line-648"></a><span class="cm"> *</span>
+<a name="line-649"></a><span class="cm"> * @param[in] ssid The SSID to use to advertize for stations.</span>
+<a name="line-650"></a><span class="cm"> * @param[in] password The password to use for station connections.</span>
+<a name="line-651"></a><span class="cm"> * @param[in] auth The authorization mode for access to this access point.  Options are:</span>
+<a name="line-652"></a><span class="cm"> * * WIFI_AUTH_OPEN</span>
+<a name="line-653"></a><span class="cm"> * * WIFI_AUTH_WPA_PSK</span>
+<a name="line-654"></a><span class="cm"> * * WIFI_AUTH_WPA2_PSK</span>
+<a name="line-655"></a><span class="cm"> * * WIFI_AUTH_WPA_WPA2_PSK</span>
+<a name="line-656"></a><span class="cm"> * * WIFI_AUTH_WPA2_ENTERPRISE</span>
+<a name="line-657"></a><span class="cm"> * * WIFI_AUTH_WEP</span>
+<a name="line-658"></a><span class="cm"> * @param[in] channel from the access point.</span>
+<a name="line-659"></a><span class="cm"> * @param[in] is the ssid hidden, ore not.</span>
+<a name="line-660"></a><span class="cm"> * @param[in] limiting number of clients.</span>
+<a name="line-661"></a><span class="cm"> * @return N/A.</span>
+<a name="line-662"></a><span class="cm"> */</span>
+<a name="line-663"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">startAP</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ssid</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">password</span><span class="p">,</span> <span class="n">wifi_auth_mode_t</span> <span class="n">auth</span><span class="p">,</span>
+<a name="line-664"></a>				   <span class="kt">uint8_t</span> <span class="n">channel</span><span class="p">,</span> <span class="kt">bool</span> <span class="n">ssid_hidden</span><span class="p">,</span> <span class="kt">uint8_t</span> <span class="n">max_connection</span><span class="p">)</span>
+<a name="line-665"></a><span class="p">{</span>
+<a name="line-666"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&gt;&gt; startAP: ssid: %s&quot;</span><span class="p">,</span> <span class="n">ssid</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<a name="line-667"></a>
+<a name="line-668"></a>	<span class="n">init</span><span class="p">();</span>
+<a name="line-669"></a>
+<a name="line-670"></a>	<span class="n">esp_err_t</span> <span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_set_mode</span><span class="p">(</span><span class="n">WIFI_MODE_AP</span><span class="p">);</span>
+<a name="line-671"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-672"></a>	<span class="p">{</span>
+<a name="line-673"></a>		<span class="c1">// ESP_LOGE(LOG_TAG, &quot;esp_wifi_set_mode: rc=%d %s&quot;, errRc,</span>
+<a name="line-674"></a>		<span class="c1">// GeneralUtils::errorToString(errRc));</span>
+<a name="line-675"></a>		<span class="n">abort</span><span class="p">();</span>
+<a name="line-676"></a>	<span class="p">}</span>
+<a name="line-677"></a>
+<a name="line-678"></a>	<span class="c1">// Build the apConfig structure.</span>
+<a name="line-679"></a>	<span class="n">wifi_config_t</span> <span class="n">apConfig</span><span class="p">;</span>
+<a name="line-680"></a>	<span class="o">::</span><span class="n">memset</span><span class="p">(</span><span class="o">&amp;</span><span class="n">apConfig</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">apConfig</span><span class="p">));</span>
+<a name="line-681"></a>	<span class="o">::</span><span class="n">memcpy</span><span class="p">(</span><span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">ssid</span><span class="p">,</span> <span class="n">ssid</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">ssid</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+<a name="line-682"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">ssid_len</span> <span class="o">=</span> <span class="n">ssid</span><span class="p">.</span><span class="n">size</span><span class="p">();</span>
+<a name="line-683"></a>	<span class="o">::</span><span class="n">memcpy</span><span class="p">(</span><span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">password</span><span class="p">,</span> <span class="n">password</span><span class="p">.</span><span class="n">data</span><span class="p">(),</span> <span class="n">password</span><span class="p">.</span><span class="n">size</span><span class="p">());</span>
+<a name="line-684"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">channel</span> <span class="o">=</span> <span class="n">channel</span><span class="p">;</span>
+<a name="line-685"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">authmode</span> <span class="o">=</span> <span class="n">auth</span><span class="p">;</span>
+<a name="line-686"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">ssid_hidden</span> <span class="o">=</span> <span class="p">(</span><span class="kt">uint8_t</span><span class="p">)</span><span class="n">ssid_hidden</span><span class="p">;</span>
+<a name="line-687"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">max_connection</span> <span class="o">=</span> <span class="n">max_connection</span><span class="p">;</span>
+<a name="line-688"></a>	<span class="n">apConfig</span><span class="p">.</span><span class="n">ap</span><span class="p">.</span><span class="n">beacon_interval</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<a name="line-689"></a>
+<a name="line-690"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_set_config</span><span class="p">(</span><span class="n">WIFI_IF_AP</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">apConfig</span><span class="p">);</span>
+<a name="line-691"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-692"></a>	<span class="p">{</span>
+<a name="line-693"></a>		<span class="c1">// ESP_LOGE(LOG_TAG, &quot;esp_wifi_set_config: rc=%d %s&quot;, errRc,</span>
+<a name="line-694"></a>		<span class="c1">//		 GeneralUtils::errorToString(errRc));</span>
+<a name="line-695"></a>		<span class="n">abort</span><span class="p">();</span>
+<a name="line-696"></a>	<span class="p">}</span>
+<a name="line-697"></a>
+<a name="line-698"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">esp_wifi_start</span><span class="p">();</span>
+<a name="line-699"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-700"></a>	<span class="p">{</span>
+<a name="line-701"></a>		<span class="c1">// ESP_LOGE(LOG_TAG, &quot;esp_wifi_start: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
+<a name="line-702"></a>		<span class="n">abort</span><span class="p">();</span>
+<a name="line-703"></a>	<span class="p">}</span>
+<a name="line-704"></a>
+<a name="line-705"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="n">tcpip_adapter_dhcps_start</span><span class="p">(</span><span class="n">TCPIP_ADAPTER_IF_AP</span><span class="p">);</span>
+<a name="line-706"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
+<a name="line-707"></a>	<span class="p">{</span>
+<a name="line-708"></a>		<span class="c1">//	ESP_LOGE(LOG_TAG, &quot;tcpip_adapter_dhcps_start: rc=%d %s&quot;, errRc,</span>
+<a name="line-709"></a>		<span class="c1">//			 GeneralUtils::errorToString(errRc));</span>
+<a name="line-710"></a>	<span class="p">}</span>
+<a name="line-711"></a>
+<a name="line-712"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&lt;&lt; startAP&quot;</span><span class="p">);</span>
+<a name="line-713"></a><span class="p">}</span> <span class="c1">// startAP</span>
+<a name="line-714"></a>
+<a name="line-715"></a><span class="cm">/**</span>
+<a name="line-716"></a><span class="cm"> * @brief Set the event handler to use to process detected events.</span>
+<a name="line-717"></a><span class="cm"> * @param[in] wifiEventHandler The class that will be used to process events.</span>
+<a name="line-718"></a><span class="cm"> */</span>
+<a name="line-719"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">setWifiEventHandler</span><span class="p">(</span><span class="n">WiFiEventHandler</span><span class="o">*</span> <span class="n">wifiEventHandler</span><span class="p">)</span>
+<a name="line-720"></a><span class="p">{</span>
+<a name="line-721"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&gt;&gt; setWifiEventHandler: 0x%d&quot;</span><span class="p">,</span> <span class="p">(</span><span class="kt">uint32_t</span><span class="p">)</span><span class="n">wifiEventHandler</span><span class="p">);</span>
+<a name="line-722"></a>	<span class="k">this</span><span class="o">-&gt;</span><span class="n">m_pWifiEventHandler</span> <span class="o">=</span> <span class="n">wifiEventHandler</span><span class="p">;</span>
+<a name="line-723"></a>	<span class="n">ESP_LOGD</span><span class="p">(</span><span class="n">LOG_TAG</span><span class="p">,</span> <span class="s">&quot;&lt;&lt; setWifiEventHandler&quot;</span><span class="p">);</span>
+<a name="line-724"></a><span class="p">}</span> <span class="c1">// setWifiEventHandler</span>
+<a name="line-725"></a>
+<a name="line-726"></a><span class="cm">/**</span>
+<a name="line-727"></a><span class="cm"> * @brief Set the IP info and enable DHCP if ip != 0. If called with ip == 0 then DHCP is enabled.</span>
+<a name="line-728"></a><span class="cm"> * If called with bad values it will do nothing.</span>
+<a name="line-729"></a><span class="cm"> *</span>
+<a name="line-730"></a><span class="cm"> * Do not call this method if we are being an access point ourselves.</span>
+<a name="line-731"></a><span class="cm"> *</span>
+<a name="line-732"></a><span class="cm"> * For example, prior to calling `connectAP()` we could invoke:</span>
+<a name="line-733"></a><span class="cm"> *</span>
+<a name="line-734"></a><span class="cm"> * @code{.cpp}</span>
+<a name="line-735"></a><span class="cm"> * myWifi.setIPInfo(&quot;192.168.1.99&quot;, &quot;192.168.1.1&quot;, &quot;255.255.255.0&quot;);</span>
+<a name="line-736"></a><span class="cm"> * @endcode</span>
+<a name="line-737"></a><span class="cm"> *</span>
+<a name="line-738"></a><span class="cm"> * @param [in] ip IP address value.</span>
+<a name="line-739"></a><span class="cm"> * @param [in] gw Gateway value.</span>
+<a name="line-740"></a><span class="cm"> * @param [in] netmask Netmask value.</span>
+<a name="line-741"></a><span class="cm"> * @return N/A.</span>
+<a name="line-742"></a><span class="cm"> */</span>
+<a name="line-743"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">setIPInfo</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">ip</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">gw</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">netmask</span><span class="p">)</span>
+<a name="line-744"></a><span class="p">{</span>
+<a name="line-745"></a>	<span class="n">setIPInfo</span><span class="p">(</span><span class="n">ip</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">gw</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">netmask</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+<a name="line-746"></a><span class="p">}</span> <span class="c1">// setIPInfo</span>
+<a name="line-747"></a>
+<a name="line-748"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">setIPInfo</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">ip</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">gw</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">netmask</span><span class="p">)</span>
+<a name="line-749"></a><span class="p">{</span>
+<a name="line-750"></a>	<span class="kt">uint32_t</span> <span class="n">new_ip</span><span class="p">;</span>
+<a name="line-751"></a>	<span class="kt">uint32_t</span> <span class="n">new_gw</span><span class="p">;</span>
+<a name="line-752"></a>	<span class="kt">uint32_t</span> <span class="n">new_netmask</span><span class="p">;</span>
+<a name="line-753"></a>
+<a name="line-754"></a>	<span class="k">auto</span> <span class="n">success</span> <span class="o">=</span> <span class="p">(</span><span class="kt">bool</span><span class="p">)</span><span class="n">inet_pton</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">ip</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">new_ip</span><span class="p">);</span>
+<a name="line-755"></a>	<span class="n">success</span> <span class="o">=</span> <span class="n">success</span> <span class="o">&amp;&amp;</span> <span class="n">inet_pton</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">gw</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">new_gw</span><span class="p">);</span>
+<a name="line-756"></a>	<span class="n">success</span> <span class="o">=</span> <span class="n">success</span> <span class="o">&amp;&amp;</span> <span class="n">inet_pton</span><span class="p">(</span><span class="n">AF_INET</span><span class="p">,</span> <span class="n">netmask</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">new_netmask</span><span class="p">);</span>
+<a name="line-757"></a>
+<a name="line-758"></a>	<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="n">success</span><span class="p">)</span>
+<a name="line-759"></a>		<span class="k">return</span><span class="p">;</span>
+<a name="line-760"></a>
+<a name="line-761"></a>	<span class="n">setIPInfo</span><span class="p">(</span><span class="n">new_ip</span><span class="p">,</span> <span class="n">new_gw</span><span class="p">,</span> <span class="n">new_netmask</span><span class="p">);</span>
+<a name="line-762"></a><span class="p">}</span> <span class="c1">// setIPInfo</span>
+<a name="line-763"></a>
+<a name="line-764"></a><span class="cm">/**</span>
+<a name="line-765"></a><span class="cm"> * @brief Set the IP Info based on the IP address, gateway and netmask.</span>
+<a name="line-766"></a><span class="cm"> * @param [in] ip The IP address of our ESP32.</span>
+<a name="line-767"></a><span class="cm"> * @param [in] gw The gateway we should use.</span>
+<a name="line-768"></a><span class="cm"> * @param [in] netmask Our TCP/IP netmask value.</span>
+<a name="line-769"></a><span class="cm"> */</span>
+<a name="line-770"></a><span class="kt">void</span> <span class="n">WiFi</span><span class="o">::</span><span class="n">setIPInfo</span><span class="p">(</span><span class="kt">uint32_t</span> <span class="n">ip</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">gw</span><span class="p">,</span> <span class="kt">uint32_t</span> <span class="n">netmask</span><span class="p">)</span>
+<a name="line-771"></a><span class="p">{</span>
+<a name="line-772"></a>	<span class="n">init</span><span class="p">();</span>
+<a name="line-773"></a>
+<a name="line-774"></a>	<span class="k">this</span><span class="o">-&gt;</span><span class="n">ip</span> <span class="o">=</span> <span class="n">ip</span><span class="p">;</span>
+<a name="line-775"></a>	<span class="k">this</span><span class="o">-&gt;</span><span class="n">gw</span> <span class="o">=</span> <span class="n">gw</span><span class="p">;</span>
+<a name="line-776"></a>	<span class="k">this</span><span class="o">-&gt;</span><span class="n">netmask</span> <span class="o">=</span> <span class="n">netmask</span><span class="p">;</span>
+<a name="line-777"></a>
+<a name="line-778"></a>	<span class="k">if</span><span class="p">(</span><span class="n">ip</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">gw</span> <span class="o">!=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">netmask</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+<a name="line-779"></a>	<span class="p">{</span>
+<a name="line-780"></a>		<span class="n">tcpip_adapter_ip_info_t</span> <span class="n">ipInfo</span><span class="p">;</span>
+<a name="line-781"></a>		<span class="n">ipInfo</span><span class="p">.</span><span class="n">ip</span><span class="p">.</span><span class="n">addr</span> <span class="o">=</span> <span class="n">ip</span><span class="p">;</span>
+<a name="line-782"></a>		<span class="n">ipInfo</span><span class="p">.</span><span class="n">gw</span><span class="p">.</span><span class="n">addr</span> <span class="o">=</span> <span class="n">gw</span><span class="p">;</span>
+<a name="line-783"></a>		<span class="n">ipInfo</span><span class="p">.</span><span class="n">netmask</span><span class="p">.</span><span class="n">addr</span> <span class="o">=</span> <span class="n">netmask</span><span class="p">;</span>
+<a name="line-784"></a>		<span class="o">::</span><span class="n">tcpip_adapter_dhcpc_stop</span><span class="p">(</span><span class="n">TCPIP_ADAPTER_IF_STA</span><span class="p">);</span>
+<a name="line-785"></a>		<span class="o">::</span><span class="n">tcpip_adapter_set_ip_info</span><span class="p">(</span><span class="n">TCPIP_ADAPTER_IF_STA</span><span class="p">,</span> <span class="o">&amp;</span><span class="n">ipInfo</span><span class="p">);</span>
+<a name="line-786"></a>	<span class="p">}</span>
+<a name="line-787"></a>	<span class="k">else</span>
+<a name="line-788"></a>	<span class="p">{</span>
+<a name="line-789"></a><span class="hll">		<span class="n">ip</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span><span class='error2'>&lt;--- Assignment of function parameter has no effect outside the function.</span><span class='error2'>&lt;--- Variable 'ip' is assigned a value that is never used.</span>
+</span><a name="line-790"></a>		<span class="o">::</span><span class="n">tcpip_adapter_dhcpc_start</span><span class="p">(</span><span class="n">TCPIP_ADAPTER_IF_STA</span><span class="p">);</span>
+<a name="line-791"></a>	<span class="p">}</span>
+<a name="line-792"></a><span class="p">}</span> <span class="c1">// setIPInfo</span>
+<a name="line-793"></a>
+<a name="line-794"></a><span class="cm">/**</span>
+<a name="line-795"></a><span class="cm"> * @brief Return a string representation of the WiFi access point record.</span>
+<a name="line-796"></a><span class="cm"> *</span>
+<a name="line-797"></a><span class="cm"> * @return A string representation of the WiFi access point record.</span>
+<a name="line-798"></a><span class="cm"> */</span>
+<a name="line-799"></a><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">WiFiAPRecord</span><span class="o">::</span><span class="n">toString</span><span class="p">()</span>
+<a name="line-800"></a><span class="p">{</span>
+<a name="line-801"></a>	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">auth</span><span class="p">;</span>
+<a name="line-802"></a>	<span class="k">switch</span><span class="p">(</span><span class="n">getAuthMode</span><span class="p">())</span>
+<a name="line-803"></a>	<span class="p">{</span>
+<a name="line-804"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_OPEN</span><span class="p">:</span>
+<a name="line-805"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_OPEN&quot;</span><span class="p">;</span>
+<a name="line-806"></a>			<span class="k">break</span><span class="p">;</span>
+<a name="line-807"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_WEP</span><span class="p">:</span>
+<a name="line-808"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_WEP&quot;</span><span class="p">;</span>
+<a name="line-809"></a>			<span class="k">break</span><span class="p">;</span>
+<a name="line-810"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_WPA_PSK</span><span class="p">:</span>
+<a name="line-811"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_WPA_PSK&quot;</span><span class="p">;</span>
+<a name="line-812"></a>			<span class="k">break</span><span class="p">;</span>
+<a name="line-813"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_WPA2_PSK</span><span class="p">:</span>
+<a name="line-814"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_WPA2_PSK&quot;</span><span class="p">;</span>
+<a name="line-815"></a>			<span class="k">break</span><span class="p">;</span>
+<a name="line-816"></a>		<span class="k">case</span> <span class="nl">WIFI_AUTH_WPA_WPA2_PSK</span><span class="p">:</span>
+<a name="line-817"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;WIFI_AUTH_WPA_WPA2_PSK&quot;</span><span class="p">;</span>
+<a name="line-818"></a>			<span class="k">break</span><span class="p">;</span>
+<a name="line-819"></a>		<span class="k">default</span><span class="o">:</span>
+<a name="line-820"></a>			<span class="n">auth</span> <span class="o">=</span> <span class="s">&quot;&lt;unknown&gt;&quot;</span><span class="p">;</span>
+<a name="line-821"></a>			<span class="k">break</span><span class="p">;</span>
+<a name="line-822"></a>	<span class="p">}</span>
+<a name="line-823"></a>	<span class="c1">//	std::stringstream s;</span>
+<a name="line-824"></a>	<span class="c1">//	s&lt;&lt; &quot;ssid: &quot; &lt;&lt; m_ssid &lt;&lt; &quot;, auth: &quot; &lt;&lt; auth &lt;&lt; &quot;, rssi: &quot; &lt;&lt; m_rssi;</span>
+<a name="line-825"></a>	<span class="k">auto</span> <span class="n">info_str</span> <span class="o">=</span> <span class="p">(</span><span class="kt">char</span><span class="o">*</span><span class="p">)</span><span class="n">malloc</span><span class="p">(</span><span class="mi">6</span> <span class="o">+</span> <span class="mi">32</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span> <span class="mi">22</span> <span class="o">+</span> <span class="mi">8</span> <span class="o">+</span> <span class="mi">3</span> <span class="o">+</span> <span class="mi">1</span><span class="p">);</span>
+<a name="line-826"></a>	<span class="n">sprintf</span><span class="p">(</span><span class="n">info_str</span><span class="p">,</span> <span class="s">&quot;ssid: %s, auth: %s, rssi: %d&quot;</span><span class="p">,</span> <span class="n">m_ssid</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">auth</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="p">(</span><span class="kt">int</span><span class="p">)</span><span class="n">m_rssi</span><span class="p">);</span>
+<a name="line-827"></a>	<span class="k">return</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">move</span><span class="p">(</span><span class="n">info_str</span><span class="p">));</span>
+<a name="line-828"></a><span class="p">}</span> <span class="c1">// toString</span>
+<a name="line-829"></a>
+<a name="line-830"></a><span class="cm">/*</span>
+<a name="line-831"></a><span class="cm">MDNS::MDNS() {</span>
+<a name="line-832"></a><span class="cm">	esp_err_t errRc = ::mdns_init(TCPIP_ADAPTER_IF_STA, &amp;m_mdns_server);</span>
+<a name="line-833"></a><span class="cm">	if (errRc != ESP_OK) {</span>
+<a name="line-834"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_init: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
+<a name="line-835"></a><span class="cm">		abort();</span>
+<a name="line-836"></a><span class="cm">	}</span>
+<a name="line-837"></a><span class="cm">}</span>
 <a name="line-838"></a>
-<a name="line-839"></a><span class="cm">MDNS::~MDNS() {</span>
-<a name="line-840"></a><span class="cm">	if (m_mdns_server != nullptr) {</span>
-<a name="line-841"></a><span class="cm">		mdns_free(m_mdns_server);</span>
-<a name="line-842"></a><span class="cm">	}</span>
-<a name="line-843"></a><span class="cm">	m_mdns_server = nullptr;</span>
-<a name="line-844"></a><span class="cm">}</span>
-<a name="line-845"></a><span class="cm">*/</span>
-<a name="line-846"></a>
-<a name="line-847"></a><span class="cm">/**</span>
-<a name="line-848"></a><span class="cm"> * @brief Define the service for mDNS.</span>
-<a name="line-849"></a><span class="cm"> *</span>
-<a name="line-850"></a><span class="cm"> * @param [in] service</span>
-<a name="line-851"></a><span class="cm"> * @param [in] proto</span>
-<a name="line-852"></a><span class="cm"> * @param [in] port</span>
-<a name="line-853"></a><span class="cm"> * @return N/A.</span>
-<a name="line-854"></a><span class="cm"> */</span>
-<a name="line-855"></a><span class="cm">/*</span>
-<a name="line-856"></a><span class="cm">void MDNS::serviceAdd(const std::string&amp; service, const std::string&amp; proto, uint16_t port) {</span>
-<a name="line-857"></a><span class="cm">	serviceAdd(service.c_str(), proto.c_str(), port);</span>
-<a name="line-858"></a><span class="cm">} // serviceAdd</span>
-<a name="line-859"></a>
+<a name="line-839"></a>
+<a name="line-840"></a><span class="cm">MDNS::~MDNS() {</span>
+<a name="line-841"></a><span class="cm">	if (m_mdns_server != nullptr) {</span>
+<a name="line-842"></a><span class="cm">		mdns_free(m_mdns_server);</span>
+<a name="line-843"></a><span class="cm">	}</span>
+<a name="line-844"></a><span class="cm">	m_mdns_server = nullptr;</span>
+<a name="line-845"></a><span class="cm">}</span>
+<a name="line-846"></a><span class="cm">*/</span>
+<a name="line-847"></a>
+<a name="line-848"></a><span class="cm">/**</span>
+<a name="line-849"></a><span class="cm"> * @brief Define the service for mDNS.</span>
+<a name="line-850"></a><span class="cm"> *</span>
+<a name="line-851"></a><span class="cm"> * @param [in] service</span>
+<a name="line-852"></a><span class="cm"> * @param [in] proto</span>
+<a name="line-853"></a><span class="cm"> * @param [in] port</span>
+<a name="line-854"></a><span class="cm"> * @return N/A.</span>
+<a name="line-855"></a><span class="cm"> */</span>
+<a name="line-856"></a><span class="cm">/*</span>
+<a name="line-857"></a><span class="cm">void MDNS::serviceAdd(const std::string&amp; service, const std::string&amp; proto, uint16_t port) {</span>
+<a name="line-858"></a><span class="cm">	serviceAdd(service.c_str(), proto.c_str(), port);</span>
+<a name="line-859"></a><span class="cm">} // serviceAdd</span>
 <a name="line-860"></a>
-<a name="line-861"></a><span class="cm">void MDNS::serviceInstanceSet(const std::string&amp; service, const std::string&amp; proto, const</span>
-<a name="line-862"></a><span class="cm">std::string&amp; instance) { serviceInstanceSet(service.c_str(), proto.c_str(), instance.c_str()); } //</span>
-<a name="line-863"></a><span class="cm">serviceInstanceSet</span>
-<a name="line-864"></a>
+<a name="line-861"></a>
+<a name="line-862"></a><span class="cm">void MDNS::serviceInstanceSet(const std::string&amp; service, const std::string&amp; proto, const</span>
+<a name="line-863"></a><span class="cm">std::string&amp; instance) { serviceInstanceSet(service.c_str(), proto.c_str(), instance.c_str()); } //</span>
+<a name="line-864"></a><span class="cm">serviceInstanceSet</span>
 <a name="line-865"></a>
-<a name="line-866"></a><span class="cm">void MDNS::servicePortSet(const std::string&amp; service, const std::string&amp; proto, uint16_t port) {</span>
-<a name="line-867"></a><span class="cm">	servicePortSet(service.c_str(), proto.c_str(), port);</span>
-<a name="line-868"></a><span class="cm">} // servicePortSet</span>
-<a name="line-869"></a>
+<a name="line-866"></a>
+<a name="line-867"></a><span class="cm">void MDNS::servicePortSet(const std::string&amp; service, const std::string&amp; proto, uint16_t port) {</span>
+<a name="line-868"></a><span class="cm">	servicePortSet(service.c_str(), proto.c_str(), port);</span>
+<a name="line-869"></a><span class="cm">} // servicePortSet</span>
 <a name="line-870"></a>
-<a name="line-871"></a><span class="cm">void MDNS::serviceRemove(const std::string&amp; service, const std::string&amp; proto) {</span>
-<a name="line-872"></a><span class="cm">	serviceRemove(service.c_str(), proto.c_str());</span>
-<a name="line-873"></a><span class="cm">} // serviceRemove</span>
-<a name="line-874"></a><span class="cm">*/</span>
-<a name="line-875"></a>
-<a name="line-876"></a><span class="cm">/**</span>
-<a name="line-877"></a><span class="cm"> * @brief Set the mDNS hostname.</span>
-<a name="line-878"></a><span class="cm"> *</span>
-<a name="line-879"></a><span class="cm"> * @param [in] hostname The host name to set against the mDNS.</span>
-<a name="line-880"></a><span class="cm"> * @return N/A.</span>
-<a name="line-881"></a><span class="cm"> */</span>
-<a name="line-882"></a><span class="cm">/*</span>
-<a name="line-883"></a><span class="cm">void MDNS::setHostname(const std::string&amp; hostname) {</span>
-<a name="line-884"></a><span class="cm">	setHostname(hostname.c_str());</span>
-<a name="line-885"></a><span class="cm">} // setHostname</span>
-<a name="line-886"></a><span class="cm">*/</span>
-<a name="line-887"></a>
-<a name="line-888"></a><span class="cm">/**</span>
-<a name="line-889"></a><span class="cm"> * @brief Set the mDNS instance.</span>
-<a name="line-890"></a><span class="cm"> *</span>
-<a name="line-891"></a><span class="cm"> * @param [in] instance The instance name to set against the mDNS.</span>
-<a name="line-892"></a><span class="cm"> * @return N/A.</span>
-<a name="line-893"></a><span class="cm"> */</span>
-<a name="line-894"></a><span class="cm">/*</span>
-<a name="line-895"></a><span class="cm">void MDNS::setInstance(const std::string&amp; instance) {</span>
-<a name="line-896"></a><span class="cm">	setInstance(instance.c_str());</span>
-<a name="line-897"></a><span class="cm">} // setInstance</span>
-<a name="line-898"></a><span class="cm">*/</span>
-<a name="line-899"></a>
-<a name="line-900"></a><span class="cm">/**</span>
-<a name="line-901"></a><span class="cm"> * @brief Define the service for mDNS.</span>
-<a name="line-902"></a><span class="cm"> *</span>
-<a name="line-903"></a><span class="cm"> * @param [in] service</span>
-<a name="line-904"></a><span class="cm"> * @param [in] proto</span>
-<a name="line-905"></a><span class="cm"> * @param [in] port</span>
-<a name="line-906"></a><span class="cm"> * @return N/A.</span>
-<a name="line-907"></a><span class="cm"> */</span>
-<a name="line-908"></a><span class="cm">/*</span>
-<a name="line-909"></a><span class="cm">void MDNS::serviceAdd(const char* service, const char* proto, uint16_t port) {</span>
-<a name="line-910"></a><span class="cm">	esp_err_t errRc = ::mdns_service_add(m_mdns_server, service, proto, port);</span>
-<a name="line-911"></a><span class="cm">	if (errRc != ESP_OK) {</span>
-<a name="line-912"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_service_add: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
-<a name="line-913"></a><span class="cm">		abort();</span>
-<a name="line-914"></a><span class="cm">	}</span>
-<a name="line-915"></a><span class="cm">} // serviceAdd</span>
-<a name="line-916"></a>
+<a name="line-871"></a>
+<a name="line-872"></a><span class="cm">void MDNS::serviceRemove(const std::string&amp; service, const std::string&amp; proto) {</span>
+<a name="line-873"></a><span class="cm">	serviceRemove(service.c_str(), proto.c_str());</span>
+<a name="line-874"></a><span class="cm">} // serviceRemove</span>
+<a name="line-875"></a><span class="cm">*/</span>
+<a name="line-876"></a>
+<a name="line-877"></a><span class="cm">/**</span>
+<a name="line-878"></a><span class="cm"> * @brief Set the mDNS hostname.</span>
+<a name="line-879"></a><span class="cm"> *</span>
+<a name="line-880"></a><span class="cm"> * @param [in] hostname The host name to set against the mDNS.</span>
+<a name="line-881"></a><span class="cm"> * @return N/A.</span>
+<a name="line-882"></a><span class="cm"> */</span>
+<a name="line-883"></a><span class="cm">/*</span>
+<a name="line-884"></a><span class="cm">void MDNS::setHostname(const std::string&amp; hostname) {</span>
+<a name="line-885"></a><span class="cm">	setHostname(hostname.c_str());</span>
+<a name="line-886"></a><span class="cm">} // setHostname</span>
+<a name="line-887"></a><span class="cm">*/</span>
+<a name="line-888"></a>
+<a name="line-889"></a><span class="cm">/**</span>
+<a name="line-890"></a><span class="cm"> * @brief Set the mDNS instance.</span>
+<a name="line-891"></a><span class="cm"> *</span>
+<a name="line-892"></a><span class="cm"> * @param [in] instance The instance name to set against the mDNS.</span>
+<a name="line-893"></a><span class="cm"> * @return N/A.</span>
+<a name="line-894"></a><span class="cm"> */</span>
+<a name="line-895"></a><span class="cm">/*</span>
+<a name="line-896"></a><span class="cm">void MDNS::setInstance(const std::string&amp; instance) {</span>
+<a name="line-897"></a><span class="cm">	setInstance(instance.c_str());</span>
+<a name="line-898"></a><span class="cm">} // setInstance</span>
+<a name="line-899"></a><span class="cm">*/</span>
+<a name="line-900"></a>
+<a name="line-901"></a><span class="cm">/**</span>
+<a name="line-902"></a><span class="cm"> * @brief Define the service for mDNS.</span>
+<a name="line-903"></a><span class="cm"> *</span>
+<a name="line-904"></a><span class="cm"> * @param [in] service</span>
+<a name="line-905"></a><span class="cm"> * @param [in] proto</span>
+<a name="line-906"></a><span class="cm"> * @param [in] port</span>
+<a name="line-907"></a><span class="cm"> * @return N/A.</span>
+<a name="line-908"></a><span class="cm"> */</span>
+<a name="line-909"></a><span class="cm">/*</span>
+<a name="line-910"></a><span class="cm">void MDNS::serviceAdd(const char* service, const char* proto, uint16_t port) {</span>
+<a name="line-911"></a><span class="cm">	esp_err_t errRc = ::mdns_service_add(m_mdns_server, service, proto, port);</span>
+<a name="line-912"></a><span class="cm">	if (errRc != ESP_OK) {</span>
+<a name="line-913"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_service_add: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
+<a name="line-914"></a><span class="cm">		abort();</span>
+<a name="line-915"></a><span class="cm">	}</span>
+<a name="line-916"></a><span class="cm">} // serviceAdd</span>
 <a name="line-917"></a>
-<a name="line-918"></a><span class="cm">void MDNS::serviceInstanceSet(const char* service, const char* proto, const char* instance) {</span>
-<a name="line-919"></a><span class="cm">  esp_err_t errRc = ::mdns_service_instance_set(m_mdns_server, service, proto, instance);</span>
-<a name="line-920"></a><span class="cm">  if (errRc != ESP_OK) {</span>
-<a name="line-921"></a><span class="cm">	ESP_LOGE(LOG_TAG, &quot;mdns_service_instance_set: rc=%d %s&quot;, errRc,</span>
-<a name="line-922"></a><span class="cm">GeneralUtils::errorToString(errRc)); abort();</span>
-<a name="line-923"></a><span class="cm">  }</span>
-<a name="line-924"></a><span class="cm">} // serviceInstanceSet</span>
-<a name="line-925"></a>
+<a name="line-918"></a>
+<a name="line-919"></a><span class="cm">void MDNS::serviceInstanceSet(const char* service, const char* proto, const char* instance) {</span>
+<a name="line-920"></a><span class="cm">  esp_err_t errRc = ::mdns_service_instance_set(m_mdns_server, service, proto, instance);</span>
+<a name="line-921"></a><span class="cm">  if (errRc != ESP_OK) {</span>
+<a name="line-922"></a><span class="cm">	ESP_LOGE(LOG_TAG, &quot;mdns_service_instance_set: rc=%d %s&quot;, errRc,</span>
+<a name="line-923"></a><span class="cm">GeneralUtils::errorToString(errRc)); abort();</span>
+<a name="line-924"></a><span class="cm">  }</span>
+<a name="line-925"></a><span class="cm">} // serviceInstanceSet</span>
 <a name="line-926"></a>
-<a name="line-927"></a><span class="cm">void MDNS::servicePortSet(const char* service, const char* proto, uint16_t port) {</span>
-<a name="line-928"></a><span class="cm">  esp_err_t errRc = ::mdns_service_port_set(m_mdns_server, service, proto, port);</span>
-<a name="line-929"></a><span class="cm">  if (errRc != ESP_OK) {</span>
-<a name="line-930"></a><span class="cm">	ESP_LOGE(LOG_TAG, &quot;mdns_service_port_set: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
-<a name="line-931"></a><span class="cm">	abort();</span>
-<a name="line-932"></a><span class="cm">  }</span>
-<a name="line-933"></a><span class="cm">} // servicePortSet</span>
-<a name="line-934"></a>
+<a name="line-927"></a>
+<a name="line-928"></a><span class="cm">void MDNS::servicePortSet(const char* service, const char* proto, uint16_t port) {</span>
+<a name="line-929"></a><span class="cm">  esp_err_t errRc = ::mdns_service_port_set(m_mdns_server, service, proto, port);</span>
+<a name="line-930"></a><span class="cm">  if (errRc != ESP_OK) {</span>
+<a name="line-931"></a><span class="cm">	ESP_LOGE(LOG_TAG, &quot;mdns_service_port_set: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
+<a name="line-932"></a><span class="cm">	abort();</span>
+<a name="line-933"></a><span class="cm">  }</span>
+<a name="line-934"></a><span class="cm">} // servicePortSet</span>
 <a name="line-935"></a>
-<a name="line-936"></a><span class="cm">void MDNS::serviceRemove(const char* service, const char* proto) {</span>
-<a name="line-937"></a><span class="cm">	esp_err_t errRc = ::mdns_service_remove(m_mdns_server, service, proto);</span>
-<a name="line-938"></a><span class="cm">	if (errRc != ESP_OK) {</span>
-<a name="line-939"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_service_remove: rc=%d %s&quot;, errRc,</span>
-<a name="line-940"></a><span class="cm">GeneralUtils::errorToString(errRc)); abort();</span>
-<a name="line-941"></a><span class="cm">	}</span>
-<a name="line-942"></a><span class="cm">} // serviceRemove</span>
-<a name="line-943"></a><span class="cm">*/</span>
-<a name="line-944"></a>
-<a name="line-945"></a><span class="cm">/**</span>
-<a name="line-946"></a><span class="cm"> * @brief Set the mDNS hostname.</span>
-<a name="line-947"></a><span class="cm"> *</span>
-<a name="line-948"></a><span class="cm"> * @param [in] hostname The host name to set against the mDNS.</span>
-<a name="line-949"></a><span class="cm"> * @return N/A.</span>
-<a name="line-950"></a><span class="cm"> */</span>
-<a name="line-951"></a><span class="cm">/*</span>
-<a name="line-952"></a><span class="cm">void MDNS::setHostname(const char* hostname) {</span>
-<a name="line-953"></a><span class="cm">  esp_err_t errRc = ::mdns_set_hostname(m_mdns_server,hostname);</span>
-<a name="line-954"></a><span class="cm">	if (errRc != ESP_OK) {</span>
-<a name="line-955"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_set_hostname: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
-<a name="line-956"></a><span class="cm">		abort();</span>
-<a name="line-957"></a><span class="cm">	}</span>
-<a name="line-958"></a><span class="cm">} // setHostname</span>
-<a name="line-959"></a><span class="cm">*/</span>
-<a name="line-960"></a>
-<a name="line-961"></a><span class="cm">/**</span>
-<a name="line-962"></a><span class="cm"> * @brief Set the mDNS instance.</span>
-<a name="line-963"></a><span class="cm"> *</span>
-<a name="line-964"></a><span class="cm"> * @param [in] instance The instance name to set against the mDNS.</span>
-<a name="line-965"></a><span class="cm"> * @return N/A.</span>
-<a name="line-966"></a><span class="cm"> */</span>
-<a name="line-967"></a><span class="cm">/*</span>
-<a name="line-968"></a><span class="cm">void MDNS::setInstance(const char* instance) {</span>
-<a name="line-969"></a><span class="cm">	esp_err_t errRc = ::mdns_set_instance(m_mdns_server, instance);</span>
-<a name="line-970"></a><span class="cm">	if (errRc != ESP_OK) {</span>
-<a name="line-971"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_set_instance: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
-<a name="line-972"></a><span class="cm">		abort();</span>
-<a name="line-973"></a><span class="cm">	}</span>
-<a name="line-974"></a><span class="cm">} // setInstance</span>
-<a name="line-975"></a><span class="cm">*/</span>
-<a name="line-976"></a>
-<a name="line-977"></a><span class="cp">#endif</span>
+<a name="line-936"></a>
+<a name="line-937"></a><span class="cm">void MDNS::serviceRemove(const char* service, const char* proto) {</span>
+<a name="line-938"></a><span class="cm">	esp_err_t errRc = ::mdns_service_remove(m_mdns_server, service, proto);</span>
+<a name="line-939"></a><span class="cm">	if (errRc != ESP_OK) {</span>
+<a name="line-940"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_service_remove: rc=%d %s&quot;, errRc,</span>
+<a name="line-941"></a><span class="cm">GeneralUtils::errorToString(errRc)); abort();</span>
+<a name="line-942"></a><span class="cm">	}</span>
+<a name="line-943"></a><span class="cm">} // serviceRemove</span>
+<a name="line-944"></a><span class="cm">*/</span>
+<a name="line-945"></a>
+<a name="line-946"></a><span class="cm">/**</span>
+<a name="line-947"></a><span class="cm"> * @brief Set the mDNS hostname.</span>
+<a name="line-948"></a><span class="cm"> *</span>
+<a name="line-949"></a><span class="cm"> * @param [in] hostname The host name to set against the mDNS.</span>
+<a name="line-950"></a><span class="cm"> * @return N/A.</span>
+<a name="line-951"></a><span class="cm"> */</span>
+<a name="line-952"></a><span class="cm">/*</span>
+<a name="line-953"></a><span class="cm">void MDNS::setHostname(const char* hostname) {</span>
+<a name="line-954"></a><span class="cm">  esp_err_t errRc = ::mdns_set_hostname(m_mdns_server,hostname);</span>
+<a name="line-955"></a><span class="cm">	if (errRc != ESP_OK) {</span>
+<a name="line-956"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_set_hostname: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
+<a name="line-957"></a><span class="cm">		abort();</span>
+<a name="line-958"></a><span class="cm">	}</span>
+<a name="line-959"></a><span class="cm">} // setHostname</span>
+<a name="line-960"></a><span class="cm">*/</span>
+<a name="line-961"></a>
+<a name="line-962"></a><span class="cm">/**</span>
+<a name="line-963"></a><span class="cm"> * @brief Set the mDNS instance.</span>
+<a name="line-964"></a><span class="cm"> *</span>
+<a name="line-965"></a><span class="cm"> * @param [in] instance The instance name to set against the mDNS.</span>
+<a name="line-966"></a><span class="cm"> * @return N/A.</span>
+<a name="line-967"></a><span class="cm"> */</span>
+<a name="line-968"></a><span class="cm">/*</span>
+<a name="line-969"></a><span class="cm">void MDNS::setInstance(const char* instance) {</span>
+<a name="line-970"></a><span class="cm">	esp_err_t errRc = ::mdns_set_instance(m_mdns_server, instance);</span>
+<a name="line-971"></a><span class="cm">	if (errRc != ESP_OK) {</span>
+<a name="line-972"></a><span class="cm">		ESP_LOGE(LOG_TAG, &quot;mdns_set_instance: rc=%d %s&quot;, errRc, GeneralUtils::errorToString(errRc));</span>
+<a name="line-973"></a><span class="cm">		abort();</span>
+<a name="line-974"></a><span class="cm">	}</span>
+<a name="line-975"></a><span class="cm">} // setInstance</span>
+<a name="line-976"></a><span class="cm">*/</span>
+<a name="line-977"></a>
+<a name="line-978"></a><span class="cp">#endif</span>
 </pre></div>
 </td></tr></table>
       </div>
