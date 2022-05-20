@@ -140,10 +140,10 @@
 		</item>
 		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:144">
 			<value>26</value>
-			<value>29</value>
+			<value>30</value>
 			<value>9</value>
 		</item>
-		<average label="NCSS" value="12.884615384615385"/>
+		<average label="NCSS" value="12.923076923076923"/>
 		<average label="CCN" value="3.1923076923076925"/>
 		<item name="DistanceSensorController::main_function(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp:29">
 			<value>27</value>
@@ -155,14 +155,14 @@
 			<value>20</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="13.142857142857142"/>
+		<average label="NCSS" value="13.178571428571429"/>
 		<average label="CCN" value="3.3214285714285716"/>
 		<item name="Watchdog_Base&lt;T&gt;::Watchdog_Base(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/WatchdogBase/src/Watchdog_Base.cpp:37">
 			<value>29</value>
 			<value>2</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="12.758620689655173"/>
+		<average label="NCSS" value="12.793103448275861"/>
 		<average label="CCN" value="3.2413793103448274"/>
 		<item name="SensorControllerBase::run(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/SensorControllerBase/src/SensorControllerBase.cpp:29">
 			<value>30</value>
@@ -174,7 +174,7 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="12.451612903225806"/>
+		<average label="NCSS" value="12.483870967741936"/>
 		<average label="CCN" value="3.161290322580645"/>
 		<item name="ADC_API_ESP32::ADC_API_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ADC/src/ADC_API_ESP32.cpp:36">
 			<value>32</value>
@@ -191,7 +191,7 @@
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="11.911764705882353"/>
+		<average label="NCSS" value="11.941176470588236"/>
 		<average label="CCN" value="3.1176470588235294"/>
 		<item name="DataBroker::addService(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/DataBroker/src/DataBroker.cpp:30">
 			<value>35</value>
@@ -208,7 +208,7 @@
 			<value>8</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="12.18918918918919"/>
+		<average label="NCSS" value="12.216216216216216"/>
 		<average label="CCN" value="3.1621621621621623"/>
 		<item name="General_Error::printError(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ErrorHandler/src/General_Error.cpp:74">
 			<value>38</value>
@@ -230,14 +230,14 @@
 			<value>14</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="12.146341463414634"/>
+		<average label="NCSS" value="12.170731707317072"/>
 		<average label="CCN" value="3.1463414634146343"/>
 		<item name="ErrorCodeParser::postToMqtt(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ErrorHandler/src/ErrorCodeParser.cpp:29">
 			<value>42</value>
 			<value>8</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="12.047619047619047"/>
+		<average label="NCSS" value="12.071428571428571"/>
 		<average label="CCN" value="3.142857142857143"/>
 		<item name="Fault_Handler::Fault_Handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/FaultHandler/src/Fault_Handler.cpp:36">
 			<value>43</value>
@@ -269,7 +269,7 @@
 			<value>25</value>
 			<value>10</value>
 		</item>
-		<average label="NCSS" value="12.0"/>
+		<average label="NCSS" value="12.020833333333334"/>
 		<average label="CCN" value="3.25"/>
 		<item name="GPIO_API::~GPIO_API(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:36">
 			<value>49</value>
@@ -311,7 +311,7 @@
 			<value>5</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.5"/>
+		<average label="NCSS" value="11.517857142857142"/>
 		<average label="CCN" value="3.2142857142857144"/>
 		<item name="GPIO_HAL::setDirection(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:50">
 			<value>57</value>
@@ -343,21 +343,21 @@
 			<value>25</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.5"/>
+		<average label="NCSS" value="11.516129032258064"/>
 		<average label="CCN" value="3.3548387096774195"/>
 		<item name="hal_mqtt_log::write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Logger/src/hal_mqtt_log.cpp:36">
 			<value>63</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.396825396825397"/>
+		<average label="NCSS" value="11.412698412698413"/>
 		<average label="CCN" value="3.3174603174603177"/>
 		<item name="Logger::write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Logger/src/Logger.cpp:36">
 			<value>64</value>
 			<value>23</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.578125"/>
+		<average label="NCSS" value="11.59375"/>
 		<average label="CCN" value="3.328125"/>
 		<item name="Maintainer::Maintainer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:40">
 			<value>65</value>
@@ -394,7 +394,7 @@
 			<value>10</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.76056338028169"/>
+		<average label="NCSS" value="11.774647887323944"/>
 		<average label="CCN" value="3.380281690140845"/>
 		<item name="Message_Handler::to_Postgres_Format(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Handler.cpp:52">
 			<value>72</value>
@@ -411,7 +411,7 @@
 			<value>27</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="12.378378378378379"/>
+		<average label="NCSS" value="12.391891891891891"/>
 		<average label="CCN" value="3.391891891891892"/>
 		<item name="Message_Protocol::Message_Protocol(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:36">
 			<value>75</value>
@@ -463,7 +463,7 @@
 			<value>4</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="11.69047619047619"/>
+		<average label="NCSS" value="11.702380952380953"/>
 		<average label="CCN" value="3.238095238095238"/>
 		<item name="OTA::OTA(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:43">
 			<value>85</value>
@@ -500,7 +500,7 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.571428571428571"/>
+		<average label="NCSS" value="11.582417582417582"/>
 		<average label="CCN" value="3.230769230769231"/>
 		<item name="HAL_ESP32::HAL_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/HAL.cpp:41">
 			<value>92</value>
@@ -537,7 +537,7 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.63265306122449"/>
+		<average label="NCSS" value="11.642857142857142"/>
 		<average label="CCN" value="3.2551020408163267"/>
 		<item name="PWM_API_ESP32::PWM_API_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:35">
 			<value>99</value>
@@ -564,21 +564,21 @@
 			<value>6</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.45631067961165"/>
+		<average label="NCSS" value="11.466019417475728"/>
 		<average label="CCN" value="3.2233009708737863"/>
 		<item name="QueryAddExternalResources::content(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/QueryTools/src/QueryAddExternalResources.cpp:36">
 			<value>104</value>
 			<value>29</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.625"/>
+		<average label="NCSS" value="11.634615384615385"/>
 		<average label="CCN" value="3.230769230769231"/>
 		<item name="QueryAddSensorData::content(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/QueryTools/src/QueryAddSensorData.cpp:36">
 			<value>105</value>
 			<value>28</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.780952380952382"/>
+		<average label="NCSS" value="11.790476190476191"/>
 		<average label="CCN" value="3.238095238095238"/>
 		<item name="Timebased_rules::isItNight(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Rulebase/src/Timebased_rules.cpp:41">
 			<value>106</value>
@@ -590,14 +590,14 @@
 			<value>12</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="11.77570093457944"/>
+		<average label="NCSS" value="11.785046728971963"/>
 		<average label="CCN" value="3.2149532710280373"/>
 		<item name="RTC_HAL::sntp_update(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/RTC_HAL.cpp:35">
 			<value>108</value>
 			<value>23</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.87962962962963"/>
+		<average label="NCSS" value="11.88888888888889"/>
 		<average label="CCN" value="3.25"/>
 		<item name="Timeservice::initialize_sntp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:35">
 			<value>109</value>
@@ -649,7 +649,7 @@
 			<value>12</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.779661016949152"/>
+		<average label="NCSS" value="11.788135593220339"/>
 		<average label="CCN" value="3.194915254237288"/>
 		<item name="Watch_Clock::Watch_Clock(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:35">
 			<value>119</value>
@@ -681,7 +681,7 @@
 			<value>9</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.596774193548388"/>
+		<average label="NCSS" value="11.60483870967742"/>
 		<average label="CCN" value="3.161290322580645"/>
 		<item name="mqtt_api_v2::mqtt_api_v2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:47">
 			<value>125</value>
@@ -733,7 +733,7 @@
 			<value>5</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.716417910447761"/>
+		<average label="NCSS" value="11.723880597014926"/>
 		<average label="CCN" value="3.246268656716418"/>
 		<item name="MQTT_Message::MQTT_Message(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:39">
 			<value>135</value>
@@ -790,7 +790,7 @@
 			<value>19</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="11.724137931034482"/>
+		<average label="NCSS" value="11.73103448275862"/>
 		<average label="CCN" value="3.3448275862068964"/>
 		<item name="Curl_SAL::Curl_SAL(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:41">
 			<value>146</value>
@@ -822,7 +822,7 @@
 			<value>20</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.57615894039735"/>
+		<average label="NCSS" value="11.582781456953642"/>
 		<average label="CCN" value="3.3443708609271523"/>
 		<item name="http_interface::http_interface(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:36">
 			<value>152</value>
@@ -854,7 +854,7 @@
 			<value>10</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.464968152866241"/>
+		<average label="NCSS" value="11.471337579617835"/>
 		<average label="CCN" value="3.343949044585987"/>
 		<item name="postgresql_interface::~postgresql_interface(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/postgresql_interface.cpp:43">
 			<value>158</value>
@@ -876,7 +876,7 @@
 			<value>16</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="11.546583850931677"/>
+		<average label="NCSS" value="11.5527950310559"/>
 		<average label="CCN" value="3.3850931677018634"/>
 		<item name="esp32_http_sal::_http_event_handle(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/esp32_http_sal.cpp:32">
 			<value>162</value>
@@ -908,7 +908,7 @@
 			<value>36</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="12.035928143712574"/>
+		<average label="NCSS" value="12.04191616766467"/>
 		<average label="CCN" value="3.461077844311377"/>
 		<item name="i2c_esp32::i2c_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:29">
 			<value>168</value>
@@ -975,7 +975,7 @@
 			<value>12</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="12.05"/>
+		<average label="NCSS" value="12.055555555555555"/>
 		<average label="CCN" value="3.511111111111111"/>
 		<item name="FreeRTOS::sleep(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:23">
 			<value>181</value>
@@ -1067,7 +1067,7 @@
 			<value>15</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.919191919191919"/>
+		<average label="NCSS" value="11.924242424242424"/>
 		<average label="CCN" value="3.4292929292929295"/>
 		<item name="Task::Task(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:19">
 			<value>199</value>
@@ -1119,7 +1119,7 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.60576923076923"/>
+		<average label="NCSS" value="11.610576923076923"/>
 		<average label="CCN" value="3.3413461538461537"/>
 		<item name="RPICamV2::RPICamV2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:36">
 			<value>209</value>
@@ -1141,7 +1141,7 @@
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="11.547169811320755"/>
+		<average label="NCSS" value="11.55188679245283"/>
 		<average label="CCN" value="3.349056603773585"/>
 		<item name="ActiveCurrentSensor::ActiveCurrentSensor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:29">
 			<value>213</value>
@@ -1168,14 +1168,14 @@
 			<value>15</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.474654377880185"/>
+		<average label="NCSS" value="11.47926267281106"/>
 		<average label="CCN" value="3.327188940092166"/>
 		<item name="WaterEstimator_Service::mainFunction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp:29">
 			<value>218</value>
 			<value>32</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.568807339449542"/>
+		<average label="NCSS" value="11.573394495412844"/>
 		<average label="CCN" value="3.3440366972477062"/>
 		<item name="DogFeederDoor::DogFeederDoor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:36">
 			<value>219</value>
@@ -1197,7 +1197,7 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.405405405405405"/>
+		<average label="NCSS" value="11.40990990990991"/>
 		<average label="CCN" value="3.3018018018018016"/>
 		<item name="basic_utils::split(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:13">
 			<value>223</value>
@@ -1274,9 +1274,9 @@
 			<value>9</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="11.20675105485232"/>
+		<average label="NCSS" value="11.210970464135022"/>
 		<average label="CCN" value="3.2067510548523206"/>
-		<average label="NCSS" value="11.20675105485232"/>
+		<average label="NCSS" value="11.210970464135022"/>
 		<average label="CCN" value="3.2067510548523206"/>
 	</measure>
 	<measure type="File">
@@ -1306,7 +1306,7 @@
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp">
 			<value>4</value>
-			<value>104</value>
+			<value>105</value>
 			<value>28</value>
 			<value>6</value>
 		</item>
@@ -1544,13 +1544,13 @@
 			<value>0</value>
 			<value>0</value>
 		</item>
-		<average label="NCSS" value="67.79069767441861"/>
+		<average label="NCSS" value="67.81395348837209"/>
 		<average label="CCN" value="17.674418604651162"/>
 		<average label="Functions" value="5.511627906976744"/>
-		<sum label="NCSS" value="2915"/>
+		<sum label="NCSS" value="2916"/>
 		<sum label="CCN" value="760"/>
 		<sum label="Functions" value="237"/>
-		<average label="NCSS" value="11.20675105485232"/>
+		<average label="NCSS" value="11.210970464135022"/>
 		<average label="CCN" value="3.2067510548523206"/>
 	</measure>
 </cppncss>
