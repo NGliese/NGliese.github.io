@@ -169,16 +169,16 @@ $(document).ready(function(){initNavTree('d7/dc3/_wi_fi___s_a_l__esp32_8cpp_sour
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ESP_ERROR_CHECK(esp_event_handler_instance_register(</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        IP_EVENT, IP_EVENT_STA_GOT_IP, &amp;<a class="code" href="../../d5/db4/class_wi_fi___s_a_l__esp32.html#a8a6d1eae9069eb67aaa6caca3c87df5d">WiFi_SAL_esp32::event_handler</a>, NULL, &amp;<a class="code" href="../../d5/db4/class_wi_fi___s_a_l__esp32.html#a83692a58f796ad7540891402433bde33">instance_got_ip</a>));</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    wifi_config_t wifi_config;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    wifi_config_t wifi_config{};</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    ::memcpy(wifi_config.sta.ssid, <a class="code" href="../../db/d7f/class_wi_fi_base.html#a7a4cc8effcbb1d04c8300cd072037d77">m_ssid</a>.data(), <a class="code" href="../../db/d7f/class_wi_fi_base.html#a7a4cc8effcbb1d04c8300cd072037d77">m_ssid</a>.size());</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ::memcpy(wifi_config.sta.password, <a class="code" href="../../db/d7f/class_wi_fi_base.html#ac22f08d324fd7eac5e8a7e5e3e9d3987">m_pwd</a>.data(), <a class="code" href="../../db/d7f/class_wi_fi_base.html#ac22f08d324fd7eac5e8a7e5e3e9d3987">m_pwd</a>.size());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="comment">// wifi_config.sta.ssid = reinterpret_cast&lt;uint8_t&gt;(const_cast&lt;char*&gt;(m_ssid.c_str()));</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="comment">// wifi_config.sta.password = reinterpret_cast&lt;uint8_t*&gt;(const_cast&lt;char*&gt;(m_pwd.c_str()));</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    wifi_config.sta.scan_method = WIFI_FAST_SCAN;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    wifi_config.sta.scan_method = WIFI_ALL_CHANNEL_SCAN;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    wifi_config.sta.bssid_set = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    wifi_config.sta.channel = 0;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    wifi_config.sta.listen_interval = 0;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// wifi_config.sta.channel = 0;</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// wifi_config.sta.listen_interval = 0;</span></div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="comment">// wifi_config.sta.sort_method = WIFI_CONNECT_AP_BY_SIGNAL;</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    wifi_config.sta.threshold.authmode = WIFI_AUTH_WPA2_PSK;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    wifi_config.sta.pmf_cfg.capable = <span class="keyword">true</span>;</div>

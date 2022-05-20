@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-20 22:33:35</td>
+            <td class="headerValue">2022-05-20 22:37:27</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -884,7 +884,7 @@
     <td align="right" class="lineno"><pre>84</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config_t wifi_config;</pre></td>
+    <td align="left" class="src "><pre>	wifi_config_t wifi_config{};</pre></td>
     </tr>
 
     <tr>
@@ -926,7 +926,7 @@
     <td align="right" class="lineno"><pre>90</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.scan_method = WIFI_FAST_SCAN;</pre></td>
+    <td align="left" class="src "><pre>	wifi_config.sta.scan_method = WIFI_ALL_CHANNEL_SCAN;</pre></td>
     </tr>
 
     <tr>
@@ -940,14 +940,14 @@
     <td align="right" class="lineno"><pre>92</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.channel = 0;</pre></td>
+    <td align="left" class="src "><pre>	// wifi_config.sta.channel = 0;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>93</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	wifi_config.sta.listen_interval = 0;</pre></td>
+    <td align="left" class="src "><pre>	// wifi_config.sta.listen_interval = 0;</pre></td>
     </tr>
 
     <tr>
