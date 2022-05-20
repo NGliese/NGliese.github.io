@@ -491,32 +491,47 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">if</span>(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_START)</div>
 <div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;    {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        esp_wifi_connect();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    }</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_DISCONNECTED)</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    {</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a7fa5121ba469d800557ae620db25b17a">WIFI_CONNECTION_SUCCESS</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a> &lt; <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a5a58d75a1848031df9472040fcfeed0d">MAXIMUM_RETRY</a>)</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        {</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            esp_wifi_connect();</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a>++;</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        }</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce">WIFI_CONNECTION_FAIL</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(event_base == IP_EVENT &amp;&amp; event_id == IP_EVENT_STA_GOT_IP)</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    {</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        ip_event_got_ip_t* <span class="keyword">event</span> = (ip_event_got_ip_t*)event_data;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        ESP_LOGI(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;got ip:&quot;</span> IPSTR, IP2STR(&amp;event-&gt;ip_info.ip));</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a> = 0;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a7fa5121ba469d800557ae620db25b17a">WIFI_CONNECTION_SUCCESS</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce">WIFI_CONNECTION_FAIL</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    }</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;}</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; event is : WIFI_EVENT_STA_START ... starting wifi \n&quot;</span>;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        esp_wifi_connect();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;    }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_DISCONNECTED)</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    {</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; event is : WIFI_EVENT_STA_DISCONNECTED ... retrying to connect \n&quot;</span>;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a7fa5121ba469d800557ae620db25b17a">WIFI_CONNECTION_SUCCESS</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a> &lt; <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a5a58d75a1848031df9472040fcfeed0d">MAXIMUM_RETRY</a>)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        {</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            esp_wifi_connect();</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a>++;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        {</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce">WIFI_CONNECTION_FAIL</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;    }</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(event_base == WIFI_EVENT &amp;&amp; event_id == WIFI_EVENT_STA_DISCONNECTED)</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    {</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; event is : WIFI_EVENT_STA_CONNECTED ... WiFI connected! \n&quot;</span>;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    }</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(event_base == WIFI_EVENT &amp;&amp; event_id == IP_EVENT_STA_GOT_IP)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; event is : IP_EVENT_STA_GOT_IP ... Got IP! \n&quot;</span>;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        ip_event_got_ip_t* <span class="keyword">event</span> = (ip_event_got_ip_t*)event_data;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        ESP_LOGI(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;got ip:&quot;</span> IPSTR, IP2STR(&amp;event-&gt;ip_info.ip));</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a> = 0;</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a7fa5121ba469d800557ae620db25b17a">WIFI_CONNECTION_SUCCESS</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce">WIFI_CONNECTION_FAIL</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span>(event_base == IP_EVENT &amp;&amp; event_id == IP_EVENT_STA_GOT_IP)</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    {</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        ip_event_got_ip_t* <span class="keyword">event</span> = (ip_event_got_ip_t*)event_data;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        ESP_LOGI(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;got ip:&quot;</span> IPSTR, IP2STR(&amp;event-&gt;ip_info.ip));</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a> = 0;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a7fa5121ba469d800557ae620db25b17a">WIFI_CONNECTION_SUCCESS</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce">WIFI_CONNECTION_FAIL</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <a class="el" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a5a58d75a1848031df9472040fcfeed0d">MAXIMUM_RETRY</a>, <a class="el" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#ae4da33fdcdaa6688ed25dab508ed5592">s_retry_num</a>, <a class="el" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a343f9f292ed5159e37156242ecc900ce">WIFI_CONNECTION_FAIL</a>, and <a class="el" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a7fa5121ba469d800557ae620db25b17a">WIFI_CONNECTION_SUCCESS</a>.</p>
 
