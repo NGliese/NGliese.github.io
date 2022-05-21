@@ -125,19 +125,19 @@ $(document).ready(function(){initNavTree('d7/d24/_online_detector__service_8cpp_
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span> res = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">const</span> std::string MQTT_SERVICE = <span class="stringliteral">&quot;mqtt/msg_without_timestamp&quot;</span>;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">if</span>(!res)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; not able to reach server ... \n&quot;</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <a class="code" href="../../db/db4/class_online_detector__service.html#a3c4d173281166f9f55c1837afa604410">msg_fail</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(10);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">postData</a>(<a class="code" href="../../db/db4/class_online_detector__service.html#a3c4d173281166f9f55c1837afa604410">msg_fail</a>);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <a class="code" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">postData</a>(<a class="code" href="../../db/db4/class_online_detector__service.html#a3c4d173281166f9f55c1837afa604410">msg_fail</a>, MQTT_SERVICE);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <a class="code" href="../../db/db4/class_online_detector__service.html#a3c4d173281166f9f55c1837afa604410">msg_fail</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; able to reach server ... \n&quot;</span>;</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <a class="code" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a388fdbaca68b7a35235e92d419583d86">addData</a>(20);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">postData</a>(<a class="code" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="../../d4/d82/class_service_base.html#aa8daa40a55a0b4e6ddf333a8f13dba4a">postData</a>(<a class="code" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>, MQTT_SERVICE);</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="../../db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f">msg_sucess</a>.<a class="code" href="../../d5/d81/class_m_q_t_t___message.html#a530f82fdc88c865447c3db97225a34af">clear</a>();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    }</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>

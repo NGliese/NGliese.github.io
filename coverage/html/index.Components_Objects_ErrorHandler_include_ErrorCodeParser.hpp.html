@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-20 22:54:29</td>
+            <td class="headerValue">2022-05-21 09:06:37</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">9</td>
@@ -757,7 +757,7 @@
     <tr>
     <td align="right" class="lineno"><pre>66</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>191</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>195</pre></td>
     <td align="left" class="src coveredLine"><pre>	inline const static std::string toString(const db_id&amp; id, const general_err_t&amp; err,</pre></td>
     </tr>
 
@@ -777,22 +777,22 @@
 
     <tr>
     <td align="right" class="lineno"><pre>69</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="takenBranch" title="Branch 11 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 12 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 14 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 15 not taken">&cross;</span><span class="takenBranch" title="Branch 17 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 18 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 20 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 21 not taken">&cross;</span><span class="takenBranch" title="Branch 23 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 24 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 26 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 27 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>573</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="takenBranch" title="Branch 11 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 12 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 14 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 15 not taken">&cross;</span><span class="takenBranch" title="Branch 17 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 18 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 20 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 21 not taken">&cross;</span><span class="takenBranch" title="Branch 23 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 24 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 26 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 27 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>585</pre></td>
     <td align="left" class="src coveredLine"><pre>		return std::to_string(map.at(id)) + "," + std::to_string(Timeservice::getTimeNow()) + "," +</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>70</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>955</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 3 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>975</pre></td>
     <td align="left" class="src coveredLine"><pre>			   std::to_string(static_cast&lt;uint8_t>(err) + 10 /* offset zero values for grafana */) +</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>71</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 191 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>573</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 195 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>585</pre></td>
     <td align="left" class="src coveredLine"><pre>			   "," + description;</pre></td>
     </tr>
 
@@ -890,7 +890,7 @@
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>155</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>157</pre></td>
     <td align="left" class="src coveredLine"><pre>	static std::string toString(const db_id&amp; id, const general_err_t&amp; err,</pre></td>
     </tr>
 
@@ -911,7 +911,7 @@
     <tr>
     <td align="right" class="lineno"><pre>88</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>155</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>157</pre></td>
     <td align="left" class="src coveredLine"><pre>		return ErrorCodeParser::toString(id, err, description);</pre></td>
     </tr>
 
