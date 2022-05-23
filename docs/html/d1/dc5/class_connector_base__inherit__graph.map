@@ -1,6 +1,6 @@
 <map id="ConnectorBase" name="ConnectorBase">
-<area shape="rect" id="node1" title=" " alt="" coords="81,5,237,156"/>
-<area shape="rect" id="node2" href="$db/d7f/class_wi_fi_base.html" title=" " alt="" coords="100,204,219,340"/>
-<area shape="rect" id="node3" href="$d6/db5/class_m_o_c_k___w_i_f_i.html" title=" " alt="" coords="5,432,140,553"/>
-<area shape="rect" id="node4" href="$d5/db4/class_wi_fi___s_a_l__esp32.html" title=" " alt="" coords="164,388,328,597"/>
+<area shape="rect" id="node1" title=" " alt="" coords="84,5,240,156"/>
+<area shape="rect" id="node2" href="$db/d7f/class_wi_fi_base.html" title=" " alt="" coords="103,204,221,340"/>
+<area shape="rect" id="node3" href="$d6/db5/class_m_o_c_k___w_i_f_i.html" title=" " alt="" coords="5,447,140,568"/>
+<area shape="rect" id="node4" href="$d5/db4/class_wi_fi___s_a_l__esp32.html" title=" " alt="" coords="164,388,339,627"/>
 </map>

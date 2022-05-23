@@ -1,8 +1,9 @@
 <map id="Components/Protocols/I2C/test/mock/i2c_mock.hpp" name="Components/Protocols/I2C/test/mock/i2c_mock.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="165,5,376,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="236,5,447,47"/>
 <area shape="rect" id="node2" href="$da/d5f/_b_a_s_i_c_8hpp.html" title=" " alt="" coords="5,177,152,218"/>
 <area shape="rect" id="node3" href="$d3/deb/_general___error_8hpp.html" title=" " alt="" coords="195,169,354,225"/>
 <area shape="rect" id="node5" title=" " alt="" coords="340,273,420,300"/>
 <area shape="rect" id="node6" href="$d9/ddd/i2c__common_8hpp.html" title=" " alt="" coords="96,95,304,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="430,95,493,121"/>
 <area shape="rect" id="node4" title=" " alt="" coords="245,273,304,300"/>
 </map>

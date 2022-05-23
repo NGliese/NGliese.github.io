@@ -7,14 +7,18 @@ var classi2c__mock =
     [ "insert_start_bit", "dc/d92/classi2c__mock.html#a0e98ad53f10571024f53b03bf9e53d47", null ],
     [ "insert_stop_bit", "dc/d92/classi2c__mock.html#a4216e08b60c09b37d5b5568757661547", null ],
     [ "readByte", "dc/d92/classi2c__mock.html#a55c04504a228616c89cb3da5597a0ebb", null ],
+    [ "readMultiBytes", "dc/d92/classi2c__mock.html#a9afa55bcac99cefd433d59793bcef0cd", null ],
     [ "readWord", "dc/d92/classi2c__mock.html#a9625e6461f6ed9556084488066aa88f1", null ],
     [ "reset", "dc/d92/classi2c__mock.html#af318a6e23779a319163d5488c52ad612", null ],
     [ "slavePresent", "dc/d92/classi2c__mock.html#a7dde212dff1b0e89b1853b86e6457255", null ],
     [ "writeByte", "dc/d92/classi2c__mock.html#a0cebac866f306481b19f680127d6fad5", null ],
+    [ "writeMultiBytes", "dc/d92/classi2c__mock.html#a1be372fcfb003388c8af3bd57bca62e0", null ],
     [ "writeWord", "dc/d92/classi2c__mock.html#a125d58787123624234beb5beff3ca6ea", null ],
+    [ "data_array", "dc/d92/classi2c__mock.html#adc448989056716ad89861f6c9d1978b9", null ],
     [ "hasBeenCalledAmount_readByte", "dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3", null ],
     [ "hasBeenCalledAmount_readWord", "dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c", null ],
     [ "hasBeenCalledAmount_slavePresent", "dc/d92/classi2c__mock.html#ac79fb1aad33dd97e4e9e947592c7ec53", null ],
     [ "hasBeenCalledAmount_writeByte", "dc/d92/classi2c__mock.html#ace3d43eb04ffefb8ff25a5ceaaface48", null ],
-    [ "hasBeenCalledAmount_writeWord", "dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80", null ]
+    [ "hasBeenCalledAmount_writeWord", "dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80", null ],
+    [ "read_array", "dc/d92/classi2c__mock.html#a8c69905303f83050ae603161097c1c36", null ]
 ];

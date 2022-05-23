@@ -15,5 +15,6 @@ var searchData=
   ['blue_46',['BLUE',['../db/dc9/class_utility___image.html#aed5c3c45e70c5f7936bc71f990efaab8a1b3e1ee9bff86431dea6b181365ba65f',1,'Utility_Image']]],
   ['buffer_5fexternal_5fconf_47',['buffer_external_conf',['../d9/d88/class_sensor_controller_base.html#add6cf0a4b183afe263fadb8f6011a90a',1,'SensorControllerBase::init_conf']]],
   ['buffer_5fraw_5fconf_48',['buffer_raw_conf',['../d9/d88/class_sensor_controller_base.html#a75253f7c536fc8775c3458f94cac4bba',1,'SensorControllerBase::init_conf']]],
-  ['buffer_5fsize_49',['buffer_size',['../d5/d81/class_m_q_t_t___message.html#a044ccec1109bca6ac94df9fda5e4dedd',1,'MQTT_Message::msg_conf_t']]]
+  ['buffer_5fsize_49',['buffer_size',['../d5/d81/class_m_q_t_t___message.html#a044ccec1109bca6ac94df9fda5e4dedd',1,'MQTT_Message::msg_conf_t']]],
+  ['bytes2word_50',['bytes2word',['../da/d55/classi2c.html#a4c56c1a90493238ba95d457e6b4cc9c2',1,'i2c']]]
 ];

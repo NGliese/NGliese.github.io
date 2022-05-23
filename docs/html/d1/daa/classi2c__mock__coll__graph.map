@@ -1,3 +1,8 @@
 <map id="i2c_mock" name="i2c_mock">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,191,376"/>
+<area shape="rect" id="node1" title=" " alt="" coords="96,425,281,825"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,285,180,363"/>
+<area shape="rect" id="node3" title="STL class." alt="" coords="63,145,186,223"/>
+<area shape="rect" id="node4" title=" " alt="" coords="180,5,219,83"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="216,145,345,223"/>
+<area shape="rect" id="node5" title=" " alt="" coords="204,285,371,363"/>
 </map>

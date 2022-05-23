@@ -38,30 +38,34 @@
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/AnalysisTools/ImageAnalysis_OpenCV/src/Utility_Image.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/AnalysisTools/ImageAnalysis_OpenCV/include/Utility_Image.hpp" line="120" column="2"/>
             <symbol>friend_Load_Image</symbol>
         </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::m_wifi_power&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::m_wifi_power&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="49" column="17"/>
+            <symbol>WiFi_SAL_esp32::m_wifi_power</symbol>
+        </error>
         <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" verbose="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="87" column="14"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="94" column="14"/>
             <symbol>WiFi_SAL_esp32::event_handler</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="76" column="2"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="82" column="2"/>
             <symbol>WiFi_SAL_esp32</symbol>
         </error>
         <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" verbose="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" cwe="571">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="101" column="37" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="120" column="37" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
         </error>
-        <error id="multiCondition" severity="style" msg="Expression is always false because &apos;else if&apos; condition matches previous condition at line 164." verbose="Expression is always false because &apos;else if&apos; condition matches previous condition at line 164." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="180" column="9"/>
+        <error id="multiCondition" severity="style" msg="Expression is always false because &apos;else if&apos; condition matches previous condition at line 183." verbose="Expression is always false because &apos;else if&apos; condition matches previous condition at line 183." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="199" column="9"/>
         </error>
         <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="48" column="17"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="49" column="17"/>
             <symbol>WiFi_SAL_esp32::instance_any_id</symbol>
         </error>
         <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_got_ip&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_got_ip&apos; is not initialized in the constructor." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="48" column="17"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="49" column="17"/>
             <symbol>WiFi_SAL_esp32::instance_got_ip</symbol>
         </error>
         <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::m_cfg&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::m_cfg&apos; is not initialized in the constructor." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="48" column="17"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="49" column="17"/>
             <symbol>WiFi_SAL_esp32::m_cfg</symbol>
         </error>
         <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." cwe="398">
@@ -129,7 +133,7 @@
             <symbol>friend_HAL</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="76" column="2"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="82" column="2"/>
             <symbol>WiFi_SAL_esp32</symbol>
         </error>
         <error id="unreadVariable" severity="style" msg="Variable &apos;err&apos; is assigned a value that is never used." verbose="Variable &apos;err&apos; is assigned a value that is never used." cwe="563">
@@ -184,14 +188,6 @@
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp" line="41" column="11"/>
             <symbol>Curl_SAL::m_curl</symbol>
         </error>
-        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;i2c_esp32::writeWord&apos;" verbose="Unused private function: &apos;i2c_esp32::writeWord&apos;" cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="67" column="16"/>
-            <symbol>i2c_esp32::writeWord</symbol>
-        </error>
-        <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;i2c_esp32::readWord&apos;" verbose="Unused private function: &apos;i2c_esp32::readWord&apos;" cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="68" column="17"/>
-            <symbol>i2c_esp32::readWord</symbol>
-        </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="58" column="2"/>
             <symbol>i2c_esp32</symbol>
@@ -205,12 +201,20 @@
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="87" column="27" info="Assignment &apos;err=execute_transaction()&apos;, assigned value is 0"/>
         </error>
         <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="107" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="106" column="35" info="Assignment &apos;err=initialize_transaction()&apos;, assigned value is 0"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="109" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="108" column="35" info="Assignment &apos;err=initialize_transaction()&apos;, assigned value is 0"/>
         </error>
         <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="117" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="116" column="27" info="Assignment &apos;err=execute_transaction()&apos;, assigned value is 0"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="119" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="118" column="27" info="Assignment &apos;err=execute_transaction()&apos;, assigned value is 0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="139" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="138" column="35" info="Assignment &apos;err=initialize_transaction()&apos;, assigned value is 0"/>
+        </error>
+        <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;err!=GE_OK&apos; is always false" verbose="Condition &apos;err!=GE_OK&apos; is always false" cwe="570">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="149" column="9" info="Condition &apos;err!=GE_OK&apos; is always false"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="148" column="27" info="Assignment &apos;err=execute_transaction()&apos;, assigned value is 0"/>
         </error>
         <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;mqtt_api_v2::handle_event&apos;" verbose="Unused private function: &apos;mqtt_api_v2::handle_event&apos;" cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/include/mqtt_api_v2.hpp" line="113" column="23"/>
@@ -233,7 +237,7 @@
             <symbol>m_coreId</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="76" column="2"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="82" column="2"/>
             <symbol>WiFi_SAL_esp32</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">

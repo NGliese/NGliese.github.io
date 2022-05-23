@@ -1,5 +1,5 @@
 <map id="WiFi_SAL_esp32" name="WiFi_SAL_esp32">
-<area shape="rect" id="node1" title=" " alt="" coords="5,388,169,597"/>
-<area shape="rect" id="node2" href="$db/d7f/class_wi_fi_base.html" title=" " alt="" coords="28,204,147,340"/>
-<area shape="rect" id="node3" href="$d0/d74/class_connector_base.html" title=" " alt="" coords="9,5,165,156"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,388,180,627"/>
+<area shape="rect" id="node2" href="$db/d7f/class_wi_fi_base.html" title=" " alt="" coords="33,204,152,340"/>
+<area shape="rect" id="node3" href="$d0/d74/class_connector_base.html" title=" " alt="" coords="15,5,171,156"/>
 </map>

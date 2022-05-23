@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('dc/d92/classi2c__mock.html','../../');
 <div class="dynheader">
 Collaboration diagram for i2c_mock:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/daa/classi2c__mock__coll__graph.svg" width="196" height="382"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d1/daa/classi2c__mock__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -109,10 +109,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7dde212dff1b0e89b1853b86e6457255"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cebac866f306481b19f680127d6fad5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#a0cebac866f306481b19f680127d6fad5">writeByte</a> (const uint8_t &amp;slave_address, const uint8_t &amp;byte)</td></tr>
 <tr class="separator:a0cebac866f306481b19f680127d6fad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be372fcfb003388c8af3bd57bca62e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#a1be372fcfb003388c8af3bd57bca62e0">writeMultiBytes</a> (const uint8_t &amp;slave_address, const uint8_t *data, const size_t &amp;length)</td></tr>
+<tr class="separator:a1be372fcfb003388c8af3bd57bca62e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a125d58787123624234beb5beff3ca6ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#a125d58787123624234beb5beff3ca6ea">writeWord</a> (const uint8_t &amp;slave_address, const uint16_t &amp;word)</td></tr>
 <tr class="separator:a125d58787123624234beb5beff3ca6ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55c04504a228616c89cb3da5597a0ebb"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#a55c04504a228616c89cb3da5597a0ebb">readByte</a> (const uint8_t &amp;slave_address)</td></tr>
 <tr class="separator:a55c04504a228616c89cb3da5597a0ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9afa55bcac99cefd433d59793bcef0cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#a9afa55bcac99cefd433d59793bcef0cd">readMultiBytes</a> (const uint8_t &amp;slave_address, uint8_t *data, const size_t &amp;length)</td></tr>
+<tr class="separator:a9afa55bcac99cefd433d59793bcef0cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9625e6461f6ed9556084488066aa88f1"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#a9625e6461f6ed9556084488066aa88f1">readWord</a> (const uint8_t &amp;slave_address)</td></tr>
 <tr class="separator:a9625e6461f6ed9556084488066aa88f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af318a6e23779a319163d5488c52ad612"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#af318a6e23779a319163d5488c52ad612">reset</a> ()</td></tr>
@@ -130,6 +134,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a38c310412f373b694d2bfb3243dd20a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a821c310798f4402882b6349e9c4b881c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">hasBeenCalledAmount_readWord</a> = 0</td></tr>
 <tr class="separator:a821c310798f4402882b6349e9c4b881c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc448989056716ad89861f6c9d1978b9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; uint8_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#adc448989056716ad89861f6c9d1978b9">data_array</a></td></tr>
+<tr class="separator:adc448989056716ad89861f6c9d1978b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c69905303f83050ae603161097c1c36"><td class="memItemLeft" align="right" valign="top">std::array&lt; uint8_t, 5 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d92/classi2c__mock.html#a8c69905303f83050ae603161097c1c36">read_array</a> {1, 2, 3, 4, 5}</td></tr>
+<tr class="separator:a8c69905303f83050ae603161097c1c36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -227,10 +235,10 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00103">103</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00125">125</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
 
@@ -259,10 +267,10 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00099">99</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00121">121</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
 
@@ -291,10 +299,10 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00107">107</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00129">129</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
 
@@ -323,10 +331,10 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00111">111</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00133">133</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
 
@@ -356,13 +364,67 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00073">73</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    {</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">hasBeenCalledAmount_readByte</a>++;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordflow">return</span> 0xfa;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">hasBeenCalledAmount_readByte</a>++;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keywordflow">return</span> 0xfa;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">hasBeenCalledAmount_readByte</a>.</p>
+
+</div>
+</div>
+<a id="a9afa55bcac99cefd433d59793bcef0cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9afa55bcac99cefd433d59793bcef0cd">&#9670;&nbsp;</a></span>readMultiBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> i2c_mock::readMultiBytes </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>slave_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00088">88</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot;length is &lt;&quot;</span> &lt;&lt; (int)length &lt;&lt; <span class="stringliteral">&quot;&gt; \n&quot;</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; length; ++i)</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            *(data + i) = <a class="code" href="../../dc/d92/classi2c__mock.html#a8c69905303f83050ae603161097c1c36">read_array</a>[i];</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#a8c69905303f83050ae603161097c1c36">read_array</a>.</p>
 
 </div>
 </div>
@@ -390,11 +452,11 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00078">78</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">hasBeenCalledAmount_readWord</a>++;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> 0xfafa;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00097">97</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    {</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">hasBeenCalledAmount_readWord</a>++;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        <span class="keywordflow">return</span> 0xfafa;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">hasBeenCalledAmount_readWord</a>.</p>
 
@@ -423,16 +485,17 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00083">83</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#ac79fb1aad33dd97e4e9e947592c7ec53">hasBeenCalledAmount_slavePresent</a> = 0;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#ace3d43eb04ffefb8ff25a5ceaaface48">hasBeenCalledAmount_writeByte</a> = 0;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">hasBeenCalledAmount_writeWord</a> = 0;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">hasBeenCalledAmount_readByte</a> = 0;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">hasBeenCalledAmount_readWord</a> = 0;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    }</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00102">102</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    {</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#ac79fb1aad33dd97e4e9e947592c7ec53">hasBeenCalledAmount_slavePresent</a> = 0;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#ace3d43eb04ffefb8ff25a5ceaaface48">hasBeenCalledAmount_writeByte</a> = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">hasBeenCalledAmount_writeWord</a> = 0;</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">hasBeenCalledAmount_readByte</a> = 0;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">hasBeenCalledAmount_readWord</a> = 0;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#adc448989056716ad89861f6c9d1978b9">data_array</a>.clear();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">hasBeenCalledAmount_readByte</a>, <a class="el" href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">hasBeenCalledAmount_readWord</a>, <a class="el" href="../../dc/d92/classi2c__mock.html#ac79fb1aad33dd97e4e9e947592c7ec53">hasBeenCalledAmount_slavePresent</a>, <a class="el" href="../../dc/d92/classi2c__mock.html#ace3d43eb04ffefb8ff25a5ceaaface48">hasBeenCalledAmount_writeByte</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">hasBeenCalledAmount_writeWord</a>.</p>
+<p class="reference">References <a class="el" href="../../dc/d92/classi2c__mock.html#adc448989056716ad89861f6c9d1978b9">data_array</a>, <a class="el" href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">hasBeenCalledAmount_readByte</a>, <a class="el" href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">hasBeenCalledAmount_readWord</a>, <a class="el" href="../../dc/d92/classi2c__mock.html#ac79fb1aad33dd97e4e9e947592c7ec53">hasBeenCalledAmount_slavePresent</a>, <a class="el" href="../../dc/d92/classi2c__mock.html#ace3d43eb04ffefb8ff25a5ceaaface48">hasBeenCalledAmount_writeByte</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">hasBeenCalledAmount_writeWord</a>.</p>
 
 </div>
 </div>
@@ -514,6 +577,59 @@ Private Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a1be372fcfb003388c8af3bd57bca62e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be372fcfb003388c8af3bd57bca62e0">&#9670;&nbsp;</a></span>writeMultiBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a> i2c_mock::writeMultiBytes </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>slave_address</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t *&#160;</td>
+          <td class="paramname"><em>data</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const size_t &amp;&#160;</td>
+          <td class="paramname"><em>length</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; length; ++i)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <a class="code" href="../../dc/d92/classi2c__mock.html#adc448989056716ad89861f6c9d1978b9">data_array</a>.push_back(*(data + i));</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        }</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    }</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../dc/d92/classi2c__mock.html#adc448989056716ad89861f6c9d1978b9">data_array</a>, and <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>.</p>
+
+</div>
+</div>
 <a id="a125d58787123624234beb5beff3ca6ea"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a125d58787123624234beb5beff3ca6ea">&#9670;&nbsp;</a></span>writeWord()</h2>
 
@@ -548,17 +664,36 @@ Private Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00068">68</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    {</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">hasBeenCalledAmount_writeWord</a>++;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    };</div>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00077">77</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">hasBeenCalledAmount_writeWord</a>++;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    };</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">hasBeenCalledAmount_writeWord</a>.</p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="adc448989056716ad89861f6c9d1978b9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc448989056716ad89861f6c9d1978b9">&#9670;&nbsp;</a></span>data_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;uint8_t&gt; i2c_mock::data_array</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00117">117</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d92/classi2c__mock.html#af318a6e23779a319163d5488c52ad612">reset()</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#a1be372fcfb003388c8af3bd57bca62e0">writeMultiBytes()</a>.</p>
+
+</div>
+</div>
 <a id="a38c310412f373b694d2bfb3243dd20a3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38c310412f373b694d2bfb3243dd20a3">&#9670;&nbsp;</a></span>hasBeenCalledAmount_readByte</h2>
 
@@ -571,7 +706,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00095">95</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00115">115</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d92/classi2c__mock.html#a55c04504a228616c89cb3da5597a0ebb">readByte()</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#af318a6e23779a319163d5488c52ad612">reset()</a>.</p>
 
@@ -589,7 +724,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00096">96</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00116">116</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d92/classi2c__mock.html#a9625e6461f6ed9556084488066aa88f1">readWord()</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#af318a6e23779a319163d5488c52ad612">reset()</a>.</p>
 
@@ -607,7 +742,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00092">92</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00112">112</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d92/classi2c__mock.html#af318a6e23779a319163d5488c52ad612">reset()</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#a7dde212dff1b0e89b1853b86e6457255">slavePresent()</a>.</p>
 
@@ -625,7 +760,7 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00093">93</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00113">113</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d92/classi2c__mock.html#af318a6e23779a319163d5488c52ad612">reset()</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#a0cebac866f306481b19f680127d6fad5">writeByte()</a>.</p>
 
@@ -643,9 +778,27 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00094">94</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00114">114</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../dc/d92/classi2c__mock.html#af318a6e23779a319163d5488c52ad612">reset()</a>, and <a class="el" href="../../dc/d92/classi2c__mock.html#a125d58787123624234beb5beff3ca6ea">writeWord()</a>.</p>
+
+</div>
+</div>
+<a id="a8c69905303f83050ae603161097c1c36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c69905303f83050ae603161097c1c36">&#9670;&nbsp;</a></span>read_array</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;uint8_t, 5&gt; i2c_mock::read_array {1, 2, 3, 4, 5}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html#l00118">118</a> of file <a class="el" href="../../d2/d31/i2c__mock_8hpp_source.html">i2c_mock.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../dc/d92/classi2c__mock.html#a9afa55bcac99cefd433d59793bcef0cd">readMultiBytes()</a>.</p>
 
 </div>
 </div>
@@ -654,12 +807,14 @@ Private Member Functions</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="aclassi2c__mock_html_ace3d43eb04ffefb8ff25a5ceaaface48"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#ace3d43eb04ffefb8ff25a5ceaaface48">i2c_mock::hasBeenCalledAmount_writeByte</a></div><div class="ttdeci">int hasBeenCalledAmount_writeByte</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00093">i2c_mock.hpp:93</a></div></div>
-<div class="ttc" id="aclassi2c__mock_html_a38c310412f373b694d2bfb3243dd20a3"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">i2c_mock::hasBeenCalledAmount_readByte</a></div><div class="ttdeci">int hasBeenCalledAmount_readByte</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00095">i2c_mock.hpp:95</a></div></div>
-<div class="ttc" id="aclassi2c__mock_html_a821c310798f4402882b6349e9c4b881c"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">i2c_mock::hasBeenCalledAmount_readWord</a></div><div class="ttdeci">int hasBeenCalledAmount_readWord</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00096">i2c_mock.hpp:96</a></div></div>
+<div class="ttc" id="aclassi2c__mock_html_ace3d43eb04ffefb8ff25a5ceaaface48"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#ace3d43eb04ffefb8ff25a5ceaaface48">i2c_mock::hasBeenCalledAmount_writeByte</a></div><div class="ttdeci">int hasBeenCalledAmount_writeByte</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00113">i2c_mock.hpp:113</a></div></div>
+<div class="ttc" id="aclassi2c__mock_html_a38c310412f373b694d2bfb3243dd20a3"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#a38c310412f373b694d2bfb3243dd20a3">i2c_mock::hasBeenCalledAmount_readByte</a></div><div class="ttdeci">int hasBeenCalledAmount_readByte</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00115">i2c_mock.hpp:115</a></div></div>
+<div class="ttc" id="aclassi2c__mock_html_a8c69905303f83050ae603161097c1c36"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#a8c69905303f83050ae603161097c1c36">i2c_mock::read_array</a></div><div class="ttdeci">std::array&lt; uint8_t, 5 &gt; read_array</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00118">i2c_mock.hpp:118</a></div></div>
+<div class="ttc" id="aclassi2c__mock_html_adc448989056716ad89861f6c9d1978b9"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#adc448989056716ad89861f6c9d1978b9">i2c_mock::data_array</a></div><div class="ttdeci">std::vector&lt; uint8_t &gt; data_array</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00117">i2c_mock.hpp:117</a></div></div>
+<div class="ttc" id="aclassi2c__mock_html_a821c310798f4402882b6349e9c4b881c"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#a821c310798f4402882b6349e9c4b881c">i2c_mock::hasBeenCalledAmount_readWord</a></div><div class="ttdeci">int hasBeenCalledAmount_readWord</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00116">i2c_mock.hpp:116</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
-<div class="ttc" id="aclassi2c__mock_html_ac79fb1aad33dd97e4e9e947592c7ec53"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#ac79fb1aad33dd97e4e9e947592c7ec53">i2c_mock::hasBeenCalledAmount_slavePresent</a></div><div class="ttdeci">int hasBeenCalledAmount_slavePresent</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00092">i2c_mock.hpp:92</a></div></div>
-<div class="ttc" id="aclassi2c__mock_html_a267ec3183fdd0a118c756ac2f875dd80"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">i2c_mock::hasBeenCalledAmount_writeWord</a></div><div class="ttdeci">int hasBeenCalledAmount_writeWord</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00094">i2c_mock.hpp:94</a></div></div>
+<div class="ttc" id="aclassi2c__mock_html_ac79fb1aad33dd97e4e9e947592c7ec53"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#ac79fb1aad33dd97e4e9e947592c7ec53">i2c_mock::hasBeenCalledAmount_slavePresent</a></div><div class="ttdeci">int hasBeenCalledAmount_slavePresent</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00112">i2c_mock.hpp:112</a></div></div>
+<div class="ttc" id="aclassi2c__mock_html_a267ec3183fdd0a118c756ac2f875dd80"><div class="ttname"><a href="../../dc/d92/classi2c__mock.html#a267ec3183fdd0a118c756ac2f875dd80">i2c_mock::hasBeenCalledAmount_writeWord</a></div><div class="ttdeci">int hasBeenCalledAmount_writeWord</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/d31/i2c__mock_8hpp_source.html#l00114">i2c_mock.hpp:114</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

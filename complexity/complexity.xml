@@ -115,1169 +115,1179 @@
 		<average label="CCN" value="2.75"/>
 		<item name="WiFi_SAL_esp32::WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:33">
 			<value>21</value>
-			<value>11</value>
+			<value>12</value>
 			<value>4</value>
 		</item>
-		<item name="WiFi_SAL_esp32::WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:48">
+		<item name="WiFi_SAL_esp32::WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:49">
 			<value>22</value>
 			<value>10</value>
 			<value>4</value>
 		</item>
-		<item name="WiFi_SAL_esp32::~WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:62">
+		<item name="WiFi_SAL_esp32::~WiFi_SAL_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:63">
 			<value>23</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="WiFi_SAL_esp32::connect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:64">
+		<item name="WiFi_SAL_esp32::wifi_enum_to_power(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:65">
 			<value>24</value>
-			<value>46</value>
+			<value>14</value>
+			<value>4</value>
+		</item>
+		<item name="WiFi_SAL_esp32::connect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:82">
+			<value>25</value>
+			<value>47</value>
 			<value>7</value>
 		</item>
-		<item name="WiFi_SAL_esp32::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:131">
-			<value>25</value>
+		<item name="WiFi_SAL_esp32::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:150">
+			<value>26</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
-		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:145">
-			<value>26</value>
+		<item name="WiFi_SAL_esp32::event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp:164">
+			<value>27</value>
 			<value>54</value>
 			<value>14</value>
 		</item>
-		<average label="NCSS" value="14.038461538461538"/>
-		<average label="CCN" value="3.3846153846153846"/>
+		<average label="NCSS" value="14.11111111111111"/>
+		<average label="CCN" value="3.4074074074074074"/>
 		<item name="DistanceSensorController::main_function(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp:29">
-			<value>27</value>
+			<value>28</value>
 			<value>13</value>
 			<value>4</value>
 		</item>
 		<item name="DistanceSensorController::updateInternalBuffer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp:51">
-			<value>28</value>
+			<value>29</value>
 			<value>20</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="14.214285714285714"/>
-		<average label="CCN" value="3.5"/>
+		<average label="NCSS" value="14.275862068965518"/>
+		<average label="CCN" value="3.5172413793103448"/>
 		<item name="Watchdog_Base&lt;T&gt;::Watchdog_Base(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/WatchdogBase/src/Watchdog_Base.cpp:37">
-			<value>29</value>
+			<value>30</value>
 			<value>2</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="13.793103448275861"/>
-		<average label="CCN" value="3.413793103448276"/>
+		<average label="NCSS" value="13.866666666666667"/>
+		<average label="CCN" value="3.433333333333333"/>
 		<item name="SensorControllerBase::run(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/SensorControllerBase/src/SensorControllerBase.cpp:29">
-			<value>30</value>
+			<value>31</value>
 			<value>12</value>
 			<value>3</value>
 		</item>
 		<item name="SensorControllerBase::postData(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/SensorControllerBase/src/SensorControllerBase.cpp:43">
-			<value>31</value>
+			<value>32</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="13.419354838709678"/>
-		<average label="CCN" value="3.3225806451612905"/>
+		<average label="NCSS" value="13.5"/>
+		<average label="CCN" value="3.34375"/>
 		<item name="ADC_API_ESP32::ADC_API_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ADC/src/ADC_API_ESP32.cpp:36">
-			<value>32</value>
+			<value>33</value>
 			<value>7</value>
 			<value>2</value>
 		</item>
 		<item name="ADC_API_ESP32::~ADC_API_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ADC/src/ADC_API_ESP32.cpp:49">
-			<value>33</value>
+			<value>34</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="ADC_API_ESP32::measureValue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ADC/src/ADC_API_ESP32.cpp:54">
-			<value>34</value>
+			<value>35</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="12.794117647058824"/>
-		<average label="CCN" value="3.264705882352941"/>
+		<average label="NCSS" value="12.885714285714286"/>
+		<average label="CCN" value="3.2857142857142856"/>
 		<item name="DataBroker::addService(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/DataBroker/src/DataBroker.cpp:30">
-			<value>35</value>
+			<value>36</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
 		<item name="DataBroker::main_function(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/DataBroker/src/DataBroker.cpp:45">
-			<value>36</value>
+			<value>37</value>
 			<value>31</value>
 			<value>6</value>
 		</item>
 		<item name="DataBroker::run(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/DataBroker/src/DataBroker.cpp:98">
-			<value>37</value>
+			<value>38</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="13.0"/>
-		<average label="CCN" value="3.2972972972972974"/>
+		<average label="NCSS" value="13.078947368421053"/>
+		<average label="CCN" value="3.3157894736842106"/>
 		<item name="General_Error::printError(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ErrorHandler/src/General_Error.cpp:74">
-			<value>38</value>
+			<value>39</value>
 			<value>10</value>
 			<value>3</value>
 		</item>
 		<item name="General_Error::printError(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ErrorHandler/src/General_Error.cpp:87">
-			<value>39</value>
+			<value>40</value>
 			<value>10</value>
 			<value>3</value>
 		</item>
 		<item name="General_Error::check_error(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ErrorHandler/src/General_Error.cpp:100">
-			<value>40</value>
+			<value>41</value>
 			<value>13</value>
 			<value>2</value>
 		</item>
 		<item name="General_Error::responseToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ErrorHandler/src/General_Error.cpp:114">
-			<value>41</value>
+			<value>42</value>
 			<value>14</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="12.878048780487806"/>
-		<average label="CCN" value="3.268292682926829"/>
+		<average label="NCSS" value="12.952380952380953"/>
+		<average label="CCN" value="3.2857142857142856"/>
 		<item name="ErrorCodeParser::postToMqtt(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/ErrorHandler/src/ErrorCodeParser.cpp:29">
-			<value>42</value>
+			<value>43</value>
 			<value>8</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="12.761904761904763"/>
-		<average label="CCN" value="3.261904761904762"/>
+		<average label="NCSS" value="12.837209302325581"/>
+		<average label="CCN" value="3.2790697674418605"/>
 		<item name="Fault_Handler::Fault_Handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/FaultHandler/src/Fault_Handler.cpp:36">
-			<value>43</value>
+			<value>44</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="Fault_Handler::~Fault_Handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/FaultHandler/src/Fault_Handler.cpp:41">
-			<value>44</value>
+			<value>45</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="Fault_Handler::handle(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/FaultHandler/src/Fault_Handler.cpp:76">
-			<value>45</value>
+			<value>46</value>
 			<value>25</value>
 			<value>6</value>
 		</item>
 		<item name="Fault_Handler::handleFault(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/FaultHandler/src/Fault_Handler.cpp:122">
-			<value>46</value>
+			<value>47</value>
 			<value>8</value>
 			<value>3</value>
 		</item>
 		<item name="Fault_Handler::toString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/FaultHandler/src/Fault_Handler.cpp:138">
-			<value>47</value>
+			<value>48</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
 		<item name="Fault_Handler::severity2string(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/FaultHandler/src/Fault_Handler.cpp:186">
-			<value>48</value>
+			<value>49</value>
 			<value>25</value>
 			<value>10</value>
 		</item>
-		<average label="NCSS" value="12.625"/>
-		<average label="CCN" value="3.3541666666666665"/>
+		<average label="NCSS" value="12.693877551020408"/>
+		<average label="CCN" value="3.36734693877551"/>
 		<item name="GPIO_API::~GPIO_API(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:36">
-			<value>49</value>
+			<value>50</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="GPIO_API::setToInput(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:48">
-			<value>50</value>
-			<value>12</value>
-			<value>4</value>
-		</item>
-		<item name="GPIO_API::setToOutput(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:79">
 			<value>51</value>
 			<value>12</value>
 			<value>4</value>
 		</item>
-		<item name="GPIO_API::setHigh(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:108">
+		<item name="GPIO_API::setToOutput(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:79">
 			<value>52</value>
-			<value>11</value>
+			<value>12</value>
 			<value>4</value>
 		</item>
-		<item name="GPIO_API::setLow(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:136">
+		<item name="GPIO_API::setHigh(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:108">
 			<value>53</value>
 			<value>11</value>
 			<value>4</value>
 		</item>
-		<item name="GPIO_API::isHigh(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:163">
+		<item name="GPIO_API::setLow(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:136">
 			<value>54</value>
-			<value>8</value>
-			<value>3</value>
+			<value>11</value>
+			<value>4</value>
 		</item>
-		<item name="GPIO_API::isLow(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:183">
+		<item name="GPIO_API::isHigh(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:163">
 			<value>55</value>
 			<value>8</value>
 			<value>3</value>
 		</item>
-		<item name="GPIO_API::installInterrupt(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:193">
+		<item name="GPIO_API::isLow(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:183">
 			<value>56</value>
+			<value>8</value>
+			<value>3</value>
+		</item>
+		<item name="GPIO_API::installInterrupt(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/GPIO_API.cpp:193">
+			<value>57</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="12.035714285714286"/>
-		<average label="CCN" value="3.3035714285714284"/>
+		<average label="NCSS" value="12.105263157894736"/>
+		<average label="CCN" value="3.3157894736842106"/>
 		<item name="GPIO_HAL::setDirection(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:50">
-			<value>57</value>
+			<value>58</value>
 			<value>13</value>
 			<value>4</value>
 		</item>
 		<item name="GPIO_HAL::setValue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:81">
-			<value>58</value>
+			<value>59</value>
 			<value>12</value>
 			<value>4</value>
 		</item>
 		<item name="GPIO_HAL::getValue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:109">
-			<value>59</value>
+			<value>60</value>
 			<value>5</value>
 			<value>3</value>
 		</item>
 		<item name="GPIO_HAL::enableInterrupt(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:118">
-			<value>60</value>
-			<value>7</value>
-			<value>5</value>
-		</item>
-		<item name="GPIO_HAL::disableInterrupt(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:135">
 			<value>61</value>
 			<value>7</value>
 			<value>5</value>
 		</item>
-		<item name="GPIO_HAL::installInterruptDriver(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:152">
+		<item name="GPIO_HAL::disableInterrupt(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:135">
 			<value>62</value>
+			<value>7</value>
+			<value>5</value>
+		</item>
+		<item name="GPIO_HAL::installInterruptDriver(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/src/HAL.cpp:152">
+			<value>63</value>
 			<value>25</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.983870967741936"/>
-		<average label="CCN" value="3.435483870967742"/>
+		<average label="NCSS" value="12.047619047619047"/>
+		<average label="CCN" value="3.4444444444444446"/>
 		<item name="hal_mqtt_log::write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Logger/src/hal_mqtt_log.cpp:36">
-			<value>63</value>
+			<value>64</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.873015873015873"/>
-		<average label="CCN" value="3.3968253968253967"/>
+		<average label="NCSS" value="11.9375"/>
+		<average label="CCN" value="3.40625"/>
 		<item name="Logger::write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Logger/src/Logger.cpp:36">
-			<value>64</value>
+			<value>65</value>
 			<value>23</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="12.046875"/>
-		<average label="CCN" value="3.40625"/>
+		<average label="NCSS" value="12.107692307692307"/>
+		<average label="CCN" value="3.4153846153846152"/>
 		<item name="Maintainer::Maintainer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:40">
-			<value>65</value>
+			<value>66</value>
 			<value>33</value>
 			<value>7</value>
 		</item>
 		<item name="Maintainer::~Maintainer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:81">
-			<value>66</value>
+			<value>67</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="Maintainer::install_system_test_fuction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:97">
-			<value>67</value>
+			<value>68</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
 		<item name="Maintainer::run(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:113">
-			<value>68</value>
+			<value>69</value>
 			<value>12</value>
 			<value>3</value>
 		</item>
 		<item name="Maintainer::periodic_restart(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:136">
-			<value>69</value>
+			<value>70</value>
 			<value>12</value>
 			<value>4</value>
 		</item>
 		<item name="Maintainer::check_system_functions(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:167">
-			<value>70</value>
+			<value>71</value>
 			<value>18</value>
 			<value>5</value>
 		</item>
 		<item name="Maintainer::checkOTAUpdate(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:195">
-			<value>71</value>
+			<value>72</value>
 			<value>10</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="12.169014084507042"/>
-		<average label="CCN" value="3.4507042253521125"/>
+		<average label="NCSS" value="12.222222222222221"/>
+		<average label="CCN" value="3.4583333333333335"/>
 		<item name="Message_Handler::to_Postgres_Format(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Handler.cpp:52">
-			<value>72</value>
+			<value>73</value>
 			<value>27</value>
 			<value>5</value>
 		</item>
 		<item name="Message_Handler::to_Postgres_Form(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Handler.cpp:96">
-			<value>73</value>
-			<value>27</value>
-			<value>3</value>
-		</item>
-		<item name="Message_Handler::to_Postgres_Subject(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Handler.cpp:133">
 			<value>74</value>
 			<value>27</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="12.77027027027027"/>
-		<average label="CCN" value="3.4594594594594597"/>
-		<item name="Message_Protocol::Message_Protocol(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:36">
+		<item name="Message_Handler::to_Postgres_Subject(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Handler.cpp:133">
 			<value>75</value>
+			<value>27</value>
+			<value>3</value>
+		</item>
+		<average label="NCSS" value="12.813333333333333"/>
+		<average label="CCN" value="3.466666666666667"/>
+		<item name="Message_Protocol::Message_Protocol(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:36">
+			<value>76</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="Message_Protocol::Message_Protocol(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:38">
-			<value>76</value>
+			<value>77</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="Message_Protocol::~Message_Protocol(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:44">
-			<value>77</value>
+			<value>78</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="Message_Protocol::setControl(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:57">
-			<value>78</value>
+			<value>79</value>
 			<value>8</value>
 			<value>3</value>
 		</item>
 		<item name="Message_Protocol::addData(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:85">
-			<value>79</value>
+			<value>80</value>
 			<value>11</value>
 			<value>4</value>
 		</item>
 		<item name="Message_Protocol::getBuffer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:112">
-			<value>80</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<item name="Message_Protocol::getControl(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:126">
 			<value>81</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="Message_Protocol::clear(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:140">
+		<item name="Message_Protocol::getControl(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:126">
 			<value>82</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<item name="Message_Protocol::clear(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:140">
+			<value>83</value>
 			<value>9</value>
 			<value>3</value>
 		</item>
 		<item name="Message_Protocol::toString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:174">
-			<value>83</value>
+			<value>84</value>
 			<value>19</value>
 			<value>4</value>
 		</item>
 		<item name="Message_Protocol::isValid(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Message/src/Message_Protocol.cpp:211">
-			<value>84</value>
+			<value>85</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="12.035714285714286"/>
-		<average label="CCN" value="3.2976190476190474"/>
+		<average label="NCSS" value="12.08235294117647"/>
+		<average label="CCN" value="3.3058823529411763"/>
 		<item name="OTA::OTA(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:43">
-			<value>85</value>
-			<value>1</value>
-			<value>1</value>
-		</item>
-		<item name="OTA::~OTA(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:45">
 			<value>86</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="OTA::update(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:47">
+		<item name="OTA::~OTA(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:45">
 			<value>87</value>
+			<value>1</value>
+			<value>1</value>
+		</item>
+		<item name="OTA::update(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:47">
+			<value>88</value>
 			<value>25</value>
 			<value>6</value>
 		</item>
 		<item name="OTA::start_process(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:81">
-			<value>88</value>
+			<value>89</value>
 			<value>9</value>
 			<value>4</value>
 		</item>
 		<item name="OTA::stop_process(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:100">
-			<value>89</value>
+			<value>90</value>
 			<value>16</value>
 			<value>4</value>
 		</item>
 		<item name="OTA::update_process(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:126">
-			<value>90</value>
+			<value>91</value>
 			<value>15</value>
 			<value>5</value>
 		</item>
 		<item name="OTA::isUpdateStarted(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/OTA/src/OTA.cpp:151">
-			<value>91</value>
+			<value>92</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.89010989010989"/>
-		<average label="CCN" value="3.2857142857142856"/>
+		<average label="NCSS" value="11.934782608695652"/>
+		<average label="CCN" value="3.2934782608695654"/>
 		<item name="HAL_ESP32::HAL_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/HAL.cpp:41">
-			<value>92</value>
+			<value>93</value>
 			<value>30</value>
 			<value>4</value>
 		</item>
 		<item name="HAL_ESP32::~HAL_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/HAL.cpp:80">
-			<value>93</value>
+			<value>94</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="HAL_ESP32::setDutyCycle(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/HAL.cpp:82">
-			<value>94</value>
+			<value>95</value>
 			<value>20</value>
 			<value>6</value>
 		</item>
 		<item name="HAL_ESP32::setFrequency(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/HAL.cpp:113">
-			<value>95</value>
+			<value>96</value>
 			<value>13</value>
 			<value>5</value>
 		</item>
 		<item name="HAL_ESP32::stop(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/HAL.cpp:136">
-			<value>96</value>
+			<value>97</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
 		<item name="HAL_ESP32::destroy(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/HAL.cpp:157">
-			<value>97</value>
+			<value>98</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
 		<item name="HAL_ESP32::calculateDutyCycleBasedOnResolution(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/HAL.cpp:186">
-			<value>98</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<average label="NCSS" value="11.928571428571429"/>
-		<average label="CCN" value="3.306122448979592"/>
-		<item name="PWM_API_ESP32::PWM_API_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:35">
 			<value>99</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="PWM_API_ESP32::~PWM_API_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:40">
+		<average label="NCSS" value="11.969696969696969"/>
+		<average label="CCN" value="3.313131313131313"/>
+		<item name="PWM_API_ESP32::PWM_API_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:35">
 			<value>100</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="PWM_API_ESP32::setDutyCycle(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:60">
+		<item name="PWM_API_ESP32::~PWM_API_ESP32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:40">
 			<value>101</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<item name="PWM_API_ESP32::setDutyCycle(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:60">
+			<value>102</value>
 			<value>20</value>
 			<value>5</value>
 		</item>
 		<item name="PWM_API_ESP32::setFrequency(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:103">
-			<value>102</value>
-			<value>6</value>
-			<value>3</value>
-		</item>
-		<item name="PWM_API_ESP32::stop(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:128">
 			<value>103</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.737864077669903"/>
-		<average label="CCN" value="3.2718446601941746"/>
-		<item name="QueryAddExternalResources::content(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/QueryTools/src/QueryAddExternalResources.cpp:36">
+		<item name="PWM_API_ESP32::stop(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/src/PWM_API_ESP32.cpp:128">
 			<value>104</value>
+			<value>6</value>
+			<value>3</value>
+		</item>
+		<average label="NCSS" value="11.778846153846153"/>
+		<average label="CCN" value="3.2788461538461537"/>
+		<item name="QueryAddExternalResources::content(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/QueryTools/src/QueryAddExternalResources.cpp:36">
+			<value>105</value>
 			<value>29</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.903846153846153"/>
-		<average label="CCN" value="3.2788461538461537"/>
+		<average label="NCSS" value="11.942857142857143"/>
+		<average label="CCN" value="3.2857142857142856"/>
 		<item name="QueryAddSensorData::content(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/QueryTools/src/QueryAddSensorData.cpp:36">
-			<value>105</value>
+			<value>106</value>
 			<value>28</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="12.057142857142857"/>
-		<average label="CCN" value="3.2857142857142856"/>
+		<average label="NCSS" value="12.09433962264151"/>
+		<average label="CCN" value="3.292452830188679"/>
 		<item name="Timebased_rules::isItNight(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Rulebase/src/Timebased_rules.cpp:41">
-			<value>106</value>
+			<value>107</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
 		<item name="Timebased_rules::isItVacation(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Rulebase/src/Timebased_rules.cpp:55">
-			<value>107</value>
+			<value>108</value>
 			<value>12</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="12.046728971962617"/>
-		<average label="CCN" value="3.2616822429906542"/>
+		<average label="NCSS" value="12.083333333333334"/>
+		<average label="CCN" value="3.2685185185185186"/>
 		<item name="RTC_HAL::sntp_update(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/RTC_HAL.cpp:35">
-			<value>108</value>
+			<value>109</value>
 			<value>23</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="12.148148148148149"/>
-		<average label="CCN" value="3.2962962962962963"/>
+		<average label="NCSS" value="12.18348623853211"/>
+		<average label="CCN" value="3.302752293577982"/>
 		<item name="Timeservice::initialize_sntp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:35">
-			<value>109</value>
+			<value>110</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
 		<item name="Timeservice::wait_sec(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:49">
-			<value>110</value>
-			<value>8</value>
-			<value>4</value>
-		</item>
-		<item name="Timeservice::wait_ms(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:67">
 			<value>111</value>
 			<value>8</value>
 			<value>4</value>
 		</item>
-		<item name="Timeservice::getTimeNow(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:95">
+		<item name="Timeservice::wait_ms(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:67">
 			<value>112</value>
+			<value>8</value>
+			<value>4</value>
+		</item>
+		<item name="Timeservice::getTimeNow(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:95">
+			<value>113</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
 		<item name="Timeservice::getTimeInUsNow(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:117">
-			<value>113</value>
+			<value>114</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="Timeservice::wait_untill_ms(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:124">
-			<value>114</value>
+			<value>115</value>
 			<value>21</value>
 			<value>6</value>
 		</item>
 		<item name="Timeservice::getCurrentDate(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:158">
-			<value>115</value>
-			<value>15</value>
-			<value>1</value>
-		</item>
-		<item name="Timeservice::getCurrentDate(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:176">
 			<value>116</value>
 			<value>15</value>
 			<value>1</value>
 		</item>
-		<item name="Timeservice::convertTimevalToTime(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:194">
+		<item name="Timeservice::getCurrentDate(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:176">
 			<value>117</value>
+			<value>15</value>
+			<value>1</value>
+		</item>
+		<item name="Timeservice::convertTimevalToTime(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:194">
+			<value>118</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
 		<item name="Timeservice::getYearMonthDay(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Timeservice/src/Timeservice.cpp:204">
-			<value>118</value>
+			<value>119</value>
 			<value>12</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="12.025423728813559"/>
-		<average label="CCN" value="3.23728813559322"/>
+		<average label="NCSS" value="12.058823529411764"/>
+		<average label="CCN" value="3.2436974789915967"/>
 		<item name="Watch_Clock::Watch_Clock(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:35">
-			<value>119</value>
+			<value>120</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="Watch_Clock::Watch_Clock(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:42">
-			<value>120</value>
-			<value>1</value>
-			<value>1</value>
-		</item>
-		<item name="Watch_Clock::~Watch_Clock(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:43">
 			<value>121</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="Watch_Clock::initialize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:55">
+		<item name="Watch_Clock::~Watch_Clock(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:43">
 			<value>122</value>
+			<value>1</value>
+			<value>1</value>
+		</item>
+		<item name="Watch_Clock::initialize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:55">
+			<value>123</value>
 			<value>10</value>
 			<value>3</value>
 		</item>
 		<item name="Watch_Clock::watch(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:92">
-			<value>123</value>
+			<value>124</value>
 			<value>21</value>
 			<value>6</value>
 		</item>
 		<item name="Watch_Clock::reset(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Watchdog/src/Watch_Clock.cpp:141">
-			<value>124</value>
+			<value>125</value>
 			<value>9</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.830645161290322"/>
-		<average label="CCN" value="3.2016129032258065"/>
+		<average label="NCSS" value="11.864"/>
+		<average label="CCN" value="3.208"/>
 		<item name="mqtt_api_v2::mqtt_api_v2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:47">
-			<value>125</value>
+			<value>126</value>
 			<value>14</value>
 			<value>3</value>
 		</item>
 		<item name="mqtt_api_v2::~mqtt_api_v2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:63">
-			<value>126</value>
+			<value>127</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="mqtt_api_v2::connect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:65">
-			<value>127</value>
+			<value>128</value>
 			<value>23</value>
 			<value>7</value>
 		</item>
 		<item name="mqtt_api_v2::disconnect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:106">
-			<value>128</value>
+			<value>129</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
 		<item name="mqtt_api_v2::publish(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:120">
-			<value>129</value>
+			<value>130</value>
 			<value>16</value>
 			<value>6</value>
 		</item>
 		<item name="mqtt_api_v2::subscribe(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:165">
-			<value>130</value>
+			<value>131</value>
 			<value>13</value>
 			<value>6</value>
 		</item>
 		<item name="mqtt_api_v2::subscribe(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:193">
-			<value>131</value>
+			<value>132</value>
 			<value>16</value>
 			<value>5</value>
 		</item>
 		<item name="mqtt_api_v2::handle_event(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:219">
-			<value>132</value>
+			<value>133</value>
 			<value>19</value>
 			<value>5</value>
 		</item>
 		<item name="mqtt_api_v2::getData(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:249">
-			<value>133</value>
+			<value>134</value>
 			<value>19</value>
 			<value>6</value>
 		</item>
 		<item name="mqtt_api_v2::mqtt_event_handler(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp:361">
-			<value>134</value>
+			<value>135</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.932835820895523"/>
-		<average label="CCN" value="3.283582089552239"/>
+		<average label="NCSS" value="11.962962962962964"/>
+		<average label="CCN" value="3.2888888888888888"/>
 		<item name="MQTT_Message::MQTT_Message(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:39">
-			<value>135</value>
+			<value>136</value>
 			<value>5</value>
 			<value>2</value>
 		</item>
 		<item name="MQTT_Message::MQTT_Message(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:47">
-			<value>136</value>
+			<value>137</value>
 			<value>6</value>
 			<value>2</value>
 		</item>
 		<item name="MQTT_Message::~MQTT_Message(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:56">
-			<value>137</value>
+			<value>138</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="MQTT_Message::addData(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:58">
-			<value>138</value>
-			<value>16</value>
-			<value>7</value>
-		</item>
-		<item name="MQTT_Message::addData(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:85">
 			<value>139</value>
 			<value>16</value>
 			<value>7</value>
 		</item>
-		<item name="MQTT_Message::addData_f(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:113">
+		<item name="MQTT_Message::addData(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:85">
 			<value>140</value>
+			<value>16</value>
+			<value>7</value>
+		</item>
+		<item name="MQTT_Message::addData_f(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:113">
+			<value>141</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
 		<item name="MQTT_Message::toString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:127">
-			<value>141</value>
+			<value>142</value>
 			<value>21</value>
 			<value>7</value>
 		</item>
 		<item name="MQTT_Message::clear(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:161">
-			<value>142</value>
+			<value>143</value>
 			<value>12</value>
 			<value>6</value>
 		</item>
 		<item name="MQTT_Message::construct(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:184">
-			<value>143</value>
+			<value>144</value>
 			<value>14</value>
 			<value>4</value>
 		</item>
 		<item name="MQTT_Message::append(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:209">
-			<value>144</value>
+			<value>145</value>
 			<value>14</value>
 			<value>5</value>
 		</item>
 		<item name="MQTT_Message::copyTo(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/MQTT_Message.cpp:232">
-			<value>145</value>
+			<value>146</value>
 			<value>19</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="11.924137931034483"/>
-		<average label="CCN" value="3.3793103448275863"/>
+		<average label="NCSS" value="11.952054794520548"/>
+		<average label="CCN" value="3.3835616438356166"/>
 		<item name="Curl_SAL::Curl_SAL(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:41">
-			<value>146</value>
+			<value>147</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="Curl_SAL::~Curl_SAL(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:43">
-			<value>147</value>
+			<value>148</value>
 			<value>5</value>
 			<value>2</value>
 		</item>
 		<item name="Curl_SAL::initialize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:59">
-			<value>148</value>
+			<value>149</value>
 			<value>10</value>
 			<value>4</value>
 		</item>
 		<item name="Curl_SAL::open(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:92">
-			<value>149</value>
-			<value>6</value>
-			<value>3</value>
-		</item>
-		<item name="Curl_SAL::close(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:114">
 			<value>150</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
-		<item name="Curl_SAL::post(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:139">
+		<item name="Curl_SAL::close(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:114">
 			<value>151</value>
+			<value>6</value>
+			<value>3</value>
+		</item>
+		<item name="Curl_SAL::post(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp:139">
+			<value>152</value>
 			<value>20</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.7682119205298"/>
-		<average label="CCN" value="3.377483443708609"/>
+		<average label="NCSS" value="11.796052631578947"/>
+		<average label="CCN" value="3.3815789473684212"/>
 		<item name="http_interface::http_interface(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:36">
-			<value>152</value>
-			<value>1</value>
-			<value>1</value>
-		</item>
-		<item name="http_interface::~http_interface(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:38">
 			<value>153</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="http_interface::initialize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:48">
+		<item name="http_interface::~http_interface(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:38">
 			<value>154</value>
+			<value>1</value>
+			<value>1</value>
+		</item>
+		<item name="http_interface::initialize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:48">
+			<value>155</value>
 			<value>11</value>
 			<value>4</value>
 		</item>
 		<item name="http_interface::open(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:77">
-			<value>155</value>
+			<value>156</value>
 			<value>15</value>
 			<value>5</value>
 		</item>
 		<item name="http_interface::close(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:109">
-			<value>156</value>
+			<value>157</value>
 			<value>14</value>
 			<value>5</value>
 		</item>
 		<item name="http_interface::post(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/http_interface.cpp:143">
-			<value>157</value>
+			<value>158</value>
 			<value>10</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.64968152866242"/>
-		<average label="CCN" value="3.375796178343949"/>
+		<average label="NCSS" value="11.677215189873417"/>
+		<average label="CCN" value="3.3797468354430378"/>
 		<item name="postgresql_interface::~postgresql_interface(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/postgresql_interface.cpp:43">
-			<value>158</value>
+			<value>159</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="postgresql_interface::open(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/postgresql_interface.cpp:45">
-			<value>159</value>
+			<value>160</value>
 			<value>17</value>
 			<value>6</value>
 		</item>
 		<item name="postgresql_interface::post(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/postgresql_interface.cpp:74">
-			<value>160</value>
+			<value>161</value>
 			<value>25</value>
 			<value>7</value>
 		</item>
 		<item name="postgresql_interface::close(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/postgresql_interface.cpp:117">
-			<value>161</value>
+			<value>162</value>
 			<value>16</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="11.726708074534162"/>
-		<average label="CCN" value="3.4161490683229814"/>
+		<average label="NCSS" value="11.753086419753087"/>
+		<average label="CCN" value="3.419753086419753"/>
 		<item name="esp32_http_sal::_http_event_handle(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/esp32_http_sal.cpp:32">
-			<value>162</value>
+			<value>163</value>
 			<value>35</value>
 			<value>10</value>
 		</item>
 		<item name="esp32_http_sal::esp32_http_sal(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/esp32_http_sal.cpp:72">
-			<value>163</value>
+			<value>164</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="esp32_http_sal::~esp32_http_sal(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/esp32_http_sal.cpp:76">
-			<value>164</value>
+			<value>165</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="esp32_http_sal::get(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/esp32_http_sal.cpp:78">
-			<value>165</value>
+			<value>166</value>
 			<value>39</value>
 			<value>9</value>
 		</item>
 		<item name="esp32_http_sal::post(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/esp32_http_sal.cpp:139">
-			<value>166</value>
-			<value>36</value>
-			<value>6</value>
-		</item>
-		<item name="esp32_http_sal::post(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/esp32_http_sal.cpp:189">
 			<value>167</value>
 			<value>36</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="12.209580838323353"/>
-		<average label="CCN" value="3.4910179640718564"/>
-		<item name="i2c_esp32::i2c_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:29">
+		<item name="esp32_http_sal::post(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/esp32_http_sal.cpp:189">
 			<value>168</value>
+			<value>36</value>
+			<value>6</value>
+		</item>
+		<average label="NCSS" value="12.232142857142858"/>
+		<average label="CCN" value="3.494047619047619"/>
+		<item name="i2c_esp32::i2c_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:29">
+			<value>169</value>
 			<value>21</value>
 			<value>4</value>
 		</item>
 		<item name="i2c_esp32::~i2c_esp32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:53">
-			<value>169</value>
+			<value>170</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="i2c_esp32::slavePresent(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:55">
-			<value>170</value>
+			<value>171</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
 		<item name="i2c_esp32::writeByte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:71">
-			<value>171</value>
+			<value>172</value>
 			<value>19</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::readByte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:99">
-			<value>172</value>
+		<item name="i2c_esp32::writeMultiBytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:100">
+			<value>173</value>
 			<value>20</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::writeWord(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:127">
-			<value>173</value>
-			<value>6</value>
-			<value>3</value>
-		</item>
-		<item name="i2c_esp32::readWord(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:140">
+		<item name="i2c_esp32::readByte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:131">
 			<value>174</value>
-			<value>6</value>
-			<value>3</value>
+			<value>20</value>
+			<value>5</value>
 		</item>
-		<item name="i2c_esp32::initialize_transaction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:154">
+		<item name="i2c_esp32::initialize_transaction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:159">
 			<value>175</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::insert_start_bit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:176">
+		<item name="i2c_esp32::insert_start_bit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:181">
 			<value>176</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::insert_write_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:197">
+		<item name="i2c_esp32::insert_write_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:202">
 			<value>177</value>
 			<value>17</value>
 			<value>6</value>
 		</item>
-		<item name="i2c_esp32::insert_read_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:224">
+		<item name="i2c_esp32::insert_write_bytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:230">
 			<value>178</value>
+			<value>18</value>
+			<value>6</value>
+		</item>
+		<item name="i2c_esp32::insert_read_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:258">
+			<value>179</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::insert_stop_bit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:247">
-			<value>179</value>
+		<item name="i2c_esp32::insert_read_bytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:281">
+			<value>180</value>
+			<value>13</value>
+			<value>5</value>
+		</item>
+		<item name="i2c_esp32::insert_stop_bit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:305">
+			<value>181</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::execute_transaction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:266">
-			<value>180</value>
+		<item name="i2c_esp32::execute_transaction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:324">
+			<value>182</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="12.21111111111111"/>
-		<average label="CCN" value="3.5388888888888888"/>
+		<average label="NCSS" value="12.37912087912088"/>
+		<average label="CCN" value="3.576923076923077"/>
 		<item name="FreeRTOS::sleep(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:23">
-			<value>181</value>
-			<value>4</value>
-			<value>2</value>
-		</item>
-		<item name="FreeRTOS::startTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:38">
-			<value>182</value>
-			<value>4</value>
-			<value>2</value>
-		</item>
-		<item name="FreeRTOS::deleteTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:50">
 			<value>183</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
-		<item name="FreeRTOS::getTimeSinceStart(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:61">
+		<item name="FreeRTOS::startTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:38">
 			<value>184</value>
+			<value>4</value>
+			<value>2</value>
+		</item>
+		<item name="FreeRTOS::deleteTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:50">
+			<value>185</value>
+			<value>4</value>
+			<value>2</value>
+		</item>
+		<item name="FreeRTOS::getTimeSinceStart(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:61">
+			<value>186</value>
 			<value>5</value>
 			<value>2</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::wait(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:92">
-			<value>185</value>
+			<value>187</value>
 			<value>24</value>
 			<value>4</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::Semaphore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:124">
-			<value>186</value>
-			<value>13</value>
-			<value>3</value>
-		</item>
-		<item name="FreeRTOS::Semaphore::~Semaphore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:148">
-			<value>187</value>
-			<value>11</value>
-			<value>3</value>
-		</item>
-		<item name="FreeRTOS::Semaphore::give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:166">
 			<value>188</value>
 			<value>13</value>
 			<value>3</value>
 		</item>
-		<item name="FreeRTOS::Semaphore::give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:188">
+		<item name="FreeRTOS::Semaphore::~Semaphore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:148">
 			<value>189</value>
+			<value>11</value>
+			<value>3</value>
+		</item>
+		<item name="FreeRTOS::Semaphore::give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:166">
+			<value>190</value>
+			<value>13</value>
+			<value>3</value>
+		</item>
+		<item name="FreeRTOS::Semaphore::give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:188">
+			<value>191</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::giveFromISR(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:197">
-			<value>190</value>
+			<value>192</value>
 			<value>12</value>
 			<value>3</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::take(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:218">
-			<value>191</value>
+			<value>193</value>
 			<value>24</value>
 			<value>4</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::take(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:253">
-			<value>192</value>
+			<value>194</value>
 			<value>25</value>
 			<value>4</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::toString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:288">
-			<value>193</value>
+			<value>195</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::setName(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:304">
-			<value>194</value>
+			<value>196</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="FreeRTOS::Queue::Queue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:315">
-			<value>195</value>
+			<value>197</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
 		<item name="FreeRTOS::Queue::~Queue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:322">
-			<value>196</value>
+			<value>198</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="FreeRTOS::Queue::send(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:324">
-			<value>197</value>
+			<value>199</value>
 			<value>15</value>
 			<value>4</value>
 		</item>
 		<item name="FreeRTOS::Queue::recieve(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:343">
-			<value>198</value>
+			<value>200</value>
 			<value>15</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="12.065656565656566"/>
-		<average label="CCN" value="3.4545454545454546"/>
+		<average label="NCSS" value="12.22"/>
+		<average label="CCN" value="3.49"/>
 		<item name="Task::Task(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:19">
-			<value>199</value>
+			<value>201</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
 		<item name="Task::~Task(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:31">
-			<value>200</value>
+			<value>202</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="Task::delay(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:40">
-			<value>201</value>
+			<value>203</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
 		<item name="Task::runTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:53">
-			<value>202</value>
+			<value>204</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="Task::start(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:66">
-			<value>203</value>
+			<value>205</value>
 			<value>9</value>
 			<value>3</value>
 		</item>
 		<item name="Task::stop(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:84">
-			<value>204</value>
+			<value>206</value>
 			<value>10</value>
 			<value>3</value>
 		</item>
 		<item name="Task::setStackSize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:104">
-			<value>205</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<item name="Task::setPriority(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:115">
-			<value>206</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<item name="Task::setName(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:126">
 			<value>207</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="Task::setCore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:138">
+		<item name="Task::setPriority(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:115">
 			<value>208</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.745192307692308"/>
-		<average label="CCN" value="3.3653846153846154"/>
-		<item name="RPICamV2::RPICamV2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:36">
+		<item name="Task::setName(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:126">
 			<value>209</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<item name="Task::setCore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:138">
+			<value>210</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<average label="NCSS" value="11.895238095238096"/>
+		<average label="CCN" value="3.4"/>
+		<item name="RPICamV2::RPICamV2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:36">
+			<value>211</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
 		<item name="RPICamV2::~RPICamV2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:47">
-			<value>210</value>
+			<value>212</value>
 			<value>8</value>
 			<value>3</value>
 		</item>
 		<item name="RPICamV2::takePicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:59">
-			<value>211</value>
+			<value>213</value>
 			<value>8</value>
 			<value>4</value>
 		</item>
 		<item name="RPICamV2::setExposure(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:78">
-			<value>212</value>
+			<value>214</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="11.683962264150944"/>
-		<average label="CCN" value="3.3726415094339623"/>
+		<average label="NCSS" value="11.83177570093458"/>
+		<average label="CCN" value="3.4065420560747666"/>
 		<item name="ActiveCurrentSensor::ActiveCurrentSensor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:29">
-			<value>213</value>
+			<value>215</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="ActiveCurrentSensor::~ActiveCurrentSensor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:36">
-			<value>214</value>
+			<value>216</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="ActiveCurrentSensor::activateQueue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:38">
-			<value>215</value>
+			<value>217</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
 		<item name="ActiveCurrentSensor::run(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:51">
-			<value>216</value>
+			<value>218</value>
 			<value>14</value>
 			<value>3</value>
 		</item>
 		<item name="ActiveCurrentSensor::main_function(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:71">
-			<value>217</value>
+			<value>219</value>
 			<value>15</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.608294930875577"/>
-		<average label="CCN" value="3.3502304147465436"/>
+		<average label="NCSS" value="11.753424657534246"/>
+		<average label="CCN" value="3.3835616438356166"/>
 		<item name="WaterEstimator_Service::mainFunction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp:29">
-			<value>218</value>
+			<value>220</value>
 			<value>32</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.70183486238532"/>
-		<average label="CCN" value="3.36697247706422"/>
+		<average label="NCSS" value="11.845454545454546"/>
+		<average label="CCN" value="3.4"/>
 		<item name="DogFeederDoor::DogFeederDoor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:36">
-			<value>219</value>
+			<value>221</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="DogFeederDoor::~DogFeederDoor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:38">
-			<value>220</value>
+			<value>222</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="DogFeederDoor::open(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:40">
-			<value>221</value>
+			<value>223</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="DogFeederDoor::close(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:45">
-			<value>222</value>
+			<value>224</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.536036036036036"/>
-		<average label="CCN" value="3.324324324324324"/>
+		<average label="NCSS" value="11.678571428571429"/>
+		<average label="CCN" value="3.357142857142857"/>
 		<item name="basic_utils::split(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:13">
-			<value>223</value>
+			<value>225</value>
 			<value>17</value>
 			<value>4</value>
 		</item>
 		<item name="basic_utils::split(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:32">
-			<value>224</value>
+			<value>226</value>
 			<value>19</value>
 			<value>4</value>
 		</item>
 		<item name="intToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:52">
-			<value>225</value>
-			<value>6</value>
-			<value>1</value>
-		</item>
-		<item name="timeToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:64">
-			<value>226</value>
-			<value>6</value>
-			<value>1</value>
-		</item>
-		<item name="uint8ToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:76">
 			<value>227</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="floatToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:88">
+		<item name="timeToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:64">
 			<value>228</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="floatToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:99">
+		<item name="uint8ToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:76">
 			<value>229</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="uintToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:110">
+		<item name="floatToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:88">
 			<value>230</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="printBits(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:127">
+		<item name="floatToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:99">
 			<value>231</value>
+			<value>6</value>
+			<value>1</value>
+		</item>
+		<item name="uintToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:110">
+			<value>232</value>
+			<value>6</value>
+			<value>1</value>
+		</item>
+		<item name="printBits(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:127">
+			<value>233</value>
 			<value>15</value>
 			<value>3</value>
 		</item>
 		<item name="basic_utils::is_even(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:144">
-			<value>232</value>
+			<value>234</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
 		<item name="basic_utils::leastSignificantByteExchange(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:156">
-			<value>233</value>
+			<value>235</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="basic_utils::getLeastSignificantByte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:161">
-			<value>234</value>
+			<value>236</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="basic_utils::shift8BitTo32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:166">
-			<value>235</value>
+			<value>237</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="basic_utils::shift32BitTo8(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:172">
-			<value>236</value>
+			<value>238</value>
 			<value>11</value>
 			<value>3</value>
 		</item>
 		<item name="basic_utils::random(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:193">
-			<value>237</value>
+			<value>239</value>
 			<value>9</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="11.329113924050633"/>
-		<average label="CCN" value="3.2278481012658227"/>
-		<average label="NCSS" value="11.329113924050633"/>
-		<average label="CCN" value="3.2278481012658227"/>
+		<average label="NCSS" value="11.464435146443515"/>
+		<average label="CCN" value="3.2594142259414225"/>
+		<average label="NCSS" value="11.464435146443515"/>
+		<average label="CCN" value="3.2594142259414225"/>
 	</measure>
 	<measure type="File">
 		<labels>
@@ -1306,9 +1316,9 @@
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp">
 			<value>4</value>
-			<value>134</value>
-			<value>33</value>
-			<value>6</value>
+			<value>150</value>
+			<value>37</value>
+			<value>7</value>
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Controller/DistanceSensorController/src/DistanceSensorController.cpp">
 			<value>5</value>
@@ -1492,9 +1502,9 @@
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp">
 			<value>35</value>
-			<value>161</value>
-			<value>54</value>
-			<value>13</value>
+			<value>200</value>
+			<value>64</value>
+			<value>14</value>
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp">
 			<value>36</value>
@@ -1544,14 +1554,14 @@
 			<value>0</value>
 			<value>0</value>
 		</item>
-		<average label="NCSS" value="68.46511627906976"/>
-		<average label="CCN" value="17.790697674418606"/>
-		<average label="Functions" value="5.511627906976744"/>
-		<sum label="NCSS" value="2944"/>
-		<sum label="CCN" value="765"/>
-		<sum label="Functions" value="237"/>
-		<average label="NCSS" value="11.329113924050633"/>
-		<average label="CCN" value="3.2278481012658227"/>
+		<average label="NCSS" value="69.74418604651163"/>
+		<average label="CCN" value="18.11627906976744"/>
+		<average label="Functions" value="5.558139534883721"/>
+		<sum label="NCSS" value="2999"/>
+		<sum label="CCN" value="779"/>
+		<sum label="Functions" value="239"/>
+		<average label="NCSS" value="11.464435146443515"/>
+		<average label="CCN" value="3.2594142259414225"/>
 	</measure>
 </cppncss>
 
