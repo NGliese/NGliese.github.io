@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_1744',['type',['../db/d4d/class_background___extractor.html#a15cf225f204bd8077dc1c9c67163bd8c',1,'Background_Extractor']]]
+  ['object_5fcolor_2445',['object_color',['../db/dc9/class_utility___image.html#aed5c3c45e70c5f7936bc71f990efaab8',1,'Utility_Image']]]
 ];

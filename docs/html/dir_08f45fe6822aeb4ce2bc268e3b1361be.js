@@ -13,6 +13,7 @@ var dir_08f45fe6822aeb4ce2bc268e3b1361be =
     [ "Sensor", "dir_82d83c9747486c2eb8d3c4c8f409d82b.html", "dir_82d83c9747486c2eb8d3c4c8f409d82b" ],
     [ "Service", "dir_6164661bfb521e4b540c7b7052af2911.html", "dir_6164661bfb521e4b540c7b7052af2911" ],
     [ "Template", "dir_6c63dd282651b43f4337d292845f5ec4.html", "dir_6c63dd282651b43f4337d292845f5ec4" ],
+    [ "ThirdpartAPI", "dir_b8146bf70b87a0f1c9cf6bdf4bac4dd2.html", "dir_b8146bf70b87a0f1c9cf6bdf4bac4dd2" ],
     [ "User", "dir_eec1bb706bd2e5107de375aec258065a.html", "dir_eec1bb706bd2e5107de375aec258065a" ],
     [ "Utility", "dir_c2cd4762e89f989d55fa2b0634ddfc81.html", "dir_c2cd4762e89f989d55fa2b0634ddfc81" ]
 ];

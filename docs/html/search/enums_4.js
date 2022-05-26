@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['loader_5fconf_1738',['loader_conf',['../db/dc9/class_utility___image.html#a45df57a5209dfcc7616b637078dc2b0f',1,'Utility_Image']]]
+  ['gainceiling_5ft_2436',['gainceiling_t',['../d5/d2e/sensor_8h.html#a9da4a126b14503ef5474dee7630fb9ca',1,'sensor.h']]],
+  ['general_5ferr_5ft_2437',['general_err_t',['../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e',1,'General_Error.hpp']]],
+  ['general_5fresp_5ft_2438',['general_resp_t',['../d3/deb/_general___error_8hpp.html#a8a092fb05ef3306d13c287ad5cb18954',1,'General_Error.hpp']]]
 ];

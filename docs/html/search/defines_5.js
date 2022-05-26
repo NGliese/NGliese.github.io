@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['global_5fmqtt_5fserver_1871',['GLOBAL_MQTT_SERVER',['../d4/d63/mqtt__api__v2_8hpp.html#af1b36c99ddef619aa99f00a2f2d90ba4',1,'mqtt_api_v2.hpp']]],
-  ['gpio_5fpin_1872',['GPIO_PIN',['../da/d5f/_b_a_s_i_c_8hpp.html#a18070f8c7140f8ab3e2992e4e8277305',1,'BASIC.hpp']]]
+  ['format_5fctrl_2700',['FORMAT_CTRL',['../dc/d54/ov3660__regs_8h.html#a6aeaf28d98a00fb5fab0ba5b6c8bb180',1,'ov3660_regs.h']]],
+  ['format_5fctrl00_2701',['FORMAT_CTRL00',['../dc/d54/ov3660__regs_8h.html#a4cc62519451b5ac5606de70ca5ed4fc0',1,'ov3660_regs.h']]],
+  ['frame_5fctrl01_2702',['FRAME_CTRL01',['../dc/d54/ov3660__regs_8h.html#af1e7521623e8285759dac2ce4871308c',1,'ov3660_regs.h']]],
+  ['frame_5fctrl02_2703',['FRAME_CTRL02',['../dc/d54/ov3660__regs_8h.html#ada1856cb181515c55bba1ec837d95086',1,'ov3660_regs.h']]]
 ];

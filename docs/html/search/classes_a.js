@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['logger_961',['Logger',['../d3/d42/class_logger.html',1,'']]]
+  ['jpeg_5fencoder_1403',['jpeg_encoder',['../df/d31/classjpge_1_1jpeg__encoder.html',1,'jpge']]],
+  ['jsmn_5fobject_1404',['jsmn_object',['../dd/d71/classjsmn__object.html',1,'']]]
 ];

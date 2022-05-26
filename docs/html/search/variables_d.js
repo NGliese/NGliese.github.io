@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['password_1692',['password',['../db/def/_wi_fi___s_a_l__esp32_8hpp.html#a8ade39bf9d4c0989c751d7ff53543037',1,'wifi_conf_t']]],
-  ['periode_5fscaler_1693',['PERIODE_SCALER',['../da/d0a/class_periode_estimator.html#a882fc267f2b6175646af7b385ca9e991',1,'PeriodeEstimator']]],
-  ['pin_5fsclk_1694',['pin_sclk',['../d9/ddd/i2c__common_8hpp.html#afc19865c7909e77097c3853e585af672',1,'i2c_conf_t']]],
-  ['pin_5fsda_1695',['pin_sda',['../d9/ddd/i2c__common_8hpp.html#a9de979989b6a5ad50959002e2cd5966b',1,'i2c_conf_t']]],
-  ['poi_1696',['poi',['../df/df3/mqtt__v2__test_8cpp.html#a3b7b00d9be1ce9e318017ec56924720e',1,'mqtt_v2_test.cpp']]]
+  ['offset_5fx_2304',['offset_x',['../d5/d2e/sensor_8h.html#ab8d7c487a722d93f605ae4d0906ef662',1,'ratio_settings_t']]],
+  ['offset_5fy_2305',['offset_y',['../d5/d2e/sensor_8h.html#ae456d1df6fa8971b2d87183ba564aa63',1,'ratio_settings_t']]],
+  ['on_5foff_5fsensor_2306',['ON_OFF_SENSOR',['../d9/d97/namespaceesp32__i2c__adc__battery__v1__0.html#af8ef41ecd72e84cc75d272fc69968448',1,'esp32_i2c_adc_battery_v1_0']]]
 ];

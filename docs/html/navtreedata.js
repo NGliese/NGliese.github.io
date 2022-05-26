@@ -42,13 +42,16 @@ var NAVTREE =
     [ "empty_file", "dd/d8b/md__components__objects__json_src_empty_file.html", null ],
     [ "empty_file", "d9/d85/md__components__template_include_empty_file.html", null ],
     [ "empty_file", "d4/dae/md__components__template_src_empty_file.html", null ],
+    [ "Todo List", "dd/da0/todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
         [ "Variables", "namespacemembers_vars.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ]
+        [ "Typedefs", "namespacemembers_type.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Classes", "annotated.html", [
@@ -58,7 +61,7 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", null ],
+        [ "Variables", "functions_vars.html", "functions_vars" ],
         [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Enumerator", "functions_eval.html", null ]
@@ -82,14 +85,16 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d2/d8d/class_query_message_base.html#ab3d5003028c9ebf1c98da0f5ac3d2ace",
-"d4/d70/class_a_d_c___a_p_i___e_s_p32.html",
-"d5/d8a/class_connected_components.html#a0d9e80eff2846d156e46b7cf17a7bc26",
-"d8/d19/_sensor_controller_test_8cpp.html#a63e0db1555b64dbc556ef2e1a08c0825",
-"da/d75/_data_broker__test_8cpp.html#a2710b02e5b91b43c9feb1b6350441eb9",
-"dc/dc2/classhttp__interface.html#ac3cd0de3656c2be9551c1f1d92075d89",
-"df/df3/mqtt__v2__test_8cpp.html#aaa4c9ab7396b2fe6b5e2f58f20efde15",
-"functions_enum.html"
+"d2/d4e/_a_d_c___a_p_i___e_s_p32_8cpp.html",
+"d4/d57/class_g_p_i_o___h_a_l.html#a8cf996ac134efeac4d932d4af16fa9a4",
+"d5/d2e/sensor_8h.html#a9da4a126b14503ef5474dee7630fb9caaabea813402f77155829da60fa2838393",
+"d5/dbf/_g_p_i_o___a_p_i_8hpp_source.html",
+"d8/d14/servo__test_8cpp.html#adf3219abcb1b1d119ddb8894f7ca6328",
+"da/d60/class_watchdog___base.html#a4f1fc60aa0244a1fc23e06da9ca859e6",
+"db/df4/class_free_r_t_o_s.html#ae2540d35409fe97ce0c95c3b4a3dd9e6",
+"dd/dca/classjpge_1_1output__stream.html#aaa4a9433fdea5c42718272600a891720",
+"df/df3/mqtt__v2__test_8cpp.html#a70737cb811c8b8fbb1b929425e38f006",
+"dir_f564f2971e55a5cfbad5750b98345411.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

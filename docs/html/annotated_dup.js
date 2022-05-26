@@ -1,6 +1,8 @@
 var annotated_dup =
 [
     [ "FaultHandler_n", "d1/d27/namespace_fault_handler__n.html", "d1/d27/namespace_fault_handler__n" ],
+    [ "jpge", "d8/d5f/namespacejpge.html", "d8/d5f/namespacejpge" ],
+    [ "_sensor", "d6/d28/struct__sensor.html", "d6/d28/struct__sensor" ],
     [ "ActiveCurrentSensor", "d6/da0/class_active_current_sensor.html", "d6/da0/class_active_current_sensor" ],
     [ "Actuator_Base", "dd/d11/class_actuator___base.html", "dd/d11/class_actuator___base" ],
     [ "ADC", "d0/deb/namespace_3global_scope_4.html#d6/dec/class_a_d_c", null ],
@@ -9,6 +11,8 @@ var annotated_dup =
     [ "Background_Extractor", "db/d4d/class_background___extractor.html", "db/d4d/class_background___extractor" ],
     [ "basic", "d0/deb/namespace_3global_scope_4.html#d3/d07/classbasic", null ],
     [ "Camera_CV", "d3/dc5/class_camera___c_v.html", "d3/dc5/class_camera___c_v" ],
+    [ "camera_sensor_info_t", "d5/d2e/sensor_8h.html#d7/d11/structcamera__sensor__info__t", "d5/d2e/sensor_8h_d7/d11/structcamera__sensor__info__t" ],
+    [ "camera_status_t", "d5/d2e/sensor_8h.html#df/dc0/structcamera__status__t", "d5/d2e/sensor_8h_df/dc0/structcamera__status__t" ],
     [ "ConnectedComponents", "d5/d8a/class_connected_components.html", "d5/d8a/class_connected_components" ],
     [ "ConnectorBase", "d0/d74/class_connector_base.html", "d0/d74/class_connector_base" ],
     [ "Curl_SAL", "d2/d2b/class_curl___s_a_l.html", "d2/d2b/class_curl___s_a_l" ],
@@ -18,6 +22,7 @@ var annotated_dup =
     [ "DogFeederDoor", "d2/db0/class_dog_feeder_door.html", "d2/db0/class_dog_feeder_door" ],
     [ "ErrorCodeParser", "db/d2e/class_error_code_parser.html", "db/d2e/class_error_code_parser" ],
     [ "esp32_http_sal", "d5/d62/classesp32__http__sal.html", "d5/d62/classesp32__http__sal" ],
+    [ "esp32Cam", "d1/d5c/classesp32_cam.html", "d1/d5c/classesp32_cam" ],
     [ "Fault_Handler", "dd/d84/class_fault___handler.html", "dd/d84/class_fault___handler" ],
     [ "FreeRTOS", "db/df4/class_free_r_t_o_s.html", "db/df4/class_free_r_t_o_s" ],
     [ "General_Error", "d2/d3f/class_general___error.html", "d2/d3f/class_general___error" ],
@@ -63,10 +68,13 @@ var annotated_dup =
     [ "QueryDataMessage", "dd/d92/class_query_data_message.html", "dd/d92/class_query_data_message" ],
     [ "QueryMessageBase", "d2/d8d/class_query_message_base.html", "d2/d8d/class_query_message_base" ],
     [ "QueryURIMessage", "da/d01/class_query_u_r_i_message.html", "da/d01/class_query_u_r_i_message" ],
+    [ "ratio_settings_t", "d5/d2e/sensor_8h.html#d2/df8/structratio__settings__t", "d5/d2e/sensor_8h_d2/df8/structratio__settings__t" ],
+    [ "resolution_info_t", "d5/d2e/sensor_8h.html#d9/d43/structresolution__info__t", "d5/d2e/sensor_8h_d9/d43/structresolution__info__t" ],
     [ "RPICamV2", "d4/de7/class_r_p_i_cam_v2.html", "d4/de7/class_r_p_i_cam_v2" ],
     [ "RTC_HAL", "d9/de1/class_r_t_c___h_a_l.html", "d9/de1/class_r_t_c___h_a_l" ],
     [ "Sensor_Base", "d1/da4/class_sensor___base.html", "d1/da4/class_sensor___base" ],
     [ "sensor_conf_t", "d3/dd3/_sensor___base_8hpp.html#d3/dcd/structsensor__conf__t", "d3/dd3/_sensor___base_8hpp_d3/dcd/structsensor__conf__t" ],
+    [ "sensor_id_t", "d5/d2e/sensor_8h.html#dd/d9e/structsensor__id__t", "d5/d2e/sensor_8h_dd/d9e/structsensor__id__t" ],
     [ "SensorControllerBase", "d9/d88/class_sensor_controller_base.html", "d9/d88/class_sensor_controller_base" ],
     [ "SensorControllerBase_MOCK", "d3/d1b/class_sensor_controller_base___m_o_c_k.html", "d3/d1b/class_sensor_controller_base___m_o_c_k" ],
     [ "ServiceBase", "d4/d82/class_service_base.html", "d4/d82/class_service_base" ],
@@ -83,5 +91,6 @@ var annotated_dup =
     [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", "d6/da4/class_water_estimator___service" ],
     [ "wifi_conf_t", "db/def/_wi_fi___s_a_l__esp32_8hpp.html#db/d38/structwifi__conf__t", "db/def/_wi_fi___s_a_l__esp32_8hpp_db/d38/structwifi__conf__t" ],
     [ "WiFi_SAL_esp32", "d5/db4/class_wi_fi___s_a_l__esp32.html", "d5/db4/class_wi_fi___s_a_l__esp32" ],
-    [ "WiFiBase", "db/d7f/class_wi_fi_base.html", "db/d7f/class_wi_fi_base" ]
+    [ "WiFiBase", "db/d7f/class_wi_fi_base.html", "db/d7f/class_wi_fi_base" ],
+    [ "yuv_table_row", "df/dab/yuv_8c.html#d3/d50/structyuv__table__row", "df/dab/yuv_8c_d3/d50/structyuv__table__row" ]
 ];

@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['db_5fid_1732',['db_id',['../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0',1,'Database_ID_Base.hpp']]]
+  ['camera_5fmodel_5ft_2430',['camera_model_t',['../d5/d2e/sensor_8h.html#aeea97bc7add44c20915a5c1433900468',1,'sensor.h']]],
+  ['camera_5fpid_5ft_2431',['camera_pid_t',['../d5/d2e/sensor_8h.html#a5efc159d443ad029c34bd415b1f6707d',1,'sensor.h']]],
+  ['camera_5fsccb_5faddr_5ft_2432',['camera_sccb_addr_t',['../d5/d2e/sensor_8h.html#ada7ef233b04b601869cf56d898862264',1,'sensor.h']]],
+  ['content_5ftype_2433',['content_type',['../d5/d62/classesp32__http__sal.html#a5d7d97684164e3fc7c23a16a1631462d',1,'esp32_http_sal']]]
 ];

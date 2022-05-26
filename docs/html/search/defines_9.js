@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['src_5fhal_5fpwm_5fcpp_5f_1882',['SRC_HAL_PWM_CPP_',['../dc/d84/_p_w_m_2src_2_h_a_l_8cpp.html#acf21b457fe1776284b9bab8cb7ce68a2',1,'HAL.cpp']]]
+  ['log_5fprint_5ferror_2709',['LOG_PRINT_ERROR',['../da/d5f/_b_a_s_i_c_8hpp.html#a1e348c8264ea4b9a66f200ef9a6ab41f',1,'BASIC.hpp']]],
+  ['log_5fprint_5finfo_2710',['LOG_PRINT_INFO',['../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5',1,'BASIC.hpp']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['knn_1821',['KNN',['../db/d4d/class_background___extractor.html#a15cf225f204bd8077dc1c9c67163bd8cab602e23c0ec2466f3aa6cade0cd5ce05',1,'Background_Extractor']]]
+  ['jpge_5fout_5fbuf_5fsize_2592',['JPGE_OUT_BUF_SIZE',['../df/d31/classjpge_1_1jpeg__encoder.html#a5569b40b258a25f7b9ee5a7d34cad555a6c2ca1e346c67d1dd8f2f7f96201e5f5',1,'jpge::jpeg_encoder']]]
 ];

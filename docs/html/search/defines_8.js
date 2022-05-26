@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['periodic_5frestart_5ftime_1880',['PERIODIC_RESTART_TIME',['../dd/ddd/_maintainer_8cpp.html#a53bff0a212ba94f946acfdc8a004f83c',1,'Maintainer.cpp']]],
-  ['project_5fname_1881',['PROJECT_NAME',['../d3/de3/_logger_8hpp.html#ae73053051efbb45c3a39751f5ce9fb36',1,'Logger.hpp']]]
+  ['jpge_5fmax_2707',['JPGE_MAX',['../da/deb/jpge_8cpp.html#ab1ef32dc4445df01d0612cdd98f10fe7',1,'jpge.cpp']]],
+  ['jpge_5fmin_2708',['JPGE_MIN',['../da/deb/jpge_8cpp.html#a5d3f2cf02df0c583de7e85651863be88',1,'jpge.cpp']]]
 ];

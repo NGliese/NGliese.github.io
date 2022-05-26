@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['general_5ferr_5ft_1733',['general_err_t',['../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e',1,'General_Error.hpp']]],
-  ['general_5fresp_5ft_1734',['general_resp_t',['../d3/deb/_general___error_8hpp.html#a8a092fb05ef3306d13c287ad5cb18954',1,'General_Error.hpp']]]
+  ['db_5fid_2434',['db_id',['../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0',1,'Database_ID_Base.hpp']]]
 ];

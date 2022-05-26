@@ -257,6 +257,325 @@
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
             <symbol>friend_GPIO_API</symbol>
         </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;ret&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;ret&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c" line="447" column="6" info="ret is overwritten"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c" line="423" column="6" info="ret is assigned"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="clarifyCalculation" severity="style" msg="Clarify calculation precedence for &apos;&amp;&apos; and &apos;?&apos;." verbose="Suspicious calculation. Please use parentheses to clarify the code. The code &apos;&apos;a&amp;b?c:d&apos;&apos; should be written as either &apos;&apos;(a&amp;b)?c:d&apos;&apos; or &apos;&apos;a&amp;(b?c:d)&apos;&apos;." cwe="783">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c" line="347" column="32"/>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;offset&apos; is assigned a value that is never used." verbose="Variable &apos;offset&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c" line="51" column="13"/>
+            <symbol>offset</symbol>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;dma_half_buffer_min&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;dma_half_buffer_min&apos;. The initialized value is overwritten before it is read." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c" line="457" column="22" info="dma_half_buffer_min is overwritten"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c" line="420" column="29" info="dma_half_buffer_min is initialized"/>
+            <symbol>dma_half_buffer_min</symbol>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;dma_half_buffer&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;dma_half_buffer&apos;. The initialized value is overwritten before it is read." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c" line="459" column="18" info="dma_half_buffer is overwritten"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c" line="421" column="25" info="dma_half_buffer is initialized"/>
+            <symbol>dma_half_buffer</symbol>
+        </error>
+        <error id="redundantInitialization" severity="style" msg="Redundant initialization for &apos;dma_buffer_size&apos;. The initialized value is overwritten before it is read." verbose="Redundant initialization for &apos;dma_buffer_size&apos;. The initialized value is overwritten before it is read." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c" line="468" column="18" info="dma_buffer_size is overwritten"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c" line="422" column="25" info="dma_buffer_size is initialized"/>
+            <symbol>dma_buffer_size</symbol>
+        </error>
+        <error id="redundantAssignment" severity="style" msg="Variable &apos;ret&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;ret&apos; is reassigned a value before the old one has been used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c" line="359" column="7" info="ret is overwritten"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c" line="354" column="7" info="ret is assigned"/>
+            <symbol>ret</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ret2&apos; can be reduced." verbose="The scope of the variable &apos;ret2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c" line="45" column="15"/>
+            <symbol>ret2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ret2&apos; can be reduced." verbose="The scope of the variable &apos;ret2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c" line="1027" column="15"/>
+            <symbol>ret2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;ret2&apos; can be reduced." verbose="The scope of the variable &apos;ret2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c" line="1057" column="15"/>
+            <symbol>ret2</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ret2&apos; is assigned a value that is never used." verbose="Variable &apos;ret2&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c" line="45" column="20"/>
+            <symbol>ret2</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ret2&apos; is assigned a value that is never used." verbose="Variable &apos;ret2&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c" line="1027" column="20"/>
+            <symbol>ret2</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;ret2&apos; is assigned a value that is never used." verbose="Variable &apos;ret2&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c" line="1057" column="20"/>
+            <symbol>ret2</symbol>
+        </error>
+        <error id="objectIndex" severity="error" msg="The address of local variable &apos;reg_htons&apos; is accessed at non-zero index." verbose="The address of local variable &apos;reg_htons&apos; is accessed at non-zero index." cwe="758">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c" line="161" column="35"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c" line="156" column="30" info="Address of variable taken here."/>
+        </error>
+        <error id="objectIndex" severity="error" msg="The address of local variable &apos;reg_htons&apos; is accessed at non-zero index." verbose="The address of local variable &apos;reg_htons&apos; is accessed at non-zero index." cwe="758">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c" line="191" column="35"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c" line="186" column="30" info="Address of variable taken here."/>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;slave_addr&apos; can be reduced." verbose="The scope of the variable &apos;slave_addr&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c" line="63" column="10"/>
+            <symbol>slave_addr</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;i&apos; can be reduced." verbose="The scope of the variable &apos;i&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c" line="183" column="18"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;slave_addr&apos; is assigned a value that is never used." verbose="Variable &apos;slave_addr&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c" line="63" column="21"/>
+            <symbol>slave_addr</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_pStream&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_pStream&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_pStream</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_num_components&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_num_components&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_num_components</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_comp_h_samp&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_comp_h_samp&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_comp_h_samp</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_comp_v_samp&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_comp_v_samp&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_comp_v_samp</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_image_x&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_image_x&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_image_x</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_image_y&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_image_y&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_image_y</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_image_bpp&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_image_bpp&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_image_bpp</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_image_bpl&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_image_bpl&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_image_bpl</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_image_x_mcu&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_image_x_mcu&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_image_x_mcu</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_image_y_mcu&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_image_y_mcu&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_image_y_mcu</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_image_bpl_xlt&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_image_bpl_xlt&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_image_bpl_xlt</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_image_bpl_mcu&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_image_bpl_mcu&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_image_bpl_mcu</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_mcus_per_row&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_mcus_per_row&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_mcus_per_row</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_mcu_x&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_mcu_x&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_mcu_x</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_mcu_y&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_mcu_y&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_mcu_y</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_mcu_y_ofs&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_mcu_y_ofs&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_mcu_y_ofs</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_sample_array&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_sample_array&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_sample_array</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_coefficient_array&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_coefficient_array&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_coefficient_array</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_last_dc_val&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_last_dc_val&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_last_dc_val</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_out_buf&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_out_buf&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_out_buf</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_pOut_buf&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_pOut_buf&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_pOut_buf</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_out_buf_left&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_out_buf_left&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_out_buf_left</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_bit_buffer&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_bit_buffer&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_bit_buffer</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;jpeg_encoder::m_bits_in&apos; is not initialized in the constructor." verbose="Member variable &apos;jpeg_encoder::m_bits_in&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="877" column="15"/>
+            <symbol>jpeg_encoder::m_bits_in</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;c&apos; can be reduced." verbose="The scope of the variable &apos;c&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="305" column="8"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pSrc1&apos; can be reduced." verbose="The scope of the variable &apos;pSrc1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="473" column="9"/>
+            <symbol>pSrc1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pSrc2&apos; can be reduced." verbose="The scope of the variable &apos;pSrc2&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="473" column="17"/>
+            <symbol>pSrc2</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;pSrc1&apos; can be reduced." verbose="The scope of the variable &apos;pSrc1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="497" column="9"/>
+            <symbol>pSrc1</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;c&apos; is assigned a value that is never used." verbose="Variable &apos;c&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp" line="305" column="10"/>
+            <symbol>c</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;hb&apos; can be reduced." verbose="The scope of the variable &apos;hb&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="272" column="11"/>
+            <symbol>hb</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;lb&apos; can be reduced." verbose="The scope of the variable &apos;lb&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="272" column="15"/>
+            <symbol>lb</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;b&apos; can be reduced." verbose="The scope of the variable &apos;b&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="286" column="11"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y0&apos; can be reduced." verbose="The scope of the variable &apos;y0&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="300" column="11"/>
+            <symbol>y0</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y1&apos; can be reduced." verbose="The scope of the variable &apos;y1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="300" column="15"/>
+            <symbol>y1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;u&apos; can be reduced." verbose="The scope of the variable &apos;u&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="300" column="19"/>
+            <symbol>u</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;v&apos; can be reduced." verbose="The scope of the variable &apos;v&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="300" column="22"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;hb&apos; can be reduced." verbose="The scope of the variable &apos;hb&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="372" column="11"/>
+            <symbol>hb</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;lb&apos; can be reduced." verbose="The scope of the variable &apos;lb&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="372" column="15"/>
+            <symbol>lb</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;b&apos; can be reduced." verbose="The scope of the variable &apos;b&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="385" column="11"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y0&apos; can be reduced." verbose="The scope of the variable &apos;y0&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="397" column="11"/>
+            <symbol>y0</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y1&apos; can be reduced." verbose="The scope of the variable &apos;y1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="397" column="15"/>
+            <symbol>y1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;u&apos; can be reduced." verbose="The scope of the variable &apos;u&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="397" column="19"/>
+            <symbol>u</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;v&apos; can be reduced." verbose="The scope of the variable &apos;v&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="397" column="22"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="shadowVariable" severity="style" msg="Local variable &apos;b&apos; shadows outer variable" verbose="Local variable &apos;b&apos; shadows outer variable" cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="165" column="13" info="Shadow variable"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="150" column="9" info="Shadowed declaration"/>
+            <symbol>b</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;o&apos; is assigned a value that is never used." verbose="Variable &apos;o&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="100" column="13"/>
+            <symbol>o</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;o&apos; is assigned a value that is never used." verbose="Variable &apos;o&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="153" column="13"/>
+            <symbol>o</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;pix_count&apos; is assigned a value that is never used." verbose="Variable &apos;pix_count&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c" line="260" column="16"/>
+            <symbol>pix_count</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;put_buf&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;put_buf&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" line="169" column="15" info="Function in derived class"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/include/jpge.h" line="62" column="15" info="Virtual function in base class"/>
+            <symbol>put_buf</symbol>
+        </error>
+        <error id="missingOverride" severity="style" msg="The function &apos;put_buf&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;put_buf&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" line="206" column="15" info="Function in derived class"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/include/jpge.h" line="62" column="15" info="Virtual function in base class"/>
+            <symbol>put_buf</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y0&apos; can be reduced." verbose="The scope of the variable &apos;y0&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" line="74" column="11"/>
+            <symbol>y0</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;y1&apos; can be reduced." verbose="The scope of the variable &apos;y1&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" line="74" column="15"/>
+            <symbol>y1</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;u&apos; can be reduced." verbose="The scope of the variable &apos;u&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" line="74" column="19"/>
+            <symbol>u</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;v&apos; can be reduced." verbose="The scope of the variable &apos;v&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" line="74" column="22"/>
+            <symbol>v</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;i&apos; is assigned a value that is never used." verbose="Variable &apos;i&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" line="45" column="8"/>
+            <symbol>i</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;l&apos; is assigned a value that is never used." verbose="Variable &apos;l&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp" line="45" column="22"/>
+            <symbol>l</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;yuv_table_row::vY&apos; is never used." verbose="struct member &apos;yuv_table_row::vY&apos; is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/yuv.c" line="20" column="10"/>
+            <symbol>yuv_table_row::vY</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;yuv_table_row::vVr&apos; is never used." verbose="struct member &apos;yuv_table_row::vVr&apos; is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/yuv.c" line="21" column="10"/>
+            <symbol>yuv_table_row::vVr</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;yuv_table_row::vVg&apos; is never used." verbose="struct member &apos;yuv_table_row::vVg&apos; is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/yuv.c" line="22" column="10"/>
+            <symbol>yuv_table_row::vVg</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;yuv_table_row::vUg&apos; is never used." verbose="struct member &apos;yuv_table_row::vUg&apos; is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/yuv.c" line="23" column="10"/>
+            <symbol>yuv_table_row::vUg</symbol>
+        </error>
+        <error id="unusedStructMember" severity="style" msg="struct member &apos;yuv_table_row::vUb&apos; is never used." verbose="struct member &apos;yuv_table_row::vUb&apos; is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/yuv.c" line="24" column="10"/>
+            <symbol>yuv_table_row::vUb</symbol>
+        </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;HAL_ESP32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;HAL_ESP32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/include/HAL.hpp" line="102" column="2"/>
             <symbol>HAL_ESP32</symbol>

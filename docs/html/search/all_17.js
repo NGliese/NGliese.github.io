@@ -1,11 +1,23 @@
 var searchData=
 [
-  ['vacation_5fend_808',['VACATION_END',['../d8/d61/_timebased__rules_8cpp.html#a958d06eadb3c3cc76bcef3bd5aac58b7',1,'Timebased_rules.cpp']]],
-  ['vacation_5fstart_809',['VACATION_START',['../d8/d61/_timebased__rules_8cpp.html#ada42ebf320b252870caf7f409c857854',1,'Timebased_rules.cpp']]],
-  ['vec_810',['vec',['../da/d85/data_8hpp.html#abc449e4bb8b88f446dd88a30a85f93f0',1,'data.hpp']]],
-  ['very_5fhigh_811',['very_high',['../d1/d27/namespace_fault_handler__n.html#a32023c0fed23a14c07f7f743985cdb40aaa4cea18ae7516f9a3c28d597055082f',1,'FaultHandler_n']]],
-  ['very_5flow_812',['very_low',['../d1/d27/namespace_fault_handler__n.html#a32023c0fed23a14c07f7f743985cdb40ab7619bc8e14fe34d78820f979605ee8b',1,'FaultHandler_n']]],
-  ['view_813',['view',['../db/d4d/class_background___extractor.html#aa6c3aa330f1eb59264d8e4d12d372863',1,'Background_Extractor']]],
-  ['view_5fimage_814',['view_image',['../db/dc9/class_utility___image.html#a73fc0b36f187d5dd1fd902a9614c0ca6',1,'Utility_Image']]],
-  ['vref_815',['vRef',['../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a3b206a329b232f9d7c39bf603c34dead',1,'ADC_API_ESP32::config']]]
+  ['vacation_5fend_1194',['VACATION_END',['../d8/d61/_timebased__rules_8cpp.html#a958d06eadb3c3cc76bcef3bd5aac58b7',1,'Timebased_rules.cpp']]],
+  ['vacation_5fstart_1195',['VACATION_START',['../d8/d61/_timebased__rules_8cpp.html#ada42ebf320b252870caf7f409c857854',1,'Timebased_rules.cpp']]],
+  ['vec_1196',['vec',['../da/d85/data_8hpp.html#abc449e4bb8b88f446dd88a30a85f93f0',1,'data.hpp']]],
+  ['ver_1197',['VER',['../d5/d2e/sensor_8h.html#a2126c8c27652f4a850dd48c57dfbe235',1,'sensor_id_t']]],
+  ['very_5fhigh_1198',['very_high',['../d1/d27/namespace_fault_handler__n.html#a32023c0fed23a14c07f7f743985cdb40aaa4cea18ae7516f9a3c28d597055082f',1,'FaultHandler_n']]],
+  ['very_5flow_1199',['very_low',['../d1/d27/namespace_fault_handler__n.html#a32023c0fed23a14c07f7f743985cdb40ab7619bc8e14fe34d78820f979605ee8b',1,'FaultHandler_n']]],
+  ['vfifo_5fctrl0c_1200',['VFIFO_CTRL0C',['../dc/d54/ov3660__regs_8h.html#a10891969ff2f6209e3629e700d253099',1,'ov3660_regs.h']]],
+  ['vfifo_5fx_5fsize_5fh_1201',['VFIFO_X_SIZE_H',['../dc/d54/ov3660__regs_8h.html#a6ebbd72d62fd69093a6310bbf04f1ba3',1,'ov3660_regs.h']]],
+  ['vfifo_5fx_5fsize_5fl_1202',['VFIFO_X_SIZE_L',['../dc/d54/ov3660__regs_8h.html#a5d7751e6457c76887ace8fac50f367e9',1,'ov3660_regs.h']]],
+  ['vfifo_5fy_5fsize_5fh_1203',['VFIFO_Y_SIZE_H',['../dc/d54/ov3660__regs_8h.html#a536948c82e57d80e74a49668b0c1413d',1,'ov3660_regs.h']]],
+  ['vfifo_5fy_5fsize_5fl_1204',['VFIFO_Y_SIZE_L',['../dc/d54/ov3660__regs_8h.html#a0e182f36839f14bf81f2799c09d267a2',1,'ov3660_regs.h']]],
+  ['vflip_1205',['vflip',['../d5/d2e/sensor_8h.html#a86f231205d4a8204a7f83d931925417c',1,'camera_status_t']]],
+  ['view_1206',['view',['../db/d4d/class_background___extractor.html#aa6c3aa330f1eb59264d8e4d12d372863',1,'Background_Extractor']]],
+  ['view_5fimage_1207',['view_image',['../db/dc9/class_utility___image.html#a73fc0b36f187d5dd1fd902a9614c0ca6',1,'Utility_Image']]],
+  ['vref_1208',['vRef',['../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a3b206a329b232f9d7c39bf603c34dead',1,'ADC_API_ESP32::config']]],
+  ['vub_1209',['vUb',['../df/dab/yuv_8c.html#aa574c326fd3047727997f009b750071e',1,'yuv_table_row']]],
+  ['vug_1210',['vUg',['../df/dab/yuv_8c.html#a994edf21f3ae1f16ea2ef4a04df6524e',1,'yuv_table_row']]],
+  ['vvg_1211',['vVg',['../df/dab/yuv_8c.html#a8b39f77c0cf2e33885319e7ee602e5ff',1,'yuv_table_row']]],
+  ['vvr_1212',['vVr',['../df/dab/yuv_8c.html#a8a0277b24e0b604e1b7031828b835e65',1,'yuv_table_row']]],
+  ['vy_1213',['vY',['../df/dab/yuv_8c.html#a1d5f27be84d51929e4baeed1629aef33',1,'yuv_table_row']]]
 ];

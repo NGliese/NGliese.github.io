@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "_sensor", "d6/d28/struct__sensor.html", null ],
     [ "Actuator_Base< T, U >", "dd/d11/class_actuator___base.html", null ],
     [ "Actuator_Base< mg996r_conf_t, float >", "dd/d11/class_actuator___base.html", [
       [ "MG996R", "d9/d1c/class_m_g996_r.html", null ]
@@ -15,6 +16,8 @@ var hierarchy =
     [ "Camera_CV", "d3/dc5/class_camera___c_v.html", [
       [ "RPICamV2", "d4/de7/class_r_p_i_cam_v2.html", null ]
     ] ],
+    [ "camera_sensor_info_t", "d5/d2e/sensor_8h.html#d7/d11/structcamera__sensor__info__t", null ],
+    [ "camera_status_t", "d5/d2e/sensor_8h.html#df/dc0/structcamera__status__t", null ],
     [ "HAL_ESP32::config", "d4/dc1/class_h_a_l___e_s_p32.html#d2/d6b/struct_h_a_l___e_s_p32_1_1config", null ],
     [ "DistanceSensorController::config", "d3/dab/class_distance_sensor_controller.html#d0/d14/struct_distance_sensor_controller_1_1config", null ],
     [ "ADC_API_ESP32::config", "d4/d70/class_a_d_c___a_p_i___e_s_p32.html#d0/d55/struct_a_d_c___a_p_i___e_s_p32_1_1config", null ],
@@ -32,6 +35,7 @@ var hierarchy =
     [ "ConnectedComponents::ellipse_data_t", "d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t", null ],
     [ "ErrorCodeParser", "db/d2e/class_error_code_parser.html", null ],
     [ "esp32_http_sal", "d5/d62/classesp32__http__sal.html", null ],
+    [ "esp32Cam", "d1/d5c/classesp32_cam.html", null ],
     [ "Fault_Handler", "dd/d84/class_fault___handler.html", null ],
     [ "FreeRTOS", "db/df4/class_free_r_t_o_s.html", null ],
     [ "General_Error", "d2/d3f/class_general___error.html", null ],
@@ -46,6 +50,7 @@ var hierarchy =
     [ "i2c_mock", "dc/d92/classi2c__mock.html", null ],
     [ "SensorControllerBase::init_conf", "d9/d88/class_sensor_controller_base.html#d1/da2/struct_sensor_controller_base_1_1init__conf", null ],
     [ "interface", "d0/deb/namespace_3global_scope_4.html#da/d35/classinterface", null ],
+    [ "jpge::jpeg_encoder", "df/d31/classjpge_1_1jpeg__encoder.html", null ],
     [ "jsmn_object", "dd/d71/classjsmn__object.html", null ],
     [ "Logger", "d3/d42/class_logger.html", null ],
     [ "Message_Handler", "d9/d8e/class_message___handler.html", null ],
@@ -64,6 +69,8 @@ var hierarchy =
     [ "NVS_esp32", "d9/d68/class_n_v_s__esp32.html", null ],
     [ "NVS_MOCK", "d3/d16/class_n_v_s___m_o_c_k.html", null ],
     [ "OTA", "d3/d40/class_o_t_a.html", null ],
+    [ "jpge::output_stream", "dd/dca/classjpge_1_1output__stream.html", null ],
+    [ "jpge::params", "d5/d59/structjpge_1_1params.html", null ],
     [ "PeriodeEstimator< HIGH_THRESHOLD, LOW_THRESHOLD, NVS_TYPE >", "da/d0a/class_periode_estimator.html", null ],
     [ "PeriodeEstimator< 1900, 1800, NVS_MOCK >", "da/d0a/class_periode_estimator.html", null ],
     [ "Ping_API", "d0/d0e/class_ping___a_p_i.html", null ],
@@ -91,10 +98,13 @@ var hierarchy =
       [ "QueryURIMessage", "da/d01/class_query_u_r_i_message.html", null ]
     ] ],
     [ "FreeRTOS::Queue", "dd/d1c/class_free_r_t_o_s_1_1_queue.html", null ],
+    [ "ratio_settings_t", "d5/d2e/sensor_8h.html#d2/df8/structratio__settings__t", null ],
+    [ "resolution_info_t", "d5/d2e/sensor_8h.html#d9/d43/structresolution__info__t", null ],
     [ "RTC_HAL", "d9/de1/class_r_t_c___h_a_l.html", null ],
     [ "FreeRTOS::Semaphore", "d6/d90/class_free_r_t_o_s_1_1_semaphore.html", null ],
     [ "Sensor_Base< T, U >", "d1/da4/class_sensor___base.html", null ],
     [ "sensor_conf_t", "d3/dd3/_sensor___base_8hpp.html#d3/dcd/structsensor__conf__t", null ],
+    [ "sensor_id_t", "d5/d2e/sensor_8h.html#dd/d9e/structsensor__id__t", null ],
     [ "Task", "d7/d6d/class_task.html", [
       [ "ActiveCurrentSensor", "d6/da0/class_active_current_sensor.html", null ],
       [ "DataBroker", "d9/db3/class_data_broker.html", null ],
@@ -124,5 +134,6 @@ var hierarchy =
     [ "Watchdog_Base< uint32_t >", "da/d60/class_watchdog___base.html", [
       [ "Watch_Clock", "d1/dc6/class_watch___clock.html", null ]
     ] ],
-    [ "wifi_conf_t", "db/def/_wi_fi___s_a_l__esp32_8hpp.html#db/d38/structwifi__conf__t", null ]
+    [ "wifi_conf_t", "db/def/_wi_fi___s_a_l__esp32_8hpp.html#db/d38/structwifi__conf__t", null ],
+    [ "yuv_table_row", "df/dab/yuv_8c.html#d3/d50/structyuv__table__row", null ]
 ];

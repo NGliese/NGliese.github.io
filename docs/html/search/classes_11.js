@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['semaphore_1002',['Semaphore',['../d6/d90/class_free_r_t_o_s_1_1_semaphore.html',1,'FreeRTOS']]],
-  ['sensor_5fbase_1003',['Sensor_Base',['../d1/da4/class_sensor___base.html',1,'']]],
-  ['sensor_5fconf_5ft_1004',['sensor_conf_t',['../d3/dd3/_sensor___base_8hpp.html#d3/dcd/structsensor__conf__t',1,'']]],
-  ['sensorcontrollerbase_1005',['SensorControllerBase',['../d9/d88/class_sensor_controller_base.html',1,'']]],
-  ['sensorcontrollerbase_5fmock_1006',['SensorControllerBase_MOCK',['../d3/d1b/class_sensor_controller_base___m_o_c_k.html',1,'']]],
-  ['servicebase_1007',['ServiceBase',['../d4/d82/class_service_base.html',1,'']]],
-  ['servicebase_3c_20buffer_5ftype_2c_20freertos_3a_3aqueue_20_3e_1008',['ServiceBase&lt; BUFFER_TYPE, FreeRTOS::Queue &gt;',['../d4/d82/class_service_base.html',1,'']]],
-  ['servicebase_3c_20mqtt_5fmessage_20_3e_1009',['ServiceBase&lt; MQTT_Message &gt;',['../d4/d82/class_service_base.html',1,'']]],
-  ['servicebase_5fhw_5ftest_1010',['ServiceBase_HW_TEST',['../dc/d61/class_service_base___h_w___t_e_s_t.html',1,'']]]
+  ['ratio_5fsettings_5ft_1446',['ratio_settings_t',['../d5/d2e/sensor_8h.html#d2/df8/structratio__settings__t',1,'']]],
+  ['resolution_5finfo_5ft_1447',['resolution_info_t',['../d5/d2e/sensor_8h.html#d9/d43/structresolution__info__t',1,'']]],
+  ['rpicamv2_1448',['RPICamV2',['../d4/de7/class_r_p_i_cam_v2.html',1,'']]],
+  ['rtc_5fhal_1449',['RTC_HAL',['../d9/de1/class_r_t_c___h_a_l.html',1,'']]]
 ];

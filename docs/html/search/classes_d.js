@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['onlinedetector_5fservice_978',['OnlineDetector_service',['../db/db4/class_online_detector__service.html',1,'']]],
-  ['ota_979',['OTA',['../d3/d40/class_o_t_a.html',1,'']]]
+  ['nvs_1419',['NVS',['../d2/dc1/class_n_v_s.html',1,'']]],
+  ['nvs_5fesp32_1420',['NVS_esp32',['../d9/d68/class_n_v_s__esp32.html',1,'']]],
+  ['nvs_5fmock_1421',['NVS_MOCK',['../d3/d16/class_n_v_s___m_o_c_k.html',1,'']]]
 ];

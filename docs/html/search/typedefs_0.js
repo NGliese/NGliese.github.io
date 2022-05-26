@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['json_1725',['json',['../d2/d57/json__object_8hpp.html#ab701e3ac61a85b337ec5c1abaad6742d',1,'json_object.hpp']]]
+  ['camera_5ffb_5ft_2414',['camera_fb_t',['../dc/dc2/esp32_cam_8hpp.html#a47ed885a9be85b764f12c5de3f273a93',1,'esp32Cam.hpp']]]
 ];
