@@ -38,10 +38,6 @@
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/AnalysisTools/ImageAnalysis_OpenCV/src/Utility_Image.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/AnalysisTools/ImageAnalysis_OpenCV/include/Utility_Image.hpp" line="120" column="2"/>
             <symbol>friend_Load_Image</symbol>
         </error>
-        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::m_wifi_power&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::m_wifi_power&apos; is not initialized in the constructor." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="49" column="17"/>
-            <symbol>WiFi_SAL_esp32::m_wifi_power</symbol>
-        </error>
         <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" verbose="Unused private function: &apos;WiFi_SAL_esp32::event_handler&apos;" cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="94" column="14"/>
             <symbol>WiFi_SAL_esp32::event_handler</symbol>
@@ -51,10 +47,10 @@
             <symbol>WiFi_SAL_esp32</symbol>
         </error>
         <error id="knownConditionTrueFalse" severity="style" msg="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" verbose="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true" cwe="571">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="120" column="37" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="122" column="37" info="Condition &apos;!WIFI_CONNECTION_FAIL&apos; is always true"/>
         </error>
-        <error id="multiCondition" severity="style" msg="Expression is always false because &apos;else if&apos; condition matches previous condition at line 183." verbose="Expression is always false because &apos;else if&apos; condition matches previous condition at line 183." cwe="398">
-            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="199" column="9"/>
+        <error id="multiCondition" severity="style" msg="Expression is always false because &apos;else if&apos; condition matches previous condition at line 185." verbose="Expression is always false because &apos;else if&apos; condition matches previous condition at line 185." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="201" column="9"/>
         </error>
         <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." verbose="Member variable &apos;WiFi_SAL_esp32::instance_any_id&apos; is not initialized in the constructor." cwe="398">
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/src/WiFi_SAL_esp32.cpp" line="49" column="17"/>
