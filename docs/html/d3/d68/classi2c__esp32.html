@@ -425,7 +425,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    {</div>
 <div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea6065e849749d1b25cdec948c69f4094c">GE_PROTOCOL_FAILED</a>;</div>
 <div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;    }</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    ESP_ERROR_CHECK(::i2c_master_read_bytes(m_cmd, bytes, length, I2C_MASTER_ACK));</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    ESP_ERROR_CHECK(::i2c_master_read(m_cmd, bytes, length, I2C_MASTER_ACK));</div>
 <div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
 <div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
@@ -660,7 +660,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    {</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea15523e895b8d5bfc3a8a2a7e5c8dfdb1">GE_FAIL</a>;</div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    }</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    errRc = ::i2c_master_write_bytes(m_cmd, bytes, length, <span class="keyword">false</span>);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    errRc = ::i2c_master_write(m_cmd, bytes, length, <span class="keyword">false</span>);</div>
 <div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keywordflow">if</span>(errRc != ESP_OK)</div>
 <div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    {</div>
 <div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533ea15523e895b8d5bfc3a8a2a7e5c8dfdb1">GE_FAIL</a>;</div>

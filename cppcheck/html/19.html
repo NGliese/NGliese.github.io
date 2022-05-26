@@ -729,7 +729,7 @@
 <a name="line-242"></a>	<span class="p">{</span>
 <a name="line-243"></a>		<span class="k">return</span> <span class="n">GE_FAIL</span><span class="p">;</span>
 <a name="line-244"></a>	<span class="p">}</span>
-<a name="line-245"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">i2c_master_write_bytes</span><span class="p">(</span><span class="n">m_cmd</span><span class="p">,</span> <span class="n">bytes</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
+<a name="line-245"></a>	<span class="n">errRc</span> <span class="o">=</span> <span class="o">::</span><span class="n">i2c_master_write</span><span class="p">(</span><span class="n">m_cmd</span><span class="p">,</span> <span class="n">bytes</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="nb">false</span><span class="p">);</span>
 <a name="line-246"></a>	<span class="k">if</span><span class="p">(</span><span class="n">errRc</span> <span class="o">!=</span> <span class="n">ESP_OK</span><span class="p">)</span>
 <a name="line-247"></a>	<span class="p">{</span>
 <a name="line-248"></a>		<span class="k">return</span> <span class="n">GE_FAIL</span><span class="p">;</span>
@@ -779,7 +779,7 @@
 <a name="line-292"></a>	<span class="p">{</span>
 <a name="line-293"></a>		<span class="k">return</span> <span class="n">GE_PROTOCOL_FAILED</span><span class="p">;</span>
 <a name="line-294"></a>	<span class="p">}</span>
-<a name="line-295"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="o">::</span><span class="n">i2c_master_read_bytes</span><span class="p">(</span><span class="n">m_cmd</span><span class="p">,</span> <span class="n">bytes</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">I2C_MASTER_ACK</span><span class="p">));</span>
+<a name="line-295"></a>	<span class="n">ESP_ERROR_CHECK</span><span class="p">(</span><span class="o">::</span><span class="n">i2c_master_read</span><span class="p">(</span><span class="n">m_cmd</span><span class="p">,</span> <span class="n">bytes</span><span class="p">,</span> <span class="n">length</span><span class="p">,</span> <span class="n">I2C_MASTER_ACK</span><span class="p">));</span>
 <a name="line-296"></a><span class="cp">#endif</span>
 <a name="line-297"></a>
 <a name="line-298"></a><span class="cp">#ifdef DEBUG</span>

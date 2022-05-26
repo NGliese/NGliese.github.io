@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-26 11:15:17</td>
+            <td class="headerValue">2022-05-26 14:07:06</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -2011,7 +2011,7 @@
     <td align="right" class="lineno"><pre>245</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	errRc = ::i2c_master_write_bytes(m_cmd, bytes, length, false);</pre></td>
+    <td align="left" class="src "><pre>	errRc = ::i2c_master_write(m_cmd, bytes, length, false);</pre></td>
     </tr>
 
     <tr>
@@ -2361,7 +2361,7 @@
     <td align="right" class="lineno"><pre>295</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(::i2c_master_read_bytes(m_cmd, bytes, length, I2C_MASTER_ACK));</pre></td>
+    <td align="left" class="src "><pre>	ESP_ERROR_CHECK(::i2c_master_read(m_cmd, bytes, length, I2C_MASTER_ACK));</pre></td>
     </tr>
 
     <tr>
