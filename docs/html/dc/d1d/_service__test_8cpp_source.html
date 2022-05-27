@@ -92,37 +92,46 @@ $(document).ready(function(){initNavTree('dc/d1d/_service__test_8cpp_source.html
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *  Created on: Jul 7, 2020</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: espenv</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../include/ServiceBase.hpp&quot;</span> <span class="comment">// example of include</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">// ------------- INCLUDE ABOVE ----------------</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;CppUTest/TestHarness.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// clang-format off</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../dc/d1d/_service__test_8cpp.html#a5b053273fa5dda933aff822d4472c691">   14</a></span>&#160;<a class="code" href="../../dc/d1d/_service__test_8cpp.html#a5b053273fa5dda933aff822d4472c691">TEST_GROUP</a>(SERVICE_TEST){</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a> buffer{{<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">db_id::DEBUG_ID1</a>,1}};</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    service_MOCK m_mock{10,10,buffer,<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> setup(){</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> teardown(){</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// Uninit stuff</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;../../include/ServiceQueueBase.hpp&quot;</span> <span class="comment">// example of include</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;../../include/ServiceTimeBase.hpp&quot;</span> <span class="comment">// example of include</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">// ------------- INCLUDE ABOVE ----------------</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;CppUTest/TestHarness.h&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">// clang-format off</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../dc/d1d/_service__test_8cpp.html#a5b053273fa5dda933aff822d4472c691">   16</a></span>&#160;<a class="code" href="../../dc/d1d/_service__test_8cpp.html#a5b053273fa5dda933aff822d4472c691">TEST_GROUP</a>(SERVICE_TEST){</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a> buffer{{<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">db_id::DEBUG_ID1</a>,1}};</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    service_MOCK m_mock{10,10,buffer,<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>};</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    serviceTime_MOCK m_time_mock{buffer,<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>,100};</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> setup(){</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">// clang-format on</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../dc/d1d/_service__test_8cpp.html#a7681545d0d7888b338bcb91d1c64ae6c">   27</a></span>&#160;<a class="code" href="../../dc/d1d/_service__test_8cpp.html#a7681545d0d7888b338bcb91d1c64ae6c">TEST</a>(SERVICE_TEST, notActive)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    CHECK_FALSE(m_mock.isActive());</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> teardown(){</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">// Uninit stuff</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    }</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;};</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">// clang-format on</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="../../dc/d1d/_service__test_8cpp.html#a7681545d0d7888b338bcb91d1c64ae6c">   30</a></span>&#160;<a class="code" href="../../dc/d1d/_service__test_8cpp.html#a7681545d0d7888b338bcb91d1c64ae6c">TEST</a>(SERVICE_TEST, notActive)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    CHECK_FALSE(m_mock.isActive());</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="../../dc/d1d/_service__test_8cpp.html#ae4d6afdb7f6bf7b4e8024a8047800884">   36</a></span>&#160;<a class="code" href="../../dc/d1d/_service__test_8cpp.html#a7681545d0d7888b338bcb91d1c64ae6c">TEST</a>(SERVICE_TEST, notActive2)</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    CHECK_FALSE(m_time_mock.isActive());</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">db_id::DEBUG_ID1</a></div><div class="ttdeci">@ DEBUG_ID1</div></div>
-<div class="ttc" id="a_service__test_8cpp_html_a7681545d0d7888b338bcb91d1c64ae6c"><div class="ttname"><a href="../../dc/d1d/_service__test_8cpp.html#a7681545d0d7888b338bcb91d1c64ae6c">TEST</a></div><div class="ttdeci">TEST(SERVICE_TEST, notActive)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1d/_service__test_8cpp_source.html#l00027">Service_test.cpp:27</a></div></div>
+<div class="ttc" id="a_service__test_8cpp_html_a7681545d0d7888b338bcb91d1c64ae6c"><div class="ttname"><a href="../../dc/d1d/_service__test_8cpp.html#a7681545d0d7888b338bcb91d1c64ae6c">TEST</a></div><div class="ttdeci">TEST(SERVICE_TEST, notActive)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1d/_service__test_8cpp_source.html#l00030">Service_test.cpp:30</a></div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a></div><div class="ttdeci">@ DEBUG_ID2</div></div>
 <div class="ttc" id="aclass_m_q_t_t___message_html"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da7/_m_q_t_t___message_8hpp_source.html#l00084">MQTT_Message.hpp:84</a></div></div>
-<div class="ttc" id="a_service__test_8cpp_html_a5b053273fa5dda933aff822d4472c691"><div class="ttname"><a href="../../dc/d1d/_service__test_8cpp.html#a5b053273fa5dda933aff822d4472c691">TEST_GROUP</a></div><div class="ttdeci">TEST_GROUP(SERVICE_TEST)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1d/_service__test_8cpp_source.html#l00014">Service_test.cpp:14</a></div></div>
+<div class="ttc" id="a_service__test_8cpp_html_a5b053273fa5dda933aff822d4472c691"><div class="ttname"><a href="../../dc/d1d/_service__test_8cpp.html#a5b053273fa5dda933aff822d4472c691">TEST_GROUP</a></div><div class="ttdeci">TEST_GROUP(SERVICE_TEST)</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/d1d/_service__test_8cpp_source.html#l00016">Service_test.cpp:16</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

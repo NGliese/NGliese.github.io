@@ -1,13 +1,12 @@
-<map id="ServiceBase&lt; BUFFER_TYPE, QUEUE_TYPE &gt;" name="ServiceBase&lt; BUFFER_TYPE, QUEUE_TYPE &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="315,748,485,957"/>
+<map id="ServiceBase&lt; BUFFER_TYPE &gt;" name="ServiceBase&lt; BUFFER_TYPE &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="230,748,399,943"/>
 <area shape="rect" id="node2" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="5,403,136,685"/>
 <area shape="rect" id="node3" title="STL class." alt="" coords="103,211,190,289"/>
 <area shape="rect" id="node10" href="$d5/de7/classmqtt__api__v2.html" title=" " alt="" coords="160,447,299,641"/>
 <area shape="rect" id="node4" title="STL class." alt="" coords="77,5,216,97"/>
 <area shape="rect" id="node5" title=" " alt="" coords="323,505,477,583"/>
-<area shape="rect" id="node6" title="STL class." alt="" coords="328,211,461,289"/>
-<area shape="rect" id="node7" title=" " alt="" coords="375,13,414,90"/>
-<area shape="rect" id="node8" href="$d1/d2c/class_g_p_i_o___a_p_i.html" title=" " alt="" coords="501,403,651,685"/>
-<area shape="rect" id="node9" href="$d4/d57/class_g_p_i_o___h_a_l.html" title=" " alt="" coords="486,160,669,340"/>
-<area shape="rect" id="node11" href="$dd/d1c/class_free_r_t_o_s_1_1_queue.html" title=" " alt="" coords="675,483,810,605"/>
+<area shape="rect" id="node6" title="STL class." alt="" coords="329,211,463,289"/>
+<area shape="rect" id="node7" title=" " alt="" coords="377,13,415,90"/>
+<area shape="rect" id="node8" href="$d1/d2c/class_g_p_i_o___a_p_i.html" title=" " alt="" coords="502,403,653,685"/>
+<area shape="rect" id="node9" href="$d4/d57/class_g_p_i_o___h_a_l.html" title=" " alt="" coords="487,160,670,340"/>
 </map>

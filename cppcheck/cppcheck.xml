@@ -242,7 +242,7 @@
         </error>
         <error id="missingOverride" severity="style" msg="The function &apos;mainFunction&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier." verbose="The function &apos;mainFunction&apos; overrides a function in a base class but is not marked with a &apos;override&apos; specifier.">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/include/WaterEstimator_Service.hpp" line="63" column="16" info="Function in derived class"/>
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/ServiceBase/include/ServiceBase.hpp" line="96" column="24" info="Virtual function in base class"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Interfaces/ServiceBase/include/ServiceQueueBase.hpp" line="73" column="24" info="Virtual function in base class"/>
             <symbol>mainFunction</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
@@ -251,6 +251,18 @@
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
+            <symbol>friend_GPIO_API</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/isAlive/src/isAlive_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
+            <symbol>GPIO_API</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/isAlive/src/isAlive_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/HAL.hpp" line="127" column="2"/>
+            <symbol>friend_HAL</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/isAlive/src/isAlive_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
             <symbol>friend_GPIO_API</symbol>
         </error>
         <error id="redundantAssignment" severity="style" msg="Variable &apos;ret&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;ret&apos; is reassigned a value before the old one has been used." cwe="563">

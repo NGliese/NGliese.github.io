@@ -115,13 +115,21 @@ var hierarchy =
         ] ],
         [ "SensorControllerBase_MOCK", "d3/d1b/class_sensor_controller_base___m_o_c_k.html", null ]
       ] ],
-      [ "ServiceBase< BUFFER_TYPE, QUEUE_TYPE >", "d4/d82/class_service_base.html", null ],
-      [ "ServiceBase< BUFFER_TYPE, FreeRTOS::Queue >", "d4/d82/class_service_base.html", [
-        [ "ServiceBase_HW_TEST< BUFFER_TYPE, QUEUE_TYPE >", "dc/d61/class_service_base___h_w___t_e_s_t.html", null ]
+      [ "ServiceBase< BUFFER_TYPE >", "d4/d82/class_service_base.html", [
+        [ "ServiceQueueBase< BUFFER_TYPE, QUEUE_TYPE >", "da/d3e/class_service_queue_base.html", null ],
+        [ "ServiceQueueBase< BUFFER_TYPE, FreeRTOS::Queue >", "da/d3e/class_service_queue_base.html", [
+          [ "ServiceBase_HW_TEST< BUFFER_TYPE, QUEUE_TYPE >", "dc/d61/class_service_base___h_w___t_e_s_t.html", null ]
+        ] ]
       ] ],
       [ "ServiceBase< MQTT_Message >", "d4/d82/class_service_base.html", [
-        [ "OnlineDetector_service", "db/db4/class_online_detector__service.html", null ],
-        [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", null ]
+        [ "ServiceQueueBase< MQTT_Message >", "da/d3e/class_service_queue_base.html", [
+          [ "OnlineDetector_service", "db/db4/class_online_detector__service.html", null ],
+          [ "WaterEstimator_Service", "d6/da4/class_water_estimator___service.html", null ]
+        ] ],
+        [ "ServiceTimeBase< DELAY_FUNCTION, BUFFER_TYPE >", "d9/d28/class_service_time_base.html", null ],
+        [ "ServiceTimeBase<&Timeservice::wait_sec >", "d9/d28/class_service_time_base.html", [
+          [ "isAlive_service", "d3/d22/classis_alive__service.html", null ]
+        ] ]
       ] ]
     ] ],
     [ "TaskHandle_t", "d3/d1c/_free_r_t_o_s_8h.html#d9/d94/struct_task_handle__t", null ],

@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-26 14:32:54</td>
+            <td class="headerValue">2022-05-27 14:08:21</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -555,7 +555,7 @@
     <td align="right" class="lineno"><pre>37</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#include "../../../Interfaces/ServiceBase/include/ServiceBase.hpp"</pre></td>
+    <td align="left" class="src "><pre>#include "../../../Interfaces/ServiceBase/include/ServiceQueueBase.hpp"</pre></td>
     </tr>
 
     <tr>
@@ -632,7 +632,7 @@
     <td align="right" class="lineno"><pre>48</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>class WaterEstimator_Service final : public ServiceBase&lt;MQTT_Message></pre></td>
+    <td align="left" class="src "><pre>class WaterEstimator_Service final : public ServiceQueueBase&lt;MQTT_Message></pre></td>
     </tr>
 
     <tr>
@@ -688,7 +688,7 @@
     <td align="right" class="lineno"><pre>56</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		: ServiceBase(queue_size, size_of_item, buffer, error_id),</pre></td>
+    <td align="left" class="src "><pre>		: ServiceQueueBase(queue_size, size_of_item, buffer, error_id),</pre></td>
     </tr>
 
     <tr>
