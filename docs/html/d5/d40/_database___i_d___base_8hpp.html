@@ -178,7 +178,10 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a54cf6a3f85cc622d736c204af637cc95">db_id::ONLINEDETECTOR_SUCESS</a>, 
 <a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a7053ae603e2dde1b8dbb127948b86cea">db_id::ONLINEDETECTOR_FAIL</a>, 
-<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28">db_id::ONLINEDETECTOR_REACH_TIME</a>
+<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28">db_id::ONLINEDETECTOR_REACH_TIME</a>, 
+<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a323adbe5138eaf9355208cfa87c2aac2">db_id::ESP32CAMTEST_ISALIVE</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2">db_id::ESP32CAMTEST_ERRORCODE</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ad2476414527a024c2bb661f45d8876e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">database header file to map database ID's with enum names for easier visual description  <a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0">More...</a><br /></td></tr>
@@ -271,6 +274,8 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0a54cf6a3f85cc622d736c204af637cc95"></a>ONLINEDETECTOR_SUCESS&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0a7053ae603e2dde1b8dbb127948b86cea"></a>ONLINEDETECTOR_FAIL&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28"></a>ONLINEDETECTOR_REACH_TIME&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0a323adbe5138eaf9355208cfa87c2aac2"></a>ESP32CAMTEST_ISALIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2"></a>ESP32CAMTEST_ERRORCODE&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
@@ -350,7 +355,11 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a54cf6a3f85cc622d736c204af637cc95">ONLINEDETECTOR_SUCESS</a>,</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a7053ae603e2dde1b8dbb127948b86cea">ONLINEDETECTOR_FAIL</a>,</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28">ONLINEDETECTOR_REACH_TIME</a>,</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;};</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="comment">/* esp32Cam Test*/</span></div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a323adbe5138eaf9355208cfa87c2aac2">ESP32CAMTEST_ISALIVE</a>,</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2">ESP32CAMTEST_ERRORCODE</a>,</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -375,7 +384,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00127">127</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00131">131</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#af01ecf74834d86dd468d287cea3085d6">MQTT_Message::MQTT_Message()</a>, and <a class="el" href="../../db/d2e/class_error_code_parser.html#a3451d8da40acc193c67994347a55ca74">ErrorCodeParser::toString()</a>.</p>
 
@@ -407,11 +416,13 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ad0a4664d0495cebec2ac0223dec88a6d"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0a4664d0495cebec2ac0223dec88a6d">db_id::GH_MOIST4</a></div><div class="ttdeci">@ GH_MOIST4</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a36b17b2599ec58f70a86ed4fe0615758"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a36b17b2599ec58f70a86ed4fe0615758">db_id::GH_MOIST2</a></div><div class="ttdeci">@ GH_MOIST2</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0abbea50e1417a86271d081fc3a0e6316b"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0abbea50e1417a86271d081fc3a0e6316b">db_id::DOGFEEDER_ACTUATOR_SET_POINT</a></div><div class="ttdeci">@ DOGFEEDER_ACTUATOR_SET_POINT</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2">db_id::ESP32CAMTEST_ERRORCODE</a></div><div class="ttdeci">@ ESP32CAMTEST_ERRORCODE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a0c24fe78395fcf3777197b65e5f1dc2c"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0c24fe78395fcf3777197b65e5f1dc2c">db_id::ENV01_TEMPERATURE</a></div><div class="ttdeci">@ ENV01_TEMPERATURE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a2b015d36167ec3ae7f773d24dce6eadf"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a2b015d36167ec3ae7f773d24dce6eadf">db_id::CCTV01_MOG2_CC</a></div><div class="ttdeci">@ CCTV01_MOG2_CC</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ab36e0876842af8ead74ec9740d09d4b6"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab36e0876842af8ead74ec9740d09d4b6">db_id::CCTV01_HEIGHT</a></div><div class="ttdeci">@ CCTV01_HEIGHT</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0acbe2ef4809883ffa5dd2360f003c8ee6"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0acbe2ef4809883ffa5dd2360f003c8ee6">db_id::DOGFEEDER_ERROR_CODE</a></div><div class="ttdeci">@ DOGFEEDER_ERROR_CODE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a5e4933a1f7ae841f5c330aa661761a07"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a5e4933a1f7ae841f5c330aa661761a07">db_id::CCTV01_KNN_CC</a></div><div class="ttdeci">@ CCTV01_KNN_CC</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a323adbe5138eaf9355208cfa87c2aac2"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a323adbe5138eaf9355208cfa87c2aac2">db_id::ESP32CAMTEST_ISALIVE</a></div><div class="ttdeci">@ ESP32CAMTEST_ISALIVE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a54cf6a3f85cc622d736c204af637cc95"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a54cf6a3f85cc622d736c204af637cc95">db_id::ONLINEDETECTOR_SUCESS</a></div><div class="ttdeci">@ ONLINEDETECTOR_SUCESS</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683">db_id::ESP32_BAT_HW_SENSOR_ADC</a></div><div class="ttdeci">@ ESP32_BAT_HW_SENSOR_ADC</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a76e50c47e1079c54d3cf5c717b674f7f"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a76e50c47e1079c54d3cf5c717b674f7f">db_id::CCTV01_ALARM</a></div><div class="ttdeci">@ CCTV01_ALARM</div></div>

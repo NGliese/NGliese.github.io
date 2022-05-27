@@ -83,6 +83,7 @@ var NAVTREEINDEX3 =
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a1f23c9271099cefc5cfcdbe25afa6292":[24,0,1,5,1,0,15],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a2b015d36167ec3ae7f773d24dce6eadf":[24,0,1,5,1,0,37],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a2c72a25516e325e96987d42e27ed005b":[24,0,1,5,1,0,5],
+"d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a323adbe5138eaf9355208cfa87c2aac2":[24,0,1,5,1,0,59],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a36b17b2599ec58f70a86ed4fe0615758":[24,0,1,5,1,0,23],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a37ee3cfa387a765eb25cc3363a4d3343":[24,0,1,5,1,0,16],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a38ee1b8e9e6053a12741e135f1aba920":[24,0,1,5,1,0,28],
@@ -131,6 +132,7 @@ var NAVTREEINDEX3 =
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ae84d8cc097ca126149c1d95b78ea304f":[24,0,1,5,1,0,26],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aebb6b4fc98281c7063d753eac1166da5":[24,0,1,5,1,0,42],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aefb0abcb01ed90250910818bb0d41382":[24,0,1,5,1,0,32],
+"d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2":[24,0,1,5,1,0,60],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf":[24,0,1,5,1,0,1],
 "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0afbd5a31a618b48ce14e8d43e78601683":[24,0,1,5,1,0,54],
 "d5/d40/_database___i_d___base_8hpp_source.html":[24,0,1,5,1],
@@ -247,7 +249,5 @@ var NAVTREEINDEX3 =
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a45e40cce1ec230349feac1ccf16c4ab6":[23,0,93,13],
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a69a30a3169e7d514034bc91e4ebcdd81":[23,0,93,8],
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a813c154a9b1fb2d9ffbd84f62e53a882":[23,0,93,2],
-"d5/db4/class_wi_fi___s_a_l__esp32.html#a83692a58f796ad7540891402433bde33":[23,0,93,11],
-"d5/db4/class_wi_fi___s_a_l__esp32.html#a84b00bbf33aaee062939b6f2f8447034":[23,0,93,0],
-"d5/db4/class_wi_fi___s_a_l__esp32.html#a84b00bbf33aaee062939b6f2f8447034a26a4b44a837bf97b972628509912b4a5":[23,0,93,0,2]
+"d5/db4/class_wi_fi___s_a_l__esp32.html#a83692a58f796ad7540891402433bde33":[23,0,93,11]
 };

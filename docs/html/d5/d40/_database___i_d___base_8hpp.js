@@ -59,7 +59,9 @@ var _database___i_d___base_8hpp =
       [ "ONLINEDETECTOR_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4061f8cd72828d3333f082c9c91cd1e1", null ],
       [ "ONLINEDETECTOR_SUCESS", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a54cf6a3f85cc622d736c204af637cc95", null ],
       [ "ONLINEDETECTOR_FAIL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a7053ae603e2dde1b8dbb127948b86cea", null ],
-      [ "ONLINEDETECTOR_REACH_TIME", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28", null ]
+      [ "ONLINEDETECTOR_REACH_TIME", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28", null ],
+      [ "ESP32CAMTEST_ISALIVE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a323adbe5138eaf9355208cfa87c2aac2", null ],
+      [ "ESP32CAMTEST_ERRORCODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2", null ]
     ] ],
     [ "map", "d5/d40/_database___i_d___base_8hpp.html#a40f5a6d0734142b0008af0e8a9c51013", null ]
 ];

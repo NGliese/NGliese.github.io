@@ -1,5 +1,7 @@
 var NAVTREEINDEX8 =
 {
+"dd/d84/class_fault___handler.html#af4009183f36c416c0ec0977681a59f9f":[24,0,1,7,3,0,0,2,0],
+"dd/d84/class_fault___handler.html#af4009183f36c416c0ec0977681a59f9f":[23,0,23,0,0],
 "dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t":[23,0,23,0],
 "dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t":[24,0,1,7,3,0,0,2],
 "dd/d8b/md__components__objects__json_src_empty_file.html":[16],
@@ -247,7 +249,5 @@ var NAVTREEINDEX8 =
 "df/d91/_query_add_external_resources_8cpp_source.html":[24,0,1,7,13,1,0],
 "df/dab/yuv_8c.html":[24,0,1,13,1,1,4],
 "df/dab/yuv_8c.html#a1d5f27be84d51929e4baeed1629aef33":[24,0,1,13,1,1,4,0,4],
-"df/dab/yuv_8c.html#a3d661f9847dac6adaaf3b03defcaf29e":[24,0,1,13,1,1,4,2],
-"df/dab/yuv_8c.html#a8a0277b24e0b604e1b7031828b835e65":[24,0,1,13,1,1,4,0,3],
-"df/dab/yuv_8c.html#a8b39f77c0cf2e33885319e7ee602e5ff":[24,0,1,13,1,1,4,0,2]
+"df/dab/yuv_8c.html#a3d661f9847dac6adaaf3b03defcaf29e":[24,0,1,13,1,1,4,2]
 };
