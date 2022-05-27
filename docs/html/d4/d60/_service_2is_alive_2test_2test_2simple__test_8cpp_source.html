@@ -101,29 +101,26 @@ $(document).ready(function(){initNavTree('d4/d60/_service_2is_alive_2test_2test_
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp.html#ab4bbe3cfc7045da5909529afd8ff5c43">   14</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a5277e18d9163c4ebd65ee2e0de3a4560">TEST_GROUP</a>(ISALIVE_GRP)</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a> buffer{{<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">db_id::DEBUG_ID1</a>, 1}};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d3/d22/classis_alive__service.html">isAlive_service</a> m_service{buffer, <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>, 100, <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> setup() {}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> teardown()</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">// Uninit stuff</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp.html#ac172bb51f4ff23ed3b9d7e643d147657">   27</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(ISALIVE_GRP, init)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    CHECK_FALSE(m_service.isActive());</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d3/d22/classis_alive__service.html">isAlive_service</a> m_service{<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>, 100, <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> setup() {}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> teardown()</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">// Uninit stuff</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp.html#ac172bb51f4ff23ed3b9d7e643d147657">   26</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(ISALIVE_GRP, init)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CHECK_FALSE(m_service.isActive());</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_html_a4f17af58fd374b6442582d987fcbcd7a"><div class="ttname"><a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a></div><div class="ttdeci">TEST(WiFiV2_GRP, init)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_source.html#l00041">simple_test.cpp:41</a></div></div>
-<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">db_id::DEBUG_ID1</a></div><div class="ttdeci">@ DEBUG_ID1</div></div>
 <div class="ttc" id="a_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_html_a5277e18d9163c4ebd65ee2e0de3a4560"><div class="ttname"><a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a5277e18d9163c4ebd65ee2e0de3a4560">TEST_GROUP</a></div><div class="ttdeci">TEST_GROUP(WiFiV2_GRP)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_source.html#l00033">simple_test.cpp:33</a></div></div>
 <div class="ttc" id="aclassis_alive__service_html"><div class="ttname"><a href="../../d3/d22/classis_alive__service.html">isAlive_service</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d40/is_alive__service_8hpp_source.html#l00050">isAlive_service.hpp:50</a></div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a></div><div class="ttdeci">@ DEBUG_ID2</div></div>
-<div class="ttc" id="aclass_m_q_t_t___message_html"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da7/_m_q_t_t___message_8hpp_source.html#l00084">MQTT_Message.hpp:84</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

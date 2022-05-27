@@ -133,10 +133,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp_source.html#l00027">27</a> of file <a class="el" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp_source.html">simple_test.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    CHECK_FALSE(m_service.isActive());</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp_source.html#l00026">26</a> of file <a class="el" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp_source.html">simple_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;{</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    CHECK_FALSE(m_service.isActive());</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -158,26 +158,23 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp_source.html#l00014">14</a> of file <a class="el" href="../../d4/d60/_service_2is_alive_2test_2test_2simple__test_8cpp_source.html">simple_test.cpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a> buffer{{<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">db_id::DEBUG_ID1</a>, 1}};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="../../d3/d22/classis_alive__service.html">isAlive_service</a> m_service{buffer, <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>, 100, <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> setup() {}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> teardown()</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        <span class="comment">// Uninit stuff</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    }</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;};</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="../../d3/d22/classis_alive__service.html">isAlive_service</a> m_service{<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>, 100, <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a>};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> setup() {}</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">void</span> teardown()</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    {</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="comment">// Uninit stuff</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">DEBUG_ID1</a>, and <a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">DEBUG_ID2</a>.</p>
+<p class="reference">References <a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">DEBUG_ID2</a>.</p>
 
 </div>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">db_id::DEBUG_ID1</a></div><div class="ttdeci">@ DEBUG_ID1</div></div>
 <div class="ttc" id="aclassis_alive__service_html"><div class="ttname"><a href="../../d3/d22/classis_alive__service.html">isAlive_service</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d40/is_alive__service_8hpp_source.html#l00050">isAlive_service.hpp:50</a></div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a></div><div class="ttdeci">@ DEBUG_ID2</div></div>
-<div class="ttc" id="aclass_m_q_t_t___message_html"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da7/_m_q_t_t___message_8hpp_source.html#l00084">MQTT_Message.hpp:84</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
