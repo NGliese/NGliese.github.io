@@ -170,10 +170,10 @@ $(document).ready(function(){initNavTree('d4/d63/mqtt__api__v2_8hpp_source.html'
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="preprocessor">#ifndef GLOBAL_MQTT_SERVER</span></div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#ifdef __ESP32__</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#warning &quot;GLOBAL_MQTT_SERVER Not defined, using 1.1.1.1&quot;</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#define GLOBAL_MQTT_SERVER (&quot;1.1.1.1&quot;)</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="preprocessor">#define GLOBAL_MQTT_SERVER &quot;mqtt://192.168.1.157:1883&quot;</span></div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#else</span></div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">// ignore warning since we do not have a mqtt compatable target</span></div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../d4/d63/mqtt__api__v2_8hpp.html#af1b36c99ddef619aa99f00a2f2d90ba4">   88</a></span>&#160;<span class="preprocessor">#define GLOBAL_MQTT_SERVER (&quot;1.1.1.1&quot;)</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="../../d4/d63/mqtt__api__v2_8hpp.html#af1b36c99ddef619aa99f00a2f2d90ba4">   88</a></span>&#160;<span class="preprocessor">#define GLOBAL_MQTT_SERVER &quot;mqtt://192.168.1.157:1883&quot;</span></div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">/*------------------------------------------------------------------------------+</span></div>

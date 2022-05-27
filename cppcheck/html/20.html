@@ -374,10 +374,10 @@
 <a name="line-82"></a><span class="cp">#ifndef GLOBAL_MQTT_SERVER</span>
 <a name="line-83"></a><span class="cp">#ifdef __ESP32__</span>
 <a name="line-84"></a><span class="cp">#warning &quot;GLOBAL_MQTT_SERVER Not defined, using 1.1.1.1&quot;</span>
-<a name="line-85"></a><span class="cp">#define GLOBAL_MQTT_SERVER (&quot;1.1.1.1&quot;)</span>
+<a name="line-85"></a><span class="cp">#define GLOBAL_MQTT_SERVER &quot;mqtt:</span><span class="c1">//192.168.1.157:1883&quot;</span>
 <a name="line-86"></a><span class="cp">#else</span>
 <a name="line-87"></a><span class="c1">// ignore warning since we do not have a mqtt compatable target</span>
-<a name="line-88"></a><span class="cp">#define GLOBAL_MQTT_SERVER (&quot;1.1.1.1&quot;)</span>
+<a name="line-88"></a><span class="cp">#define GLOBAL_MQTT_SERVER &quot;mqtt:</span><span class="c1">//192.168.1.157:1883&quot;</span>
 <a name="line-89"></a><span class="cp">#endif</span>
 <a name="line-90"></a><span class="cp">#endif</span>
 <a name="line-91"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
