@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-27 14:52:09</td>
+            <td class="headerValue">2022-05-27 14:54:26</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -680,14 +680,14 @@
     <tr>
     <td align="right" class="lineno"><pre>55</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
     <td align="left" class="src coveredLine"><pre>	ServiceTimeBase(const BUFFER_TYPE&amp; buffer, const db_id error_id, const size_t delay)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>56</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>6</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
     <td align="left" class="src coveredLine"><pre>		: ServiceBase&lt;BUFFER_TYPE>(buffer, error_id), m_delay{delay} {};</pre></td>
     </tr>
 
@@ -701,7 +701,7 @@
     <tr>
     <td align="right" class="lineno"><pre>58</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
     <td align="left" class="src coveredLine"><pre>	virtual ~ServiceTimeBase(void) {}</pre></td>
     </tr>
 
@@ -1051,21 +1051,21 @@
     <tr>
     <td align="right" class="lineno"><pre>108</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
     <td align="left" class="src coveredLine"><pre>	serviceTime_MOCK(const MQTT_Message&amp; buffer, const db_id error_id, size_t delay)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>109</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
     <td align="left" class="src coveredLine"><pre>		: ServiceTimeBase&lt;&amp;(Timeservice::wait_ms), MQTT_Message>(buffer, error_id, delay){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>110</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>16</pre></td>
     <td align="left" class="src coveredLine"><pre>	~serviceTime_MOCK(){};</pre></td>
     </tr>
 
