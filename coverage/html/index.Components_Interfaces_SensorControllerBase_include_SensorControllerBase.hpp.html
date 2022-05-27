@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-27 14:22:54</td>
+            <td class="headerValue">2022-05-27 14:38:01</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">6</td>
@@ -764,35 +764,35 @@
     <tr>
     <td align="right" class="lineno"><pre>67</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>10</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>14</pre></td>
     <td align="left" class="src coveredLine"><pre>	SensorControllerBase(const init_conf&amp; conf)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>68</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>42</pre></td>
     <td align="left" class="src coveredLine"><pre>		: m_buffer_raw{conf.buffer_raw_conf}, m_buffer_external{conf.buffer_external_conf},</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>69</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>10</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>14</pre></td>
     <td align="left" class="src coveredLine"><pre>		  m_want_data_flag{false}, m_data_ready_flag{false}, m_delay{conf.task_delay},</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>70</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="takenBranch" title="Branch 9 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 16 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 17 not taken">&cross;</span><span class="takenBranch" title="Branch 19 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 20 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 27 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 28 not taken">&cross;</span><span class="takenBranch" title="Branch 30 taken 10 times">&check;</span><span class="notTakenBranch" title="Branch 31 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>20</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 14 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="takenBranch" title="Branch 9 taken 14 times">&check;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 16 taken 14 times">&check;</span><span class="notTakenBranch" title="Branch 17 not taken">&cross;</span><span class="takenBranch" title="Branch 19 taken 14 times">&check;</span><span class="notTakenBranch" title="Branch 20 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 27 taken 14 times">&check;</span><span class="notTakenBranch" title="Branch 28 not taken">&cross;</span><span class="takenBranch" title="Branch 30 taken 14 times">&check;</span><span class="notTakenBranch" title="Branch 31 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>28</pre></td>
     <td align="left" class="src coveredLine"><pre>		  m_error_id{conf.error_code_id} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>71</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>20</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>28</pre></td>
     <td align="left" class="src coveredLine"><pre>	virtual ~SensorControllerBase(){};</pre></td>
     </tr>
 
@@ -848,7 +848,7 @@
     <tr>
     <td align="right" class="lineno"><pre>79</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
     <td align="left" class="src coveredLine"><pre>	inline const auto&amp; getSafeBuffer()</pre></td>
     </tr>
 
@@ -862,7 +862,7 @@
     <tr>
     <td align="right" class="lineno"><pre>81</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_buffer_external;</pre></td>
     </tr>
 
