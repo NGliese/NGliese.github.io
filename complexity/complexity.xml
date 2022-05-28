@@ -1185,32 +1185,32 @@
 			<value>15</value>
 			<value>8</value>
 		</item>
-		<item name="esp32Cam::init_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:99">
+		<item name="esp32Cam::init_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:100">
 			<value>221</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
-		<item name="esp32Cam::releasePicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:121">
+		<item name="esp32Cam::releasePicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:122">
 			<value>222</value>
 			<value>13</value>
 			<value>6</value>
 		</item>
-		<item name="esp32Cam::getPicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:145">
+		<item name="esp32Cam::getPicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:146">
 			<value>223</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<item name="esp32Cam::getJPGPicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:165">
+		<item name="esp32Cam::getJPGPicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:166">
 			<value>224</value>
 			<value>16</value>
 			<value>8</value>
 		</item>
-		<item name="esp32Cam::deinit_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:195">
+		<item name="esp32Cam::deinit_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:196">
 			<value>225</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
-		<item name="esp32Cam::reboot_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:204">
+		<item name="esp32Cam::reboot_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:205">
 			<value>226</value>
 			<value>20</value>
 			<value>3</value>
