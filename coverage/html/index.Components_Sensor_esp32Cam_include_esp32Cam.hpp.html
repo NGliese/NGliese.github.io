@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-05-27 15:24:28</td>
+            <td class="headerValue">2022-05-28 07:55:51</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">5</td>
@@ -841,7 +841,7 @@
     <tr>
     <td align="right" class="lineno"><pre>78</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>624</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
     <td align="left" class="src coveredLine"><pre>	inline static esp32Cam&amp; Instance()</pre></td>
     </tr>
 
@@ -854,15 +854,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>80</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 52 times">&check;</span><span class="takenBranch" title="Branch 1 taken 572 times">&check;</span><span class="takenBranch" title="Branch 3 taken 52 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 6 taken 52 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="notTakenBranch" title="Branch 11 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>624</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 2 times">&check;</span><span class="takenBranch" title="Branch 1 taken 22 times">&check;</span><span class="takenBranch" title="Branch 3 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 6 taken 2 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="notTakenBranch" title="Branch 11 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
     <td align="left" class="src coveredLine"><pre>		static esp32Cam instance;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>81</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>624</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
     <td align="left" class="src coveredLine"><pre>		return instance;</pre></td>
     </tr>
 
@@ -1101,235 +1101,291 @@
     <td align="right" class="lineno"><pre>115</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>  private:</pre></td>
+    <td align="left" class="src "><pre>	/**</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>116</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
-    <td align="left" class="src coveredLine"><pre>	inline esp32Cam() : m_hasImageBeenReleased{true}, m_pic{nullptr}</pre></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	 * @brief reboot the camera</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>117</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	{</pre></td>
+    <td align="left" class="src "><pre>	 *</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>118</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
-    <td align="left" class="src coveredLine"><pre>		auto err = init_camera();</pre></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	 * @return general_err_t</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>119</pre></td>
-    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 0 not taken">&cross;</span><span class="takenBranch" title="Branch 1 taken 52 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
-    <td align="left" class="src coveredLine"><pre>		if(err != GE_OK)</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	 */</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>120</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		{</pre></td>
+    <td align="left" class="src "><pre>	static general_err_t reboot_camera();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>121</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>			Timeservice::wait_sec(5);</pre></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>122</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>			exit(-1);</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>123</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>		}</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>124</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
-    <td align="left" class="src coveredLine"><pre>	};</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>125</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
-    <td align="left" class="src coveredLine"><pre>	inline ~esp32Cam(){};</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>126</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	static general_err_t init_camera();</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>127</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	bool m_hasImageBeenReleased;</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>128</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>129</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	camera_fb_t* m_pic;</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>130</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>};</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>131</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>132</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>/*------------------------------------------------------------------------------+</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>133</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> |   		 				 Unit Test Class               		                |</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>134</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> +------------------------------------------------------------------------------*/</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>135</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>136</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifdef __UNITTEST__</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>137</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>class friend_esp32Cam</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>138</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>{</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>139</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>  public:</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>140</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	explicit friend_esp32Cam(esp32Cam* sensor) : m_sensor{sensor} {};</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>141</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	~friend_esp32Cam();</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>142</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>143</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>  private:</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>144</pre></td>
+    <td align="right" class="lineno"><pre>123</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	esp32Cam* m_sensor;</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline esp32Cam() : m_hasImageBeenReleased{true}, m_pic{nullptr}</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>145</pre></td>
+    <td align="right" class="lineno"><pre>124</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>};</pre></td>
+    <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>146</pre></td>
+    <td align="right" class="lineno"><pre>125</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		auto err = init_camera();</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>147</pre></td>
+    <td align="right" class="lineno"><pre>126</pre></td>
+    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 0 not taken">&cross;</span><span class="takenBranch" title="Branch 1 taken 2 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>		if(err != GE_OK)</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>127</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>		{</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>128</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>			Timeservice::wait_sec(5);</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>129</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>			exit(-1);</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>130</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>		}</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>131</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	};</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>132</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>2</pre></td>
+    <td align="left" class="src coveredLine"><pre>	inline ~esp32Cam(){};</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>133</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	static general_err_t init_camera();</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>134</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	static general_err_t deinit_camera();</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>135</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	bool m_hasImageBeenReleased;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>136</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
+    <td align="right" class="lineno"><pre>137</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	camera_fb_t* m_pic;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>138</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>};</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>139</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>140</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>/*------------------------------------------------------------------------------+</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>141</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre> |   		 				 Unit Test Class               		                |</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>142</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre> +------------------------------------------------------------------------------*/</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>143</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>144</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>#ifdef __UNITTEST__</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>145</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>class friend_esp32Cam</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>146</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>147</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>  public:</pre></td>
+    </tr>
+
+    <tr>
     <td align="right" class="lineno"><pre>148</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	explicit friend_esp32Cam(esp32Cam* sensor) : m_sensor{sensor} {};</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>149</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	~friend_esp32Cam();</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>150</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>151</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>  private:</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>152</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>	esp32Cam* m_sensor;</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>153</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>};</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>154</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>155</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>156</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif //_MODULES_SENSOR_ESP32CAM_INCLUDE_ESP32CAM_HPP_</pre></td>
