@@ -109,10 +109,14 @@ Functions</h2></td></tr>
 <tr class="separator:a89ca4c61cc4bdd01310906b29733eb64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a22b752e4ed1bcc64e30983ece8b685ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d38/utils__test_8cpp.html#a22b752e4ed1bcc64e30983ece8b685ac">TEST</a> (Utils_GRP, split_string)</td></tr>
 <tr class="separator:a22b752e4ed1bcc64e30983ece8b685ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3276af196cf2a4cdc1acb6105944454a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d38/utils__test_8cpp.html#a3276af196cf2a4cdc1acb6105944454a">TEST</a> (Utils_GRP, leastsegbyte)</td></tr>
+<tr class="separator:a3276af196cf2a4cdc1acb6105944454a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac770eaa617af08bbe8e8cc0d7f4c992"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d38/utils__test_8cpp.html#aac770eaa617af08bbe8e8cc0d7f4c992">TEST</a> (Utils_GRP, mostsegbyte)</td></tr>
+<tr class="separator:aac770eaa617af08bbe8e8cc0d7f4c992"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a89ca4c61cc4bdd01310906b29733eb64"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89ca4c61cc4bdd01310906b29733eb64">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a89ca4c61cc4bdd01310906b29733eb64">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -156,7 +160,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab4551417ca1dd62287007c0a3ff0c1cf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab4551417ca1dd62287007c0a3ff0c1cf">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4551417ca1dd62287007c0a3ff0c1cf">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -207,8 +211,80 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a3276af196cf2a4cdc1acb6105944454a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3276af196cf2a4cdc1acb6105944454a">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Utils_GRP&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">leastsegbyte&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d38/utils__test_8cpp_source.html#l00069">69</a> of file <a class="el" href="../../d5/d38/utils__test_8cpp_source.html">utils_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    uint16_t test = 0x0292;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    LONGS_EQUAL(0x92, <a class="code" href="../../d1/d91/namespacebasic__utils.html#a20be0020da7d52cf6def9caf81bb1f48">basic_utils::getLeastSignificantByte</a>(test));</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/d91/namespacebasic__utils.html#a20be0020da7d52cf6def9caf81bb1f48">basic_utils::getLeastSignificantByte()</a>.</p>
+
+</div>
+</div>
+<a id="aac770eaa617af08bbe8e8cc0d7f4c992"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac770eaa617af08bbe8e8cc0d7f4c992">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">Utils_GRP&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mostsegbyte&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d5/d38/utils__test_8cpp_source.html#l00075">75</a> of file <a class="el" href="../../d5/d38/utils__test_8cpp_source.html">utils_test.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    uint16_t test = 0x0292;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    LONGS_EQUAL(0x02, <a class="code" href="../../d1/d91/namespacebasic__utils.html#a1f93c1b3a8743c3dc4935812248fd543">basic_utils::getMostSignificantByte</a>(test));</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d1/d91/namespacebasic__utils.html#a1f93c1b3a8743c3dc4935812248fd543">basic_utils::getMostSignificantByte()</a>.</p>
+
+</div>
+</div>
 <a id="a22b752e4ed1bcc64e30983ece8b685ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a22b752e4ed1bcc64e30983ece8b685ac">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a22b752e4ed1bcc64e30983ece8b685ac">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,10 +353,12 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacebasic__utils_html_abcb3d0905a1add1bfb84a387f32fdaa4"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#abcb3d0905a1add1bfb84a387f32fdaa4">basic_utils::shift32BitTo8</a></div><div class="ttdeci">general_err_t shift32BitTo8(const uint32_t &amp;b32, uint8_t &amp;b1, uint8_t &amp;b2, uint8_t &amp;b3, uint8_t &amp;b4)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00172">utils.cpp:172</a></div></div>
+<div class="ttc" id="anamespacebasic__utils_html_abcb3d0905a1add1bfb84a387f32fdaa4"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#abcb3d0905a1add1bfb84a387f32fdaa4">basic_utils::shift32BitTo8</a></div><div class="ttdeci">general_err_t shift32BitTo8(const uint32_t &amp;b32, uint8_t &amp;b1, uint8_t &amp;b2, uint8_t &amp;b3, uint8_t &amp;b4)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00177">utils.cpp:177</a></div></div>
+<div class="ttc" id="anamespacebasic__utils_html_a20be0020da7d52cf6def9caf81bb1f48"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#a20be0020da7d52cf6def9caf81bb1f48">basic_utils::getLeastSignificantByte</a></div><div class="ttdeci">uint8_t getLeastSignificantByte(uint16_t data)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00161">utils.cpp:161</a></div></div>
+<div class="ttc" id="anamespacebasic__utils_html_a1f93c1b3a8743c3dc4935812248fd543"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#a1f93c1b3a8743c3dc4935812248fd543">basic_utils::getMostSignificantByte</a></div><div class="ttdeci">uint8_t getMostSignificantByte(uint16_t data)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00166">utils.cpp:166</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
 <div class="ttc" id="anamespacebasic__utils_html_ae224bc997d6ec4c751530be2569999bf"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#ae224bc997d6ec4c751530be2569999bf">basic_utils::split</a></div><div class="ttdeci">void split(const std::string &amp;s, char delim, std::vector&lt; std::string &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00013">utils.cpp:13</a></div></div>
-<div class="ttc" id="anamespacebasic__utils_html_a6d24c5e923faf871ecdabf0f81e6f880"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#a6d24c5e923faf871ecdabf0f81e6f880">basic_utils::shift8BitTo32</a></div><div class="ttdeci">uint32_t shift8BitTo32(const uint8_t &amp;b1, const uint8_t &amp;b2, const uint8_t &amp;b3, const uint8_t &amp;b4)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00166">utils.cpp:166</a></div></div>
+<div class="ttc" id="anamespacebasic__utils_html_a6d24c5e923faf871ecdabf0f81e6f880"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#a6d24c5e923faf871ecdabf0f81e6f880">basic_utils::shift8BitTo32</a></div><div class="ttdeci">uint32_t shift8BitTo32(const uint8_t &amp;b1, const uint8_t &amp;b2, const uint8_t &amp;b3, const uint8_t &amp;b4)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00171">utils.cpp:171</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

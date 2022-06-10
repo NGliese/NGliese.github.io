@@ -10,6 +10,11 @@ var hierarchy =
     [ "ADCBase< uint32_t >", "dc/d23/class_a_d_c_base.html", [
       [ "ADC_API_ESP32", "d4/d70/class_a_d_c___a_p_i___e_s_p32.html", null ]
     ] ],
+    [ "AM2320_Base", "d6/db1/class_a_m2320___base.html", [
+      [ "AM2320_Humidity", "d8/d73/class_a_m2320___humidity.html", null ],
+      [ "AM2320_MOCK", "d3/d0f/class_a_m2320___m_o_c_k.html", null ],
+      [ "AM2320_Temperature", "d5/de6/class_a_m2320___temperature.html", null ]
+    ] ],
     [ "Background_Extractor::background_conf_t", "db/d4d/class_background___extractor.html#db/da2/struct_background___extractor_1_1background__conf__t", null ],
     [ "Background_Extractor", "db/d4d/class_background___extractor.html", null ],
     [ "basic", "d0/deb/namespace_3global_scope_4.html#d3/d07/classbasic", null ],
@@ -45,6 +50,7 @@ var hierarchy =
     [ "hal_mqtt_log", "d8/da0/classhal__mqtt__log.html", null ],
     [ "hal_stdout", "d3/d9d/classhal__stdout.html", null ],
     [ "i2c< i2c_class >", "da/d55/classi2c.html", null ],
+    [ "i2c< i2c_esp32 >", "da/d55/classi2c.html", null ],
     [ "i2c_conf_t", "d9/ddd/i2c__common_8hpp.html#db/dd0/structi2c__conf__t", null ],
     [ "i2c_esp32", "d3/d68/classi2c__esp32.html", null ],
     [ "i2c_mock", "dc/d92/classi2c__mock.html", null ],

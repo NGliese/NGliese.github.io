@@ -232,6 +232,34 @@
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp" line="24" column="2"/>
             <symbol>m_coreId</symbol>
         </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="58" column="2"/>
+            <symbol>i2c_esp32</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;i2c &lt; i2c_esp32 &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;i2c &lt; i2c_esp32 &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c.hpp" line="130" column="2"/>
+            <symbol>i2c &lt; i2c_esp32 &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;i2c &lt; i2c_mock &gt;&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;i2c &lt; i2c_mock &gt;&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c.hpp" line="130" column="2"/>
+            <symbol>i2c &lt; i2c_mock &gt;</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Humidity.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="58" column="2"/>
+            <symbol>i2c_esp32</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;AM2320_Humidity&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;AM2320_Humidity&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Humidity.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/include/AM2320_Humidity.hpp" line="54" column="2"/>
+            <symbol>AM2320_Humidity</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Temperature.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="58" column="2"/>
+            <symbol>i2c_esp32</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;AM2320_Temperature&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;AM2320_Temperature&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Temperature.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/include/AM2320_Temperature.hpp" line="54" column="2"/>
+            <symbol>AM2320_Temperature</symbol>
+        </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;WiFi_SAL_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="82" column="2"/>
             <symbol>WiFi_SAL_esp32</symbol>

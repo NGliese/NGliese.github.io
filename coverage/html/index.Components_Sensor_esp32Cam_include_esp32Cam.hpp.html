@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-06-10 10:59:15</td>
+            <td class="headerValue">2022-06-10 18:04:14</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">5</td>
@@ -841,7 +841,7 @@
     <tr>
     <td align="right" class="lineno"><pre>78</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>144</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>504</pre></td>
     <td align="left" class="src coveredLine"><pre>	inline static esp32Cam&amp; Instance()</pre></td>
     </tr>
 
@@ -854,15 +854,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>80</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 12 times">&check;</span><span class="takenBranch" title="Branch 1 taken 132 times">&check;</span><span class="takenBranch" title="Branch 3 taken 12 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 6 taken 12 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="notTakenBranch" title="Branch 11 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>144</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 42 times">&check;</span><span class="takenBranch" title="Branch 1 taken 462 times">&check;</span><span class="takenBranch" title="Branch 3 taken 42 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 6 taken 42 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="notTakenBranch" title="Branch 11 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>504</pre></td>
     <td align="left" class="src coveredLine"><pre>		static esp32Cam instance;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>81</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>144</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>504</pre></td>
     <td align="left" class="src coveredLine"><pre>		return instance;</pre></td>
     </tr>
 
@@ -1156,7 +1156,7 @@
     <tr>
     <td align="right" class="lineno"><pre>123</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>42</pre></td>
     <td align="left" class="src coveredLine"><pre>	inline esp32Cam() : m_hasImageBeenReleased{true}, m_pic{nullptr}</pre></td>
     </tr>
 
@@ -1170,14 +1170,14 @@
     <tr>
     <td align="right" class="lineno"><pre>125</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>42</pre></td>
     <td align="left" class="src coveredLine"><pre>		auto err = init_camera();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>126</pre></td>
-    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 0 not taken">&cross;</span><span class="takenBranch" title="Branch 1 taken 12 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
+    <td align="right" class="linebranch"><span class="notTakenBranch" title="Branch 0 not taken">&cross;</span><span class="takenBranch" title="Branch 1 taken 42 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>42</pre></td>
     <td align="left" class="src coveredLine"><pre>		if(err != GE_OK)</pre></td>
     </tr>
 
@@ -1212,14 +1212,14 @@
     <tr>
     <td align="right" class="lineno"><pre>131</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>42</pre></td>
     <td align="left" class="src coveredLine"><pre>	};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>132</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>42</pre></td>
     <td align="left" class="src coveredLine"><pre>	inline ~esp32Cam(){};</pre></td>
     </tr>
 

@@ -4,6 +4,7 @@ var utils_8h =
     [ "floatToString", "d5/d60/utils_8h.html#a72f2efdaab51e84f7eb5ed095a2bfa3d", null ],
     [ "floatToString", "d5/d60/utils_8h.html#a224071328d546f28884d2533ea03b28f", null ],
     [ "getLeastSignificantByte", "d5/d60/utils_8h.html#a20be0020da7d52cf6def9caf81bb1f48", null ],
+    [ "getMostSignificantByte", "d5/d60/utils_8h.html#a1f93c1b3a8743c3dc4935812248fd543", null ],
     [ "intToString", "d5/d60/utils_8h.html#a805ee8eae8ba4b0a06cd73d754d2a48e", null ],
     [ "is_even", "d5/d60/utils_8h.html#a7722c4cec4a7ca2b8123818e2b9e32c3", null ],
     [ "leastSignificantByteExchange", "d5/d60/utils_8h.html#af74cebd59b0e0eb1c63cf6f01f9e9df4", null ],

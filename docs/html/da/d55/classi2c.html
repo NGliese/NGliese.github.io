@@ -95,6 +95,12 @@ $(document).ready(function(){initNavTree('da/d55/classi2c.html','../../'); initR
 
 <p><code>#include &lt;<a class="el" href="../../db/d1c/i2c_8hpp_source.html">i2c.hpp</a>&gt;</code></p>
 <div class="dynheader">
+Inheritance diagram for i2c&lt; i2c_class &gt;:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dd/df3/classi2c__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<div class="dynheader">
 Collaboration diagram for i2c&lt; i2c_class &gt;:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="../../d4/d1e/classi2c__coll__graph.svg" width="162" height="434"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
@@ -212,8 +218,6 @@ template&lt;typename i2c_class &gt; </div>
 <p class="definition">Definition at line <a class="el" href="../../db/d1c/i2c_8hpp_source.html#l00130">130</a> of file <a class="el" href="../../db/d1c/i2c_8hpp_source.html">i2c.hpp</a>.</p>
 <div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;: <a class="code" href="../../da/d55/classi2c.html#ad94f5ca760756b6b998bd830b501cf74">m_conf</a>{<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>}, <a class="code" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">m_hal</a>{<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>} {};</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -248,7 +252,7 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>uint16_t<span class="keyword">&gt;</span>((arr[0] * 256) + arr[1]);</div>
 <div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a34a44384f844b7276e746892febc88fd">i2c&lt; i2c_class &gt;::readWord()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a34a44384f844b7276e746892febc88fd">i2c&lt; i2c_esp32 &gt;::readWord()</a>.</p>
 
 </div>
 </div>
@@ -293,9 +297,7 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> ref_to_i2c;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST()</a>, and <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a959e73f63e0bc09c30e078236bf00fb9">TEST_GROUP()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/db1/class_a_m2320___base.html#a160df71069b5c26f94b6524755358eb8">AM2320_Base::AM2320_Base()</a>, <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a89606d1eb5c355617d4195a4007025bc">TEST()</a>, and <a class="el" href="../../d0/d30/i2c__test_8cpp.html#a959e73f63e0bc09c30e078236bf00fb9">TEST_GROUP()</a>.</p>
 
 </div>
 </div>
@@ -330,8 +332,6 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">m_hal</a>.readByte(slave_address);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    };</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">i2c&lt; i2c_class &gt;::m_hal</a>.</p>
-
 </div>
 </div>
 <a id="ae1c3c0c0f78c61acab11c6f2ebe94c51"></a>
@@ -377,8 +377,6 @@ template&lt;size_t N&gt; </div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">m_hal</a>.readMultiBytes(slave_address, array.data(), array.size());</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">i2c&lt; i2c_class &gt;::m_hal</a>.</p>
-
 </div>
 </div>
 <a id="a34a44384f844b7276e746892febc88fd"></a>
@@ -414,8 +412,6 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d55/classi2c.html#a4c56c1a90493238ba95d457e6b4cc9c2">bytes2word</a>(arr);</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d55/classi2c.html#a4c56c1a90493238ba95d457e6b4cc9c2">i2c&lt; i2c_class &gt;::bytes2word()</a>.</p>
-
 </div>
 </div>
 <a id="a84d4af5bace7a4fcbbf93bf3ee69c1c5"></a>
@@ -468,8 +464,6 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        printf(<span class="stringliteral">&quot;\n&quot;</span>);</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    };</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d55/classi2c.html#ad94f5ca760756b6b998bd830b501cf74">i2c&lt; i2c_class &gt;::m_conf</a>, <a class="el" href="../../d9/ddd/i2c__common_8hpp.html#afc19865c7909e77097c3853e585af672">i2c_conf_t::pin_sclk</a>, <a class="el" href="../../d9/ddd/i2c__common_8hpp.html#a9de979989b6a5ad50959002e2cd5966b">i2c_conf_t::pin_sda</a>, and <a class="el" href="../../da/d55/classi2c.html#ac5a0ba31bb4f86aafcfbe3795ac83c72">i2c&lt; i2c_class &gt;::slavePresent()</a>.</p>
-
 </div>
 </div>
 <a id="ac5a0ba31bb4f86aafcfbe3795ac83c72"></a>
@@ -503,9 +497,7 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">m_hal</a>.slavePresent(slave_address);</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    };</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">i2c&lt; i2c_class &gt;::m_hal</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a84d4af5bace7a4fcbbf93bf3ee69c1c5">i2c&lt; i2c_class &gt;::scan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a84d4af5bace7a4fcbbf93bf3ee69c1c5">i2c&lt; i2c_esp32 &gt;::scan()</a>, and <a class="el" href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">AM2320_Base::wakeUp()</a>.</p>
 
 </div>
 </div>
@@ -540,7 +532,7 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        <span class="keywordflow">return</span> {<span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(data &gt;&gt; 8 &amp; 0xff), <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(data &amp; 0xff)};</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a79dc8300582eb24fcd59a8c54b1e6121">i2c&lt; i2c_class &gt;::writeWord()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a79dc8300582eb24fcd59a8c54b1e6121">i2c&lt; i2c_esp32 &gt;::writeWord()</a>.</p>
 
 </div>
 </div>
@@ -585,8 +577,6 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">m_hal</a>.writeByte(slave_address, <span class="keywordtype">byte</span>);</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">i2c&lt; i2c_class &gt;::m_hal</a>.</p>
-
 </div>
 </div>
 <a id="ac2781b43f9b76cb707493a6786427353"></a>
@@ -632,8 +622,6 @@ template&lt;size_t N&gt; </div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">m_hal</a>.writeMultiBytes(slave_address, array.data(), array.size());</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d55/classi2c.html#a02ed7c2da100277bc3c274f60854831f">i2c&lt; i2c_class &gt;::m_hal</a>.</p>
-
 </div>
 </div>
 <a id="a79dc8300582eb24fcd59a8c54b1e6121"></a>
@@ -678,8 +666,6 @@ template&lt;typename i2c_class &gt; </div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="keywordflow">return</span> writeMultiBytes&lt;2&gt;(slave_address, arr);</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../da/d55/classi2c.html#a9164b9f6245ef8ec00fdfdecd681cf96">i2c&lt; i2c_class &gt;::word2bytes()</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -707,7 +693,7 @@ template&lt;typename i2c_class &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d1c/i2c_8hpp_source.html#l00142">142</a> of file <a class="el" href="../../db/d1c/i2c_8hpp_source.html">i2c.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a84d4af5bace7a4fcbbf93bf3ee69c1c5">i2c&lt; i2c_class &gt;::scan()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a84d4af5bace7a4fcbbf93bf3ee69c1c5">i2c&lt; i2c_esp32 &gt;::scan()</a>.</p>
 
 </div>
 </div>
@@ -735,7 +721,7 @@ template&lt;typename i2c_class &gt; </div>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d1c/i2c_8hpp_source.html#l00143">143</a> of file <a class="el" href="../../db/d1c/i2c_8hpp_source.html">i2c.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a2ddc4c88d470062e30e6eb26f15d9de8">i2c&lt; i2c_class &gt;::readByte()</a>, <a class="el" href="../../da/d55/classi2c.html#ae1c3c0c0f78c61acab11c6f2ebe94c51">i2c&lt; i2c_class &gt;::readMultiBytes()</a>, <a class="el" href="../../da/d55/classi2c.html#ac5a0ba31bb4f86aafcfbe3795ac83c72">i2c&lt; i2c_class &gt;::slavePresent()</a>, <a class="el" href="../../da/d55/classi2c.html#aaeb8cf72f2ec363ca42e8a10394fcbf1">i2c&lt; i2c_class &gt;::writeByte()</a>, and <a class="el" href="../../da/d55/classi2c.html#ac2781b43f9b76cb707493a6786427353">i2c&lt; i2c_class &gt;::writeMultiBytes()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../da/d55/classi2c.html#a2ddc4c88d470062e30e6eb26f15d9de8">i2c&lt; i2c_esp32 &gt;::readByte()</a>, <a class="el" href="../../da/d55/classi2c.html#ae1c3c0c0f78c61acab11c6f2ebe94c51">i2c&lt; i2c_esp32 &gt;::readMultiBytes()</a>, <a class="el" href="../../da/d55/classi2c.html#ac5a0ba31bb4f86aafcfbe3795ac83c72">i2c&lt; i2c_esp32 &gt;::slavePresent()</a>, <a class="el" href="../../da/d55/classi2c.html#aaeb8cf72f2ec363ca42e8a10394fcbf1">i2c&lt; i2c_esp32 &gt;::writeByte()</a>, and <a class="el" href="../../da/d55/classi2c.html#ac2781b43f9b76cb707493a6786427353">i2c&lt; i2c_esp32 &gt;::writeMultiBytes()</a>.</p>
 
 </div>
 </div>

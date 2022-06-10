@@ -1,4 +1,11 @@
 <map id="Components/Protocols/I2C/include/i2c_esp32.hpp" name="Components/Protocols/I2C/include/i2c_esp32.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,200,47"/>
-<area shape="rect" id="node2" href="$de/deb/i2c__esp32_8cpp.html" title=" " alt="" coords="19,95,187,136"/>
+<area shape="rect" id="node1" title=" " alt="" coords="219,5,414,47"/>
+<area shape="rect" id="node2" href="$de/deb/i2c__esp32_8cpp.html" title=" " alt="" coords="126,95,294,136"/>
+<area shape="rect" id="node3" href="$db/d89/_a_m2320___base_8hpp.html" title=" " alt="" coords="319,95,528,136"/>
+<area shape="rect" id="node4" href="$d4/de2/_a_m2320___humidity_8hpp.html" title=" " alt="" coords="84,184,307,225"/>
+<area shape="rect" id="node6" href="$d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html" title=" " alt="" coords="239,273,448,315"/>
+<area shape="rect" id="node7" href="$df/d33/_a_m2320___temperature_8hpp.html" title=" " alt="" coords="380,184,627,225"/>
+<area shape="rect" id="node9" href="$db/ddd/_a_m2320___base_8cpp.html" title=" " alt="" coords="651,184,860,225"/>
+<area shape="rect" id="node5" href="$dd/d78/_a_m2320___humidity_8cpp.html" title=" " alt="" coords="5,273,215,315"/>
+<area shape="rect" id="node8" href="$d0/dc8/_a_m2320___temperature_8cpp.html" title=" " alt="" coords="473,273,691,315"/>
 </map>
