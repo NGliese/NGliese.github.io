@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['name_2392',['name',['../dc/d07/_m_g996_r_8hpp.html#a043f9d09607977adb62f36a9e3e6ea6b',1,'mg996r_conf_t::name()'],['../db/d4d/class_background___extractor.html#a17c25332dba2b66a2381392a209a9fd8',1,'Background_Extractor::name()'],['../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a9ec22bd5ec598516477160bead88c1e2',1,'ADC_API_ESP32::config::name()'],['../d5/d2e/sensor_8h.html#a2d5e8830783cd7da6fa457000e828ec8',1,'camera_sensor_info_t::name()']]],
-  ['night_5ftime_5fend_2393',['NIGHT_TIME_END',['../d8/d61/_timebased__rules_8cpp.html#a0a65116ddb59c8fb1dbd152da5eabe21',1,'Timebased_rules.cpp']]],
-  ['night_5ftime_5fstart_2394',['NIGHT_TIME_START',['../d8/d61/_timebased__rules_8cpp.html#a419c592cf86bdb9a99e8cebb4b764f35',1,'Timebased_rules.cpp']]]
+  ['name_2396',['name',['../dc/d07/_m_g996_r_8hpp.html#a043f9d09607977adb62f36a9e3e6ea6b',1,'mg996r_conf_t::name()'],['../db/d4d/class_background___extractor.html#a17c25332dba2b66a2381392a209a9fd8',1,'Background_Extractor::name()'],['../d4/d70/class_a_d_c___a_p_i___e_s_p32.html#a9ec22bd5ec598516477160bead88c1e2',1,'ADC_API_ESP32::config::name()'],['../d5/d2e/sensor_8h.html#a2d5e8830783cd7da6fa457000e828ec8',1,'camera_sensor_info_t::name()']]],
+  ['night_5ftime_5fend_2397',['NIGHT_TIME_END',['../d8/d61/_timebased__rules_8cpp.html#a0a65116ddb59c8fb1dbd152da5eabe21',1,'Timebased_rules.cpp']]],
+  ['night_5ftime_5fstart_2398',['NIGHT_TIME_START',['../d8/d61/_timebased__rules_8cpp.html#a419c592cf86bdb9a99e8cebb4b764f35',1,'Timebased_rules.cpp']]]
 ];

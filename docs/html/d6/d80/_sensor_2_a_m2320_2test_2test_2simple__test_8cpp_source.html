@@ -112,59 +112,43 @@ $(document).ready(function(){initNavTree('d6/d80/_sensor_2_a_m2320_2test_2test_2
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">    </span>{</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keywordflow">return</span> 10;</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    }</div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="../../d3/d0f/class_a_m2320___m_o_c_k.html#a1abc879cfbbe67da3aec206cad5efb07">   27</a></span>&#160;    uint16_t <a class="code" href="../../d3/d0f/class_a_m2320___m_o_c_k.html#a1abc879cfbbe67da3aec206cad5efb07">convert2SI</a>(<span class="keyword">const</span> uint16_t&amp; raw)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">return</span> 10;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;};</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#a431b1385ed7e271c88e3867244807c5a">   33</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a5277e18d9163c4ebd65ee2e0de3a4560">TEST_GROUP</a>(AM2320_GRP)</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="../../d5/de6/class_a_m2320___temperature.html">AM2320_Temperature</a> m_temp_sensor{{5000, 21, 22}};</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    friend_AM2320_Temperature m_temp_friend{&amp;m_temp_sensor};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="../../d8/d73/class_a_m2320___humidity.html">AM2320_Humidity</a> m_hum_sensor{{5000, 21, 22}};</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    friend_AM2320_Humidity m_hum_friend{&amp;m_hum_sensor};</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> setup() {}</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> teardown()</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// Uninit stuff</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    }</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#ab130dfe46636787bdcaced76c6802ad7">   48</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(AM2320_GRP, init)</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="../../d3/d0f/class_a_m2320___m_o_c_k.html">AM2320_MOCK</a> m_sensor;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    CHECK(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#ad3e68dab01ac97138f38f6f64fe3af82">   55</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(AM2320_GRP, getMeasurement)</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="../../d3/d0f/class_a_m2320___m_o_c_k.html">AM2320_MOCK</a> m_sensor;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    LONGS_EQUAL(10, m_sensor.<a class="code" href="../../d6/db1/class_a_m2320___base.html#a2182750a114ded3510c52a521212ad82">getMeasurement</a>());</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#a593945854ad17733a019a800689a2a9c">   62</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(AM2320_GRP, init_temp)</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="../../d5/de6/class_a_m2320___temperature.html">AM2320_Temperature</a> m_sensor{{5000, 21, 22}};</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    friend_AM2320_Temperature m_friend{&amp;m_sensor};</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    CHECK(<span class="keyword">true</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;}</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#add89d6419f60bac7f609407e31b797e7">   70</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(AM2320_GRP, convert2temp)</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;{</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    LONGS_EQUAL(277, m_temp_friend.convert2SI(0x0115));</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#a1141a7829d47e9909d9a52bebca3efc7">   76</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(AM2320_GRP, convert2hum)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;{</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    LONGS_EQUAL(658, m_hum_friend.convert2SI(0x0292));</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#a431b1385ed7e271c88e3867244807c5a">   29</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a5277e18d9163c4ebd65ee2e0de3a4560">TEST_GROUP</a>(AM2320_GRP)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="../../d5/de6/class_a_m2320___temperature.html">AM2320_Temperature</a> m_temp_sensor{{5000, 21, 22}};</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    friend_AM2320_Temperature m_temp_friend{&amp;m_temp_sensor};</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="../../d8/d73/class_a_m2320___humidity.html">AM2320_Humidity</a> m_hum_sensor{{5000, 21, 22}};</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    friend_AM2320_Humidity m_hum_friend{&amp;m_hum_sensor};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> setup() {}</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> teardown()</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// Uninit stuff</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#ab130dfe46636787bdcaced76c6802ad7">   44</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(AM2320_GRP, init)</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="../../d3/d0f/class_a_m2320___m_o_c_k.html">AM2320_MOCK</a> m_sensor;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    CHECK(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#ad3e68dab01ac97138f38f6f64fe3af82">   51</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(AM2320_GRP, getMeasurement)</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d3/d0f/class_a_m2320___m_o_c_k.html">AM2320_MOCK</a> m_sensor;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    LONGS_EQUAL(10, m_sensor.<a class="code" href="../../d6/db1/class_a_m2320___base.html#a2182750a114ded3510c52a521212ad82">getMeasurement</a>());</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// test init</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#a593945854ad17733a019a800689a2a9c">   58</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(AM2320_GRP, init_temp)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="../../d5/de6/class_a_m2320___temperature.html">AM2320_Temperature</a> m_sensor{{5000, 21, 22}};</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    friend_AM2320_Temperature m_friend{&amp;m_sensor};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    CHECK(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_a_m2320___base_html"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html">AM2320_Base</a></div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_a_m2320___base_8hpp_source.html#l00052">AM2320_Base.hpp:52</a></div></div>
@@ -173,7 +157,6 @@ $(document).ready(function(){initNavTree('d6/d80/_sensor_2_a_m2320_2test_2test_2
 <div class="ttc" id="aclass_a_m2320___m_o_c_k_html"><div class="ttname"><a href="../../d3/d0f/class_a_m2320___m_o_c_k.html">AM2320_MOCK</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp_source.html#l00016">simple_test.cpp:16</a></div></div>
 <div class="ttc" id="aclass_a_m2320___temperature_html"><div class="ttname"><a href="../../d5/de6/class_a_m2320___temperature.html">AM2320_Temperature</a></div><div class="ttdef"><b>Definition:</b> <a href="../../df/d33/_a_m2320___temperature_8hpp_source.html#l00048">AM2320_Temperature.hpp:48</a></div></div>
 <div class="ttc" id="aclass_a_m2320___m_o_c_k_html_a89a0c9bd6a05d4829e53149a2b27a30a"><div class="ttname"><a href="../../d3/d0f/class_a_m2320___m_o_c_k.html#a89a0c9bd6a05d4829e53149a2b27a30a">AM2320_MOCK::~AM2320_MOCK</a></div><div class="ttdeci">~AM2320_MOCK()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp_source.html#l00020">simple_test.cpp:20</a></div></div>
-<div class="ttc" id="aclass_a_m2320___m_o_c_k_html_a1abc879cfbbe67da3aec206cad5efb07"><div class="ttname"><a href="../../d3/d0f/class_a_m2320___m_o_c_k.html#a1abc879cfbbe67da3aec206cad5efb07">AM2320_MOCK::convert2SI</a></div><div class="ttdeci">uint16_t convert2SI(const uint16_t &amp;raw) override</div><div class="ttdoc">convert the raw value to SI</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp_source.html#l00027">simple_test.cpp:27</a></div></div>
 <div class="ttc" id="a_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_html_a5277e18d9163c4ebd65ee2e0de3a4560"><div class="ttname"><a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a5277e18d9163c4ebd65ee2e0de3a4560">TEST_GROUP</a></div><div class="ttdeci">TEST_GROUP(WiFiV2_GRP)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_source.html#l00033">simple_test.cpp:33</a></div></div>
 <div class="ttc" id="aclass_a_m2320___m_o_c_k_html_af7db556efdff0e2665408723d8baa342"><div class="ttname"><a href="../../d3/d0f/class_a_m2320___m_o_c_k.html#af7db556efdff0e2665408723d8baa342">AM2320_MOCK::AM2320_MOCK</a></div><div class="ttdeci">AM2320_MOCK()</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp_source.html#l00019">simple_test.cpp:19</a></div></div>
 <div class="ttc" id="aclass_a_m2320___m_o_c_k_html_a981df867bcc5666b119a2ed9eee45a84"><div class="ttname"><a href="../../d3/d0f/class_a_m2320___m_o_c_k.html#a981df867bcc5666b119a2ed9eee45a84">AM2320_MOCK::getRaw</a></div><div class="ttdeci">uint16_t getRaw() override</div><div class="ttdoc">Get the Raw object get the raw i2c value.</div><div class="ttdef"><b>Definition:</b> <a href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp_source.html#l00023">simple_test.cpp:23</a></div></div>

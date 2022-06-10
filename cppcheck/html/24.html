@@ -221,12 +221,7 @@
 79
 80
 81
-82
-83
-84
-85
-86
-87</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cp">#ifndef Components_Sensor_AM2320_include_AM2320_Humidity_hpp</span>
+82</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cp">#ifndef Components_Sensor_AM2320_include_AM2320_Humidity_hpp</span>
 <a name="line-2"></a><span class="cp">#define Components_Sensor_AM2320_include_AM2320_Humidity_hpp</span>
 <a name="line-3"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
 <a name="line-4"></a><span class="cm"> |   		 	C L A S S   I N F O R M A T I O N                               |</span>
@@ -285,34 +280,29 @@
 <a name="line-57"></a>
 <a name="line-58"></a>  <span class="k">private</span><span class="o">:</span>
 <a name="line-59"></a>	<span class="kt">uint16_t</span> <span class="n">getRaw</span><span class="p">()</span> <span class="k">override</span><span class="p">;</span>
-<a name="line-60"></a>	<span class="kt">uint16_t</span> <span class="nf">convert2SI</span><span class="p">(</span><span class="k">const</span> <span class="kt">uint16_t</span><span class="o">&amp;</span> <span class="n">raw</span><span class="p">)</span> <span class="k">override</span><span class="p">;</span>
-<a name="line-61"></a><span class="p">};</span>
-<a name="line-62"></a>
-<a name="line-63"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-64"></a><span class="cm"> |   		 				 Unit Test Class               		                |</span>
-<a name="line-65"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-66"></a>
-<a name="line-67"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a name="line-68"></a><span class="k">class</span> <span class="nc">friend_AM2320_Humidity</span>
-<a name="line-69"></a><span class="p">{</span>
-<a name="line-70"></a>  <span class="k">public</span><span class="o">:</span>
-<a name="line-71"></a>	<span class="k">explicit</span> <span class="n">friend_AM2320_Humidity</span><span class="p">(</span><span class="n">AM2320_Humidity</span><span class="o">*</span> <span class="n">AM2320_Temperature</span><span class="p">)</span>
-<a name="line-72"></a>		<span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">AM2320_Temperature</span><span class="p">}</span> <span class="p">{};</span>
-<a name="line-73"></a>	<span class="o">~</span><span class="n">friend_AM2320_Humidity</span><span class="p">(){};</span>
-<a name="line-74"></a>	<span class="k">auto</span> <span class="nf">getRaw</span><span class="p">()</span>
-<a name="line-75"></a>	<span class="p">{</span>
-<a name="line-76"></a>		<span class="k">return</span> <span class="n">m_sensor</span><span class="o">-&gt;</span><span class="n">getRaw</span><span class="p">();</span>
-<a name="line-77"></a>	<span class="p">}</span>
-<a name="line-78"></a>	<span class="k">auto</span> <span class="nf">convert2SI</span><span class="p">(</span><span class="k">const</span> <span class="kt">uint16_t</span><span class="o">&amp;</span> <span class="n">raw</span><span class="p">)</span>
-<a name="line-79"></a>	<span class="p">{</span>
-<a name="line-80"></a>		<span class="k">return</span> <span class="n">m_sensor</span><span class="o">-&gt;</span><span class="n">convert2SI</span><span class="p">(</span><span class="n">raw</span><span class="p">);</span>
-<a name="line-81"></a>	<span class="p">}</span>
-<a name="line-82"></a>
-<a name="line-83"></a>  <span class="k">private</span><span class="o">:</span>
-<a name="line-84"></a>	<span class="n">AM2320_Humidity</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
-<a name="line-85"></a><span class="p">};</span>
-<a name="line-86"></a><span class="cp">#endif</span>
-<a name="line-87"></a><span class="cp">#endif </span><span class="cm">/*Components_Sensor_AM2320_include_AM2320_Humidity_hpp*/</span><span class="cp"></span>
+<a name="line-60"></a><span class="p">};</span>
+<a name="line-61"></a>
+<a name="line-62"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-63"></a><span class="cm"> |   		 				 Unit Test Class               		                |</span>
+<a name="line-64"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-65"></a>
+<a name="line-66"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a name="line-67"></a><span class="k">class</span> <span class="nc">friend_AM2320_Humidity</span>
+<a name="line-68"></a><span class="p">{</span>
+<a name="line-69"></a>  <span class="k">public</span><span class="o">:</span>
+<a name="line-70"></a>	<span class="k">explicit</span> <span class="n">friend_AM2320_Humidity</span><span class="p">(</span><span class="n">AM2320_Humidity</span><span class="o">*</span> <span class="n">AM2320_Temperature</span><span class="p">)</span>
+<a name="line-71"></a>		<span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">AM2320_Temperature</span><span class="p">}</span> <span class="p">{};</span>
+<a name="line-72"></a>	<span class="o">~</span><span class="n">friend_AM2320_Humidity</span><span class="p">(){};</span>
+<a name="line-73"></a>	<span class="k">auto</span> <span class="nf">getRaw</span><span class="p">()</span>
+<a name="line-74"></a>	<span class="p">{</span>
+<a name="line-75"></a>		<span class="k">return</span> <span class="n">m_sensor</span><span class="o">-&gt;</span><span class="n">getRaw</span><span class="p">();</span>
+<a name="line-76"></a>	<span class="p">}</span>
+<a name="line-77"></a>
+<a name="line-78"></a>  <span class="k">private</span><span class="o">:</span>
+<a name="line-79"></a>	<span class="n">AM2320_Humidity</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
+<a name="line-80"></a><span class="p">};</span>
+<a name="line-81"></a><span class="cp">#endif</span>
+<a name="line-82"></a><span class="cp">#endif </span><span class="cm">/*Components_Sensor_AM2320_include_AM2320_Humidity_hpp*/</span><span class="cp"></span>
 </pre></div>
 </td></tr></table>
       </div>

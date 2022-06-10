@@ -120,42 +120,19 @@ $(document).ready(function(){initNavTree('d0/dc8/_a_m2320___temperature_8cpp_sou
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &gt;&gt; AM2320_Temperature::getRaw &gt;&gt; \n&quot;</span>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// do magic</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">auto</span> val = <a class="code" href="../../d6/db1/class_a_m2320___base.html#afe6315099e7614b2808ee4278be63087">getSensorValue</a>(<a class="code" href="../../d6/db1/class_a_m2320___base.html#a8421ad986a352c662f7f412b68c45d53">FUNCTION_CODE_TEMPERATURE</a>);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; AM2320_Temperature::getRaw &lt;&lt; \n&quot;</span>;</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">return</span> val;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="../../d5/de6/class_a_m2320___temperature.html#acfbc821205c132b9dbef2658c3a337ee">   43</a></span>&#160;uint16_t <a class="code" href="../../d5/de6/class_a_m2320___temperature.html#acfbc821205c132b9dbef2658c3a337ee">AM2320_Temperature::convert2SI</a>(<span class="keyword">const</span> uint16_t&amp; raw)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;{</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &gt;&gt; AM2320_Temperature::convert2SI &gt;&gt; \n&quot;</span>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// do magic</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span>(raw == 0)</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        std::cout &lt;&lt; <span class="stringliteral">&quot; input of convert2SI is invalid ... \n&quot;</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; AM2320_Temperature::convert2SI &lt;&lt; \n&quot;</span>;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="comment">// calculation found in datasheet p.23</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="comment">// link : https://3v3.com.ua/data/files/AM2320.PDF</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d1/d91/namespacebasic__utils.html#a1f93c1b3a8743c3dc4935812248fd543">basic_utils::getMostSignificantByte</a>(raw) * 256 +</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;           (<a class="code" href="../../d1/d91/namespacebasic__utils.html#a20be0020da7d52cf6def9caf81bb1f48">basic_utils::getLeastSignificantByte</a>(raw) &gt;&gt; 4) * 16 +</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;           (<a class="code" href="../../d1/d91/namespacebasic__utils.html#a20be0020da7d52cf6def9caf81bb1f48">basic_utils::getLeastSignificantByte</a>(raw) &amp; 0xf);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="anamespacebasic__utils_html_a20be0020da7d52cf6def9caf81bb1f48"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#a20be0020da7d52cf6def9caf81bb1f48">basic_utils::getLeastSignificantByte</a></div><div class="ttdeci">uint8_t getLeastSignificantByte(uint16_t data)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00161">utils.cpp:161</a></div></div>
+<div class="ttc" id="aclass_a_m2320___base_html_a8421ad986a352c662f7f412b68c45d53"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#a8421ad986a352c662f7f412b68c45d53">AM2320_Base::FUNCTION_CODE_TEMPERATURE</a></div><div class="ttdeci">const uint8_t FUNCTION_CODE_TEMPERATURE</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_a_m2320___base_8hpp_source.html#l00073">AM2320_Base.hpp:73</a></div></div>
 <div class="ttc" id="aclass_a_m2320___temperature_html_a885f07dfa29e6e57ae4af3b289db5bc0"><div class="ttname"><a href="../../d5/de6/class_a_m2320___temperature.html#a885f07dfa29e6e57ae4af3b289db5bc0">AM2320_Temperature::getRaw</a></div><div class="ttdeci">uint16_t getRaw() override</div><div class="ttdoc">Get the Raw object get the raw i2c value.</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc8/_a_m2320___temperature_8cpp_source.html#l00029">AM2320_Temperature.cpp:29</a></div></div>
-<div class="ttc" id="anamespacebasic__utils_html_a1f93c1b3a8743c3dc4935812248fd543"><div class="ttname"><a href="../../d1/d91/namespacebasic__utils.html#a1f93c1b3a8743c3dc4935812248fd543">basic_utils::getMostSignificantByte</a></div><div class="ttdeci">uint8_t getMostSignificantByte(uint16_t data)</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00166">utils.cpp:166</a></div></div>
 <div class="ttc" id="a_wi_fi___s_a_l__esp32_8cpp_html_a328e9da88a07f3a0bf81b40d25469ff9"><div class="ttname"><a href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a></div><div class="ttdeci">static const char * LOG_TAG</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp_source.html#l00025">WiFi_SAL_esp32.cpp:25</a></div></div>
-<div class="ttc" id="aclass_a_m2320___temperature_html_acfbc821205c132b9dbef2658c3a337ee"><div class="ttname"><a href="../../d5/de6/class_a_m2320___temperature.html#acfbc821205c132b9dbef2658c3a337ee">AM2320_Temperature::convert2SI</a></div><div class="ttdeci">uint16_t convert2SI(const uint16_t &amp;raw) override</div><div class="ttdoc">convert the raw value to SI</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/dc8/_a_m2320___temperature_8cpp_source.html#l00043">AM2320_Temperature.cpp:43</a></div></div>
+<div class="ttc" id="aclass_a_m2320___base_html_afe6315099e7614b2808ee4278be63087"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#afe6315099e7614b2808ee4278be63087">AM2320_Base::getSensorValue</a></div><div class="ttdeci">uint16_t getSensorValue(const uint8_t &amp;register_address)</div><div class="ttdoc">Get the Sensor Value object get the i2c result from the given function code.</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddd/_a_m2320___base_8cpp_source.html#l00082">AM2320_Base.cpp:82</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

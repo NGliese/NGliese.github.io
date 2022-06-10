@@ -97,7 +97,7 @@ $(document).ready(function(){initNavTree('d6/db1/class_a_m2320___base.html','../
 <div class="dynheader">
 Inheritance diagram for AM2320_Base:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d2a/class_a_m2320___base__inherit__graph.svg" width="598" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d2a/class_a_m2320___base__inherit__graph.svg" width="598" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <div class="dynheader">
@@ -122,9 +122,9 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:af247bcdc6483050d9b08e77fdee68f91"><td class="memItemLeft" align="right" valign="top">virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#af247bcdc6483050d9b08e77fdee68f91">getRaw</a> ()=0</td></tr>
 <tr class="memdesc:af247bcdc6483050d9b08e77fdee68f91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Raw object get the raw <a class="el" href="../../da/d55/classi2c.html">i2c</a> value.  <a href="../../d6/db1/class_a_m2320___base.html#af247bcdc6483050d9b08e77fdee68f91">More...</a><br /></td></tr>
 <tr class="separator:af247bcdc6483050d9b08e77fdee68f91"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a714cfb218fb783541c6c070165b8b347"><td class="memItemLeft" align="right" valign="top">virtual uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a714cfb218fb783541c6c070165b8b347">convert2SI</a> (const uint16_t &amp;raw)=0</td></tr>
-<tr class="memdesc:a714cfb218fb783541c6c070165b8b347"><td class="mdescLeft">&#160;</td><td class="mdescRight">convert the raw value to SI  <a href="../../d6/db1/class_a_m2320___base.html#a714cfb218fb783541c6c070165b8b347">More...</a><br /></td></tr>
-<tr class="separator:a714cfb218fb783541c6c070165b8b347"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe6315099e7614b2808ee4278be63087"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#afe6315099e7614b2808ee4278be63087">getSensorValue</a> (const uint8_t &amp;register_address)</td></tr>
+<tr class="memdesc:afe6315099e7614b2808ee4278be63087"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Sensor Value object get the <a class="el" href="../../da/d55/classi2c.html">i2c</a> result from the given function code.  <a href="../../d6/db1/class_a_m2320___base.html#afe6315099e7614b2808ee4278be63087">More...</a><br /></td></tr>
+<tr class="separator:afe6315099e7614b2808ee4278be63087"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -132,6 +132,10 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4358ae5c4434c5f5432c9cebd42fdd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77122f780f41773764d067dcbccbc293"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a77122f780f41773764d067dcbccbc293">m_address</a></td></tr>
 <tr class="separator:a77122f780f41773764d067dcbccbc293"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8421ad986a352c662f7f412b68c45d53"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a8421ad986a352c662f7f412b68c45d53">FUNCTION_CODE_TEMPERATURE</a> = 3</td></tr>
+<tr class="separator:a8421ad986a352c662f7f412b68c45d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a321c6a0123808d4ef7f8e632add873"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a4a321c6a0123808d4ef7f8e632add873">FUNCTION_CODE_HUMIDITY</a> = 1</td></tr>
+<tr class="separator:a4a321c6a0123808d4ef7f8e632add873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -207,39 +211,6 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a714cfb218fb783541c6c070165b8b347"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a714cfb218fb783541c6c070165b8b347">&#9670;&nbsp;</a></span>convert2SI()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">virtual uint16_t AM2320_Base::convert2SI </td>
-          <td>(</td>
-          <td class="paramtype">const uint16_t &amp;&#160;</td>
-          <td class="paramname"><em>raw</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>convert the raw value to SI </p>
-<dl class="section return"><dt>Returns</dt><dd>uint16_t </dd></dl>
-
-<p>Implemented in <a class="el" href="../../d8/d73/class_a_m2320___humidity.html#a34bddddf6ae41415e94f0dbba981d540">AM2320_Humidity</a>, <a class="el" href="../../d5/de6/class_a_m2320___temperature.html#acfbc821205c132b9dbef2658c3a337ee">AM2320_Temperature</a>, and <a class="el" href="../../d3/d0f/class_a_m2320___m_o_c_k.html#a1abc879cfbbe67da3aec206cad5efb07">AM2320_MOCK</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="../../d6/db1/class_a_m2320___base.html#a2182750a114ded3510c52a521212ad82">getMeasurement()</a>.</p>
-
-</div>
-</div>
 <a id="a2182750a114ded3510c52a521212ad82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2182750a114ded3510c52a521212ad82">&#9670;&nbsp;</a></span>getMeasurement()</h2>
 
@@ -271,7 +242,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keyword">auto</span> val = <a class="code" href="../../d6/db1/class_a_m2320___base.html#af247bcdc6483050d9b08e77fdee68f91">getRaw</a>();</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d6/db1/class_a_m2320___base.html#a714cfb218fb783541c6c070165b8b347">convert2SI</a>(val);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> val;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; AM2320_Base::getMeasurement &lt;&lt; \n&quot;</span>;</div>
@@ -280,7 +251,7 @@ Private Member Functions</h2></td></tr>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="../../d6/db1/class_a_m2320___base.html#a714cfb218fb783541c6c070165b8b347">convert2SI()</a>, <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../d6/db1/class_a_m2320___base.html#af247bcdc6483050d9b08e77fdee68f91">getRaw()</a>, and <a class="el" href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">wakeUp()</a>.</p>
+<p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../d6/db1/class_a_m2320___base.html#af247bcdc6483050d9b08e77fdee68f91">getRaw()</a>, and <a class="el" href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">wakeUp()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#ad3e68dab01ac97138f38f6f64fe3af82">TEST()</a>.</p>
 
@@ -315,6 +286,56 @@ Private Member Functions</h2></td></tr>
 <p>Implemented in <a class="el" href="../../d8/d73/class_a_m2320___humidity.html#a7456235a87701ab7c40f2954a41eaa5e">AM2320_Humidity</a>, <a class="el" href="../../d5/de6/class_a_m2320___temperature.html#a885f07dfa29e6e57ae4af3b289db5bc0">AM2320_Temperature</a>, and <a class="el" href="../../d3/d0f/class_a_m2320___m_o_c_k.html#a981df867bcc5666b119a2ed9eee45a84">AM2320_MOCK</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d6/db1/class_a_m2320___base.html#a2182750a114ded3510c52a521212ad82">getMeasurement()</a>.</p>
+
+</div>
+</div>
+<a id="afe6315099e7614b2808ee4278be63087"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe6315099e7614b2808ee4278be63087">&#9670;&nbsp;</a></span>getSensorValue()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t AM2320_Base::getSensorValue </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>register_address</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the Sensor Value object get the <a class="el" href="../../da/d55/classi2c.html">i2c</a> result from the given function code. </p>
+<dl class="section return"><dt>Returns</dt><dd>uint16_t </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="../../db/ddd/_a_m2320___base_8cpp_source.html#l00082">82</a> of file <a class="el" href="../../db/ddd/_a_m2320___base_8cpp_source.html">AM2320_Base.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &gt;&gt; AM2320_Base::getSensorValue &gt;&gt; \n&quot;</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="comment">// do magic</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <a class="code" href="../../d6/db1/class_a_m2320___base.html#a4358ae5c4434c5f5432c9cebd42fdd89">m_i2c</a>.<a class="code" href="../../da/d55/classi2c.html#ac2781b43f9b76cb707493a6786427353">writeMultiBytes</a>&lt;3&gt;(<a class="code" href="../../d6/db1/class_a_m2320___base.html#a77122f780f41773764d067dcbccbc293">m_address</a>, {0x03, register_address, 2});</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    std::array&lt;uint8_t, 5&gt; <a class="code" href="../../da/d85/data_8hpp.html#abc449e4bb8b88f446dd88a30a85f93f0">vec</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="../../d6/db1/class_a_m2320___base.html#a4358ae5c4434c5f5432c9cebd42fdd89">m_i2c</a>.<a class="code" href="../../da/d55/classi2c.html#ae1c3c0c0f78c61acab11c6f2ebe94c51">readMultiBytes</a>&lt;5&gt;(<a class="code" href="../../d6/db1/class_a_m2320___base.html#a77122f780f41773764d067dcbccbc293">m_address</a>, <a class="code" href="../../da/d85/data_8hpp.html#abc449e4bb8b88f446dd88a30a85f93f0">vec</a>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    std::cout &lt;&lt; <span class="stringliteral">&quot; &lt;&lt; AM2320_Base::getSensorValue &lt;&lt; \n&quot;</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d6/db1/class_a_m2320___base.html#a77122f780f41773764d067dcbccbc293">m_address</a>, <a class="el" href="../../d6/db1/class_a_m2320___base.html#a4358ae5c4434c5f5432c9cebd42fdd89">m_i2c</a>, <a class="el" href="../../da/d55/classi2c.html#ae1c3c0c0f78c61acab11c6f2ebe94c51">i2c&lt; i2c_class &gt;::readMultiBytes()</a>, <a class="el" href="../../da/d85/data_8hpp.html#abc449e4bb8b88f446dd88a30a85f93f0">vec</a>, and <a class="el" href="../../da/d55/classi2c.html#ac2781b43f9b76cb707493a6786427353">i2c&lt; i2c_class &gt;::writeMultiBytes()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d73/class_a_m2320___humidity.html#a7456235a87701ab7c40f2954a41eaa5e">AM2320_Humidity::getRaw()</a>, and <a class="el" href="../../d5/de6/class_a_m2320___temperature.html#a885f07dfa29e6e57ae4af3b289db5bc0">AM2320_Temperature::getRaw()</a>.</p>
 
 </div>
 </div>
@@ -378,6 +399,58 @@ false </dd></dl>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4a321c6a0123808d4ef7f8e632add873"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4a321c6a0123808d4ef7f8e632add873">&#9670;&nbsp;</a></span>FUNCTION_CODE_HUMIDITY</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t AM2320_Base::FUNCTION_CODE_HUMIDITY = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d89/_a_m2320___base_8hpp_source.html#l00074">74</a> of file <a class="el" href="../../db/d89/_a_m2320___base_8hpp_source.html">AM2320_Base.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d73/class_a_m2320___humidity.html#a7456235a87701ab7c40f2954a41eaa5e">AM2320_Humidity::getRaw()</a>.</p>
+
+</div>
+</div>
+<a id="a8421ad986a352c662f7f412b68c45d53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8421ad986a352c662f7f412b68c45d53">&#9670;&nbsp;</a></span>FUNCTION_CODE_TEMPERATURE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t AM2320_Base::FUNCTION_CODE_TEMPERATURE = 3</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../db/d89/_a_m2320___base_8hpp_source.html#l00073">73</a> of file <a class="el" href="../../db/d89/_a_m2320___base_8hpp_source.html">AM2320_Base.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d5/de6/class_a_m2320___temperature.html#a885f07dfa29e6e57ae4af3b289db5bc0">AM2320_Temperature::getRaw()</a>.</p>
+
+</div>
+</div>
 <a id="a77122f780f41773764d067dcbccbc293"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a77122f780f41773764d067dcbccbc293">&#9670;&nbsp;</a></span>m_address</h2>
 
@@ -400,7 +473,7 @@ false </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d89/_a_m2320___base_8hpp_source.html#l00071">71</a> of file <a class="el" href="../../db/d89/_a_m2320___base_8hpp_source.html">AM2320_Base.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">wakeUp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/db1/class_a_m2320___base.html#afe6315099e7614b2808ee4278be63087">getSensorValue()</a>, and <a class="el" href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">wakeUp()</a>.</p>
 
 </div>
 </div>
@@ -426,7 +499,7 @@ false </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="../../db/d89/_a_m2320___base_8hpp_source.html#l00070">70</a> of file <a class="el" href="../../db/d89/_a_m2320___base_8hpp_source.html">AM2320_Base.hpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">wakeUp()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../d6/db1/class_a_m2320___base.html#afe6315099e7614b2808ee4278be63087">getSensorValue()</a>, and <a class="el" href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">wakeUp()</a>.</p>
 
 </div>
 </div>
@@ -437,15 +510,17 @@ false </dd></dl>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="ai2c__test_8cpp_html_a26f631f76b57f8a7957ea53ff3ba49d4"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a></div><div class="ttdeci">i2c_conf_t conf</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00013">i2c_test.cpp:13</a></div></div>
+<div class="ttc" id="aclassi2c_html_ac2781b43f9b76cb707493a6786427353"><div class="ttname"><a href="../../da/d55/classi2c.html#ac2781b43f9b76cb707493a6786427353">i2c::writeMultiBytes</a></div><div class="ttdeci">general_err_t writeMultiBytes(const uint8_t &amp;slave_address, const std::array&lt; uint8_t, N &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1c/i2c_8hpp_source.html#l00070">i2c.hpp:70</a></div></div>
 <div class="ttc" id="aclass_a_m2320___base_html_a4358ae5c4434c5f5432c9cebd42fdd89"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#a4358ae5c4434c5f5432c9cebd42fdd89">AM2320_Base::m_i2c</a></div><div class="ttdeci">i2c&lt; i2c_esp32 &gt; m_i2c</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_a_m2320___base_8hpp_source.html#l00070">AM2320_Base.hpp:70</a></div></div>
 <div class="ttc" id="aclass_a_m2320___base_html_af247bcdc6483050d9b08e77fdee68f91"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#af247bcdc6483050d9b08e77fdee68f91">AM2320_Base::getRaw</a></div><div class="ttdeci">virtual uint16_t getRaw()=0</div><div class="ttdoc">Get the Raw object get the raw i2c value.</div></div>
 <div class="ttc" id="aclass_a_m2320___base_html_a10476b48c00bf7a13dfe86404748594b"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">AM2320_Base::wakeUp</a></div><div class="ttdeci">bool wakeUp()</div><div class="ttdoc">wake up the sensor</div><div class="ttdef"><b>Definition:</b> <a href="../../db/ddd/_a_m2320___base_8cpp_source.html#l00036">AM2320_Base.cpp:36</a></div></div>
+<div class="ttc" id="aclassi2c_html_ae1c3c0c0f78c61acab11c6f2ebe94c51"><div class="ttname"><a href="../../da/d55/classi2c.html#ae1c3c0c0f78c61acab11c6f2ebe94c51">i2c::readMultiBytes</a></div><div class="ttdeci">general_err_t readMultiBytes(const uint8_t &amp;slave_address, std::array&lt; uint8_t, N &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1c/i2c_8hpp_source.html#l00076">i2c.hpp:76</a></div></div>
 <div class="ttc" id="aclassi2c_html_a7f3729073f774fd1f1cf66ba817ae5db"><div class="ttname"><a href="../../da/d55/classi2c.html#a7f3729073f774fd1f1cf66ba817ae5db">i2c::getInstance</a></div><div class="ttdeci">static i2c &amp; getInstance(const i2c_conf_t &amp;conf)</div><div class="ttdoc">Get the Instance object TODO Make sure that users can re-install with new config file Currently we ca...</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1c/i2c_8hpp_source.html#l00058">i2c.hpp:58</a></div></div>
+<div class="ttc" id="adata_8hpp_html_abc449e4bb8b88f446dd88a30a85f93f0"><div class="ttname"><a href="../../da/d85/data_8hpp.html#abc449e4bb8b88f446dd88a30a85f93f0">vec</a></div><div class="ttdeci">const std::vector&lt; std::pair&lt; uint64_t, uint64_t &gt; &gt; vec</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d85/data_8hpp_source.html#l00007">data.hpp:7</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
 <div class="ttc" id="aclass_timeservice_html_a1a846ed289fdca5dc018fd1cc70d8961"><div class="ttname"><a href="../../d8/d2c/class_timeservice.html#a1a846ed289fdca5dc018fd1cc70d8961">Timeservice::wait_ms</a></div><div class="ttdeci">static general_err_t wait_ms(size_t ms_to_wait)</div><div class="ttdef"><b>Definition:</b> <a href="../../df/dc9/_timeservice_8cpp_source.html#l00067">Timeservice.cpp:67</a></div></div>
-<div class="ttc" id="aclass_a_m2320___base_html_a714cfb218fb783541c6c070165b8b347"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#a714cfb218fb783541c6c070165b8b347">AM2320_Base::convert2SI</a></div><div class="ttdeci">virtual uint16_t convert2SI(const uint16_t &amp;raw)=0</div><div class="ttdoc">convert the raw value to SI</div></div>
 <div class="ttc" id="aclass_a_m2320___base_html_a77122f780f41773764d067dcbccbc293"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#a77122f780f41773764d067dcbccbc293">AM2320_Base::m_address</a></div><div class="ttdeci">const uint8_t m_address</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_a_m2320___base_8hpp_source.html#l00071">AM2320_Base.hpp:71</a></div></div>
-<div class="ttc" id="aclassi2c_html_ac5a0ba31bb4f86aafcfbe3795ac83c72"><div class="ttname"><a href="../../da/d55/classi2c.html#ac5a0ba31bb4f86aafcfbe3795ac83c72">i2c::slavePresent</a></div><div class="ttdeci">bool slavePresent(const uint8_t &amp;slave_address)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1c/i2c_8hpp_source.html#l00124">i2c.hpp:124</a></div></div>
+<div class="ttc" id="aclassi2c_html_ac5a0ba31bb4f86aafcfbe3795ac83c72"><div class="ttname"><a href="../../da/d55/classi2c.html#ac5a0ba31bb4f86aafcfbe3795ac83c72">i2c::slavePresent</a></div><div class="ttdeci">bool slavePresent(const uint8_t &amp;slave_address)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1c/i2c_8hpp_source.html#l00138">i2c.hpp:138</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

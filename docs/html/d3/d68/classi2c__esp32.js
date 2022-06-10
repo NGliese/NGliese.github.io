@@ -11,6 +11,7 @@ var classi2c__esp32 =
     [ "insert_write_byte", "d3/d68/classi2c__esp32.html#ac71d3d1dbc5ebdc5ecb517c480035f61", null ],
     [ "insert_write_bytes", "d3/d68/classi2c__esp32.html#aae447ffccea74baf51b3af6e1c9084b5", null ],
     [ "readByte", "d3/d68/classi2c__esp32.html#a699cd1ce31a2ef343dc2f45b15e2581e", null ],
+    [ "readMultiBytes", "d3/d68/classi2c__esp32.html#a4b63becc887dd0c0a7a7e37be1583f23", null ],
     [ "readMultiBytes", "d3/d68/classi2c__esp32.html#acf6725ed74686fca6a81c39a9a1bc38a", null ],
     [ "slavePresent", "d3/d68/classi2c__esp32.html#a670ac30483ff6aa9273519f7460a0621", null ],
     [ "writeByte", "d3/d68/classi2c__esp32.html#adbdf39983e8d80df6cab972681cf2fcb", null ],

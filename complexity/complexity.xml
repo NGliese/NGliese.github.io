@@ -945,1323 +945,1328 @@
 			<value>20</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::initialize_transaction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:159">
+		<item name="i2c_esp32::readMultiBytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:160">
 			<value>175</value>
+			<value>19</value>
+			<value>4</value>
+		</item>
+		<item name="i2c_esp32::readMultiBytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:183">
+			<value>176</value>
+			<value>6</value>
+			<value>1</value>
+		</item>
+		<item name="i2c_esp32::initialize_transaction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:190">
+			<value>177</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::insert_start_bit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:181">
-			<value>176</value>
+		<item name="i2c_esp32::insert_start_bit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:212">
+			<value>178</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::insert_write_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:202">
-			<value>177</value>
+		<item name="i2c_esp32::insert_write_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:233">
+			<value>179</value>
 			<value>17</value>
 			<value>6</value>
 		</item>
-		<item name="i2c_esp32::insert_write_bytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:230">
-			<value>178</value>
+		<item name="i2c_esp32::insert_write_bytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:261">
+			<value>180</value>
 			<value>18</value>
 			<value>6</value>
 		</item>
-		<item name="i2c_esp32::insert_read_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:258">
-			<value>179</value>
+		<item name="i2c_esp32::insert_read_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:289">
+			<value>181</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::insert_read_bytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:281">
-			<value>180</value>
+		<item name="i2c_esp32::insert_read_bytes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:312">
+			<value>182</value>
 			<value>13</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::insert_stop_bit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:305">
-			<value>181</value>
+		<item name="i2c_esp32::insert_stop_bit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:336">
+			<value>183</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<item name="i2c_esp32::execute_transaction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:324">
-			<value>182</value>
+		<item name="i2c_esp32::execute_transaction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp:355">
+			<value>184</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="12.373626373626374"/>
-		<average label="CCN" value="3.576923076923077"/>
+		<average label="NCSS" value="12.375"/>
+		<average label="CCN" value="3.5652173913043477"/>
 		<item name="FreeRTOS::sleep(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:23">
-			<value>183</value>
-			<value>4</value>
-			<value>2</value>
-		</item>
-		<item name="FreeRTOS::startTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:38">
-			<value>184</value>
-			<value>4</value>
-			<value>2</value>
-		</item>
-		<item name="FreeRTOS::deleteTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:50">
 			<value>185</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
-		<item name="FreeRTOS::getTimeSinceStart(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:61">
+		<item name="FreeRTOS::startTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:38">
 			<value>186</value>
+			<value>4</value>
+			<value>2</value>
+		</item>
+		<item name="FreeRTOS::deleteTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:50">
+			<value>187</value>
+			<value>4</value>
+			<value>2</value>
+		</item>
+		<item name="FreeRTOS::getTimeSinceStart(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:61">
+			<value>188</value>
 			<value>5</value>
 			<value>2</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::wait(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:92">
-			<value>187</value>
+			<value>189</value>
 			<value>24</value>
 			<value>4</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::Semaphore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:124">
-			<value>188</value>
-			<value>13</value>
-			<value>3</value>
-		</item>
-		<item name="FreeRTOS::Semaphore::~Semaphore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:148">
-			<value>189</value>
-			<value>11</value>
-			<value>3</value>
-		</item>
-		<item name="FreeRTOS::Semaphore::give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:166">
 			<value>190</value>
 			<value>13</value>
 			<value>3</value>
 		</item>
-		<item name="FreeRTOS::Semaphore::give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:188">
+		<item name="FreeRTOS::Semaphore::~Semaphore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:148">
 			<value>191</value>
+			<value>11</value>
+			<value>3</value>
+		</item>
+		<item name="FreeRTOS::Semaphore::give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:166">
+			<value>192</value>
+			<value>13</value>
+			<value>3</value>
+		</item>
+		<item name="FreeRTOS::Semaphore::give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:188">
+			<value>193</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::giveFromISR(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:197">
-			<value>192</value>
+			<value>194</value>
 			<value>12</value>
 			<value>3</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::take(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:218">
-			<value>193</value>
+			<value>195</value>
 			<value>24</value>
 			<value>4</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::take(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:253">
-			<value>194</value>
+			<value>196</value>
 			<value>25</value>
 			<value>4</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::toString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:288">
-			<value>195</value>
+			<value>197</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
 		<item name="FreeRTOS::Semaphore::setName(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:304">
-			<value>196</value>
+			<value>198</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="FreeRTOS::Queue::Queue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:315">
-			<value>197</value>
+			<value>199</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
 		<item name="FreeRTOS::Queue::~Queue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:322">
-			<value>198</value>
+			<value>200</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="FreeRTOS::Queue::send(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:324">
-			<value>199</value>
+			<value>201</value>
 			<value>15</value>
 			<value>4</value>
 		</item>
 		<item name="FreeRTOS::Queue::recieve(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp:343">
-			<value>200</value>
+			<value>202</value>
 			<value>15</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="12.215"/>
-		<average label="CCN" value="3.49"/>
+		<average label="NCSS" value="12.217821782178218"/>
+		<average label="CCN" value="3.48019801980198"/>
 		<item name="Task::Task(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:19">
-			<value>201</value>
+			<value>203</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
 		<item name="Task::~Task(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:31">
-			<value>202</value>
+			<value>204</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="Task::delay(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:40">
-			<value>203</value>
+			<value>205</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
 		<item name="Task::runTask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:53">
-			<value>204</value>
+			<value>206</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="Task::start(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:66">
-			<value>205</value>
+			<value>207</value>
 			<value>9</value>
 			<value>3</value>
 		</item>
 		<item name="Task::stop(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:84">
-			<value>206</value>
+			<value>208</value>
 			<value>10</value>
 			<value>3</value>
 		</item>
 		<item name="Task::setStackSize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:104">
-			<value>207</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<item name="Task::setPriority(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:115">
-			<value>208</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<item name="Task::setName(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:126">
 			<value>209</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="Task::setCore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:138">
+		<item name="Task::setPriority(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:115">
 			<value>210</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.89047619047619"/>
-		<average label="CCN" value="3.4"/>
-		<item name="RPICamV2::RPICamV2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:36">
+		<item name="Task::setName(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:126">
 			<value>211</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<item name="Task::setCore(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/Task.cpp:138">
+			<value>212</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<average label="NCSS" value="11.89622641509434"/>
+		<average label="CCN" value="3.391509433962264"/>
+		<item name="RPICamV2::RPICamV2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:36">
+			<value>213</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
 		<item name="RPICamV2::~RPICamV2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:47">
-			<value>212</value>
+			<value>214</value>
 			<value>8</value>
 			<value>3</value>
 		</item>
 		<item name="RPICamV2::takePicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:59">
-			<value>213</value>
+			<value>215</value>
 			<value>8</value>
 			<value>4</value>
 		</item>
 		<item name="RPICamV2::setExposure(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/RpiCamV2/src/RPICamV2.cpp:78">
-			<value>214</value>
+			<value>216</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="11.827102803738319"/>
-		<average label="CCN" value="3.4065420560747666"/>
+		<average label="NCSS" value="11.833333333333334"/>
+		<average label="CCN" value="3.3981481481481484"/>
 		<item name="ActiveCurrentSensor::ActiveCurrentSensor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:29">
-			<value>215</value>
+			<value>217</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="ActiveCurrentSensor::~ActiveCurrentSensor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:36">
-			<value>216</value>
+			<value>218</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="ActiveCurrentSensor::activateQueue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:38">
-			<value>217</value>
+			<value>219</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
 		<item name="ActiveCurrentSensor::run(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:51">
-			<value>218</value>
+			<value>220</value>
 			<value>14</value>
 			<value>3</value>
 		</item>
 		<item name="ActiveCurrentSensor::main_function(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp:71">
-			<value>219</value>
+			<value>221</value>
 			<value>15</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.748858447488585"/>
-		<average label="CCN" value="3.3835616438356166"/>
+		<average label="NCSS" value="11.755656108597286"/>
+		<average label="CCN" value="3.3755656108597285"/>
 		<item name="esp32Cam::takePicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:68">
-			<value>220</value>
+			<value>222</value>
 			<value>15</value>
 			<value>8</value>
 		</item>
 		<item name="esp32Cam::init_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:100">
-			<value>221</value>
+			<value>223</value>
 			<value>12</value>
 			<value>5</value>
 		</item>
 		<item name="esp32Cam::releasePicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:122">
-			<value>222</value>
+			<value>224</value>
 			<value>13</value>
 			<value>6</value>
 		</item>
 		<item name="esp32Cam::getPicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:146">
-			<value>223</value>
+			<value>225</value>
 			<value>11</value>
 			<value>5</value>
 		</item>
 		<item name="esp32Cam::getJPGPicture(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:166">
-			<value>224</value>
+			<value>226</value>
 			<value>16</value>
 			<value>8</value>
 		</item>
 		<item name="esp32Cam::deinit_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:196">
-			<value>225</value>
+			<value>227</value>
 			<value>6</value>
 			<value>3</value>
 		</item>
 		<item name="esp32Cam::reboot_camera(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/esp32Cam/src/esp32Cam.cpp:205">
-			<value>226</value>
+			<value>228</value>
 			<value>20</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.79646017699115"/>
-		<average label="CCN" value="3.4469026548672566"/>
+		<average label="NCSS" value="11.802631578947368"/>
+		<average label="CCN" value="3.43859649122807"/>
 		<item name="AM2320_Base::AM2320_Base(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp:29">
-			<value>227</value>
+			<value>229</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="AM2320_Base::~AM2320_Base(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp:34">
-			<value>228</value>
+			<value>230</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="AM2320_Base::wakeUp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp:36">
-			<value>229</value>
+			<value>231</value>
 			<value>15</value>
 			<value>4</value>
 		</item>
 		<item name="AM2320_Base::getMeasurement(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp:61">
-			<value>230</value>
-			<value>13</value>
-			<value>4</value>
-		</item>
-		<average label="NCSS" value="11.734782608695653"/>
-		<average label="CCN" value="3.4304347826086956"/>
-		<item name="AM2320_Temperature::getRaw(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Temperature.cpp:29">
-			<value>231</value>
-			<value>6</value>
-			<value>3</value>
-		</item>
-		<item name="AM2320_Temperature::convert2SI(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Temperature.cpp:43">
 			<value>232</value>
 			<value>13</value>
 			<value>4</value>
 		</item>
-		<average label="NCSS" value="11.71551724137931"/>
-		<average label="CCN" value="3.4310344827586206"/>
-		<item name="AM2320_Humidity::getRaw(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Humidity.cpp:29">
+		<item name="AM2320_Base::getSensorValue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp:82">
 			<value>233</value>
-			<value>6</value>
+			<value>9</value>
 			<value>3</value>
 		</item>
-		<item name="AM2320_Humidity::convert2SI(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Humidity.cpp:43">
+		<average label="NCSS" value="11.729613733905579"/>
+		<average label="CCN" value="3.4206008583690988"/>
+		<item name="AM2320_Temperature::getRaw(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Temperature.cpp:29">
 			<value>234</value>
-			<value>13</value>
-			<value>4</value>
+			<value>7</value>
+			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.696581196581196"/>
-		<average label="CCN" value="3.4316239316239314"/>
-		<item name="WaterEstimator_Service::mainFunction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp:29">
+		<average label="NCSS" value="11.709401709401709"/>
+		<average label="CCN" value="3.4188034188034186"/>
+		<item name="AM2320_Humidity::getRaw(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Humidity.cpp:29">
 			<value>235</value>
+			<value>7</value>
+			<value>3</value>
+		</item>
+		<average label="NCSS" value="11.689361702127659"/>
+		<average label="CCN" value="3.4170212765957446"/>
+		<item name="WaterEstimator_Service::mainFunction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp:29">
+			<value>236</value>
 			<value>32</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.782978723404256"/>
-		<average label="CCN" value="3.4468085106382977"/>
+		<average label="NCSS" value="11.775423728813559"/>
+		<average label="CCN" value="3.4322033898305087"/>
 		<item name="isAlive_service::mainFunction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/isAlive/src/isAlive_service.cpp:29">
-			<value>236</value>
+			<value>237</value>
 			<value>10</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.775423728813559"/>
-		<average label="CCN" value="3.444915254237288"/>
+		<average label="NCSS" value="11.767932489451477"/>
+		<average label="CCN" value="3.430379746835443"/>
 		<item name="DogFeederDoor::DogFeederDoor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:36">
-			<value>237</value>
-			<value>1</value>
-			<value>1</value>
-		</item>
-		<item name="DogFeederDoor::~DogFeederDoor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:38">
 			<value>238</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="DogFeederDoor::open(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:40">
+		<item name="DogFeederDoor::~DogFeederDoor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:38">
 			<value>239</value>
-			<value>4</value>
+			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="DogFeederDoor::close(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:45">
+		<item name="DogFeederDoor::open(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:40">
 			<value>240</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.620833333333334"/>
-		<average label="CCN" value="3.404166666666667"/>
-		<item name="basic_utils::split(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:13">
+		<item name="DogFeederDoor::close(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:45">
 			<value>241</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<average label="NCSS" value="11.614107883817427"/>
+		<average label="CCN" value="3.3900414937759336"/>
+		<item name="basic_utils::split(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:13">
+			<value>242</value>
 			<value>17</value>
 			<value>4</value>
 		</item>
 		<item name="basic_utils::split(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:32">
-			<value>242</value>
+			<value>243</value>
 			<value>19</value>
 			<value>4</value>
 		</item>
 		<item name="intToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:52">
-			<value>243</value>
-			<value>6</value>
-			<value>1</value>
-		</item>
-		<item name="timeToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:64">
 			<value>244</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="uint8ToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:76">
+		<item name="timeToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:64">
 			<value>245</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="floatToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:88">
+		<item name="uint8ToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:76">
 			<value>246</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="floatToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:99">
+		<item name="floatToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:88">
 			<value>247</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="uintToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:110">
+		<item name="floatToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:99">
 			<value>248</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
-		<item name="printBits(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:127">
+		<item name="uintToString(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:110">
 			<value>249</value>
+			<value>6</value>
+			<value>1</value>
+		</item>
+		<item name="printBits(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:127">
+			<value>250</value>
 			<value>15</value>
 			<value>3</value>
 		</item>
 		<item name="basic_utils::is_even(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:144">
-			<value>250</value>
+			<value>251</value>
 			<value>4</value>
 			<value>2</value>
 		</item>
 		<item name="basic_utils::leastSignificantByteExchange(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:156">
-			<value>251</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<item name="basic_utils::getLeastSignificantByte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:161">
 			<value>252</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="basic_utils::getMostSignificantByte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:166">
+		<item name="basic_utils::getLeastSignificantByte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:161">
 			<value>253</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="basic_utils::shift8BitTo32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:171">
+		<item name="basic_utils::getMostSignificantByte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:166">
 			<value>254</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<item name="basic_utils::shift8BitTo32(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:171">
+			<value>255</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="basic_utils::shift32BitTo8(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:177">
-			<value>255</value>
+			<value>256</value>
 			<value>11</value>
 			<value>3</value>
 		</item>
 		<item name="basic_utils::random(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:198">
-			<value>256</value>
+			<value>257</value>
 			<value>9</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="11.39453125"/>
-		<average label="CCN" value="3.30078125"/>
-		<average label="NCSS" value="11.39453125"/>
-		<average label="CCN" value="3.30078125"/>
+		<average label="NCSS" value="11.38910505836576"/>
+		<average label="CCN" value="3.2879377431906613"/>
+		<average label="NCSS" value="11.38910505836576"/>
+		<average label="CCN" value="3.2879377431906613"/>
 		<item name="cam_verify_jpeg_soi(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:29">
-			<value>257</value>
+			<value>258</value>
 			<value>19</value>
 			<value>4</value>
 		</item>
 		<item name="cam_verify_jpeg_eoi(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:49">
-			<value>258</value>
+			<value>259</value>
 			<value>16</value>
 			<value>3</value>
 		</item>
 		<item name="cam_get_next_frame(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:67">
-			<value>259</value>
+			<value>260</value>
 			<value>19</value>
 			<value>4</value>
 		</item>
 		<item name="cam_start_frame(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:87">
-			<value>260</value>
+			<value>261</value>
 			<value>15</value>
 			<value>3</value>
 		</item>
 		<item name="ll_cam_send_event(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:104">
-			<value>261</value>
+			<value>262</value>
 			<value>9</value>
 			<value>3</value>
 		</item>
 		<item name="cam_task(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:115">
-			<value>262</value>
+			<value>263</value>
 			<value>139</value>
 			<value>28</value>
 		</item>
 		<item name="allocate_dma_descriptors(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:271">
-			<value>263</value>
+			<value>264</value>
 			<value>19</value>
 			<value>3</value>
 		</item>
 		<item name="cam_dma_config(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:292">
-			<value>264</value>
+			<value>265</value>
 			<value>83</value>
 			<value>10</value>
 		</item>
 		<item name="cam_init(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:387">
-			<value>265</value>
+			<value>266</value>
 			<value>22</value>
 			<value>2</value>
 		</item>
 		<item name="cam_config(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:418">
-			<value>266</value>
+			<value>267</value>
 			<value>46</value>
 			<value>7</value>
 		</item>
 		<item name="cam_deinit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:482">
-			<value>267</value>
+			<value>268</value>
 			<value>44</value>
 			<value>10</value>
 		</item>
 		<item name="cam_stop(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:530">
-			<value>268</value>
+			<value>269</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="cam_start(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:536">
-			<value>269</value>
+			<value>270</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="cam_take(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:541">
-			<value>270</value>
+			<value>271</value>
 			<value>35</value>
 			<value>6</value>
 		</item>
 		<item name="cam_give(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:580">
-			<value>271</value>
+			<value>272</value>
 			<value>11</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="12.55719557195572"/>
-		<average label="CCN" value="3.4428044280442807"/>
+		<average label="NCSS" value="12.547794117647058"/>
+		<average label="CCN" value="3.4301470588235294"/>
 		<item name="camera_probe(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:86">
-			<value>272</value>
+			<value>273</value>
 			<value>85</value>
 			<value>12</value>
 		</item>
 		<item name="esp_camera_init(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:194">
-			<value>273</value>
+			<value>274</value>
 			<value>65</value>
 			<value>10</value>
 		</item>
 		<item name="esp_camera_deinit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:271">
-			<value>274</value>
+			<value>275</value>
 			<value>12</value>
 			<value>2</value>
 		</item>
 		<item name="esp_camera_fb_get(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:288">
-			<value>275</value>
+			<value>276</value>
 			<value>15</value>
 			<value>3</value>
 		</item>
 		<item name="esp_camera_fb_return(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:305">
-			<value>276</value>
-			<value>8</value>
-			<value>2</value>
-		</item>
-		<item name="esp_camera_sensor_get(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:314">
 			<value>277</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
-		<item name="esp_camera_save_to_nvs(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:323">
+		<item name="esp_camera_sensor_get(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:314">
 			<value>278</value>
+			<value>8</value>
+			<value>2</value>
+		</item>
+		<item name="esp_camera_save_to_nvs(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:323">
+			<value>279</value>
 			<value>30</value>
 			<value>5</value>
 		</item>
 		<item name="esp_camera_load_from_nvs(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:358">
-			<value>279</value>
+			<value>280</value>
 			<value>62</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="13.21863799283154"/>
-		<average label="CCN" value="3.4946236559139785"/>
+		<average label="NCSS" value="13.207142857142857"/>
+		<average label="CCN" value="3.482142857142857"/>
 		<item name="ll_cam_bytes_per_sample(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:70">
-			<value>280</value>
+			<value>281</value>
 			<value>15</value>
 			<value>5</value>
 		</item>
 		<item name="ll_cam_dma_filter_jpeg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:86">
-			<value>281</value>
-			<value>16</value>
-			<value>2</value>
-		</item>
-		<item name="ll_cam_dma_filter_grayscale(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:104">
 			<value>282</value>
 			<value>16</value>
 			<value>2</value>
 		</item>
-		<item name="ll_cam_dma_filter_grayscale_highspeed(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:122">
+		<item name="ll_cam_dma_filter_grayscale(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:104">
 			<value>283</value>
+			<value>16</value>
+			<value>2</value>
+		</item>
+		<item name="ll_cam_dma_filter_grayscale_highspeed(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:122">
+			<value>284</value>
 			<value>23</value>
 			<value>3</value>
 		</item>
 		<item name="ll_cam_dma_filter_yuyv(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:148">
-			<value>284</value>
+			<value>285</value>
 			<value>20</value>
 			<value>2</value>
 		</item>
 		<item name="ll_cam_dma_filter_yuyv_highspeed(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:170">
-			<value>285</value>
+			<value>286</value>
 			<value>29</value>
 			<value>3</value>
 		</item>
 		<item name="ll_cam_vsync_isr(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:201">
-			<value>286</value>
+			<value>287</value>
 			<value>14</value>
 			<value>3</value>
 		</item>
 		<item name="ll_cam_dma_isr(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:219">
-			<value>287</value>
+			<value>288</value>
 			<value>19</value>
 			<value>4</value>
 		</item>
 		<item name="ll_cam_stop(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:244">
-			<value>288</value>
+			<value>289</value>
 			<value>7</value>
 			<value>1</value>
 		</item>
 		<item name="ll_cam_deinit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:252">
-			<value>289</value>
+			<value>290</value>
 			<value>10</value>
 			<value>2</value>
 		</item>
 		<item name="ll_cam_start(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:265">
-			<value>290</value>
+			<value>291</value>
 			<value>20</value>
 			<value>1</value>
 		</item>
 		<item name="ll_cam_config(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:290">
-			<value>291</value>
+			<value>292</value>
 			<value>33</value>
 			<value>1</value>
 		</item>
 		<item name="ll_cam_vsync_intr_enable(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:333">
-			<value>292</value>
+			<value>293</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
 		<item name="ll_cam_set_pin(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:345">
-			<value>293</value>
+			<value>294</value>
 			<value>38</value>
 			<value>3</value>
 		</item>
 		<item name="ll_cam_init_isr(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:389">
-			<value>294</value>
+			<value>295</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="ll_cam_do_vsync(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:395">
-			<value>295</value>
+			<value>296</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="ll_cam_get_dma_align(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:397">
-			<value>296</value>
+			<value>297</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="ll_cam_calc_rgb_dma(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:402">
-			<value>297</value>
+			<value>298</value>
 			<value>70</value>
 			<value>10</value>
 		</item>
 		<item name="ll_cam_dma_sizes(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:485">
-			<value>298</value>
+			<value>299</value>
 			<value>16</value>
 			<value>2</value>
 		</item>
 		<item name="ll_cam_memcpy(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:504">
-			<value>299</value>
+			<value>300</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="ll_cam_set_sample_mode(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:512">
-			<value>300</value>
+			<value>301</value>
 			<value>72</value>
 			<value>14</value>
 		</item>
-		<average label="NCSS" value="13.773333333333333"/>
-		<average label="CCN" value="3.4633333333333334"/>
+		<average label="NCSS" value="13.76079734219269"/>
+		<average label="CCN" value="3.451827242524917"/>
 		<item name="read_reg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:26">
-			<value>301</value>
+			<value>302</value>
 			<value>9</value>
 			<value>3</value>
 		</item>
 		<item name="check_reg_mask(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:38">
-			<value>302</value>
+			<value>303</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="read_reg16(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:43">
-			<value>303</value>
+			<value>304</value>
 			<value>19</value>
 			<value>3</value>
 		</item>
 		<item name="write_reg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:63">
-			<value>304</value>
+			<value>305</value>
 			<value>25</value>
 			<value>4</value>
 		</item>
 		<item name="set_reg_bits(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:92">
-			<value>305</value>
+			<value>306</value>
 			<value>14</value>
 			<value>2</value>
 		</item>
 		<item name="write_regs(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:107">
-			<value>306</value>
+			<value>307</value>
 			<value>17</value>
 			<value>4</value>
 		</item>
 		<item name="write_reg16(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:125">
-			<value>307</value>
-			<value>8</value>
-			<value>3</value>
-		</item>
-		<item name="write_addr_reg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:134">
 			<value>308</value>
 			<value>8</value>
 			<value>3</value>
 		</item>
-		<item name="calc_sysclk(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:146">
+		<item name="write_addr_reg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:134">
 			<value>309</value>
+			<value>8</value>
+			<value>3</value>
+		</item>
+		<item name="calc_sysclk(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:146">
+			<value>310</value>
 			<value>21</value>
 			<value>6</value>
 		</item>
 		<item name="set_pll(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:172">
-			<value>310</value>
+			<value>311</value>
 			<value>39</value>
 			<value>15</value>
 		</item>
 		<item name="reset(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:216">
-			<value>311</value>
+			<value>312</value>
 			<value>19</value>
 			<value>3</value>
 		</item>
 		<item name="set_pixformat(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:237">
-			<value>312</value>
+			<value>313</value>
 			<value>34</value>
 			<value>8</value>
 		</item>
 		<item name="set_image_options(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:279">
-			<value>313</value>
-			<value>84</value>
-			<value>21</value>
-		</item>
-		<item name="set_framesize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:378">
 			<value>314</value>
 			<value>84</value>
 			<value>21</value>
 		</item>
-		<item name="set_hmirror(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:480">
+		<item name="set_framesize(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:378">
 			<value>315</value>
-			<value>11</value>
-			<value>2</value>
+			<value>84</value>
+			<value>21</value>
 		</item>
-		<item name="set_vflip(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:492">
+		<item name="set_hmirror(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:480">
 			<value>316</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_quality(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:504">
+		<item name="set_vflip(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:492">
 			<value>317</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_colorbar(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:516">
+		<item name="set_quality(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:504">
 			<value>318</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_gain_ctrl(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:528">
+		<item name="set_colorbar(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:516">
 			<value>319</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_exposure_ctrl(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:540">
+		<item name="set_gain_ctrl(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:528">
 			<value>320</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_whitebal(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:552">
+		<item name="set_exposure_ctrl(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:540">
 			<value>321</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_dcw_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:565">
+		<item name="set_whitebal(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:552">
 			<value>322</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_aec2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:578">
+		<item name="set_dcw_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:565">
 			<value>323</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_bpc_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:590">
+		<item name="set_aec2(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:578">
 			<value>324</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_wpc_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:602">
+		<item name="set_bpc_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:590">
 			<value>325</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_raw_gma_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:615">
+		<item name="set_wpc_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:602">
 			<value>326</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="set_lenc_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:627">
+		<item name="set_raw_gma_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:615">
 			<value>327</value>
 			<value>11</value>
 			<value>2</value>
 		</item>
-		<item name="get_agc_gain(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:639">
+		<item name="set_lenc_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:627">
 			<value>328</value>
+			<value>11</value>
+			<value>2</value>
+		</item>
+		<item name="get_agc_gain(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:639">
+			<value>329</value>
 			<value>19</value>
 			<value>4</value>
 		</item>
 		<item name="set_agc_gain(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:660">
-			<value>329</value>
+			<value>330</value>
 			<value>25</value>
 			<value>6</value>
 		</item>
 		<item name="get_aec_value(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:690">
-			<value>330</value>
+			<value>331</value>
 			<value>20</value>
 			<value>4</value>
 		</item>
 		<item name="set_aec_value(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:711">
-			<value>331</value>
+			<value>332</value>
 			<value>23</value>
 			<value>6</value>
 		</item>
 		<item name="set_ae_level(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:737">
-			<value>332</value>
+			<value>333</value>
 			<value>31</value>
 			<value>10</value>
 		</item>
 		<item name="set_wb_mode(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:776">
-			<value>333</value>
+			<value>334</value>
 			<value>44</value>
 			<value>17</value>
 		</item>
 		<item name="set_awb_gain_dsp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:823">
-			<value>334</value>
+			<value>335</value>
 			<value>14</value>
 			<value>3</value>
 		</item>
 		<item name="set_special_effect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:840">
-			<value>335</value>
+			<value>336</value>
 			<value>19</value>
 			<value>7</value>
 		</item>
 		<item name="set_brightness(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:862">
-			<value>336</value>
+			<value>337</value>
 			<value>43</value>
 			<value>9</value>
 		</item>
 		<item name="set_contrast(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:909">
-			<value>337</value>
+			<value>338</value>
 			<value>15</value>
 			<value>4</value>
 		</item>
 		<item name="set_saturation(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:926">
-			<value>338</value>
+			<value>339</value>
 			<value>23</value>
 			<value>6</value>
 		</item>
 		<item name="set_sharpness(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:952">
-			<value>339</value>
+			<value>340</value>
 			<value>23</value>
 			<value>12</value>
 		</item>
 		<item name="set_gainceiling(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:979">
-			<value>340</value>
+			<value>341</value>
 			<value>12</value>
 			<value>3</value>
 		</item>
 		<item name="get_denoise(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:994">
-			<value>341</value>
+			<value>342</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
 		<item name="set_denoise(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1003">
-			<value>342</value>
+			<value>343</value>
 			<value>19</value>
 			<value>6</value>
 		</item>
 		<item name="get_reg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1025">
-			<value>343</value>
+			<value>344</value>
 			<value>29</value>
 			<value>6</value>
 		</item>
 		<item name="set_reg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1055">
-			<value>344</value>
+			<value>345</value>
 			<value>46</value>
 			<value>9</value>
 		</item>
 		<item name="set_res_raw(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1102">
-			<value>345</value>
+			<value>346</value>
 			<value>19</value>
 			<value>7</value>
 		</item>
 		<item name="_set_pll(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1122">
-			<value>346</value>
+			<value>347</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="set_xclk(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1129">
-			<value>347</value>
+			<value>348</value>
 			<value>7</value>
 			<value>1</value>
 		</item>
 		<item name="init_status(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1137">
-			<value>348</value>
+			<value>349</value>
 			<value>33</value>
 			<value>1</value>
 		</item>
 		<item name="ov3660_detect(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1171">
-			<value>349</value>
+			<value>350</value>
 			<value>19</value>
 			<value>3</value>
 		</item>
 		<item name="ov3660_init(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:1191">
-			<value>350</value>
+			<value>351</value>
 			<value>38</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="14.842857142857143"/>
-		<average label="CCN" value="3.6857142857142855"/>
+		<average label="NCSS" value="14.82905982905983"/>
+		<average label="CCN" value="3.675213675213675"/>
 		<item name="SCCB_Init(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c:39">
-			<value>351</value>
+			<value>352</value>
 			<value>15</value>
 			<value>1</value>
 		</item>
 		<item name="SCCB_Deinit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c:56">
-			<value>352</value>
+			<value>353</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="SCCB_Probe(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c:61">
-			<value>353</value>
+			<value>354</value>
 			<value>39</value>
 			<value>6</value>
 		</item>
 		<item name="SCCB_Read(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c:104">
-			<value>354</value>
+			<value>355</value>
 			<value>27</value>
 			<value>3</value>
 		</item>
 		<item name="SCCB_Write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c:132">
-			<value>355</value>
+			<value>356</value>
 			<value>18</value>
 			<value>3</value>
 		</item>
 		<item name="SCCB_Read16(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c:151">
-			<value>356</value>
+			<value>357</value>
 			<value>29</value>
 			<value>3</value>
 		</item>
 		<item name="SCCB_Write16(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c:181">
-			<value>357</value>
+			<value>358</value>
 			<value>21</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="14.980392156862745"/>
-		<average label="CCN" value="3.669467787114846"/>
+		<average label="NCSS" value="14.966480446927374"/>
+		<average label="CCN" value="3.659217877094972"/>
 		<item name="esp_camera_sensor_get_info(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sensor.c:45">
-			<value>358</value>
+			<value>359</value>
 			<value>11</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="14.96927374301676"/>
-		<average label="CCN" value="3.6675977653631286"/>
+		<average label="NCSS" value="14.955431754874652"/>
+		<average label="CCN" value="3.6573816155988856"/>
 		<item name="xclk_timer_conf(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/xclk.c:17">
-			<value>359</value>
+			<value>360</value>
 			<value>15</value>
 			<value>2</value>
 		</item>
 		<item name="camera_enable_out_clock(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/xclk.c:35">
-			<value>360</value>
+			<value>361</value>
 			<value>25</value>
 			<value>3</value>
 		</item>
 		<item name="camera_disable_out_clock(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/xclk.c:62">
-			<value>361</value>
+			<value>362</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="14.966759002770083"/>
-		<average label="CCN" value="3.6537396121883656"/>
+		<average label="NCSS" value="14.953038674033149"/>
+		<average label="CCN" value="3.643646408839779"/>
 		<item name="_jpg_write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/esp_jpg_decode.c:44">
-			<value>362</value>
+			<value>363</value>
 			<value>14</value>
 			<value>2</value>
 		</item>
 		<item name="_jpg_read(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/esp_jpg_decode.c:61">
-			<value>363</value>
+			<value>364</value>
 			<value>18</value>
 			<value>5</value>
 		</item>
 		<item name="esp_jpg_decode(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/esp_jpg_decode.c:80">
-			<value>364</value>
+			<value>365</value>
 			<value>34</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="15.024725274725276"/>
-		<average label="CCN" value="3.6565934065934065"/>
+		<average label="NCSS" value="15.01095890410959"/>
+		<average label="CCN" value="3.6465753424657534"/>
 		<item name="jpge::jpge_malloc(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:34">
-			<value>365</value>
+			<value>366</value>
 			<value>10</value>
 			<value>3</value>
 		</item>
 		<item name="jpge::jpge_free(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:47">
-			<value>366</value>
+			<value>367</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="jpge::clamp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:129">
-			<value>367</value>
+			<value>368</value>
 			<value>12</value>
 			<value>3</value>
 		</item>
 		<item name="jpge::RGB_to_YCC(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:142">
-			<value>368</value>
+			<value>369</value>
 			<value>10</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::RGB_to_Y(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:153">
-			<value>369</value>
+			<value>370</value>
 			<value>7</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::Y_to_YCC(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:161">
-			<value>370</value>
+			<value>371</value>
 			<value>9</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::DCT2D(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:206">
-			<value>371</value>
+			<value>372</value>
 			<value>32</value>
 			<value>3</value>
 		</item>
 		<item name="jpge::compute_huffman_table(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:240">
-			<value>372</value>
+			<value>373</value>
 			<value>36</value>
 			<value>6</value>
 		</item>
 		<item name="jpge::jpeg_encoder::flush_output_buffer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:282">
-			<value>373</value>
+			<value>374</value>
 			<value>11</value>
 			<value>3</value>
 		</item>
 		<item name="jpge::jpeg_encoder::emit_byte(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:294">
-			<value>374</value>
+			<value>375</value>
 			<value>8</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::jpeg_encoder::put_bits(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:303">
-			<value>375</value>
+			<value>376</value>
 			<value>16</value>
 			<value>3</value>
 		</item>
 		<item name="jpge::jpeg_encoder::emit_word(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:320">
-			<value>376</value>
-			<value>5</value>
-			<value>1</value>
-		</item>
-		<item name="jpge::jpeg_encoder::emit_marker(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:327">
 			<value>377</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
-		<item name="jpge::jpeg_encoder::emit_jfif_app0(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:334">
+		<item name="jpge::jpeg_encoder::emit_marker(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:327">
 			<value>378</value>
+			<value>5</value>
+			<value>1</value>
+		</item>
+		<item name="jpge::jpeg_encoder::emit_jfif_app0(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:334">
+			<value>379</value>
 			<value>17</value>
 			<value>1</value>
 		</item>
 		<item name="jpge::jpeg_encoder::emit_dqt(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:353">
-			<value>379</value>
+			<value>380</value>
 			<value>11</value>
 			<value>4</value>
 		</item>
 		<item name="jpge::jpeg_encoder::emit_sof(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:366">
-			<value>380</value>
+			<value>381</value>
 			<value>15</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::jpeg_encoder::emit_dht(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:383">
-			<value>381</value>
+			<value>382</value>
 			<value>13</value>
 			<value>4</value>
 		</item>
 		<item name="jpge::jpeg_encoder::emit_dhts(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:402">
-			<value>382</value>
+			<value>383</value>
 			<value>10</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::jpeg_encoder::emit_sos(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:414">
-			<value>383</value>
+			<value>384</value>
 			<value>17</value>
 			<value>3</value>
 		</item>
 		<item name="jpge::jpeg_encoder::load_block_8_8_grey(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:432">
-			<value>384</value>
+			<value>385</value>
 			<value>18</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::jpeg_encoder::load_block_8_8(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:451">
-			<value>385</value>
+			<value>386</value>
 			<value>19</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::jpeg_encoder::load_block_16_8(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:471">
-			<value>386</value>
+			<value>387</value>
 			<value>23</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::jpeg_encoder::load_block_16_8_8(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:495">
-			<value>387</value>
+			<value>388</value>
 			<value>18</value>
 			<value>2</value>
 		</item>
 		<item name="jpge::jpeg_encoder::load_quantized_coefficients(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:514">
-			<value>388</value>
+			<value>389</value>
 			<value>24</value>
 			<value>5</value>
 		</item>
 		<item name="jpge::jpeg_encoder::code_coefficients_pass_two(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:539">
-			<value>389</value>
+			<value>390</value>
 			<value>64</value>
 			<value>11</value>
 		</item>
 		<item name="jpge::jpeg_encoder::code_block(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:610">
-			<value>390</value>
+			<value>391</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="jpge::jpeg_encoder::process_mcu_row(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:617">
-			<value>391</value>
+			<value>392</value>
 			<value>55</value>
 			<value>12</value>
 		</item>
 		<item name="jpge::jpeg_encoder::load_mcu(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:673">
-			<value>392</value>
+			<value>393</value>
 			<value>39</value>
 			<value>7</value>
 		</item>
 		<item name="jpge::jpeg_encoder::compute_quant_table(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:719">
-			<value>393</value>
+			<value>394</value>
 			<value>14</value>
 			<value>3</value>
 		</item>
 		<item name="jpge::jpeg_encoder::jpg_open(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:735">
-			<value>394</value>
+			<value>395</value>
 			<value>102</value>
 			<value>9</value>
 		</item>
 		<item name="jpge::jpeg_encoder::process_end_of_image(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:848">
-			<value>395</value>
+			<value>396</value>
 			<value>20</value>
 			<value>5</value>
 		</item>
 		<item name="jpge::jpeg_encoder::clear(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:870">
-			<value>396</value>
+			<value>397</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="jpge::jpeg_encoder::jpeg_encoder(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:877">
-			<value>397</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<item name="jpge::jpeg_encoder::~jpeg_encoder(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:882">
 			<value>398</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="jpge::jpeg_encoder::init(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:887">
+		<item name="jpge::jpeg_encoder::~jpeg_encoder(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:882">
 			<value>399</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<item name="jpge::jpeg_encoder::init(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:887">
+			<value>400</value>
 			<value>12</value>
 			<value>8</value>
 		</item>
 		<item name="jpge::jpeg_encoder::deinit(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:900">
-			<value>400</value>
+			<value>401</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="jpge::jpeg_encoder::process_scanline(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:906">
-			<value>401</value>
+			<value>402</value>
 			<value>22</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="15.391521197007481"/>
-		<average label="CCN" value="3.6359102244389025"/>
+		<average label="NCSS" value="15.378109452736318"/>
+		<average label="CCN" value="3.626865671641791"/>
 		<item name="_malloc(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:62">
-			<value>402</value>
+			<value>403</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="_rgb_write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:68">
-			<value>403</value>
+			<value>404</value>
 			<value>44</value>
 			<value>8</value>
 		</item>
 		<item name="_rgb565_write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:119">
-			<value>404</value>
+			<value>405</value>
 			<value>49</value>
 			<value>8</value>
 		</item>
 		<item name="_jpg_read(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:176">
-			<value>405</value>
+			<value>406</value>
 			<value>9</value>
 			<value>2</value>
 		</item>
 		<item name="jpg2rgb888(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:186">
-			<value>406</value>
-			<value>14</value>
-			<value>2</value>
-		</item>
-		<item name="jpg2rgb565(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:202">
 			<value>407</value>
 			<value>14</value>
 			<value>2</value>
 		</item>
-		<item name="jpg2bmp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:218">
+		<item name="jpg2rgb565(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:202">
 			<value>408</value>
+			<value>14</value>
+			<value>2</value>
+		</item>
+		<item name="jpg2bmp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:218">
+			<value>409</value>
 			<value>34</value>
 			<value>2</value>
 		</item>
 		<item name="fmt2rgb888(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:258">
-			<value>409</value>
+			<value>410</value>
 			<value>62</value>
 			<value>9</value>
 		</item>
 		<item name="fmt2bmp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:323">
-			<value>410</value>
+			<value>411</value>
 			<value>90</value>
 			<value>10</value>
 		</item>
 		<item name="frame2bmp(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:422">
-			<value>411</value>
+			<value>412</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="15.805352798053528"/>
-		<average label="CCN" value="3.656934306569343"/>
+		<average label="NCSS" value="15.79126213592233"/>
+		<average label="CCN" value="3.6480582524271843"/>
 		<item name="_malloc(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:32">
-			<value>412</value>
+			<value>413</value>
 			<value>9</value>
 			<value>2</value>
 		</item>
 		<item name="convert_line_format(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:42">
-			<value>413</value>
+			<value>414</value>
 			<value>53</value>
 			<value>8</value>
 		</item>
 		<item name="convert_image(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:98">
-			<value>414</value>
+			<value>415</value>
 			<value>52</value>
 			<value>9</value>
 		</item>
 		<item name="callback_stream::callback_stream(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:167">
-			<value>415</value>
-			<value>1</value>
-			<value>1</value>
-		</item>
-		<item name="callback_stream::~callback_stream(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:168">
 			<value>416</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="callback_stream::put_buf(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:169">
+		<item name="callback_stream::~callback_stream(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:168">
 			<value>417</value>
+			<value>1</value>
+			<value>1</value>
+		</item>
+		<item name="callback_stream::put_buf(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:169">
+			<value>418</value>
 			<value>5</value>
 			<value>1</value>
 		</item>
 		<item name="callback_stream::get_size(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:174">
-			<value>418</value>
+			<value>419</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="fmt2jpg_cb(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:180">
-			<value>419</value>
+			<value>420</value>
 			<value>6</value>
 			<value>1</value>
 		</item>
 		<item name="frame2jpg_cb(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:187">
-			<value>420</value>
-			<value>4</value>
-			<value>1</value>
-		</item>
-		<item name="memory_stream::memory_stream(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:199">
 			<value>421</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<item name="memory_stream::~memory_stream(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:204">
+		<item name="memory_stream::memory_stream(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:199">
 			<value>422</value>
+			<value>4</value>
+			<value>1</value>
+		</item>
+		<item name="memory_stream::~memory_stream(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:204">
+			<value>423</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
 		<item name="memory_stream::put_buf(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:206">
-			<value>423</value>
+			<value>424</value>
 			<value>17</value>
 			<value>4</value>
 		</item>
 		<item name="memory_stream::get_size(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:227">
-			<value>424</value>
+			<value>425</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
 		<item name="fmt2jpg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:233">
-			<value>425</value>
+			<value>426</value>
 			<value>20</value>
 			<value>3</value>
 		</item>
 		<item name="frame2jpg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:259">
-			<value>426</value>
+			<value>427</value>
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="15.683098591549296"/>
-		<average label="CCN" value="3.612676056338028"/>
+		<average label="NCSS" value="15.669789227166277"/>
+		<average label="CCN" value="3.604215456674473"/>
 		<item name="yuv2rgb(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/yuv.c:289">
-			<value>427</value>
+			<value>428</value>
 			<value>10</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="15.669789227166277"/>
-		<average label="CCN" value="3.6065573770491803"/>
+		<average label="NCSS" value="15.656542056074766"/>
+		<average label="CCN" value="3.5981308411214954"/>
 	</measure>
 	<measure type="File">
 		<labels>
@@ -2476,9 +2481,9 @@
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp">
 			<value>35</value>
-			<value>200</value>
-			<value>64</value>
-			<value>14</value>
+			<value>225</value>
+			<value>69</value>
+			<value>16</value>
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/RTOS/FreeRTOS/src/FreeRTOS.cpp">
 			<value>36</value>
@@ -2512,21 +2517,21 @@
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp">
 			<value>41</value>
-			<value>35</value>
-			<value>10</value>
-			<value>4</value>
+			<value>44</value>
+			<value>13</value>
+			<value>5</value>
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Temperature.cpp">
 			<value>42</value>
-			<value>21</value>
-			<value>7</value>
-			<value>2</value>
+			<value>9</value>
+			<value>3</value>
+			<value>1</value>
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Humidity.cpp">
 			<value>43</value>
-			<value>21</value>
-			<value>7</value>
-			<value>2</value>
+			<value>9</value>
+			<value>3</value>
+			<value>1</value>
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp">
 			<value>44</value>
@@ -2630,14 +2635,14 @@
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="126.45"/>
+		<average label="NCSS" value="126.61666666666666"/>
 		<average label="CCN" value="25.666666666666668"/>
-		<average label="Functions" value="7.116666666666666"/>
-		<sum label="NCSS" value="7587"/>
+		<average label="Functions" value="7.133333333333334"/>
+		<sum label="NCSS" value="7597"/>
 		<sum label="CCN" value="1540"/>
-		<sum label="Functions" value="427"/>
-		<average label="NCSS" value="15.669789227166277"/>
-		<average label="CCN" value="3.6065573770491803"/>
+		<sum label="Functions" value="428"/>
+		<average label="NCSS" value="15.656542056074766"/>
+		<average label="CCN" value="3.5981308411214954"/>
 	</measure>
 </cppncss>
 

@@ -77,7 +77,7 @@
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='uninitMemberVar' name='uninitMemberVar' checked></td><td>31</td><td>uninitMemberVar</td></tr>
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='variableScope' name='variableScope' checked></td><td>27</td><td>variableScope</td></tr>
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='unreadVariable' name='unreadVariable' checked></td><td>13</td><td>unreadVariable</td></tr>
-            <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='knownConditionTrueFalse' name='knownConditionTrueFalse' checked></td><td>8</td><td>knownConditionTrueFalse</td></tr>
+            <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='knownConditionTrueFalse' name='knownConditionTrueFalse' checked></td><td>10</td><td>knownConditionTrueFalse</td></tr>
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='unusedStructMember' name='unusedStructMember' checked></td><td>5</td><td>unusedStructMember</td></tr>
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='unusedPrivateFunction' name='unusedPrivateFunction' checked></td><td>4</td><td>unusedPrivateFunction</td></tr>
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='missingOverride' name='missingOverride' checked></td><td>3</td><td>missingOverride</td></tr>
@@ -88,7 +88,7 @@
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='clarifyCalculation' name='clarifyCalculation' checked></td><td>1</td><td>clarifyCalculation</td></tr>
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='multiCondition' name='multiCondition' checked></td><td>1</td><td>multiCondition</td></tr>
             <tr><td><input type='checkbox' onclick='toggle_class_visibility(this.id)' id='shadowVariable' name='shadowVariable' checked></td><td>1</td><td>shadowVariable</td></tr>
-           <tr><td></td><td>155</td><td>total</td></tr>
+           <tr><td></td><td>157</td><td>total</td></tr>
        </table>
        <p><a href="stats.html">Statistics</a></p>
       </div>
@@ -172,8 +172,8 @@
        <tr><td colspan='5'><a href='17.html'>/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/HTTP/src/Curl_SAL.cpp</a></td></tr>
        <tr class="uninitMemberVar"><td><a href="17.html#line-41">41</a></td><td>uninitMemberVar</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>warning</td><td >Member variable &apos;Curl_SAL::m_curl&apos; is not initialized in the constructor.</td></tr>
        <tr><td colspan='5'><a href='23.html'>/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c.hpp</a></td></tr>
-       <tr class="noExplicitConstructor"><td><a href="23.html#line-130">130</a></td><td>noExplicitConstructor</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>style</td><td >Class &apos;i2c &lt; i2c_esp32 &gt;&apos; has a constructor with 1 argument that is not explicit.</td></tr>
-       <tr class="noExplicitConstructor"><td><a href="23.html#line-130">130</a></td><td>noExplicitConstructor</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>style</td><td >Class &apos;i2c &lt; i2c_mock &gt;&apos; has a constructor with 1 argument that is not explicit.</td></tr>
+       <tr class="noExplicitConstructor"><td><a href="23.html#line-144">144</a></td><td>noExplicitConstructor</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>style</td><td >Class &apos;i2c &lt; i2c_esp32 &gt;&apos; has a constructor with 1 argument that is not explicit.</td></tr>
+       <tr class="noExplicitConstructor"><td><a href="23.html#line-144">144</a></td><td>noExplicitConstructor</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>style</td><td >Class &apos;i2c &lt; i2c_mock &gt;&apos; has a constructor with 1 argument that is not explicit.</td></tr>
        <tr><td colspan='5'><a href='18.html'>/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c_esp32.hpp</a></td></tr>
        <tr class="noExplicitConstructor"><td><a href="18.html#line-58">58</a></td><td>noExplicitConstructor</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>style</td><td >Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit.</td></tr>
        <tr class="noExplicitConstructor"><td><a href="18.html#line-58">58</a></td><td>noExplicitConstructor</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>style</td><td >Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit.</td></tr>
@@ -186,6 +186,8 @@
        <tr class="knownConditionTrueFalse"><td><a href="19.html#line-119">119</a></td><td>knownConditionTrueFalse</td><td><a href='https://cwe.mitre.org/data/definitions/570.html'>570</a></td><td>style</td><td >Condition &apos;err!=GE_OK&apos; is always false</td></tr>
        <tr class="knownConditionTrueFalse"><td><a href="19.html#line-139">139</a></td><td>knownConditionTrueFalse</td><td><a href='https://cwe.mitre.org/data/definitions/570.html'>570</a></td><td>style</td><td >Condition &apos;err!=GE_OK&apos; is always false</td></tr>
        <tr class="knownConditionTrueFalse"><td><a href="19.html#line-149">149</a></td><td>knownConditionTrueFalse</td><td><a href='https://cwe.mitre.org/data/definitions/570.html'>570</a></td><td>style</td><td >Condition &apos;err!=GE_OK&apos; is always false</td></tr>
+       <tr class="knownConditionTrueFalse"><td><a href="19.html#line-164">164</a></td><td>knownConditionTrueFalse</td><td><a href='https://cwe.mitre.org/data/definitions/570.html'>570</a></td><td>style</td><td >Condition &apos;err!=GE_OK&apos; is always false</td></tr>
+       <tr class="knownConditionTrueFalse"><td><a href="19.html#line-174">174</a></td><td>knownConditionTrueFalse</td><td><a href='https://cwe.mitre.org/data/definitions/570.html'>570</a></td><td>style</td><td >Condition &apos;err!=GE_OK&apos; is always false</td></tr>
        <tr><td colspan='5'><a href='20.html'>/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/include/mqtt_api_v2.hpp</a></td></tr>
        <tr class="unusedPrivateFunction"><td><a href="20.html#line-113">113</a></td><td>unusedPrivateFunction</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>style</td><td >Unused private function: &apos;mqtt_api_v2::handle_event&apos;</td></tr>
        <tr class="unusedPrivateFunction"><td><a href="20.html#line-117">117</a></td><td>unusedPrivateFunction</td><td><a href='https://cwe.mitre.org/data/definitions/398.html'>398</a></td><td>style</td><td >Unused private function: &apos;mqtt_api_v2::disconnect&apos;</td></tr>
