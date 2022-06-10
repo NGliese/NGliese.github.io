@@ -1,5 +1,6 @@
 var NAVTREEINDEX6 =
 {
+"da/d25/_free_r_t_o_s_8cpp_source.html":[24,0,1,9,0,1,0],
 "da/d2a/md__components__interfaces__service_base_src_empty_file.html":[14],
 "da/d3e/class_service_queue_base.html":[23,0,80],
 "da/d3e/class_service_queue_base.html#a30493f33913c586a29be7c125d0f3394":[23,0,80,4],
@@ -76,13 +77,13 @@ var NAVTREEINDEX6 =
 "da/d85/data_8hpp_source.html":[24,0,1,1,1,1,0,0],
 "da/da0/_dog_feeder_door_8cpp.html":[24,0,1,14,0,1,0],
 "da/da0/_dog_feeder_door_8cpp_source.html":[24,0,1,14,0,1,0],
-"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html":[24,0,1,2,0,0,1],
-"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#a48ba5ccfe8404556555b9c79fcd21382":[24,0,1,2,0,0,1,0],
-"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#a64a9eec3884547971e4d39bfb8c06629":[24,0,1,2,0,0,1,3],
-"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#ab796628521059467a4212ef00ff7fbf9":[24,0,1,2,0,0,1,1],
-"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#af8ef41ecd72e84cc75d272fc69968448":[24,0,1,2,0,0,1,4],
-"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#afc3f514333247fedf7c54fac69c14b74":[24,0,1,2,0,0,1,2],
-"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp_source.html":[24,0,1,2,0,0,1],
+"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html":[24,0,1,2,0,0,2],
+"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#a48ba5ccfe8404556555b9c79fcd21382":[24,0,1,2,0,0,2,0],
+"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#a64a9eec3884547971e4d39bfb8c06629":[24,0,1,2,0,0,2,3],
+"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#ab796628521059467a4212ef00ff7fbf9":[24,0,1,2,0,0,2,1],
+"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#af8ef41ecd72e84cc75d272fc69968448":[24,0,1,2,0,0,2,4],
+"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp.html#afc3f514333247fedf7c54fac69c14b74":[24,0,1,2,0,0,2,2],
+"da/dbd/esp32__i2c__adc__battery__v1__0_8hpp_source.html":[24,0,1,2,0,0,2],
 "da/dc0/md__components__interfaces__actuator_base_src_empty_file.html":[6],
 "da/dd6/class_message___protocol.html":[23,0,42],
 "da/dd6/class_message___protocol.html#a0e0f7afa361173da7de0c601d49590f6":[23,0,42,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX6 =
 "db/db4/class_online_detector__service.html#a65df6eee6f6bb9a882f6cbfd20df949f":[23,0,54,4],
 "db/db4/class_online_detector__service.html#a6d96ac36ffd885d4a5b7f20d369df596":[23,0,54,1],
 "db/db4/class_online_detector__service.html#ad10f6b90988740c69f371d422ecb08ad":[23,0,54,2],
-"db/dc2/_sensor_controller_base___m_o_c_k_8hpp.html":[24,0,1,6,8,2,0,1],
-"db/dc2/_sensor_controller_base___m_o_c_k_8hpp_source.html":[24,0,1,6,8,2,0,1]
+"db/dc2/_sensor_controller_base___m_o_c_k_8hpp.html":[24,0,1,6,8,2,0,1]
 };

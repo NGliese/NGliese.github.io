@@ -1,11 +1,12 @@
 var NAVTREEINDEX8 =
 {
+"dd/d84/class_fault___handler.html#ab52d6f245c60a1b3627f8c2d46ab37af":[23,0,23,8],
 "dd/d84/class_fault___handler.html#ac1779aadf99dffa4386ac97b59e1600f":[23,0,23,0,2],
 "dd/d84/class_fault___handler.html#ac1779aadf99dffa4386ac97b59e1600f":[24,0,1,7,3,0,0,2,2],
 "dd/d84/class_fault___handler.html#af4009183f36c416c0ec0977681a59f9f":[24,0,1,7,3,0,0,2,0],
 "dd/d84/class_fault___handler.html#af4009183f36c416c0ec0977681a59f9f":[23,0,23,0,0],
-"dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t":[23,0,23,0],
 "dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t":[24,0,1,7,3,0,0,2],
+"dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t":[23,0,23,0],
 "dd/d8b/md__components__objects__json_src_empty_file.html":[16],
 "dd/d92/class_query_data_message.html":[23,0,66],
 "dd/d92/class_query_data_message.html#a59156f2a41d8d8e763b1559311af027d":[23,0,66,1],
@@ -40,6 +41,10 @@ var NAVTREEINDEX8 =
 "dd/dd3/_water_estimator___service_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9":[24,0,1,11,2,1,0,1],
 "dd/dd3/_water_estimator___service_8cpp.html#ad72dbcf6d0153db1b8d8a58001feed83":[24,0,1,11,2,1,0,0],
 "dd/dd3/_water_estimator___service_8cpp_source.html":[24,0,1,11,2,1,0],
+"dd/dd9/esp32__env__v1__0_8hpp.html":[24,0,1,2,0,0,0],
+"dd/dd9/esp32__env__v1__0_8hpp.html#ad21c06c513e9c02afc1492b8dbd165db":[24,0,1,2,0,0,0,1],
+"dd/dd9/esp32__env__v1__0_8hpp.html#afcfd47e2a4f929821b77267c95b1e21a":[24,0,1,2,0,0,0,0],
+"dd/dd9/esp32__env__v1__0_8hpp_source.html":[24,0,1,2,0,0,0],
 "dd/ddd/_maintainer_8cpp.html":[24,0,1,7,8,1,0],
 "dd/ddd/_maintainer_8cpp.html#a53bff0a212ba94f946acfdc8a004f83c":[24,0,1,7,8,1,0,0],
 "dd/ddd/_maintainer_8cpp.html#adc2888c679c3a8e722576817f89e6a4d":[24,0,1,7,8,1,0,1],
@@ -244,10 +249,5 @@ var NAVTREEINDEX8 =
 "df/d5e/esp32__http__sal__test_8cpp.html#a9bbdf24639b56e23b6d86d0ae5f5ed8c":[24,0,1,8,0,2,1,1,1],
 "df/d5e/esp32__http__sal__test_8cpp_source.html":[24,0,1,8,0,2,1,1],
 "df/d5f/_watch___clock_8cpp.html":[24,0,1,7,16,1,0],
-"df/d5f/_watch___clock_8cpp_source.html":[24,0,1,7,16,1,0],
-"df/d81/_n_v_s__esp32_8hpp.html":[24,0,1,7,10,0,1],
-"df/d81/_n_v_s__esp32_8hpp_source.html":[24,0,1,7,10,0,1],
-"df/d91/_query_add_external_resources_8cpp.html":[24,0,1,7,13,1,0],
-"df/d91/_query_add_external_resources_8cpp_source.html":[24,0,1,7,13,1,0],
-"df/dab/yuv_8c.html":[24,0,1,13,1,1,4]
+"df/d5f/_watch___clock_8cpp_source.html":[24,0,1,7,16,1,0]
 };

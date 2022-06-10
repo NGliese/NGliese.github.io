@@ -364,37 +364,37 @@
 		</item>
 		<average label="NCSS" value="12.138461538461538"/>
 		<average label="CCN" value="3.4153846153846152"/>
-		<item name="Maintainer::Maintainer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:40">
+		<item name="Maintainer::Maintainer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:41">
 			<value>66</value>
 			<value>33</value>
 			<value>7</value>
 		</item>
-		<item name="Maintainer::~Maintainer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:81">
+		<item name="Maintainer::~Maintainer(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:82">
 			<value>67</value>
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<item name="Maintainer::install_system_test_fuction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:97">
+		<item name="Maintainer::install_system_test_fuction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:98">
 			<value>68</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
-		<item name="Maintainer::run(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:113">
+		<item name="Maintainer::run(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:114">
 			<value>69</value>
 			<value>12</value>
 			<value>3</value>
 		</item>
-		<item name="Maintainer::periodic_restart(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:136">
+		<item name="Maintainer::periodic_restart(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:137">
 			<value>70</value>
 			<value>12</value>
 			<value>4</value>
 		</item>
-		<item name="Maintainer::check_system_functions(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:167">
+		<item name="Maintainer::check_system_functions(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:168">
 			<value>71</value>
 			<value>18</value>
 			<value>5</value>
 		</item>
-		<item name="Maintainer::checkOTAUpdate(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:195">
+		<item name="Maintainer::checkOTAUpdate(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Maintainer/src/Maintainer.cpp:196">
 			<value>72</value>
 			<value>10</value>
 			<value>4</value>

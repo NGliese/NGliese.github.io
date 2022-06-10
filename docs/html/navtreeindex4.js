@@ -1,5 +1,6 @@
 var NAVTREEINDEX4 =
 {
+"d5/db4/class_wi_fi___s_a_l__esp32.html#a69a30a3169e7d514034bc91e4ebcdd81":[23,0,93,8],
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a813c154a9b1fb2d9ffbd84f62e53a882":[23,0,93,2],
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a83692a58f796ad7540891402433bde33":[23,0,93,11],
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a84b00bbf33aaee062939b6f2f8447034":[23,0,93,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX4 =
 "d7/de8/active__cur__test_8cpp.html":[24,0,1,10,0,2,0,1],
 "d7/de8/active__cur__test_8cpp.html#a94a757f83395522adc887092c8d97f81":[24,0,1,10,0,2,0,1,0],
 "d7/de8/active__cur__test_8cpp.html#aeb4163b7e4b57b764d761cc7b558f9c8":[24,0,1,10,0,2,0,1,1],
-"d7/de8/active__cur__test_8cpp_source.html":[24,0,1,10,0,2,0,1],
-"d7/dfc/_query_message_8hpp.html":[24,0,1,7,13,0,2]
+"d7/de8/active__cur__test_8cpp_source.html":[24,0,1,10,0,2,0,1]
 };

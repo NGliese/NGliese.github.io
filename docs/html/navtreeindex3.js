@@ -1,5 +1,6 @@
 var NAVTREEINDEX3 =
 {
+"d5/d2e/sensor_8h.html#a79bc85e5282a183d6c06edc6eb77a69eaf9cd0010696fbc6134825892e0487d27":[24,0,1,13,0,0,7,11,13],
 "d5/d2e/sensor_8h.html#a8500b9feac886459974c6008457621fd":[24,0,1,13,0,0,7,4,10],
 "d5/d2e/sensor_8h.html#a86f231205d4a8204a7f83d931925417c":[24,0,1,13,0,0,7,4,25],
 "d5/d2e/sensor_8h.html#a88b1fe154069f21e5ed245f1dae172d9":[24,0,1,13,0,0,7,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX3 =
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a0262bf21a5b8d3aa7831f17de5bd8f9e":[23,0,93,9],
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a10a34d522fa7aaf97554fa11186baf01":[23,0,93,10],
 "d5/db4/class_wi_fi___s_a_l__esp32.html#a1ccd2780b20c4990b2f54c439448643a":[23,0,93,5],
-"d5/db4/class_wi_fi___s_a_l__esp32.html#a45e40cce1ec230349feac1ccf16c4ab6":[23,0,93,13],
-"d5/db4/class_wi_fi___s_a_l__esp32.html#a69a30a3169e7d514034bc91e4ebcdd81":[23,0,93,8]
+"d5/db4/class_wi_fi___s_a_l__esp32.html#a45e40cce1ec230349feac1ccf16c4ab6":[23,0,93,13]
 };

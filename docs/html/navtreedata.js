@@ -88,15 +88,15 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d2/d40/msg__test_8cpp.html#ad9d0e49f955433e931ddabb0816629a2",
-"d4/d57/class_g_p_i_o___h_a_l.html",
-"d5/d2e/sensor_8h.html#a8500b9feac886459974c6008457621fd",
-"d5/db4/class_wi_fi___s_a_l__esp32.html#a813c154a9b1fb2d9ffbd84f62e53a882",
-"d7/dfc/_query_message_8hpp_source.html",
-"da/d2a/md__components__interfaces__service_base_src_empty_file.html",
-"db/dc6/http__test_8cpp.html",
-"dd/d84/class_fault___handler.html#ac1779aadf99dffa4386ac97b59e1600f",
-"df/dab/yuv_8c.html#a1d5f27be84d51929e4baeed1629aef33",
-"dir_c64ba83a7295b017f26952d186be59da.html"
+"d4/d54/esp32_cam_8cpp_source.html",
+"d5/d2e/sensor_8h.html#a79bc85e5282a183d6c06edc6eb77a69eaf9cd0010696fbc6134825892e0487d27",
+"d5/db4/class_wi_fi___s_a_l__esp32.html#a69a30a3169e7d514034bc91e4ebcdd81",
+"d7/dfc/_query_message_8hpp.html",
+"da/d25/_free_r_t_o_s_8cpp_source.html",
+"db/dc2/_sensor_controller_base___m_o_c_k_8hpp_source.html",
+"dd/d84/class_fault___handler.html#ab52d6f245c60a1b3627f8c2d46ab37af",
+"df/d81/_n_v_s__esp32_8hpp.html",
+"dir_c23a63509c07f239461d127dc591e4f0.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

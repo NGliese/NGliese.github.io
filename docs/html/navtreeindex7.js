@@ -1,5 +1,6 @@
 var NAVTREEINDEX7 =
 {
+"db/dc2/_sensor_controller_base___m_o_c_k_8hpp_source.html":[24,0,1,6,8,2,0,1],
 "db/dc6/http__test_8cpp.html":[24,0,1,8,0,2,1,2],
 "db/dc6/http__test_8cpp.html#a0ae7e8c2c717144bc6e5545004c89500":[24,0,1,8,0,2,1,2,0],
 "db/dc6/http__test_8cpp.html#a5e5b95f32e551e6b08f59a1f0cd5ebac":[24,0,1,8,0,2,1,2,1],
@@ -233,7 +234,7 @@ var NAVTREEINDEX7 =
 "dd/d71/classjsmn__object.html#a1c4d336163495edbd1c1f716cf09f98e":[23,0,38,2],
 "dd/d71/classjsmn__object.html#aa5846a9718287afb0a5c185c9d9946d8":[23,0,38,0],
 "dd/d71/classjsmn__object.html#abf7eb033597ee8a41d98d6d19c14482c":[23,0,38,1],
-"dd/d7c/namespaceesp32__i2c__adapter__v1__0.html":[22,0,1],
+"dd/d7c/namespaceesp32__i2c__adapter__v1__0.html":[22,0,2],
 "dd/d82/_active_current_sensor_8hpp.html":[24,0,1,10,0,0,0],
 "dd/d82/_active_current_sensor_8hpp_source.html":[24,0,1,10,0,0,0],
 "dd/d84/class_fault___handler.html":[23,0,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX7 =
 "dd/d84/class_fault___handler.html#a8d16396cdc318f240c1b626c84a342aa":[23,0,23,6],
 "dd/d84/class_fault___handler.html#a9e0a86e7aa5d2122272f252e285f7bc5":[23,0,23,10],
 "dd/d84/class_fault___handler.html#aacf5dc78d027586f426cb0929d7e3049":[23,0,23,9],
-"dd/d84/class_fault___handler.html#aaf460d445522c06f921af8816f1f39f0":[23,0,23,4],
-"dd/d84/class_fault___handler.html#ab52d6f245c60a1b3627f8c2d46ab37af":[23,0,23,8]
+"dd/d84/class_fault___handler.html#aaf460d445522c06f921af8816f1f39f0":[23,0,23,4]
 };
