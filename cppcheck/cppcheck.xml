@@ -273,6 +273,30 @@
             <symbol>WiFi_SAL_esp32</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/EnvSensing/src/EnvSensing_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
+            <symbol>GPIO_API</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;i2c_esp32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/EnvSensing/src/EnvSensing_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/include/i2c_esp32.hpp" line="58" column="2"/>
+            <symbol>i2c_esp32</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;AM2320_Humidity&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;AM2320_Humidity&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/EnvSensing/src/EnvSensing_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/include/AM2320_Humidity.hpp" line="54" column="2"/>
+            <symbol>AM2320_Humidity</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;AM2320_Temperature&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;AM2320_Temperature&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/EnvSensing/src/EnvSensing_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/include/AM2320_Temperature.hpp" line="54" column="2"/>
+            <symbol>AM2320_Temperature</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_HAL&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/EnvSensing/src/EnvSensing_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/HAL.hpp" line="127" column="2"/>
+            <symbol>friend_HAL</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/EnvSensing/src/EnvSensing_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
+            <symbol>friend_GPIO_API</symbol>
+        </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="81" column="2"/>
             <symbol>GPIO_API</symbol>
         </error>
