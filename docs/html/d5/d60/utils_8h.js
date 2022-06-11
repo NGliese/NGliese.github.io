@@ -11,6 +11,7 @@ var utils_8h =
     [ "printBits", "d5/d60/utils_8h.html#a553dc49f84a0874f09d55f9e84fb31d2", null ],
     [ "random", "d5/d60/utils_8h.html#ad099faa5979cc1f9d79cd0e523d51459", null ],
     [ "shift32BitTo8", "d5/d60/utils_8h.html#abcb3d0905a1add1bfb84a387f32fdaa4", null ],
+    [ "shift8BitTo16", "d5/d60/utils_8h.html#a1c2e95f68d79f5a88fc223ff7fc4e1b3", null ],
     [ "shift8BitTo32", "d5/d60/utils_8h.html#a6d24c5e923faf871ecdabf0f81e6f880", null ],
     [ "split", "d5/d60/utils_8h.html#ae224bc997d6ec4c751530be2569999bf", null ],
     [ "split", "d5/d60/utils_8h.html#a0aae095d360fce7758a595e3fa343f73", null ],

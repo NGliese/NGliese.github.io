@@ -16,8 +16,6 @@ var _database___i_d___base_8hpp =
       [ "WINDOW_DETECT_GYM2", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a594633d4eb140b2a81fb82a17c135cb9", null ],
       [ "WINDOW_DETECT_LIVINGROOM1", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aa750c4f6d6d640714ecf3c2699d445d8", null ],
       [ "WINDOW_DETECT_KITCHEN1", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a9eef755a809c299d106637b092cade4e", null ],
-      [ "ENV_SKUR_TEMP1", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a1f23c9271099cefc5cfcdbe25afa6292", null ],
-      [ "ENV_SKUR_HUM1", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a37ee3cfa387a765eb25cc3363a4d3343", null ],
       [ "GH_AMBIENT_TEMP", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a783eb05fa72b7d1a8492b480688935f8", null ],
       [ "GH_AMBIENT_HUM", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a78044c12532d041817988a21db2744ec", null ],
       [ "GH_AMBIENT_LIGHT", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0750905ce747bdc65c8545d0ad649e7e", null ],
@@ -61,7 +59,10 @@ var _database___i_d___base_8hpp =
       [ "ONLINEDETECTOR_FAIL", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a7053ae603e2dde1b8dbb127948b86cea", null ],
       [ "ONLINEDETECTOR_REACH_TIME", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a95ce0e1769df74823c064852b8857f28", null ],
       [ "ESP32CAMTEST_ISALIVE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a323adbe5138eaf9355208cfa87c2aac2", null ],
-      [ "ESP32CAMTEST_ERRORCODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2", null ]
+      [ "ESP32CAMTEST_ERRORCODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2", null ],
+      [ "ENV01_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aed7b51ad2e46d057bacea18def603bfc", null ],
+      [ "ENV01_SKUR_TEMPERATURE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aed63ecb1b56698f2b7e84d35dc133928", null ],
+      [ "ENV01_SKUR_HUMIDITY", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9", null ]
     ] ],
     [ "map", "d5/d40/_database___i_d___base_8hpp.html#a40f5a6d0734142b0008af0e8a9c51013", null ]
 ];

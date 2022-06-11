@@ -42,6 +42,8 @@ var NAVTREE =
     [ "empty_file", "dd/d8b/md__components__objects__json_src_empty_file.html", null ],
     [ "empty_file", "d6/d17/md__components__sensor__a_m2320_include_empty_file.html", null ],
     [ "empty_file", "d2/dfa/md__components__sensor__a_m2320_src_empty_file.html", null ],
+    [ "empty_file", "d3/df9/md__components__service__env_sensing_include_empty_file.html", null ],
+    [ "empty_file", "de/dbb/md__components__service__env_sensing_src_empty_file.html", null ],
     [ "empty_file", "d5/de1/md__components__service_is_alive_include_empty_file.html", null ],
     [ "empty_file", "d6/d5d/md__components__service_is_alive_src_empty_file.html", null ],
     [ "empty_file", "d9/d85/md__components__template_include_empty_file.html", null ],
@@ -90,15 +92,16 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d2/d40/msg__test_8cpp.html#ab643d58bf2f0f485b5b65226a77d65a0",
-"d4/d52/sensor_8c.html",
-"d5/d2e/sensor_8h.html#a79bc85e5282a183d6c06edc6eb77a69eab4318462fa84115be836b64bac9afb07",
-"d5/d8a/class_connected_components.html#acc3ba19dcda0f738e0fb9670476a03ca",
-"d7/d6e/_template_2test_2test_2simple__test_8cpp.html#aa381f71bdac424db96b9271b566e9cd5",
-"d9/de1/class_r_t_c___h_a_l.html#a9a9e83f07fc3ac1b9f61fa5ec6cd805c",
-"db/d4d/class_background___extractor.html#ad886c360ab8e1c3ce4f85b392a891abe",
-"dd/d11/class_actuator___base.html#a95da467522ee717e35c69ce2fc3099a2",
-"df/d31/classjpge_1_1jpeg__encoder.html#a5d2dfe8e6492c34eb32882a21951f987",
-"dir_9275d377bef5d083536188ab0590ed77.html"
+"d4/d09/_objects_2_p_w_m_2test_2test__main_8cpp_source.html",
+"d5/d2e/sensor_8h.html#a79bc85e5282a183d6c06edc6eb77a69eaae67a7ce2f8284635297c17ac88ddd49",
+"d5/d8a/class_connected_components.html#a8fec9ac57bb4c7f7d5bde539ce6c3a71",
+"d7/d6d/class_task.html#ae34ca52fc6ff0503c4ab58050c9a09b3",
+"d9/ddd/i2c__common_8hpp.html#a914b5380deafacd332c78ff3bca52886",
+"db/d4d/class_background___extractor.html#aa19dc6036a88f1f4d40edeb3fe8a9585",
+"dd/d11/class_actuator___base.html#a1c1c346acf0476261d75abd8a2ca6c4d",
+"df/d31/classjpge_1_1jpeg__encoder.html#a2e13d283328195b1abab356d9af3523a",
+"dir_70e8a84ecf81207a43c231d890e6f16d.html",
+"globals_m.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

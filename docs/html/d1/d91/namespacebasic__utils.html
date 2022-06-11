@@ -101,6 +101,8 @@ Functions</h2></td></tr>
 <tr class="separator:a1f93c1b3a8743c3dc4935812248fd543"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d49b92733f3d61bc70d860dcd828e45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d91/namespacebasic__utils.html#a2d49b92733f3d61bc70d860dcd828e45">delay</a> (const uint32_t &amp;delay_ms)</td></tr>
 <tr class="separator:a2d49b92733f3d61bc70d860dcd828e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2e95f68d79f5a88fc223ff7fc4e1b3"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d91/namespacebasic__utils.html#a1c2e95f68d79f5a88fc223ff7fc4e1b3">shift8BitTo16</a> (const uint8_t &amp;b1, const uint8_t &amp;b2)</td></tr>
+<tr class="separator:a1c2e95f68d79f5a88fc223ff7fc4e1b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d24c5e923faf871ecdabf0f81e6f880"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d91/namespacebasic__utils.html#a6d24c5e923faf871ecdabf0f81e6f880">shift8BitTo32</a> (const uint8_t &amp;b1, const uint8_t &amp;b2, const uint8_t &amp;b3, const uint8_t &amp;b4)</td></tr>
 <tr class="separator:a6d24c5e923faf871ecdabf0f81e6f880"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb3d0905a1add1bfb84a387f32fdaa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533e">general_err_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d91/namespacebasic__utils.html#abcb3d0905a1add1bfb84a387f32fdaa4">shift32BitTo8</a> (const uint32_t &amp;b32, uint8_t &amp;b1, uint8_t &amp;b2, uint8_t &amp;b3, uint8_t &amp;b4)</td></tr>
@@ -266,15 +268,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d06/utils_8cpp_source.html#l00198">198</a> of file <a class="el" href="../../de/d06/utils_8cpp_source.html">utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;{</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f">random_first</a>)</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;        srand(time(NULL));</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        <a class="code" href="../../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f">random_first</a> = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    }</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">return</span> min + rand() % ((max + 1) - min);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d06/utils_8cpp_source.html#l00203">203</a> of file <a class="el" href="../../de/d06/utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;{</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="keywordflow">if</span>(<a class="code" href="../../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f">random_first</a>)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;        srand(time(NULL));</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        <a class="code" href="../../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f">random_first</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    }</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordflow">return</span> min + rand() % ((max + 1) - min);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f">random_first</a>.</p>
 
@@ -324,28 +326,63 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d06/utils_8cpp_source.html#l00177">177</a> of file <a class="el" href="../../de/d06/utils_8cpp_source.html">utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;{</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&gt;&gt; enclosing_method &gt;&gt; &quot;</span>);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    <span class="comment">// Executable code:</span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160; </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    b1 = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(b32 &gt;&gt; 24);</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    b2 = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(b32 &gt;&gt; 16);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    b3 = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(b32 &gt;&gt; 8);</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    b4 = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(b32);</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d06/utils_8cpp_source.html#l00182">182</a> of file <a class="el" href="../../de/d06/utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;{</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&gt;&gt; enclosing_method &gt;&gt; &quot;</span>);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;    <span class="comment">// Executable code:</span></div>
 <div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&lt;&lt; enclosing_method &lt;&lt; &quot;</span>);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;}</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    b1 = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(b32 &gt;&gt; 24);</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    b2 = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(b32 &gt;&gt; 16);</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    b3 = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(b32 &gt;&gt; 8);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    b4 = <span class="keyword">static_cast&lt;</span>uint8_t<span class="keyword">&gt;</span>(b32);</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;<span class="preprocessor">#ifdef DEBUG</span></div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <a class="code" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>(<a class="code" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>, <span class="stringliteral">&quot;&lt;&lt; enclosing_method &lt;&lt; &quot;</span>);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../da/d5f/_b_a_s_i_c_8hpp.html#a069dd5e6ddfd552dc1c6f70d7c3b93c5">LOG_PRINT_INFO</a>, and <a class="el" href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d38/utils__test_8cpp.html#ab4551417ca1dd62287007c0a3ff0c1cf">TEST()</a>.</p>
+
+</div>
+</div>
+<a id="a1c2e95f68d79f5a88fc223ff7fc4e1b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2e95f68d79f5a88fc223ff7fc4e1b3">&#9670;&nbsp;</a></span>shift8BitTo16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t basic_utils::shift8BitTo16 </td>
+          <td>(</td>
+          <td class="paramtype">const uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>b1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const uint8_t &amp;&#160;</td>
+          <td class="paramname"><em>b2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../de/d06/utils_8cpp_source.html#l00171">171</a> of file <a class="el" href="../../de/d06/utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;{</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    <span class="keywordflow">return</span> (b1 &lt;&lt; 8 | b2);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">Referenced by <a class="el" href="../../d5/d38/utils__test_8cpp.html#ab08f6db00efbc707fc4b0f66d5df1148">TEST()</a>.</p>
 
 </div>
 </div>
@@ -387,10 +424,10 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../de/d06/utils_8cpp_source.html#l00171">171</a> of file <a class="el" href="../../de/d06/utils_8cpp_source.html">utils.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;{</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="keywordflow">return</span> (b1 &lt;&lt; 24 | b2 &lt;&lt; 16 | b3 &lt;&lt; 8 | b4);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;}</div>
+<p class="definition">Definition at line <a class="el" href="../../de/d06/utils_8cpp_source.html#l00176">176</a> of file <a class="el" href="../../de/d06/utils_8cpp_source.html">utils.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;{</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="keywordflow">return</span> (b1 &lt;&lt; 24 | b2 &lt;&lt; 16 | b3 &lt;&lt; 8 | b4);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;}</div>
 </div><!-- fragment -->
 <p class="reference">Referenced by <a class="el" href="../../d5/d38/utils__test_8cpp.html#ab4551417ca1dd62287007c0a3ff0c1cf">TEST()</a>.</p>
 
@@ -504,7 +541,7 @@ Functions</h2></td></tr>
 </div>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="autils_8cpp_html_a678b86c81cb2e2f61b40b8a0bd75af3f"><div class="ttname"><a href="../../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f">random_first</a></div><div class="ttdeci">static bool random_first</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00196">utils.cpp:196</a></div></div>
+<div class="ttc" id="autils_8cpp_html_a678b86c81cb2e2f61b40b8a0bd75af3f"><div class="ttname"><a href="../../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f">random_first</a></div><div class="ttdeci">static bool random_first</div><div class="ttdef"><b>Definition:</b> <a href="../../de/d06/utils_8cpp_source.html#l00201">utils.cpp:201</a></div></div>
 <div class="ttc" id="adata_8hpp_html_abc449e4bb8b88f446dd88a30a85f93f0"><div class="ttname"><a href="../../da/d85/data_8hpp.html#abc449e4bb8b88f446dd88a30a85f93f0">vec</a></div><div class="ttdeci">const std::vector&lt; std::pair&lt; uint64_t, uint64_t &gt; &gt; vec</div><div class="ttdef"><b>Definition:</b> <a href="../../da/d85/data_8hpp_source.html#l00007">data.hpp:7</a></div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
 <div class="ttc" id="a_wi_fi___s_a_l__esp32_8cpp_html_a328e9da88a07f3a0bf81b40d25469ff9"><div class="ttname"><a href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp.html#a328e9da88a07f3a0bf81b40d25469ff9">LOG_TAG</a></div><div class="ttdeci">static const char * LOG_TAG</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/dc3/_wi_fi___s_a_l__esp32_8cpp_source.html#l00025">WiFi_SAL_esp32.cpp:25</a></div></div>

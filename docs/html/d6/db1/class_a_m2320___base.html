@@ -97,14 +97,12 @@ $(document).ready(function(){initNavTree('d6/db1/class_a_m2320___base.html','../
 <div class="dynheader">
 Inheritance diagram for AM2320_Base:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d2a/class_a_m2320___base__inherit__graph.svg" width="598" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="../../d1/d2a/class_a_m2320___base__inherit__graph.svg" width="598" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for AM2320_Base:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d3b/class_a_m2320___base__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../dc/d3b/class_a_m2320___base__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -132,9 +130,9 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a4358ae5c4434c5f5432c9cebd42fdd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77122f780f41773764d067dcbccbc293"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a77122f780f41773764d067dcbccbc293">m_address</a></td></tr>
 <tr class="separator:a77122f780f41773764d067dcbccbc293"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8421ad986a352c662f7f412b68c45d53"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a8421ad986a352c662f7f412b68c45d53">FUNCTION_CODE_TEMPERATURE</a> = 3</td></tr>
+<tr class="memitem:a8421ad986a352c662f7f412b68c45d53"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a8421ad986a352c662f7f412b68c45d53">FUNCTION_CODE_TEMPERATURE</a> = 0x02</td></tr>
 <tr class="separator:a8421ad986a352c662f7f412b68c45d53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a321c6a0123808d4ef7f8e632add873"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a4a321c6a0123808d4ef7f8e632add873">FUNCTION_CODE_HUMIDITY</a> = 1</td></tr>
+<tr class="memitem:a4a321c6a0123808d4ef7f8e632add873"><td class="memItemLeft" align="right" valign="top">const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db1/class_a_m2320___base.html#a4a321c6a0123808d4ef7f8e632add873">FUNCTION_CODE_HUMIDITY</a> = 0x00</td></tr>
 <tr class="separator:a4a321c6a0123808d4ef7f8e632add873"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -253,7 +251,7 @@ Private Member Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../d6/db1/class_a_m2320___base.html#af247bcdc6483050d9b08e77fdee68f91">getRaw()</a>, and <a class="el" href="../../d6/db1/class_a_m2320___base.html#a10476b48c00bf7a13dfe86404748594b">wakeUp()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#ad3e68dab01ac97138f38f6f64fe3af82">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="../../df/ddc/class_env_sensing__service.html#acc7d665802b2bd66af3e5f02db2b2433">EnvSensing_service::mainFunction()</a>, and <a class="el" href="../../d6/d80/_sensor_2_a_m2320_2test_2test_2simple__test_8cpp.html#ad3e68dab01ac97138f38f6f64fe3af82">TEST()</a>.</p>
 
 </div>
 </div>
@@ -409,7 +407,7 @@ false </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t AM2320_Base::FUNCTION_CODE_HUMIDITY = 1</td>
+          <td class="memname">const uint8_t AM2320_Base::FUNCTION_CODE_HUMIDITY = 0x00</td>
         </tr>
       </table>
   </td>
@@ -435,7 +433,7 @@ false </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const uint8_t AM2320_Base::FUNCTION_CODE_TEMPERATURE = 3</td>
+          <td class="memname">const uint8_t AM2320_Base::FUNCTION_CODE_TEMPERATURE = 0x02</td>
         </tr>
       </table>
   </td>
