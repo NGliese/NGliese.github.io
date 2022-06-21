@@ -221,11 +221,11 @@
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/I2C/src/i2c_esp32.cpp" line="173" column="27" info="Assignment &apos;err=execute_transaction()&apos;, assigned value is 0"/>
         </error>
         <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;mqtt_api_v2::handle_event&apos;" verbose="Unused private function: &apos;mqtt_api_v2::handle_event&apos;" cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/include/mqtt_api_v2.hpp" line="113" column="23"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/include/mqtt_api_v2.hpp" line="115" column="23"/>
             <symbol>mqtt_api_v2::handle_event</symbol>
         </error>
         <error id="unusedPrivateFunction" severity="style" msg="Unused private function: &apos;mqtt_api_v2::disconnect&apos;" verbose="Unused private function: &apos;mqtt_api_v2::disconnect&apos;" cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/include/mqtt_api_v2.hpp" line="117" column="16"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/src/mqtt_api_v2.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Protocols/MQTT/include/mqtt_api_v2.hpp" line="119" column="16"/>
             <symbol>mqtt_api_v2::disconnect</symbol>
         </error>
         <error id="useInitializationList" severity="performance" msg="Variable &apos;m_handle&apos; is assigned in constructor body. Consider performing initialization in initialization list." verbose="When an object of a class is created, the constructors of all member variables are called consecutively in the order the variables are declared, even if you don&apos;t explicitly write them to the initialization list. You could avoid assigning &apos;m_handle&apos; a value by passing the value to the constructor in the initialization list." cwe="398">

@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-06-21 20:21:14</td>
+            <td class="headerValue">2022-06-21 20:46:44</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">0</td>
@@ -751,322 +751,322 @@
     <td align="right" class="lineno"><pre>65</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#include &lt;atomic></pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>66</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#include &lt;map></pre></td>
+    <td align="left" class="src "><pre>#include "../../../Objects/Timeservice/include/Timeservice.hpp"</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>67</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
+    <td align="left" class="src "><pre>#include &lt;atomic></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>68</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#include &lt;mqtt_client.h></pre></td>
+    <td align="left" class="src "><pre>#include &lt;map></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>69</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>70</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>/*------------------------------------------------------------------------------+</pre></td>
+    <td align="left" class="src "><pre>#include &lt;mqtt_client.h></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>71</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> |                               Typedef                                        |</pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>72</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> +------------------------------------------------------------------------------*/</pre></td>
+    <td align="left" class="src "><pre>/*------------------------------------------------------------------------------+</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>73</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre> |                               Typedef                                        |</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>74</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifndef __ESP32__</pre></td>
+    <td align="left" class="src "><pre> +------------------------------------------------------------------------------*/</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>75</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define mqttclient int</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>76</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define mqttevent int</pre></td>
+    <td align="left" class="src "><pre>#ifndef __ESP32__</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>77</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#else</pre></td>
+    <td align="left" class="src "><pre>#define mqttclient int</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>78</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define mqttclient esp_mqtt_client_handle_t</pre></td>
+    <td align="left" class="src "><pre>#define mqttevent int</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>79</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define mqttevent esp_mqtt_event_handle_t</pre></td>
+    <td align="left" class="src "><pre>#else</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>80</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="left" class="src "><pre>#define mqttclient esp_mqtt_client_handle_t</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>81</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>#define mqttevent esp_mqtt_event_handle_t</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>82</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifndef GLOBAL_MQTT_SERVER</pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>83</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>84</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#warning "GLOBAL_MQTT_SERVER Not defined, using 1.1.1.1"</pre></td>
+    <td align="left" class="src "><pre>#ifndef GLOBAL_MQTT_SERVER</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>85</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define GLOBAL_MQTT_SERVER "mqtt://192.168.1.157:1883"</pre></td>
+    <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>86</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#else</pre></td>
+    <td align="left" class="src "><pre>#warning "GLOBAL_MQTT_SERVER Not defined, using 1.1.1.1"</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>// ignore warning since we do not have a mqtt compatable target</pre></td>
+    <td align="left" class="src "><pre>#define GLOBAL_MQTT_SERVER "mqtt://192.168.1.157:1883"</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>88</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#define GLOBAL_MQTT_SERVER "mqtt://192.168.1.157:1883"</pre></td>
+    <td align="left" class="src "><pre>#else</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="left" class="src "><pre>// ignore warning since we do not have a mqtt compatable target</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>90</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="left" class="src "><pre>#define GLOBAL_MQTT_SERVER "mqtt://192.168.1.157:1883"</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>91</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>/*------------------------------------------------------------------------------+</pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>92</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> |                               Class                                          |</pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>93</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> +------------------------------------------------------------------------------*/</pre></td>
+    <td align="left" class="src "><pre>/*------------------------------------------------------------------------------+</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>94</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre> |                               Class                                          |</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>95</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>class mqtt_api_v2</pre></td>
+    <td align="left" class="src "><pre> +------------------------------------------------------------------------------*/</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>96</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>{</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>97</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifdef __UNITTEST__</pre></td>
+    <td align="left" class="src "><pre>class mqtt_api_v2</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>98</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	friend class friend_mqtt_api_v2;</pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>99</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="left" class="src "><pre>#ifdef __UNITTEST__</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>100</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>  public:</pre></td>
+    <td align="left" class="src "><pre>	friend class friend_mqtt_api_v2;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>101</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	mqtt_api_v2(const std::string&amp; uri = GLOBAL_MQTT_SERVER);</pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>102</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	~mqtt_api_v2();</pre></td>
+    <td align="left" class="src "><pre>  public:</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>103</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>	mqtt_api_v2(const std::string&amp; uri = GLOBAL_MQTT_SERVER);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>104</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	general_err_t publish(const std::string&amp; topic, const std::string&amp; payload);</pre></td>
+    <td align="left" class="src "><pre>	~mqtt_api_v2();</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>105</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	FreeRTOS::Semaphore* subscribe(const std::string&amp; topic);</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>106</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	general_err_t subscribe(const std::string&amp; topic,</pre></td>
+    <td align="left" class="src "><pre>	general_err_t publish(const std::string&amp; topic, const std::string&amp; payload);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>107</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>							general_err_t (*callbackfunction)(const char* data,</pre></td>
+    <td align="left" class="src "><pre>	FreeRTOS::Semaphore* subscribe(const std::string&amp; topic);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>108</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>															  const size_t data_length));</pre></td>
+    <td align="left" class="src "><pre>	general_err_t subscribe(const std::string&amp; topic,</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>109</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>							general_err_t (*callbackfunction)(const char* data,</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>110</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	general_err_t getData(std::string* str);</pre></td>
+    <td align="left" class="src "><pre>															  const size_t data_length));</pre></td>
     </tr>
 
     <tr>
@@ -1080,56 +1080,56 @@
     <td align="right" class="lineno"><pre>112</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>  private:</pre></td>
+    <td align="left" class="src "><pre>	general_err_t getData(std::string* str);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>113</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	static general_err_t handle_event(const char* topic, const size_t topic_length,</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>114</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>									  const char* data, const size_t data_length);</pre></td>
+    <td align="left" class="src "><pre>  private:</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>115</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	std::string m_uri;</pre></td>
+    <td align="left" class="src "><pre>	static general_err_t handle_event(const char* topic, const size_t topic_length,</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>116</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	general_err_t connect(void);</pre></td>
+    <td align="left" class="src "><pre>									  const char* data, const size_t data_length);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>117</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	general_err_t disconnect(void);</pre></td>
+    <td align="left" class="src "><pre>	std::string m_uri;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>118</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>	general_err_t connect(void);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>119</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
+    <td align="left" class="src "><pre>	general_err_t disconnect(void);</pre></td>
     </tr>
 
     <tr>
@@ -1143,7 +1143,7 @@
     <td align="right" class="lineno"><pre>121</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	static esp_err_t event_handler(mqttevent event);</pre></td>
+    <td align="left" class="src "><pre>#ifdef __ESP32__</pre></td>
     </tr>
 
     <tr>
@@ -1157,200 +1157,214 @@
     <td align="right" class="lineno"><pre>123</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_t event_id,</pre></td>
+    <td align="left" class="src "><pre>	static esp_err_t event_handler(mqttevent event);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>124</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>								   void* event_data);</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>125</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	esp_mqtt_client_config_t m_mqtt_cfg;</pre></td>
+    <td align="left" class="src "><pre>	static void mqtt_event_handler(void* handler_args, esp_event_base_t base, int32_t event_id,</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>126</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="left" class="src "><pre>								   void* event_data);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>127</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>};</pre></td>
+    <td align="left" class="src "><pre>	esp_mqtt_client_config_t m_mqtt_cfg;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>128</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>129</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>/*------------------------------------------------------------------------------+</pre></td>
+    <td align="left" class="src "><pre>};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>130</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> |                           Unit Test Class                                    |</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>131</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre> +------------------------------------------------------------------------------*/</pre></td>
+    <td align="left" class="src "><pre>/*------------------------------------------------------------------------------+</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>132</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre> |                           Unit Test Class                                    |</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>133</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifdef __UNITTEST__</pre></td>
+    <td align="left" class="src "><pre> +------------------------------------------------------------------------------*/</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>134</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>class friend_mqtt_api_v2</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>135</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>{</pre></td>
+    <td align="left" class="src "><pre>#ifdef __UNITTEST__</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>136</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>  public:</pre></td>
+    <td align="left" class="src "><pre>class friend_mqtt_api_v2</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>137</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>80</pre></td>
-    <td align="left" class="src coveredLine"><pre>	explicit friend_mqtt_api_v2(mqtt_api_v2* MQTT_API) : m_sensor{MQTT_API} {};</pre></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>{</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>138</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>  public:</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>139</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>80</pre></td>
-    <td align="left" class="src coveredLine"><pre>	~friend_mqtt_api_v2(){};</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
+    <td align="left" class="src coveredLine"><pre>	explicit friend_mqtt_api_v2(mqtt_api_v2* MQTT_API) : m_sensor{MQTT_API} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>140</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
-    <td align="left" class="src coveredLine"><pre>	auto handle_event(const char* topic, const size_t topic_length, const char* data,</pre></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>141</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
+    <td align="left" class="src coveredLine"><pre>	~friend_mqtt_api_v2(){};</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>142</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
+    <td align="left" class="src coveredLine"><pre>	auto handle_event(const char* topic, const size_t topic_length, const char* data,</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>143</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>					  const size_t data_length)</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>142</pre></td>
+    <td align="right" class="lineno"><pre>144</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>	{</pre></td>
     </tr>
 
     <tr>
-    <td align="right" class="lineno"><pre>143</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
-    <td align="left" class="src coveredLine"><pre>		return m_sensor->handle_event(topic, topic_length, data, data_length);</pre></td>
-    </tr>
-
-    <tr>
-    <td align="right" class="lineno"><pre>144</pre></td>
-    <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	}</pre></td>
-    </tr>
-
-    <tr>
     <td align="right" class="lineno"><pre>145</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
+    <td align="left" class="src coveredLine"><pre>		return m_sensor->handle_event(topic, topic_length, data, data_length);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>146</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>  private:</pre></td>
+    <td align="left" class="src "><pre>	}</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>147</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	mqtt_api_v2* m_sensor;</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>148</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>};</pre></td>
+    <td align="left" class="src "><pre>  private:</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>149</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="left" class="src "><pre>	mqtt_api_v2* m_sensor;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>150</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>151</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>152</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>153</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>#endif /* INCLUDE_MQTT_API_V2_HPP_ */</pre></td>

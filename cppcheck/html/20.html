@@ -137,7 +137,7 @@
       </div>
       <div id="menu" dir="rtl">
        <p id="filename"><a href="index.html">Defects:</a> mqtt_api_v2.hpp</p>
-<a href='20.html#line-113'> unusedPrivateFunction 113</a><a href='20.html#line-117'> unusedPrivateFunction 117</a>
+<a href='20.html#line-115'> unusedPrivateFunction 115</a><a href='20.html#line-119'> unusedPrivateFunction 119</a>
       </div>
       <div id="content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>  1
@@ -290,7 +290,9 @@
 148
 149
 150
-151</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/*</span>
+151
+152
+153</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cm">/*</span>
 <a name="line-2"></a><span class="cm"> * mqtt_api_v2.hpp</span>
 <a name="line-3"></a><span class="cm"> *</span>
 <a name="line-4"></a><span class="cm"> *  Created on: May 31, 2021</span>
@@ -354,93 +356,95 @@
 <a name="line-62"></a><span class="cm">/*-----------------------------------------------------------------------------*/</span>
 <a name="line-63"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/OTA/include/OTA.hpp&quot;</span><span class="cp"></span>
 <a name="line-64"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../RTOS/FreeRTOS/include/FreeRTOS.h&quot;</span><span class="cp"></span>
-<a name="line-65"></a><span class="cp">#include</span> <span class="cpf">&lt;atomic&gt;</span><span class="cp"></span>
-<a name="line-66"></a><span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
-<a name="line-67"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-68"></a><span class="cp">#include</span> <span class="cpf">&lt;mqtt_client.h&gt;</span><span class="cp"></span>
-<a name="line-69"></a><span class="cp">#endif</span>
-<a name="line-70"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-71"></a><span class="cm"> |                               Typedef                                        |</span>
-<a name="line-72"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-73"></a>
-<a name="line-74"></a><span class="cp">#ifndef __ESP32__</span>
-<a name="line-75"></a><span class="cp">#define mqttclient int</span>
-<a name="line-76"></a><span class="cp">#define mqttevent int</span>
-<a name="line-77"></a><span class="cp">#else</span>
-<a name="line-78"></a><span class="cp">#define mqttclient esp_mqtt_client_handle_t</span>
-<a name="line-79"></a><span class="cp">#define mqttevent esp_mqtt_event_handle_t</span>
-<a name="line-80"></a><span class="cp">#endif</span>
-<a name="line-81"></a>
-<a name="line-82"></a><span class="cp">#ifndef GLOBAL_MQTT_SERVER</span>
-<a name="line-83"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-84"></a><span class="cp">#warning &quot;GLOBAL_MQTT_SERVER Not defined, using 1.1.1.1&quot;</span>
-<a name="line-85"></a><span class="cp">#define GLOBAL_MQTT_SERVER &quot;mqtt:</span><span class="c1">//192.168.1.157:1883&quot;</span>
-<a name="line-86"></a><span class="cp">#else</span>
-<a name="line-87"></a><span class="c1">// ignore warning since we do not have a mqtt compatable target</span>
-<a name="line-88"></a><span class="cp">#define GLOBAL_MQTT_SERVER &quot;mqtt:</span><span class="c1">//192.168.1.157:1883&quot;</span>
-<a name="line-89"></a><span class="cp">#endif</span>
-<a name="line-90"></a><span class="cp">#endif</span>
-<a name="line-91"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-92"></a><span class="cm"> |                               Class                                          |</span>
-<a name="line-93"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-94"></a>
-<a name="line-95"></a><span class="k">class</span> <span class="nc">mqtt_api_v2</span>
-<a name="line-96"></a><span class="p">{</span>
-<a name="line-97"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a name="line-98"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_mqtt_api_v2</span><span class="p">;</span>
-<a name="line-99"></a><span class="cp">#endif</span>
-<a name="line-100"></a>  <span class="k">public</span><span class="o">:</span>
-<a name="line-101"></a>	<span class="n">mqtt_api_v2</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">uri</span> <span class="o">=</span> <span class="n">GLOBAL_MQTT_SERVER</span><span class="p">);</span>
-<a name="line-102"></a>	<span class="o">~</span><span class="n">mqtt_api_v2</span><span class="p">();</span>
-<a name="line-103"></a>
-<a name="line-104"></a>	<span class="n">general_err_t</span> <span class="nf">publish</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">payload</span><span class="p">);</span>
-<a name="line-105"></a>	<span class="n">FreeRTOS</span><span class="o">::</span><span class="n">Semaphore</span><span class="o">*</span> <span class="n">subscribe</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">);</span>
-<a name="line-106"></a>	<span class="n">general_err_t</span> <span class="nf">subscribe</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">,</span>
-<a name="line-107"></a>							<span class="n">general_err_t</span> <span class="p">(</span><span class="o">*</span><span class="n">callbackfunction</span><span class="p">)(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span>
-<a name="line-108"></a>															  <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">));</span>
-<a name="line-109"></a>
-<a name="line-110"></a>	<span class="n">general_err_t</span> <span class="nf">getData</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">*</span> <span class="n">str</span><span class="p">);</span>
+<a name="line-65"></a>
+<a name="line-66"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/Timeservice/include/Timeservice.hpp&quot;</span><span class="cp"></span>
+<a name="line-67"></a><span class="cp">#include</span> <span class="cpf">&lt;atomic&gt;</span><span class="cp"></span>
+<a name="line-68"></a><span class="cp">#include</span> <span class="cpf">&lt;map&gt;</span><span class="cp"></span>
+<a name="line-69"></a><span class="cp">#ifdef __ESP32__</span>
+<a name="line-70"></a><span class="cp">#include</span> <span class="cpf">&lt;mqtt_client.h&gt;</span><span class="cp"></span>
+<a name="line-71"></a><span class="cp">#endif</span>
+<a name="line-72"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-73"></a><span class="cm"> |                               Typedef                                        |</span>
+<a name="line-74"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-75"></a>
+<a name="line-76"></a><span class="cp">#ifndef __ESP32__</span>
+<a name="line-77"></a><span class="cp">#define mqttclient int</span>
+<a name="line-78"></a><span class="cp">#define mqttevent int</span>
+<a name="line-79"></a><span class="cp">#else</span>
+<a name="line-80"></a><span class="cp">#define mqttclient esp_mqtt_client_handle_t</span>
+<a name="line-81"></a><span class="cp">#define mqttevent esp_mqtt_event_handle_t</span>
+<a name="line-82"></a><span class="cp">#endif</span>
+<a name="line-83"></a>
+<a name="line-84"></a><span class="cp">#ifndef GLOBAL_MQTT_SERVER</span>
+<a name="line-85"></a><span class="cp">#ifdef __ESP32__</span>
+<a name="line-86"></a><span class="cp">#warning &quot;GLOBAL_MQTT_SERVER Not defined, using 1.1.1.1&quot;</span>
+<a name="line-87"></a><span class="cp">#define GLOBAL_MQTT_SERVER &quot;mqtt:</span><span class="c1">//192.168.1.157:1883&quot;</span>
+<a name="line-88"></a><span class="cp">#else</span>
+<a name="line-89"></a><span class="c1">// ignore warning since we do not have a mqtt compatable target</span>
+<a name="line-90"></a><span class="cp">#define GLOBAL_MQTT_SERVER &quot;mqtt:</span><span class="c1">//192.168.1.157:1883&quot;</span>
+<a name="line-91"></a><span class="cp">#endif</span>
+<a name="line-92"></a><span class="cp">#endif</span>
+<a name="line-93"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-94"></a><span class="cm"> |                               Class                                          |</span>
+<a name="line-95"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-96"></a>
+<a name="line-97"></a><span class="k">class</span> <span class="nc">mqtt_api_v2</span>
+<a name="line-98"></a><span class="p">{</span>
+<a name="line-99"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a name="line-100"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_mqtt_api_v2</span><span class="p">;</span>
+<a name="line-101"></a><span class="cp">#endif</span>
+<a name="line-102"></a>  <span class="k">public</span><span class="o">:</span>
+<a name="line-103"></a>	<span class="n">mqtt_api_v2</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">uri</span> <span class="o">=</span> <span class="n">GLOBAL_MQTT_SERVER</span><span class="p">);</span>
+<a name="line-104"></a>	<span class="o">~</span><span class="n">mqtt_api_v2</span><span class="p">();</span>
+<a name="line-105"></a>
+<a name="line-106"></a>	<span class="n">general_err_t</span> <span class="nf">publish</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">payload</span><span class="p">);</span>
+<a name="line-107"></a>	<span class="n">FreeRTOS</span><span class="o">::</span><span class="n">Semaphore</span><span class="o">*</span> <span class="n">subscribe</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">);</span>
+<a name="line-108"></a>	<span class="n">general_err_t</span> <span class="nf">subscribe</span><span class="p">(</span><span class="k">const</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&amp;</span> <span class="n">topic</span><span class="p">,</span>
+<a name="line-109"></a>							<span class="n">general_err_t</span> <span class="p">(</span><span class="o">*</span><span class="n">callbackfunction</span><span class="p">)(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span>
+<a name="line-110"></a>															  <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">));</span>
 <a name="line-111"></a>
-<a name="line-112"></a>  <span class="k">private</span><span class="o">:</span>
-<a name="line-113"></a><span class="hll">	<span class="k">static</span> <span class="n">general_err_t</span> <span class="n">handle_event</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">topic_length</span><span class="p">,</span><span class='error2'>&lt;--- Unused private function: 'mqtt_api_v2::handle_event'</span>
-</span><a name="line-114"></a>									  <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">);</span>
-<a name="line-115"></a>	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">m_uri</span><span class="p">;</span>
-<a name="line-116"></a>	<span class="n">general_err_t</span> <span class="nf">connect</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
-<a name="line-117"></a><span class="hll">	<span class="n">general_err_t</span> <span class="nf">disconnect</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class='error2'>&lt;--- Unused private function: 'mqtt_api_v2::disconnect'</span>
-</span><a name="line-118"></a>
-<a name="line-119"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-120"></a>
-<a name="line-121"></a>	<span class="k">static</span> <span class="n">esp_err_t</span> <span class="nf">event_handler</span><span class="p">(</span><span class="n">mqttevent</span> <span class="n">event</span><span class="p">);</span>
+<a name="line-112"></a>	<span class="n">general_err_t</span> <span class="nf">getData</span><span class="p">(</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">*</span> <span class="n">str</span><span class="p">);</span>
+<a name="line-113"></a>
+<a name="line-114"></a>  <span class="k">private</span><span class="o">:</span>
+<a name="line-115"></a><span class="hll">	<span class="k">static</span> <span class="n">general_err_t</span> <span class="n">handle_event</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">topic_length</span><span class="p">,</span><span class='error2'>&lt;--- Unused private function: 'mqtt_api_v2::handle_event'</span>
+</span><a name="line-116"></a>									  <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">);</span>
+<a name="line-117"></a>	<span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">m_uri</span><span class="p">;</span>
+<a name="line-118"></a>	<span class="n">general_err_t</span> <span class="nf">connect</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<a name="line-119"></a><span class="hll">	<span class="n">general_err_t</span> <span class="nf">disconnect</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class='error2'>&lt;--- Unused private function: 'mqtt_api_v2::disconnect'</span>
+</span><a name="line-120"></a>
+<a name="line-121"></a><span class="cp">#ifdef __ESP32__</span>
 <a name="line-122"></a>
-<a name="line-123"></a>	<span class="k">static</span> <span class="kt">void</span> <span class="nf">mqtt_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">handler_args</span><span class="p">,</span> <span class="n">esp_event_base_t</span> <span class="n">base</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">event_id</span><span class="p">,</span>
-<a name="line-124"></a>								   <span class="kt">void</span><span class="o">*</span> <span class="n">event_data</span><span class="p">);</span>
-<a name="line-125"></a>	<span class="n">esp_mqtt_client_config_t</span> <span class="n">m_mqtt_cfg</span><span class="p">;</span>
-<a name="line-126"></a><span class="cp">#endif</span>
-<a name="line-127"></a><span class="p">};</span>
-<a name="line-128"></a>
-<a name="line-129"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-130"></a><span class="cm"> |                           Unit Test Class                                    |</span>
-<a name="line-131"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-132"></a>
-<a name="line-133"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a name="line-134"></a><span class="k">class</span> <span class="nc">friend_mqtt_api_v2</span>
-<a name="line-135"></a><span class="p">{</span>
-<a name="line-136"></a>  <span class="k">public</span><span class="o">:</span>
-<a name="line-137"></a>	<span class="k">explicit</span> <span class="n">friend_mqtt_api_v2</span><span class="p">(</span><span class="n">mqtt_api_v2</span><span class="o">*</span> <span class="n">MQTT_API</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">MQTT_API</span><span class="p">}</span> <span class="p">{};</span>
-<a name="line-138"></a>
-<a name="line-139"></a>	<span class="o">~</span><span class="n">friend_mqtt_api_v2</span><span class="p">(){};</span>
-<a name="line-140"></a>	<span class="k">auto</span> <span class="nf">handle_event</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">topic_length</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span>
-<a name="line-141"></a>					  <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">)</span>
-<a name="line-142"></a>	<span class="p">{</span>
-<a name="line-143"></a>		<span class="k">return</span> <span class="n">m_sensor</span><span class="o">-&gt;</span><span class="n">handle_event</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">topic_length</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">data_length</span><span class="p">);</span>
-<a name="line-144"></a>	<span class="p">}</span>
-<a name="line-145"></a>
-<a name="line-146"></a>  <span class="k">private</span><span class="o">:</span>
-<a name="line-147"></a>	<span class="n">mqtt_api_v2</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
-<a name="line-148"></a><span class="p">};</span>
-<a name="line-149"></a><span class="cp">#endif</span>
-<a name="line-150"></a>
-<a name="line-151"></a><span class="cp">#endif </span><span class="cm">/* INCLUDE_MQTT_API_V2_HPP_ */</span><span class="cp"></span>
+<a name="line-123"></a>	<span class="k">static</span> <span class="n">esp_err_t</span> <span class="nf">event_handler</span><span class="p">(</span><span class="n">mqttevent</span> <span class="n">event</span><span class="p">);</span>
+<a name="line-124"></a>
+<a name="line-125"></a>	<span class="k">static</span> <span class="kt">void</span> <span class="nf">mqtt_event_handler</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span> <span class="n">handler_args</span><span class="p">,</span> <span class="n">esp_event_base_t</span> <span class="n">base</span><span class="p">,</span> <span class="kt">int32_t</span> <span class="n">event_id</span><span class="p">,</span>
+<a name="line-126"></a>								   <span class="kt">void</span><span class="o">*</span> <span class="n">event_data</span><span class="p">);</span>
+<a name="line-127"></a>	<span class="n">esp_mqtt_client_config_t</span> <span class="n">m_mqtt_cfg</span><span class="p">;</span>
+<a name="line-128"></a><span class="cp">#endif</span>
+<a name="line-129"></a><span class="p">};</span>
+<a name="line-130"></a>
+<a name="line-131"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-132"></a><span class="cm"> |                           Unit Test Class                                    |</span>
+<a name="line-133"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-134"></a>
+<a name="line-135"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a name="line-136"></a><span class="k">class</span> <span class="nc">friend_mqtt_api_v2</span>
+<a name="line-137"></a><span class="p">{</span>
+<a name="line-138"></a>  <span class="k">public</span><span class="o">:</span>
+<a name="line-139"></a>	<span class="k">explicit</span> <span class="n">friend_mqtt_api_v2</span><span class="p">(</span><span class="n">mqtt_api_v2</span><span class="o">*</span> <span class="n">MQTT_API</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">MQTT_API</span><span class="p">}</span> <span class="p">{};</span>
+<a name="line-140"></a>
+<a name="line-141"></a>	<span class="o">~</span><span class="n">friend_mqtt_api_v2</span><span class="p">(){};</span>
+<a name="line-142"></a>	<span class="k">auto</span> <span class="nf">handle_event</span><span class="p">(</span><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">topic</span><span class="p">,</span> <span class="k">const</span> <span class="kt">size_t</span> <span class="n">topic_length</span><span class="p">,</span> <span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">data</span><span class="p">,</span>
+<a name="line-143"></a>					  <span class="k">const</span> <span class="kt">size_t</span> <span class="n">data_length</span><span class="p">)</span>
+<a name="line-144"></a>	<span class="p">{</span>
+<a name="line-145"></a>		<span class="k">return</span> <span class="n">m_sensor</span><span class="o">-&gt;</span><span class="n">handle_event</span><span class="p">(</span><span class="n">topic</span><span class="p">,</span> <span class="n">topic_length</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">data_length</span><span class="p">);</span>
+<a name="line-146"></a>	<span class="p">}</span>
+<a name="line-147"></a>
+<a name="line-148"></a>  <span class="k">private</span><span class="o">:</span>
+<a name="line-149"></a>	<span class="n">mqtt_api_v2</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
+<a name="line-150"></a><span class="p">};</span>
+<a name="line-151"></a><span class="cp">#endif</span>
+<a name="line-152"></a>
+<a name="line-153"></a><span class="cp">#endif </span><span class="cm">/* INCLUDE_MQTT_API_V2_HPP_ */</span><span class="cp"></span>
 </pre></div>
 </td></tr></table>
       </div>
