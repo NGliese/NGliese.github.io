@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['int16_2532',['int16',['../d8/d5f/namespacejpge.html#af97e6968594919089515792f53c311ec',1,'jpge']]],
-  ['int32_2533',['int32',['../d8/d5f/namespacejpge.html#aef1ce8b0a5df3882e423dd79c537afe2',1,'jpge']]]
+  ['int16_2552',['int16',['../d8/d5f/namespacejpge.html#af97e6968594919089515792f53c311ec',1,'jpge']]],
+  ['int32_2553',['int32',['../d8/d5f/namespacejpge.html#aef1ce8b0a5df3882e423dd79c537afe2',1,'jpge']]]
 ];

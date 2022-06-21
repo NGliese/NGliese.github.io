@@ -62,7 +62,11 @@ var _database___i_d___base_8hpp =
       [ "ESP32CAMTEST_ERRORCODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af2159206488c5e8e0ff5073355be24e2", null ],
       [ "ENV01_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aed7b51ad2e46d057bacea18def603bfc", null ],
       [ "ENV01_SKUR_TEMPERATURE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aed63ecb1b56698f2b7e84d35dc133928", null ],
-      [ "ENV01_SKUR_HUMIDITY", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9", null ]
+      [ "ENV01_SKUR_HUMIDITY", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9", null ],
+      [ "AKTIVMUS_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad5c8cd39c68b91fc327a0196fe68ab78", null ],
+      [ "AKTIVMUS_CURRENT_MEASURE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aaf59e8ab0b134394d128c27079afcfc8", null ],
+      [ "AKTIVMUS_IS_ALIVE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aef5ee0d7eb78635af412a53415c98e9d", null ],
+      [ "AKTIVMUS_STATE_IDENTIFIER", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0e4ef9ba0ce02d756bf4c7ed2cd16e1c", null ]
     ] ],
     [ "map", "d5/d40/_database___i_d___base_8hpp.html#a40f5a6d0734142b0008af0e8a9c51013", null ]
 ];

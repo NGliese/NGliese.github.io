@@ -270,17 +270,17 @@
             <td></td>
             <td class="headerName">Lines:</td>
             <td class="headerTableEntry">17</td>
-            <td class="headerTableEntry">25</td>
-            <td class="headerTableEntry" style="background-color:LightPink">68.0 %</td>
+            <td class="headerTableEntry">26</td>
+            <td class="headerTableEntry" style="background-color:LightPink">65.4 %</td>
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-06-11 12:06:21</td>
+            <td class="headerValue">2022-06-21 08:19:55</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">3</td>
-            <td class="headerTableEntry">12</td>
-            <td class="headerTableEntry" style="background-color:LightPink">25.0 %</td>
+            <td class="headerTableEntry">20</td>
+            <td class="headerTableEntry" style="background-color:LightPink">15.0 %</td>
           </tr>
         </table>
       </td>
@@ -919,60 +919,67 @@
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	std::array&lt;uint8_t, 5> vec;</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>	Timeservice::wait_ms(10);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>90</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	m_i2c.readMultiBytes&lt;5>(m_address, vec);</pre></td>
+    <td align="left" class="src uncoveredLine"><pre>	std::array&lt;uint8_t, 5> vec;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>91</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>	m_i2c.readMultiBytes&lt;5>(m_address, vec);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>92</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#ifdef DEBUG</pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>93</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>	std::cout &lt;&lt; " &lt;&lt; AM2320_Base::getSensorValue &lt;&lt; \n";</pre></td>
+    <td align="left" class="src "><pre>#ifdef DEBUG</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>94</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre>#endif</pre></td>
+    <td align="left" class="src "><pre>	std::cout &lt;&lt; " &lt;&lt; AM2320_Base::getSensorValue &lt;&lt; \n";</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>95</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
-    <td align="left" class="src "><pre></pre></td>
+    <td align="left" class="src "><pre>#endif</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>96</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
-    <td align="left" class="src uncoveredLine"><pre>	return 0;</pre></td>
+    <td align="right" class="linecount "><pre></pre></td>
+    <td align="left" class="src "><pre></pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>97</pre></td>
+    <td align="right" class="linebranch"></td>
+    <td align="right" class="linecount uncoveredLine"><pre></pre></td>
+    <td align="left" class="src uncoveredLine"><pre>	return basic_utils::shift8BitTo16(vec.at(2), vec.at(3));</pre></td>
+    </tr>
+
+    <tr>
+    <td align="right" class="lineno"><pre>98</pre></td>
     <td align="right" class="linebranch"></td>
     <td align="right" class="linecount "><pre></pre></td>
     <td align="left" class="src "><pre>}</pre></td>

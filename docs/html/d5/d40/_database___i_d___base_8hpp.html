@@ -182,7 +182,12 @@ Enumerations</h2></td></tr>
 <a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aed7b51ad2e46d057bacea18def603bfc">db_id::ENV01_ERROR_CODE</a>, 
 <br />
 &#160;&#160;<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aed63ecb1b56698f2b7e84d35dc133928">db_id::ENV01_SKUR_TEMPERATURE</a>, 
-<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9">db_id::ENV01_SKUR_HUMIDITY</a>
+<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9">db_id::ENV01_SKUR_HUMIDITY</a>, 
+<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad5c8cd39c68b91fc327a0196fe68ab78">db_id::AKTIVMUS_ERROR_CODE</a>, 
+<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aaf59e8ab0b134394d128c27079afcfc8">db_id::AKTIVMUS_CURRENT_MEASURE</a>, 
+<br />
+&#160;&#160;<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aef5ee0d7eb78635af412a53415c98e9d">db_id::AKTIVMUS_IS_ALIVE</a>, 
+<a class="el" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0e4ef9ba0ce02d756bf4c7ed2cd16e1c">db_id::AKTIVMUS_STATE_IDENTIFIER</a>
 <br />
  }</td></tr>
 <tr class="memdesc:ad2476414527a024c2bb661f45d8876e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">database header file to map database ID's with enum names for easier visual description  <a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0">More...</a><br /></td></tr>
@@ -278,6 +283,10 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0aed7b51ad2e46d057bacea18def603bfc"></a>ENV01_ERROR_CODE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0aed63ecb1b56698f2b7e84d35dc133928"></a>ENV01_SKUR_TEMPERATURE&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9"></a>ENV01_SKUR_HUMIDITY&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0ad5c8cd39c68b91fc327a0196fe68ab78"></a>AKTIVMUS_ERROR_CODE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0aaf59e8ab0b134394d128c27079afcfc8"></a>AKTIVMUS_CURRENT_MEASURE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0aef5ee0d7eb78635af412a53415c98e9d"></a>AKTIVMUS_IS_ALIVE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad2476414527a024c2bb661f45d8876e0a0e4ef9ba0ce02d756bf4c7ed2cd16e1c"></a>AKTIVMUS_STATE_IDENTIFIER&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00048">48</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
@@ -363,7 +372,13 @@ Variables</h2></td></tr>
 <div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aed7b51ad2e46d057bacea18def603bfc">ENV01_ERROR_CODE</a>,</div>
 <div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aed63ecb1b56698f2b7e84d35dc133928">ENV01_SKUR_TEMPERATURE</a>,</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9">ENV01_SKUR_HUMIDITY</a>,</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;};</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;    <span class="comment">/* AktivMus - Office */</span></div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad5c8cd39c68b91fc327a0196fe68ab78">AKTIVMUS_ERROR_CODE</a>,</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aaf59e8ab0b134394d128c27079afcfc8">AKTIVMUS_CURRENT_MEASURE</a>,</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aef5ee0d7eb78635af412a53415c98e9d">AKTIVMUS_IS_ALIVE</a>,</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0e4ef9ba0ce02d756bf4c7ed2cd16e1c">AKTIVMUS_STATE_IDENTIFIER</a>,</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -388,7 +403,7 @@ Variables</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00133">133</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html#l00139">139</a> of file <a class="el" href="../../d5/d40/_database___i_d___base_8hpp_source.html">Database_ID_Base.hpp</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="../../d5/d81/class_m_q_t_t___message.html#af01ecf74834d86dd468d287cea3085d6">MQTT_Message::MQTT_Message()</a>, and <a class="el" href="../../db/d2e/class_error_code_parser.html#a3451d8da40acc193c67994347a55ca74">ErrorCodeParser::toString()</a>.</p>
 
@@ -397,6 +412,7 @@ Variables</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ab865f5c53b6dc366100ad6b6dd85477e"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab865f5c53b6dc366100ad6b6dd85477e">db_id::CCTV01_ASPECT</a></div><div class="ttdeci">@ CCTV01_ASPECT</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a0e4ef9ba0ce02d756bf4c7ed2cd16e1c"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0e4ef9ba0ce02d756bf4c7ed2cd16e1c">db_id::AKTIVMUS_STATE_IDENTIFIER</a></div><div class="ttdeci">@ AKTIVMUS_STATE_IDENTIFIER</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a56fd16289dab3ce689e29635c3990b59"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a56fd16289dab3ce689e29635c3990b59">db_id::CCTV01_AREA</a></div><div class="ttdeci">@ CCTV01_AREA</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a51f4bb314c5fc887e267f8a0a4f50d30"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a51f4bb314c5fc887e267f8a0a4f50d30">db_id::GH_WATER_LEVEL</a></div><div class="ttdeci">@ GH_WATER_LEVEL</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a6dda4dfb4f1670031a010ea352b635a9">db_id::ENV01_SKUR_HUMIDITY</a></div><div class="ttdeci">@ ENV01_SKUR_HUMIDITY</div></div>
@@ -412,6 +428,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a4754742f64f2816666d26c743cad3396"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4754742f64f2816666d26c743cad3396">db_id::WINDOW_DETECT_OFFICE1</a></div><div class="ttdeci">@ WINDOW_DETECT_OFFICE1</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad0d5ecb4517945d57a02814d4df46156">db_id::DEBUG_ID1</a></div><div class="ttdeci">@ DEBUG_ID1</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a783eb05fa72b7d1a8492b480688935f8"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a783eb05fa72b7d1a8492b480688935f8">db_id::GH_AMBIENT_TEMP</a></div><div class="ttdeci">@ GH_AMBIENT_TEMP</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ad5c8cd39c68b91fc327a0196fe68ab78"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad5c8cd39c68b91fc327a0196fe68ab78">db_id::AKTIVMUS_ERROR_CODE</a></div><div class="ttdeci">@ AKTIVMUS_ERROR_CODE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a0750905ce747bdc65c8545d0ad649e7e"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0750905ce747bdc65c8545d0ad649e7e">db_id::GH_AMBIENT_LIGHT</a></div><div class="ttdeci">@ GH_AMBIENT_LIGHT</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ac2c102d90233843a0457980414eb37ee"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ac2c102d90233843a0457980414eb37ee">db_id::DEBUG_ID7</a></div><div class="ttdeci">@ DEBUG_ID7</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a7053ae603e2dde1b8dbb127948b86cea"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a7053ae603e2dde1b8dbb127948b86cea">db_id::ONLINEDETECTOR_FAIL</a></div><div class="ttdeci">@ ONLINEDETECTOR_FAIL</div></div>
@@ -442,6 +459,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a4703c849d584ed492249a45793690062"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4703c849d584ed492249a45793690062">db_id::CCTV01_DEBUG4</a></div><div class="ttdeci">@ CCTV01_DEBUG4</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0abea170ab6ff33eab3a5cb29810674c39"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0abea170ab6ff33eab3a5cb29810674c39">db_id::WATERSTATION_ERROR_CODE</a></div><div class="ttdeci">@ WATERSTATION_ERROR_CODE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ae5703730dc4da40febf03def1431331d"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ae5703730dc4da40febf03def1431331d">db_id::WATERSTATION_MAX_ADC_VAL</a></div><div class="ttdeci">@ WATERSTATION_MAX_ADC_VAL</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0aaf59e8ab0b134394d128c27079afcfc8"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aaf59e8ab0b134394d128c27079afcfc8">db_id::AKTIVMUS_CURRENT_MEASURE</a></div><div class="ttdeci">@ AKTIVMUS_CURRENT_MEASURE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0aa750c4f6d6d640714ecf3c2699d445d8"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aa750c4f6d6d640714ecf3c2699d445d8">db_id::WINDOW_DETECT_LIVINGROOM1</a></div><div class="ttdeci">@ WINDOW_DETECT_LIVINGROOM1</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0af897ea32d6af85571f7dfd45c1d89ebf">db_id::DEBUG_ID2</a></div><div class="ttdeci">@ DEBUG_ID2</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a3ff873bf82762caf339d1afb8dfb4a7c"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a3ff873bf82762caf339d1afb8dfb4a7c">db_id::CCTV01_DEBUG3</a></div><div class="ttdeci">@ CCTV01_DEBUG3</div></div>
@@ -455,6 +473,7 @@ Variables</h2></td></tr>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ab002528f9b333a0a0f6cb0ea1bcd4ba0"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab002528f9b333a0a0f6cb0ea1bcd4ba0">db_id::DEBUG_ID4</a></div><div class="ttdeci">@ DEBUG_ID4</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a4061f8cd72828d3333f082c9c91cd1e1"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4061f8cd72828d3333f082c9c91cd1e1">db_id::ONLINEDETECTOR_ERROR_CODE</a></div><div class="ttdeci">@ ONLINEDETECTOR_ERROR_CODE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ab6cf239ed0731273d56a454f8f5818af"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab6cf239ed0731273d56a454f8f5818af">db_id::DOGFEEDER_DOOR_SIGNAL</a></div><div class="ttdeci">@ DOGFEEDER_DOOR_SIGNAL</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0aef5ee0d7eb78635af412a53415c98e9d"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aef5ee0d7eb78635af412a53415c98e9d">db_id::AKTIVMUS_IS_ALIVE</a></div><div class="ttdeci">@ AKTIVMUS_IS_ALIVE</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a594633d4eb140b2a81fb82a17c135cb9"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a594633d4eb140b2a81fb82a17c135cb9">db_id::WINDOW_DETECT_GYM2</a></div><div class="ttdeci">@ WINDOW_DETECT_GYM2</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a1a43e4592185f65314fb1ebfcc6ef7bd"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a1a43e4592185f65314fb1ebfcc6ef7bd">db_id::GH_MOIST1</a></div><div class="ttdeci">@ GH_MOIST1</div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a53fe61b2e9a2b177b4204542a88dc340"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a53fe61b2e9a2b177b4204542a88dc340">db_id::ENV01_LUX</a></div><div class="ttdeci">@ ENV01_LUX</div></div>

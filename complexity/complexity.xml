@@ -1249,45 +1249,45 @@
 		</item>
 		<item name="AM2320_Base::getSensorValue(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp:82">
 			<value>233</value>
-			<value>9</value>
+			<value>10</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.729613733905579"/>
+		<average label="NCSS" value="11.733905579399142"/>
 		<average label="CCN" value="3.4206008583690988"/>
 		<item name="AM2320_Temperature::getRaw(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Temperature.cpp:29">
 			<value>234</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.709401709401709"/>
+		<average label="NCSS" value="11.713675213675213"/>
 		<average label="CCN" value="3.4188034188034186"/>
 		<item name="AM2320_Humidity::getRaw(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Humidity.cpp:29">
 			<value>235</value>
 			<value>7</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.689361702127659"/>
+		<average label="NCSS" value="11.693617021276596"/>
 		<average label="CCN" value="3.4170212765957446"/>
 		<item name="WaterEstimator_Service::mainFunction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/src/WaterEstimator_Service.cpp:29">
 			<value>236</value>
 			<value>32</value>
 			<value>7</value>
 		</item>
-		<average label="NCSS" value="11.775423728813559"/>
+		<average label="NCSS" value="11.779661016949152"/>
 		<average label="CCN" value="3.4322033898305087"/>
 		<item name="isAlive_service::mainFunction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/isAlive/src/isAlive_service.cpp:29">
 			<value>237</value>
 			<value>10</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="11.767932489451477"/>
+		<average label="NCSS" value="11.772151898734178"/>
 		<average label="CCN" value="3.430379746835443"/>
 		<item name="EnvSensing_service::mainFunction(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/EnvSensing/src/EnvSensing_service.cpp:29">
 			<value>238</value>
 			<value>22</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="11.8109243697479"/>
+		<average label="NCSS" value="11.815126050420169"/>
 		<average label="CCN" value="3.436974789915966"/>
 		<item name="DogFeederDoor::DogFeederDoor(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp:36">
 			<value>239</value>
@@ -1309,7 +1309,7 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="11.65702479338843"/>
+		<average label="NCSS" value="11.661157024793388"/>
 		<average label="CCN" value="3.396694214876033"/>
 		<item name="basic_utils::split(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/Utility/utils/src/utils.cpp:13">
 			<value>243</value>
@@ -1396,9 +1396,9 @@
 			<value>9</value>
 			<value>2</value>
 		</item>
-		<average label="NCSS" value="11.4015444015444"/>
+		<average label="NCSS" value="11.405405405405405"/>
 		<average label="CCN" value="3.2857142857142856"/>
-		<average label="NCSS" value="11.4015444015444"/>
+		<average label="NCSS" value="11.405405405405405"/>
 		<average label="CCN" value="3.2857142857142856"/>
 		<item name="cam_verify_jpeg_soi(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c:29">
 			<value>260</value>
@@ -1475,7 +1475,7 @@
 			<value>11</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="12.55109489051095"/>
+		<average label="NCSS" value="12.554744525547445"/>
 		<average label="CCN" value="3.427007299270073"/>
 		<item name="camera_probe(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/esp_camera.c:86">
 			<value>275</value>
@@ -1517,7 +1517,7 @@
 			<value>62</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="13.205673758865249"/>
+		<average label="NCSS" value="13.209219858156029"/>
 		<average label="CCN" value="3.478723404255319"/>
 		<item name="ll_cam_bytes_per_sample(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ll_cam.c:70">
 			<value>283</value>
@@ -1624,7 +1624,7 @@
 			<value>72</value>
 			<value>14</value>
 		</item>
-		<average label="NCSS" value="13.755775577557756"/>
+		<average label="NCSS" value="13.75907590759076"/>
 		<average label="CCN" value="3.448844884488449"/>
 		<item name="read_reg(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/ov3660.c:26">
 			<value>304</value>
@@ -1876,7 +1876,7 @@
 			<value>38</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="14.818696883852692"/>
+		<average label="NCSS" value="14.821529745042493"/>
 		<average label="CCN" value="3.671388101983003"/>
 		<item name="SCCB_Init(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sccb.c:39">
 			<value>354</value>
@@ -1913,14 +1913,14 @@
 			<value>21</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="14.955555555555556"/>
+		<average label="NCSS" value="14.958333333333334"/>
 		<average label="CCN" value="3.6555555555555554"/>
 		<item name="esp_camera_sensor_get_info(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/sensor.c:45">
 			<value>361</value>
 			<value>11</value>
 			<value>3</value>
 		</item>
-		<average label="NCSS" value="14.944598337950138"/>
+		<average label="NCSS" value="14.947368421052632"/>
 		<average label="CCN" value="3.6537396121883656"/>
 		<item name="xclk_timer_conf(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/xclk.c:17">
 			<value>362</value>
@@ -1937,7 +1937,7 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="14.942307692307692"/>
+		<average label="NCSS" value="14.945054945054945"/>
 		<average label="CCN" value="3.64010989010989"/>
 		<item name="_jpg_write(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/esp_jpg_decode.c:44">
 			<value>365</value>
@@ -1954,7 +1954,7 @@
 			<value>34</value>
 			<value>5</value>
 		</item>
-		<average label="NCSS" value="15.0"/>
+		<average label="NCSS" value="15.002724795640328"/>
 		<average label="CCN" value="3.6430517711171664"/>
 		<item name="jpge::jpge_malloc(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/jpge.cpp:34">
 			<value>368</value>
@@ -2141,7 +2141,7 @@
 			<value>22</value>
 			<value>6</value>
 		</item>
-		<average label="NCSS" value="15.366336633663366"/>
+		<average label="NCSS" value="15.368811881188119"/>
 		<average label="CCN" value="3.623762376237624"/>
 		<item name="_malloc(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_bmp.c:62">
 			<value>405</value>
@@ -2193,7 +2193,7 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="15.777777777777779"/>
+		<average label="NCSS" value="15.780193236714975"/>
 		<average label="CCN" value="3.6449275362318843"/>
 		<item name="_malloc(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/to_jpg.cpp:32">
 			<value>415</value>
@@ -2270,14 +2270,14 @@
 			<value>4</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="15.657342657342657"/>
+		<average label="NCSS" value="15.65967365967366"/>
 		<average label="CCN" value="3.6013986013986012"/>
 		<item name="yuv2rgb(...) at /home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/image_conversions/src/yuv.c:289">
 			<value>430</value>
 			<value>10</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="15.644186046511628"/>
+		<average label="NCSS" value="15.646511627906976"/>
 		<average label="CCN" value="3.5953488372093023"/>
 	</measure>
 	<measure type="File">
@@ -2529,7 +2529,7 @@
 		</item>
 		<item name="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/AM2320/src/AM2320_Base.cpp">
 			<value>41</value>
-			<value>44</value>
+			<value>45</value>
 			<value>13</value>
 			<value>5</value>
 		</item>
@@ -2653,13 +2653,13 @@
 			<value>1</value>
 			<value>1</value>
 		</item>
-		<average label="NCSS" value="125.0"/>
+		<average label="NCSS" value="125.01639344262296"/>
 		<average label="CCN" value="25.34426229508197"/>
 		<average label="Functions" value="7.049180327868853"/>
-		<sum label="NCSS" value="7625"/>
+		<sum label="NCSS" value="7626"/>
 		<sum label="CCN" value="1546"/>
 		<sum label="Functions" value="430"/>
-		<average label="NCSS" value="15.644186046511628"/>
+		<average label="NCSS" value="15.646511627906976"/>
 		<average label="CCN" value="3.5953488372093023"/>
 	</measure>
 </cppncss>
