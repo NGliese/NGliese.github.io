@@ -7,7 +7,7 @@ var searchData=
   ['periode_5fscaler_908',['PERIODE_SCALER',['../da/d0a/class_periode_estimator.html#a882fc267f2b6175646af7b385ca9e991',1,'PeriodeEstimator']]],
   ['periodeestimator_909',['PeriodeEstimator',['../da/d0a/class_periode_estimator.html',1,'PeriodeEstimator&lt; HIGH_THRESHOLD, LOW_THRESHOLD, NVS_TYPE &gt;'],['../da/d0a/class_periode_estimator.html#a8e4319b4d3f345176b0ae0d37d99aebb',1,'PeriodeEstimator::PeriodeEstimator()']]],
   ['periodeestimator_2ehpp_910',['PeriodeEstimator.hpp',['../d4/d59/_periode_estimator_8hpp.html',1,'']]],
-  ['periodeestimator_3c_201900_2c_201800_2c_20nvs_5fmock_20_3e_911',['PeriodeEstimator&lt; 1900, 1800, NVS_MOCK &gt;',['../da/d0a/class_periode_estimator.html',1,'']]],
+  ['periodeestimator_3c_201500_2c_201200_2c_20nvs_5fmock_20_3e_911',['PeriodeEstimator&lt; 1500, 1200, NVS_MOCK &gt;',['../da/d0a/class_periode_estimator.html',1,'']]],
   ['periodeestimator_5ftest_2ecpp_912',['PeriodeEstimator_test.cpp',['../d1/dc6/_periode_estimator__test_8cpp.html',1,'']]],
   ['periodic_5frestart_913',['periodic_restart',['../d6/d9b/class_maintainer.html#a0e9da469d531b4303c7f5c9221c799c8',1,'Maintainer']]],
   ['periodic_5frestart_5ftime_914',['PERIODIC_RESTART_TIME',['../dd/ddd/_maintainer_8cpp.html#a53bff0a212ba94f946acfdc8a004f83c',1,'Maintainer.cpp']]],

@@ -392,7 +392,7 @@
 <text text-anchor="middle" x="772" y="-1197.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;m_hal</text>
 </g>
 <!-- Node12&#45;&gt;Node1 -->
-<g id="edge29" class="edge">
+<g id="edge27" class="edge">
 <title>Node12&#45;&gt;Node1</title>
 <path fill="none" stroke="#404040" d="M254.58,-678.13C258.09,-668.09 262.05,-658.25 266.5,-649 379.91,-413.5 597.25,-184.58 694.87,-88.41"/>
 <polygon fill="none" stroke="#404040" points="695.09,-88.2 696.57,-81.14 703.66,-79.8 702.18,-86.86 695.09,-88.2"/>
@@ -523,8 +523,8 @@
 <title>Node19</title>
 <g id="a_node19"><a xlink:href="../../da/d0a/class_periode_estimator.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="898,-127.5 898,-338.5 1037,-338.5 1037,-127.5 898,-127.5"/>
-<text text-anchor="start" x="906" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">PeriodeEstimator&lt; 1900,</text>
-<text text-anchor="middle" x="967.5" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00"> 1800, NVS_MOCK &gt;</text>
+<text text-anchor="start" x="906" y="-326.5" font-family="Helvetica,sans-Serif" font-size="10.00">PeriodeEstimator&lt; 1500,</text>
+<text text-anchor="middle" x="967.5" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00"> 1200, NVS_MOCK &gt;</text>
 <polyline fill="none" stroke="black" points="898,-308.5 1037,-308.5 "/>
 <text text-anchor="start" x="906" y="-296.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_high_threshold</text>
 <text text-anchor="start" x="906" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_low_threshold</text>
@@ -546,7 +546,7 @@
 </g>
 </g>
 <!-- Node19&#45;&gt;Node1 -->
-<g id="edge27" class="edge">
+<g id="edge28" class="edge">
 <title>Node19&#45;&gt;Node1</title>
 <path fill="none" stroke="#404040" d="M897.86,-172.35C866.03,-145.09 828.88,-113.27 799.12,-87.78"/>
 <polygon fill="none" stroke="#404040" points="798.84,-87.55 791.69,-86.68 789.73,-79.74 796.89,-80.6 798.84,-87.55"/>
@@ -581,11 +581,11 @@
 </g>
 </g>
 <!-- Node20&#45;&gt;Node19 -->
-<g id="edge28" class="edge">
+<g id="edge29" class="edge">
 <title>Node20&#45;&gt;Node19</title>
 <path fill="none" stroke="orange" d="M1002.12,-398.15C997.95,-378.4 993.67,-358.07 989.59,-338.74"/>
 <polygon fill="orange" stroke="orange" points="998.73,-399.04 1004.22,-408.1 1005.58,-397.59 998.73,-399.04"/>
-<text text-anchor="middle" x="1070.5" y="-371" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; 1900, 1800, NVS_MOCK &gt;</text>
+<text text-anchor="middle" x="1070.5" y="-371" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; 1500, 1200, NVS_MOCK &gt;</text>
 </g>
 </g>
 </svg>

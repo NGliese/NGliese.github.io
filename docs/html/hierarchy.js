@@ -78,7 +78,7 @@ var hierarchy =
     [ "jpge::output_stream", "dd/dca/classjpge_1_1output__stream.html", null ],
     [ "jpge::params", "d5/d59/structjpge_1_1params.html", null ],
     [ "PeriodeEstimator< HIGH_THRESHOLD, LOW_THRESHOLD, NVS_TYPE >", "da/d0a/class_periode_estimator.html", null ],
-    [ "PeriodeEstimator< 1900, 1800, NVS_MOCK >", "da/d0a/class_periode_estimator.html", null ],
+    [ "PeriodeEstimator< 1500, 1200, NVS_MOCK >", "da/d0a/class_periode_estimator.html", null ],
     [ "Ping_API", "d0/d0e/class_ping___a_p_i.html", null ],
     [ "Ping_SAL_esp32", "d9/dfe/class_ping___s_a_l__esp32.html", null ],
     [ "ProtocolBase", "dc/d12/class_protocol_base.html", [

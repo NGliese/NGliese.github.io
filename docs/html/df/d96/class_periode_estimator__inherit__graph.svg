@@ -87,8 +87,8 @@ var sectionId = 'dynsection-0';
 <title>Node2</title>
 <g id="a_node2"><a xlink:href="../../da/d0a/class_periode_estimator.html" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="20,-0.5 20,-211.5 159,-211.5 159,-0.5 20,-0.5"/>
-<text text-anchor="start" x="28" y="-199.5" font-family="Helvetica,sans-Serif" font-size="10.00">PeriodeEstimator&lt; 1900,</text>
-<text text-anchor="middle" x="89.5" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00"> 1800, NVS_MOCK &gt;</text>
+<text text-anchor="start" x="28" y="-199.5" font-family="Helvetica,sans-Serif" font-size="10.00">PeriodeEstimator&lt; 1500,</text>
+<text text-anchor="middle" x="89.5" y="-188.5" font-family="Helvetica,sans-Serif" font-size="10.00"> 1200, NVS_MOCK &gt;</text>
 <polyline fill="none" stroke="black" points="20,-181.5 159,-181.5 "/>
 <text text-anchor="start" x="28" y="-169.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_high_threshold</text>
 <text text-anchor="start" x="28" y="-158.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_low_threshold</text>
@@ -114,7 +114,7 @@ var sectionId = 'dynsection-0';
 <title>Node1&#45;&gt;Node2</title>
 <path fill="none" stroke="orange" d="M89.5,-248.96C89.5,-236.57 89.5,-224.06 89.5,-211.87"/>
 <polygon fill="orange" stroke="orange" points="86,-249.32 89.5,-259.32 93,-249.32 86,-249.32"/>
-<text text-anchor="middle" x="160.5" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; 1900, 1800, NVS_MOCK &gt;</text>
+<text text-anchor="middle" x="160.5" y="-233" font-family="Helvetica,sans-Serif" font-size="10.00"> &lt; 1500, 1200, NVS_MOCK &gt;</text>
 </g>
 </g>
 </svg>

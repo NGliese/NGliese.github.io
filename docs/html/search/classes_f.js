@@ -2,7 +2,7 @@ var searchData=
 [
   ['params_1503',['params',['../d5/d59/structjpge_1_1params.html',1,'jpge']]],
   ['periodeestimator_1504',['PeriodeEstimator',['../da/d0a/class_periode_estimator.html',1,'']]],
-  ['periodeestimator_3c_201900_2c_201800_2c_20nvs_5fmock_20_3e_1505',['PeriodeEstimator&lt; 1900, 1800, NVS_MOCK &gt;',['../da/d0a/class_periode_estimator.html',1,'']]],
+  ['periodeestimator_3c_201500_2c_201200_2c_20nvs_5fmock_20_3e_1505',['PeriodeEstimator&lt; 1500, 1200, NVS_MOCK &gt;',['../da/d0a/class_periode_estimator.html',1,'']]],
   ['ping_5fapi_1506',['Ping_API',['../d0/d0e/class_ping___a_p_i.html',1,'']]],
   ['ping_5fsal_5fesp32_1507',['Ping_SAL_esp32',['../d9/dfe/class_ping___s_a_l__esp32.html',1,'']]],
   ['postgresql_5finterface_1508',['postgresql_interface',['../d2/d19/classpostgresql__interface.html',1,'']]],
