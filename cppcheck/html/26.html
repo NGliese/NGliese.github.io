@@ -296,7 +296,7 @@
 <a name="line-65"></a>	<span class="n">MQTT_Message</span> <span class="n">msg_min</span><span class="p">;</span>
 <a name="line-66"></a>	<span class="n">MQTT_Message</span> <span class="n">msg_count</span><span class="p">;</span>
 <a name="line-67"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-68"></a>	<span class="n">PeriodeEstimator</span><span class="o">&lt;</span><span class="mi">1900</span><span class="p">,</span> <span class="mi">1800</span><span class="p">,</span> <span class="n">NVS_esp32</span><span class="o">&gt;</span> <span class="n">m_estimator</span><span class="p">;</span>
+<a name="line-68"></a>	<span class="n">PeriodeEstimator</span><span class="o">&lt;</span><span class="mi">1500</span><span class="p">,</span> <span class="mi">1200</span><span class="p">,</span> <span class="n">NVS_esp32</span><span class="o">&gt;</span> <span class="n">m_estimator</span><span class="p">;</span>
 <a name="line-69"></a><span class="cp">#else</span>
 <a name="line-70"></a>	<span class="n">PeriodeEstimator</span><span class="o">&lt;</span><span class="mi">1500</span><span class="p">,</span> <span class="mi">1200</span><span class="p">,</span> <span class="n">NVS_MOCK</span><span class="o">&gt;</span> <span class="n">m_estimator</span><span class="p">;</span>
 <a name="line-71"></a><span class="cp">#endif</span>

@@ -42,6 +42,8 @@ var NAVTREE =
     [ "empty_file", "dd/d8b/md__components__objects__json_src_empty_file.html", null ],
     [ "empty_file", "d6/d17/md__components__sensor__a_m2320_include_empty_file.html", null ],
     [ "empty_file", "d2/dfa/md__components__sensor__a_m2320_src_empty_file.html", null ],
+    [ "empty_file", "d8/dc5/md__components__service__aktiv_mus_simple_include_empty_file.html", null ],
+    [ "empty_file", "db/de8/md__components__service__aktiv_mus_simple_src_empty_file.html", null ],
     [ "empty_file", "d3/df9/md__components__service__env_sensing_include_empty_file.html", null ],
     [ "empty_file", "de/dbb/md__components__service__env_sensing_src_empty_file.html", null ],
     [ "empty_file", "d5/de1/md__components__service_is_alive_include_empty_file.html", null ],
@@ -95,13 +97,13 @@ var NAVTREEINDEX =
 "d4/d09/_objects_2_p_w_m_2test_2test__main_8cpp.html",
 "d5/d2e/sensor_8h.html#a79bc85e5282a183d6c06edc6eb77a69ea796f88b4687ffa0a138d656fceef4202",
 "d5/d8a/class_connected_components.html#a3abc7397b8047279faa40dad6a12778e",
-"d7/d6d/class_task.html#aa65d929f56fbf337cbc1e27bec854507",
-"d9/db8/_error_code_parser__test_8cpp.html#a1817672214c071919f940cc0504a1f01",
-"db/d4d/class_background___extractor.html#a36b4d66dcc8979cbd1ce751d5999e6eb",
-"dc/dc2/classhttp__interface.html#a7c1f7e97af2c225937c48fcb3b05cc35",
-"df/d31/classjpge_1_1jpeg__encoder.html#a018fdfe9439bd3b14b5f90939febaf05",
-"dir_6393740aa782804667a49106aee9fb77.html",
-"globals_func_f.html"
+"d7/d6d/class_task.html#a6f13d13787e21dc929b61d112b863433",
+"d9/db3/class_data_broker.html#abe0f253277cd63fa0cafdc774d87bbfa",
+"db/d4d/class_background___extractor.html#a15cf225f204bd8077dc1c9c67163bd8ca80c1514e033180f89a7abc746bea8dce",
+"dc/dbc/esp32__servo__board__v1__0_8hpp.html#acdb8b9373671a761f8c5d7e8852eedf2",
+"df/d22/cc__test_8cpp.html",
+"dir_5745d93574f554a1c2d57a4f7fe4bc03.html",
+"globals.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
