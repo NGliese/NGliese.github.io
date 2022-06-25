@@ -7,7 +7,7 @@
             <symbol>HAL_ESP32</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;MG996R&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MG996R&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/src/MG996R.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/include/MG996R.hpp" line="107" column="2"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/src/MG996R.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/include/MG996R.hpp" line="112" column="2"/>
             <symbol>MG996R</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_PWM_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_PWM_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
@@ -15,7 +15,7 @@
             <symbol>friend_PWM_API</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_MG996R&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_MG996R&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/src/MG996R.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/include/MG996R.hpp" line="149" column="2"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/src/MG996R.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/include/MG996R.hpp" line="165" column="2"/>
             <symbol>friend_MG996R</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_ConnectedComponents&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_ConnectedComponents&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
@@ -649,7 +649,7 @@
             <symbol>HAL_ESP32</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;MG996R&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;MG996R&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/include/MG996R.hpp" line="107" column="2"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/include/MG996R.hpp" line="112" column="2"/>
             <symbol>MG996R</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_PWM_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_PWM_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
@@ -657,7 +657,7 @@
             <symbol>friend_PWM_API</symbol>
         </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_MG996R&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_MG996R&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
-            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/include/MG996R.hpp" line="149" column="2"/>
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/User/DogFeederDoor/src/DogFeederDoor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Actuator/ServoMotor/include/MG996R.hpp" line="165" column="2"/>
             <symbol>friend_MG996R</symbol>
         </error>
     </errors>

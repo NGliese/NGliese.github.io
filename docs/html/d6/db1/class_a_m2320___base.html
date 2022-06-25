@@ -172,7 +172,7 @@ Private Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../db/ddd/_a_m2320___base_8cpp_source.html#l00029">29</a> of file <a class="el" href="../../db/ddd/_a_m2320___base_8cpp_source.html">AM2320_Base.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : <a class="code" href="../../d6/db1/class_a_m2320___base.html#a4358ae5c4434c5f5432c9cebd42fdd89">m_i2c</a>{<a class="code" href="../../da/d55/classi2c.html#a7f3729073f774fd1f1cf66ba817ae5db">i2c&lt;i2c_esp32&gt;::getInstance</a>(<a class="code" href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a>)}, <a class="code" href="../../d6/db1/class_a_m2320___base.html#a77122f780f41773764d067dcbccbc293">m_address</a>{slaveaddress}</div>
+<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    : <a class="code" href="../../d6/db1/class_a_m2320___base.html#a4358ae5c4434c5f5432c9cebd42fdd89">m_i2c</a>{<a class="code" href="../../da/d55/classi2c.html#a7f3729073f774fd1f1cf66ba817ae5db">i2c&lt;i2c_esp32&gt;::getInstance</a>(conf)}, <a class="code" href="../../d6/db1/class_a_m2320___base.html#a77122f780f41773764d067dcbccbc293">m_address</a>{slaveaddress}</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;}</div>
 </div><!-- fragment -->
@@ -508,7 +508,6 @@ false </dd></dl>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
-<div class="ttc" id="ai2c__test_8cpp_html_a26f631f76b57f8a7957ea53ff3ba49d4"><div class="ttname"><a href="../../d0/d30/i2c__test_8cpp.html#a26f631f76b57f8a7957ea53ff3ba49d4">conf</a></div><div class="ttdeci">i2c_conf_t conf</div><div class="ttdef"><b>Definition:</b> <a href="../../d0/d30/i2c__test_8cpp_source.html#l00013">i2c_test.cpp:13</a></div></div>
 <div class="ttc" id="aclassi2c_html_ac2781b43f9b76cb707493a6786427353"><div class="ttname"><a href="../../da/d55/classi2c.html#ac2781b43f9b76cb707493a6786427353">i2c::writeMultiBytes</a></div><div class="ttdeci">general_err_t writeMultiBytes(const uint8_t &amp;slave_address, const std::array&lt; uint8_t, N &gt; &amp;array)</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d1c/i2c_8hpp_source.html#l00070">i2c.hpp:70</a></div></div>
 <div class="ttc" id="aclass_a_m2320___base_html_a4358ae5c4434c5f5432c9cebd42fdd89"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#a4358ae5c4434c5f5432c9cebd42fdd89">AM2320_Base::m_i2c</a></div><div class="ttdeci">i2c&lt; i2c_esp32 &gt; m_i2c</div><div class="ttdef"><b>Definition:</b> <a href="../../db/d89/_a_m2320___base_8hpp_source.html#l00070">AM2320_Base.hpp:70</a></div></div>
 <div class="ttc" id="aclass_a_m2320___base_html_af247bcdc6483050d9b08e77fdee68f91"><div class="ttname"><a href="../../d6/db1/class_a_m2320___base.html#af247bcdc6483050d9b08e77fdee68f91">AM2320_Base::getRaw</a></div><div class="ttdeci">virtual uint16_t getRaw()=0</div><div class="ttdoc">Get the Raw object get the raw i2c value.</div></div>

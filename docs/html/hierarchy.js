@@ -134,6 +134,7 @@ var hierarchy =
         ] ],
         [ "ServiceTimeBase< DELAY_FUNCTION, BUFFER_TYPE >", "d9/d28/class_service_time_base.html", null ],
         [ "ServiceTimeBase<&Timeservice::wait_sec >", "d9/d28/class_service_time_base.html", [
+          [ "AktivMus_service", "d8/d4a/class_aktiv_mus__service.html", null ],
           [ "EnvSensing_service", "df/ddc/class_env_sensing__service.html", null ],
           [ "isAlive_service", "d3/d22/classis_alive__service.html", null ]
         ] ]

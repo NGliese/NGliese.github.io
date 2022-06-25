@@ -1,9 +1,10 @@
 <map id="ServiceTimeBase&lt; DELAY_FUNCTION, BUFFER_TYPE &gt;" name="ServiceTimeBase&lt; DELAY_FUNCTION, BUFFER_TYPE &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="90,927,302,1063"/>
-<area shape="rect" id="node5" href="$d9/d28/class_service_time_base.html" title=" " alt="" coords="78,1140,314,1276"/>
-<area shape="rect" id="node2" href="$d4/d82/class_service_base.html" title=" " alt="" coords="79,653,313,877"/>
-<area shape="rect" id="node3" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="125,5,256,303"/>
-<area shape="rect" id="node4" href="$d4/d82/class_service_base.html" title=" " alt="" coords="213,352,382,591"/>
-<area shape="rect" id="node6" href="$df/ddc/class_env_sensing__service.html" title=" " alt="" coords="5,1325,192,1476"/>
-<area shape="rect" id="node7" href="$d3/d22/classis_alive__service.html" title=" " alt="" coords="217,1347,373,1454"/>
+<area shape="rect" id="node1" title=" " alt="" coords="190,927,402,1063"/>
+<area shape="rect" id="node5" href="$d9/d28/class_service_time_base.html" title=" " alt="" coords="178,1140,414,1276"/>
+<area shape="rect" id="node2" href="$d4/d82/class_service_base.html" title=" " alt="" coords="179,653,413,877"/>
+<area shape="rect" id="node3" href="$d7/d6d/class_task.html" title="Encapsulate a runnable task." alt="" coords="225,5,356,303"/>
+<area shape="rect" id="node4" href="$d4/d82/class_service_base.html" title=" " alt="" coords="313,352,482,591"/>
+<area shape="rect" id="node6" href="$d8/d4a/class_aktiv_mus__service.html" title=" " alt="" coords="5,1347,179,1454"/>
+<area shape="rect" id="node7" href="$df/ddc/class_env_sensing__service.html" title=" " alt="" coords="203,1325,389,1476"/>
+<area shape="rect" id="node8" href="$d3/d22/classis_alive__service.html" title=" " alt="" coords="414,1347,570,1454"/>
 </map>

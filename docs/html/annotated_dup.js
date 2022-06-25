@@ -8,6 +8,7 @@ var annotated_dup =
     [ "ADC", "d0/deb/namespace_3global_scope_4.html#d6/dec/class_a_d_c", null ],
     [ "ADC_API_ESP32", "d4/d70/class_a_d_c___a_p_i___e_s_p32.html", "d4/d70/class_a_d_c___a_p_i___e_s_p32" ],
     [ "ADCBase", "dc/d23/class_a_d_c_base.html", "dc/d23/class_a_d_c_base" ],
+    [ "AktivMus_service", "d8/d4a/class_aktiv_mus__service.html", "d8/d4a/class_aktiv_mus__service" ],
     [ "AM2320_Base", "d6/db1/class_a_m2320___base.html", "d6/db1/class_a_m2320___base" ],
     [ "AM2320_Humidity", "d8/d73/class_a_m2320___humidity.html", "d8/d73/class_a_m2320___humidity" ],
     [ "AM2320_MOCK", "d3/d0f/class_a_m2320___m_o_c_k.html", "d3/d0f/class_a_m2320___m_o_c_k" ],
