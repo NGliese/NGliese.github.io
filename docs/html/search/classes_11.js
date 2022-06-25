@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['ratio_5fsettings_5ft_1532',['ratio_settings_t',['../d5/d2e/sensor_8h.html#d2/df8/structratio__settings__t',1,'']]],
-  ['resolution_5finfo_5ft_1533',['resolution_info_t',['../d5/d2e/sensor_8h.html#d9/d43/structresolution__info__t',1,'']]],
-  ['rpicamv2_1534',['RPICamV2',['../d4/de7/class_r_p_i_cam_v2.html',1,'']]],
-  ['rtc_5fhal_1535',['RTC_HAL',['../d9/de1/class_r_t_c___h_a_l.html',1,'']]]
+  ['ratio_5fsettings_5ft_1536',['ratio_settings_t',['../d5/d2e/sensor_8h.html#d2/df8/structratio__settings__t',1,'']]],
+  ['resolution_5finfo_5ft_1537',['resolution_info_t',['../d5/d2e/sensor_8h.html#d9/d43/structresolution__info__t',1,'']]],
+  ['rpicamv2_1538',['RPICamV2',['../d4/de7/class_r_p_i_cam_v2.html',1,'']]],
+  ['rtc_5fhal_1539',['RTC_HAL',['../d9/de1/class_r_t_c___h_a_l.html',1,'']]]
 ];

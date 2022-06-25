@@ -310,21 +310,22 @@
 <g id="node12" class="node">
 <title>Node12</title>
 <g id="a_node12"><a xlink:href="../../d8/d4a/class_aktiv_mus__service.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="398.5,-17 398.5,-96 528.5,-96 528.5,-17 398.5,-17"/>
-<text text-anchor="middle" x="463.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">AktivMus_service</text>
-<polyline fill="none" stroke="black" points="398.5,-77 528.5,-77 "/>
-<text text-anchor="start" x="406.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_alive</text>
-<polyline fill="none" stroke="black" points="398.5,-58 528.5,-58 "/>
-<text text-anchor="start" x="406.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ AktivMus_service()</text>
-<text text-anchor="start" x="406.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~AktivMus_service()</text>
-<text text-anchor="start" x="406.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mainFunction()</text>
+<polygon fill="none" stroke="black" points="398.5,-11.5 398.5,-101.5 528.5,-101.5 528.5,-11.5 398.5,-11.5"/>
+<text text-anchor="middle" x="463.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">AktivMus_service</text>
+<polyline fill="none" stroke="black" points="398.5,-82.5 528.5,-82.5 "/>
+<text text-anchor="start" x="406.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_alive</text>
+<text text-anchor="start" x="406.5" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_motor</text>
+<polyline fill="none" stroke="black" points="398.5,-52.5 528.5,-52.5 "/>
+<text text-anchor="start" x="406.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ AktivMus_service()</text>
+<text text-anchor="start" x="406.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~AktivMus_service()</text>
+<text text-anchor="start" x="406.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mainFunction()</text>
 </a>
 </g>
 </g>
 <!-- Node11&#45;&gt;Node12 -->
 <g id="edge13" class="edge">
 <title>Node11&#45;&gt;Node12</title>
-<path fill="none" stroke="midnightblue" d="M557.47,-148.39C539.36,-130.88 519.87,-112.03 503.37,-96.07"/>
+<path fill="none" stroke="midnightblue" d="M557.8,-148.72C541.65,-133.09 524.38,-116.39 509.09,-101.6"/>
 <polygon fill="none" stroke="midnightblue" points="555.51,-151.37 565.13,-155.81 560.37,-146.34 555.51,-151.37"/>
 </g>
 <!-- Node13 -->

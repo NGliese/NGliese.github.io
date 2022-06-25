@@ -553,21 +553,22 @@ var sectionId = 'dynsection-0';
 <g id="node19" class="node">
 <title>Node19</title>
 <g id="a_node19"><a xlink:href="../../d8/d4a/class_aktiv_mus__service.html" target="_top" xlink:title=" ">
-<polygon fill="none" stroke="black" points="867.5,-17 867.5,-96 997.5,-96 997.5,-17 867.5,-17"/>
-<text text-anchor="middle" x="932.5" y="-84" font-family="Helvetica,sans-Serif" font-size="10.00">AktivMus_service</text>
-<polyline fill="none" stroke="black" points="867.5,-77 997.5,-77 "/>
-<text text-anchor="start" x="875.5" y="-65" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_alive</text>
-<polyline fill="none" stroke="black" points="867.5,-58 997.5,-58 "/>
-<text text-anchor="start" x="875.5" y="-46" font-family="Helvetica,sans-Serif" font-size="10.00">+ AktivMus_service()</text>
-<text text-anchor="start" x="875.5" y="-35" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~AktivMus_service()</text>
-<text text-anchor="start" x="875.5" y="-24" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mainFunction()</text>
+<polygon fill="none" stroke="black" points="867.5,-11.5 867.5,-101.5 997.5,-101.5 997.5,-11.5 867.5,-11.5"/>
+<text text-anchor="middle" x="932.5" y="-89.5" font-family="Helvetica,sans-Serif" font-size="10.00">AktivMus_service</text>
+<polyline fill="none" stroke="black" points="867.5,-82.5 997.5,-82.5 "/>
+<text text-anchor="start" x="875.5" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; msg_alive</text>
+<text text-anchor="start" x="875.5" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; m_motor</text>
+<polyline fill="none" stroke="black" points="867.5,-52.5 997.5,-52.5 "/>
+<text text-anchor="start" x="875.5" y="-40.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ AktivMus_service()</text>
+<text text-anchor="start" x="875.5" y="-29.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ ~AktivMus_service()</text>
+<text text-anchor="start" x="875.5" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; mainFunction()</text>
 </a>
 </g>
 </g>
 <!-- Node18&#45;&gt;Node19 -->
 <g id="edge20" class="edge">
 <title>Node18&#45;&gt;Node19</title>
-<path fill="none" stroke="midnightblue" d="M1026.47,-148.39C1008.36,-130.88 988.87,-112.03 972.37,-96.07"/>
+<path fill="none" stroke="midnightblue" d="M1026.8,-148.72C1010.65,-133.09 993.38,-116.39 978.09,-101.6"/>
 <polygon fill="none" stroke="midnightblue" points="1024.51,-151.37 1034.13,-155.81 1029.37,-146.34 1024.51,-151.37"/>
 </g>
 <!-- Node20 -->

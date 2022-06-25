@@ -107,7 +107,7 @@ $(document).ready(function(){initNavTree('d5/d0d/xclk_8c_source.html','../../');
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    ledc_timer_config_t timer_conf;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    timer_conf.duty_resolution = LEDC_TIMER_1_BIT;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    timer_conf.freq_hz = xclk_freq_hz;</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    timer_conf.speed_mode = LEDC_LOW_SPEED_MODE;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    timer_conf.speed_mode = <a class="code" href="../../d7/db5/_aktiv_mus__service_8cpp.html#a587743ee73102d80b4d0d5a12a456272">LEDC_LOW_SPEED_MODE</a>;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    timer_conf.clk_cfg = LEDC_AUTO_CLK;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
@@ -132,7 +132,7 @@ $(document).ready(function(){initNavTree('d5/d0d/xclk_8c_source.html','../../');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    g_ledc_channel = config-&gt;ledc_channel;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    ledc_channel_config_t ch_conf;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ch_conf.gpio_num = config-&gt;pin_xclk;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ch_conf.speed_mode = LEDC_LOW_SPEED_MODE;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    ch_conf.speed_mode = <a class="code" href="../../d7/db5/_aktiv_mus__service_8cpp.html#a587743ee73102d80b4d0d5a12a456272">LEDC_LOW_SPEED_MODE</a>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ch_conf.channel = config-&gt;ledc_channel;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ch_conf.intr_type = LEDC_INTR_DISABLE;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    ch_conf.timer_sel = config-&gt;ledc_timer;</div>
@@ -149,11 +149,12 @@ $(document).ready(function(){initNavTree('d5/d0d/xclk_8c_source.html','../../');
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="keywordtype">void</span> camera_disable_out_clock()</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;{</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ledc_stop(LEDC_LOW_SPEED_MODE, g_ledc_channel, 0);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    ledc_stop(<a class="code" href="../../d7/db5/_aktiv_mus__service_8cpp.html#a587743ee73102d80b4d0d5a12a456272">LEDC_LOW_SPEED_MODE</a>, g_ledc_channel, 0);</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="a_aktiv_mus__service_8cpp_html_a587743ee73102d80b4d0d5a12a456272"><div class="ttname"><a href="../../d7/db5/_aktiv_mus__service_8cpp.html#a587743ee73102d80b4d0d5a12a456272">LEDC_LOW_SPEED_MODE</a></div><div class="ttdeci">#define LEDC_LOW_SPEED_MODE</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/db5/_aktiv_mus__service_8cpp_source.html#l00034">AktivMus_service.cpp:34</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

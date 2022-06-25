@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-06-25 09:40:15</td>
+            <td class="headerValue">2022-06-25 09:54:36</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">1</td>
@@ -687,7 +687,7 @@
     <tr>
     <td align="right" class="lineno"><pre>56</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>92</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>100</pre></td>
     <td align="left" class="src coveredLine"><pre>	ServiceQueueBase(size_t queue_size, size_t size_of_item, const BUFFER_TYPE&amp; buffer,</pre></td>
     </tr>
 
@@ -700,22 +700,22 @@
 
     <tr>
     <td align="right" class="lineno"><pre>58</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 92 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>92</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 2 taken 100 times">&check;</span><span class="notTakenBranch" title="Branch 3 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>100</pre></td>
     <td align="left" class="src coveredLine"><pre>		: ServiceBase&lt;BUFFER_TYPE>(buffer, error_id), m_queue{queue_size, size_of_item} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>59</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>184</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>200</pre></td>
     <td align="left" class="src coveredLine"><pre>	virtual ~ServiceQueueBase(){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>60</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>	inline auto&amp; getQueue()</pre></td>
     </tr>
 
@@ -729,7 +729,7 @@
     <tr>
     <td align="right" class="lineno"><pre>62</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_queue;</pre></td>
     </tr>
 
@@ -1394,7 +1394,7 @@
     <tr>
     <td align="right" class="lineno"><pre>157</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>48</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
     <td align="left" class="src coveredLine"><pre>	service_MOCK(size_t queue_size, size_t size_of_item, const MQTT_Message&amp; buffer,</pre></td>
     </tr>
 
@@ -1408,14 +1408,14 @@
     <tr>
     <td align="right" class="lineno"><pre>159</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>48</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
     <td align="left" class="src coveredLine"><pre>		: ServiceQueueBase(queue_size, size_of_item, buffer, error_id){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>160</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>96</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
     <td align="left" class="src coveredLine"><pre>	~service_MOCK(){};</pre></td>
     </tr>
 
@@ -1625,7 +1625,7 @@
     <tr>
     <td align="right" class="lineno"><pre>190</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>	service_SIMPLE(size_t queue_size, size_t size_of_item, const MQTT_Message&amp; buffer,</pre></td>
     </tr>
 
@@ -1639,14 +1639,14 @@
     <tr>
     <td align="right" class="lineno"><pre>192</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
     <td align="left" class="src coveredLine"><pre>		: ServiceQueueBase(queue_size, size_of_item, buffer, error_id){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>193</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>48</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
     <td align="left" class="src coveredLine"><pre>	~service_SIMPLE(){};</pre></td>
     </tr>
 

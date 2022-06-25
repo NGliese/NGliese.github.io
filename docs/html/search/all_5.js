@@ -58,6 +58,6 @@ var searchData=
   ['draw_5fellipse_263',['draw_ellipse',['../db/dc9/class_utility___image.html#ad7558cb088d1f92e42a9c36c5fce6ad3',1,'Utility_Image']]],
   ['drawconnectedcomponents_264',['drawConnectedComponents',['../d5/d8a/class_connected_components.html#a8f0b0455c7c84a29d416eeb8145e31d2',1,'ConnectedComponents']]],
   ['drive_5fcapability_265',['DRIVE_CAPABILITY',['../dc/d54/ov3660__regs_8h.html#ae7d09dd0c4b72e461a0fa482b0ea14a0',1,'ov3660_regs.h']]],
-  ['duty_266',['duty',['../d4/dc1/class_h_a_l___e_s_p32.html#aca418b1052808a4445f9b372979c2516',1,'HAL_ESP32::config']]],
+  ['duty_266',['duty',['../d4/dc1/class_h_a_l___e_s_p32.html#aca418b1052808a4445f9b372979c2516',1,'HAL_ESP32::config::duty()'],['../d7/db5/_aktiv_mus__service_8cpp.html#aff9dbec73a66910ff2608ede45a2fb11',1,'duty():&#160;AktivMus_service.cpp']]],
   ['declare_267',['declare',['../d5/d15/md_code_snippets_declare.html',1,'']]]
 ];

@@ -44,7 +44,7 @@ var searchData=
   ['freertos_395',['FreeRTOS',['../db/df4/class_free_r_t_o_s.html',1,'']]],
   ['freertos_2ecpp_396',['FreeRTOS.cpp',['../da/d25/_free_r_t_o_s_8cpp.html',1,'']]],
   ['freertos_2eh_397',['FreeRTOS.h',['../d3/d1c/_free_r_t_o_s_8h.html',1,'']]],
-  ['frequency_398',['frequency',['../d4/dc1/class_h_a_l___e_s_p32.html#a51500e2fbaaa6e56d124f47700b4421f',1,'HAL_ESP32::config']]],
+  ['frequency_398',['frequency',['../d4/dc1/class_h_a_l___e_s_p32.html#a51500e2fbaaa6e56d124f47700b4421f',1,'HAL_ESP32::config::frequency()'],['../d7/db5/_aktiv_mus__service_8cpp.html#a52cad158db7d4eea8bf6b3b5175af0a3',1,'frequency():&#160;AktivMus_service.cpp']]],
   ['function_5fcode_5fhumidity_399',['FUNCTION_CODE_HUMIDITY',['../d6/db1/class_a_m2320___base.html#a4a321c6a0123808d4ef7f8e632add873',1,'AM2320_Base']]],
   ['function_5fcode_5ftemperature_400',['FUNCTION_CODE_TEMPERATURE',['../d6/db1/class_a_m2320___base.html#a8421ad986a352c662f7f412b68c45d53',1,'AM2320_Base']]],
   ['function_5fname_401',['function_name',['../d1/d27/namespace_fault_handler__n.html#a629402e86db3f401cddc9996ca0f1e31',1,'FaultHandler_n::msg_t']]]
