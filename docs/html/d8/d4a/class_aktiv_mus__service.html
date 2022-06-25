@@ -96,14 +96,12 @@ $(document).ready(function(){initNavTree('d8/d4a/class_aktiv_mus__service.html',
 <div class="dynheader">
 Inheritance diagram for AktivMus_service:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/d84/class_aktiv_mus__service__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d7/d84/class_aktiv_mus__service__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for AktivMus_service:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/db8/class_aktiv_mus__service__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
-</div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="../../d4/db8/class_aktiv_mus__service__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -295,6 +293,15 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Implements <a class="el" href="../../d9/d28/class_service_time_base.html#adf297a951573195ead03279c7955a8ef">ServiceTimeBase&lt;&amp;Timeservice::wait_sec &gt;</a>.</p>
 
+<p class="definition">Definition at line <a class="el" href="../../d7/db5/_aktiv_mus__service_8cpp_source.html#l00050">50</a> of file <a class="el" href="../../d7/db5/_aktiv_mus__service_8cpp_source.html">AktivMus_service.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="../../d8/d4a/class_aktiv_mus__service.html#aef342c3c725666a5bb3707b41602b3dc">m_motor</a>.<a class="code" href="../../d9/d1c/class_m_g996_r.html#a88906ae423396ec4279b3eb61536bb0f">setToMaximumSlowly</a>();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="../../d8/d4a/class_aktiv_mus__service.html#aef342c3c725666a5bb3707b41602b3dc">m_motor</a>.<a class="code" href="../../d9/d1c/class_m_g996_r.html#a66408cb63b644c031754c93cd7e06958">setToMinimumSlowly</a>();</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a>, <a class="el" href="../../d8/d4a/class_aktiv_mus__service.html#aef342c3c725666a5bb3707b41602b3dc">m_motor</a>, <a class="el" href="../../d9/d1c/class_m_g996_r.html#a88906ae423396ec4279b3eb61536bb0f">MG996R::setToMaximumSlowly()</a>, and <a class="el" href="../../d9/d1c/class_m_g996_r.html#a66408cb63b644c031754c93cd7e06958">MG996R::setToMinimumSlowly()</a>.</p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -319,6 +326,8 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="../../d4/d65/_aktiv_mus__service_8hpp_source.html#l00064">64</a> of file <a class="el" href="../../d4/d65/_aktiv_mus__service_8hpp_source.html">AktivMus_service.hpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="../../d8/d4a/class_aktiv_mus__service.html#a2e5c39b2a9bc91aafca82e7a3138584e">mainFunction()</a>.</p>
 
 </div>
 </div>
@@ -353,6 +362,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <div class="ttc" id="aclass_service_time_base_html"><div class="ttname"><a href="../../d9/d28/class_service_time_base.html">ServiceTimeBase&lt;&amp;Timeservice::wait_sec &gt;</a></div></div>
+<div class="ttc" id="aclass_m_g996_r_html_a66408cb63b644c031754c93cd7e06958"><div class="ttname"><a href="../../d9/d1c/class_m_g996_r.html#a66408cb63b644c031754c93cd7e06958">MG996R::setToMinimumSlowly</a></div><div class="ttdeci">general_err_t setToMinimumSlowly(const float position=MG996R::MIN_VALUE, const float increment=MG996R::SLOW_INCREMENT)</div><div class="ttdoc">Set the To Minimum Slowly value.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da5/_m_g996_r_8cpp_source.html#l00127">MG996R.cpp:127</a></div></div>
 <div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0a4703c849d584ed492249a45793690062"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a4703c849d584ed492249a45793690062">db_id::CCTV01_DEBUG4</a></div><div class="ttdeci">@ CCTV01_DEBUG4</div></div>
 <div class="ttc" id="a_general___error_8hpp_html_aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d"><div class="ttname"><a href="../../d3/deb/_general___error_8hpp.html#aa30ae256edb3b3f61c026647995b533eaed20cebb6dedba82cb6aadb0ddd3d84d">GE_OK</a></div><div class="ttdeci">@ GE_OK</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/deb/_general___error_8hpp_source.html#l00068">General_Error.hpp:68</a></div></div>
 <div class="ttc" id="aclass_aktiv_mus__service_html_ada5ad56b92c0b825ea1596c67e2d3aa4"><div class="ttname"><a href="../../d8/d4a/class_aktiv_mus__service.html#ada5ad56b92c0b825ea1596c67e2d3aa4">AktivMus_service::msg_alive</a></div><div class="ttdeci">MQTT_Message msg_alive</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d65/_aktiv_mus__service_8hpp_source.html#l00063">AktivMus_service.hpp:63</a></div></div>
@@ -361,6 +371,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="ttc" id="aclass_service_base_html_a34963c51b65cbee65be64df8b6c0004b"><div class="ttname"><a href="../../d4/d82/class_service_base.html#a34963c51b65cbee65be64df8b6c0004b">ServiceBase&lt; MQTT_Message &gt;::postError</a></div><div class="ttdeci">virtual general_err_t postError(const std::string &amp;message, const general_err_t &amp;err)</div><div class="ttdoc">Method to post errors to the database.</div><div class="ttdef"><b>Definition:</b> <a href="../../d2/dc5/_service_base_8hpp_source.html#l00127">ServiceBase.hpp:127</a></div></div>
 <div class="ttc" id="aclass_aktiv_mus__service_html_aef342c3c725666a5bb3707b41602b3dc"><div class="ttname"><a href="../../d8/d4a/class_aktiv_mus__service.html#aef342c3c725666a5bb3707b41602b3dc">AktivMus_service::m_motor</a></div><div class="ttdeci">MG996R m_motor</div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d65/_aktiv_mus__service_8hpp_source.html#l00064">AktivMus_service.hpp:64</a></div></div>
 <div class="ttc" id="aclass_m_q_t_t___message_html"><div class="ttname"><a href="../../d5/d81/class_m_q_t_t___message.html">MQTT_Message</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d1/da7/_m_q_t_t___message_8hpp_source.html#l00084">MQTT_Message.hpp:84</a></div></div>
+<div class="ttc" id="aclass_m_g996_r_html_a88906ae423396ec4279b3eb61536bb0f"><div class="ttname"><a href="../../d9/d1c/class_m_g996_r.html#a88906ae423396ec4279b3eb61536bb0f">MG996R::setToMaximumSlowly</a></div><div class="ttdeci">general_err_t setToMaximumSlowly(const float position=MG996R::MAX_VALUE, const float increment=MG996R::SLOW_INCREMENT)</div><div class="ttdoc">Set the To Maximum Slowly value.</div><div class="ttdef"><b>Definition:</b> <a href="../../de/da5/_m_g996_r_8cpp_source.html#l00110">MG996R.cpp:110</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>

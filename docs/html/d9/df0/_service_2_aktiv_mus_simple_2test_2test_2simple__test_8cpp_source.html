@@ -93,13 +93,13 @@ $(document).ready(function(){initNavTree('d9/df0/_service_2_aktiv_mus_simple_2te
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *      Author: espenv</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">//#include &quot;../../include/Ping_API.hpp&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;../../include/AktivMus_service.hpp&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;CppUTest/TestHarness.h&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d9/df0/_service_2_aktiv_mus_simple_2test_2test_2simple__test_8cpp.html#aa381f71bdac424db96b9271b566e9cd5">   14</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a5277e18d9163c4ebd65ee2e0de3a4560">TEST_GROUP</a>(TEMPL_GRP){<span class="keywordtype">void</span> setup(){</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="../../d9/df0/_service_2_aktiv_mus_simple_2test_2test_2simple__test_8cpp.html#a7aa973da11ba2f58cc4030efd82a12eb">   14</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a5277e18d9163c4ebd65ee2e0de3a4560">TEST_GROUP</a>(ACTIVE_MOUSE_GRP){<span class="keywordtype">void</span> setup(){</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;} <span class="keywordtype">void</span> teardown(){</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// Uninit stuff</span></div>
@@ -107,14 +107,19 @@ $(document).ready(function(){initNavTree('d9/df0/_service_2_aktiv_mus_simple_2te
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">// test init</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d9/df0/_service_2_aktiv_mus_simple_2test_2test_2simple__test_8cpp.html#a02540ba362b6bc66a8a3dd35daa3430d">   22</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(TEMPL_GRP, init)</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="../../d9/df0/_service_2_aktiv_mus_simple_2test_2test_2simple__test_8cpp.html#a15788d390a276314895cc6f74456c3c2">   22</a></span>&#160;<a class="code" href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a>(ACTIVE_MOUSE_GRP, init)</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    FAIL(<span class="stringliteral">&quot;FAIL ME!&quot;</span>);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="../../d8/d4a/class_aktiv_mus__service.html">AktivMus_service</a> m_service{<a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab865f5c53b6dc366100ad6b6dd85477e">db_id::CCTV01_ASPECT</a>, 100, <a class="code" href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aebb6b4fc98281c7063d753eac1166da5">db_id::CCTV01_AMOUNT</a>};</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    CHECK(<span class="keyword">true</span>);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//  FAIL(&quot;FAIL ME!&quot;);</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0ab865f5c53b6dc366100ad6b6dd85477e"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab865f5c53b6dc366100ad6b6dd85477e">db_id::CCTV01_ASPECT</a></div><div class="ttdeci">@ CCTV01_ASPECT</div></div>
+<div class="ttc" id="a_database___i_d___base_8hpp_html_ad2476414527a024c2bb661f45d8876e0aebb6b4fc98281c7063d753eac1166da5"><div class="ttname"><a href="../../d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aebb6b4fc98281c7063d753eac1166da5">db_id::CCTV01_AMOUNT</a></div><div class="ttdeci">@ CCTV01_AMOUNT</div></div>
 <div class="ttc" id="a_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_html_a4f17af58fd374b6442582d987fcbcd7a"><div class="ttname"><a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a4f17af58fd374b6442582d987fcbcd7a">TEST</a></div><div class="ttdeci">TEST(WiFiV2_GRP, init)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_source.html#l00041">simple_test.cpp:41</a></div></div>
 <div class="ttc" id="a_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_html_a5277e18d9163c4ebd65ee2e0de3a4560"><div class="ttname"><a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp.html#a5277e18d9163c4ebd65ee2e0de3a4560">TEST_GROUP</a></div><div class="ttdeci">TEST_GROUP(WiFiV2_GRP)</div><div class="ttdef"><b>Definition:</b> <a href="../../d7/d5d/_connector_2_wi_fi__v2_2test_2test_2simple__test_8cpp_source.html#l00033">simple_test.cpp:33</a></div></div>
+<div class="ttc" id="aclass_aktiv_mus__service_html"><div class="ttname"><a href="../../d8/d4a/class_aktiv_mus__service.html">AktivMus_service</a></div><div class="ttdef"><b>Definition:</b> <a href="../../d4/d65/_aktiv_mus__service_8hpp_source.html#l00051">AktivMus_service.hpp:51</a></div></div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
