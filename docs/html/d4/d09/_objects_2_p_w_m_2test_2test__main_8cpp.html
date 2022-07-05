@@ -137,13 +137,13 @@ Functions</h2></td></tr>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="comment">// we are therefore ignoring</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    MemoryLeakWarningPlugin::turnOffNewDeleteOverloads();</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#if 0 // test different groups</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">char</span> *arg[10];</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">char</span>* arg[10];</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    arg[1] = <span class="stringliteral">&quot;-v&quot;</span>;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">//arg[2] = &quot;-sg&quot;;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">//arg[3] = &quot;CAM_HAL_GRP&quot;;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//arg[3] = &quot;CAM_LEPTON_GRP&quot;;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">//arg[3] = &quot;IMAGE_GRP&quot;;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="comment">// arg[2] = &quot;-sg&quot;;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// arg[3] = &quot;CAM_HAL_GRP&quot;;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">// arg[3] = &quot;CAM_LEPTON_GRP&quot;;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// arg[3] = &quot;IMAGE_GRP&quot;;</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">return</span> CommandLineTestRunner::RunAllTests(2, arg);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// it is expected that the creat function makes some static allocation, which is removed after</span></div>

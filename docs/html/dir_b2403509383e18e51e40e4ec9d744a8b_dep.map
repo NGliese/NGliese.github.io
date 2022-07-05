@@ -1,0 +1,6 @@
+<map id="Components/ThirdpartAPI/ds18b20/include" name="Components/ThirdpartAPI/ds18b20/include">
+<area shape="rect" id="node1" href="dir_b2403509383e18e51e40e4ec9d744a8b.html" title="include" alt="" coords="27,52,99,100"/>
+<area shape="rect" id="node2" href="dir_e720d191c23bf83adfabe01b41059107.html" title="OneWire" alt="" coords="23,148,102,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000182_000184.html" title="1" alt="" coords="66,122,76,137"/>
+<area shape="rect" id="clust1" href="dir_d83d64a411243a6977ace6478e4741d1.html" title="ds18b20" alt="" coords="16,16,109,111"/>
+</map>

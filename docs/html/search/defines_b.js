@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['pclk_5fratio_2881',['PCLK_RATIO',['../dc/d54/ov3660__regs_8h.html#ad6a750375466186fd6d43a89438ee70c',1,'ov3660_regs.h']]],
-  ['periodic_5frestart_5ftime_2882',['PERIODIC_RESTART_TIME',['../dd/ddd/_maintainer_8cpp.html#a53bff0a212ba94f946acfdc8a004f83c',1,'Maintainer.cpp']]],
-  ['pre_5fisp_5ftest_5fsetting_5f1_2883',['PRE_ISP_TEST_SETTING_1',['../dc/d54/ov3660__regs_8h.html#a8350d64155012166784084800cdf76e4',1,'ov3660_regs.h']]],
-  ['project_5fname_2884',['PROJECT_NAME',['../d3/de3/_logger_8hpp.html#ae73053051efbb45c3a39751f5ce9fb36',1,'Logger.hpp']]]
+  ['owb_5fgpio_5fh_2928',['OWB_GPIO_H',['../dd/dc8/owb__gpio_8h.html#a970dea618003432c982533c6ad5aa563',1,'owb_gpio.h']]],
+  ['owb_5frmt_5fh_2929',['OWB_RMT_H',['../d5/d17/owb__rmt_8h.html#ae2a4f1e3b7918a52df7e383be8ad8385',1,'owb_rmt.h']]]
 ];

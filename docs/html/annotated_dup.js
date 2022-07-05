@@ -25,6 +25,7 @@ var annotated_dup =
     [ "DistanceSensorController", "d3/dab/class_distance_sensor_controller.html", "d3/dab/class_distance_sensor_controller" ],
     [ "DistanceSensorController_HW_TEST", "d8/d2b/class_distance_sensor_controller___h_w___t_e_s_t.html", "d8/d2b/class_distance_sensor_controller___h_w___t_e_s_t" ],
     [ "DogFeederDoor", "d2/db0/class_dog_feeder_door.html", "d2/db0/class_dog_feeder_door" ],
+    [ "ds18b20", "d4/d4f/classds18b20.html", "d4/d4f/classds18b20" ],
     [ "EnvSensing_service", "df/ddc/class_env_sensing__service.html", "df/ddc/class_env_sensing__service" ],
     [ "ErrorCodeParser", "db/d2e/class_error_code_parser.html", "db/d2e/class_error_code_parser" ],
     [ "esp32_http_sal", "d5/d62/classesp32__http__sal.html", "d5/d62/classesp32__http__sal" ],

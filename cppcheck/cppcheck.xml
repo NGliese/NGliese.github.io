@@ -272,6 +272,14 @@
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ActiveCurrentSensor/src/ActiveCurrentSensor.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Connector/WiFi_v2/include/WiFi_SAL_esp32.hpp" line="82" column="2"/>
             <symbol>WiFi_SAL_esp32</symbol>
         </error>
+        <error id="noExplicitConstructor" severity="style" msg="Class &apos;ds18b20&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;ds18b20&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
+            <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ds18b20/src/ds18b20.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ds18b20/include/ds18b20.hpp" line="56" column="2"/>
+            <symbol>ds18b20</symbol>
+        </error>
+        <error id="uninitMemberVar" severity="warning" msg="Member variable &apos;ds18b20::errors&apos; is not initialized in the constructor." verbose="Member variable &apos;ds18b20::errors&apos; is not initialized in the constructor." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ds18b20/src/ds18b20.cpp" line="39" column="10"/>
+            <symbol>ds18b20::errors</symbol>
+        </error>
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;HAL_ESP32&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;HAL_ESP32&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/AktivMusSimple/src/AktivMus_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/PWM/include/HAL.hpp" line="102" column="2"/>
             <symbol>HAL_ESP32</symbol>
@@ -352,6 +360,47 @@
         <error id="noExplicitConstructor" severity="style" msg="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit." verbose="Class &apos;friend_GPIO_API&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided." cwe="398">
             <location file0="/home/nikolaj/Project/Embedded_CPP_Library/Components/Service/isAlive/src/isAlive_service.cpp" file="/home/nikolaj/Project/Embedded_CPP_Library/Components/Objects/Gpio/include/GPIO_API.hpp" line="122" column="2"/>
             <symbol>friend_GPIO_API</symbol>
+        </error>
+        <error id="nullPointerRedundantCheck" severity="warning" msg="Either the condition &apos;!rom_code&apos; is redundant or there is possible null pointer dereference: rom_code." verbose="Either the condition &apos;!rom_code&apos; is redundant or there is possible null pointer dereference: rom_code." cwe="476">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="369" column="9" info="Null pointer dereference"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="371" column="13" info="Assuming that condition &apos;!rom_code&apos; is not redundant"/>
+            <symbol>rom_code</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;id_bit_number&apos; can be reduced." verbose="The scope of the variable &apos;id_bit_number&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="120" column="6"/>
+            <symbol>id_bit_number</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;last_zero&apos; can be reduced." verbose="The scope of the variable &apos;last_zero&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="121" column="6"/>
+            <symbol>last_zero</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;rom_byte_number&apos; can be reduced." verbose="The scope of the variable &apos;rom_byte_number&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="122" column="6"/>
+            <symbol>rom_byte_number</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;search_direction&apos; can be reduced." verbose="The scope of the variable &apos;search_direction&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="126" column="10"/>
+            <symbol>search_direction</symbol>
+        </error>
+        <error id="variableScope" severity="style" msg="The scope of the variable &apos;crc8&apos; can be reduced." verbose="The scope of the variable &apos;crc8&apos; can be reduced. Warning: Be careful when fixing this message, especially when there are inner loops. Here is an example where cppcheck will write that the scope for &apos;i&apos; can be reduced:\012void f(int x)\012{\012    int i = 0;\012    if (x) {\012        // it&apos;s safe to move &apos;int i = 0;&apos; here\012        for (int n = 0; n &lt; 10; ++n) {\012            // it is possible but not safe to move &apos;int i = 0;&apos; here\012            do_something(&amp;i);\012        }\012    }\012}\012When you see this message it is always safe to reduce the variable scope 1 level." cwe="398">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="128" column="10"/>
+            <symbol>crc8</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;id_bit&apos; is assigned a value that is never used." verbose="Variable &apos;id_bit&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="123" column="17"/>
+            <symbol>id_bit</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;cmp_id_bit&apos; is assigned a value that is never used." verbose="Variable &apos;cmp_id_bit&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="124" column="21"/>
+            <symbol>cmp_id_bit</symbol>
+        </error>
+        <error id="unreadVariable" severity="style" msg="Variable &apos;search_direction&apos; is assigned a value that is never used." verbose="Variable &apos;search_direction&apos; is assigned a value that is never used." cwe="563">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb.c" line="126" column="27"/>
+            <symbol>search_direction</symbol>
+        </error>
+        <error id="shiftTooManyBitsSigned" severity="portability" msg="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour. See condition at line 440." verbose="Shifting signed 32-bit value by 31 bits is implementation-defined behaviour. See condition at line 440." cwe="758">
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb_rmt.c" line="442" column="27" info="Shift"/>
+            <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/OneWire/src/owb_rmt.c" line="440" column="14" info="Assuming that condition &apos;gpio_num&lt;32&apos; is not redundant"/>
         </error>
         <error id="redundantAssignment" severity="style" msg="Variable &apos;ret&apos; is reassigned a value before the old one has been used." verbose="Variable &apos;ret&apos; is reassigned a value before the old one has been used." cwe="563">
             <location file="/home/nikolaj/Project/Embedded_CPP_Library/Components/ThirdpartAPI/esp32Cam_API/src/cam_hal.c" line="447" column="6" info="ret is overwritten"/>

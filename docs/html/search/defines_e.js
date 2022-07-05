@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['vfifo_5fctrl0c_2902',['VFIFO_CTRL0C',['../dc/d54/ov3660__regs_8h.html#a10891969ff2f6209e3629e700d253099',1,'ov3660_regs.h']]],
-  ['vfifo_5fx_5fsize_5fh_2903',['VFIFO_X_SIZE_H',['../dc/d54/ov3660__regs_8h.html#a6ebbd72d62fd69093a6310bbf04f1ba3',1,'ov3660_regs.h']]],
-  ['vfifo_5fx_5fsize_5fl_2904',['VFIFO_X_SIZE_L',['../dc/d54/ov3660__regs_8h.html#a5d7751e6457c76887ace8fac50f367e9',1,'ov3660_regs.h']]],
-  ['vfifo_5fy_5fsize_5fh_2905',['VFIFO_Y_SIZE_H',['../dc/d54/ov3660__regs_8h.html#a536948c82e57d80e74a49668b0c1413d',1,'ov3660_regs.h']]],
-  ['vfifo_5fy_5fsize_5fl_2906',['VFIFO_Y_SIZE_L',['../dc/d54/ov3660__regs_8h.html#a0e182f36839f14bf81f2799c09d267a2',1,'ov3660_regs.h']]]
+  ['test_5fcolor_5fbar_2947',['TEST_COLOR_BAR',['../dc/d54/ov3660__regs_8h.html#a09d29a5e0de4accd6c7911ce1890846d',1,'ov3660_regs.h']]],
+  ['timing_5ftc_5freg20_2948',['TIMING_TC_REG20',['../dc/d54/ov3660__regs_8h.html#a5fc69f35881333d91813aa6c3a98f290',1,'ov3660_regs.h']]],
+  ['timing_5ftc_5freg20_5fvflip_2949',['TIMING_TC_REG20_VFLIP',['../dc/d54/ov3660__regs_8h.html#a008c458bf9c7844d60dcf0d8b6bfb16f',1,'ov3660_regs.h']]],
+  ['timing_5ftc_5freg21_2950',['TIMING_TC_REG21',['../dc/d54/ov3660__regs_8h.html#afcad24a0d41a129652a59bd8f46574a3',1,'ov3660_regs.h']]],
+  ['timing_5ftc_5freg21_5fhmirror_2951',['TIMING_TC_REG21_HMIRROR',['../dc/d54/ov3660__regs_8h.html#a3b1dd744aeb5d7bf0a67ad94da06ff41',1,'ov3660_regs.h']]]
 ];

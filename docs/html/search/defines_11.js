@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['y_5faddr_5fend_5fh_2920',['Y_ADDR_END_H',['../dc/d54/ov3660__regs_8h.html#aecd066847e3c8340b9974a4880436708',1,'ov3660_regs.h']]],
-  ['y_5faddr_5fend_5fl_2921',['Y_ADDR_END_L',['../dc/d54/ov3660__regs_8h.html#a13963927d9bd91480244d487370ff280',1,'ov3660_regs.h']]],
-  ['y_5faddr_5fst_5fh_2922',['Y_ADDR_ST_H',['../dc/d54/ov3660__regs_8h.html#ac59c413d8858b7e7a6f42c306a3403df',1,'ov3660_regs.h']]],
-  ['y_5faddr_5fst_5fl_2923',['Y_ADDR_ST_L',['../dc/d54/ov3660__regs_8h.html#aaa23b4ededf9d970a0a5d743e172daed',1,'ov3660_regs.h']]],
-  ['y_5fincrement_2924',['Y_INCREMENT',['../dc/d54/ov3660__regs_8h.html#a1e4dcebaf4425403af2c3f93cd464f33',1,'ov3660_regs.h']]],
-  ['y_5foffset_5fh_2925',['Y_OFFSET_H',['../dc/d54/ov3660__regs_8h.html#aab72d265dee4bb5bfc9d26c0043580ce',1,'ov3660_regs.h']]],
-  ['y_5foffset_5fl_2926',['Y_OFFSET_L',['../dc/d54/ov3660__regs_8h.html#a7dcf6dd9826c16dbfa335fdefd86ecc1',1,'ov3660_regs.h']]],
-  ['y_5foutput_5fsize_5fh_2927',['Y_OUTPUT_SIZE_H',['../dc/d54/ov3660__regs_8h.html#ae6b321fa5732ea560e477a11e02e7d46',1,'ov3660_regs.h']]],
-  ['y_5foutput_5fsize_5fl_2928',['Y_OUTPUT_SIZE_L',['../dc/d54/ov3660__regs_8h.html#a9190d687fe2158dac820b44c69756c35',1,'ov3660_regs.h']]],
-  ['y_5ftotal_5fsize_5fh_2929',['Y_TOTAL_SIZE_H',['../dc/d54/ov3660__regs_8h.html#aaa15cdf331296e35081d76cce568d41d',1,'ov3660_regs.h']]],
-  ['y_5ftotal_5fsize_5fl_2930',['Y_TOTAL_SIZE_L',['../dc/d54/ov3660__regs_8h.html#a4fab6df3fe949f302f00b25f6da15586',1,'ov3660_regs.h']]],
-  ['yuyv_5fconstrain_2931',['YUYV_CONSTRAIN',['../df/dab/yuv_8c.html#ad816d3b094229f4cc376c869026bee3b',1,'yuv.c']]]
+  ['x_5faddr_5fend_5fh_2958',['X_ADDR_END_H',['../dc/d54/ov3660__regs_8h.html#af19d866d3c1f97153718c3c875103e1b',1,'ov3660_regs.h']]],
+  ['x_5faddr_5fend_5fl_2959',['X_ADDR_END_L',['../dc/d54/ov3660__regs_8h.html#a82e0ad1f83a1a7f71a90d8b28b34b902',1,'ov3660_regs.h']]],
+  ['x_5faddr_5fst_5fh_2960',['X_ADDR_ST_H',['../dc/d54/ov3660__regs_8h.html#a34e514f90a6d9a42b44a8fff4f6e828a',1,'ov3660_regs.h']]],
+  ['x_5faddr_5fst_5fl_2961',['X_ADDR_ST_L',['../dc/d54/ov3660__regs_8h.html#a3caa9fa597ab1a834c08d217fb72a57d',1,'ov3660_regs.h']]],
+  ['x_5fincrement_2962',['X_INCREMENT',['../dc/d54/ov3660__regs_8h.html#aa96679b995b845bb6e98680000e10fb0',1,'ov3660_regs.h']]],
+  ['x_5foffset_5fh_2963',['X_OFFSET_H',['../dc/d54/ov3660__regs_8h.html#a9814d309f3f444b4d070fc2e98db945a',1,'ov3660_regs.h']]],
+  ['x_5foffset_5fl_2964',['X_OFFSET_L',['../dc/d54/ov3660__regs_8h.html#a23c352bc87621c6aa9ea3e35ed55829b',1,'ov3660_regs.h']]],
+  ['x_5foutput_5fsize_5fh_2965',['X_OUTPUT_SIZE_H',['../dc/d54/ov3660__regs_8h.html#a99e0ca588fa9e70837cf46d054550395',1,'ov3660_regs.h']]],
+  ['x_5foutput_5fsize_5fl_2966',['X_OUTPUT_SIZE_L',['../dc/d54/ov3660__regs_8h.html#ad7114f96590555ede9f21e6fc7032dce',1,'ov3660_regs.h']]],
+  ['x_5ftotal_5fsize_5fh_2967',['X_TOTAL_SIZE_H',['../dc/d54/ov3660__regs_8h.html#ac97bbf7c20cc499a61ec0cfd5649abda',1,'ov3660_regs.h']]],
+  ['x_5ftotal_5fsize_5fl_2968',['X_TOTAL_SIZE_L',['../dc/d54/ov3660__regs_8h.html#aacd7c5191ac34168f4d72a4153f46345',1,'ov3660_regs.h']]],
+  ['xtaskhandle_2969',['xTaskHandle',['../d5/dc5/_task_8h.html#af7cd8f53b62f0c497b442b504c30f2ec',1,'Task.h']]]
 ];

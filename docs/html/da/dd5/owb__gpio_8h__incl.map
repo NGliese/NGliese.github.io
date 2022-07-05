@@ -1,0 +1,4 @@
+<map id="Components/ThirdpartAPI/OneWire/include/owb_gpio.h" name="Components/ThirdpartAPI/OneWire/include/owb_gpio.h">
+<area shape="rect" id="node1" title="Interface definitions for the ESP32 GPIO driver used to communicate with devices on the One Wire Bus." alt="" coords="5,5,216,47"/>
+<area shape="rect" id="node2" href="$de/d05/owb_8h.html" title="Interface definitions for the 1&#45;Wire bus component." alt="" coords="80,95,141,121"/>
+</map>

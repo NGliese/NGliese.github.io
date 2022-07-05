@@ -133,11 +133,11 @@
   </head>
   <body onload="init_expandables()">
       <div id="header">
-        <h1>Cppcheck report - [project name]: /home/nikolaj/Project/Embedded_CPP_Library/Components/Service/WaterEstimator/include/WaterEstimator_Service.hpp </h1>
+        <h1>Cppcheck report - [project name]: /home/nikolaj/Project/Embedded_CPP_Library/Components/Sensor/ds18b20/include/ds18b20.hpp </h1>
       </div>
       <div id="menu" dir="rtl">
-       <p id="filename"><a href="index.html">Defects:</a> WaterEstimator_Service.hpp</p>
-<a href='26.html#line-63'> missingOverride 63</a>
+       <p id="filename"><a href="index.html">Defects:</a> ds18b20.hpp</p>
+<a href='26.html#line-56'> noExplicitConstructor 56</a>
       </div>
       <div id="content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
@@ -228,21 +228,20 @@
 86
 87
 88
-89
-90</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cp">#ifndef _COMPONENTS_SERVICE_WATERESTIMATOR_INCLUDE_WATERESTIMATOR_SERVICE_HPP_</span>
-<a name="line-2"></a><span class="cp">#define _COMPONENTS_SERVICE_WATERESTIMATOR_INCLUDE_WATERESTIMATOR_SERVICE_HPP_</span>
+89</pre></div></td><td class="code"><div class="highlight"><pre><span></span><a name="line-1"></a><span class="cp">#ifndef _COMPONENTS_SENSOR_DS18B20_INCLUDE_DS18B20_HPP_</span>
+<a name="line-2"></a><span class="cp">#define _COMPONENTS_SENSOR_DS18B20_INCLUDE_DS18B20_HPP_</span>
 <a name="line-3"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
 <a name="line-4"></a><span class="cm"> |   		 	C L A S S   I N F O R M A T I O N                               |</span>
 <a name="line-5"></a><span class="cm"> +------------------------------------------------------------------------------+</span>
 <a name="line-6"></a><span class="cm"> |  ToDo: check auto generated function comment</span>
 <a name="line-7"></a><span class="cm"> |</span>
-<a name="line-8"></a><span class="cm"> |  @file  WaterEstimator_Service.hpp</span>
+<a name="line-8"></a><span class="cm"> |  @file  ds18b20.hpp</span>
 <a name="line-9"></a><span class="cm"> |</span>
 <a name="line-10"></a><span class="cm"> |  @author        :  Nikolaj Gliese Pedersen</span>
 <a name="line-11"></a><span class="cm"> |  @email         :  &lt;nikolajgliese@tutanota.com&gt;</span>
-<a name="line-12"></a><span class="cm"> |  @date		   : 2022-03-18</span>
+<a name="line-12"></a><span class="cm"> |  @date		   : 2022-06-29</span>
 <a name="line-13"></a><span class="cm"> |</span>
-<a name="line-14"></a><span class="cm"> |  @brief  	   :  This class, WaterEstimator_Service.hpp, is designed as:</span>
+<a name="line-14"></a><span class="cm"> |  @brief  	   :  This class, ds18b20.hpp, is designed as:</span>
 <a name="line-15"></a><span class="cm"> |</span>
 <a name="line-16"></a><span class="cm"> |</span>
 <a name="line-17"></a><span class="cm"> |</span>
@@ -264,61 +263,60 @@
 <a name="line-33"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Global_Include/BASIC.hpp&quot;</span><span class="cp"></span>
 <a name="line-34"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Objects/ErrorHandler/include/General_Error.hpp&quot;</span><span class="cp"></span>
 <a name="line-35"></a><span class="cm">/*-----------------------------------------------------------------------------*/</span>
-<a name="line-36"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../AnalysisTools/PeriodEstimator/include/PeriodeEstimator.hpp&quot;</span><span class="cp"></span>
-<a name="line-37"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../Interfaces/ServiceBase/include/ServiceQueueBase.hpp&quot;</span><span class="cp"></span>
-<a name="line-38"></a><span class="cp">#include</span> <span class="cpf">&lt;algorithm&gt; // For std::for_each()</span><span class="cp"></span>
-<a name="line-39"></a><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
-<a name="line-40"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-41"></a><span class="cm"> |                               Typedef                                        |</span>
-<a name="line-42"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-43"></a>
-<a name="line-44"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-45"></a><span class="cm"> |   		 					 Class                     		                |</span>
-<a name="line-46"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-47"></a>
-<a name="line-48"></a><span class="k">class</span> <span class="nc">WaterEstimator_Service</span> <span class="k">final</span> <span class="o">:</span> <span class="k">public</span> <span class="n">ServiceQueueBase</span><span class="o">&lt;</span><span class="n">MQTT_Message</span><span class="o">&gt;</span>
-<a name="line-49"></a><span class="p">{</span>
-<a name="line-50"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a name="line-51"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_WaterEstimator_Service</span><span class="p">;</span>
-<a name="line-52"></a><span class="cp">#endif</span>
-<a name="line-53"></a>  <span class="k">public</span><span class="o">:</span>
-<a name="line-54"></a>	<span class="n">WaterEstimator_Service</span><span class="p">(</span><span class="kt">size_t</span> <span class="n">queue_size</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">size_of_item</span><span class="p">,</span> <span class="k">const</span> <span class="n">MQTT_Message</span><span class="o">&amp;</span> <span class="n">buffer</span><span class="p">,</span>
-<a name="line-55"></a>						   <span class="k">const</span> <span class="n">db_id</span> <span class="n">error_id</span><span class="p">)</span>
-<a name="line-56"></a>		<span class="o">:</span> <span class="n">ServiceQueueBase</span><span class="p">(</span><span class="n">queue_size</span><span class="p">,</span> <span class="n">size_of_item</span><span class="p">,</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">error_id</span><span class="p">),</span>
-<a name="line-57"></a>		  <span class="n">msg_max</span><span class="p">{{</span><span class="n">db_id</span><span class="o">::</span><span class="n">WATERSTATION_MAX_ADC_VAL</span><span class="p">,</span> <span class="mi">1</span><span class="p">}},</span>
-<a name="line-58"></a>		  <span class="n">msg_min</span><span class="p">{{</span><span class="n">db_id</span><span class="o">::</span><span class="n">WATERSTATION_MIN_ADC_VAL</span><span class="p">,</span> <span class="mi">1</span><span class="p">}},</span> <span class="n">msg_count</span><span class="p">{</span>
-<a name="line-59"></a>															 <span class="p">{</span><span class="n">db_id</span><span class="o">::</span><span class="n">WATERSTATION_COUNTER</span><span class="p">,</span> <span class="mi">100</span><span class="p">}}</span> <span class="p">{};</span>
-<a name="line-60"></a>	<span class="o">~</span><span class="n">WaterEstimator_Service</span><span class="p">(){};</span>
-<a name="line-61"></a>
-<a name="line-62"></a>  <span class="k">private</span><span class="o">:</span>
-<a name="line-63"></a><span class="hll">	<span class="n">general_err_t</span> <span class="n">mainFunction</span><span class="p">();</span><span class='error2'>&lt;--- Function in derived class</span>
-</span><a name="line-64"></a>	<span class="n">MQTT_Message</span> <span class="n">msg_max</span><span class="p">;</span>
-<a name="line-65"></a>	<span class="n">MQTT_Message</span> <span class="n">msg_min</span><span class="p">;</span>
-<a name="line-66"></a>	<span class="n">MQTT_Message</span> <span class="n">msg_count</span><span class="p">;</span>
-<a name="line-67"></a><span class="cp">#ifdef __ESP32__</span>
-<a name="line-68"></a>	<span class="n">PeriodeEstimator</span><span class="o">&lt;</span><span class="mi">1500</span><span class="p">,</span> <span class="mi">1200</span><span class="p">,</span> <span class="n">NVS_esp32</span><span class="o">&gt;</span> <span class="n">m_estimator</span><span class="p">;</span>
-<a name="line-69"></a><span class="cp">#else</span>
-<a name="line-70"></a>	<span class="n">PeriodeEstimator</span><span class="o">&lt;</span><span class="mi">1500</span><span class="p">,</span> <span class="mi">1200</span><span class="p">,</span> <span class="n">NVS_MOCK</span><span class="o">&gt;</span> <span class="n">m_estimator</span><span class="p">;</span>
-<a name="line-71"></a><span class="cp">#endif</span>
-<a name="line-72"></a><span class="p">};</span>
-<a name="line-73"></a>
-<a name="line-74"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
-<a name="line-75"></a><span class="cm"> |   		 				 Unit Test Class               		                |</span>
-<a name="line-76"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
-<a name="line-77"></a>
-<a name="line-78"></a><span class="cp">#ifdef __UNITTEST__</span>
-<a name="line-79"></a><span class="k">class</span> <span class="nc">friend_WaterEstimator_Service</span>
-<a name="line-80"></a><span class="p">{</span>
-<a name="line-81"></a>  <span class="k">public</span><span class="o">:</span>
-<a name="line-82"></a>	<span class="k">explicit</span> <span class="n">friend_WaterEstimator_Service</span><span class="p">(</span><span class="n">WaterEstimator_Service</span><span class="o">*</span> <span class="n">sensor</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">sensor</span><span class="p">}</span> <span class="p">{};</span>
-<a name="line-83"></a>	<span class="o">~</span><span class="n">friend_WaterEstimator_Service</span><span class="p">(){};</span>
-<a name="line-84"></a>
-<a name="line-85"></a>  <span class="k">private</span><span class="o">:</span>
-<a name="line-86"></a>	<span class="n">WaterEstimator_Service</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
-<a name="line-87"></a><span class="p">};</span>
-<a name="line-88"></a><span class="cp">#endif</span>
-<a name="line-89"></a>
-<a name="line-90"></a><span class="cp">#endif </span><span class="c1">//_COMPONENTS_SERVICE_WATERESTIMATOR_INCLUDE_WATERESTIMATOR_SERVICE_HPP_</span>
+<a name="line-36"></a>
+<a name="line-37"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../ThirdpartAPI/ds18b20/include/ds18b20.h&quot;</span><span class="cp"></span>
+<a name="line-38"></a>
+<a name="line-39"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../ThirdpartAPI/OneWire/include/owb.h&quot;</span><span class="cp"></span>
+<a name="line-40"></a><span class="cp">#include</span> <span class="cpf">&quot;../../../ThirdpartAPI/OneWire/include/owb_rmt.h&quot;</span><span class="cp"></span>
+<a name="line-41"></a><span class="cp">#include</span> <span class="cpf">&lt;iostream&gt;</span><span class="cp"></span>
+<a name="line-42"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-43"></a><span class="cm"> |                               Typedef                                        |</span>
+<a name="line-44"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-45"></a>
+<a name="line-46"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-47"></a><span class="cm"> |   		 					 Class                     		                |</span>
+<a name="line-48"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-49"></a>
+<a name="line-50"></a><span class="k">class</span> <span class="nc">ds18b20</span>
+<a name="line-51"></a><span class="p">{</span>
+<a name="line-52"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a name="line-53"></a>	<span class="k">friend</span> <span class="k">class</span> <span class="nc">friend_ds18b20</span><span class="p">;</span>
+<a name="line-54"></a><span class="cp">#endif</span>
+<a name="line-55"></a>  <span class="k">public</span><span class="o">:</span>
+<a name="line-56"></a><span class="hll">	<span class="n">ds18b20</span><span class="p">(</span><span class="k">const</span> <span class="n">GPIO_PIN</span><span class="o">&amp;</span> <span class="n">pin</span><span class="p">);</span><div class='verbose expandable'><span class='error2'>&lt;--- Class 'ds18b20' has a constructor with 1 argument that is not explicit. <span class='marker'>[+]</span></span><div class='content'>Class &apos;ds18b20&apos; has a constructor with 1 argument that is not explicit. Such constructors should in general be explicit for type safety reasons. Using the explicit keyword in the constructor means some mistakes when using the class can be avoided.</div></div>
+</span><a name="line-57"></a>	<span class="o">~</span><span class="n">ds18b20</span><span class="p">();</span>
+<a name="line-58"></a>	<span class="kt">float</span> <span class="nf">getTemperature</span><span class="p">();</span>
+<a name="line-59"></a>
+<a name="line-60"></a>  <span class="k">private</span><span class="o">:</span>
+<a name="line-61"></a>	<span class="kt">float</span> <span class="n">readings</span><span class="p">;</span>
+<a name="line-62"></a><span class="cp">#ifdef __ESP32__</span>
+<a name="line-63"></a>	<span class="n">OneWireBus</span><span class="o">*</span> <span class="n">owb</span><span class="p">;</span>
+<a name="line-64"></a>	<span class="c1">// Create DS18B20 devices on the 1-Wire bus</span>
+<a name="line-65"></a>	<span class="n">OneWireBus_ROMCode</span> <span class="n">device_rom_codes</span><span class="p">;</span>
+<a name="line-66"></a>	<span class="n">DS18B20_Info</span><span class="o">*</span> <span class="n">devices</span><span class="p">;</span>
+<a name="line-67"></a>	<span class="c1">// Read the results immediately after conversion otherwise it may fail</span>
+<a name="line-68"></a>	<span class="c1">// (using printf before reading may take too long)</span>
+<a name="line-69"></a>	<span class="n">DS18B20_ERROR</span> <span class="n">errors</span><span class="p">;</span>
+<a name="line-70"></a><span class="cp">#endif</span>
+<a name="line-71"></a><span class="p">};</span>
+<a name="line-72"></a>
+<a name="line-73"></a><span class="cm">/*------------------------------------------------------------------------------+</span>
+<a name="line-74"></a><span class="cm"> |   		 				 Unit Test Class               		                |</span>
+<a name="line-75"></a><span class="cm"> +------------------------------------------------------------------------------*/</span>
+<a name="line-76"></a>
+<a name="line-77"></a><span class="cp">#ifdef __UNITTEST__</span>
+<a name="line-78"></a><span class="k">class</span> <span class="nc">friend_ds18b20</span>
+<a name="line-79"></a><span class="p">{</span>
+<a name="line-80"></a>  <span class="k">public</span><span class="o">:</span>
+<a name="line-81"></a>	<span class="k">explicit</span> <span class="n">friend_ds18b20</span><span class="p">(</span><span class="n">ds18b20</span><span class="o">*</span> <span class="n">sensor</span><span class="p">)</span> <span class="o">:</span> <span class="n">m_sensor</span><span class="p">{</span><span class="n">sensor</span><span class="p">}</span> <span class="p">{};</span>
+<a name="line-82"></a>	<span class="o">~</span><span class="n">friend_ds18b20</span><span class="p">();</span>
+<a name="line-83"></a>
+<a name="line-84"></a>  <span class="k">private</span><span class="o">:</span>
+<a name="line-85"></a>	<span class="n">ds18b20</span><span class="o">*</span> <span class="n">m_sensor</span><span class="p">;</span>
+<a name="line-86"></a><span class="p">};</span>
+<a name="line-87"></a><span class="cp">#endif</span>
+<a name="line-88"></a>
+<a name="line-89"></a><span class="cp">#endif </span><span class="c1">//_COMPONENTS_SENSOR_DS18B20_INCLUDE_DS18B20_HPP_</span>
 </pre></div>
 </td></tr></table>
       </div>

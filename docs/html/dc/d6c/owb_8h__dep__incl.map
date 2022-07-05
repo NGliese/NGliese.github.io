@@ -1,0 +1,11 @@
+<map id="Components/ThirdpartAPI/OneWire/include/owb.h" name="Components/ThirdpartAPI/OneWire/include/owb.h">
+<area shape="rect" id="node1" title="Interface definitions for the 1&#45;Wire bus component." alt="" coords="375,5,563,47"/>
+<area shape="rect" id="node2" href="$dc/d6e/ds18b20_8h.html" title="Interface definitions for the Maxim Integrated DS18B20 Programmable Resolution 1&#45;Wire Digital Thermom..." alt="" coords="108,95,311,136"/>
+<area shape="rect" id="node3" href="$d9/daf/ds18b20_8hpp.html" title=" " alt="" coords="123,184,333,225"/>
+<area shape="rect" id="node6" href="$dd/dc8/owb__gpio_8h.html" title="Interface definitions for the ESP32 GPIO driver used to communicate with devices on the One Wire Bus." alt="" coords="436,95,647,136"/>
+<area shape="rect" id="node7" href="$d0/d3b/owb_8c.html" title=" " alt="" coords="367,184,555,225"/>
+<area shape="rect" id="node8" href="$de/dea/owb__gpio_8c.html" title=" " alt="" coords="585,184,773,225"/>
+<area shape="rect" id="node9" href="$d3/d47/owb__rmt_8c.html" title=" " alt="" coords="722,95,910,136"/>
+<area shape="rect" id="node4" href="$d7/d56/ds18b20_8cpp.html" title=" " alt="" coords="5,273,216,315"/>
+<area shape="rect" id="node5" href="$da/d1d/_sensor_2ds18b20_2test_2test_2simple__test_8cpp.html" title=" " alt="" coords="240,273,451,315"/>
+</map>

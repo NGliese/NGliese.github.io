@@ -37,6 +37,7 @@ var hierarchy =
     [ "Fault_Handler::counters_t", "dd/d84/class_fault___handler.html#da/dec/struct_fault___handler_1_1counters__t", null ],
     [ "Curl_SAL", "d2/d2b/class_curl___s_a_l.html", null ],
     [ "DogFeederDoor", "d2/db0/class_dog_feeder_door.html", null ],
+    [ "ds18b20", "d4/d4f/classds18b20.html", null ],
     [ "ConnectedComponents::ellipse_data_t", "d5/d8a/class_connected_components.html#d2/d33/struct_connected_components_1_1ellipse__data__t", null ],
     [ "ErrorCodeParser", "db/d2e/class_error_code_parser.html", null ],
     [ "esp32_http_sal", "d5/d62/classesp32__http__sal.html", null ],

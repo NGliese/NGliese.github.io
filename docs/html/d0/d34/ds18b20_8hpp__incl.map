@@ -1,0 +1,10 @@
+<map id="Components/Sensor/ds18b20/include/ds18b20.hpp" name="Components/Sensor/ds18b20/include/ds18b20.hpp">
+<area shape="rect" id="node1" title=" " alt="" coords="380,5,591,47"/>
+<area shape="rect" id="node2" href="$da/d5f/_b_a_s_i_c_8hpp.html" title=" " alt="" coords="5,95,160,136"/>
+<area shape="rect" id="node3" href="$d3/deb/_general___error_8hpp.html" title=" " alt="" coords="185,95,378,136"/>
+<area shape="rect" id="node5" title=" " alt="" coords="365,191,445,218"/>
+<area shape="rect" id="node6" href="$dc/d6e/ds18b20_8h.html" title="Interface definitions for the Maxim Integrated DS18B20 Programmable Resolution 1&#45;Wire Digital Thermom..." alt="" coords="453,95,656,136"/>
+<area shape="rect" id="node7" href="$de/d05/owb_8h.html" title="Interface definitions for the 1&#45;Wire bus component." alt="" coords="489,184,642,225"/>
+<area shape="rect" id="node8" href="$d5/d17/owb__rmt_8h.html" title="Interface definitions for ESP32 RMT driver used to communicate with devices on the One Wire Bus." alt="" coords="731,95,938,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="252,191,311,218"/>
+</map>
