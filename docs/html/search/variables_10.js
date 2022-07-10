@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['random_5ffirst_2514',['random_first',['../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f',1,'utils.cpp']]],
-  ['raw_5fgma_2515',['raw_gma',['../d5/d2e/sensor_8h.html#a3f1e093d3a7c1221127ccd782715e881',1,'camera_status_t']]],
-  ['read_5farray_2516',['read_array',['../dc/d92/classi2c__mock.html#a8c69905303f83050ae603161097c1c36',1,'i2c_mock']]],
-  ['readings_2517',['readings',['../d4/d4f/classds18b20.html#aea514c8894e035e02e07e05611750591',1,'ds18b20']]],
-  ['recieved_5fqueue_5fmessage_2518',['recieved_queue_message',['../d2/d77/_active_current_sensor_8cpp.html#aace247cc5a57f1a7a6680f2ecf605b1e',1,'ActiveCurrentSensor.cpp']]],
-  ['reset_2519',['reset',['../d6/d28/struct__sensor.html#aef5bd9eb25ac4d1a728bc0ca852bbb48',1,'_sensor']]],
-  ['resolution_2520',['resolution',['../d5/d2e/sensor_8h.html#aa5fbcbda7eb10ea96f3fc302163f70d7',1,'resolution():&#160;sensor.c'],['../d4/d52/sensor_8c.html#ae38ed1d0348fda8da5eb1531c099336a',1,'resolution():&#160;sensor.c']]],
-  ['respons_5fcode_2521',['respons_code',['../d3/d42/class_logger.html#a2c53002363e0a657139cb1e778f7476f',1,'Logger::msg_t']]],
-  ['response_2522',['response',['../dc/d12/class_protocol_base.html#a4665ebaf3b8e3a388ce1ed339a4db86d',1,'ProtocolBase']]]
+  ['random_5ffirst_2517',['random_first',['../de/d06/utils_8cpp.html#a678b86c81cb2e2f61b40b8a0bd75af3f',1,'utils.cpp']]],
+  ['raw_5fgma_2518',['raw_gma',['../d5/d2e/sensor_8h.html#a3f1e093d3a7c1221127ccd782715e881',1,'camera_status_t']]],
+  ['read_5farray_2519',['read_array',['../dc/d92/classi2c__mock.html#a8c69905303f83050ae603161097c1c36',1,'i2c_mock']]],
+  ['readings_2520',['readings',['../d4/d4f/classds18b20.html#aea514c8894e035e02e07e05611750591',1,'ds18b20']]],
+  ['recieved_5fqueue_5fmessage_2521',['recieved_queue_message',['../d2/d77/_active_current_sensor_8cpp.html#aace247cc5a57f1a7a6680f2ecf605b1e',1,'ActiveCurrentSensor.cpp']]],
+  ['reset_2522',['reset',['../d6/d28/struct__sensor.html#aef5bd9eb25ac4d1a728bc0ca852bbb48',1,'_sensor']]],
+  ['resolution_2523',['resolution',['../d5/d2e/sensor_8h.html#aa5fbcbda7eb10ea96f3fc302163f70d7',1,'resolution():&#160;sensor.c'],['../d4/d52/sensor_8c.html#ae38ed1d0348fda8da5eb1531c099336a',1,'resolution():&#160;sensor.c']]],
+  ['respons_5fcode_2524',['respons_code',['../d3/d42/class_logger.html#a2c53002363e0a657139cb1e778f7476f',1,'Logger::msg_t']]],
+  ['response_2525',['response',['../dc/d12/class_protocol_base.html#a4665ebaf3b8e3a388ce1ed339a4db86d',1,'ProtocolBase']]]
 ];

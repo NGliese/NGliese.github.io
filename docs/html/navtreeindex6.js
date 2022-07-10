@@ -1,5 +1,8 @@
 var NAVTREEINDEX6 =
 {
+"d9/d88/class_sensor_controller_base.html#a2d851cce985413c341efd51a9e9db0bf":[36,0,83,4],
+"d9/d88/class_sensor_controller_base.html#a3215d21710ba37587dc81d9fb73a48a0":[36,0,83,9],
+"d9/d88/class_sensor_controller_base.html#a4091c67975117085dc3c96060986fb7f":[36,0,83,17],
 "d9/d88/class_sensor_controller_base.html#a48306a19d34f924b71a1afc990fc6335":[36,0,83,2],
 "d9/d88/class_sensor_controller_base.html#a5fd66caa8e8c578072a3704c468570ae":[37,0,1,6,8,0,0,1,3],
 "d9/d88/class_sensor_controller_base.html#a5fd66caa8e8c578072a3704c468570ae":[36,0,83,0,3],
@@ -246,8 +249,5 @@ var NAVTREEINDEX6 =
 "da/deb/jpge_8cpp.html#a7c4e2db4e5cbb51881d942897038df71a22c71008b2ca484cf2d4d96dd06d7a59":[37,0,1,13,2,1,1,13],
 "da/deb/jpge_8cpp.html#a7c4e2db4e5cbb51881d942897038df71a98e304ba7210e7f30feb9b2baacb48f0":[37,0,1,13,2,1,1,16],
 "da/deb/jpge_8cpp.html#a7c4e2db4e5cbb51881d942897038df71ac35aec20574982aff908217443058e9e":[37,0,1,13,2,1,1,15],
-"da/deb/jpge_8cpp.html#a7c4e2db4e5cbb51881d942897038df71adebff338befacbe0d68a79d22a86b488":[37,0,1,13,2,1,1,17],
-"da/deb/jpge_8cpp.html#a7c4e2db4e5cbb51881d942897038df71ae5d685d67f786a6e5be860cd88d3d7ab":[37,0,1,13,2,1,1,14],
-"da/deb/jpge_8cpp.html#a7c4e2db4e5cbb51881d942897038df71af408e865e4132879e30bc25aca8f4d26":[37,0,1,13,2,1,1,12],
-"da/deb/jpge_8cpp.html#a7c7abf9cf98691eb2f1736114ea863f0":[37,0,1,13,2,1,1,51]
+"da/deb/jpge_8cpp.html#a7c4e2db4e5cbb51881d942897038df71adebff338befacbe0d68a79d22a86b488":[37,0,1,13,2,1,1,17]
 };

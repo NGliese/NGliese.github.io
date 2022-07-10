@@ -66,7 +66,10 @@ var _database___i_d___base_8hpp =
       [ "AKTIVMUS_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ad5c8cd39c68b91fc327a0196fe68ab78", null ],
       [ "AKTIVMUS_CURRENT_MEASURE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aaf59e8ab0b134394d128c27079afcfc8", null ],
       [ "AKTIVMUS_IS_ALIVE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aef5ee0d7eb78635af412a53415c98e9d", null ],
-      [ "AKTIVMUS_STATE_IDENTIFIER", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0e4ef9ba0ce02d756bf4c7ed2cd16e1c", null ]
+      [ "AKTIVMUS_STATE_IDENTIFIER", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0a0e4ef9ba0ce02d756bf4c7ed2cd16e1c", null ],
+      [ "ENV01_OFFICE_ERROR_CODE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ac8ef2b04cf23290b4532e35b22d90d5e", null ],
+      [ "ENV01_OFFICE_TEMPERATURE", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0ab11ecb7477c9cf03d810161f2f378737", null ],
+      [ "ENV01_OFFICE_HUMIDITY", "d5/d40/_database___i_d___base_8hpp.html#ad2476414527a024c2bb661f45d8876e0aee1342cd61b3b8f95dc7a0a543588f33", null ]
     ] ],
     [ "map", "d5/d40/_database___i_d___base_8hpp.html#a40f5a6d0734142b0008af0e8a9c51013", null ]
 ];
