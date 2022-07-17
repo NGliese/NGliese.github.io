@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-07-10 16:57:52</td>
+            <td class="headerValue">2022-07-17 13:11:00</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">15</td>
@@ -701,7 +701,7 @@
     <tr>
     <td align="right" class="lineno"><pre>58</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>374</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>462</pre></td>
     <td align="left" class="src coveredLine"><pre>	static i2c&amp; getInstance(const i2c_conf_t&amp; conf)</pre></td>
     </tr>
 
@@ -714,15 +714,15 @@
 
     <tr>
     <td align="right" class="lineno"><pre>60</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 30 times">&check;</span><span class="takenBranch" title="Branch 1 taken 344 times">&check;</span><span class="takenBranch" title="Branch 3 taken 30 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 6 taken 4 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="notTakenBranch" title="Branch 11 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>374</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 38 times">&check;</span><span class="takenBranch" title="Branch 1 taken 424 times">&check;</span><span class="takenBranch" title="Branch 3 taken 38 times">&check;</span><span class="notTakenBranch" title="Branch 4 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 6 taken 8 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><span class="notTakenBranch" title="Branch 11 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>462</pre></td>
     <td align="left" class="src coveredLine"><pre>		static i2c ref_to_i2c{conf};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>61</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>374</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>462</pre></td>
     <td align="left" class="src coveredLine"><pre>		return ref_to_i2c;</pre></td>
     </tr>
 
@@ -736,14 +736,14 @@
     <tr>
     <td align="right" class="lineno"><pre>63</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>404</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>500</pre></td>
     <td align="left" class="src coveredLine"><pre>	~i2c(){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>64</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>	general_err_t writeByte(const uint8_t&amp; slave_address, const uint8_t&amp; byte)</pre></td>
     </tr>
 
@@ -757,7 +757,7 @@
     <tr>
     <td align="right" class="lineno"><pre>66</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_hal.writeByte(slave_address, byte);</pre></td>
     </tr>
 
@@ -785,7 +785,7 @@
     <tr>
     <td align="right" class="lineno"><pre>70</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>120</pre></td>
     <td align="left" class="src coveredLine"><pre>	general_err_t writeMultiBytes(const uint8_t&amp; slave_address, const std::array&lt;uint8_t, N>&amp; array)</pre></td>
     </tr>
 
@@ -798,8 +798,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>72</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 4 taken 52 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 4 taken 60 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>120</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_hal.writeMultiBytes(slave_address, array.data(), array.size());</pre></td>
     </tr>
 
@@ -827,7 +827,7 @@
     <tr>
     <td align="right" class="lineno"><pre>76</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>120</pre></td>
     <td align="left" class="src coveredLine"><pre>	general_err_t readMultiBytes(const uint8_t&amp; slave_address, std::array&lt;uint8_t, N>&amp; array)</pre></td>
     </tr>
 
@@ -840,8 +840,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>78</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 4 taken 52 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>104</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 4 taken 60 times">&check;</span><span class="notTakenBranch" title="Branch 5 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>120</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_hal.readMultiBytes(slave_address, array.data(), array.size());</pre></td>
     </tr>
 
@@ -904,7 +904,7 @@
     <tr>
     <td align="right" class="lineno"><pre>87</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>	general_err_t writeWord(const uint8_t&amp; slave_address, const uint16_t&amp; word)</pre></td>
     </tr>
 
@@ -918,14 +918,14 @@
     <tr>
     <td align="right" class="lineno"><pre>89</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		auto arr = word2bytes(word);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>90</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 26 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 30 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		return writeMultiBytes&lt;2>(slave_address, arr);</pre></td>
     </tr>
 
@@ -939,7 +939,7 @@
     <tr>
     <td align="right" class="lineno"><pre>92</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>	uint8_t readByte(const uint8_t&amp; slave_address)</pre></td>
     </tr>
 
@@ -953,7 +953,7 @@
     <tr>
     <td align="right" class="lineno"><pre>94</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_hal.readByte(slave_address);</pre></td>
     </tr>
 
@@ -967,7 +967,7 @@
     <tr>
     <td align="right" class="lineno"><pre>96</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>	uint16_t readWord(const uint8_t&amp; slave_address)</pre></td>
     </tr>
 
@@ -981,21 +981,21 @@
     <tr>
     <td align="right" class="lineno"><pre>98</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		std::array&lt;uint8_t, 2> arr;</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>99</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 26 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 30 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		readMultiBytes&lt;2>(slave_address, arr);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>100</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>60</pre></td>
     <td align="left" class="src coveredLine"><pre>		return bytes2word(arr);</pre></td>
     </tr>
 
@@ -1107,7 +1107,7 @@
     <tr>
     <td align="right" class="lineno"><pre>116</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>	void scan()</pre></td>
     </tr>
 
@@ -1121,28 +1121,28 @@
     <tr>
     <td align="right" class="lineno"><pre>118</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		printf("Data Pin: %d, Clock Pin: %d\n", m_conf.pin_sda, m_conf.pin_sclk);</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>119</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		printf("     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f\n");</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>120</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		printf("00:         ");</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>121</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3120 times">&check;</span><span class="takenBranch" title="Branch 2 taken 26 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>3146</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3600 times">&check;</span><span class="takenBranch" title="Branch 2 taken 30 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>3630</pre></td>
     <td align="left" class="src coveredLine"><pre>		for(uint8_t i = 0; i &lt; 0x78; i++)</pre></td>
     </tr>
 
@@ -1155,8 +1155,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>123</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 208 times">&check;</span><span class="takenBranch" title="Branch 1 taken 2912 times">&check;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>3120</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 0 taken 240 times">&check;</span><span class="takenBranch" title="Branch 1 taken 3360 times">&check;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>3600</pre></td>
     <td align="left" class="src coveredLine"><pre>			if(i % 16 == 0)</pre></td>
     </tr>
 
@@ -1169,8 +1169,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>125</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 208 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>208</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 240 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>240</pre></td>
     <td align="left" class="src coveredLine"><pre>				printf("\n%.2x:", i);</pre></td>
     </tr>
 
@@ -1183,8 +1183,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>127</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3120 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>3120</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3600 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>3600</pre></td>
     <td align="left" class="src coveredLine"><pre>			if(slavePresent(i))</pre></td>
     </tr>
 
@@ -1197,8 +1197,8 @@
 
     <tr>
     <td align="right" class="lineno"><pre>129</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3120 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
-    <td align="right" class="linecount coveredLine"><pre>3120</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 1 taken 3600 times">&check;</span><span class="notTakenBranch" title="Branch 2 not taken">&cross;</span></td>
+    <td align="right" class="linecount coveredLine"><pre>3600</pre></td>
     <td align="left" class="src coveredLine"><pre>				printf(" %.2x", i);</pre></td>
     </tr>
 
@@ -1247,21 +1247,21 @@
     <tr>
     <td align="right" class="lineno"><pre>136</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		printf("\n");</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>137</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>	};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>138</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3150</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3638</pre></td>
     <td align="left" class="src coveredLine"><pre>	bool slavePresent(const uint8_t&amp; slave_address)</pre></td>
     </tr>
 
@@ -1275,7 +1275,7 @@
     <tr>
     <td align="right" class="lineno"><pre>140</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>3150</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>3638</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_hal.slavePresent(slave_address);</pre></td>
     </tr>
 
@@ -1303,7 +1303,7 @@
     <tr>
     <td align="right" class="lineno"><pre>144</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>38</pre></td>
     <td align="left" class="src coveredLine"><pre>	i2c(const i2c_conf_t&amp; conf) : m_conf{conf}, m_hal{conf} {};</pre></td>
     </tr>
 
@@ -1317,7 +1317,7 @@
     <tr>
     <td align="right" class="lineno"><pre>146</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>60</pre></td>
     <td align="left" class="src coveredLine"><pre>	std::array&lt;uint8_t, 2> word2bytes(const uint16_t&amp; data)</pre></td>
     </tr>
 
@@ -1331,7 +1331,7 @@
     <tr>
     <td align="right" class="lineno"><pre>148</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>60</pre></td>
     <td align="left" class="src coveredLine"><pre>		return {static_cast&lt;uint8_t>(data >> 8 &amp; 0xff), static_cast&lt;uint8_t>(data &amp; 0xff)};</pre></td>
     </tr>
 
@@ -1352,7 +1352,7 @@
     <tr>
     <td align="right" class="lineno"><pre>151</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>60</pre></td>
     <td align="left" class="src coveredLine"><pre>	uint16_t bytes2word(const std::array&lt;uint8_t, 2>&amp; arr)</pre></td>
     </tr>
 
@@ -1366,7 +1366,7 @@
     <tr>
     <td align="right" class="lineno"><pre>153</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>52</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>60</pre></td>
     <td align="left" class="src coveredLine"><pre>		return static_cast&lt;uint16_t>((arr[0] * 256) + arr[1]);</pre></td>
     </tr>
 
@@ -1478,21 +1478,21 @@
     <tr>
     <td align="right" class="lineno"><pre>169</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>312</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>360</pre></td>
     <td align="left" class="src coveredLine"><pre>	explicit friend_i2c(i2c&lt;i2c_mock>* sensor) : m_sensor{sensor} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>170</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>312</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>360</pre></td>
     <td align="left" class="src coveredLine"><pre>	~friend_i2c(){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>171</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>494</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>570</pre></td>
     <td align="left" class="src coveredLine"><pre>	auto&amp; getHAL()</pre></td>
     </tr>
 
@@ -1506,7 +1506,7 @@
     <tr>
     <td align="right" class="lineno"><pre>173</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>494</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>570</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_sensor->m_hal;</pre></td>
     </tr>
 
@@ -1520,7 +1520,7 @@
     <tr>
     <td align="right" class="lineno"><pre>175</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>	auto word2bytes(uint16_t data)</pre></td>
     </tr>
 
@@ -1534,7 +1534,7 @@
     <tr>
     <td align="right" class="lineno"><pre>177</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_sensor->word2bytes(data);</pre></td>
     </tr>
 
@@ -1548,7 +1548,7 @@
     <tr>
     <td align="right" class="lineno"><pre>179</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>	auto bytes2word(const std::array&lt;uint8_t, 2>&amp; arr)</pre></td>
     </tr>
 
@@ -1562,7 +1562,7 @@
     <tr>
     <td align="right" class="lineno"><pre>181</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>26</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>30</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_sensor->bytes2word(arr);</pre></td>
     </tr>
 

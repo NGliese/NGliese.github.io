@@ -275,7 +275,7 @@
           </tr>
           <tr>
             <td class="headerName">Date:</td>
-            <td class="headerValue">2022-07-10 16:57:52</td>
+            <td class="headerValue">2022-07-17 13:11:00</td>
             <td></td>
             <td class="headerName">Branches:</td>
             <td class="headerTableEntry">4</td>
@@ -813,28 +813,28 @@
     <tr>
     <td align="right" class="lineno"><pre>74</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>16</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>48</pre></td>
     <td align="left" class="src coveredLine"><pre>	ServiceBase(const BUFFER_TYPE&amp; buffer, const db_id error_id)</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>75</pre></td>
-    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 16 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="takenBranch" title="Branch 9 taken 16 times">&check;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 21 taken 16 times">&check;</span><span class="notTakenBranch" title="Branch 22 not taken">&cross;</span><span class="takenBranch" title="Branch 24 taken 16 times">&check;</span><span class="notTakenBranch" title="Branch 25 not taken">&cross;</span><br/></td>
-    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
+    <td align="right" class="linebranch"><span class="takenBranch" title="Branch 6 taken 48 times">&check;</span><span class="notTakenBranch" title="Branch 7 not taken">&cross;</span><span class="takenBranch" title="Branch 9 taken 48 times">&check;</span><span class="notTakenBranch" title="Branch 10 not taken">&cross;</span><br/><span class="takenBranch" title="Branch 21 taken 48 times">&check;</span><span class="notTakenBranch" title="Branch 22 not taken">&cross;</span><span class="takenBranch" title="Branch 24 taken 48 times">&check;</span><span class="notTakenBranch" title="Branch 25 not taken">&cross;</span><br/></td>
+    <td align="right" class="linecount coveredLine"><pre>96</pre></td>
     <td align="left" class="src coveredLine"><pre>		: m_test_pin{}, m_buffer{buffer}, m_error_id{error_id}, m_isActive{false} {};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>76</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>32</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>96</pre></td>
     <td align="left" class="src coveredLine"><pre>	virtual ~ServiceBase(){};</pre></td>
     </tr>
 
     <tr>
     <td align="right" class="lineno"><pre>77</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
     <td align="left" class="src coveredLine"><pre>	inline const auto&amp; isActive() const</pre></td>
     </tr>
 
@@ -848,7 +848,7 @@
     <tr>
     <td align="right" class="lineno"><pre>79</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>8</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>24</pre></td>
     <td align="left" class="src coveredLine"><pre>		return m_isActive;</pre></td>
     </tr>
 
@@ -1184,7 +1184,7 @@
     <tr>
     <td align="right" class="lineno"><pre>127</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
     <td align="left" class="src coveredLine"><pre>	virtual general_err_t postError(const std::string&amp; message, const general_err_t&amp; err)</pre></td>
     </tr>
 
@@ -1198,7 +1198,7 @@
     <tr>
     <td align="right" class="lineno"><pre>129</pre></td>
     <td align="right" class="linebranch"></td>
-    <td align="right" class="linecount coveredLine"><pre>4</pre></td>
+    <td align="right" class="linecount coveredLine"><pre>12</pre></td>
     <td align="left" class="src coveredLine"><pre>		return ErrorCodeParser::postToMqtt(this->m_error_id, err, message);</pre></td>
     </tr>
 
